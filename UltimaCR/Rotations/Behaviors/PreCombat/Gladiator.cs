@@ -26,8 +26,8 @@ namespace UltimaCR.Rotations
 
         public override async Task<bool> PreCombatBuffLvL8()
         {
-            if (await Protect()) return true;
-            return await Ultima.SummonChocobo();
+            if (await Ultima.SummonChocobo()) return true;
+            return await Protect();
         }
 
         public override async Task<bool> PreCombatBuffLvL10()
@@ -97,9 +97,9 @@ namespace UltimaCR.Rotations
 
         public override async Task<bool> PreCombatBuffLvL34()
         {
+            if (await Ultima.SummonChocobo()) return true;
             if (await Protect()) return true;
-            if (await Stoneskin()) return true;
-            return await Ultima.SummonChocobo();
+            return await Stoneskin();
         }
 
         public override async Task<bool> PreCombatBuffLvL36()

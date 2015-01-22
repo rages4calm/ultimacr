@@ -16,8 +16,8 @@ namespace UltimaCR.Rotations
 
         public override async Task<bool> CombatBuffLvL4()
         {
-            if (await RagingStrikes()) return true;
-            return await Ultima.SummonChocobo();
+            if (await Ultima.SummonChocobo()) return true;
+            return await RagingStrikes();
         }
 
         public override async Task<bool> CombatBuffLvL6()
@@ -27,9 +27,9 @@ namespace UltimaCR.Rotations
 
         public override async Task<bool> CombatBuffLvL8()
         {
+            if (await Ultima.SummonChocobo()) return true;
             if (await RagingStrikes()) return true;
-            if (await MiserysEnd()) return true;
-            return await Ultima.SummonChocobo();
+            return await MiserysEnd();
         }
 
         public override async Task<bool> CombatBuffLvL10()
@@ -39,11 +39,11 @@ namespace UltimaCR.Rotations
 
         public override async Task<bool> CombatBuffLvL12()
         {
+            if (await Ultima.SummonChocobo()) return true;
             if (await RagingStrikes()) return true;
             if (await InternalRelease()) return true;
             if (await MiserysEnd()) return true;
-            if (await Bloodletter()) return true;
-            return await Ultima.SummonChocobo();
+            return await Bloodletter();
         }
 
         public override async Task<bool> CombatBuffLvL14()
@@ -73,13 +73,13 @@ namespace UltimaCR.Rotations
 
         public override async Task<bool> CombatBuffLvL22()
         {
+            if (await Ultima.SummonChocobo()) return true;
             if (await Invigorate()) return true;
             if (await RagingStrikes()) return true;
             if (await InternalRelease()) return true;
             if (await HawksEye()) return true;
             if (await MiserysEnd()) return true;
-            if (await Bloodletter()) return true;
-            return await Ultima.SummonChocobo();
+            return await Bloodletter();
         }
 
         public override async Task<bool> CombatBuffLvL24()
@@ -89,13 +89,13 @@ namespace UltimaCR.Rotations
 
         public override async Task<bool> CombatBuffLvL26()
         {
+            if (await Ultima.SummonChocobo()) return true;
             if (await Invigorate()) return true;
             if (await RagingStrikes()) return true;
             if (await InternalRelease()) return true;
             if (await HawksEye()) return true;
             if (await MiserysEnd()) return true;
-            if (await Bloodletter()) return true;
-            return await Ultima.SummonChocobo();
+            return await Bloodletter();
         }
 
         public override async Task<bool> CombatBuffLvL28()
@@ -115,14 +115,14 @@ namespace UltimaCR.Rotations
 
         public override async Task<bool> CombatBuffLvL34()
         {
+            if (await Ultima.SummonChocobo()) return true;
             if (await Invigorate()) return true;
             if (await RagingStrikes()) return true;
             if (await InternalRelease()) return true;
             if (await BloodForBlood()) return true;
             if (await HawksEye()) return true;
             if (await MiserysEnd()) return true;
-            if (await Bloodletter()) return true;
-            return await Ultima.SummonChocobo();
+            return await Bloodletter();
         }
 
         public override async Task<bool> CombatBuffLvL36()
@@ -132,6 +132,7 @@ namespace UltimaCR.Rotations
 
         public override async Task<bool> CombatBuffLvL38()
         {
+            if (await Ultima.SummonChocobo()) return true;
             if (await Invigorate()) return true;
             if (await RagingStrikes()) return true;
             if (await InternalRelease()) return true;
@@ -139,8 +140,7 @@ namespace UltimaCR.Rotations
             if (await HawksEye()) return true;
             if (await Barrage()) return true;
             if (await MiserysEnd()) return true;
-            if (await Bloodletter()) return true;
-            return await Ultima.SummonChocobo();
+            return await Bloodletter();
         }
 
         public override async Task<bool> CombatBuffLvL40()
@@ -150,6 +150,7 @@ namespace UltimaCR.Rotations
 
         public override async Task<bool> CombatBuffLvL42()
         {
+            if (await Ultima.SummonChocobo()) return true;
             if (await Invigorate()) return true;
             if (await RagingStrikes()) return true;
             if (await InternalRelease()) return true;
@@ -158,8 +159,7 @@ namespace UltimaCR.Rotations
             if (await Barrage()) return true;
             if (await BluntArrow()) return true;
             if (await MiserysEnd()) return true;
-            if (await Bloodletter()) return true;
-            return await Ultima.SummonChocobo();
+            return await Bloodletter();
         }
 
         public override async Task<bool> CombatBuffLvL44()

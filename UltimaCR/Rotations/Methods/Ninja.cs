@@ -1,7 +1,7 @@
 ﻿using Buddy.Coroutines;
 using ff14bot;
+using ff14bot.Enums;
 using ff14bot.Managers;
-using ff14bot.Navigation;
 using System.Threading.Tasks;
 using UltimaCR.Spells.Main;
 
@@ -265,11 +265,7 @@ namespace UltimaCR.Rotations
             if (Actionmanager.CanCast(MySpells.Ten.ID, Core.Player) &&
                 Core.Player.HasAura("Mudra"))
             {
-                if (await MySpells.Ninjutsu.Cast())
-                {
-                    await Coroutine.Wait(2000, () => !Actionmanager.CanCast(MySpells.Ten.ID, Core.Player));
-                }
-                return true;
+                return await MySpells.Ninjutsu.Cast();
             }
             return false;
         }
@@ -297,12 +293,12 @@ namespace UltimaCR.Rotations
         private async Task<bool> FumaShuriken()
         {
             if (Actionmanager.CanCast(MySpells.Ten.ID, Core.Player) &&
-                Core.Player.HasTarget)
+                Core.Player.CurrentTarget.Type == GameObjectType.BattleNpc &&
+                Core.Player.CurrentTarget.InLineOfSight() &&
+                Core.Player.Distance(Core.Player.CurrentTarget) <= 25)
             {
-                if (Ultima.LastSpell.ID != MySpells.Ten.ID &&
-                    Ultima.LastSpell.ID != MySpells.Chi.ID &&
-                    Ultima.LastSpell.ID != MySpells.Jin.ID &&
-                    Ultima.LastSpell.ID != MySpells.Ninjutsu.ID)
+                if (Core.Player.HasTarget &&
+                    Core.Player.CurrentTarget.InLineOfSight())
                 {
                     if (await MySpells.Ten.Cast())
                     {
@@ -324,12 +320,12 @@ namespace UltimaCR.Rotations
         private async Task<bool> Katon()
         {
             if (Actionmanager.CanCast(MySpells.Chi.ID, Core.Player) &&
-                Core.Player.HasTarget)
+                Core.Player.CurrentTarget.Type == GameObjectType.BattleNpc &&
+                Core.Player.CurrentTarget.InLineOfSight() &&
+                Core.Player.Distance(Core.Player.CurrentTarget) <= 15)
             {
-                if (Ultima.LastSpell.ID != MySpells.Ten.ID &&
-                    Ultima.LastSpell.ID != MySpells.Chi.ID &&
-                    Ultima.LastSpell.ID != MySpells.Jin.ID &&
-                    Ultima.LastSpell.ID != MySpells.Ninjutsu.ID)
+                if (Core.Player.HasTarget &&
+                    Core.Player.CurrentTarget.InLineOfSight())
                 {
                     if (await MySpells.Chi.Cast())
                     {
@@ -358,12 +354,12 @@ namespace UltimaCR.Rotations
         private async Task<bool> Raiton()
         {
             if (Actionmanager.CanCast(MySpells.Chi.ID, Core.Player) &&
-                Core.Player.HasTarget)
+                Core.Player.CurrentTarget.Type == GameObjectType.BattleNpc &&
+                Core.Player.CurrentTarget.InLineOfSight() &&
+                Core.Player.Distance(Core.Player.CurrentTarget) <= 15)
             {
-                if (Ultima.LastSpell.ID != MySpells.Ten.ID &&
-                    Ultima.LastSpell.ID != MySpells.Chi.ID &&
-                    Ultima.LastSpell.ID != MySpells.Jin.ID &&
-                    Ultima.LastSpell.ID != MySpells.Ninjutsu.ID)
+                if (Core.Player.HasTarget &&
+                    Core.Player.CurrentTarget.InLineOfSight())
                 {
                     if (await MySpells.Ten.Cast())
                     {
@@ -392,12 +388,13 @@ namespace UltimaCR.Rotations
         private async Task<bool> Hyoton()
         {
             if (Actionmanager.CanCast(MySpells.Jin.ID, Core.Player) &&
-                Core.Player.HasTarget)
+                Core.Player.CurrentTarget.Type == GameObjectType.BattleNpc &&
+                Core.Player.CurrentTarget.InLineOfSight() &&
+                Core.Player.Distance(Core.Player.CurrentTarget) <= 25)
             {
                 if (Ultima.LastSpell.ID != MySpells.Ten.ID &&
                     Ultima.LastSpell.ID != MySpells.Chi.ID &&
-                    Ultima.LastSpell.ID != MySpells.Jin.ID &&
-                    Ultima.LastSpell.ID != MySpells.Ninjutsu.ID)
+                    Ultima.LastSpell.ID != MySpells.Jin.ID)
                 {
                     if (await MySpells.Ten.Cast())
                     {
@@ -408,7 +405,7 @@ namespace UltimaCR.Rotations
                 {
                     if (await MySpells.Jin.Cast())
                     {
-                        await Coroutine.Wait(2000, () => !Actionmanager.CanCast(MySpells.Jin.ID, Core.Player));
+                        await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Jin.ID, Core.Player));
                     }
                 }
                 if (Ultima.LastSpell.ID == MySpells.Jin.ID)
@@ -430,13 +427,12 @@ namespace UltimaCR.Rotations
             {
                 if (Ultima.LastSpell.ID != MySpells.Ten.ID &&
                     Ultima.LastSpell.ID != MySpells.Chi.ID &&
-                    Ultima.LastSpell.ID != MySpells.Jin.ID &&
-                    Ultima.LastSpell.ID != MySpells.Ninjutsu.ID)
+                    Ultima.LastSpell.ID != MySpells.Jin.ID)
                 {
-                    if (await MySpells.Chi.Cast())
-                    {
-                        await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Chi.ID, Core.Player));
-                    }
+                }
+                if (await MySpells.Chi.Cast())
+                {
+                    await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Chi.ID, Core.Player));
                 }
                 if (Ultima.LastSpell.ID == MySpells.Chi.ID)
                 {
@@ -449,7 +445,7 @@ namespace UltimaCR.Rotations
                 {
                     if (await MySpells.Ten.Cast())
                     {
-                        await Coroutine.Wait(2000, () => !Actionmanager.CanCast(MySpells.Ten.ID, Core.Player));
+                        await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Ten.ID, Core.Player));
                     }
                 }
                 if (Ultima.LastSpell.ID == MySpells.Ten.ID)
@@ -470,13 +466,12 @@ namespace UltimaCR.Rotations
             {
                 if (Ultima.LastSpell.ID != MySpells.Ten.ID &&
                     Ultima.LastSpell.ID != MySpells.Chi.ID &&
-                    Ultima.LastSpell.ID != MySpells.Jin.ID &&
-                    Ultima.LastSpell.ID != MySpells.Ninjutsu.ID)
+                    Ultima.LastSpell.ID != MySpells.Jin.ID)
                 {
-                    if (await MySpells.Ten.Cast())
-                    {
-                        await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Ten.ID, Core.Player));
-                    }
+                }
+                if (await MySpells.Ten.Cast())
+                {
+                    await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Ten.ID, Core.Player));
                 }
                 if (Ultima.LastSpell.ID == MySpells.Ten.ID)
                 {
@@ -489,7 +484,7 @@ namespace UltimaCR.Rotations
                 {
                     if (await MySpells.Chi.Cast())
                     {
-                        await Coroutine.Wait(2000, () => !Actionmanager.CanCast(MySpells.Chi.ID, Core.Player));
+                        await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Chi.ID, Core.Player));
                     }
                 }
                 if (Ultima.LastSpell.ID == MySpells.Chi.ID)
@@ -507,17 +502,16 @@ namespace UltimaCR.Rotations
         private async Task<bool> Suiton()
         {
             if (Actionmanager.CanCast(MySpells.Jin.ID, Core.Player) &&
-                Core.Player.HasTarget &&
                 DataManager.GetSpellData(MySpells.TrickAttack.ID).Cooldown.TotalMilliseconds == 0 &&
                 !Core.Player.CurrentTarget.HasAura(MySpells.TrickAttack.Name, true, 3000) &&
                 !Core.Player.CurrentTarget.HasAura(MySpells.TrickAttack.Name, false, 3000) &&
+                Core.Player.CurrentTarget.Type == GameObjectType.BattleNpc &&
                 Core.Player.CurrentTarget.IsBehind &&
-                Core.Player.Distance(Core.Player.CurrentTarget) <= 3)
+                Core.Player.Distance(Core.Player.CurrentTarget) <= (3 + Core.Player.CombatReach + Core.Player.CurrentTarget.CombatReach))
             {
                 if (Ultima.LastSpell.ID != MySpells.Ten.ID &&
                     Ultima.LastSpell.ID != MySpells.Chi.ID &&
-                    Ultima.LastSpell.ID != MySpells.Jin.ID &&
-                    Ultima.LastSpell.ID != MySpells.Ninjutsu.ID)
+                    Ultima.LastSpell.ID != MySpells.Jin.ID)
                 {
                     if (await MySpells.Ten.Cast())
                     {
@@ -546,6 +540,7 @@ namespace UltimaCR.Rotations
                     }
                 }
                 return true;
+
             }
             return false;
         }

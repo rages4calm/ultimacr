@@ -1,9 +1,9 @@
 ﻿using ff14bot;
 using ff14bot.Helpers;
-using System.Threading.Tasks;
-using System.Windows.Media;
 using ff14bot.Managers;
 using ff14bot.Navigation;
+using System.Threading.Tasks;
+using System.Windows.Media;
 
 namespace UltimaCR.Rotations
 {

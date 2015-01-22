@@ -81,8 +81,8 @@ namespace UltimaCR.Rotations
 
         public override async Task<bool> CombatBuffLvL28()
         {
-            if (await Thundercloud()) return true;
-            return await Ultima.SummonChocobo();
+            if (await Ultima.SummonChocobo()) return true;
+            return await Thundercloud();
         }
 
         public override async Task<bool> CombatBuffLvL30()
@@ -122,10 +122,10 @@ namespace UltimaCR.Rotations
 
         public override async Task<bool> CombatBuffLvL44()
         {
+            if (await Ultima.SummonChocobo()) return true;
             if (await Transpose()) return true;
             if (await Firestarter()) return true;
-            if (await Thundercloud()) return true;
-            return await Ultima.SummonChocobo();
+            return await Thundercloud();
         }
 
         public override async Task<bool> CombatBuffLvL46()

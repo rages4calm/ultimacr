@@ -21,8 +21,8 @@ namespace UltimaCR.Rotations
 
         public override async Task<bool> CombatBuffLvL6()
         {
-            if (await FightOrFlight()) return true;
-            return await Ultima.SummonChocobo();
+            if (await Ultima.SummonChocobo()) return true;
+            return await FightOrFlight();
         }
 
         public override async Task<bool> CombatBuffLvL8()
@@ -77,9 +77,9 @@ namespace UltimaCR.Rotations
 
         public override async Task<bool> CombatBuffLvL26()
         {
+            if (await Ultima.SummonChocobo()) return true;
             if (await FightOrFlight()) return true;
-            if (await MercyStroke()) return true;
-            return await Ultima.SummonChocobo();
+            return await MercyStroke();
         }
 
         public override async Task<bool> CombatBuffLvL28()
@@ -89,10 +89,10 @@ namespace UltimaCR.Rotations
 
         public override async Task<bool> CombatBuffLvL30()
         {
+            if (await Ultima.SummonChocobo()) return true;
             if (await FightOrFlight()) return true;
             if (await ShieldSwipe()) return true;
-            if (await MercyStroke()) return true;
-            return await Ultima.SummonChocobo();
+            return await MercyStroke();
         }
 
         public override async Task<bool> CombatBuffLvL32()
@@ -142,11 +142,11 @@ namespace UltimaCR.Rotations
 
         public override async Task<bool> CombatBuffLvL50()
         {
+            if (await Ultima.SummonChocobo()) return true;
             if (await FightOrFlight()) return true;
             if (await ShieldSwipe()) return true;
             if (await CircleOfScorn()) return true;
-            if (await MercyStroke()) return true;
-            return await Ultima.SummonChocobo();
+            return await MercyStroke();
         }
     }
 }

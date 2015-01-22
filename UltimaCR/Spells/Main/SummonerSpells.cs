@@ -153,7 +153,7 @@ namespace UltimaCR.Spells.Main
                                Name = "Fester",
                                ID = 181,
                                Level = 35,
-                               GCDType = GCDType.On,
+                               GCDType = GCDType.Off,
                                SpellType = SpellType.Cooldown,
                                CastType = CastType.Target
                            });

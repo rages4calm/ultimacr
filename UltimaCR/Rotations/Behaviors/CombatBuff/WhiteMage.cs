@@ -21,8 +21,8 @@ namespace UltimaCR.Rotations
 
         public override async Task<bool> CombatBuffLvL6()
         {
-            if (await ClericStance()) return true;
-            return await Ultima.SummonChocobo();
+            if (await Ultima.SummonChocobo()) return true;
+            return await ClericStance();
         }
 
         public override async Task<bool> CombatBuffLvL8()
@@ -107,9 +107,9 @@ namespace UltimaCR.Rotations
 
         public override async Task<bool> CombatBuffLvL38()
         {
+            if (await Ultima.SummonChocobo()) return true;
             if (await ClericStance()) return true;
-            if (await ShroudOfSaints()) return true;
-            return await Ultima.SummonChocobo();
+            return await ShroudOfSaints();
         }
 
         public override async Task<bool> CombatBuffLvL40()

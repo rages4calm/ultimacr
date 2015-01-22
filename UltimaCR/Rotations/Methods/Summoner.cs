@@ -147,8 +147,7 @@ namespace UltimaCR.Rotations
                 !Core.Player.HasAura(MySpells.Aetherflow.Name) ||
                 Actionmanager.CanCast(MySpells.Fester.Name, Core.Player) ||
                 Actionmanager.CanCast(MySpells.Rouse.Name, Core.Player) ||
-                Actionmanager.CanCast(MySpells.Spur.Name, Core.Player) ||
-                Actionmanager.CanCast(MySpells.Enkindle.Name, Core.Player))
+                Actionmanager.CanCast(MySpells.Spur.Name, Core.Player))
             {
                 return await MySpells.RuinII.Cast();
             }
@@ -168,28 +167,29 @@ namespace UltimaCR.Rotations
         private async Task<bool> ShadowFlare()
         {
             if (!Core.Player.HasAura(MySpells.ShadowFlare.Name, true, 4000) &&
-                Core.Player.HasTarget &&
-                Core.Player.CurrentTarget.HasAura(MySpells.BioII.Name) &&
-                Core.Player.CurrentTarget.HasAura(MySpells.Miasma.Name) &&
-                Core.Player.CurrentTarget.HasAura(MySpells.Bio.Name))
+                Core.Player.CurrentTarget.HasAura(MySpells.Bio.Name, true, 4000))
             {
-                if (Actionmanager.CanCast(MySpells.RuinII.Name, Core.Player) &&
+                if (Actionmanager.CanCast(MySpells.RuinII.Name, Core.Player.CurrentTarget) &&
                     Actionmanager.CanCast(MySpells.CrossClass.Swiftcast.Name, Core.Player))
                 {
                     if (await MySpells.RuinII.Cast())
                     {
-                        await Coroutine.Wait(5000, () => Actionmanager.CanCast(MySpells.CrossClass.Swiftcast.Name, Core.Player));
+                        await Coroutine.Wait(3000, () => Actionmanager.CanCast(MySpells.CrossClass.Swiftcast.Name, Core.Player));
                     }
                 }
                 if (Actionmanager.CanCast(MySpells.CrossClass.Swiftcast.Name, Core.Player))
                 {
                     if (await MySpells.CrossClass.Swiftcast.Cast())
                     {
-                        await Coroutine.Wait(5000, () => Actionmanager.CanCast(MySpells.ShadowFlare.Name, Core.Player.CurrentTarget) &&
+                        await Coroutine.Wait(3000, () => Actionmanager.CanCast(MySpells.ShadowFlare.Name, Core.Player.CurrentTarget) &&
                                                          Core.Player.HasAura(MySpells.CrossClass.Swiftcast.Name));
                     }
                 }
-                return await MySpells.ShadowFlare.Cast();
+                if (await MySpells.ShadowFlare.Cast())
+                {
+                    await Coroutine.Wait(3000, () => Core.Player.HasAura(MySpells.ShadowFlare.Name));
+                }
+                return true;
             }
             return false;
         }
@@ -345,12 +345,7 @@ namespace UltimaCR.Rotations
                 Core.Player.CurrentTarget.HasAura(MySpells.Miasma.Name) &&
                 Core.Player.CurrentTarget.HasAura(MySpells.Bio.Name))
             {
-                if (DataManager.GetSpellData(MySpells.Ruin.ID).Cooldown.TotalMilliseconds >= 1500 ||
-                    Core.Player.ClassLevel < MySpells.RuinII.Level)
-                {
-                    return await MySpells.Fester.Cast();
-                }
-                return false;
+                return await MySpells.Fester.Cast();
             }
             return false;
         }

@@ -66,8 +66,8 @@ namespace UltimaCR.Rotations
 
         public override async Task<bool> PreCombatBuffLvL22()
         {
-            if (await FistsOfEarth()) return true;
-            return await Ultima.SummonChocobo();
+            if (await Ultima.SummonChocobo()) return true;
+            return await FistsOfEarth();
         }
 
         public override async Task<bool> PreCombatBuffLvL24()
@@ -112,8 +112,8 @@ namespace UltimaCR.Rotations
 
         public override async Task<bool> PreCombatBuffLvL40()
         {
-            if (await FistsOfFire()) return true;
-            return await Ultima.SummonChocobo();
+            if (await Ultima.SummonChocobo()) return true;
+            return await FistsOfFire();
         }
 
         public override async Task<bool> PreCombatBuffLvL42()

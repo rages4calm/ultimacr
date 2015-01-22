@@ -1,6 +1,5 @@
 ﻿using Buddy.Coroutines;
 using ff14bot;
-using ff14bot.Behavior;
 using ff14bot.Enums;
 using ff14bot.Helpers;
 using ff14bot.Managers;
@@ -97,23 +96,35 @@ namespace UltimaCR.Spells
                 if (BotManager.Current.IsAutonomous &&
                     Core.Player.HasTarget)
                 {
-                    if (!target.InLineOfSight() ||
-                        Core.Player.Distance(target) > 10)
+                    switch (Actionmanager.InSpellInRangeLOS(2247, target))
                     {
-                        Navigator.MoveTo(target.Location);
-                        return true;
+                        case SpellRangeCheck.ErrorNotInLineOfSight:
+                            Navigator.MoveTo(target.Location);
+                            return true;
+                        case SpellRangeCheck.ErrorNotInRange:
+                            Navigator.MoveTo(target.Location);
+                            return true;
+                        case SpellRangeCheck.ErrorNotInFront:
+                            if (!target.InLineOfSight())
+                            {
+                                Navigator.MoveTo(target.Location);
+                                return true;
+                            }
+                            target.Face();
+                            return true;
                     }
-                    Navigator.PlayerMover.MoveStop();
-                    if (!Core.Player.IsFacing(Core.Player.CurrentTarget))
+                    if (MovementManager.IsMoving &&
+                        target.InLineOfSight() &&
+                        Core.Player.Distance(target) <= 15 &&
+                        Core.Player.IsFacing(target))
                     {
-                        Core.Player.CurrentTarget.Face();
+                        Navigator.PlayerMover.MoveStop();
                     }
                 }
                 if (!await Coroutine.Wait(1000, () => Actionmanager.DoAction(ID, target)))
                 {
                     return false;
                 }
-                Ultima.LastSpell = this;
                 Logging.Write(Colors.OrangeRed, @"[Ultima] Ability: " + Name);
                 return true;
             }
@@ -132,17 +143,20 @@ namespace UltimaCR.Spells
                         Navigator.MoveTo(target.Location);
                         return false;
                     case SpellRangeCheck.ErrorNotInFront:
-                        if (target.InLineOfSight())
+                        if (!target.InLineOfSight())
                         {
-                            target.Face();
+                            Navigator.MoveTo(target.Location);
+                            return false;
                         }
+                        target.Face();
                         return false;
-                    case SpellRangeCheck.Success:
-                        if (MovementManager.IsMoving)
-                        {
-                            Navigator.PlayerMover.MoveStop();
-                        }
-                        break;
+                }
+                if (MovementManager.IsMoving &&
+                    target.InLineOfSight() &&
+                    Core.Player.Distance(target) <= (DataManager.GetSpellData(ID).Range + Core.Player.CombatReach + target.CombatReach) &&
+                    Core.Player.IsFacing(target))
+                {
+                    Navigator.PlayerMover.MoveStop();
                 }
             }
             #endregion
@@ -273,7 +287,7 @@ namespace UltimaCR.Spells
             }
             #endregion
             Logging.Write(Colors.OrangeRed, @"[Ultima] Ability: " + Name);
-            await Coroutine.Wait(5000, () => !Actionmanager.CanCast(ID, target));
+            await Coroutine.Wait(3000, () => !Actionmanager.CanCast(ID, target));
             return true;
         }
     }

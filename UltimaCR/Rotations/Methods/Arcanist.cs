@@ -71,7 +71,7 @@ namespace UltimaCR.Rotations
             if (Core.Player.CurrentHealthPercent <= 90 ||
                 Core.Player.CurrentManaPercent <= 90)
             {
-                if (DataManager.GetSpellData(MySpells.Ruin.ID).Cooldown.TotalMilliseconds >= 1500 ||
+                if (DataManager.GetSpellData(MySpells.Ruin.ID).Cooldown.TotalMilliseconds >= 1000 ||
                     Core.Player.ClassLevel < MySpells.RuinII.Level)
                 {
                     return await MySpells.EnergyDrain.Cast();
@@ -175,9 +175,9 @@ namespace UltimaCR.Rotations
         private async Task<bool> ShadowFlare()
         {
             if (!Core.Player.HasAura(MySpells.ShadowFlare.Name, true, 4000) &&
-                Core.Player.HasTarget)
+                Core.Player.CurrentTarget.HasAura(MySpells.Bio.Name, true, 4000))
             {
-                if (Actionmanager.CanCast(MySpells.RuinII.Name, Core.Player) &&
+                if (Actionmanager.CanCast(MySpells.RuinII.Name, Core.Player.CurrentTarget) &&
                     Actionmanager.CanCast(MySpells.CrossClass.Swiftcast.Name, Core.Player))
                 {
                     if (await MySpells.RuinII.Cast())
@@ -193,7 +193,11 @@ namespace UltimaCR.Rotations
                                                          Core.Player.HasAura(MySpells.CrossClass.Swiftcast.Name));
                     }
                 }
-                return await MySpells.ShadowFlare.Cast();
+                if (await MySpells.ShadowFlare.Cast())
+                {
+                    await Coroutine.Wait(3000, () => Core.Player.HasAura(MySpells.ShadowFlare.Name));
+                }
+                return true;
             }
             return false;
         }

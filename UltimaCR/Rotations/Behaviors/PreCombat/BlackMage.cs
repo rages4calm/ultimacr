@@ -16,8 +16,8 @@ namespace UltimaCR.Rotations
 
         public override async Task<bool> PreCombatBuffLvL4()
         {
-            if (await Transpose()) return true;
-            return await Ultima.SummonChocobo();
+            if (await Ultima.SummonChocobo()) return true;
+            return await Transpose();
         }
 
         public override async Task<bool> PreCombatBuffLvL6()
