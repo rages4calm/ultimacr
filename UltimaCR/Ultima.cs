@@ -649,12 +649,12 @@ namespace UltimaCR
 
         public static async Task<bool> SummonChocobo()
         {
-            if (BotManager.Current.IsAutonomous &&
+            if (UltSettings.SummonChocobo &&
+                BotManager.Current.IsAutonomous &&
                 !PartyManager.IsInParty &&
                 !MovementManager.IsMoving &&
                 !Chocobo.Summoned &&
-                Chocobo.CanSummon &&
-                UltSettings.SummonChocobo)
+                Chocobo.CanSummon)
             {
                 Chocobo.Summon();
                 await Coroutine.Wait(1000, () => Chocobo.Summoned);
