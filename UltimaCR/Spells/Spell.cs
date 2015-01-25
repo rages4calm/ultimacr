@@ -187,6 +187,7 @@ namespace UltimaCR.Spells
                     Core.Player.CurrentJob == ClassJobType.Summoner)
                 {
                     if (Core.Player.ClassLevel >= 38 &&
+                        Core.Player.CurrentManaPercent > 40 &&
                         DataManager.GetSpellData(163).Cooldown.TotalMilliseconds <= 1000)
                     {
                         return false;

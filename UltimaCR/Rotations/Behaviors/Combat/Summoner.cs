@@ -139,6 +139,7 @@ namespace UltimaCR.Rotations
             if (await Miasma()) return true;
             if (await Bio()) return true;
             if (await Aetherflow()) return true;
+            if (await EnergyDrain()) return true;
             if (await Fester()) return true;
             if (await RuinII()) return true;
             return await Ruin();
@@ -156,6 +157,7 @@ namespace UltimaCR.Rotations
             if (await Miasma()) return true;
             if (await Bio()) return true;
             if (await Aetherflow()) return true;
+            if (await EnergyDrain()) return true;
             if (await Fester()) return true;
             if (await Rouse()) return true;
             if (await RuinII()) return true;
@@ -169,6 +171,7 @@ namespace UltimaCR.Rotations
             if (await Miasma()) return true;
             if (await Bio()) return true;
             if (await Aetherflow()) return true;
+            if (await EnergyDrain()) return true;
             if (await Fester()) return true;
             if (await Rouse()) return true;
             if (await Spur()) return true;
@@ -193,6 +196,7 @@ namespace UltimaCR.Rotations
             if (await Miasma()) return true;
             if (await Bio()) return true;
             if (await Aetherflow()) return true;
+            if (await EnergyDrain()) return true;
             if (await Fester()) return true;
             if (await ShadowFlare()) return true;
             if (await Contagion()) return true;

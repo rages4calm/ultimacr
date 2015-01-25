@@ -261,7 +261,7 @@ namespace UltimaCR.Spells.Main
                                Name = "Enkindle",
                                ID = 184,
                                Level = 50,
-                               GCDType = GCDType.Off,
+                               GCDType = GCDType.On,
                                SpellType = SpellType.Cooldown,
                                CastType = CastType.Target
                            });

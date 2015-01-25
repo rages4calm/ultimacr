@@ -68,14 +68,17 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> EnergyDrain()
         {
-            if (Core.Player.CurrentHealthPercent <= 90 ||
-                Core.Player.CurrentManaPercent <= 90)
+            if (Core.Player.HasAura(MySpells.Aetherflow.Name))
             {
-                if (Core.Player.ClassLevel < MySpells.Fester.Level)
+                if (Core.Player.CurrentManaPercent <= 90 &&
+                    Core.Player.ClassLevel < MySpells.Fester.Level)
                 {
                     return await MySpells.EnergyDrain.Cast();
                 }
-                return false;
+                if (Core.Player.CurrentManaPercent <= 40)
+                {
+                    return await MySpells.EnergyDrain.Cast();
+                }
             }
             return false;
         }
@@ -142,14 +145,20 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> RuinII()
         {
-            if (MovementManager.IsMoving ||
-                Actionmanager.CanCast(MySpells.Aetherflow.Name, Core.Player) &&
-                !Core.Player.HasAura(MySpells.Aetherflow.Name) ||
-                Actionmanager.CanCast(MySpells.Fester.Name, Core.Player) ||
-                Actionmanager.CanCast(MySpells.Rouse.Name, Core.Player) ||
-                Actionmanager.CanCast(MySpells.Spur.Name, Core.Player))
+            if (MovementManager.IsMoving)
             {
                 return await MySpells.RuinII.Cast();
+            }
+            if (Core.Player.CurrentManaPercent > 40)
+            {
+                if (Actionmanager.CanCast(MySpells.Aetherflow.Name, Core.Player) &&
+                    !Core.Player.HasAura(MySpells.Aetherflow.Name) ||
+                    Actionmanager.CanCast(MySpells.Fester.Name, Core.Player) ||
+                    Actionmanager.CanCast(MySpells.Rouse.Name, Core.Player) ||
+                    Actionmanager.CanCast(MySpells.Spur.Name, Core.Player))
+                {
+                    return await MySpells.RuinII.Cast();
+                }
             }
             return false;
         }
@@ -341,7 +350,9 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Fester()
         {
-            if (Core.Player.CurrentTarget.HasAura(MySpells.BioII.Name) &&
+            if (Core.Player.HasAura(MySpells.Aetherflow.Name) &&
+                Core.Player.CurrentManaPercent > 40 &&
+                Core.Player.CurrentTarget.HasAura(MySpells.BioII.Name) &&
                 Core.Player.CurrentTarget.HasAura(MySpells.Miasma.Name) &&
                 Core.Player.CurrentTarget.HasAura(MySpells.Bio.Name))
             {
@@ -362,7 +373,12 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Enkindle()
         {
-            return await MySpells.Enkindle.Cast();
+            if (!Actionmanager.CanCast(MySpells.Rouse.Name, Core.Player) &&
+                !Actionmanager.CanCast(MySpells.Spur.Name, Core.Player))
+            {
+                return await MySpells.Enkindle.Cast();
+            }
+            return false;
         }
 
         #endregion

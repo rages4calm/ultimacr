@@ -135,7 +135,7 @@ namespace UltimaCR.Spells.Main
                                Name = "Energy Drain",
                                ID = 167,
                                Level = 8,
-                               GCDType = GCDType.On,
+                               GCDType = GCDType.Off,
                                SpellType = SpellType.Cooldown,
                                CastType = CastType.Target
                            });

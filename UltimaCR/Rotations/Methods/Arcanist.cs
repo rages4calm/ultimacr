@@ -68,15 +68,10 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> EnergyDrain()
         {
-            if (Core.Player.CurrentHealthPercent <= 90 ||
+            if (Core.Player.HasAura(MySpells.Aetherflow.Name) &&
                 Core.Player.CurrentManaPercent <= 90)
             {
-                if (DataManager.GetSpellData(MySpells.Ruin.ID).Cooldown.TotalMilliseconds >= 1000 ||
-                    Core.Player.ClassLevel < MySpells.RuinII.Level)
-                {
-                    return await MySpells.EnergyDrain.Cast();
-                }
-                return false;
+                return await MySpells.EnergyDrain.Cast();
             }
             return false;
         }
@@ -143,21 +138,20 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> RuinII()
         {
-            if (MovementManager.IsMoving ||
-                Actionmanager.CanCast(MySpells.Aetherflow.Name, Core.Player) &&
-                !Core.Player.HasAura(MySpells.Aetherflow.Name) ||
-                Actionmanager.CanCast(MySpells.Rouse.Name, Core.Player))
+            if (MovementManager.IsMoving)
             {
                 return await MySpells.RuinII.Cast();
             }
-            if (Actionmanager.CanCast(MySpells.EnergyDrain.Name, Core.Player.CurrentTarget))
+            if (Core.Player.CurrentManaPercent > 40)
             {
-                if (Core.Player.CurrentHealthPercent <= 90 ||
-                    Core.Player.CurrentManaPercent <= 90)
+                if (Actionmanager.CanCast(MySpells.Aetherflow.Name, Core.Player) &&
+                    !Core.Player.HasAura(MySpells.Aetherflow.Name) ||
+                    Actionmanager.CanCast(MySpells.EnergyDrain.Name, Core.Player.CurrentTarget) &&
+                    Core.Player.CurrentManaPercent <= 90 ||
+                    Actionmanager.CanCast(MySpells.Rouse.Name, Core.Player))
                 {
                     return await MySpells.RuinII.Cast();
                 }
-                return false;
             }
             return false;
         }
