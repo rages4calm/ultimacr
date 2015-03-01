@@ -24,6 +24,22 @@ namespace UltimaCR
             return retval;
         }
 
+        public static bool HasAura(this GameObject unit, uint spellid, bool isMyAura = false, int msLeft = 0)
+        {
+            var unitasc = (unit as Character);
+            if (unit == null || unitasc == null)
+            {
+                return false;
+            }
+            var auras = isMyAura
+                ? unitasc.CharacterAuras.Where(r => r.CasterId == Core.Player.ObjectId && r.Id == spellid)
+                : unitasc.CharacterAuras.Where(r => r.Id == spellid);
+
+            var retval = auras.Any(aura => aura.TimespanLeft.TotalMilliseconds > msLeft);
+
+            return retval;
+        }
+
         public static void RemoveAll<TKey, TValue>(this Dictionary<TKey, TValue> dic, Func<TValue, bool> predicate)
         {
             var keys = dic.Keys.Where(k => predicate(dic[k])).ToList();

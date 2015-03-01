@@ -74,6 +74,7 @@ namespace UltimaCR.Rotations
         {
             if (await Scathe()) return true;
             if (await ThunderII()) return true;
+            if (await Thunder()) return true;
             if (await Blizzard()) return true;
             return await Fire();
         }
@@ -90,25 +91,32 @@ namespace UltimaCR.Rotations
 
         public override async Task<bool> CombatLvL28()
         {
-            return await CombatLvL22();
+            if (await Thundercloud()) return true;
+            if (await Scathe()) return true;
+            if (await ThunderII()) return true;
+            if (await Thunder()) return true;
+            if (await Blizzard()) return true;
+            return await Fire();
         }
 
         public override async Task<bool> CombatLvL30()
         {
-            return await CombatLvL22();
+            return await CombatLvL28();
         }
 
         public override async Task<bool> CombatLvL32()
         {
-            return await CombatLvL22();
+            return await CombatLvL28();
         }
 
         public override async Task<bool> CombatLvL34()
         {
+            if (await Thundercloud()) return true;
             if (await Scathe()) return true;
             if (await ThunderII()) return true;
-            if (await Blizzard()) return true;
+            if (await Thunder()) return true;
             if (await FireIII()) return true;
+            if (await Blizzard()) return true;
             return await Fire();
         }
 
@@ -119,11 +127,13 @@ namespace UltimaCR.Rotations
 
         public override async Task<bool> CombatLvL38()
         {
+            if (await Thundercloud()) return true;
             if (await Scathe()) return true;
             if (await ThunderII()) return true;
+            if (await Thunder()) return true;
             if (await BlizzardIII()) return true;
-            if (await Blizzard()) return true;
             if (await FireIII()) return true;
+            if (await Blizzard()) return true;
             return await Fire();
         }
 
@@ -139,17 +149,29 @@ namespace UltimaCR.Rotations
 
         public override async Task<bool> CombatLvL44()
         {
-            return await CombatLvL38();
+            if (await Firestarter()) return true;
+            if (await Thundercloud()) return true;
+            if (await Scathe()) return true;
+            if (await ThunderII()) return true;
+            if (await Thunder()) return true;
+            if (await BlizzardIII()) return true;
+            if (await FireIII()) return true;
+            if (await Blizzard()) return true;
+            if (await Swiftcast()) return true;
+            return await Fire();
         }
 
         public override async Task<bool> CombatLvL46()
         {
+            if (await Firestarter()) return true;
+            if (await Thundercloud()) return true;
             if (await Scathe()) return true;
             if (await ThunderIII()) return true;
-            if (await ThunderII()) return true;
+            if (await Thunder()) return true;
             if (await BlizzardIII()) return true;
-            if (await Blizzard()) return true;
             if (await FireIII()) return true;
+            if (await Blizzard()) return true;
+            if (await Swiftcast()) return true;
             return await Fire();
         }
 
@@ -160,15 +182,16 @@ namespace UltimaCR.Rotations
 
         public override async Task<bool> CombatLvL50()
         {
-            if (await Convert()) return true;
+            if (await Firestarter()) return true;
+            if (await Thundercloud()) return true;
             if (await Flare()) return true;
-            if (await Swiftcast()) return true;
             if (await Scathe()) return true;
             if (await ThunderIII()) return true;
-            if (await ThunderII()) return true;
+            if (await Thunder()) return true;
             if (await BlizzardIII()) return true;
-            if (await Blizzard()) return true;
             if (await FireIII()) return true;
+            if (await Blizzard()) return true;
+            if (await Swiftcast()) return true;
             return await Fire();
         }
 

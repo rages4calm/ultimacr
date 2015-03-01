@@ -46,115 +46,172 @@ namespace UltimaCR.Rotations
 
         public override async Task<bool> PullLvL15()
         {
-            if (await MySpells.Scathe.Cast()) return true;
+            if (!LowMP)
+            {
+                if (await MySpells.Scathe.Cast()) return true;
+            }
             return await CombatLvL15();
         }
 
         public override async Task<bool> PullLvL16()
         {
-            if (await MySpells.Scathe.Cast()) return true;
+            if (!LowMP)
+            {
+                if (await MySpells.Scathe.Cast()) return true;
+            }
             return await CombatLvL16();
         }
 
         public override async Task<bool> PullLvL18()
         {
-            if (await MySpells.Scathe.Cast()) return true;
+            if (!LowMP)
+            {
+                if (await MySpells.Scathe.Cast()) return true;
+            }
             return await CombatLvL18();
         }
 
         public override async Task<bool> PullLvL20()
         {
-            if (await MySpells.Scathe.Cast()) return true;
+            if (!LowMP)
+            {
+                if (await MySpells.Scathe.Cast()) return true;
+            }
             return await CombatLvL20();
         }
 
         public override async Task<bool> PullLvL22()
         {
-            if (await MySpells.Scathe.Cast()) return true;
+            if (!LowMP)
+            {
+                if (await MySpells.Scathe.Cast()) return true;
+            }
             return await CombatLvL22();
         }
 
         public override async Task<bool> PullLvL24()
         {
-            if (await MySpells.Scathe.Cast()) return true;
+            if (!LowMP)
+            {
+                if (await MySpells.Scathe.Cast()) return true;
+            }
             return await CombatLvL24();
         }
 
         public override async Task<bool> PullLvL26()
         {
-            if (await MySpells.Scathe.Cast()) return true;
+            if (!LowMP)
+            {
+                if (await MySpells.Scathe.Cast()) return true;
+            }
             return await CombatLvL26();
         }
 
         public override async Task<bool> PullLvL28()
         {
-            if (await MySpells.Scathe.Cast()) return true;
+            if (!LowMP)
+            {
+                if (await MySpells.Scathe.Cast()) return true;
+            }
             return await CombatLvL28();
         }
 
         public override async Task<bool> PullLvL30()
         {
-            if (await MySpells.Scathe.Cast()) return true;
+            if (!LowMP)
+            {
+                if (await MySpells.Scathe.Cast()) return true;
+            }
             return await CombatLvL30();
         }
 
         public override async Task<bool> PullLvL32()
         {
-            if (await MySpells.Scathe.Cast()) return true;
+            if (!LowMP)
+            {
+                if (await MySpells.Scathe.Cast()) return true;
+            }
             return await CombatLvL32();
         }
 
         public override async Task<bool> PullLvL34()
         {
-            if (await MySpells.Scathe.Cast()) return true;
+            if (!LowMP)
+            {
+                if (await MySpells.Scathe.Cast()) return true;
+            }
             return await CombatLvL34();
         }
 
         public override async Task<bool> PullLvL36()
         {
-            if (await MySpells.Scathe.Cast()) return true;
+            if (!LowMP)
+            {
+                if (await MySpells.Scathe.Cast()) return true;
+            }
             return await CombatLvL36();
         }
 
         public override async Task<bool> PullLvL38()
         {
-            if (await MySpells.Scathe.Cast()) return true;
+            if (!LowMP)
+            {
+                if (await MySpells.Scathe.Cast()) return true;
+            }
             return await CombatLvL38();
         }
 
         public override async Task<bool> PullLvL40()
         {
-            if (await MySpells.Scathe.Cast()) return true;
+            if (!LowMP)
+            {
+                if (await MySpells.Scathe.Cast()) return true;
+            }
             return await CombatLvL40();
         }
 
         public override async Task<bool> PullLvL42()
         {
-            if (await MySpells.Scathe.Cast()) return true;
+            if (!LowMP)
+            {
+                if (await MySpells.Scathe.Cast()) return true;
+            }
             return await CombatLvL42();
         }
 
         public override async Task<bool> PullLvL44()
         {
-            if (await MySpells.Scathe.Cast()) return true;
+            if (!LowMP)
+            {
+                if (await MySpells.Scathe.Cast()) return true;
+            }
             return await CombatLvL44();
         }
 
         public override async Task<bool> PullLvL46()
         {
-            if (await MySpells.Scathe.Cast()) return true;
+            if (!LowMP)
+            {
+                if (await MySpells.Scathe.Cast()) return true;
+            }
             return await CombatLvL46();
         }
 
         public override async Task<bool> PullLvL48()
         {
-            if (await MySpells.Scathe.Cast()) return true;
+            if (!LowMP)
+            {
+                if (await MySpells.Scathe.Cast()) return true;
+            }
             return await CombatLvL48();
         }
 
         public override async Task<bool> PullLvL50()
         {
-            if (await MySpells.Scathe.Cast()) return true;
+            if (!LowMP)
+            {
+                if (await MySpells.Scathe.Cast()) return true;
+            }
             return await CombatLvL50();
         }
     }

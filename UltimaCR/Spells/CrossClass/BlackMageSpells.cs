@@ -87,7 +87,7 @@ namespace UltimaCR.Spells.CrossClass
                                    Name = "Raging Strikes",
                                    ID = 101,
                                    Level = 4,
-                                   GCDType = GCDType.Off,
+                                   GCDType = GCDType.On,
                                    SpellType = SpellType.Buff,
                                    CastType = CastType.Self
                                });

@@ -244,7 +244,7 @@ namespace UltimaCR.Spells.Main
                                ID = 152,
                                Level = 34,
                                GCDType = GCDType.On,
-                               SpellType = SpellType.Buff,
+                               SpellType = SpellType.Damage,
                                CastType = CastType.Target
                            });
             }
@@ -262,7 +262,7 @@ namespace UltimaCR.Spells.Main
                                ID = 154,
                                Level = 38,
                                GCDType = GCDType.On,
-                               SpellType = SpellType.Buff,
+                               SpellType = SpellType.Damage,
                                CastType = CastType.Target
                            });
             }

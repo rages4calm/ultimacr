@@ -21,7 +21,7 @@ namespace UltimaCR.Spells
         public SpellType SpellType { private get; set; }
         public CastType CastType { private get; set; }
 
-        private readonly Dictionary<string, DateTime> RecentSpell = new Dictionary<string, DateTime>();
+        public static readonly Dictionary<string, DateTime> RecentSpell = new Dictionary<string, DateTime>();
 
         public async Task<bool> Cast(GameObject target = null)
         {
