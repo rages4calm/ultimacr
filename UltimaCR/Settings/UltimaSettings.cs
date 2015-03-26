@@ -1075,6 +1075,12 @@ namespace UltimaCR.Settings
         [Setting, DefaultValue(true)]
         public bool RogueDancingEdge { get; set; }
 
+        [Setting, DefaultValue(false)]
+        public bool RogueKissOfTheWasp { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool RogueKissOfTheViper { get; set; }
+
         #endregion
 
         #region Thaumaturge Settings
@@ -1422,6 +1428,12 @@ namespace UltimaCR.Settings
 
         [Setting, DefaultValue(false)]
         public bool NinjaFumaShuriken { get; set; }
+
+        [Setting, DefaultValue(false)]
+        public bool NinjaKissOfTheWasp { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool NinjaKissOfTheViper { get; set; }
 
         [Setting, DefaultValue(true)]
         public bool NinjaDancingEdge { get; set; }

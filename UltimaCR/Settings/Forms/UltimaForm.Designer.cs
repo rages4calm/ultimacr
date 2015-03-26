@@ -482,6 +482,8 @@
             this.RogueTab = new System.Windows.Forms.TabPage();
             this.RogueSubTab = new UltimaCR.Settings.Forms.Design.TabDesign();
             this.RogueSettings = new System.Windows.Forms.TabPage();
+            this.RogueDebuffGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.RogueDancingEdge = new System.Windows.Forms.CheckBox();
             this.RogueExecuteGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.RogueAssassinate = new System.Windows.Forms.CheckBox();
             this.RogueInterruptGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
@@ -529,6 +531,9 @@
             this.RogueRaise = new System.Windows.Forms.CheckBox();
             this.RogueStoneskin = new System.Windows.Forms.CheckBox();
             this.NinjaSettings = new System.Windows.Forms.TabPage();
+            this.NinjaAuraGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.NinjaKissOfTheWasp = new System.Windows.Forms.RadioButton();
+            this.NinjaKissOfTheViper = new System.Windows.Forms.RadioButton();
             this.NinjaDebuffGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.NinjaDancingEdge = new System.Windows.Forms.CheckBox();
             this.NinjaNinjutsuGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
@@ -600,8 +605,9 @@
             this.BlackMageRagingStrikes = new System.Windows.Forms.CheckBox();
             this.BlackMageHawksEye = new System.Windows.Forms.CheckBox();
             this.BlackMageQuellingStrikes = new System.Windows.Forms.CheckBox();
-            this.RogueDebuffGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
-            this.RogueDancingEdge = new System.Windows.Forms.CheckBox();
+            this.RogueAuraGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.RogueKissOfTheWasp = new System.Windows.Forms.RadioButton();
+            this.RogueKissOfTheViper = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.UltimaBanner)).BeginInit();
             this.ClassTab.SuspendLayout();
             this.UltimaTab.SuspendLayout();
@@ -747,6 +753,7 @@
             this.RogueTab.SuspendLayout();
             this.RogueSubTab.SuspendLayout();
             this.RogueSettings.SuspendLayout();
+            this.RogueDebuffGroup.SuspendLayout();
             this.RogueExecuteGroup.SuspendLayout();
             this.RogueInterruptGroup.SuspendLayout();
             this.RogueCrossGroup.SuspendLayout();
@@ -759,6 +766,7 @@
             this.RogueArcanistGroup.SuspendLayout();
             this.RogueConjurerGroup.SuspendLayout();
             this.NinjaSettings.SuspendLayout();
+            this.NinjaAuraGroup.SuspendLayout();
             this.NinjaDebuffGroup.SuspendLayout();
             this.NinjaNinjutsuGroup.SuspendLayout();
             this.NinjaExecuteGroup.SuspendLayout();
@@ -782,7 +790,7 @@
             this.BlackMageCrossGroup.SuspendLayout();
             this.BlackMageArcanistGroup.SuspendLayout();
             this.BlackMageArcherGroup.SuspendLayout();
-            this.RogueDebuffGroup.SuspendLayout();
+            this.RogueAuraGroup.SuspendLayout();
             this.SuspendLayout();
             // 
             // CloseButton
@@ -792,7 +800,7 @@
             this.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CloseButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CloseButton.ForeColor = System.Drawing.Color.White;
-            this.CloseButton.Location = new System.Drawing.Point(700, 470);
+            this.CloseButton.Location = new System.Drawing.Point(700, 500);
             this.CloseButton.Name = "CloseButton";
             this.CloseButton.Size = new System.Drawing.Size(90, 30);
             this.CloseButton.TabIndex = 6;
@@ -827,7 +835,7 @@
             this.ClassTab.Multiline = true;
             this.ClassTab.Name = "ClassTab";
             this.ClassTab.SelectedIndex = 0;
-            this.ClassTab.Size = new System.Drawing.Size(800, 365);
+            this.ClassTab.Size = new System.Drawing.Size(800, 395);
             this.ClassTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.ClassTab.TabIndex = 4;
             this.ClassTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -840,7 +848,7 @@
             this.UltimaTab.Location = new System.Drawing.Point(114, 4);
             this.UltimaTab.Margin = new System.Windows.Forms.Padding(0);
             this.UltimaTab.Name = "UltimaTab";
-            this.UltimaTab.Size = new System.Drawing.Size(682, 357);
+            this.UltimaTab.Size = new System.Drawing.Size(682, 387);
             this.UltimaTab.TabIndex = 9;
             this.UltimaTab.Text = "Ultima";
             this.UltimaTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -915,7 +923,7 @@
             this.ArcanistTab.Location = new System.Drawing.Point(114, 4);
             this.ArcanistTab.Margin = new System.Windows.Forms.Padding(0);
             this.ArcanistTab.Name = "ArcanistTab";
-            this.ArcanistTab.Size = new System.Drawing.Size(682, 357);
+            this.ArcanistTab.Size = new System.Drawing.Size(682, 387);
             this.ArcanistTab.TabIndex = 0;
             this.ArcanistTab.Text = "Arcanist";
             // 
@@ -930,7 +938,7 @@
             this.ArcanistSubTab.Multiline = true;
             this.ArcanistSubTab.Name = "ArcanistSubTab";
             this.ArcanistSubTab.SelectedIndex = 0;
-            this.ArcanistSubTab.Size = new System.Drawing.Size(685, 365);
+            this.ArcanistSubTab.Size = new System.Drawing.Size(685, 395);
             this.ArcanistSubTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.ArcanistSubTab.TabIndex = 5;
             this.ArcanistSubTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -944,7 +952,7 @@
             this.ArcanistSettings.Location = new System.Drawing.Point(114, 4);
             this.ArcanistSettings.Margin = new System.Windows.Forms.Padding(0);
             this.ArcanistSettings.Name = "ArcanistSettings";
-            this.ArcanistSettings.Size = new System.Drawing.Size(567, 357);
+            this.ArcanistSettings.Size = new System.Drawing.Size(567, 387);
             this.ArcanistSettings.TabIndex = 0;
             this.ArcanistSettings.Text = "Arcanist";
             this.ArcanistSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -1453,7 +1461,7 @@
             this.ScholarSettings.Location = new System.Drawing.Point(114, 4);
             this.ScholarSettings.Margin = new System.Windows.Forms.Padding(0);
             this.ScholarSettings.Name = "ScholarSettings";
-            this.ScholarSettings.Size = new System.Drawing.Size(567, 357);
+            this.ScholarSettings.Size = new System.Drawing.Size(567, 387);
             this.ScholarSettings.TabIndex = 1;
             this.ScholarSettings.Text = "Scholar";
             this.ScholarSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -1695,7 +1703,7 @@
             this.SummonerSettings.Location = new System.Drawing.Point(114, 4);
             this.SummonerSettings.Margin = new System.Windows.Forms.Padding(0);
             this.SummonerSettings.Name = "SummonerSettings";
-            this.SummonerSettings.Size = new System.Drawing.Size(567, 357);
+            this.SummonerSettings.Size = new System.Drawing.Size(567, 387);
             this.SummonerSettings.TabIndex = 2;
             this.SummonerSettings.Text = "Summoner";
             this.SummonerSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -1884,7 +1892,7 @@
             this.ArcherTab.Location = new System.Drawing.Point(114, 4);
             this.ArcherTab.Margin = new System.Windows.Forms.Padding(0);
             this.ArcherTab.Name = "ArcherTab";
-            this.ArcherTab.Size = new System.Drawing.Size(682, 357);
+            this.ArcherTab.Size = new System.Drawing.Size(682, 387);
             this.ArcherTab.TabIndex = 1;
             this.ArcherTab.Text = "Archer";
             // 
@@ -1898,7 +1906,7 @@
             this.ArcherSubTab.Multiline = true;
             this.ArcherSubTab.Name = "ArcherSubTab";
             this.ArcherSubTab.SelectedIndex = 0;
-            this.ArcherSubTab.Size = new System.Drawing.Size(685, 365);
+            this.ArcherSubTab.Size = new System.Drawing.Size(685, 395);
             this.ArcherSubTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.ArcherSubTab.TabIndex = 5;
             this.ArcherSubTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -1912,7 +1920,7 @@
             this.ArcherSettings.Location = new System.Drawing.Point(114, 4);
             this.ArcherSettings.Margin = new System.Windows.Forms.Padding(0);
             this.ArcherSettings.Name = "ArcherSettings";
-            this.ArcherSettings.Size = new System.Drawing.Size(567, 357);
+            this.ArcherSettings.Size = new System.Drawing.Size(567, 387);
             this.ArcherSettings.TabIndex = 0;
             this.ArcherSettings.Text = "Archer";
             this.ArcherSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -2686,7 +2694,7 @@
             this.ConjurerTab.Location = new System.Drawing.Point(114, 4);
             this.ConjurerTab.Margin = new System.Windows.Forms.Padding(0);
             this.ConjurerTab.Name = "ConjurerTab";
-            this.ConjurerTab.Size = new System.Drawing.Size(682, 357);
+            this.ConjurerTab.Size = new System.Drawing.Size(682, 387);
             this.ConjurerTab.TabIndex = 2;
             this.ConjurerTab.Text = "Conjurer";
             // 
@@ -2700,7 +2708,7 @@
             this.ConjurerSubTab.Multiline = true;
             this.ConjurerSubTab.Name = "ConjurerSubTab";
             this.ConjurerSubTab.SelectedIndex = 0;
-            this.ConjurerSubTab.Size = new System.Drawing.Size(685, 365);
+            this.ConjurerSubTab.Size = new System.Drawing.Size(685, 395);
             this.ConjurerSubTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.ConjurerSubTab.TabIndex = 5;
             this.ConjurerSubTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -2713,7 +2721,7 @@
             this.ConjurerSettings.Location = new System.Drawing.Point(114, 4);
             this.ConjurerSettings.Margin = new System.Windows.Forms.Padding(0);
             this.ConjurerSettings.Name = "ConjurerSettings";
-            this.ConjurerSettings.Size = new System.Drawing.Size(567, 357);
+            this.ConjurerSettings.Size = new System.Drawing.Size(567, 387);
             this.ConjurerSettings.TabIndex = 0;
             this.ConjurerSettings.Text = "Conjurer";
             this.ConjurerSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -3376,7 +3384,7 @@
             this.GladiatorTab.Location = new System.Drawing.Point(114, 4);
             this.GladiatorTab.Margin = new System.Windows.Forms.Padding(0);
             this.GladiatorTab.Name = "GladiatorTab";
-            this.GladiatorTab.Size = new System.Drawing.Size(682, 357);
+            this.GladiatorTab.Size = new System.Drawing.Size(682, 387);
             this.GladiatorTab.TabIndex = 3;
             this.GladiatorTab.Text = "Gladiator";
             // 
@@ -3390,7 +3398,7 @@
             this.GladiatorSubTab.Multiline = true;
             this.GladiatorSubTab.Name = "GladiatorSubTab";
             this.GladiatorSubTab.SelectedIndex = 0;
-            this.GladiatorSubTab.Size = new System.Drawing.Size(685, 365);
+            this.GladiatorSubTab.Size = new System.Drawing.Size(685, 395);
             this.GladiatorSubTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.GladiatorSubTab.TabIndex = 5;
             this.GladiatorSubTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -3402,7 +3410,7 @@
             this.GladiatorSettings.Location = new System.Drawing.Point(114, 4);
             this.GladiatorSettings.Margin = new System.Windows.Forms.Padding(0);
             this.GladiatorSettings.Name = "GladiatorSettings";
-            this.GladiatorSettings.Size = new System.Drawing.Size(567, 357);
+            this.GladiatorSettings.Size = new System.Drawing.Size(567, 387);
             this.GladiatorSettings.TabIndex = 0;
             this.GladiatorSettings.Text = "Gladiator";
             this.GladiatorSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -4132,7 +4140,7 @@
             this.LancerTab.Location = new System.Drawing.Point(114, 4);
             this.LancerTab.Margin = new System.Windows.Forms.Padding(0);
             this.LancerTab.Name = "LancerTab";
-            this.LancerTab.Size = new System.Drawing.Size(682, 357);
+            this.LancerTab.Size = new System.Drawing.Size(682, 387);
             this.LancerTab.TabIndex = 4;
             this.LancerTab.Text = "Lancer";
             // 
@@ -4146,7 +4154,7 @@
             this.LancerSubTab.Multiline = true;
             this.LancerSubTab.Name = "LancerSubTab";
             this.LancerSubTab.SelectedIndex = 0;
-            this.LancerSubTab.Size = new System.Drawing.Size(685, 365);
+            this.LancerSubTab.Size = new System.Drawing.Size(685, 395);
             this.LancerSubTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.LancerSubTab.TabIndex = 5;
             this.LancerSubTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -4159,7 +4167,7 @@
             this.LancerSettings.Location = new System.Drawing.Point(114, 4);
             this.LancerSettings.Margin = new System.Windows.Forms.Padding(0);
             this.LancerSettings.Name = "LancerSettings";
-            this.LancerSettings.Size = new System.Drawing.Size(567, 357);
+            this.LancerSettings.Size = new System.Drawing.Size(567, 387);
             this.LancerSettings.TabIndex = 0;
             this.LancerSettings.Text = "Lancer";
             this.LancerSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -5007,7 +5015,7 @@
             this.MarauderTab.Location = new System.Drawing.Point(114, 4);
             this.MarauderTab.Margin = new System.Windows.Forms.Padding(0);
             this.MarauderTab.Name = "MarauderTab";
-            this.MarauderTab.Size = new System.Drawing.Size(682, 357);
+            this.MarauderTab.Size = new System.Drawing.Size(682, 387);
             this.MarauderTab.TabIndex = 5;
             this.MarauderTab.Text = "Marauder";
             // 
@@ -5021,7 +5029,7 @@
             this.MarauderSubTab.Multiline = true;
             this.MarauderSubTab.Name = "MarauderSubTab";
             this.MarauderSubTab.SelectedIndex = 0;
-            this.MarauderSubTab.Size = new System.Drawing.Size(685, 365);
+            this.MarauderSubTab.Size = new System.Drawing.Size(685, 395);
             this.MarauderSubTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.MarauderSubTab.TabIndex = 5;
             this.MarauderSubTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -5035,7 +5043,7 @@
             this.MarauderSettings.Location = new System.Drawing.Point(114, 4);
             this.MarauderSettings.Margin = new System.Windows.Forms.Padding(0);
             this.MarauderSettings.Name = "MarauderSettings";
-            this.MarauderSettings.Size = new System.Drawing.Size(567, 357);
+            this.MarauderSettings.Size = new System.Drawing.Size(567, 387);
             this.MarauderSettings.TabIndex = 0;
             this.MarauderSettings.Text = "Marauder";
             this.MarauderSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -5855,7 +5863,7 @@
             this.PugilistTab.Location = new System.Drawing.Point(114, 4);
             this.PugilistTab.Margin = new System.Windows.Forms.Padding(0);
             this.PugilistTab.Name = "PugilistTab";
-            this.PugilistTab.Size = new System.Drawing.Size(682, 357);
+            this.PugilistTab.Size = new System.Drawing.Size(682, 387);
             this.PugilistTab.TabIndex = 6;
             this.PugilistTab.Text = "Pugilist";
             // 
@@ -5869,7 +5877,7 @@
             this.PugilistSubTab.Multiline = true;
             this.PugilistSubTab.Name = "PugilistSubTab";
             this.PugilistSubTab.SelectedIndex = 0;
-            this.PugilistSubTab.Size = new System.Drawing.Size(685, 365);
+            this.PugilistSubTab.Size = new System.Drawing.Size(685, 395);
             this.PugilistSubTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.PugilistSubTab.TabIndex = 5;
             this.PugilistSubTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -5882,7 +5890,7 @@
             this.PugilistSettings.Location = new System.Drawing.Point(114, 4);
             this.PugilistSettings.Margin = new System.Windows.Forms.Padding(0);
             this.PugilistSettings.Name = "PugilistSettings";
-            this.PugilistSettings.Size = new System.Drawing.Size(567, 357);
+            this.PugilistSettings.Size = new System.Drawing.Size(567, 387);
             this.PugilistSettings.TabIndex = 0;
             this.PugilistSettings.Text = "Pugilist";
             this.PugilistSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -6661,7 +6669,7 @@
             this.RogueTab.Location = new System.Drawing.Point(114, 4);
             this.RogueTab.Margin = new System.Windows.Forms.Padding(0);
             this.RogueTab.Name = "RogueTab";
-            this.RogueTab.Size = new System.Drawing.Size(682, 357);
+            this.RogueTab.Size = new System.Drawing.Size(682, 387);
             this.RogueTab.TabIndex = 7;
             this.RogueTab.Text = "Rogue";
             // 
@@ -6675,7 +6683,7 @@
             this.RogueSubTab.Multiline = true;
             this.RogueSubTab.Name = "RogueSubTab";
             this.RogueSubTab.SelectedIndex = 0;
-            this.RogueSubTab.Size = new System.Drawing.Size(685, 365);
+            this.RogueSubTab.Size = new System.Drawing.Size(685, 395);
             this.RogueSubTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.RogueSubTab.TabIndex = 5;
             this.RogueSubTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -6683,6 +6691,7 @@
             // RogueSettings
             // 
             this.RogueSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.RogueSettings.Controls.Add(this.RogueAuraGroup);
             this.RogueSettings.Controls.Add(this.RogueDebuffGroup);
             this.RogueSettings.Controls.Add(this.RogueExecuteGroup);
             this.RogueSettings.Controls.Add(this.RogueInterruptGroup);
@@ -6690,10 +6699,33 @@
             this.RogueSettings.Location = new System.Drawing.Point(114, 4);
             this.RogueSettings.Margin = new System.Windows.Forms.Padding(0);
             this.RogueSettings.Name = "RogueSettings";
-            this.RogueSettings.Size = new System.Drawing.Size(567, 357);
+            this.RogueSettings.Size = new System.Drawing.Size(567, 387);
             this.RogueSettings.TabIndex = 0;
             this.RogueSettings.Text = "Rogue";
             this.RogueSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
+            // 
+            // RogueDebuffGroup
+            // 
+            this.RogueDebuffGroup.Controls.Add(this.RogueDancingEdge);
+            this.RogueDebuffGroup.ForeColor = System.Drawing.Color.White;
+            this.RogueDebuffGroup.Location = new System.Drawing.Point(218, 309);
+            this.RogueDebuffGroup.Name = "RogueDebuffGroup";
+            this.RogueDebuffGroup.Size = new System.Drawing.Size(106, 42);
+            this.RogueDebuffGroup.TabIndex = 23;
+            this.RogueDebuffGroup.TabStop = false;
+            this.RogueDebuffGroup.Text = "Debuff";
+            // 
+            // RogueDancingEdge
+            // 
+            this.RogueDancingEdge.AutoSize = true;
+            this.RogueDancingEdge.ForeColor = System.Drawing.Color.White;
+            this.RogueDancingEdge.Location = new System.Drawing.Point(6, 19);
+            this.RogueDancingEdge.Name = "RogueDancingEdge";
+            this.RogueDancingEdge.Size = new System.Drawing.Size(94, 17);
+            this.RogueDancingEdge.TabIndex = 7;
+            this.RogueDancingEdge.Text = "Dancing Edge";
+            this.RogueDancingEdge.UseVisualStyleBackColor = true;
+            this.RogueDancingEdge.CheckedChanged += new System.EventHandler(this.RogueDancingEdge_CheckedChanged);
             // 
             // RogueExecuteGroup
             // 
@@ -7301,6 +7333,7 @@
             // NinjaSettings
             // 
             this.NinjaSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.NinjaSettings.Controls.Add(this.NinjaAuraGroup);
             this.NinjaSettings.Controls.Add(this.NinjaDebuffGroup);
             this.NinjaSettings.Controls.Add(this.NinjaNinjutsuGroup);
             this.NinjaSettings.Controls.Add(this.NinjaExecuteGroup);
@@ -7315,11 +7348,49 @@
             this.NinjaSettings.Text = "Ninja";
             this.NinjaSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
             // 
+            // NinjaAuraGroup
+            // 
+            this.NinjaAuraGroup.Controls.Add(this.NinjaKissOfTheWasp);
+            this.NinjaAuraGroup.Controls.Add(this.NinjaKissOfTheViper);
+            this.NinjaAuraGroup.ForeColor = System.Drawing.Color.White;
+            this.NinjaAuraGroup.Location = new System.Drawing.Point(148, 216);
+            this.NinjaAuraGroup.Name = "NinjaAuraGroup";
+            this.NinjaAuraGroup.Size = new System.Drawing.Size(117, 65);
+            this.NinjaAuraGroup.TabIndex = 42;
+            this.NinjaAuraGroup.TabStop = false;
+            this.NinjaAuraGroup.Text = "Aura";
+            // 
+            // NinjaKissOfTheWasp
+            // 
+            this.NinjaKissOfTheWasp.AutoSize = true;
+            this.NinjaKissOfTheWasp.ForeColor = System.Drawing.Color.White;
+            this.NinjaKissOfTheWasp.Location = new System.Drawing.Point(6, 19);
+            this.NinjaKissOfTheWasp.Name = "NinjaKissOfTheWasp";
+            this.NinjaKissOfTheWasp.Size = new System.Drawing.Size(105, 17);
+            this.NinjaKissOfTheWasp.TabIndex = 24;
+            this.NinjaKissOfTheWasp.TabStop = true;
+            this.NinjaKissOfTheWasp.Text = "Kiss of the Wasp";
+            this.NinjaKissOfTheWasp.UseVisualStyleBackColor = true;
+            this.NinjaKissOfTheWasp.CheckedChanged += new System.EventHandler(this.NinjaKissOfTheWasp_CheckedChanged);
+            // 
+            // NinjaKissOfTheViper
+            // 
+            this.NinjaKissOfTheViper.AutoSize = true;
+            this.NinjaKissOfTheViper.ForeColor = System.Drawing.Color.White;
+            this.NinjaKissOfTheViper.Location = new System.Drawing.Point(6, 42);
+            this.NinjaKissOfTheViper.Name = "NinjaKissOfTheViper";
+            this.NinjaKissOfTheViper.Size = new System.Drawing.Size(101, 17);
+            this.NinjaKissOfTheViper.TabIndex = 25;
+            this.NinjaKissOfTheViper.TabStop = true;
+            this.NinjaKissOfTheViper.Text = "Kiss of the Viper";
+            this.NinjaKissOfTheViper.UseVisualStyleBackColor = true;
+            this.NinjaKissOfTheViper.CheckedChanged += new System.EventHandler(this.NinjaKissOfTheViper_CheckedChanged);
+            // 
             // NinjaDebuffGroup
             // 
             this.NinjaDebuffGroup.Controls.Add(this.NinjaDancingEdge);
             this.NinjaDebuffGroup.ForeColor = System.Drawing.Color.White;
-            this.NinjaDebuffGroup.Location = new System.Drawing.Point(148, 216);
+            this.NinjaDebuffGroup.Location = new System.Drawing.Point(34, 287);
             this.NinjaDebuffGroup.Name = "NinjaDebuffGroup";
             this.NinjaDebuffGroup.Size = new System.Drawing.Size(106, 42);
             this.NinjaDebuffGroup.TabIndex = 17;
@@ -7607,7 +7678,7 @@
             this.ThaumaturgeTab.Location = new System.Drawing.Point(114, 4);
             this.ThaumaturgeTab.Margin = new System.Windows.Forms.Padding(0);
             this.ThaumaturgeTab.Name = "ThaumaturgeTab";
-            this.ThaumaturgeTab.Size = new System.Drawing.Size(682, 357);
+            this.ThaumaturgeTab.Size = new System.Drawing.Size(682, 387);
             this.ThaumaturgeTab.TabIndex = 8;
             this.ThaumaturgeTab.Text = "Thaumaturge";
             // 
@@ -7621,7 +7692,7 @@
             this.ThaumaturgeSubTab.Multiline = true;
             this.ThaumaturgeSubTab.Name = "ThaumaturgeSubTab";
             this.ThaumaturgeSubTab.SelectedIndex = 0;
-            this.ThaumaturgeSubTab.Size = new System.Drawing.Size(685, 365);
+            this.ThaumaturgeSubTab.Size = new System.Drawing.Size(685, 395);
             this.ThaumaturgeSubTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.ThaumaturgeSubTab.TabIndex = 5;
             this.ThaumaturgeSubTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -7633,7 +7704,7 @@
             this.ThaumaturgeSettings.Location = new System.Drawing.Point(114, 4);
             this.ThaumaturgeSettings.Margin = new System.Windows.Forms.Padding(0);
             this.ThaumaturgeSettings.Name = "ThaumaturgeSettings";
-            this.ThaumaturgeSettings.Size = new System.Drawing.Size(567, 357);
+            this.ThaumaturgeSettings.Size = new System.Drawing.Size(567, 387);
             this.ThaumaturgeSettings.TabIndex = 0;
             this.ThaumaturgeSettings.Text = "Thaumaturge";
             this.ThaumaturgeSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -8229,35 +8300,50 @@
             this.BlackMageQuellingStrikes.UseVisualStyleBackColor = true;
             this.BlackMageQuellingStrikes.CheckedChanged += new System.EventHandler(this.BlackMageQuellingStrikes_CheckedChanged);
             // 
-            // RogueDebuffGroup
+            // RogueAuraGroup
             // 
-            this.RogueDebuffGroup.Controls.Add(this.RogueDancingEdge);
-            this.RogueDebuffGroup.ForeColor = System.Drawing.Color.White;
-            this.RogueDebuffGroup.Location = new System.Drawing.Point(218, 309);
-            this.RogueDebuffGroup.Name = "RogueDebuffGroup";
-            this.RogueDebuffGroup.Size = new System.Drawing.Size(106, 42);
-            this.RogueDebuffGroup.TabIndex = 23;
-            this.RogueDebuffGroup.TabStop = false;
-            this.RogueDebuffGroup.Text = "Debuff";
+            this.RogueAuraGroup.Controls.Add(this.RogueKissOfTheWasp);
+            this.RogueAuraGroup.Controls.Add(this.RogueKissOfTheViper);
+            this.RogueAuraGroup.ForeColor = System.Drawing.Color.White;
+            this.RogueAuraGroup.Location = new System.Drawing.Point(330, 309);
+            this.RogueAuraGroup.Name = "RogueAuraGroup";
+            this.RogueAuraGroup.Size = new System.Drawing.Size(117, 65);
+            this.RogueAuraGroup.TabIndex = 43;
+            this.RogueAuraGroup.TabStop = false;
+            this.RogueAuraGroup.Text = "Aura";
             // 
-            // RogueDancingEdge
+            // RogueKissOfTheWasp
             // 
-            this.RogueDancingEdge.AutoSize = true;
-            this.RogueDancingEdge.ForeColor = System.Drawing.Color.White;
-            this.RogueDancingEdge.Location = new System.Drawing.Point(6, 19);
-            this.RogueDancingEdge.Name = "RogueDancingEdge";
-            this.RogueDancingEdge.Size = new System.Drawing.Size(94, 17);
-            this.RogueDancingEdge.TabIndex = 7;
-            this.RogueDancingEdge.Text = "Dancing Edge";
-            this.RogueDancingEdge.UseVisualStyleBackColor = true;
-            this.RogueDancingEdge.CheckedChanged += new System.EventHandler(this.RogueDancingEdge_CheckedChanged);
+            this.RogueKissOfTheWasp.AutoSize = true;
+            this.RogueKissOfTheWasp.ForeColor = System.Drawing.Color.White;
+            this.RogueKissOfTheWasp.Location = new System.Drawing.Point(6, 19);
+            this.RogueKissOfTheWasp.Name = "RogueKissOfTheWasp";
+            this.RogueKissOfTheWasp.Size = new System.Drawing.Size(105, 17);
+            this.RogueKissOfTheWasp.TabIndex = 24;
+            this.RogueKissOfTheWasp.TabStop = true;
+            this.RogueKissOfTheWasp.Text = "Kiss of the Wasp";
+            this.RogueKissOfTheWasp.UseVisualStyleBackColor = true;
+            this.RogueKissOfTheWasp.CheckedChanged += new System.EventHandler(this.RogueKissOfTheWasp_CheckedChanged);
+            // 
+            // RogueKissOfTheViper
+            // 
+            this.RogueKissOfTheViper.AutoSize = true;
+            this.RogueKissOfTheViper.ForeColor = System.Drawing.Color.White;
+            this.RogueKissOfTheViper.Location = new System.Drawing.Point(6, 42);
+            this.RogueKissOfTheViper.Name = "RogueKissOfTheViper";
+            this.RogueKissOfTheViper.Size = new System.Drawing.Size(101, 17);
+            this.RogueKissOfTheViper.TabIndex = 25;
+            this.RogueKissOfTheViper.TabStop = true;
+            this.RogueKissOfTheViper.Text = "Kiss of the Viper";
+            this.RogueKissOfTheViper.UseVisualStyleBackColor = true;
+            this.RogueKissOfTheViper.CheckedChanged += new System.EventHandler(this.RogueKissOfTheViper_CheckedChanged);
             // 
             // UltimaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(800, 510);
+            this.ClientSize = new System.Drawing.Size(800, 540);
             this.Controls.Add(this.UltimaBanner);
             this.Controls.Add(this.CloseButton);
             this.Controls.Add(this.ClassTab);
@@ -8508,6 +8594,8 @@
             this.RogueTab.ResumeLayout(false);
             this.RogueSubTab.ResumeLayout(false);
             this.RogueSettings.ResumeLayout(false);
+            this.RogueDebuffGroup.ResumeLayout(false);
+            this.RogueDebuffGroup.PerformLayout();
             this.RogueExecuteGroup.ResumeLayout(false);
             this.RogueExecuteGroup.PerformLayout();
             this.RogueInterruptGroup.ResumeLayout(false);
@@ -8530,6 +8618,8 @@
             this.RogueConjurerGroup.ResumeLayout(false);
             this.RogueConjurerGroup.PerformLayout();
             this.NinjaSettings.ResumeLayout(false);
+            this.NinjaAuraGroup.ResumeLayout(false);
+            this.NinjaAuraGroup.PerformLayout();
             this.NinjaDebuffGroup.ResumeLayout(false);
             this.NinjaDebuffGroup.PerformLayout();
             this.NinjaNinjutsuGroup.ResumeLayout(false);
@@ -8569,8 +8659,8 @@
             this.BlackMageArcanistGroup.PerformLayout();
             this.BlackMageArcherGroup.ResumeLayout(false);
             this.BlackMageArcherGroup.PerformLayout();
-            this.RogueDebuffGroup.ResumeLayout(false);
-            this.RogueDebuffGroup.PerformLayout();
+            this.RogueAuraGroup.ResumeLayout(false);
+            this.RogueAuraGroup.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -9151,5 +9241,11 @@
         private System.Windows.Forms.CheckBox NinjaDancingEdge;
         private Design.GroupBoxDesign RogueDebuffGroup;
         private System.Windows.Forms.CheckBox RogueDancingEdge;
+        private Design.GroupBoxDesign NinjaAuraGroup;
+        private System.Windows.Forms.RadioButton NinjaKissOfTheWasp;
+        private System.Windows.Forms.RadioButton NinjaKissOfTheViper;
+        private Design.GroupBoxDesign RogueAuraGroup;
+        private System.Windows.Forms.RadioButton RogueKissOfTheWasp;
+        private System.Windows.Forms.RadioButton RogueKissOfTheViper;
     }
 }

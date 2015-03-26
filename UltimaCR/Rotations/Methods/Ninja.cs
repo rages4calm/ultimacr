@@ -44,9 +44,13 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> KissOfTheWasp()
         {
-            if (!Core.Player.HasAura(MySpells.KissOfTheWasp.Name))
+            if (Ultima.UltSettings.NinjaKissOfTheWasp ||
+                Core.Player.ClassLevel < MySpells.KissOfTheViper.Level)
             {
-                return await MySpells.KissOfTheWasp.Cast();
+                if (!Core.Player.HasAura(MySpells.KissOfTheWasp.Name))
+                {
+                    return await MySpells.KissOfTheWasp.Cast();
+                }
             }
             return false;
         }
@@ -113,7 +117,8 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> KissOfTheViper()
         {
-            if (!Core.Player.HasAura(MySpells.KissOfTheViper.Name))
+            if (Ultima.UltSettings.NinjaKissOfTheViper &&
+                !Core.Player.HasAura(MySpells.KissOfTheViper.Name))
             {
                 return await MySpells.KissOfTheViper.Cast();
             }
