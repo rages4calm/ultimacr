@@ -123,8 +123,8 @@ namespace UltimaCR.Rotations
             if (await VorpalThrust()) return true;
             if (await Disembowel()) return true;
             if (await HeavyThrust()) return true;
-            if (await Phlebotomize()) return true;
             if (await ImpulseDrive()) return true;
+            if (await Phlebotomize()) return true;
             return await TrueThrust();
         }
 
@@ -160,8 +160,8 @@ namespace UltimaCR.Rotations
             if (await ChaosThrust()) return true;
             if (await Disembowel()) return true;
             if (await HeavyThrust()) return true;
-            if (await Phlebotomize()) return true;
             if (await ImpulseDrive()) return true;
+            if (await Phlebotomize()) return true;
             return await TrueThrust();
         }
 

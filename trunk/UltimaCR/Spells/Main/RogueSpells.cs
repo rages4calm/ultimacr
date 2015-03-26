@@ -45,7 +45,7 @@ namespace UltimaCR.Spells.Main
                                Name = "Perfect Dodge",
                                ID = 2241,
                                Level = 2,
-                               GCDType = GCDType.On,
+                               GCDType = GCDType.Off,
                                SpellType = SpellType.Defensive,
                                CastType = CastType.Self
                            });
@@ -207,7 +207,7 @@ namespace UltimaCR.Spells.Main
                                Name = "Sneak Attack",
                                ID = 2250,
                                Level = 22,
-                               GCDType = GCDType.On,
+                               GCDType = GCDType.Off,
                                SpellType = SpellType.Damage,
                                CastType = CastType.Target
                            });
@@ -333,7 +333,7 @@ namespace UltimaCR.Spells.Main
                                Name = "Trick Attack",
                                ID = 2258,
                                Level = 50,
-                               GCDType = GCDType.On,
+                               GCDType = GCDType.Off,
                                SpellType = SpellType.Behind,
                                CastType = CastType.Target
                            });

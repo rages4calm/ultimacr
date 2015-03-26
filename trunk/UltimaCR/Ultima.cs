@@ -19,14 +19,14 @@ namespace UltimaCR
 {
     public class Ultima : CombatRoutine
     {
-        public override sealed string Name
-        {
-            get { return "Ultima"; }
-        }
-
         #region RebornBuddy Overrides
 
-        public override float PullRange
+        public override sealed string Name
+        {
+            get {return "Ultima"; }
+        }
+
+        public override sealed float PullRange
         {
             get { return MyRotation.PullRange; }
         }
@@ -49,6 +49,7 @@ namespace UltimaCR
         #region Settings
 
         public static readonly UltimaSettings UltSettings = UltimaSettings.Instance;
+
         private Form _uForm;
 
         public override sealed bool WantButton
@@ -98,7 +99,8 @@ namespace UltimaCR
             {
                 return new[]
                 {
-                    ClassJobType.Arcanist, ClassJobType.Summoner, ClassJobType.Scholar,
+                    #region Combat
+                    ClassJobType.Arcanist, ClassJobType.Scholar, ClassJobType.Summoner,
                     ClassJobType.Archer, ClassJobType.Bard,
                     ClassJobType.Conjurer, ClassJobType.WhiteMage,
                     ClassJobType.Gladiator, ClassJobType.Paladin,
@@ -106,53 +108,101 @@ namespace UltimaCR
                     ClassJobType.Marauder, ClassJobType.Warrior,
                     ClassJobType.Pugilist, ClassJobType.Monk,
                     ClassJobType.Thaumaturge, ClassJobType.BlackMage,
-                    ClassJobType.Rogue, ClassJobType.Ninja
+                    ClassJobType.Rogue, ClassJobType.Ninja,
+                    #endregion
+                    #region Crafting
+                    ClassJobType.Alchemist,
+                    ClassJobType.Armorer,
+                    ClassJobType.Blacksmith,
+                    ClassJobType.Carpenter,
+                    ClassJobType.Culinarian,
+                    ClassJobType.Goldsmith,
+                    ClassJobType.Leatherworker,
+                    ClassJobType.Weaver,
+                    #endregion
+                    #region Gathering
+                    ClassJobType.Botanist,
+                    ClassJobType.Fisher,
+                    ClassJobType.Miner
+                    #endregion
                 };
             }
         }
 
-        private static IRotation GetRotation(ClassJobType job)
+        private static IRotation GetRotation(ClassJobType ClassJob)
         {
-            switch (job)
+            switch (ClassJob)
             {
+                #region Combat
+                #region Class
                 case ClassJobType.Arcanist:
                     return new Arcanist();
                 case ClassJobType.Archer:
                     return new Archer();
-                case ClassJobType.Bard:
-                    return new Bard();
-                case ClassJobType.BlackMage:
-                    return new BlackMage();
                 case ClassJobType.Conjurer:
                     return new Conjurer();
-                case ClassJobType.Dragoon:
-                    return new Dragoon();
                 case ClassJobType.Gladiator:
                     return new Gladiator();
                 case ClassJobType.Lancer:
                     return new Lancer();
                 case ClassJobType.Marauder:
                     return new Marauder();
+                case ClassJobType.Pugilist:
+                    return new Pugilist();
+                case ClassJobType.Rogue:
+                    return new Rogue();
+                case ClassJobType.Thaumaturge:
+                    return new Thaumaturge();
+                #endregion
+                #region Job
+                case ClassJobType.Bard:
+                    return new Bard();
+                case ClassJobType.BlackMage:
+                    return new BlackMage();
+                case ClassJobType.Dragoon:
+                    return new Dragoon();
                 case ClassJobType.Monk:
                     return new Monk();
                 case ClassJobType.Ninja:
                     return new Ninja();
                 case ClassJobType.Paladin:
                     return new Paladin();
-                case ClassJobType.Pugilist:
-                    return new Pugilist();
-                case ClassJobType.Rogue:
-                    return new Rogue();
                 case ClassJobType.Scholar:
                     return new Scholar();
                 case ClassJobType.Summoner:
                     return new Summoner();
-                case ClassJobType.Thaumaturge:
-                    return new Thaumaturge();
                 case ClassJobType.Warrior:
                     return new Warrior();
                 case ClassJobType.WhiteMage:
                     return new WhiteMage();
+                #endregion
+                #endregion
+                #region Crafting
+                case ClassJobType.Alchemist:
+                    return new HandLand();
+                case ClassJobType.Armorer:
+                    return new HandLand();
+                case ClassJobType.Blacksmith:
+                    return new HandLand();
+                case ClassJobType.Carpenter:
+                    return new HandLand();
+                case ClassJobType.Culinarian:
+                    return new HandLand();
+                case ClassJobType.Goldsmith:
+                    return new HandLand();
+                case ClassJobType.Leatherworker:
+                    return new HandLand();
+                case ClassJobType.Weaver:
+                    return new HandLand();
+                #endregion
+                #region Gathering
+                case ClassJobType.Botanist:
+                    return new HandLand();
+                case ClassJobType.Fisher:
+                    return new HandLand();
+                case ClassJobType.Miner:
+                    return new HandLand();
+                #endregion
                 default:
                     throw new NotImplementedException();
             }

@@ -751,6 +751,7 @@ namespace UltimaCR.Settings.Forms
 
             RogueJugulate.Checked = Ultima.UltSettings.RogueJugulate;
             RogueAssassinate.Checked = Ultima.UltSettings.RogueAssassinate;
+            RogueDancingEdge.Checked = Ultima.UltSettings.RogueDancingEdge;
 
             #endregion
 
@@ -950,6 +951,9 @@ namespace UltimaCR.Settings.Forms
             NinjaShukuchi.Checked = Ultima.UltSettings.NinjaShukuchi;
             NinjaJugulate.Checked = Ultima.UltSettings.NinjaJugulate;
             NinjaAssassinate.Checked = Ultima.UltSettings.NinjaAssassinate;
+            NinjaRaiton.Checked = Ultima.UltSettings.NinjaRaiton;
+            NinjaFumaShuriken.Checked = Ultima.UltSettings.NinjaFumaShuriken;
+            NinjaDancingEdge.Checked = Ultima.UltSettings.NinjaDancingEdge;
 
             #endregion
 
@@ -2682,6 +2686,11 @@ namespace UltimaCR.Settings.Forms
             Ultima.UltSettings.RogueAssassinate = RogueAssassinate.Checked;
         }
 
+        private void RogueDancingEdge_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.RogueDancingEdge = RogueDancingEdge.Checked;
+        }
+
         #endregion
 
         #region Thaumaturge Settings
@@ -3186,6 +3195,21 @@ namespace UltimaCR.Settings.Forms
         private void NinjaAssassinate_CheckedChanged(object sender, EventArgs e)
         {
             Ultima.UltSettings.NinjaAssassinate = NinjaAssassinate.Checked;
+        }
+
+        private void NinjaRaiton_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.NinjaRaiton = NinjaRaiton.Checked;
+        }
+
+        private void NinjaFumaShuriken_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.NinjaFumaShuriken = NinjaFumaShuriken.Checked;
+        }
+
+        private void NinjaDancingEdge_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.NinjaDancingEdge = NinjaDancingEdge.Checked;
         }
 
         #endregion

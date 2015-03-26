@@ -137,8 +137,8 @@ namespace UltimaCR.Rotations
             if (await AeolianEdge()) return true;
             if (await GustSlash()) return true;
             if (await Mutilate()) return true;
-            if (await Jugulate()) return true;
             if (await Mug()) return true;
+            if (await Jugulate()) return true;
             if (await Assassinate()) return true;
             return await SpinningEdge();
         }
@@ -146,14 +146,15 @@ namespace UltimaCR.Rotations
         public override async Task<bool> CombatLvL36()
         {
             if (await Raiton()) return true;
+            if (await FumaShuriken()) return true;
             if (await Invigorate()) return true;
             if (await InternalRelease()) return true;
             if (await BloodForBlood()) return true;
             if (await AeolianEdge()) return true;
             if (await GustSlash()) return true;
             if (await Mutilate()) return true;
-            if (await Jugulate()) return true;
             if (await Mug()) return true;
+            if (await Jugulate()) return true;
             if (await Assassinate()) return true;
             return await SpinningEdge();
         }
@@ -161,6 +162,7 @@ namespace UltimaCR.Rotations
         public override async Task<bool> CombatLvL38()
         {
             if (await Raiton()) return true;
+            if (await FumaShuriken()) return true;
             if (await Invigorate()) return true;
             if (await InternalRelease()) return true;
             if (await BloodForBlood()) return true;
@@ -168,8 +170,8 @@ namespace UltimaCR.Rotations
             if (await AeolianEdge()) return true;
             if (await GustSlash()) return true;
             if (await Mutilate()) return true;
-            if (await Jugulate()) return true;
             if (await Mug()) return true;
+            if (await Jugulate()) return true;
             if (await Assassinate()) return true;
             return await SpinningEdge();
         }
@@ -177,6 +179,7 @@ namespace UltimaCR.Rotations
         public override async Task<bool> CombatLvL40()
         {
             if (await Raiton()) return true;
+            if (await FumaShuriken()) return true;
             if (await Invigorate()) return true;
             if (await InternalRelease()) return true;
             if (await BloodForBlood()) return true;
@@ -185,8 +188,8 @@ namespace UltimaCR.Rotations
             if (await AeolianEdge()) return true;
             if (await GustSlash()) return true;
             if (await Mutilate()) return true;
-            if (await Jugulate()) return true;
             if (await Mug()) return true;
+            if (await Jugulate()) return true;
             if (await Assassinate()) return true;
             return await SpinningEdge();
         }
@@ -200,6 +203,7 @@ namespace UltimaCR.Rotations
         {
             if (await Huton()) return true;
             if (await Raiton()) return true;
+            if (await FumaShuriken()) return true;
             if (await Invigorate()) return true;
             if (await InternalRelease()) return true;
             if (await BloodForBlood()) return true;
@@ -208,8 +212,8 @@ namespace UltimaCR.Rotations
             if (await AeolianEdge()) return true;
             if (await GustSlash()) return true;
             if (await Mutilate()) return true;
-            if (await Jugulate()) return true;
             if (await Mug()) return true;
+            if (await Jugulate()) return true;
             if (await Assassinate()) return true;
             return await SpinningEdge();
         }
@@ -218,6 +222,7 @@ namespace UltimaCR.Rotations
         {
             if (await Huton()) return true;
             if (await Raiton()) return true;
+            if (await FumaShuriken()) return true;
             if (await Invigorate()) return true;
             if (await InternalRelease()) return true;
             if (await BloodForBlood()) return true;
@@ -227,8 +232,8 @@ namespace UltimaCR.Rotations
             if (await ShadowFang()) return true;
             if (await GustSlash()) return true;
             if (await Mutilate()) return true;
-            if (await Jugulate()) return true;
             if (await Mug()) return true;
+            if (await Jugulate()) return true;
             if (await Assassinate()) return true;
             return await SpinningEdge();
         }
@@ -245,6 +250,7 @@ namespace UltimaCR.Rotations
             if (await TrickAttack()) return true;
             if (await Kassatsu()) return true;
             if (await Raiton()) return true;
+            if (await FumaShuriken()) return true;
             if (await Invigorate()) return true;
             if (await InternalRelease()) return true;
             if (await BloodForBlood()) return true;
@@ -254,8 +260,8 @@ namespace UltimaCR.Rotations
             if (await ShadowFang()) return true;
             if (await GustSlash()) return true;
             if (await Mutilate()) return true;
-            if (await Jugulate()) return true;
             if (await Mug()) return true;
+            if (await Jugulate()) return true;
             if (await Assassinate()) return true;
             return await SpinningEdge();
         }

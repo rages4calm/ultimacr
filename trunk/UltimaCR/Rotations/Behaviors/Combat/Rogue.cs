@@ -127,8 +127,8 @@ namespace UltimaCR.Rotations
             if (await AeolianEdge()) return true;
             if (await GustSlash()) return true;
             if (await Mutilate()) return true;
-            if (await Jugulate()) return true;
             if (await Mug()) return true;
+            if (await Jugulate()) return true;
             if (await Assassinate()) return true;
             return await SpinningEdge();
         }
@@ -147,8 +147,8 @@ namespace UltimaCR.Rotations
             if (await AeolianEdge()) return true;
             if (await GustSlash()) return true;
             if (await Mutilate()) return true;
-            if (await Jugulate()) return true;
             if (await Mug()) return true;
+            if (await Jugulate()) return true;
             if (await Assassinate()) return true;
             return await SpinningEdge();
         }
@@ -178,8 +178,8 @@ namespace UltimaCR.Rotations
             if (await ShadowFang()) return true;
             if (await GustSlash()) return true;
             if (await Mutilate()) return true;
-            if (await Jugulate()) return true;
             if (await Mug()) return true;
+            if (await Jugulate()) return true;
             if (await Assassinate()) return true;
             return await SpinningEdge();
         }
