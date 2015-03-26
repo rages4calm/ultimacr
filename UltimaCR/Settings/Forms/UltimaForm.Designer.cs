@@ -529,6 +529,11 @@
             this.RogueRaise = new System.Windows.Forms.CheckBox();
             this.RogueStoneskin = new System.Windows.Forms.CheckBox();
             this.NinjaSettings = new System.Windows.Forms.TabPage();
+            this.NinjaDebuffGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.NinjaDancingEdge = new System.Windows.Forms.CheckBox();
+            this.NinjaNinjutsuGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.NinjaRaiton = new System.Windows.Forms.RadioButton();
+            this.NinjaFumaShuriken = new System.Windows.Forms.RadioButton();
             this.NinjaExecuteGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.NinjaAssassinate = new System.Windows.Forms.CheckBox();
             this.NinjaInterruptGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
@@ -595,6 +600,8 @@
             this.BlackMageRagingStrikes = new System.Windows.Forms.CheckBox();
             this.BlackMageHawksEye = new System.Windows.Forms.CheckBox();
             this.BlackMageQuellingStrikes = new System.Windows.Forms.CheckBox();
+            this.RogueDebuffGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.RogueDancingEdge = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.UltimaBanner)).BeginInit();
             this.ClassTab.SuspendLayout();
             this.UltimaTab.SuspendLayout();
@@ -752,6 +759,8 @@
             this.RogueArcanistGroup.SuspendLayout();
             this.RogueConjurerGroup.SuspendLayout();
             this.NinjaSettings.SuspendLayout();
+            this.NinjaDebuffGroup.SuspendLayout();
+            this.NinjaNinjutsuGroup.SuspendLayout();
             this.NinjaExecuteGroup.SuspendLayout();
             this.NinjaInterruptGroup.SuspendLayout();
             this.NinjaMovementGroup.SuspendLayout();
@@ -773,6 +782,7 @@
             this.BlackMageCrossGroup.SuspendLayout();
             this.BlackMageArcanistGroup.SuspendLayout();
             this.BlackMageArcherGroup.SuspendLayout();
+            this.RogueDebuffGroup.SuspendLayout();
             this.SuspendLayout();
             // 
             // CloseButton
@@ -6673,6 +6683,7 @@
             // RogueSettings
             // 
             this.RogueSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.RogueSettings.Controls.Add(this.RogueDebuffGroup);
             this.RogueSettings.Controls.Add(this.RogueExecuteGroup);
             this.RogueSettings.Controls.Add(this.RogueInterruptGroup);
             this.RogueSettings.Controls.Add(this.RogueCrossGroup);
@@ -7290,6 +7301,8 @@
             // NinjaSettings
             // 
             this.NinjaSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.NinjaSettings.Controls.Add(this.NinjaDebuffGroup);
+            this.NinjaSettings.Controls.Add(this.NinjaNinjutsuGroup);
             this.NinjaSettings.Controls.Add(this.NinjaExecuteGroup);
             this.NinjaSettings.Controls.Add(this.NinjaInterruptGroup);
             this.NinjaSettings.Controls.Add(this.NinjaMovementGroup);
@@ -7301,6 +7314,67 @@
             this.NinjaSettings.TabIndex = 1;
             this.NinjaSettings.Text = "Ninja";
             this.NinjaSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
+            // 
+            // NinjaDebuffGroup
+            // 
+            this.NinjaDebuffGroup.Controls.Add(this.NinjaDancingEdge);
+            this.NinjaDebuffGroup.ForeColor = System.Drawing.Color.White;
+            this.NinjaDebuffGroup.Location = new System.Drawing.Point(148, 216);
+            this.NinjaDebuffGroup.Name = "NinjaDebuffGroup";
+            this.NinjaDebuffGroup.Size = new System.Drawing.Size(106, 42);
+            this.NinjaDebuffGroup.TabIndex = 17;
+            this.NinjaDebuffGroup.TabStop = false;
+            this.NinjaDebuffGroup.Text = "Debuff";
+            // 
+            // NinjaDancingEdge
+            // 
+            this.NinjaDancingEdge.AutoSize = true;
+            this.NinjaDancingEdge.ForeColor = System.Drawing.Color.White;
+            this.NinjaDancingEdge.Location = new System.Drawing.Point(6, 19);
+            this.NinjaDancingEdge.Name = "NinjaDancingEdge";
+            this.NinjaDancingEdge.Size = new System.Drawing.Size(94, 17);
+            this.NinjaDancingEdge.TabIndex = 7;
+            this.NinjaDancingEdge.Text = "Dancing Edge";
+            this.NinjaDancingEdge.UseVisualStyleBackColor = true;
+            this.NinjaDancingEdge.CheckedChanged += new System.EventHandler(this.NinjaDancingEdge_CheckedChanged);
+            // 
+            // NinjaNinjutsuGroup
+            // 
+            this.NinjaNinjutsuGroup.Controls.Add(this.NinjaRaiton);
+            this.NinjaNinjutsuGroup.Controls.Add(this.NinjaFumaShuriken);
+            this.NinjaNinjutsuGroup.ForeColor = System.Drawing.Color.White;
+            this.NinjaNinjutsuGroup.Location = new System.Drawing.Point(34, 216);
+            this.NinjaNinjutsuGroup.Name = "NinjaNinjutsuGroup";
+            this.NinjaNinjutsuGroup.Size = new System.Drawing.Size(108, 65);
+            this.NinjaNinjutsuGroup.TabIndex = 41;
+            this.NinjaNinjutsuGroup.TabStop = false;
+            this.NinjaNinjutsuGroup.Text = "Ninjutsu";
+            // 
+            // NinjaRaiton
+            // 
+            this.NinjaRaiton.AutoSize = true;
+            this.NinjaRaiton.ForeColor = System.Drawing.Color.White;
+            this.NinjaRaiton.Location = new System.Drawing.Point(6, 19);
+            this.NinjaRaiton.Name = "NinjaRaiton";
+            this.NinjaRaiton.Size = new System.Drawing.Size(56, 17);
+            this.NinjaRaiton.TabIndex = 24;
+            this.NinjaRaiton.TabStop = true;
+            this.NinjaRaiton.Text = "Raiton";
+            this.NinjaRaiton.UseVisualStyleBackColor = true;
+            this.NinjaRaiton.CheckedChanged += new System.EventHandler(this.NinjaRaiton_CheckedChanged);
+            // 
+            // NinjaFumaShuriken
+            // 
+            this.NinjaFumaShuriken.AutoSize = true;
+            this.NinjaFumaShuriken.ForeColor = System.Drawing.Color.White;
+            this.NinjaFumaShuriken.Location = new System.Drawing.Point(6, 42);
+            this.NinjaFumaShuriken.Name = "NinjaFumaShuriken";
+            this.NinjaFumaShuriken.Size = new System.Drawing.Size(96, 17);
+            this.NinjaFumaShuriken.TabIndex = 25;
+            this.NinjaFumaShuriken.TabStop = true;
+            this.NinjaFumaShuriken.Text = "Fuma Shuriken";
+            this.NinjaFumaShuriken.UseVisualStyleBackColor = true;
+            this.NinjaFumaShuriken.CheckedChanged += new System.EventHandler(this.NinjaFumaShuriken_CheckedChanged);
             // 
             // NinjaExecuteGroup
             // 
@@ -8155,6 +8229,29 @@
             this.BlackMageQuellingStrikes.UseVisualStyleBackColor = true;
             this.BlackMageQuellingStrikes.CheckedChanged += new System.EventHandler(this.BlackMageQuellingStrikes_CheckedChanged);
             // 
+            // RogueDebuffGroup
+            // 
+            this.RogueDebuffGroup.Controls.Add(this.RogueDancingEdge);
+            this.RogueDebuffGroup.ForeColor = System.Drawing.Color.White;
+            this.RogueDebuffGroup.Location = new System.Drawing.Point(218, 309);
+            this.RogueDebuffGroup.Name = "RogueDebuffGroup";
+            this.RogueDebuffGroup.Size = new System.Drawing.Size(106, 42);
+            this.RogueDebuffGroup.TabIndex = 23;
+            this.RogueDebuffGroup.TabStop = false;
+            this.RogueDebuffGroup.Text = "Debuff";
+            // 
+            // RogueDancingEdge
+            // 
+            this.RogueDancingEdge.AutoSize = true;
+            this.RogueDancingEdge.ForeColor = System.Drawing.Color.White;
+            this.RogueDancingEdge.Location = new System.Drawing.Point(6, 19);
+            this.RogueDancingEdge.Name = "RogueDancingEdge";
+            this.RogueDancingEdge.Size = new System.Drawing.Size(94, 17);
+            this.RogueDancingEdge.TabIndex = 7;
+            this.RogueDancingEdge.Text = "Dancing Edge";
+            this.RogueDancingEdge.UseVisualStyleBackColor = true;
+            this.RogueDancingEdge.CheckedChanged += new System.EventHandler(this.RogueDancingEdge_CheckedChanged);
+            // 
             // UltimaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -8433,6 +8530,10 @@
             this.RogueConjurerGroup.ResumeLayout(false);
             this.RogueConjurerGroup.PerformLayout();
             this.NinjaSettings.ResumeLayout(false);
+            this.NinjaDebuffGroup.ResumeLayout(false);
+            this.NinjaDebuffGroup.PerformLayout();
+            this.NinjaNinjutsuGroup.ResumeLayout(false);
+            this.NinjaNinjutsuGroup.PerformLayout();
             this.NinjaExecuteGroup.ResumeLayout(false);
             this.NinjaExecuteGroup.PerformLayout();
             this.NinjaInterruptGroup.ResumeLayout(false);
@@ -8468,6 +8569,8 @@
             this.BlackMageArcanistGroup.PerformLayout();
             this.BlackMageArcherGroup.ResumeLayout(false);
             this.BlackMageArcherGroup.PerformLayout();
+            this.RogueDebuffGroup.ResumeLayout(false);
+            this.RogueDebuffGroup.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -9041,5 +9144,12 @@
         private System.Windows.Forms.CheckBox RogueAssassinate;
         private Design.GroupBoxDesign NinjaExecuteGroup;
         private System.Windows.Forms.CheckBox NinjaAssassinate;
+        private Design.GroupBoxDesign NinjaNinjutsuGroup;
+        private System.Windows.Forms.RadioButton NinjaRaiton;
+        private System.Windows.Forms.RadioButton NinjaFumaShuriken;
+        private Design.GroupBoxDesign NinjaDebuffGroup;
+        private System.Windows.Forms.CheckBox NinjaDancingEdge;
+        private Design.GroupBoxDesign RogueDebuffGroup;
+        private System.Windows.Forms.CheckBox RogueDancingEdge;
     }
 }

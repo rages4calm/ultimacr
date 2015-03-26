@@ -1072,6 +1072,9 @@ namespace UltimaCR.Settings
         [Setting, DefaultValue(true)]
         public bool RogueAssassinate { get; set; }
 
+        [Setting, DefaultValue(true)]
+        public bool RogueDancingEdge { get; set; }
+
         #endregion
 
         #region Thaumaturge Settings
@@ -1413,6 +1416,15 @@ namespace UltimaCR.Settings
 
         [Setting, DefaultValue(true)]
         public bool NinjaAssassinate { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool NinjaRaiton { get; set; }
+
+        [Setting, DefaultValue(false)]
+        public bool NinjaFumaShuriken { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool NinjaDancingEdge { get; set; }
 
         #endregion
 

@@ -243,7 +243,7 @@ namespace UltimaCR.Spells.Main
                                Name = "Kassatsu",
                                ID = 2264,
                                Level = 50,
-                               GCDType = GCDType.On,
+                               GCDType = GCDType.Off,
                                SpellType = SpellType.Buff,
                                CastType = CastType.Self
                            });

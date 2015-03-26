@@ -51,9 +51,13 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Mutilate()
         {
-            if (!Core.Player.CurrentTarget.HasAura("Mutilation", true, 6000))
+            if (Core.Player.ClassLevel < MySpells.ShadowFang.Level ||
+                Core.Player.CurrentTarget.HasAura(MySpells.ShadowFang.Name, true, 4000))
             {
-                return await MySpells.Mutilate.Cast();
+                if (!Core.Player.CurrentTarget.HasAura("Mutilation", true, 4000))
+                {
+                    return await MySpells.Mutilate.Cast();
+                }
             }
             return false;
         }
@@ -125,12 +129,15 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> DancingEdge()
         {
-            if (!Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, true, 8000) &&
-                !Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, false, 8000) &&
-                !Core.Player.CurrentTarget.HasAura("Storm's Eye", false, 8000) &&
-                Actionmanager.LastSpell.Name == MySpells.GustSlash.Name)
+            if (Ultima.UltSettings.RogueDancingEdge)
             {
-                return await MySpells.DancingEdge.Cast();
+                if (!Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, true, 6000) &&
+                    !Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, false, 6000) &&
+                    !Core.Player.CurrentTarget.HasAura("Storm's Eye", false, 6000) &&
+                    Actionmanager.LastSpell.Name == MySpells.GustSlash.Name)
+                {
+                    return await MySpells.DancingEdge.Cast();
+                }
             }
             return false;
         }
@@ -142,10 +149,16 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> ShadowFang()
         {
-            if (!Core.Player.CurrentTarget.HasAura(MySpells.ShadowFang.Name, true, 6000) &&
-                Actionmanager.LastSpell.Name == MySpells.SpinningEdge.Name)
+            if (Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, true, 6000) ||
+                Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, false, 6000) ||
+                Core.Player.CurrentTarget.HasAura("Storm's Eye", false, 6000) ||
+                !Ultima.UltSettings.RogueDancingEdge)
             {
-                return await MySpells.ShadowFang.Cast();
+                if (!Core.Player.CurrentTarget.HasAura(MySpells.ShadowFang.Name, true, 4000) &&
+                    Actionmanager.LastSpell.Name == MySpells.SpinningEdge.Name)
+                {
+                    return await MySpells.ShadowFang.Cast();
+                }
             }
             return false;
         }
