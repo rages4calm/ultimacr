@@ -88,7 +88,8 @@ namespace UltimaCR.Rotations
         public override async Task<bool> CombatBuffLvL30()
         {
             if (await Ultima.SummonChocobo()) return true;
-            return await KissOfTheViper();
+            if (await KissOfTheViper()) return true;
+            return await KissOfTheWasp();
         }
 
         public override async Task<bool> CombatBuffLvL32()

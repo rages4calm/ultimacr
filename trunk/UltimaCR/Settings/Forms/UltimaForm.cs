@@ -752,6 +752,8 @@ namespace UltimaCR.Settings.Forms
             RogueJugulate.Checked = Ultima.UltSettings.RogueJugulate;
             RogueAssassinate.Checked = Ultima.UltSettings.RogueAssassinate;
             RogueDancingEdge.Checked = Ultima.UltSettings.RogueDancingEdge;
+            RogueKissOfTheWasp.Checked = Ultima.UltSettings.RogueKissOfTheWasp;
+            RogueKissOfTheViper.Checked = Ultima.UltSettings.RogueKissOfTheViper;
 
             #endregion
 
@@ -953,6 +955,8 @@ namespace UltimaCR.Settings.Forms
             NinjaAssassinate.Checked = Ultima.UltSettings.NinjaAssassinate;
             NinjaRaiton.Checked = Ultima.UltSettings.NinjaRaiton;
             NinjaFumaShuriken.Checked = Ultima.UltSettings.NinjaFumaShuriken;
+            NinjaKissOfTheWasp.Checked = Ultima.UltSettings.NinjaKissOfTheWasp;
+            NinjaKissOfTheViper.Checked = Ultima.UltSettings.NinjaKissOfTheViper;
             NinjaDancingEdge.Checked = Ultima.UltSettings.NinjaDancingEdge;
 
             #endregion
@@ -2690,6 +2694,15 @@ namespace UltimaCR.Settings.Forms
         {
             Ultima.UltSettings.RogueDancingEdge = RogueDancingEdge.Checked;
         }
+        private void RogueKissOfTheWasp_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.RogueKissOfTheWasp = RogueKissOfTheWasp.Checked;
+        }
+
+        private void RogueKissOfTheViper_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.RogueKissOfTheViper = RogueKissOfTheViper.Checked;
+        }
 
         #endregion
 
@@ -3210,6 +3223,16 @@ namespace UltimaCR.Settings.Forms
         private void NinjaDancingEdge_CheckedChanged(object sender, EventArgs e)
         {
             Ultima.UltSettings.NinjaDancingEdge = NinjaDancingEdge.Checked;
+        }
+
+        private void NinjaKissOfTheWasp_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.NinjaKissOfTheWasp = NinjaKissOfTheWasp.Checked;
+        }
+
+        private void NinjaKissOfTheViper_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.NinjaKissOfTheViper = NinjaKissOfTheViper.Checked;
         }
 
         #endregion
