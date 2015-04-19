@@ -99,32 +99,7 @@ namespace UltimaCR
             {
                 return new[]
                 {
-                    #region Combat
-                    ClassJobType.Arcanist, ClassJobType.Scholar, ClassJobType.Summoner,
-                    ClassJobType.Archer, ClassJobType.Bard,
-                    ClassJobType.Conjurer, ClassJobType.WhiteMage,
-                    ClassJobType.Gladiator, ClassJobType.Paladin,
-                    ClassJobType.Lancer, ClassJobType.Dragoon,
-                    ClassJobType.Marauder, ClassJobType.Warrior,
-                    ClassJobType.Pugilist, ClassJobType.Monk,
-                    ClassJobType.Thaumaturge, ClassJobType.BlackMage,
-                    ClassJobType.Rogue, ClassJobType.Ninja,
-                    #endregion
-                    #region Crafting
-                    ClassJobType.Alchemist,
-                    ClassJobType.Armorer,
-                    ClassJobType.Blacksmith,
-                    ClassJobType.Carpenter,
-                    ClassJobType.Culinarian,
-                    ClassJobType.Goldsmith,
-                    ClassJobType.Leatherworker,
-                    ClassJobType.Weaver,
-                    #endregion
-                    #region Gathering
-                    ClassJobType.Botanist,
-                    ClassJobType.Fisher,
-                    ClassJobType.Miner
-                    #endregion
+                    Core.Me.CurrentJob
                 };
             }
         }
