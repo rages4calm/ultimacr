@@ -18,7 +18,7 @@ namespace UltimaCR.Rotations
 
         public override float PullRange
         {
-            get { return 15.0f; }
+            get { return 3.0f; }
         }
 
         #region Class Spells
