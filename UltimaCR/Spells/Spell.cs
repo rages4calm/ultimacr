@@ -93,8 +93,7 @@ namespace UltimaCR.Spells
             #region Ninjutsu Exception
             if (SpellType == SpellType.Ninjutsu)
             {
-                if (BotManager.Current.IsAutonomous &&
-                    Core.Player.HasTarget)
+                if (BotManager.Current.IsAutonomous)
                 {
                     switch (Actionmanager.InSpellInRangeLOS(2247, target))
                     {
@@ -131,8 +130,7 @@ namespace UltimaCR.Spells
             #endregion
 
             #region Player Movement
-            if (BotManager.Current.IsAutonomous &&
-                Core.Player.HasTarget)
+            if (BotManager.Current.IsAutonomous)
             {
                 switch (Actionmanager.InSpellInRangeLOS(ID, target))
                 {

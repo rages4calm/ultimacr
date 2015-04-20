@@ -84,7 +84,8 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> ThrowingDagger()
         {
-            if (Core.Player.Distance(Core.Player.CurrentTarget) >= 10)
+            if (Core.Player.HasTarget &&
+                Core.Player.Distance(Core.Player.CurrentTarget) >= 10)
             {
                 return await MySpells.ThrowingDagger.Cast();
             }
@@ -291,6 +292,7 @@ namespace UltimaCR.Rotations
         private async Task<bool> Shukuchi()
         {
             if (Ultima.UltSettings.NinjaShukuchi &&
+                Core.Player.HasTarget &&
                 Core.Player.Distance(Core.Player.CurrentTarget) >= 10)
             {
                 return await MySpells.Shukuchi.Cast();
@@ -314,6 +316,7 @@ namespace UltimaCR.Rotations
             {
                 if (Actionmanager.CanCast(MySpells.Ten.ID, Core.Player) &&
                     DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds >= 1000 &&
+                    Core.Player.HasTarget &&
                     Core.Player.CurrentTarget.Type == GameObjectType.BattleNpc &&
                     Core.Player.CurrentTarget.InLineOfSight() &&
                     Core.Player.Distance(Core.Player.CurrentTarget) <= 25 ||
@@ -345,6 +348,7 @@ namespace UltimaCR.Rotations
         {
             if (Actionmanager.CanCast(MySpells.Chi.ID, Core.Player) &&
                 DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds >= 1000 &&
+                Core.Player.HasTarget &&
                 Core.Player.CurrentTarget.Type == GameObjectType.BattleNpc &&
                 Core.Player.CurrentTarget.InLineOfSight() &&
                 Core.Player.Distance(Core.Player.CurrentTarget) <= 15 ||
@@ -384,6 +388,7 @@ namespace UltimaCR.Rotations
             {
                 if (Actionmanager.CanCast(MySpells.Chi.ID, Core.Player) &&
                     DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds >= 1000 &&
+                    Core.Player.HasTarget &&
                     Core.Player.CurrentTarget.Type == GameObjectType.BattleNpc &&
                     Core.Player.CurrentTarget.InLineOfSight() &&
                     Core.Player.Distance(Core.Player.CurrentTarget) <= 15 ||
@@ -422,6 +427,7 @@ namespace UltimaCR.Rotations
         {
             if (Actionmanager.CanCast(MySpells.Jin.ID, Core.Player) &&
                 DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds >= 1000 &&
+                Core.Player.HasTarget &&
                 Core.Player.CurrentTarget.Type == GameObjectType.BattleNpc &&
                 Core.Player.CurrentTarget.InLineOfSight() &&
                 Core.Player.Distance(Core.Player.CurrentTarget) <= 25 ||
@@ -544,6 +550,7 @@ namespace UltimaCR.Rotations
             if (Actionmanager.CanCast(MySpells.Jin.ID, Core.Player) &&
                 DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds >= 1000 &&
                 DataManager.GetSpellData(MySpells.TrickAttack.ID).Cooldown.TotalMilliseconds == 0 &&
+                Core.Player.HasTarget &&
                 !Core.Player.CurrentTarget.HasAura(MySpells.TrickAttack.Name, true, 3000) &&
                 !Core.Player.CurrentTarget.HasAura(MySpells.TrickAttack.Name, false, 3000) &&
                 Core.Player.CurrentTarget.Type == GameObjectType.BattleNpc &&

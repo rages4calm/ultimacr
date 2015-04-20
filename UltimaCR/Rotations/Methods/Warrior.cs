@@ -70,7 +70,8 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Tomahawk()
         {
-            if (Core.Player.Distance(Core.Player.CurrentTarget) >= 10)
+            if (Core.Player.HasTarget &&
+                Core.Player.Distance(Core.Player.CurrentTarget) >= 10)
             {
                 return await MySpells.Tomahawk.Cast();
             }
