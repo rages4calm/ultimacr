@@ -11,15 +11,19 @@ namespace UltimaCR.Rotations
     {
         public override async Task<bool> Rest()
         {
-            if (Core.Player.CurrentHealthPercent < 70 ||
-                Core.Player.CurrentManaPercent < 50)
+            if (!WorldManager.InSanctuary &&
+                !Core.Player.HasAura("Sprint"))
             {
-                if (MovementManager.IsMoving)
+                if (Core.Player.CurrentHealthPercent < 70 ||
+                    Core.Player.CurrentManaPercent < 50)
                 {
-                    Navigator.PlayerMover.MoveStop();
+                    if (MovementManager.IsMoving)
+                    {
+                        Navigator.PlayerMover.MoveStop();
+                    }
+                    Logging.Write(Colors.Yellow, @"[Ultima] Resting...");
+                    return true;
                 }
-                Logging.Write(Colors.Yellow, @"[Ultima] Resting...");
-                return true;
             }
             return false;
         }

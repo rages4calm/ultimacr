@@ -156,6 +156,10 @@ namespace UltimaCR.Spells
                 {
                     Navigator.PlayerMover.MoveStop();
                 }
+                if (Core.Player.IsMounted)
+                {
+                    Actionmanager.Dismount();
+                }
             }
             #endregion
 
