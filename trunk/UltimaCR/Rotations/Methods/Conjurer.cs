@@ -74,7 +74,8 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> FluidAura()
         {
-            if (Core.Player.Distance(Core.Player.CurrentTarget) <= 5)
+            if (Core.Player.HasTarget &&
+                Core.Player.Distance(Core.Player.CurrentTarget) <= 5)
             {
                 return await MySpells.FluidAura.Cast();
             }
