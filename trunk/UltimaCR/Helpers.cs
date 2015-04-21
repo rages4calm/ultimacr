@@ -1,4 +1,5 @@
 ﻿using ff14bot;
+using ff14bot.Managers;
 using ff14bot.Objects;
 using System;
 using System.Collections.Generic;
@@ -48,18 +49,31 @@ namespace UltimaCR
                 dic.Remove(key);
             }
         }
+        public static bool IsEnemy(this BattleCharacter bc)
+        {
+           return bc != null &&
+               GameObjectManager.Attackers.Contains(bc) &&
+               !bc.IsDead &&
+               bc.CanAttack &&
+               bc.IsTargetable;
+        }
 
-/*
         private static IEnumerable<BattleCharacter> EnemyUnit
         {
             get
             {
                 return
                     GameObjectManager.GetObjectsOfType<BattleCharacter>()
-                        .Where(u => !u.IsDead && u.CanAttack && u.IsTargetable);
+                        .Where(u => u.IsEnemy());
             }
         }
-*/
+        public static bool PlayerTargeted
+        {
+            get
+            {
+                return EnemyUnit.All(u => u.CurrentTargetId == Core.Me.ObjectId);
+            }
+        }
 
 /*
         public static int AoETargets(float range)

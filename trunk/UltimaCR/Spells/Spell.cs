@@ -155,10 +155,10 @@ namespace UltimaCR.Spells
                     Core.Player.IsFacing(target))
                 {
                     Navigator.PlayerMover.MoveStop();
-                }
-                if (Core.Player.IsMounted)
-                {
-                    Actionmanager.Dismount();
+                    if (Core.Player.IsMounted)
+                    {
+                        Actionmanager.Dismount();
+                    }
                 }
             }
             #endregion
