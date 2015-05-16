@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
-using System.Linq;
-using System.Reflection;
-using System.Resources;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using UltimaCR.Properties;
 using MouseEventArgs = System.Windows.Forms.MouseEventArgs;
 
 namespace UltimaCR.Settings.Forms
@@ -16,66 +12,13 @@ namespace UltimaCR.Settings.Forms
     {
         #region Images
 
-        #region Ultima Banner
-
-        private static Bitmap _ultimabannerimage;
-
-        private static Bitmap UltimaBannerImage
-        {
-            get { return _ultimabannerimage ?? (_ultimabannerimage = GetUltimaBannerImage()); }
-        }
-
-        private static Bitmap GetUltimaBannerImage()
-        {
-            const string resourceLocation = "Resources.resources";
-
-            var images = new Dictionary<string, Bitmap>();
-            var set = new ResourceSet(Assembly.GetExecutingAssembly().GetManifestResourceStream(resourceLocation));
-            foreach (var img in set.Cast<DictionaryEntry>())
-            {
-                var value = img.Value as Bitmap;
-                if (value != null)
-                {
-                    images.Add(img.Key.ToString(), value);
-                }
-            }
-            return images.ContainsKey("UltimaBannerImage") ? new Bitmap(images["UltimaBannerImage"]) : new Bitmap(0, 0);
-        }
-
-        #endregion
-
-        #region Ultima Donate
-
-        private static Bitmap _ultimadonateimage;
-
-        private static Bitmap UltimaDonateImage
-        {
-            get { return _ultimadonateimage ?? (_ultimadonateimage = GetUltimaDonateImage()); }
-        }
-
-        private static Bitmap GetUltimaDonateImage()
-        {
-            const string resourceLocation = "Resources.resources";
-
-            var images = new Dictionary<string, Bitmap>();
-            var set = new ResourceSet(Assembly.GetExecutingAssembly().GetManifestResourceStream(resourceLocation));
-            foreach (var img in set.Cast<DictionaryEntry>())
-            {
-                var value = img.Value as Bitmap;
-                if (value != null)
-                {
-                    images.Add(img.Key.ToString(), value);
-                }
-            }
-            return images.ContainsKey("UltimaDonateImage") ? new Bitmap(images["UltimaDonateImage"]) : new Bitmap(0, 0);
-        }
+        private Image UltimaBannerImage = Resources.UltimaBannerImage;
+        private Image UltimaDonateImage = Resources.UltimaDonateImage;
 
         private void UltimaDonateBox_Click(object sender, EventArgs e)
         {
             Process.Start("https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=3EN6H5PB7W7QW&lc=US&item_name=Ultima%20Combat%20Routine&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted");
         }
-
-        #endregion
 
         #endregion
 

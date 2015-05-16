@@ -84,8 +84,7 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> ThrowingDagger()
         {
-            if (Core.Player.HasTarget &&
-                Core.Player.Distance(Core.Player.CurrentTarget) >= 10)
+            if (Core.Player.TargetDistance(10))
             {
                 return await MySpells.ThrowingDagger.Cast();
             }
@@ -292,8 +291,7 @@ namespace UltimaCR.Rotations
         private async Task<bool> Shukuchi()
         {
             if (Ultima.UltSettings.NinjaShukuchi &&
-                Core.Player.HasTarget &&
-                Core.Player.Distance(Core.Player.CurrentTarget) >= 10)
+                Core.Player.TargetDistance(10))
             {
                 return await MySpells.Shukuchi.Cast();
             }
@@ -316,10 +314,9 @@ namespace UltimaCR.Rotations
             {
                 if (Actionmanager.CanCast(MySpells.Ten.ID, Core.Player) &&
                     DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds >= 1000 &&
-                    Core.Player.HasTarget &&
+                    Core.Player.TargetDistance(25, false) &&
                     Core.Player.CurrentTarget.Type == GameObjectType.BattleNpc &&
-                    Core.Player.CurrentTarget.InLineOfSight() &&
-                    Core.Player.Distance(Core.Player.CurrentTarget) <= 25 ||
+                    Core.Player.CurrentTarget.InLineOfSight() ||
                     Core.Player.HasAura("Mudra"))
                 {
                     if (Ultima.LastSpell.ID != MySpells.Ten.ID &&
@@ -348,10 +345,9 @@ namespace UltimaCR.Rotations
         {
             if (Actionmanager.CanCast(MySpells.Chi.ID, Core.Player) &&
                 DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds >= 1000 &&
-                Core.Player.HasTarget &&
+                Core.Player.TargetDistance(15, false) &&
                 Core.Player.CurrentTarget.Type == GameObjectType.BattleNpc &&
-                Core.Player.CurrentTarget.InLineOfSight() &&
-                Core.Player.Distance(Core.Player.CurrentTarget) <= 15 ||
+                Core.Player.CurrentTarget.InLineOfSight() ||
                 Core.Player.HasAura("Mudra"))
             {
                 if (Ultima.LastSpell.ID != MySpells.Ten.ID &&
@@ -388,10 +384,9 @@ namespace UltimaCR.Rotations
             {
                 if (Actionmanager.CanCast(MySpells.Chi.ID, Core.Player) &&
                     DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds >= 1000 &&
-                    Core.Player.HasTarget &&
+                    Core.Player.TargetDistance(15, false) &&
                     Core.Player.CurrentTarget.Type == GameObjectType.BattleNpc &&
-                    Core.Player.CurrentTarget.InLineOfSight() &&
-                    Core.Player.Distance(Core.Player.CurrentTarget) <= 15 ||
+                    Core.Player.CurrentTarget.InLineOfSight() ||
                     Core.Player.HasAura("Mudra"))
                 {
                     if (Ultima.LastSpell.ID != MySpells.Ten.ID &&
@@ -427,10 +422,9 @@ namespace UltimaCR.Rotations
         {
             if (Actionmanager.CanCast(MySpells.Jin.ID, Core.Player) &&
                 DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds >= 1000 &&
-                Core.Player.HasTarget &&
+                Core.Player.TargetDistance(25, false) &&
                 Core.Player.CurrentTarget.Type == GameObjectType.BattleNpc &&
-                Core.Player.CurrentTarget.InLineOfSight() &&
-                Core.Player.Distance(Core.Player.CurrentTarget) <= 25 ||
+                Core.Player.CurrentTarget.InLineOfSight() ||
                 Core.Player.HasAura("Mudra"))
             {
                 if (Ultima.LastSpell.ID != MySpells.Ten.ID &&

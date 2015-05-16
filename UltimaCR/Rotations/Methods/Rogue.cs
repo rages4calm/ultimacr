@@ -82,8 +82,7 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> ThrowingDagger()
         {
-            if (Core.Player.HasTarget &&
-                Core.Player.Distance(Core.Player.CurrentTarget) >= 10)
+            if (Core.Player.TargetDistance(10))
             {
                 return await MySpells.ThrowingDagger.Cast();
             }

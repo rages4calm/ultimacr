@@ -482,6 +482,9 @@
             this.RogueTab = new System.Windows.Forms.TabPage();
             this.RogueSubTab = new UltimaCR.Settings.Forms.Design.TabDesign();
             this.RogueSettings = new System.Windows.Forms.TabPage();
+            this.RogueAuraGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.RogueKissOfTheWasp = new System.Windows.Forms.RadioButton();
+            this.RogueKissOfTheViper = new System.Windows.Forms.RadioButton();
             this.RogueDebuffGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.RogueDancingEdge = new System.Windows.Forms.CheckBox();
             this.RogueExecuteGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
@@ -605,9 +608,6 @@
             this.BlackMageRagingStrikes = new System.Windows.Forms.CheckBox();
             this.BlackMageHawksEye = new System.Windows.Forms.CheckBox();
             this.BlackMageQuellingStrikes = new System.Windows.Forms.CheckBox();
-            this.RogueAuraGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
-            this.RogueKissOfTheWasp = new System.Windows.Forms.RadioButton();
-            this.RogueKissOfTheViper = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.UltimaBanner)).BeginInit();
             this.ClassTab.SuspendLayout();
             this.UltimaTab.SuspendLayout();
@@ -753,6 +753,7 @@
             this.RogueTab.SuspendLayout();
             this.RogueSubTab.SuspendLayout();
             this.RogueSettings.SuspendLayout();
+            this.RogueAuraGroup.SuspendLayout();
             this.RogueDebuffGroup.SuspendLayout();
             this.RogueExecuteGroup.SuspendLayout();
             this.RogueInterruptGroup.SuspendLayout();
@@ -790,7 +791,6 @@
             this.BlackMageCrossGroup.SuspendLayout();
             this.BlackMageArcanistGroup.SuspendLayout();
             this.BlackMageArcherGroup.SuspendLayout();
-            this.RogueAuraGroup.SuspendLayout();
             this.SuspendLayout();
             // 
             // CloseButton
@@ -2481,7 +2481,7 @@
             this.BardSettings.Location = new System.Drawing.Point(114, 4);
             this.BardSettings.Margin = new System.Windows.Forms.Padding(0);
             this.BardSettings.Name = "BardSettings";
-            this.BardSettings.Size = new System.Drawing.Size(567, 357);
+            this.BardSettings.Size = new System.Drawing.Size(567, 387);
             this.BardSettings.TabIndex = 1;
             this.BardSettings.Text = "Bard";
             this.BardSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -3193,7 +3193,7 @@
             this.WhiteMageSettings.Location = new System.Drawing.Point(114, 4);
             this.WhiteMageSettings.Margin = new System.Windows.Forms.Padding(0);
             this.WhiteMageSettings.Name = "WhiteMageSettings";
-            this.WhiteMageSettings.Size = new System.Drawing.Size(567, 357);
+            this.WhiteMageSettings.Size = new System.Drawing.Size(567, 387);
             this.WhiteMageSettings.TabIndex = 1;
             this.WhiteMageSettings.Text = "White Mage";
             this.WhiteMageSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -3951,7 +3951,7 @@
             this.PaladinSettings.Location = new System.Drawing.Point(114, 4);
             this.PaladinSettings.Margin = new System.Windows.Forms.Padding(0);
             this.PaladinSettings.Name = "PaladinSettings";
-            this.PaladinSettings.Size = new System.Drawing.Size(567, 357);
+            this.PaladinSettings.Size = new System.Drawing.Size(567, 387);
             this.PaladinSettings.TabIndex = 1;
             this.PaladinSettings.Text = "Paladin";
             this.PaladinSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -4748,7 +4748,7 @@
             this.DragoonSettings.Location = new System.Drawing.Point(114, 4);
             this.DragoonSettings.Margin = new System.Windows.Forms.Padding(0);
             this.DragoonSettings.Name = "DragoonSettings";
-            this.DragoonSettings.Size = new System.Drawing.Size(567, 357);
+            this.DragoonSettings.Size = new System.Drawing.Size(567, 387);
             this.DragoonSettings.TabIndex = 1;
             this.DragoonSettings.Text = "Dragoon";
             this.DragoonSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -5634,7 +5634,7 @@
             this.WarriorSettings.Location = new System.Drawing.Point(114, 4);
             this.WarriorSettings.Margin = new System.Windows.Forms.Padding(0);
             this.WarriorSettings.Name = "WarriorSettings";
-            this.WarriorSettings.Size = new System.Drawing.Size(567, 357);
+            this.WarriorSettings.Size = new System.Drawing.Size(567, 387);
             this.WarriorSettings.TabIndex = 1;
             this.WarriorSettings.Text = "Warrior";
             this.WarriorSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -6456,7 +6456,7 @@
             this.MonkSettings.Location = new System.Drawing.Point(114, 4);
             this.MonkSettings.Margin = new System.Windows.Forms.Padding(0);
             this.MonkSettings.Name = "MonkSettings";
-            this.MonkSettings.Size = new System.Drawing.Size(567, 357);
+            this.MonkSettings.Size = new System.Drawing.Size(567, 387);
             this.MonkSettings.TabIndex = 1;
             this.MonkSettings.Text = "Monk";
             this.MonkSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -6703,6 +6703,44 @@
             this.RogueSettings.TabIndex = 0;
             this.RogueSettings.Text = "Rogue";
             this.RogueSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
+            // 
+            // RogueAuraGroup
+            // 
+            this.RogueAuraGroup.Controls.Add(this.RogueKissOfTheWasp);
+            this.RogueAuraGroup.Controls.Add(this.RogueKissOfTheViper);
+            this.RogueAuraGroup.ForeColor = System.Drawing.Color.White;
+            this.RogueAuraGroup.Location = new System.Drawing.Point(330, 309);
+            this.RogueAuraGroup.Name = "RogueAuraGroup";
+            this.RogueAuraGroup.Size = new System.Drawing.Size(117, 65);
+            this.RogueAuraGroup.TabIndex = 43;
+            this.RogueAuraGroup.TabStop = false;
+            this.RogueAuraGroup.Text = "Aura";
+            // 
+            // RogueKissOfTheWasp
+            // 
+            this.RogueKissOfTheWasp.AutoSize = true;
+            this.RogueKissOfTheWasp.ForeColor = System.Drawing.Color.White;
+            this.RogueKissOfTheWasp.Location = new System.Drawing.Point(6, 19);
+            this.RogueKissOfTheWasp.Name = "RogueKissOfTheWasp";
+            this.RogueKissOfTheWasp.Size = new System.Drawing.Size(105, 17);
+            this.RogueKissOfTheWasp.TabIndex = 24;
+            this.RogueKissOfTheWasp.TabStop = true;
+            this.RogueKissOfTheWasp.Text = "Kiss of the Wasp";
+            this.RogueKissOfTheWasp.UseVisualStyleBackColor = true;
+            this.RogueKissOfTheWasp.CheckedChanged += new System.EventHandler(this.RogueKissOfTheWasp_CheckedChanged);
+            // 
+            // RogueKissOfTheViper
+            // 
+            this.RogueKissOfTheViper.AutoSize = true;
+            this.RogueKissOfTheViper.ForeColor = System.Drawing.Color.White;
+            this.RogueKissOfTheViper.Location = new System.Drawing.Point(6, 42);
+            this.RogueKissOfTheViper.Name = "RogueKissOfTheViper";
+            this.RogueKissOfTheViper.Size = new System.Drawing.Size(101, 17);
+            this.RogueKissOfTheViper.TabIndex = 25;
+            this.RogueKissOfTheViper.TabStop = true;
+            this.RogueKissOfTheViper.Text = "Kiss of the Viper";
+            this.RogueKissOfTheViper.UseVisualStyleBackColor = true;
+            this.RogueKissOfTheViper.CheckedChanged += new System.EventHandler(this.RogueKissOfTheViper_CheckedChanged);
             // 
             // RogueDebuffGroup
             // 
@@ -7343,7 +7381,7 @@
             this.NinjaSettings.Location = new System.Drawing.Point(114, 4);
             this.NinjaSettings.Margin = new System.Windows.Forms.Padding(0);
             this.NinjaSettings.Name = "NinjaSettings";
-            this.NinjaSettings.Size = new System.Drawing.Size(567, 357);
+            this.NinjaSettings.Size = new System.Drawing.Size(567, 387);
             this.NinjaSettings.TabIndex = 1;
             this.NinjaSettings.Text = "Ninja";
             this.NinjaSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -8166,7 +8204,7 @@
             this.BlackMageSettings.Location = new System.Drawing.Point(114, 4);
             this.BlackMageSettings.Margin = new System.Windows.Forms.Padding(0);
             this.BlackMageSettings.Name = "BlackMageSettings";
-            this.BlackMageSettings.Size = new System.Drawing.Size(567, 357);
+            this.BlackMageSettings.Size = new System.Drawing.Size(567, 387);
             this.BlackMageSettings.TabIndex = 1;
             this.BlackMageSettings.Text = "Black Mage";
             this.BlackMageSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -8299,44 +8337,6 @@
             this.BlackMageQuellingStrikes.Text = "Quelling Strikes";
             this.BlackMageQuellingStrikes.UseVisualStyleBackColor = true;
             this.BlackMageQuellingStrikes.CheckedChanged += new System.EventHandler(this.BlackMageQuellingStrikes_CheckedChanged);
-            // 
-            // RogueAuraGroup
-            // 
-            this.RogueAuraGroup.Controls.Add(this.RogueKissOfTheWasp);
-            this.RogueAuraGroup.Controls.Add(this.RogueKissOfTheViper);
-            this.RogueAuraGroup.ForeColor = System.Drawing.Color.White;
-            this.RogueAuraGroup.Location = new System.Drawing.Point(330, 309);
-            this.RogueAuraGroup.Name = "RogueAuraGroup";
-            this.RogueAuraGroup.Size = new System.Drawing.Size(117, 65);
-            this.RogueAuraGroup.TabIndex = 43;
-            this.RogueAuraGroup.TabStop = false;
-            this.RogueAuraGroup.Text = "Aura";
-            // 
-            // RogueKissOfTheWasp
-            // 
-            this.RogueKissOfTheWasp.AutoSize = true;
-            this.RogueKissOfTheWasp.ForeColor = System.Drawing.Color.White;
-            this.RogueKissOfTheWasp.Location = new System.Drawing.Point(6, 19);
-            this.RogueKissOfTheWasp.Name = "RogueKissOfTheWasp";
-            this.RogueKissOfTheWasp.Size = new System.Drawing.Size(105, 17);
-            this.RogueKissOfTheWasp.TabIndex = 24;
-            this.RogueKissOfTheWasp.TabStop = true;
-            this.RogueKissOfTheWasp.Text = "Kiss of the Wasp";
-            this.RogueKissOfTheWasp.UseVisualStyleBackColor = true;
-            this.RogueKissOfTheWasp.CheckedChanged += new System.EventHandler(this.RogueKissOfTheWasp_CheckedChanged);
-            // 
-            // RogueKissOfTheViper
-            // 
-            this.RogueKissOfTheViper.AutoSize = true;
-            this.RogueKissOfTheViper.ForeColor = System.Drawing.Color.White;
-            this.RogueKissOfTheViper.Location = new System.Drawing.Point(6, 42);
-            this.RogueKissOfTheViper.Name = "RogueKissOfTheViper";
-            this.RogueKissOfTheViper.Size = new System.Drawing.Size(101, 17);
-            this.RogueKissOfTheViper.TabIndex = 25;
-            this.RogueKissOfTheViper.TabStop = true;
-            this.RogueKissOfTheViper.Text = "Kiss of the Viper";
-            this.RogueKissOfTheViper.UseVisualStyleBackColor = true;
-            this.RogueKissOfTheViper.CheckedChanged += new System.EventHandler(this.RogueKissOfTheViper_CheckedChanged);
             // 
             // UltimaForm
             // 
@@ -8594,6 +8594,8 @@
             this.RogueTab.ResumeLayout(false);
             this.RogueSubTab.ResumeLayout(false);
             this.RogueSettings.ResumeLayout(false);
+            this.RogueAuraGroup.ResumeLayout(false);
+            this.RogueAuraGroup.PerformLayout();
             this.RogueDebuffGroup.ResumeLayout(false);
             this.RogueDebuffGroup.PerformLayout();
             this.RogueExecuteGroup.ResumeLayout(false);
@@ -8659,8 +8661,6 @@
             this.BlackMageArcanistGroup.PerformLayout();
             this.BlackMageArcherGroup.ResumeLayout(false);
             this.BlackMageArcherGroup.PerformLayout();
-            this.RogueAuraGroup.ResumeLayout(false);
-            this.RogueAuraGroup.PerformLayout();
             this.ResumeLayout(false);
 
         }

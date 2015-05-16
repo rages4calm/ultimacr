@@ -1,6 +1,8 @@
-﻿using ff14bot;
+﻿using System.Linq;
+using ff14bot;
 using ff14bot.Managers;
 using System.Threading.Tasks;
+using ff14bot.Objects;
 using UltimaCR.Spells.Main;
 
 namespace UltimaCR.Rotations
@@ -62,8 +64,7 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> ShieldLob()
         {
-            if (Core.Player.HasTarget &&
-                Core.Player.Distance(Core.Target) >= 10)
+            if (Core.Player.TargetDistance(10))
             {
                 return await MySpells.ShieldLob.Cast();
             }
@@ -77,7 +78,13 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Provoke()
         {
-            return await MySpells.Provoke.Cast();
+            var target = Helpers.NotTargetingPlayer.FirstOrDefault();
+
+            if (target != null)
+            {
+                return await MySpells.Provoke.Cast(target);
+            }
+            return false;
         }
 
         private async Task<bool> RageOfHalone()
