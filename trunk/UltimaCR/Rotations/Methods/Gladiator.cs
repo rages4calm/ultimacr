@@ -62,8 +62,7 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> ShieldLob()
         {
-            if (Core.Player.HasTarget &&
-                Core.Player.Distance(Core.Target) >= 10)
+            if (Core.Player.TargetDistance(10))
             {
                 return await MySpells.ShieldLob.Cast();
             }

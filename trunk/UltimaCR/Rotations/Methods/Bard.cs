@@ -70,8 +70,7 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> RepellingShot()
         {
-            if (Core.Player.HasTarget &&
-                Core.Player.Distance(Core.Player.CurrentTarget) <= 5)
+            if (Core.Player.TargetDistance(5, false))
             {
                 return await MySpells.RepellingShot.Cast();
             }

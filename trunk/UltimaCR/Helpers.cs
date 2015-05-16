@@ -49,13 +49,20 @@ namespace UltimaCR
                 dic.Remove(key);
             }
         }
-        public static bool IsEnemy(this BattleCharacter bc)
+
+
+        public static bool TargetDistance(this LocalPlayer o, float range, bool useMinRange = true)
         {
-           return bc != null &&
-               GameObjectManager.Attackers.Contains(bc) &&
-               !bc.IsDead &&
-               bc.CanAttack &&
-               bc.IsTargetable;
+            return useMinRange ? o.HasTarget && o.Distance(o.CurrentTarget) >= range : o.HasTarget && o.Distance(o.CurrentTarget) <= range;
+        }
+
+        private static bool IsEnemy(this BattleCharacter ie)
+        {
+           return ie != null &&
+               GameObjectManager.Attackers.Contains(ie) &&
+               !ie.IsDead &&
+               ie.CanAttack &&
+               ie.IsTargetable;
         }
 
         private static IEnumerable<BattleCharacter> EnemyUnit
@@ -64,14 +71,35 @@ namespace UltimaCR
             {
                 return
                     GameObjectManager.GetObjectsOfType<BattleCharacter>()
-                        .Where(u => u.IsEnemy());
+                        .Where(eu => eu.IsEnemy());
             }
         }
-        public static bool PlayerTargeted
+
+        //Tanking (Provoke, Flash, etc.) "If something isn't targeting me"
+        public static IEnumerable<BattleCharacter> NotTargetingPlayer
         {
             get
             {
-                return EnemyUnit.All(u => u.CurrentTargetId == Core.Me.ObjectId);
+                return
+                    GameObjectManager.GetObjectsOfType<BattleCharacter>()
+                    .Where(ntp => EnemyUnit.Contains(ntp) && ntp.CurrentTargetId != Core.Player.ObjectId)
+                    .OrderByDescending(ntp => ntp.CurrentHealthPercent);
+            }
+        }
+
+        //Targeted Defensive Skills "If this is targeting me"
+        public static bool IsTargetingMe(this BattleCharacter tp)
+        {
+            return tp.IsEnemy() && tp.CurrentTargetId == Core.Player.ObjectId;
+        }
+
+
+        //Self Defensive Skills "If anything is targeting me"
+        public static bool EnemyTargetingMe
+        {
+            get
+            {
+                return EnemyUnit.Any(tp => tp.CurrentTargetId == Core.Player.ObjectId);
             }
         }
 
