@@ -315,8 +315,8 @@ namespace UltimaCR.Spells.Main
                                Name = "Bane",
                                ID = 174,
                                Level = 30,
-                               GCDType = GCDType.On,
-                               SpellType = SpellType.Cooldown,
+                               GCDType = GCDType.Off,
+                               SpellType = SpellType.AoE,
                                CastType = CastType.Target
                            });
             }

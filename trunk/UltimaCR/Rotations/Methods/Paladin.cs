@@ -1,8 +1,7 @@
-﻿using System.Linq;
-using ff14bot;
+﻿using ff14bot;
 using ff14bot.Managers;
+using System.Linq;
 using System.Threading.Tasks;
-using ff14bot.Objects;
 using UltimaCR.Spells.Main;
 
 namespace UltimaCR.Rotations
@@ -98,7 +97,12 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> ShieldSwipe()
         {
-            return await MySpells.ShieldSwipe.Cast();
+            if (Ultima.UltSettings.PaladinShieldSwipe &&
+                Core.Player.CurrentTPPercent > 40)
+            {
+                return await MySpells.ShieldSwipe.Cast();
+            }
+            return false;
         }
 
         private async Task<bool> Awareness()
@@ -228,9 +232,13 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> SwordOath()
         {
-            if (!Core.Player.HasAura(MySpells.SwordOath.Name))
+            if (Ultima.UltSettings.PaladinSwordOath ||
+                Core.Player.ClassLevel < MySpells.ShieldOath.Level)
             {
-                return await MySpells.SwordOath.Cast();   
+                if (!Core.Player.HasAura(MySpells.SwordOath.Name))
+                {
+                    return await MySpells.SwordOath.Cast();
+                }
             }
             return false;
         }
@@ -242,7 +250,12 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> ShieldOath()
         {
-            return await MySpells.ShieldOath.Cast();
+            if (Ultima.UltSettings.PaladinShieldOath &&
+                !Core.Player.HasAura(MySpells.ShieldOath.Name))
+            {
+                return await MySpells.ShieldOath.Cast();
+            }
+            return false;
         }
 
         private async Task<bool> SpiritsWithin()

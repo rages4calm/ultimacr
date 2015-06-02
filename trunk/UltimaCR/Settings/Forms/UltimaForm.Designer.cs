@@ -32,6 +32,16 @@
             this.UltimaBanner = new System.Windows.Forms.PictureBox();
             this.ClassTab = new UltimaCR.Settings.Forms.Design.TabDesign();
             this.UltimaTab = new System.Windows.Forms.TabPage();
+            this.UltimaGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.DefaultCRCheck = new System.Windows.Forms.CheckBox();
+            this.RotationGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.RotationModifierLabel = new System.Windows.Forms.Label();
+            this.RotationModifierCombo = new System.Windows.Forms.ComboBox();
+            this.RotationHotkeyLabel = new System.Windows.Forms.Label();
+            this.RotationHotkeyCombo = new System.Windows.Forms.ComboBox();
+            this.RotationModeLabel = new System.Windows.Forms.Label();
+            this.OverlayCheck = new System.Windows.Forms.CheckBox();
+            this.RotationModeCombo = new System.Windows.Forms.ComboBox();
             this.ChocoboGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.ChocoboStanceLabel = new System.Windows.Forms.Label();
             this.ChocoboStanceCombo = new System.Windows.Forms.ComboBox();
@@ -230,6 +240,8 @@
             this.GladiatorTab = new System.Windows.Forms.TabPage();
             this.GladiatorSubTab = new UltimaCR.Settings.Forms.Design.TabDesign();
             this.GladiatorSettings = new System.Windows.Forms.TabPage();
+            this.groupBoxDesign1 = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.GladiatorShieldSwipe = new System.Windows.Forms.CheckBox();
             this.GladiatorCrossGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.GladiatorArcherGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.GladiatorVenomousBite = new System.Windows.Forms.CheckBox();
@@ -271,7 +283,11 @@
             this.GladiatorBloodForBlood = new System.Windows.Forms.CheckBox();
             this.GladiatorFeint = new System.Windows.Forms.CheckBox();
             this.PaladinSettings = new System.Windows.Forms.TabPage();
+            this.PaladinAuraGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.PaladinSwordOath = new System.Windows.Forms.RadioButton();
+            this.PaladinShieldOath = new System.Windows.Forms.RadioButton();
             this.PaladinInterruptGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.PaladinShieldSwipe = new System.Windows.Forms.CheckBox();
             this.PaladinSpiritsWithin = new System.Windows.Forms.CheckBox();
             this.PaladinCrossGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.PaladinMarauderGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
@@ -420,6 +436,9 @@
             this.PugilistTab = new System.Windows.Forms.TabPage();
             this.PugilistSubTab = new UltimaCR.Settings.Forms.Design.TabDesign();
             this.PugilistSettings = new System.Windows.Forms.TabPage();
+            this.PugilistAuraGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.PugilistFistsOfEarth = new System.Windows.Forms.RadioButton();
+            this.PugilistFistsOfWind = new System.Windows.Forms.RadioButton();
             this.PugilistCooldownGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.PugilistPerfectBalance = new System.Windows.Forms.CheckBox();
             this.PugilistCrossGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
@@ -463,6 +482,10 @@
             this.PugilistRaise = new System.Windows.Forms.CheckBox();
             this.PugilistStoneskin = new System.Windows.Forms.CheckBox();
             this.MonkSettings = new System.Windows.Forms.TabPage();
+            this.MonkAuraGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.MonkFistsOfFire = new System.Windows.Forms.RadioButton();
+            this.MonkFistsOfEarth = new System.Windows.Forms.RadioButton();
+            this.MonkFistsOfWind = new System.Windows.Forms.RadioButton();
             this.MonkCooldownGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.MonkPerfectBalance = new System.Windows.Forms.CheckBox();
             this.MonkMovementGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
@@ -608,9 +631,15 @@
             this.BlackMageRagingStrikes = new System.Windows.Forms.CheckBox();
             this.BlackMageHawksEye = new System.Windows.Forms.CheckBox();
             this.BlackMageQuellingStrikes = new System.Windows.Forms.CheckBox();
+            this.RogueBuffGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.RogueGoad = new System.Windows.Forms.CheckBox();
+            this.NinjaBuffGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.NinjaGoad = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.UltimaBanner)).BeginInit();
             this.ClassTab.SuspendLayout();
             this.UltimaTab.SuspendLayout();
+            this.UltimaGroup.SuspendLayout();
+            this.RotationGroup.SuspendLayout();
             this.ChocoboGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UltimaDonateBox)).BeginInit();
             this.ArcanistTab.SuspendLayout();
@@ -678,6 +707,7 @@
             this.GladiatorTab.SuspendLayout();
             this.GladiatorSubTab.SuspendLayout();
             this.GladiatorSettings.SuspendLayout();
+            this.groupBoxDesign1.SuspendLayout();
             this.GladiatorCrossGroup.SuspendLayout();
             this.GladiatorArcherGroup.SuspendLayout();
             this.GladiatorThaumaturgeGroup.SuspendLayout();
@@ -688,6 +718,7 @@
             this.GladiatorConjurerGroup.SuspendLayout();
             this.GladiatorLancerGroup.SuspendLayout();
             this.PaladinSettings.SuspendLayout();
+            this.PaladinAuraGroup.SuspendLayout();
             this.PaladinInterruptGroup.SuspendLayout();
             this.PaladinCrossGroup.SuspendLayout();
             this.PaladinMarauderGroup.SuspendLayout();
@@ -734,6 +765,7 @@
             this.PugilistTab.SuspendLayout();
             this.PugilistSubTab.SuspendLayout();
             this.PugilistSettings.SuspendLayout();
+            this.PugilistAuraGroup.SuspendLayout();
             this.PugilistCooldownGroup.SuspendLayout();
             this.PugilistCrossGroup.SuspendLayout();
             this.PugilistMarauderGroup.SuspendLayout();
@@ -745,6 +777,7 @@
             this.PugilistArcanistGroup.SuspendLayout();
             this.PugilistConjurerGroup.SuspendLayout();
             this.MonkSettings.SuspendLayout();
+            this.MonkAuraGroup.SuspendLayout();
             this.MonkCooldownGroup.SuspendLayout();
             this.MonkMovementGroup.SuspendLayout();
             this.MonkCrossGroup.SuspendLayout();
@@ -791,6 +824,8 @@
             this.BlackMageCrossGroup.SuspendLayout();
             this.BlackMageArcanistGroup.SuspendLayout();
             this.BlackMageArcherGroup.SuspendLayout();
+            this.RogueBuffGroup.SuspendLayout();
+            this.NinjaBuffGroup.SuspendLayout();
             this.SuspendLayout();
             // 
             // CloseButton
@@ -800,7 +835,7 @@
             this.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CloseButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CloseButton.ForeColor = System.Drawing.Color.White;
-            this.CloseButton.Location = new System.Drawing.Point(700, 500);
+            this.CloseButton.Location = new System.Drawing.Point(700, 515);
             this.CloseButton.Name = "CloseButton";
             this.CloseButton.Size = new System.Drawing.Size(90, 30);
             this.CloseButton.TabIndex = 6;
@@ -835,7 +870,7 @@
             this.ClassTab.Multiline = true;
             this.ClassTab.Name = "ClassTab";
             this.ClassTab.SelectedIndex = 0;
-            this.ClassTab.Size = new System.Drawing.Size(800, 395);
+            this.ClassTab.Size = new System.Drawing.Size(800, 410);
             this.ClassTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.ClassTab.TabIndex = 4;
             this.ClassTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -843,15 +878,159 @@
             // UltimaTab
             // 
             this.UltimaTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.UltimaTab.Controls.Add(this.UltimaGroup);
+            this.UltimaTab.Controls.Add(this.RotationGroup);
             this.UltimaTab.Controls.Add(this.ChocoboGroup);
             this.UltimaTab.Controls.Add(this.UltimaDonateBox);
             this.UltimaTab.Location = new System.Drawing.Point(114, 4);
             this.UltimaTab.Margin = new System.Windows.Forms.Padding(0);
             this.UltimaTab.Name = "UltimaTab";
-            this.UltimaTab.Size = new System.Drawing.Size(682, 387);
+            this.UltimaTab.Size = new System.Drawing.Size(682, 402);
             this.UltimaTab.TabIndex = 9;
             this.UltimaTab.Text = "Ultima";
             this.UltimaTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
+            // 
+            // UltimaGroup
+            // 
+            this.UltimaGroup.Controls.Add(this.DefaultCRCheck);
+            this.UltimaGroup.ForeColor = System.Drawing.Color.White;
+            this.UltimaGroup.Location = new System.Drawing.Point(550, 3);
+            this.UltimaGroup.Name = "UltimaGroup";
+            this.UltimaGroup.Size = new System.Drawing.Size(124, 42);
+            this.UltimaGroup.TabIndex = 9;
+            this.UltimaGroup.TabStop = false;
+            this.UltimaGroup.Text = "Ultima";
+            // 
+            // DefaultCRCheck
+            // 
+            this.DefaultCRCheck.AutoSize = true;
+            this.DefaultCRCheck.ForeColor = System.Drawing.Color.White;
+            this.DefaultCRCheck.Location = new System.Drawing.Point(6, 19);
+            this.DefaultCRCheck.Name = "DefaultCRCheck";
+            this.DefaultCRCheck.Size = new System.Drawing.Size(112, 17);
+            this.DefaultCRCheck.TabIndex = 7;
+            this.DefaultCRCheck.Text = "Set As Default CR";
+            this.DefaultCRCheck.UseVisualStyleBackColor = true;
+            this.DefaultCRCheck.CheckedChanged += new System.EventHandler(this.DefaultCRCheck_CheckedChanged);
+            // 
+            // RotationGroup
+            // 
+            this.RotationGroup.Controls.Add(this.RotationModifierLabel);
+            this.RotationGroup.Controls.Add(this.RotationModifierCombo);
+            this.RotationGroup.Controls.Add(this.RotationHotkeyLabel);
+            this.RotationGroup.Controls.Add(this.RotationHotkeyCombo);
+            this.RotationGroup.Controls.Add(this.RotationModeLabel);
+            this.RotationGroup.Controls.Add(this.OverlayCheck);
+            this.RotationGroup.Controls.Add(this.RotationModeCombo);
+            this.RotationGroup.ForeColor = System.Drawing.Color.White;
+            this.RotationGroup.Location = new System.Drawing.Point(169, 3);
+            this.RotationGroup.Name = "RotationGroup";
+            this.RotationGroup.Size = new System.Drawing.Size(260, 106);
+            this.RotationGroup.TabIndex = 9;
+            this.RotationGroup.TabStop = false;
+            this.RotationGroup.Text = "Rotation";
+            // 
+            // RotationModifierLabel
+            // 
+            this.RotationModifierLabel.AutoSize = true;
+            this.RotationModifierLabel.ForeColor = System.Drawing.Color.White;
+            this.RotationModifierLabel.Location = new System.Drawing.Point(133, 16);
+            this.RotationModifierLabel.Name = "RotationModifierLabel";
+            this.RotationModifierLabel.Size = new System.Drawing.Size(65, 13);
+            this.RotationModifierLabel.TabIndex = 14;
+            this.RotationModifierLabel.Text = "Modifier Key";
+            // 
+            // RotationModifierCombo
+            // 
+            this.RotationModifierCombo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.RotationModifierCombo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RotationModifierCombo.ForeColor = System.Drawing.Color.White;
+            this.RotationModifierCombo.FormattingEnabled = true;
+            this.RotationModifierCombo.Items.AddRange(new object[] {
+            "None",
+            "Alt",
+            "Control",
+            "Shift",
+            "Windows"});
+            this.RotationModifierCombo.Location = new System.Drawing.Point(133, 33);
+            this.RotationModifierCombo.Name = "RotationModifierCombo";
+            this.RotationModifierCombo.Size = new System.Drawing.Size(121, 21);
+            this.RotationModifierCombo.TabIndex = 13;
+            this.RotationModifierCombo.SelectedIndexChanged += new System.EventHandler(this.RotationModifierCombo_SelectedIndexChanged);
+            // 
+            // RotationHotkeyLabel
+            // 
+            this.RotationHotkeyLabel.AutoSize = true;
+            this.RotationHotkeyLabel.ForeColor = System.Drawing.Color.White;
+            this.RotationHotkeyLabel.Location = new System.Drawing.Point(133, 62);
+            this.RotationHotkeyLabel.Name = "RotationHotkeyLabel";
+            this.RotationHotkeyLabel.Size = new System.Drawing.Size(41, 13);
+            this.RotationHotkeyLabel.TabIndex = 12;
+            this.RotationHotkeyLabel.Text = "Hotkey";
+            // 
+            // RotationHotkeyCombo
+            // 
+            this.RotationHotkeyCombo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.RotationHotkeyCombo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RotationHotkeyCombo.ForeColor = System.Drawing.Color.White;
+            this.RotationHotkeyCombo.FormattingEnabled = true;
+            this.RotationHotkeyCombo.Items.AddRange(new object[] {
+            "None",
+            "Left Mouse",
+            "Middle Mouse",
+            "Right Mouse",
+            "Mouse 1",
+            "Mouse 2",
+            "Space",
+            "Tilde",
+            "Q",
+            "E",
+            "Z",
+            "X",
+            "C"});
+            this.RotationHotkeyCombo.Location = new System.Drawing.Point(133, 79);
+            this.RotationHotkeyCombo.Name = "RotationHotkeyCombo";
+            this.RotationHotkeyCombo.Size = new System.Drawing.Size(121, 21);
+            this.RotationHotkeyCombo.TabIndex = 11;
+            this.RotationHotkeyCombo.SelectedIndexChanged += new System.EventHandler(this.RotationHotkeyCombo_SelectedIndexChanged);
+            // 
+            // RotationModeLabel
+            // 
+            this.RotationModeLabel.AutoSize = true;
+            this.RotationModeLabel.ForeColor = System.Drawing.Color.White;
+            this.RotationModeLabel.Location = new System.Drawing.Point(6, 62);
+            this.RotationModeLabel.Name = "RotationModeLabel";
+            this.RotationModeLabel.Size = new System.Drawing.Size(77, 13);
+            this.RotationModeLabel.TabIndex = 10;
+            this.RotationModeLabel.Text = "Rotation Mode";
+            // 
+            // OverlayCheck
+            // 
+            this.OverlayCheck.AutoSize = true;
+            this.OverlayCheck.ForeColor = System.Drawing.Color.White;
+            this.OverlayCheck.Location = new System.Drawing.Point(6, 19);
+            this.OverlayCheck.Name = "OverlayCheck";
+            this.OverlayCheck.Size = new System.Drawing.Size(84, 17);
+            this.OverlayCheck.TabIndex = 7;
+            this.OverlayCheck.Text = "Use Overlay";
+            this.OverlayCheck.UseVisualStyleBackColor = true;
+            this.OverlayCheck.CheckedChanged += new System.EventHandler(this.OverlayCheck_CheckedChanged);
+            // 
+            // RotationModeCombo
+            // 
+            this.RotationModeCombo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.RotationModeCombo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RotationModeCombo.ForeColor = System.Drawing.Color.White;
+            this.RotationModeCombo.FormattingEnabled = true;
+            this.RotationModeCombo.Items.AddRange(new object[] {
+            "Smart Target",
+            "Single Target",
+            "Multi Target"});
+            this.RotationModeCombo.Location = new System.Drawing.Point(6, 79);
+            this.RotationModeCombo.Name = "RotationModeCombo";
+            this.RotationModeCombo.Size = new System.Drawing.Size(121, 21);
+            this.RotationModeCombo.TabIndex = 9;
+            this.RotationModeCombo.SelectedIndexChanged += new System.EventHandler(this.RotationModeCombo_SelectedIndexChanged);
             // 
             // ChocoboGroup
             // 
@@ -859,9 +1038,9 @@
             this.ChocoboGroup.Controls.Add(this.ChocoboStanceCombo);
             this.ChocoboGroup.Controls.Add(this.SummonChocobo);
             this.ChocoboGroup.ForeColor = System.Drawing.Color.White;
-            this.ChocoboGroup.Location = new System.Drawing.Point(34, 3);
+            this.ChocoboGroup.Location = new System.Drawing.Point(30, 3);
             this.ChocoboGroup.Name = "ChocoboGroup";
-            this.ChocoboGroup.Size = new System.Drawing.Size(154, 97);
+            this.ChocoboGroup.Size = new System.Drawing.Size(133, 106);
             this.ChocoboGroup.TabIndex = 7;
             this.ChocoboGroup.TabStop = false;
             this.ChocoboGroup.Text = "Chocobo";
@@ -870,7 +1049,7 @@
             // 
             this.ChocoboStanceLabel.AutoSize = true;
             this.ChocoboStanceLabel.ForeColor = System.Drawing.Color.White;
-            this.ChocoboStanceLabel.Location = new System.Drawing.Point(11, 49);
+            this.ChocoboStanceLabel.Location = new System.Drawing.Point(6, 62);
             this.ChocoboStanceLabel.Name = "ChocoboStanceLabel";
             this.ChocoboStanceLabel.Size = new System.Drawing.Size(87, 13);
             this.ChocoboStanceLabel.TabIndex = 8;
@@ -887,7 +1066,7 @@
             "Defender Stance",
             "Attacker Stance",
             "Healer Stance"});
-            this.ChocoboStanceCombo.Location = new System.Drawing.Point(12, 66);
+            this.ChocoboStanceCombo.Location = new System.Drawing.Point(6, 79);
             this.ChocoboStanceCombo.Name = "ChocoboStanceCombo";
             this.ChocoboStanceCombo.Size = new System.Drawing.Size(121, 21);
             this.ChocoboStanceCombo.TabIndex = 6;
@@ -897,7 +1076,7 @@
             // 
             this.SummonChocobo.AutoSize = true;
             this.SummonChocobo.ForeColor = System.Drawing.Color.White;
-            this.SummonChocobo.Location = new System.Drawing.Point(12, 23);
+            this.SummonChocobo.Location = new System.Drawing.Point(6, 19);
             this.SummonChocobo.Name = "SummonChocobo";
             this.SummonChocobo.Size = new System.Drawing.Size(113, 17);
             this.SummonChocobo.TabIndex = 7;
@@ -923,7 +1102,7 @@
             this.ArcanistTab.Location = new System.Drawing.Point(114, 4);
             this.ArcanistTab.Margin = new System.Windows.Forms.Padding(0);
             this.ArcanistTab.Name = "ArcanistTab";
-            this.ArcanistTab.Size = new System.Drawing.Size(682, 387);
+            this.ArcanistTab.Size = new System.Drawing.Size(682, 402);
             this.ArcanistTab.TabIndex = 0;
             this.ArcanistTab.Text = "Arcanist";
             // 
@@ -938,7 +1117,7 @@
             this.ArcanistSubTab.Multiline = true;
             this.ArcanistSubTab.Name = "ArcanistSubTab";
             this.ArcanistSubTab.SelectedIndex = 0;
-            this.ArcanistSubTab.Size = new System.Drawing.Size(685, 395);
+            this.ArcanistSubTab.Size = new System.Drawing.Size(685, 410);
             this.ArcanistSubTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.ArcanistSubTab.TabIndex = 5;
             this.ArcanistSubTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -952,7 +1131,7 @@
             this.ArcanistSettings.Location = new System.Drawing.Point(114, 4);
             this.ArcanistSettings.Margin = new System.Windows.Forms.Padding(0);
             this.ArcanistSettings.Name = "ArcanistSettings";
-            this.ArcanistSettings.Size = new System.Drawing.Size(567, 387);
+            this.ArcanistSettings.Size = new System.Drawing.Size(567, 402);
             this.ArcanistSettings.TabIndex = 0;
             this.ArcanistSettings.Text = "Arcanist";
             this.ArcanistSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -1892,7 +2071,7 @@
             this.ArcherTab.Location = new System.Drawing.Point(114, 4);
             this.ArcherTab.Margin = new System.Windows.Forms.Padding(0);
             this.ArcherTab.Name = "ArcherTab";
-            this.ArcherTab.Size = new System.Drawing.Size(682, 387);
+            this.ArcherTab.Size = new System.Drawing.Size(682, 402);
             this.ArcherTab.TabIndex = 1;
             this.ArcherTab.Text = "Archer";
             // 
@@ -1906,7 +2085,7 @@
             this.ArcherSubTab.Multiline = true;
             this.ArcherSubTab.Name = "ArcherSubTab";
             this.ArcherSubTab.SelectedIndex = 0;
-            this.ArcherSubTab.Size = new System.Drawing.Size(685, 395);
+            this.ArcherSubTab.Size = new System.Drawing.Size(685, 410);
             this.ArcherSubTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.ArcherSubTab.TabIndex = 5;
             this.ArcherSubTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -1920,7 +2099,7 @@
             this.ArcherSettings.Location = new System.Drawing.Point(114, 4);
             this.ArcherSettings.Margin = new System.Windows.Forms.Padding(0);
             this.ArcherSettings.Name = "ArcherSettings";
-            this.ArcherSettings.Size = new System.Drawing.Size(567, 387);
+            this.ArcherSettings.Size = new System.Drawing.Size(567, 402);
             this.ArcherSettings.TabIndex = 0;
             this.ArcherSettings.Text = "Archer";
             this.ArcherSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -2694,7 +2873,7 @@
             this.ConjurerTab.Location = new System.Drawing.Point(114, 4);
             this.ConjurerTab.Margin = new System.Windows.Forms.Padding(0);
             this.ConjurerTab.Name = "ConjurerTab";
-            this.ConjurerTab.Size = new System.Drawing.Size(682, 387);
+            this.ConjurerTab.Size = new System.Drawing.Size(682, 402);
             this.ConjurerTab.TabIndex = 2;
             this.ConjurerTab.Text = "Conjurer";
             // 
@@ -2708,7 +2887,7 @@
             this.ConjurerSubTab.Multiline = true;
             this.ConjurerSubTab.Name = "ConjurerSubTab";
             this.ConjurerSubTab.SelectedIndex = 0;
-            this.ConjurerSubTab.Size = new System.Drawing.Size(685, 395);
+            this.ConjurerSubTab.Size = new System.Drawing.Size(685, 410);
             this.ConjurerSubTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.ConjurerSubTab.TabIndex = 5;
             this.ConjurerSubTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -2721,7 +2900,7 @@
             this.ConjurerSettings.Location = new System.Drawing.Point(114, 4);
             this.ConjurerSettings.Margin = new System.Windows.Forms.Padding(0);
             this.ConjurerSettings.Name = "ConjurerSettings";
-            this.ConjurerSettings.Size = new System.Drawing.Size(567, 387);
+            this.ConjurerSettings.Size = new System.Drawing.Size(567, 402);
             this.ConjurerSettings.TabIndex = 0;
             this.ConjurerSettings.Text = "Conjurer";
             this.ConjurerSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -3384,7 +3563,7 @@
             this.GladiatorTab.Location = new System.Drawing.Point(114, 4);
             this.GladiatorTab.Margin = new System.Windows.Forms.Padding(0);
             this.GladiatorTab.Name = "GladiatorTab";
-            this.GladiatorTab.Size = new System.Drawing.Size(682, 387);
+            this.GladiatorTab.Size = new System.Drawing.Size(682, 402);
             this.GladiatorTab.TabIndex = 3;
             this.GladiatorTab.Text = "Gladiator";
             // 
@@ -3398,7 +3577,7 @@
             this.GladiatorSubTab.Multiline = true;
             this.GladiatorSubTab.Name = "GladiatorSubTab";
             this.GladiatorSubTab.SelectedIndex = 0;
-            this.GladiatorSubTab.Size = new System.Drawing.Size(685, 395);
+            this.GladiatorSubTab.Size = new System.Drawing.Size(685, 410);
             this.GladiatorSubTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.GladiatorSubTab.TabIndex = 5;
             this.GladiatorSubTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -3406,14 +3585,38 @@
             // GladiatorSettings
             // 
             this.GladiatorSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.GladiatorSettings.Controls.Add(this.groupBoxDesign1);
             this.GladiatorSettings.Controls.Add(this.GladiatorCrossGroup);
             this.GladiatorSettings.Location = new System.Drawing.Point(114, 4);
             this.GladiatorSettings.Margin = new System.Windows.Forms.Padding(0);
             this.GladiatorSettings.Name = "GladiatorSettings";
-            this.GladiatorSettings.Size = new System.Drawing.Size(567, 387);
+            this.GladiatorSettings.Size = new System.Drawing.Size(567, 402);
             this.GladiatorSettings.TabIndex = 0;
             this.GladiatorSettings.Text = "Gladiator";
             this.GladiatorSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
+            // 
+            // groupBoxDesign1
+            // 
+            this.groupBoxDesign1.Controls.Add(this.GladiatorShieldSwipe);
+            this.groupBoxDesign1.ForeColor = System.Drawing.Color.White;
+            this.groupBoxDesign1.Location = new System.Drawing.Point(34, 309);
+            this.groupBoxDesign1.Name = "groupBoxDesign1";
+            this.groupBoxDesign1.Size = new System.Drawing.Size(99, 42);
+            this.groupBoxDesign1.TabIndex = 18;
+            this.groupBoxDesign1.TabStop = false;
+            this.groupBoxDesign1.Text = "Interrupt";
+            // 
+            // GladiatorShieldSwipe
+            // 
+            this.GladiatorShieldSwipe.AutoSize = true;
+            this.GladiatorShieldSwipe.ForeColor = System.Drawing.Color.White;
+            this.GladiatorShieldSwipe.Location = new System.Drawing.Point(6, 19);
+            this.GladiatorShieldSwipe.Name = "GladiatorShieldSwipe";
+            this.GladiatorShieldSwipe.Size = new System.Drawing.Size(87, 17);
+            this.GladiatorShieldSwipe.TabIndex = 7;
+            this.GladiatorShieldSwipe.Text = "Shield Swipe";
+            this.GladiatorShieldSwipe.UseVisualStyleBackColor = true;
+            this.GladiatorShieldSwipe.CheckedChanged += new System.EventHandler(this.GladiatorShieldSwipe_CheckedChanged);
             // 
             // GladiatorCrossGroup
             // 
@@ -3946,6 +4149,7 @@
             // PaladinSettings
             // 
             this.PaladinSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PaladinSettings.Controls.Add(this.PaladinAuraGroup);
             this.PaladinSettings.Controls.Add(this.PaladinInterruptGroup);
             this.PaladinSettings.Controls.Add(this.PaladinCrossGroup);
             this.PaladinSettings.Location = new System.Drawing.Point(114, 4);
@@ -3956,22 +4160,73 @@
             this.PaladinSettings.Text = "Paladin";
             this.PaladinSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
             // 
+            // PaladinAuraGroup
+            // 
+            this.PaladinAuraGroup.Controls.Add(this.PaladinSwordOath);
+            this.PaladinAuraGroup.Controls.Add(this.PaladinShieldOath);
+            this.PaladinAuraGroup.ForeColor = System.Drawing.Color.White;
+            this.PaladinAuraGroup.Location = new System.Drawing.Point(143, 168);
+            this.PaladinAuraGroup.Name = "PaladinAuraGroup";
+            this.PaladinAuraGroup.Size = new System.Drawing.Size(93, 65);
+            this.PaladinAuraGroup.TabIndex = 44;
+            this.PaladinAuraGroup.TabStop = false;
+            this.PaladinAuraGroup.Text = "Aura";
+            // 
+            // PaladinSwordOath
+            // 
+            this.PaladinSwordOath.AutoSize = true;
+            this.PaladinSwordOath.ForeColor = System.Drawing.Color.White;
+            this.PaladinSwordOath.Location = new System.Drawing.Point(6, 19);
+            this.PaladinSwordOath.Name = "PaladinSwordOath";
+            this.PaladinSwordOath.Size = new System.Drawing.Size(81, 17);
+            this.PaladinSwordOath.TabIndex = 24;
+            this.PaladinSwordOath.TabStop = true;
+            this.PaladinSwordOath.Text = "Sword Oath";
+            this.PaladinSwordOath.UseVisualStyleBackColor = true;
+            this.PaladinSwordOath.CheckedChanged += new System.EventHandler(this.PaladinSwordOath_CheckedChanged);
+            // 
+            // PaladinShieldOath
+            // 
+            this.PaladinShieldOath.AutoSize = true;
+            this.PaladinShieldOath.ForeColor = System.Drawing.Color.White;
+            this.PaladinShieldOath.Location = new System.Drawing.Point(6, 42);
+            this.PaladinShieldOath.Name = "PaladinShieldOath";
+            this.PaladinShieldOath.Size = new System.Drawing.Size(80, 17);
+            this.PaladinShieldOath.TabIndex = 25;
+            this.PaladinShieldOath.TabStop = true;
+            this.PaladinShieldOath.Text = "Shield Oath";
+            this.PaladinShieldOath.UseVisualStyleBackColor = true;
+            this.PaladinShieldOath.CheckedChanged += new System.EventHandler(this.PaladinShieldOath_CheckedChanged);
+            // 
             // PaladinInterruptGroup
             // 
+            this.PaladinInterruptGroup.Controls.Add(this.PaladinShieldSwipe);
             this.PaladinInterruptGroup.Controls.Add(this.PaladinSpiritsWithin);
             this.PaladinInterruptGroup.ForeColor = System.Drawing.Color.White;
             this.PaladinInterruptGroup.Location = new System.Drawing.Point(34, 168);
             this.PaladinInterruptGroup.Name = "PaladinInterruptGroup";
-            this.PaladinInterruptGroup.Size = new System.Drawing.Size(99, 42);
+            this.PaladinInterruptGroup.Size = new System.Drawing.Size(99, 65);
             this.PaladinInterruptGroup.TabIndex = 17;
             this.PaladinInterruptGroup.TabStop = false;
             this.PaladinInterruptGroup.Text = "Interrupt";
+            // 
+            // PaladinShieldSwipe
+            // 
+            this.PaladinShieldSwipe.AutoSize = true;
+            this.PaladinShieldSwipe.ForeColor = System.Drawing.Color.White;
+            this.PaladinShieldSwipe.Location = new System.Drawing.Point(6, 19);
+            this.PaladinShieldSwipe.Name = "PaladinShieldSwipe";
+            this.PaladinShieldSwipe.Size = new System.Drawing.Size(87, 17);
+            this.PaladinShieldSwipe.TabIndex = 8;
+            this.PaladinShieldSwipe.Text = "Shield Swipe";
+            this.PaladinShieldSwipe.UseVisualStyleBackColor = true;
+            this.PaladinShieldSwipe.CheckedChanged += new System.EventHandler(this.PaladinShieldSwipe_CheckedChanged);
             // 
             // PaladinSpiritsWithin
             // 
             this.PaladinSpiritsWithin.AutoSize = true;
             this.PaladinSpiritsWithin.ForeColor = System.Drawing.Color.White;
-            this.PaladinSpiritsWithin.Location = new System.Drawing.Point(6, 19);
+            this.PaladinSpiritsWithin.Location = new System.Drawing.Point(6, 42);
             this.PaladinSpiritsWithin.Name = "PaladinSpiritsWithin";
             this.PaladinSpiritsWithin.Size = new System.Drawing.Size(87, 17);
             this.PaladinSpiritsWithin.TabIndex = 7;
@@ -4140,7 +4395,7 @@
             this.LancerTab.Location = new System.Drawing.Point(114, 4);
             this.LancerTab.Margin = new System.Windows.Forms.Padding(0);
             this.LancerTab.Name = "LancerTab";
-            this.LancerTab.Size = new System.Drawing.Size(682, 387);
+            this.LancerTab.Size = new System.Drawing.Size(682, 402);
             this.LancerTab.TabIndex = 4;
             this.LancerTab.Text = "Lancer";
             // 
@@ -4154,7 +4409,7 @@
             this.LancerSubTab.Multiline = true;
             this.LancerSubTab.Name = "LancerSubTab";
             this.LancerSubTab.SelectedIndex = 0;
-            this.LancerSubTab.Size = new System.Drawing.Size(685, 395);
+            this.LancerSubTab.Size = new System.Drawing.Size(685, 410);
             this.LancerSubTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.LancerSubTab.TabIndex = 5;
             this.LancerSubTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -4167,7 +4422,7 @@
             this.LancerSettings.Location = new System.Drawing.Point(114, 4);
             this.LancerSettings.Margin = new System.Windows.Forms.Padding(0);
             this.LancerSettings.Name = "LancerSettings";
-            this.LancerSettings.Size = new System.Drawing.Size(567, 387);
+            this.LancerSettings.Size = new System.Drawing.Size(567, 402);
             this.LancerSettings.TabIndex = 0;
             this.LancerSettings.Text = "Lancer";
             this.LancerSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -5015,7 +5270,7 @@
             this.MarauderTab.Location = new System.Drawing.Point(114, 4);
             this.MarauderTab.Margin = new System.Windows.Forms.Padding(0);
             this.MarauderTab.Name = "MarauderTab";
-            this.MarauderTab.Size = new System.Drawing.Size(682, 387);
+            this.MarauderTab.Size = new System.Drawing.Size(682, 402);
             this.MarauderTab.TabIndex = 5;
             this.MarauderTab.Text = "Marauder";
             // 
@@ -5029,7 +5284,7 @@
             this.MarauderSubTab.Multiline = true;
             this.MarauderSubTab.Name = "MarauderSubTab";
             this.MarauderSubTab.SelectedIndex = 0;
-            this.MarauderSubTab.Size = new System.Drawing.Size(685, 395);
+            this.MarauderSubTab.Size = new System.Drawing.Size(685, 410);
             this.MarauderSubTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.MarauderSubTab.TabIndex = 5;
             this.MarauderSubTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -5043,7 +5298,7 @@
             this.MarauderSettings.Location = new System.Drawing.Point(114, 4);
             this.MarauderSettings.Margin = new System.Windows.Forms.Padding(0);
             this.MarauderSettings.Name = "MarauderSettings";
-            this.MarauderSettings.Size = new System.Drawing.Size(567, 387);
+            this.MarauderSettings.Size = new System.Drawing.Size(567, 402);
             this.MarauderSettings.TabIndex = 0;
             this.MarauderSettings.Text = "Marauder";
             this.MarauderSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -5863,7 +6118,7 @@
             this.PugilistTab.Location = new System.Drawing.Point(114, 4);
             this.PugilistTab.Margin = new System.Windows.Forms.Padding(0);
             this.PugilistTab.Name = "PugilistTab";
-            this.PugilistTab.Size = new System.Drawing.Size(682, 387);
+            this.PugilistTab.Size = new System.Drawing.Size(682, 402);
             this.PugilistTab.TabIndex = 6;
             this.PugilistTab.Text = "Pugilist";
             // 
@@ -5877,7 +6132,7 @@
             this.PugilistSubTab.Multiline = true;
             this.PugilistSubTab.Name = "PugilistSubTab";
             this.PugilistSubTab.SelectedIndex = 0;
-            this.PugilistSubTab.Size = new System.Drawing.Size(685, 395);
+            this.PugilistSubTab.Size = new System.Drawing.Size(685, 410);
             this.PugilistSubTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.PugilistSubTab.TabIndex = 5;
             this.PugilistSubTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -5885,15 +6140,54 @@
             // PugilistSettings
             // 
             this.PugilistSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PugilistSettings.Controls.Add(this.PugilistAuraGroup);
             this.PugilistSettings.Controls.Add(this.PugilistCooldownGroup);
             this.PugilistSettings.Controls.Add(this.PugilistCrossGroup);
             this.PugilistSettings.Location = new System.Drawing.Point(114, 4);
             this.PugilistSettings.Margin = new System.Windows.Forms.Padding(0);
             this.PugilistSettings.Name = "PugilistSettings";
-            this.PugilistSettings.Size = new System.Drawing.Size(567, 387);
+            this.PugilistSettings.Size = new System.Drawing.Size(567, 402);
             this.PugilistSettings.TabIndex = 0;
             this.PugilistSettings.Text = "Pugilist";
             this.PugilistSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
+            // 
+            // PugilistAuraGroup
+            // 
+            this.PugilistAuraGroup.Controls.Add(this.PugilistFistsOfEarth);
+            this.PugilistAuraGroup.Controls.Add(this.PugilistFistsOfWind);
+            this.PugilistAuraGroup.ForeColor = System.Drawing.Color.White;
+            this.PugilistAuraGroup.Location = new System.Drawing.Point(154, 309);
+            this.PugilistAuraGroup.Name = "PugilistAuraGroup";
+            this.PugilistAuraGroup.Size = new System.Drawing.Size(98, 65);
+            this.PugilistAuraGroup.TabIndex = 44;
+            this.PugilistAuraGroup.TabStop = false;
+            this.PugilistAuraGroup.Text = "Aura";
+            // 
+            // PugilistFistsOfEarth
+            // 
+            this.PugilistFistsOfEarth.AutoSize = true;
+            this.PugilistFistsOfEarth.ForeColor = System.Drawing.Color.White;
+            this.PugilistFistsOfEarth.Location = new System.Drawing.Point(6, 19);
+            this.PugilistFistsOfEarth.Name = "PugilistFistsOfEarth";
+            this.PugilistFistsOfEarth.Size = new System.Drawing.Size(86, 17);
+            this.PugilistFistsOfEarth.TabIndex = 24;
+            this.PugilistFistsOfEarth.TabStop = true;
+            this.PugilistFistsOfEarth.Text = "Fists of Earth";
+            this.PugilistFistsOfEarth.UseVisualStyleBackColor = true;
+            this.PugilistFistsOfEarth.CheckedChanged += new System.EventHandler(this.PugilistFistsOfEarth_CheckedChanged);
+            // 
+            // PugilistFistsOfWind
+            // 
+            this.PugilistFistsOfWind.AutoSize = true;
+            this.PugilistFistsOfWind.ForeColor = System.Drawing.Color.White;
+            this.PugilistFistsOfWind.Location = new System.Drawing.Point(6, 42);
+            this.PugilistFistsOfWind.Name = "PugilistFistsOfWind";
+            this.PugilistFistsOfWind.Size = new System.Drawing.Size(86, 17);
+            this.PugilistFistsOfWind.TabIndex = 25;
+            this.PugilistFistsOfWind.TabStop = true;
+            this.PugilistFistsOfWind.Text = "Fists of Wind";
+            this.PugilistFistsOfWind.UseVisualStyleBackColor = true;
+            this.PugilistFistsOfWind.CheckedChanged += new System.EventHandler(this.PugilistFistsOfWind_CheckedChanged);
             // 
             // PugilistCooldownGroup
             // 
@@ -6450,6 +6744,7 @@
             // MonkSettings
             // 
             this.MonkSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.MonkSettings.Controls.Add(this.MonkAuraGroup);
             this.MonkSettings.Controls.Add(this.MonkCooldownGroup);
             this.MonkSettings.Controls.Add(this.MonkMovementGroup);
             this.MonkSettings.Controls.Add(this.MonkCrossGroup);
@@ -6460,6 +6755,58 @@
             this.MonkSettings.TabIndex = 1;
             this.MonkSettings.Text = "Monk";
             this.MonkSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
+            // 
+            // MonkAuraGroup
+            // 
+            this.MonkAuraGroup.Controls.Add(this.MonkFistsOfFire);
+            this.MonkAuraGroup.Controls.Add(this.MonkFistsOfEarth);
+            this.MonkAuraGroup.Controls.Add(this.MonkFistsOfWind);
+            this.MonkAuraGroup.ForeColor = System.Drawing.Color.White;
+            this.MonkAuraGroup.Location = new System.Drawing.Point(34, 216);
+            this.MonkAuraGroup.Name = "MonkAuraGroup";
+            this.MonkAuraGroup.Size = new System.Drawing.Size(98, 90);
+            this.MonkAuraGroup.TabIndex = 45;
+            this.MonkAuraGroup.TabStop = false;
+            this.MonkAuraGroup.Text = "Aura";
+            // 
+            // MonkFistsOfFire
+            // 
+            this.MonkFistsOfFire.AutoSize = true;
+            this.MonkFistsOfFire.ForeColor = System.Drawing.Color.White;
+            this.MonkFistsOfFire.Location = new System.Drawing.Point(6, 65);
+            this.MonkFistsOfFire.Name = "MonkFistsOfFire";
+            this.MonkFistsOfFire.Size = new System.Drawing.Size(78, 17);
+            this.MonkFistsOfFire.TabIndex = 26;
+            this.MonkFistsOfFire.TabStop = true;
+            this.MonkFistsOfFire.Text = "Fists of Fire";
+            this.MonkFistsOfFire.UseVisualStyleBackColor = true;
+            this.MonkFistsOfFire.CheckedChanged += new System.EventHandler(this.MonkFistsOfFire_CheckedChanged);
+            // 
+            // MonkFistsOfEarth
+            // 
+            this.MonkFistsOfEarth.AutoSize = true;
+            this.MonkFistsOfEarth.ForeColor = System.Drawing.Color.White;
+            this.MonkFistsOfEarth.Location = new System.Drawing.Point(6, 19);
+            this.MonkFistsOfEarth.Name = "MonkFistsOfEarth";
+            this.MonkFistsOfEarth.Size = new System.Drawing.Size(86, 17);
+            this.MonkFistsOfEarth.TabIndex = 24;
+            this.MonkFistsOfEarth.TabStop = true;
+            this.MonkFistsOfEarth.Text = "Fists of Earth";
+            this.MonkFistsOfEarth.UseVisualStyleBackColor = true;
+            this.MonkFistsOfEarth.CheckedChanged += new System.EventHandler(this.MonkFistsOfEarth_CheckedChanged);
+            // 
+            // MonkFistsOfWind
+            // 
+            this.MonkFistsOfWind.AutoSize = true;
+            this.MonkFistsOfWind.ForeColor = System.Drawing.Color.White;
+            this.MonkFistsOfWind.Location = new System.Drawing.Point(6, 42);
+            this.MonkFistsOfWind.Name = "MonkFistsOfWind";
+            this.MonkFistsOfWind.Size = new System.Drawing.Size(86, 17);
+            this.MonkFistsOfWind.TabIndex = 25;
+            this.MonkFistsOfWind.TabStop = true;
+            this.MonkFistsOfWind.Text = "Fists of Wind";
+            this.MonkFistsOfWind.UseVisualStyleBackColor = true;
+            this.MonkFistsOfWind.CheckedChanged += new System.EventHandler(this.MonkFistsOfWind_CheckedChanged);
             // 
             // MonkCooldownGroup
             // 
@@ -6669,7 +7016,7 @@
             this.RogueTab.Location = new System.Drawing.Point(114, 4);
             this.RogueTab.Margin = new System.Windows.Forms.Padding(0);
             this.RogueTab.Name = "RogueTab";
-            this.RogueTab.Size = new System.Drawing.Size(682, 387);
+            this.RogueTab.Size = new System.Drawing.Size(682, 402);
             this.RogueTab.TabIndex = 7;
             this.RogueTab.Text = "Rogue";
             // 
@@ -6683,7 +7030,7 @@
             this.RogueSubTab.Multiline = true;
             this.RogueSubTab.Name = "RogueSubTab";
             this.RogueSubTab.SelectedIndex = 0;
-            this.RogueSubTab.Size = new System.Drawing.Size(685, 395);
+            this.RogueSubTab.Size = new System.Drawing.Size(685, 410);
             this.RogueSubTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.RogueSubTab.TabIndex = 5;
             this.RogueSubTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -6691,6 +7038,7 @@
             // RogueSettings
             // 
             this.RogueSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.RogueSettings.Controls.Add(this.RogueBuffGroup);
             this.RogueSettings.Controls.Add(this.RogueAuraGroup);
             this.RogueSettings.Controls.Add(this.RogueDebuffGroup);
             this.RogueSettings.Controls.Add(this.RogueExecuteGroup);
@@ -6699,7 +7047,7 @@
             this.RogueSettings.Location = new System.Drawing.Point(114, 4);
             this.RogueSettings.Margin = new System.Windows.Forms.Padding(0);
             this.RogueSettings.Name = "RogueSettings";
-            this.RogueSettings.Size = new System.Drawing.Size(567, 387);
+            this.RogueSettings.Size = new System.Drawing.Size(567, 402);
             this.RogueSettings.TabIndex = 0;
             this.RogueSettings.Text = "Rogue";
             this.RogueSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -7371,6 +7719,7 @@
             // NinjaSettings
             // 
             this.NinjaSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.NinjaSettings.Controls.Add(this.NinjaBuffGroup);
             this.NinjaSettings.Controls.Add(this.NinjaAuraGroup);
             this.NinjaSettings.Controls.Add(this.NinjaDebuffGroup);
             this.NinjaSettings.Controls.Add(this.NinjaNinjutsuGroup);
@@ -7381,7 +7730,7 @@
             this.NinjaSettings.Location = new System.Drawing.Point(114, 4);
             this.NinjaSettings.Margin = new System.Windows.Forms.Padding(0);
             this.NinjaSettings.Name = "NinjaSettings";
-            this.NinjaSettings.Size = new System.Drawing.Size(567, 387);
+            this.NinjaSettings.Size = new System.Drawing.Size(567, 402);
             this.NinjaSettings.TabIndex = 1;
             this.NinjaSettings.Text = "Ninja";
             this.NinjaSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -7391,7 +7740,7 @@
             this.NinjaAuraGroup.Controls.Add(this.NinjaKissOfTheWasp);
             this.NinjaAuraGroup.Controls.Add(this.NinjaKissOfTheViper);
             this.NinjaAuraGroup.ForeColor = System.Drawing.Color.White;
-            this.NinjaAuraGroup.Location = new System.Drawing.Point(148, 216);
+            this.NinjaAuraGroup.Location = new System.Drawing.Point(207, 216);
             this.NinjaAuraGroup.Name = "NinjaAuraGroup";
             this.NinjaAuraGroup.Size = new System.Drawing.Size(117, 65);
             this.NinjaAuraGroup.TabIndex = 42;
@@ -7716,7 +8065,7 @@
             this.ThaumaturgeTab.Location = new System.Drawing.Point(114, 4);
             this.ThaumaturgeTab.Margin = new System.Windows.Forms.Padding(0);
             this.ThaumaturgeTab.Name = "ThaumaturgeTab";
-            this.ThaumaturgeTab.Size = new System.Drawing.Size(682, 387);
+            this.ThaumaturgeTab.Size = new System.Drawing.Size(682, 402);
             this.ThaumaturgeTab.TabIndex = 8;
             this.ThaumaturgeTab.Text = "Thaumaturge";
             // 
@@ -7730,7 +8079,7 @@
             this.ThaumaturgeSubTab.Multiline = true;
             this.ThaumaturgeSubTab.Name = "ThaumaturgeSubTab";
             this.ThaumaturgeSubTab.SelectedIndex = 0;
-            this.ThaumaturgeSubTab.Size = new System.Drawing.Size(685, 395);
+            this.ThaumaturgeSubTab.Size = new System.Drawing.Size(685, 410);
             this.ThaumaturgeSubTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.ThaumaturgeSubTab.TabIndex = 5;
             this.ThaumaturgeSubTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -7742,7 +8091,7 @@
             this.ThaumaturgeSettings.Location = new System.Drawing.Point(114, 4);
             this.ThaumaturgeSettings.Margin = new System.Windows.Forms.Padding(0);
             this.ThaumaturgeSettings.Name = "ThaumaturgeSettings";
-            this.ThaumaturgeSettings.Size = new System.Drawing.Size(567, 387);
+            this.ThaumaturgeSettings.Size = new System.Drawing.Size(567, 402);
             this.ThaumaturgeSettings.TabIndex = 0;
             this.ThaumaturgeSettings.Text = "Thaumaturge";
             this.ThaumaturgeSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -8338,12 +8687,58 @@
             this.BlackMageQuellingStrikes.UseVisualStyleBackColor = true;
             this.BlackMageQuellingStrikes.CheckedChanged += new System.EventHandler(this.BlackMageQuellingStrikes_CheckedChanged);
             // 
+            // RogueBuffGroup
+            // 
+            this.RogueBuffGroup.Controls.Add(this.RogueGoad);
+            this.RogueBuffGroup.ForeColor = System.Drawing.Color.White;
+            this.RogueBuffGroup.Location = new System.Drawing.Point(34, 357);
+            this.RogueBuffGroup.Name = "RogueBuffGroup";
+            this.RogueBuffGroup.Size = new System.Drawing.Size(64, 42);
+            this.RogueBuffGroup.TabIndex = 44;
+            this.RogueBuffGroup.TabStop = false;
+            this.RogueBuffGroup.Text = "Buff";
+            // 
+            // RogueGoad
+            // 
+            this.RogueGoad.AutoSize = true;
+            this.RogueGoad.ForeColor = System.Drawing.Color.White;
+            this.RogueGoad.Location = new System.Drawing.Point(6, 19);
+            this.RogueGoad.Name = "RogueGoad";
+            this.RogueGoad.Size = new System.Drawing.Size(52, 17);
+            this.RogueGoad.TabIndex = 7;
+            this.RogueGoad.Text = "Goad";
+            this.RogueGoad.UseVisualStyleBackColor = true;
+            this.RogueGoad.CheckedChanged += new System.EventHandler(this.RogueGoad_CheckedChanged);
+            // 
+            // NinjaBuffGroup
+            // 
+            this.NinjaBuffGroup.Controls.Add(this.NinjaGoad);
+            this.NinjaBuffGroup.ForeColor = System.Drawing.Color.White;
+            this.NinjaBuffGroup.Location = new System.Drawing.Point(207, 287);
+            this.NinjaBuffGroup.Name = "NinjaBuffGroup";
+            this.NinjaBuffGroup.Size = new System.Drawing.Size(64, 42);
+            this.NinjaBuffGroup.TabIndex = 45;
+            this.NinjaBuffGroup.TabStop = false;
+            this.NinjaBuffGroup.Text = "Buff";
+            // 
+            // NinjaGoad
+            // 
+            this.NinjaGoad.AutoSize = true;
+            this.NinjaGoad.ForeColor = System.Drawing.Color.White;
+            this.NinjaGoad.Location = new System.Drawing.Point(6, 19);
+            this.NinjaGoad.Name = "NinjaGoad";
+            this.NinjaGoad.Size = new System.Drawing.Size(52, 17);
+            this.NinjaGoad.TabIndex = 7;
+            this.NinjaGoad.Text = "Goad";
+            this.NinjaGoad.UseVisualStyleBackColor = true;
+            this.NinjaGoad.CheckedChanged += new System.EventHandler(this.NinjaGoad_CheckedChanged);
+            // 
             // UltimaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(800, 540);
+            this.ClientSize = new System.Drawing.Size(800, 560);
             this.Controls.Add(this.UltimaBanner);
             this.Controls.Add(this.CloseButton);
             this.Controls.Add(this.ClassTab);
@@ -8358,6 +8753,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.UltimaBanner)).EndInit();
             this.ClassTab.ResumeLayout(false);
             this.UltimaTab.ResumeLayout(false);
+            this.UltimaGroup.ResumeLayout(false);
+            this.UltimaGroup.PerformLayout();
+            this.RotationGroup.ResumeLayout(false);
+            this.RotationGroup.PerformLayout();
             this.ChocoboGroup.ResumeLayout(false);
             this.ChocoboGroup.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UltimaDonateBox)).EndInit();
@@ -8468,6 +8867,8 @@
             this.GladiatorTab.ResumeLayout(false);
             this.GladiatorSubTab.ResumeLayout(false);
             this.GladiatorSettings.ResumeLayout(false);
+            this.groupBoxDesign1.ResumeLayout(false);
+            this.groupBoxDesign1.PerformLayout();
             this.GladiatorCrossGroup.ResumeLayout(false);
             this.GladiatorArcherGroup.ResumeLayout(false);
             this.GladiatorArcherGroup.PerformLayout();
@@ -8486,6 +8887,8 @@
             this.GladiatorLancerGroup.ResumeLayout(false);
             this.GladiatorLancerGroup.PerformLayout();
             this.PaladinSettings.ResumeLayout(false);
+            this.PaladinAuraGroup.ResumeLayout(false);
+            this.PaladinAuraGroup.PerformLayout();
             this.PaladinInterruptGroup.ResumeLayout(false);
             this.PaladinInterruptGroup.PerformLayout();
             this.PaladinCrossGroup.ResumeLayout(false);
@@ -8562,6 +8965,8 @@
             this.PugilistTab.ResumeLayout(false);
             this.PugilistSubTab.ResumeLayout(false);
             this.PugilistSettings.ResumeLayout(false);
+            this.PugilistAuraGroup.ResumeLayout(false);
+            this.PugilistAuraGroup.PerformLayout();
             this.PugilistCooldownGroup.ResumeLayout(false);
             this.PugilistCooldownGroup.PerformLayout();
             this.PugilistCrossGroup.ResumeLayout(false);
@@ -8582,6 +8987,8 @@
             this.PugilistConjurerGroup.ResumeLayout(false);
             this.PugilistConjurerGroup.PerformLayout();
             this.MonkSettings.ResumeLayout(false);
+            this.MonkAuraGroup.ResumeLayout(false);
+            this.MonkAuraGroup.PerformLayout();
             this.MonkCooldownGroup.ResumeLayout(false);
             this.MonkCooldownGroup.PerformLayout();
             this.MonkMovementGroup.ResumeLayout(false);
@@ -8661,6 +9068,10 @@
             this.BlackMageArcanistGroup.PerformLayout();
             this.BlackMageArcherGroup.ResumeLayout(false);
             this.BlackMageArcherGroup.PerformLayout();
+            this.RogueBuffGroup.ResumeLayout(false);
+            this.RogueBuffGroup.PerformLayout();
+            this.NinjaBuffGroup.ResumeLayout(false);
+            this.NinjaBuffGroup.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -9247,5 +9658,32 @@
         private Design.GroupBoxDesign RogueAuraGroup;
         private System.Windows.Forms.RadioButton RogueKissOfTheWasp;
         private System.Windows.Forms.RadioButton RogueKissOfTheViper;
+        private Design.GroupBoxDesign RotationGroup;
+        private System.Windows.Forms.CheckBox OverlayCheck;
+        private System.Windows.Forms.Label RotationModeLabel;
+        private System.Windows.Forms.ComboBox RotationModeCombo;
+        private System.Windows.Forms.Label RotationModifierLabel;
+        private System.Windows.Forms.ComboBox RotationModifierCombo;
+        private System.Windows.Forms.Label RotationHotkeyLabel;
+        private System.Windows.Forms.ComboBox RotationHotkeyCombo;
+        private Design.GroupBoxDesign PugilistAuraGroup;
+        private System.Windows.Forms.RadioButton PugilistFistsOfEarth;
+        private System.Windows.Forms.RadioButton PugilistFistsOfWind;
+        private Design.GroupBoxDesign MonkAuraGroup;
+        private System.Windows.Forms.RadioButton MonkFistsOfFire;
+        private System.Windows.Forms.RadioButton MonkFistsOfEarth;
+        private System.Windows.Forms.RadioButton MonkFistsOfWind;
+        private Design.GroupBoxDesign PaladinAuraGroup;
+        private System.Windows.Forms.RadioButton PaladinSwordOath;
+        private System.Windows.Forms.RadioButton PaladinShieldOath;
+        private Design.GroupBoxDesign groupBoxDesign1;
+        private System.Windows.Forms.CheckBox GladiatorShieldSwipe;
+        private System.Windows.Forms.CheckBox PaladinShieldSwipe;
+        private Design.GroupBoxDesign UltimaGroup;
+        private System.Windows.Forms.CheckBox DefaultCRCheck;
+        private Design.GroupBoxDesign RogueBuffGroup;
+        private System.Windows.Forms.CheckBox RogueGoad;
+        private Design.GroupBoxDesign NinjaBuffGroup;
+        private System.Windows.Forms.CheckBox NinjaGoad;
     }
 }

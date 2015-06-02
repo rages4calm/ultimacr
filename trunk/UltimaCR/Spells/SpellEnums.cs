@@ -15,6 +15,7 @@ namespace UltimaCR.Spells
     public enum SpellType
     {
         Damage,
+        AoE,
         DoT,
         OnLocation,
         Buff,

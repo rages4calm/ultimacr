@@ -39,20 +39,27 @@ namespace UltimaCR.Rotations
         private async Task<bool> Summon()
         {
             if (Core.Player.Pet == null &&
-                Ultima.UltSettings.ScholarSummonPet &&
-                Ultima.UltSettings.ScholarEos)
+                Ultima.UltSettings.ScholarSummonPet)
             {
-                return await MySpells.Summon.Cast();
+                if (Ultima.UltSettings.ScholarEos ||
+                    Core.Player.ClassLevel < MySpells.SummonII.Level)
+                {
+                    return await MySpells.Summon.Cast();
+                }
             }
             return false;
         }
 
         private async Task<bool> Physick()
         {
-            if (Ultima.UltSettings.ScholarPhysick &&
-                Core.Player.CurrentHealthPercent < 70)
+            if (Ultima.UltSettings.ScholarPhysick)
             {
-                return await MySpells.Physick.Cast();
+                if (Core.Player.CurrentHealthPercent < 70 ||
+                    Core.Player.Pet != null &&
+                    Core.Player.Pet.CurrentHealthPercent < 70)
+                {
+                    return await MySpells.Physick.Cast();
+                }
             }
             return false;
         }
@@ -68,10 +75,16 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> EnergyDrain()
         {
-            if (Core.Player.HasAura(MySpells.Aetherflow.Name) &&
-                Core.Player.CurrentManaPercent <= 90)
+            if (Core.Player.HasAura(MySpells.Aetherflow.Name))
             {
-                return await MySpells.EnergyDrain.Cast();
+                if (Helpers.EnemiesNearTarget(8) <= 1 &&
+                    Core.Player.CurrentManaPercent <= 90 ||
+                    Core.Player.ClassLevel < MySpells.Bane.Level &&
+                    Core.Player.CurrentManaPercent <= 90 ||
+                    Core.Player.CurrentManaPercent <= 40)
+                {
+                    return await MySpells.EnergyDrain.Cast();
+                }
             }
             return false;
         }
@@ -128,7 +141,14 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Bane()
         {
-            return await MySpells.Bane.Cast();
+            if (Core.Player.HasAura(MySpells.Aetherflow.Name) &&
+                Core.Player.CurrentTarget.HasAura(MySpells.BioII.Name) &&
+                Core.Player.CurrentTarget.HasAura(MySpells.Miasma.Name) &&
+                Core.Player.CurrentTarget.HasAura(MySpells.Bio.Name))
+            {
+                return await MySpells.Bane.Cast();
+            }
+            return false;
         }
 
         private async Task<bool> EyeForAnEye()
@@ -147,7 +167,13 @@ namespace UltimaCR.Rotations
                 if (Actionmanager.CanCast(MySpells.Aetherflow.Name, Core.Player) &&
                     !Core.Player.HasAura(MySpells.Aetherflow.Name) ||
                     Actionmanager.CanCast(MySpells.EnergyDrain.Name, Core.Player.CurrentTarget) &&
-                    Core.Player.CurrentManaPercent <= 90 ||
+                    Core.Player.CurrentManaPercent <= 90 &&
+                    Helpers.EnemiesNearTarget(8) <= 1 ||
+                    Actionmanager.CanCast(MySpells.Bane.Name, Core.Player) &&
+                    Helpers.EnemiesNearTarget(8) > 1 &&
+                    !Ultima.UltSettings.SingleTarget ||
+                    Actionmanager.CanCast(MySpells.Bane.Name, Core.Player) &&
+                    Ultima.UltSettings.MultiTarget ||
                     Actionmanager.CanCast(MySpells.Rouse.Name, Core.Player))
                 {
                     return await MySpells.RuinII.Cast();
@@ -163,7 +189,12 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> MiasmaII()
         {
-            return await MySpells.MiasmaII.Cast();
+            if (Helpers.EnemiesNearPlayer(5) > 4 &&
+                Core.Player.CurrentTarget.HasAura(MySpells.MiasmaII.Name, true, 3000))
+            {
+                return await MySpells.MiasmaII.Cast();
+            }
+            return false;
         }
 
         private async Task<bool> ShadowFlare()
@@ -223,8 +254,7 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> ClericStance()
         {
-            if (Ultima.UltSettings.ScholarClericStance &&
-                !Core.Player.HasAura(MySpells.CrossClass.ClericStance.Name))
+            if (Ultima.UltSettings.ScholarClericStance)
             {
                 return await MySpells.CrossClass.ClericStance.Cast();
             }
@@ -299,10 +329,14 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Adloquium()
         {
-            if (Ultima.UltSettings.ScholarAdloquium &&
-                Core.Player.CurrentHealthPercent < 70)
+            if (Ultima.UltSettings.ScholarAdloquium)
             {
-                return await MySpells.Adloquium.Cast();
+                if (Core.Player.CurrentHealthPercent < 70 ||
+                    Core.Player.Pet != null &&
+                    Core.Player.Pet.CurrentHealthPercent < 70)
+                {
+                    return await MySpells.Adloquium.Cast();
+                }
             }
             return false;
         }

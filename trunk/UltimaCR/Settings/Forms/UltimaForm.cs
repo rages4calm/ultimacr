@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ff14bot.Managers;
+using System;
 using System.Diagnostics;
 using System.Drawing;
 using System.Runtime.InteropServices;
@@ -41,6 +42,8 @@ namespace UltimaCR.Settings.Forms
 
         #endregion
 
+        public static readonly RotationOverlay Overlay = new RotationOverlay();
+
         public UltimaForm()
         {
             InitializeComponent();
@@ -49,6 +52,7 @@ namespace UltimaCR.Settings.Forms
         private void UltimaForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Ultima.UltSettings.Save();
+            RegisterHotkeys();
         }
 
         private void CloseButton_Click(object sender, EventArgs e)
@@ -58,6 +62,8 @@ namespace UltimaCR.Settings.Forms
 
         private void UltimaForm_Load(object sender, EventArgs e)
         {
+            #region Ultima Settings
+
             #region Images
 
             UltimaBanner.Image = UltimaBannerImage;
@@ -87,6 +93,144 @@ namespace UltimaCR.Settings.Forms
             {
                 ChocoboStanceCombo.Text = @"Healer Stance";
             }
+
+            #endregion
+
+            #region Rotation Settings
+
+            #region Overlay Settings
+
+            OverlayCheck.Checked = Ultima.UltSettings.UseOverlay;
+
+            #endregion
+
+            #region Rotation Combo Settings
+
+            if (Ultima.UltSettings.SmartTarget)
+            {
+                RotationModeCombo.Text = @"Smart Target";
+            }
+
+            if (Ultima.UltSettings.SingleTarget)
+            {
+                RotationModeCombo.Text = @"Single Target";
+            }
+
+            if (Ultima.UltSettings.MultiTarget)
+            {
+                RotationModeCombo.Text = @"Multi Target";
+            }
+            Overlay.UpdateLabel(RotationModeCombo.Text);
+
+            #endregion
+
+            #region Rotation Hotkey Settings
+
+            UnregisterHotkeys();
+
+            #region Rotation Modifier Key Settings
+
+            if (Ultima.UltSettings.ModKey == System.Windows.Input.ModifierKeys.None)
+            {
+                RotationModifierCombo.Text = @"None";
+            }
+
+            if (Ultima.UltSettings.ModKey == System.Windows.Input.ModifierKeys.Alt)
+            {
+                RotationModifierCombo.Text = @"Alt";
+            }
+
+            if (Ultima.UltSettings.ModKey == System.Windows.Input.ModifierKeys.Control)
+            {
+                RotationModifierCombo.Text = @"Control";
+            }
+
+            if (Ultima.UltSettings.ModKey == System.Windows.Input.ModifierKeys.Shift)
+            {
+                RotationModifierCombo.Text = @"Shift";
+            }
+
+            if (Ultima.UltSettings.ModKey == System.Windows.Input.ModifierKeys.Windows)
+            {
+                RotationModifierCombo.Text = @"Windows";
+            }
+
+            #endregion
+
+            #region Rotation Hotkey Settings
+
+            if (Ultima.UltSettings.HotKey == Keys.None)
+            {
+                RotationHotkeyCombo.Text = @"None";
+            }
+
+            if (Ultima.UltSettings.HotKey == Keys.LButton)
+            {
+                RotationHotkeyCombo.Text = @"Left Mouse";
+            }
+
+            if (Ultima.UltSettings.HotKey == Keys.MButton)
+            {
+                RotationHotkeyCombo.Text = @"Middle Mouse";
+            }
+
+            if (Ultima.UltSettings.HotKey == Keys.RButton)
+            {
+                RotationHotkeyCombo.Text = @"Right Mouse";
+            }
+
+            if (Ultima.UltSettings.HotKey == Keys.XButton1)
+            {
+                RotationHotkeyCombo.Text = @"Mouse 1";
+            }
+
+            if (Ultima.UltSettings.HotKey == Keys.XButton2)
+            {
+                RotationHotkeyCombo.Text = @"Mouse 2";
+            }
+
+            if (Ultima.UltSettings.HotKey == Keys.Space)
+            {
+                RotationHotkeyCombo.Text = @"Space";
+            }
+
+            if (Ultima.UltSettings.HotKey == Keys.Oemtilde)
+            {
+                RotationHotkeyCombo.Text = @"Tilde";
+            }
+
+            if (Ultima.UltSettings.HotKey == Keys.Q)
+            {
+                RotationHotkeyCombo.Text = @"Q";
+            }
+
+            if (Ultima.UltSettings.HotKey == Keys.E)
+            {
+                RotationHotkeyCombo.Text = @"E";
+            }
+
+            if (Ultima.UltSettings.HotKey == Keys.Z)
+            {
+                RotationHotkeyCombo.Text = @"Z";
+            }
+
+            if (Ultima.UltSettings.HotKey == Keys.X)
+            {
+                RotationHotkeyCombo.Text = @"X";
+            }
+
+            if (Ultima.UltSettings.HotKey == Keys.C)
+            {
+                RotationHotkeyCombo.Text = @"C";
+            }
+
+            #endregion
+
+            #endregion
+
+            #endregion
+
+            DefaultCRCheck.Checked = Ultima.UltSettings.DefaultCRCheck;
 
             #endregion
 
@@ -382,6 +526,8 @@ namespace UltimaCR.Settings.Forms
 
             #endregion
 
+            GladiatorShieldSwipe.Checked = Ultima.UltSettings.GladiatorShieldSwipe;
+
             #endregion
 
             #region Lancer Settings
@@ -614,6 +760,8 @@ namespace UltimaCR.Settings.Forms
             #endregion
 
             PugilistPerfectBalance.Checked = Ultima.UltSettings.PugilistPerfectBalance;
+            PugilistFistsOfEarth.Checked = Ultima.UltSettings.PugilistFistsOfEarth;
+            PugilistFistsOfWind.Checked = Ultima.UltSettings.PugilistFistsOfWind;
 
             #endregion
 
@@ -697,6 +845,7 @@ namespace UltimaCR.Settings.Forms
             RogueDancingEdge.Checked = Ultima.UltSettings.RogueDancingEdge;
             RogueKissOfTheWasp.Checked = Ultima.UltSettings.RogueKissOfTheWasp;
             RogueKissOfTheViper.Checked = Ultima.UltSettings.RogueKissOfTheViper;
+            RogueGoad.Checked = Ultima.UltSettings.RogueGoad;
 
             #endregion
 
@@ -869,6 +1018,9 @@ namespace UltimaCR.Settings.Forms
 
             MonkShoulderTackle.Checked = Ultima.UltSettings.MonkShoulderTackle;
             MonkPerfectBalance.Checked = Ultima.UltSettings.MonkPerfectBalance;
+            MonkFistsOfEarth.Checked = Ultima.UltSettings.MonkFistsOfEarth;
+            MonkFistsOfWind.Checked = Ultima.UltSettings.MonkFistsOfWind;
+            MonkFistsOfFire.Checked = Ultima.UltSettings.MonkFistsOfFire;
 
             #endregion
 
@@ -901,6 +1053,7 @@ namespace UltimaCR.Settings.Forms
             NinjaKissOfTheWasp.Checked = Ultima.UltSettings.NinjaKissOfTheWasp;
             NinjaKissOfTheViper.Checked = Ultima.UltSettings.NinjaKissOfTheViper;
             NinjaDancingEdge.Checked = Ultima.UltSettings.NinjaDancingEdge;
+            NinjaGoad.Checked = Ultima.UltSettings.NinjaGoad;
 
             #endregion
 
@@ -925,7 +1078,10 @@ namespace UltimaCR.Settings.Forms
 
             #endregion
 
+            PaladinShieldSwipe.Checked = Ultima.UltSettings.PaladinShieldSwipe;
             PaladinSpiritsWithin.Checked = Ultima.UltSettings.PaladinSpiritsWithin;
+            PaladinSwordOath.Checked = Ultima.UltSettings.PaladinSwordOath;
+            PaladinShieldOath.Checked = Ultima.UltSettings.PaladinShieldOath;
 
             #endregion
 
@@ -1054,6 +1210,8 @@ namespace UltimaCR.Settings.Forms
             #endregion
         }
 
+        #region Ultima Settings
+
         #region Chocobo Settings
 
         private void SummonChocobo_CheckedChanged(object sender, EventArgs e)
@@ -1094,6 +1252,177 @@ namespace UltimaCR.Settings.Forms
                 Ultima.UltSettings.ChocoboAttackerStance = false;
                 Ultima.UltSettings.ChocoboHealerStance = true;
             }
+        }
+
+        #endregion
+
+        #region Rotation Settings
+
+        #region Overlay Settings
+
+        private void OverlayCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.UseOverlay = OverlayCheck.Checked;
+            Overlay.Visible = OverlayCheck.Checked;
+        }
+
+        #endregion
+
+        #region Rotation Combo Settings
+
+        private void RotationModeCombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (RotationModeCombo.Text == @"Smart Target")
+            {
+                Ultima.UltSettings.SmartTarget = true;
+                Ultima.UltSettings.SingleTarget = false;
+                Ultima.UltSettings.MultiTarget = false;
+                Overlay.UpdateLabel(RotationModeCombo.Text);
+            }
+
+            if (RotationModeCombo.Text == @"Single Target")
+            {
+                Ultima.UltSettings.SmartTarget = false;
+                Ultima.UltSettings.SingleTarget = true;
+                Ultima.UltSettings.MultiTarget = false;
+                Overlay.UpdateLabel(RotationModeCombo.Text);
+            }
+
+            if (RotationModeCombo.Text == @"Multi Target")
+            {
+                Ultima.UltSettings.SmartTarget = false;
+                Ultima.UltSettings.SingleTarget = false;
+                Ultima.UltSettings.MultiTarget = true;
+                Overlay.UpdateLabel(RotationModeCombo.Text);
+            }
+        }
+
+        #endregion
+
+        #region Rotation Hotkey Settings
+
+        private static void RegisterHotkeys()
+    {
+        HotkeyManager.Register("[Ultima] Cycle Rotation", Ultima.UltSettings.HotKey, Ultima.UltSettings.ModKey, hk => Ultima.CycleRotation());
+    }
+
+        private static void UnregisterHotkeys()
+        {
+            HotkeyManager.Unregister("[Ultima] Cycle Rotation");
+        }
+
+        #region Rotation Modifier Key Settings
+
+        private void RotationModifierCombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (RotationModifierCombo.Text == @"None")
+            {
+                Ultima.UltSettings.ModKey = System.Windows.Input.ModifierKeys.None;
+            }
+
+            if (RotationModifierCombo.Text == @"Alt")
+            {
+                Ultima.UltSettings.ModKey = System.Windows.Input.ModifierKeys.Alt;
+            }
+
+            if (RotationModifierCombo.Text == @"Control")
+            {
+                Ultima.UltSettings.ModKey = System.Windows.Input.ModifierKeys.Control;
+            }
+
+            if (RotationModifierCombo.Text == @"Shift")
+            {
+                Ultima.UltSettings.ModKey = System.Windows.Input.ModifierKeys.Shift;
+            }
+
+            if (RotationModifierCombo.Text == @"Windows")
+            {
+                Ultima.UltSettings.ModKey = System.Windows.Input.ModifierKeys.Windows;
+            }
+        }
+
+        #endregion
+
+        #region Rotation Hotkey Settings
+
+        private void RotationHotkeyCombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (RotationHotkeyCombo.Text == @"None")
+            {
+                Ultima.UltSettings.HotKey = Keys.None;
+            }
+
+            if (RotationHotkeyCombo.Text == @"Left Mouse")
+            {
+                Ultima.UltSettings.HotKey = Keys.LButton;
+            }
+
+            if (RotationHotkeyCombo.Text == @"Middle Mouse")
+            {
+                Ultima.UltSettings.HotKey = Keys.MButton;
+            }
+
+            if (RotationHotkeyCombo.Text == @"Right Mouse")
+            {
+                Ultima.UltSettings.HotKey = Keys.RButton;
+            }
+
+            if (RotationHotkeyCombo.Text == @"Mouse 1")
+            {
+                Ultima.UltSettings.HotKey = Keys.XButton1;
+            }
+
+            if (RotationHotkeyCombo.Text == @"Mouse 2")
+            {
+                Ultima.UltSettings.HotKey = Keys.XButton2;
+            }
+
+            if (RotationHotkeyCombo.Text == @"Space")
+            {
+                Ultima.UltSettings.HotKey = Keys.Space;
+            }
+
+            if (RotationHotkeyCombo.Text == @"Tilde")
+            {
+                Ultima.UltSettings.HotKey = Keys.Oemtilde;
+            }
+
+            if (RotationHotkeyCombo.Text == @"Q")
+            {
+                Ultima.UltSettings.HotKey = Keys.Q;
+            }
+
+            if (RotationHotkeyCombo.Text == @"E")
+            {
+                Ultima.UltSettings.HotKey = Keys.E;
+            }
+
+            if (RotationHotkeyCombo.Text == @"Z")
+            {
+                Ultima.UltSettings.HotKey = Keys.Z;
+            }
+
+            if (RotationHotkeyCombo.Text == @"X")
+            {
+                Ultima.UltSettings.HotKey = Keys.X;
+            }
+
+            if (RotationHotkeyCombo.Text == @"C")
+            {
+                Ultima.UltSettings.HotKey = Keys.C;
+            }
+        }
+
+        #endregion
+
+        #endregion
+
+        #endregion
+
+        private void DefaultCRCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.DefaultCRCheck = DefaultCRCheck.Checked;
+            RoutineManager.PreferedRoutine = Ultima.UltSettings.DefaultCRCheck ? "Ultima" : null;
         }
 
         #endregion
@@ -1824,6 +2153,11 @@ namespace UltimaCR.Settings.Forms
 
         #endregion
 
+        private void GladiatorShieldSwipe_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.GladiatorShieldSwipe = GladiatorShieldSwipe.Checked;
+        }
+
         #endregion
 
         #region Lancer Settings
@@ -2421,6 +2755,15 @@ namespace UltimaCR.Settings.Forms
         {
             Ultima.UltSettings.PugilistPerfectBalance = PugilistPerfectBalance.Checked;
         }
+        private void PugilistFistsOfEarth_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.PugilistFistsOfEarth = PugilistFistsOfEarth.Checked;
+        }
+
+        private void PugilistFistsOfWind_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.PugilistFistsOfWind = PugilistFistsOfWind.Checked;
+        }
 
         #endregion
 
@@ -2645,6 +2988,11 @@ namespace UltimaCR.Settings.Forms
         private void RogueKissOfTheViper_CheckedChanged(object sender, EventArgs e)
         {
             Ultima.UltSettings.RogueKissOfTheViper = RogueKissOfTheViper.Checked;
+        }
+
+        private void RogueGoad_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.RogueGoad = RogueGoad.Checked;
         }
 
         #endregion
@@ -3080,6 +3428,20 @@ namespace UltimaCR.Settings.Forms
         {
             Ultima.UltSettings.MonkPerfectBalance = MonkPerfectBalance.Checked;
         }
+        private void MonkFistsOfEarth_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.MonkFistsOfEarth = MonkFistsOfEarth.Checked;
+        }
+
+        private void MonkFistsOfWind_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.MonkFistsOfWind = MonkFistsOfWind.Checked;
+        }
+
+        private void MonkFistsOfFire_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.MonkFistsOfFire = MonkFistsOfFire.Checked;
+        }
 
         #endregion
 
@@ -3178,6 +3540,11 @@ namespace UltimaCR.Settings.Forms
             Ultima.UltSettings.NinjaKissOfTheViper = NinjaKissOfTheViper.Checked;
         }
 
+        private void NinjaGoad_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.NinjaGoad = NinjaGoad.Checked;
+        }
+
         #endregion
 
         #region Paladin Settings
@@ -3234,9 +3601,25 @@ namespace UltimaCR.Settings.Forms
         }
 
         #endregion
+
+        private void PaladinShieldSwipe_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.PaladinShieldSwipe = PaladinShieldSwipe.Checked;
+        }
+
         private void PaladinSpiritsWithin_CheckedChanged(object sender, EventArgs e)
         {
             Ultima.UltSettings.PaladinSpiritsWithin = PaladinSpiritsWithin.Checked;
+        }
+
+        private void PaladinSwordOath_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.PaladinSwordOath = PaladinSwordOath.Checked;
+        }
+
+        private void PaladinShieldOath_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.PaladinShieldOath = PaladinShieldOath.Checked;
         }
 
         #endregion

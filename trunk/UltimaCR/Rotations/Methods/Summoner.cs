@@ -1,4 +1,5 @@
-﻿using Buddy.Coroutines;
+﻿using System.Windows.Forms;
+using Buddy.Coroutines;
 using ff14bot;
 using ff14bot.Managers;
 using System.Threading.Tasks;
@@ -39,20 +40,30 @@ namespace UltimaCR.Rotations
         private async Task<bool> Summon()
         {
             if (Core.Player.Pet == null &&
-                Ultima.UltSettings.SummonerSummonPet &&
-                Ultima.UltSettings.SummonerGaruda)
+                Ultima.UltSettings.SummonerSummonPet)
             {
-                return await MySpells.Summon.Cast();
+                if (Ultima.UltSettings.SummonerGaruda ||
+                    Core.Player.ClassLevel < MySpells.SummonII.Level &&
+                    Ultima.UltSettings.SummonerTitan ||
+                    Core.Player.ClassLevel < MySpells.SummonIII.Level &&
+                    Ultima.UltSettings.SummonerIfrit)
+                {
+                    return await MySpells.Summon.Cast();
+                }
             }
             return false;
         }
 
         private async Task<bool> Physick()
         {
-            if (Ultima.UltSettings.SummonerPhysick &&
-                Core.Player.CurrentHealthPercent < 70)
+            if (Ultima.UltSettings.SummonerPhysick)
             {
-                return await MySpells.Physick.Cast();
+                if (Core.Player.CurrentHealthPercent < 70 ||
+                    Core.Player.Pet != null &&
+                    Core.Player.Pet.CurrentHealthPercent < 70)
+                {
+                    return await MySpells.Physick.Cast();
+                }
             }
             return false;
         }
@@ -135,7 +146,14 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Bane()
         {
-            return await MySpells.Bane.Cast();
+            if (Core.Player.HasAura(MySpells.Aetherflow.Name) &&
+                Core.Player.CurrentTarget.HasAura(MySpells.BioII.Name) &&
+                Core.Player.CurrentTarget.HasAura(MySpells.Miasma.Name) &&
+                Core.Player.CurrentTarget.HasAura(MySpells.Bio.Name))
+            {
+                return await MySpells.Bane.Cast();
+            }
+            return false;
         }
 
         private async Task<bool> EyeForAnEye()
@@ -153,7 +171,14 @@ namespace UltimaCR.Rotations
             {
                 if (Actionmanager.CanCast(MySpells.Aetherflow.Name, Core.Player) &&
                     !Core.Player.HasAura(MySpells.Aetherflow.Name) ||
-                    Actionmanager.CanCast(MySpells.Fester.Name, Core.Player) ||
+                    Actionmanager.CanCast(MySpells.Fester.Name, Core.Player) &&
+                    Helpers.EnemiesNearTarget(8) <= 1 &&
+                    !Ultima.UltSettings.MultiTarget ||
+                    Actionmanager.CanCast(MySpells.Bane.Name, Core.Player) &&
+                    Helpers.EnemiesNearTarget(8) > 1 &&
+                    !Ultima.UltSettings.SingleTarget ||
+                    Actionmanager.CanCast(MySpells.Bane.Name, Core.Player) &&
+                    Ultima.UltSettings.MultiTarget ||
                     Actionmanager.CanCast(MySpells.Rouse.Name, Core.Player) ||
                     Actionmanager.CanCast(MySpells.Spur.Name, Core.Player))
                 {
@@ -170,7 +195,12 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> MiasmaII()
         {
-            return await MySpells.MiasmaII.Cast();
+            if (Helpers.EnemiesNearPlayer(5) > 4 &&
+                Core.Player.CurrentTarget.HasAura(MySpells.MiasmaII.Name, true, 3000))
+            {
+                return await MySpells.MiasmaII.Cast();
+            }
+            return false;
         }
 
         private async Task<bool> ShadowFlare()

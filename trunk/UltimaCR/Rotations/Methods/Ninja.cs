@@ -1,4 +1,5 @@
-﻿using Buddy.Coroutines;
+﻿using System.Linq;
+using Buddy.Coroutines;
 using ff14bot;
 using ff14bot.Enums;
 using ff14bot.Managers;
@@ -98,7 +99,14 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Goad()
         {
-            return await MySpells.Goad.Cast();
+            var target = Helpers.LowTPPartyMember.FirstOrDefault();
+
+            if (target != null &&
+                Ultima.UltSettings.NinjaGoad)
+            {
+                return await MySpells.Goad.Cast(target);
+            }
+            return false;
         }
 
         private async Task<bool> SneakAttack()
@@ -300,7 +308,9 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Kassatsu()
         {
-            if (Core.Player.CurrentTarget.HasAura("Vulnerability Up"))
+            if (Core.Player.CurrentTarget.HasAura("Vulnerability Up") ||
+                Helpers.EnemiesNearPlayer(5) > 2 ||
+                Ultima.UltSettings.MultiTarget)
             {
                 return await MySpells.Kassatsu.Cast();
             }
@@ -350,28 +360,32 @@ namespace UltimaCR.Rotations
                 Core.Player.CurrentTarget.InLineOfSight() ||
                 Core.Player.HasAura("Mudra"))
             {
-                if (Ultima.LastSpell.ID != MySpells.Ten.ID &&
-                    Ultima.LastSpell.ID != MySpells.Chi.ID &&
-                    Ultima.LastSpell.ID != MySpells.Jin.ID)
+                if (Helpers.EnemiesNearTarget(5) > 2 ||
+                    Ultima.UltSettings.MultiTarget)
                 {
-                    if (await MySpells.Chi.Cast())
+                    if (Ultima.LastSpell.ID != MySpells.Ten.ID &&
+                        Ultima.LastSpell.ID != MySpells.Chi.ID &&
+                        Ultima.LastSpell.ID != MySpells.Jin.ID)
                     {
-                        await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Chi.ID, Core.Player));
+                        if (await MySpells.Chi.Cast())
+                        {
+                            await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Chi.ID, Core.Player));
+                        }
                     }
-                }
-                if (Ultima.LastSpell.ID == MySpells.Chi.ID)
-                {
-                    if (await MySpells.Ten.Cast())
+                    if (Ultima.LastSpell.ID == MySpells.Chi.ID)
                     {
-                        await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Ten.ID, Core.Player));
+                        if (await MySpells.Ten.Cast())
+                        {
+                            await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Ten.ID, Core.Player));
+                        }
                     }
-                }
-                if (Ultima.LastSpell.ID == MySpells.Ten.ID)
-                {
-                    if (await MySpells.Katon.Cast())
+                    if (Ultima.LastSpell.ID == MySpells.Ten.ID)
                     {
-                        await Coroutine.Wait(2000, () => !Core.Player.HasAura("Mudra"));
-                        return true;
+                        if (await MySpells.Katon.Cast())
+                        {
+                            await Coroutine.Wait(2000, () => !Core.Player.HasAura("Mudra"));
+                            return true;
+                        }
                     }
                 }
             }
@@ -502,37 +516,42 @@ namespace UltimaCR.Rotations
         private async Task<bool> Doton()
         {
             if (Actionmanager.CanCast(MySpells.Jin.ID, Core.Player) &&
-                DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds >= 1000)
+                DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds >= 1000 &&
+                Core.Player.HasAura(MySpells.Kassatsu.Name))
             {
-                if (Ultima.LastSpell.ID != MySpells.Ten.ID &&
-                    Ultima.LastSpell.ID != MySpells.Chi.ID &&
-                    Ultima.LastSpell.ID != MySpells.Jin.ID)
+                if (Helpers.EnemiesNearPlayer(5) > 2 ||
+                    Ultima.UltSettings.MultiTarget)
                 {
-                }
-                if (await MySpells.Ten.Cast())
-                {
-                    await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Ten.ID, Core.Player));
-                }
-                if (Ultima.LastSpell.ID == MySpells.Ten.ID)
-                {
-                    if (await MySpells.Jin.Cast())
+                    if (Ultima.LastSpell.ID != MySpells.Ten.ID &&
+                        Ultima.LastSpell.ID != MySpells.Chi.ID &&
+                        Ultima.LastSpell.ID != MySpells.Jin.ID)
                     {
-                        await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Jin.ID, Core.Player));
                     }
-                }
-                if (Ultima.LastSpell.ID == MySpells.Jin.ID)
-                {
-                    if (await MySpells.Chi.Cast())
+                    if (await MySpells.Ten.Cast())
                     {
-                        await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Chi.ID, Core.Player));
+                        await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Ten.ID, Core.Player));
                     }
-                }
-                if (Ultima.LastSpell.ID == MySpells.Chi.ID)
-                {
-                    if (await MySpells.Doton.Cast())
+                    if (Ultima.LastSpell.ID == MySpells.Ten.ID)
                     {
-                        await Coroutine.Wait(2000, () => !Core.Player.HasAura("Mudra"));
-                        return true;
+                        if (await MySpells.Jin.Cast())
+                        {
+                            await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Jin.ID, Core.Player));
+                        }
+                    }
+                    if (Ultima.LastSpell.ID == MySpells.Jin.ID)
+                    {
+                        if (await MySpells.Chi.Cast())
+                        {
+                            await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Chi.ID, Core.Player));
+                        }
+                    }
+                    if (Ultima.LastSpell.ID == MySpells.Chi.ID)
+                    {
+                        if (await MySpells.Doton.Cast())
+                        {
+                            await Coroutine.Wait(2000, () => !Core.Player.HasAura("Mudra"));
+                            return true;
+                        }
                     }
                 }
             }

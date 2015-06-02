@@ -147,7 +147,11 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> RingOfThorns()
         {
-            return await MySpells.RingOfThorns.Cast();
+            if (Actionmanager.LastSpell.Name == MySpells.HeavyThrust.Name)
+            {
+                return await MySpells.RingOfThorns.Cast();
+            }
+            return false;
         }
 
         private async Task<bool> ChaosThrust()

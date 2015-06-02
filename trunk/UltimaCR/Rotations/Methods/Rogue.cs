@@ -1,4 +1,5 @@
-﻿using ff14bot;
+﻿using System.Linq;
+using ff14bot;
 using ff14bot.Managers;
 using System.Threading.Tasks;
 using UltimaCR.Spells.Main;
@@ -96,7 +97,14 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Goad()
         {
-            return await MySpells.Goad.Cast();
+            var target = Helpers.LowTPPartyMember.FirstOrDefault();
+
+            if (target != null &&
+                Ultima.UltSettings.RogueGoad)
+            {
+                return await MySpells.Goad.Cast(target);
+            }
+            return false;
         }
 
         private async Task<bool> SneakAttack()
