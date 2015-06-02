@@ -90,7 +90,12 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> ShieldSwipe()
         {
-            return await MySpells.ShieldSwipe.Cast();
+            if (Ultima.UltSettings.GladiatorShieldSwipe &&
+                Core.Player.CurrentTPPercent > 40)
+            {
+                return await MySpells.ShieldSwipe.Cast();
+            }
+            return false;
         }
 
         private async Task<bool> Awareness()

@@ -7,6 +7,7 @@ using ff14bot.Navigation;
 using ff14bot.Objects;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Media;
 
@@ -58,6 +59,92 @@ namespace UltimaCR.Spells
             {
                 return false;
             }
+            #endregion
+            
+            #region AoE Check
+
+            if (SpellType == SpellType.AoE &&
+                Ultima.UltSettings.SmartTarget)
+            {
+                var EnemyCount = Helpers.EnemyUnit.Count(eu => eu.Location.Distance3D(target.Location) <= DataManager.GetSpellData(ID).Radius);
+
+                if (Core.Player.CurrentJob == ClassJobType.Arcanist ||
+                    Core.Player.CurrentJob == ClassJobType.Scholar ||
+                    Core.Player.CurrentJob == ClassJobType.Summoner)
+                {
+                    if (EnemyCount < 2)
+                    {
+                        return false;
+                    }
+                }
+                if (Core.Player.CurrentJob == ClassJobType.Archer ||
+                    Core.Player.CurrentJob == ClassJobType.Bard)
+                {
+                    if (EnemyCount < 3)
+                    {
+                        return false;
+                    }
+                }
+                if (Core.Player.CurrentJob == ClassJobType.Lancer ||
+                    Core.Player.CurrentJob == ClassJobType.Dragoon)
+                {
+                    if (EnemyCount < 4)
+                    {
+                        return false;
+                    }
+                }
+                if (Core.Player.CurrentJob == ClassJobType.Pugilist ||
+                    Core.Player.CurrentJob == ClassJobType.Monk)
+                {
+                    if (EnemyCount < 2)
+                    {
+                        return false;
+                    }
+                }
+                if (Core.Player.CurrentJob == ClassJobType.Rogue ||
+                    Core.Player.CurrentJob == ClassJobType.Ninja)
+                {
+                    if (EnemyCount < 2)
+                    {
+                        return false;
+                    }
+                }
+                if (Core.Player.CurrentJob == ClassJobType.Thaumaturge ||
+                    Core.Player.CurrentJob == ClassJobType.BlackMage)
+                {
+                    if (EnemyCount < 2)
+                    {
+                        return false;
+                    }
+                }
+            }
+
+            #region Cone Check
+
+            if (ID == 106 || ID == 41 || ID == 70)
+            {
+                if (Core.Player.Distance(target) > DataManager.GetSpellData(ID).Range ||
+                    !Helpers.InsideCone(Core.Player.Location, Core.Player.Heading, target.Location))
+                {
+                    return false;
+                }
+            }
+
+            #endregion
+
+            #region Rectangle Check
+
+            if (ID == 86)
+            {
+                if (Core.Player.Distance(target) > DataManager.GetSpellData(ID).Range ||
+                    !Core.Player.IsFacing(target))
+                {
+                    return false;
+                }
+            }
+
+            #endregion
+
             #endregion
 
             #region Pet Exception
@@ -129,6 +216,15 @@ namespace UltimaCR.Spells
             }
             #endregion
 
+            #region HasSpell Check
+
+            if (!Actionmanager.HasSpell(ID))
+            {
+                return false;
+            }
+
+            #endregion
+
             #region Player Movement
             if (BotManager.Current.IsAutonomous)
             {
@@ -155,10 +251,11 @@ namespace UltimaCR.Spells
                     Core.Player.IsFacing(target))
                 {
                     Navigator.PlayerMover.MoveStop();
-                    if (Core.Player.IsMounted)
-                    {
-                        Actionmanager.Dismount();
-                    }
+                }
+                if (!MovementManager.IsMoving &&
+                    Core.Player.IsMounted)
+                {
+                    Actionmanager.Dismount();
                 }
             }
             #endregion
@@ -262,6 +359,21 @@ namespace UltimaCR.Spells
             }
             #endregion
 
+            #region Cleric Stance Check
+
+            if (SpellType == SpellType.Heal &&
+                !Core.Player.HasAura("Cleric Stance"))
+            {
+                await Coroutine.Wait(1000, () => Actionmanager.DoAction(122, Core.Player));
+            }
+            if (SpellType != SpellType.Heal &&
+                Core.Player.HasAura("Cleric Stance"))
+            {
+                await Coroutine.Wait(1000, () => Actionmanager.DoAction(122, Core.Player));
+            }
+
+            #endregion
+
             #region DoAction
             if (CastType == CastType.Location)
             {
@@ -281,6 +393,7 @@ namespace UltimaCR.Spells
             Ultima.LastSpell = this;
             #region Recent Spell Add
             if (SpellType != SpellType.Damage &&
+                SpellType != SpellType.AoE &&
                 SpellType != SpellType.Behind &&
                 SpellType != SpellType.Flank)
             {

@@ -1,4 +1,7 @@
-﻿using ff14bot;
+﻿using Clio.Common;
+using Clio.Utilities;
+using ff14bot;
+using ff14bot.Helpers;
 using ff14bot.Managers;
 using ff14bot.Objects;
 using System;
@@ -41,6 +44,19 @@ namespace UltimaCR
             return retval;
         }
 
+        public static bool InsideCone(Vector3 PlayerLocation, float PlayerHeading, Vector3 TargetLocation)
+        {
+            var d = Math.Abs(MathEx.NormalizeRadian(PlayerHeading
+                - MathEx.NormalizeRadian(MathHelper.CalculateHeading(PlayerLocation, TargetLocation)
+                + (float)Math.PI)));
+
+            if (d > Math.PI)
+            {
+                d = Math.Abs(d - 2 * (float)Math.PI);
+            }
+            return d < 0.78539f;
+        }
+
         public static void RemoveAll<TKey, TValue>(this Dictionary<TKey, TValue> dic, Func<TValue, bool> predicate)
         {
             var keys = dic.Keys.Where(k => predicate(dic[k])).ToList();
@@ -65,7 +81,7 @@ namespace UltimaCR
                ie.IsTargetable;
         }
 
-        private static IEnumerable<BattleCharacter> EnemyUnit
+        public static IEnumerable<BattleCharacter> EnemyUnit
         {
             get
             {
@@ -103,15 +119,26 @@ namespace UltimaCR
             }
         }
 
-/*
-        public static int AoETargets(float range)
+        public static IEnumerable<BattleCharacter> LowTPPartyMember
         {
-            var target = Core.Player.CurrentTarget;
-            if (target == null)
-                return 0;
-            var tarLoc = target.Location;
-            return EnemyUnit.Count(u => u.Location.Distance3D(tarLoc) <= range);
+            get
+            {
+                return
+                    PartyManager.VisibleMembers
+                    .Select(ltp => ltp.GameObject as BattleCharacter)
+                    .Where(ltp => ltp != null && ltp.CurrentTP <= 600)
+                    .OrderBy(ltp => ltp.CurrentTP);
+            }
         }
-*/
+
+        public static int EnemiesNearTarget(float radius)
+        {
+            return Core.Player.CurrentTarget == null ? 0 : EnemyUnit.Count(u => u.Location.Distance3D(Core.Player.CurrentTarget.Location) <= radius);
+        }
+
+        public static int EnemiesNearPlayer(float radius)
+        {
+            return EnemyUnit.Count(u => u.Location.Distance3D(Core.Player.Location) <= radius);
+        }
     }
 }

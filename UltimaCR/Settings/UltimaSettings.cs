@@ -3,6 +3,8 @@ using Newtonsoft.Json;
 using System.ComponentModel;
 using System.Configuration;
 using System.IO;
+using System.Windows.Forms;
+using System.Windows.Input;
 
 namespace UltimaCR.Settings
 {
@@ -39,6 +41,43 @@ namespace UltimaCR.Settings
         public bool ChocoboHealerStance { get; set; }
 
         #endregion
+
+        #region Rotation Settings
+
+        #region Overlay Settings
+
+        [Setting, DefaultValue(true)]
+        public bool UseOverlay { get; set; }
+
+        #endregion
+
+        #region Rotation Combo Settings
+
+        [Setting, DefaultValue(true)]
+        public bool SmartTarget { get; set; }
+
+        [Setting, DefaultValue(false)]
+        public bool SingleTarget { get; set; }
+
+        [Setting, DefaultValue(false)]
+        public bool MultiTarget { get; set; }
+
+        #endregion
+
+        #region Rotation Hotkey Settings
+
+        [Setting, DefaultValue(Keys.None)]
+        public Keys HotKey { get; set; }
+
+        [Setting, DefaultValue(ModifierKeys.None)]
+        public ModifierKeys ModKey { get; set; }
+
+        #endregion
+        
+        #endregion
+
+        [Setting, DefaultValue(true)]
+        public bool DefaultCRCheck { get; set; }
 
         #endregion
 
@@ -529,6 +568,9 @@ namespace UltimaCR.Settings
 
         #endregion
 
+        [Setting, DefaultValue(true)]
+        public bool GladiatorShieldSwipe { get; set; }
+
         #endregion
 
         #region Lancer Settings
@@ -931,6 +973,12 @@ namespace UltimaCR.Settings
         [Setting, DefaultValue(true)]
         public bool PugilistPerfectBalance { get; set; }
 
+        [Setting, DefaultValue(true)]
+        public bool PugilistFistsOfEarth { get; set; }
+
+        [Setting, DefaultValue(false)]
+        public bool PugilistFistsOfWind { get; set; }
+
         #endregion
 
         #region Rogue Settings
@@ -1080,6 +1128,9 @@ namespace UltimaCR.Settings
 
         [Setting, DefaultValue(true)]
         public bool RogueKissOfTheViper { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool RogueGoad { get; set; }
 
         #endregion
 
@@ -1375,6 +1426,15 @@ namespace UltimaCR.Settings
         [Setting, DefaultValue(true)]
         public bool MonkPerfectBalance { get; set; }
 
+        [Setting, DefaultValue(true)]
+        public bool MonkFistsOfEarth { get; set; }
+
+        [Setting, DefaultValue(false)]
+        public bool MonkFistsOfWind { get; set; }
+
+        [Setting, DefaultValue(false)]
+        public bool MonkFistsOfFire { get; set; }
+
         #endregion
 
         #region Ninja Settings
@@ -1438,6 +1498,9 @@ namespace UltimaCR.Settings
         [Setting, DefaultValue(true)]
         public bool NinjaDancingEdge { get; set; }
 
+        [Setting, DefaultValue(true)]
+        public bool NinjaGoad { get; set; }
+
         #endregion
 
         #region Paladin Settings
@@ -1478,8 +1541,17 @@ namespace UltimaCR.Settings
         #endregion
 
         [Setting, DefaultValue(true)]
+        public bool PaladinShieldSwipe { get; set; }
+
+        [Setting, DefaultValue(true)]
         public bool PaladinSpiritsWithin { get; set; }
 
+        [Setting, DefaultValue(true)]
+        public bool PaladinSwordOath { get; set; }
+
+        [Setting, DefaultValue(false)]
+        public bool PaladinShieldOath { get; set; }
+        
         #endregion
 
         #region Scholar Settings

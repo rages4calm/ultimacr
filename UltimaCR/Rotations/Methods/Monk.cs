@@ -91,7 +91,10 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> FistsOfEarth()
         {
-            if (!Core.Player.HasAura(MySpells.FistsOfEarth.Name))
+            if (Ultima.UltSettings.MonkFistsOfEarth &&
+                !Core.Player.HasAura(MySpells.FistsOfEarth.Name) ||
+                !Core.Player.HasAura(MySpells.FistsOfWind.Name) &&
+                !Core.Player.HasAura(MySpells.FistsOfFire.Name))
             {
                 return await MySpells.FistsOfEarth.Cast();
             }
@@ -114,7 +117,12 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> FistsOfWind()
         {
-            return await MySpells.FistsOfWind.Cast();
+            if (Ultima.UltSettings.MonkFistsOfWind &&
+                !Core.Player.HasAura(MySpells.FistsOfWind.Name))
+            {
+                return await MySpells.FistsOfWind.Cast();
+            }
+            return false;
         }
 
         private async Task<bool> SteelPeak()
@@ -262,7 +270,8 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> FistsOfFire()
         {
-            if (!Core.Player.HasAura(MySpells.FistsOfFire.Name))
+            if (Ultima.UltSettings.MonkFistsOfFire &&
+                !Core.Player.HasAura(MySpells.FistsOfFire.Name))
             {
                 return await MySpells.FistsOfFire.Cast();
             }

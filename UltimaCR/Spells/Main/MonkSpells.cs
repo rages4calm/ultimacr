@@ -28,7 +28,7 @@ namespace UltimaCR.Spells.Main
                                ID = 70,
                                Level = 30,
                                GCDType = GCDType.On,
-                               SpellType = SpellType.Buff,
+                               SpellType = SpellType.AoE,
                                CastType = CastType.Target
                            });
             }

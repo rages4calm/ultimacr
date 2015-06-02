@@ -46,11 +46,7 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> ClericStance()
         {
-            if (!Core.Player.HasAura(MySpells.ClericStance.Name))
-            {
-                return await MySpells.ClericStance.Cast();
-            }
-            return false;
+            return await MySpells.ClericStance.Cast();
         }
 
         private async Task<bool> Protect()
@@ -98,7 +94,8 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> CureII()
         {
-            if (Core.Player.CurrentHealthPercent < 70)
+            if (Ultima.UltSettings.WhiteMageCureII &&
+                Core.Player.CurrentHealthPercent < 50)
             {
                 return await MySpells.CureII.Cast();
             }
@@ -229,7 +226,8 @@ namespace UltimaCR.Rotations
         private async Task<bool> Regen()
         {
             if (Ultima.UltSettings.WhiteMageRegen &&
-                Core.Player.CurrentHealthPercent < 90)
+                Core.Player.CurrentHealthPercent < 90 &&
+                !Core.Player.HasAura(MySpells.Regen.Name))
             {
                 return await MySpells.Regen.Cast();
             }

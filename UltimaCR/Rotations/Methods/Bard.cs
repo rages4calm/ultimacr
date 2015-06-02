@@ -250,7 +250,11 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> RainOfDeath()
         {
-            return await MySpells.RainOfDeath.Cast();
+            if (Core.Player.HasAura("Downpour of Death"))
+            {
+                return await MySpells.RainOfDeath.Cast();
+            }
+            return false;
         }
 
         private async Task<bool> BattleVoice()
