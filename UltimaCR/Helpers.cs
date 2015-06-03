@@ -1,6 +1,7 @@
 ﻿using Clio.Common;
 using Clio.Utilities;
 using ff14bot;
+using ff14bot.Enums;
 using ff14bot.Helpers;
 using ff14bot.Managers;
 using ff14bot.Objects;
@@ -74,11 +75,21 @@ namespace UltimaCR
 
         private static bool IsEnemy(this BattleCharacter ie)
         {
-           return ie != null &&
+           return
+               ie != null &&
                GameObjectManager.Attackers.Contains(ie) &&
                !ie.IsDead &&
                ie.CanAttack &&
                ie.IsTargetable;
+        }
+
+        private static bool IsPartyMember(this Character pm)
+        {
+            return
+                pm != null &&
+                PartyManager.IsInParty &&
+                !pm.IsDead &&
+                pm.IsTargetable;
         }
 
         public static IEnumerable<BattleCharacter> EnemyUnit
@@ -119,18 +130,6 @@ namespace UltimaCR
             }
         }
 
-        public static IEnumerable<BattleCharacter> LowTPPartyMember
-        {
-            get
-            {
-                return
-                    PartyManager.VisibleMembers
-                    .Select(ltp => ltp.GameObject as BattleCharacter)
-                    .Where(ltp => ltp != null && ltp.CurrentTP <= 600)
-                    .OrderBy(ltp => ltp.CurrentTP);
-            }
-        }
-
         public static int EnemiesNearTarget(float radius)
         {
             return Core.Player.CurrentTarget == null ? 0 : EnemyUnit.Count(u => u.Location.Distance3D(Core.Player.CurrentTarget.Location) <= radius);
@@ -140,5 +139,94 @@ namespace UltimaCR
         {
             return EnemyUnit.Count(u => u.Location.Distance3D(Core.Player.Location) <= radius);
         }
+
+        #region Auto-Goad
+
+        public static IEnumerable<Character> AutoGoad
+        {
+            get
+            {
+                return
+                    GameObjectManager.GetObjectsOfType<Character>()
+                    .Where(ltp => ltp.IsPartyMember() && !ltp.IsMe && ltp.CurrentTP <= 800)
+                    .OrderByDescending(GetTPScore);
+            }
+        }
+
+        private static int GetTPScore(Character c)
+        {
+            var score = 0;
+
+            if (c.IsTank() && c.CurrentTP <= 800)
+            {
+                score += 100;
+            }
+            switch (c.CurrentJob)
+            {
+                case ClassJobType.Archer:
+                case ClassJobType.Bard:
+                case ClassJobType.Pugilist:
+                case ClassJobType.Monk:
+                case ClassJobType.Rogue:
+                case ClassJobType.Ninja:
+                    if (c.CurrentTP <= 400)
+                    {
+                        score += 200;
+                    }
+                    break;
+            }
+            switch (c.CurrentJob)
+            {
+                case ClassJobType.Lancer:
+                case ClassJobType.Dragoon:
+                    if (c.CurrentTP <= 300)
+                    {
+                        score += 200;
+                    }
+                    break;
+            }
+            return score;
+        }
+
+        #endregion
+
+        #region Role Check
+
+        public static bool IsTank(this Character c)
+        {
+            switch (c.CurrentJob)
+            {
+                case ClassJobType.Marauder:
+                case ClassJobType.Warrior:
+                case ClassJobType.Gladiator:
+                case ClassJobType.Paladin:
+                    return true;
+                default:
+                    return false;
+            }
+        }
+
+        public static bool IsHealer(this Character c)
+        {
+            switch (c.CurrentJob)
+            {
+                case ClassJobType.Arcanist:
+                case ClassJobType.Scholar:
+                case ClassJobType.Conjurer:
+                case ClassJobType.WhiteMage:
+                    return true;
+                default:
+                    return false;
+            }
+        }
+
+
+        public static bool IsDPS(this Character c)
+        {
+            return
+                !c.IsTank() && !c.IsHealer();
+        }
+
+        #endregion
     }
 }

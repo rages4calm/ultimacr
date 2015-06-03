@@ -96,7 +96,7 @@ namespace UltimaCR.Spells
                 if (Core.Player.CurrentJob == ClassJobType.Pugilist ||
                     Core.Player.CurrentJob == ClassJobType.Monk)
                 {
-                    if (EnemyCount < 2)
+                    if (EnemyCount < 3)
                     {
                         return false;
                     }
@@ -104,7 +104,7 @@ namespace UltimaCR.Spells
                 if (Core.Player.CurrentJob == ClassJobType.Rogue ||
                     Core.Player.CurrentJob == ClassJobType.Ninja)
                 {
-                    if (EnemyCount < 2)
+                    if (EnemyCount < 3)
                     {
                         return false;
                     }
@@ -112,7 +112,7 @@ namespace UltimaCR.Spells
                 if (Core.Player.CurrentJob == ClassJobType.Thaumaturge ||
                     Core.Player.CurrentJob == ClassJobType.BlackMage)
                 {
-                    if (EnemyCount < 2)
+                    if (EnemyCount < 3)
                     {
                         return false;
                     }

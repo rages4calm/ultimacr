@@ -97,7 +97,7 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Goad()
         {
-            var target = Helpers.LowTPPartyMember.FirstOrDefault();
+            var target = Helpers.AutoGoad.FirstOrDefault();
 
             if (target != null &&
                 Ultima.UltSettings.RogueGoad)

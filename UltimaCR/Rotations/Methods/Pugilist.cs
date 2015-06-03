@@ -93,6 +93,7 @@ namespace UltimaCR.Rotations
         {
             if (Ultima.UltSettings.MonkFistsOfEarth &&
                 !Core.Player.HasAura(MySpells.FistsOfEarth.Name) ||
+                !Core.Player.HasAura(MySpells.FistsOfEarth.Name) &&
                 !Core.Player.HasAura(MySpells.FistsOfWind.Name))
             {
                 return await MySpells.FistsOfEarth.Cast();
