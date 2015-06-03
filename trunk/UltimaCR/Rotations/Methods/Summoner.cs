@@ -147,9 +147,10 @@ namespace UltimaCR.Rotations
         private async Task<bool> Bane()
         {
             if (Core.Player.HasAura(MySpells.Aetherflow.Name) &&
-                Core.Player.CurrentTarget.HasAura(MySpells.BioII.Name) &&
-                Core.Player.CurrentTarget.HasAura(MySpells.Miasma.Name) &&
-                Core.Player.CurrentTarget.HasAura(MySpells.Bio.Name))
+                Core.Player.CurrentManaPercent > 40 &&
+                Core.Player.CurrentTarget.HasAura(MySpells.BioII.Name, true, 8000) &&
+                Core.Player.CurrentTarget.HasAura(MySpells.Miasma.Name, true, 8000) &&
+                Core.Player.CurrentTarget.HasAura(MySpells.Bio.Name, true, 5000))
             {
                 return await MySpells.Bane.Cast();
             }
@@ -171,14 +172,16 @@ namespace UltimaCR.Rotations
             {
                 if (Actionmanager.CanCast(MySpells.Aetherflow.Name, Core.Player) &&
                     !Core.Player.HasAura(MySpells.Aetherflow.Name) ||
-                    Actionmanager.CanCast(MySpells.Fester.Name, Core.Player) &&
+                    Actionmanager.CanCast(MySpells.Fester.Name, Core.Player.CurrentTarget) &&
                     Helpers.EnemiesNearTarget(8) <= 1 &&
-                    !Ultima.UltSettings.MultiTarget ||
-                    Actionmanager.CanCast(MySpells.Bane.Name, Core.Player) &&
-                    Helpers.EnemiesNearTarget(8) > 1 &&
-                    !Ultima.UltSettings.SingleTarget ||
-                    Actionmanager.CanCast(MySpells.Bane.Name, Core.Player) &&
-                    Ultima.UltSettings.MultiTarget ||
+                    Ultima.UltSettings.SmartTarget ||
+                    Actionmanager.CanCast(MySpells.Fester.Name, Core.Player.CurrentTarget) &&
+                    Ultima.UltSettings.SingleTarget ||
+                    Actionmanager.CanCast(MySpells.Bane.Name, Core.Player.CurrentTarget) &&
+                    !Ultima.UltSettings.SingleTarget &&
+                    Core.Player.CurrentTarget.HasAura(MySpells.BioII.Name, true, 8000) &&
+                    Core.Player.CurrentTarget.HasAura(MySpells.Miasma.Name, true, 8000) &&
+                    Core.Player.CurrentTarget.HasAura(MySpells.Bio.Name, true, 5000) ||
                     Actionmanager.CanCast(MySpells.Rouse.Name, Core.Player) ||
                     Actionmanager.CanCast(MySpells.Spur.Name, Core.Player))
                 {
@@ -359,9 +362,9 @@ namespace UltimaCR.Rotations
         {
             if (Core.Player.Pet != null &&
                 Core.Player.Pet.Name == "Garuda-Egi" &&
-                Core.Player.CurrentTarget.HasAura(MySpells.BioII.Name) &&
-                Core.Player.CurrentTarget.HasAura(MySpells.Miasma.Name) &&
-                Core.Player.CurrentTarget.HasAura(MySpells.Bio.Name))
+                Core.Player.CurrentTarget.HasAura(MySpells.BioII.Name, true) &&
+                Core.Player.CurrentTarget.HasAura(MySpells.Miasma.Name, true) &&
+                Core.Player.CurrentTarget.HasAura(MySpells.Bio.Name, true))
             {
                 return await MySpells.Contagion.Cast();
             }
@@ -382,11 +385,16 @@ namespace UltimaCR.Rotations
         {
             if (Core.Player.HasAura(MySpells.Aetherflow.Name) &&
                 Core.Player.CurrentManaPercent > 40 &&
-                Core.Player.CurrentTarget.HasAura(MySpells.BioII.Name) &&
-                Core.Player.CurrentTarget.HasAura(MySpells.Miasma.Name) &&
-                Core.Player.CurrentTarget.HasAura(MySpells.Bio.Name))
+                Core.Player.CurrentTarget.HasAura(MySpells.BioII.Name, true) &&
+                Core.Player.CurrentTarget.HasAura(MySpells.Miasma.Name, true) &&
+                Core.Player.CurrentTarget.HasAura(MySpells.Bio.Name, true))
             {
-                return await MySpells.Fester.Cast();
+                if (Helpers.EnemiesNearTarget(8) <= 1 &&
+                    Ultima.UltSettings.SmartTarget ||
+                    Ultima.UltSettings.SingleTarget)
+                {
+                    return await MySpells.Fester.Cast();
+                }
             }
             return false;
         }

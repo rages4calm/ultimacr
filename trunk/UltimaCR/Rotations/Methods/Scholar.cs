@@ -77,10 +77,11 @@ namespace UltimaCR.Rotations
         {
             if (Core.Player.HasAura(MySpells.Aetherflow.Name))
             {
-                if (Helpers.EnemiesNearTarget(8) <= 1 &&
-                    Core.Player.CurrentManaPercent <= 90 ||
-                    Core.Player.ClassLevel < MySpells.Bane.Level &&
-                    Core.Player.CurrentManaPercent <= 90 ||
+                if (Core.Player.CurrentManaPercent <= 90 &&
+                    Helpers.EnemiesNearTarget(8) <= 1 &&
+                    Ultima.UltSettings.SmartTarget ||
+                    Core.Player.CurrentManaPercent <= 90 &&
+                    Ultima.UltSettings.SingleTarget ||
                     Core.Player.CurrentManaPercent <= 40)
                 {
                     return await MySpells.EnergyDrain.Cast();
@@ -142,9 +143,10 @@ namespace UltimaCR.Rotations
         private async Task<bool> Bane()
         {
             if (Core.Player.HasAura(MySpells.Aetherflow.Name) &&
-                Core.Player.CurrentTarget.HasAura(MySpells.BioII.Name) &&
-                Core.Player.CurrentTarget.HasAura(MySpells.Miasma.Name) &&
-                Core.Player.CurrentTarget.HasAura(MySpells.Bio.Name))
+                Core.Player.CurrentManaPercent > 40 &&
+                Core.Player.CurrentTarget.HasAura(MySpells.BioII.Name, true, 8000) &&
+                Core.Player.CurrentTarget.HasAura(MySpells.Miasma.Name, true, 8000) &&
+                Core.Player.CurrentTarget.HasAura(MySpells.Bio.Name, true, 5000))
             {
                 return await MySpells.Bane.Cast();
             }
@@ -166,14 +168,11 @@ namespace UltimaCR.Rotations
             {
                 if (Actionmanager.CanCast(MySpells.Aetherflow.Name, Core.Player) &&
                     !Core.Player.HasAura(MySpells.Aetherflow.Name) ||
-                    Actionmanager.CanCast(MySpells.EnergyDrain.Name, Core.Player.CurrentTarget) &&
-                    Core.Player.CurrentManaPercent <= 90 &&
-                    Helpers.EnemiesNearTarget(8) <= 1 ||
-                    Actionmanager.CanCast(MySpells.Bane.Name, Core.Player) &&
-                    Helpers.EnemiesNearTarget(8) > 1 &&
-                    !Ultima.UltSettings.SingleTarget ||
-                    Actionmanager.CanCast(MySpells.Bane.Name, Core.Player) &&
-                    Ultima.UltSettings.MultiTarget ||
+                    Actionmanager.CanCast(MySpells.Bane.Name, Core.Player.CurrentTarget) &&
+                    !Ultima.UltSettings.SingleTarget &&
+                    Core.Player.CurrentTarget.HasAura(MySpells.BioII.Name, true, 8000) &&
+                    Core.Player.CurrentTarget.HasAura(MySpells.Miasma.Name, true, 8000) &&
+                    Core.Player.CurrentTarget.HasAura(MySpells.Bio.Name, true, 5000) ||
                     Actionmanager.CanCast(MySpells.Rouse.Name, Core.Player))
                 {
                     return await MySpells.RuinII.Cast();
