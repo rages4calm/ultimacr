@@ -233,7 +233,7 @@ namespace UltimaCR.Rotations
         private async Task<bool> SwordOath()
         {
             if (Ultima.UltSettings.PaladinSwordOath ||
-                Core.Player.ClassLevel < MySpells.ShieldOath.Level)
+                !Actionmanager.HasSpell(MySpells.ShieldOath.Name))
             {
                 if (!Core.Player.HasAura(MySpells.SwordOath.Name))
                 {

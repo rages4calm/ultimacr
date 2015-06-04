@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 using Buddy.Coroutines;
 using ff14bot;
 using ff14bot.Managers;
@@ -43,9 +44,9 @@ namespace UltimaCR.Rotations
                 Ultima.UltSettings.SummonerSummonPet)
             {
                 if (Ultima.UltSettings.SummonerGaruda ||
-                    Core.Player.ClassLevel < MySpells.SummonII.Level &&
+                    !Actionmanager.HasSpell(MySpells.SummonII.Name) &&
                     Ultima.UltSettings.SummonerTitan ||
-                    Core.Player.ClassLevel < MySpells.SummonIII.Level &&
+                    !Actionmanager.HasSpell(MySpells.SummonIII.Name) &&
                     Ultima.UltSettings.SummonerIfrit)
                 {
                     return await MySpells.Summon.Cast();
@@ -82,7 +83,7 @@ namespace UltimaCR.Rotations
             if (Core.Player.HasAura(MySpells.Aetherflow.Name))
             {
                 if (Core.Player.CurrentManaPercent <= 90 &&
-                    Core.Player.ClassLevel < MySpells.Fester.Level)
+                    !Actionmanager.HasSpell(MySpells.Fester.Name))
                 {
                     return await MySpells.EnergyDrain.Cast();
                 }
@@ -179,6 +180,7 @@ namespace UltimaCR.Rotations
                     Ultima.UltSettings.SingleTarget ||
                     Actionmanager.CanCast(MySpells.Bane.Name, Core.Player.CurrentTarget) &&
                     !Ultima.UltSettings.SingleTarget &&
+                    Helpers.EnemiesNearTarget(8) > 1 &&
                     Core.Player.CurrentTarget.HasAura(MySpells.BioII.Name, true, 8000) &&
                     Core.Player.CurrentTarget.HasAura(MySpells.Miasma.Name, true, 8000) &&
                     Core.Player.CurrentTarget.HasAura(MySpells.Bio.Name, true, 5000) ||
@@ -208,8 +210,8 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> ShadowFlare()
         {
-            if (!Core.Player.HasAura(MySpells.ShadowFlare.Name, true, 4000) &&
-                Core.Player.CurrentTarget.HasAura(MySpells.Bio.Name, true, 4000))
+            if (Actionmanager.HasSpell(MySpells.ShadowFlare.Name) &&
+                !Core.Player.HasAura(MySpells.ShadowFlare.Name, true, 4000))
             {
                 if (Actionmanager.CanCast(MySpells.RuinII.Name, Core.Player.CurrentTarget) &&
                     Actionmanager.CanCast(MySpells.CrossClass.Swiftcast.Name, Core.Player))

@@ -361,15 +361,20 @@ namespace UltimaCR.Spells
 
             #region Cleric Stance Check
 
-            if (SpellType == SpellType.Heal &&
-                !Core.Player.HasAura("Cleric Stance"))
+            if (Actionmanager.HasSpell(122))
             {
-                await Coroutine.Wait(1000, () => Actionmanager.DoAction(122, Core.Player));
-            }
-            if (SpellType != SpellType.Heal &&
-                Core.Player.HasAura("Cleric Stance"))
-            {
-                await Coroutine.Wait(1000, () => Actionmanager.DoAction(122, Core.Player));
+                if (SpellType == SpellType.Heal &&
+                    Core.Player.HasAura("Cleric Stance"))
+                {
+                    await Coroutine.Wait(1000, () => Actionmanager.DoAction(122, Core.Player));
+                    await Coroutine.Wait(3000, () => Actionmanager.CanCast(ID, target));
+                }
+                if (SpellType != SpellType.Heal &&
+                    !Core.Player.HasAura("Cleric Stance"))
+                {
+                    await Coroutine.Wait(1000, () => Actionmanager.DoAction(122, Core.Player));
+                    await Coroutine.Wait(3000, () => Actionmanager.CanCast(ID, target));
+                }
             }
 
             #endregion
