@@ -33,7 +33,7 @@ namespace UltimaCR.Rotations
             }
             if (!UmbralAura &&
                 LowMP &&
-                Core.Player.ClassLevel < MySpells.BlizzardIII.Level)
+                !Actionmanager.HasSpell(MySpells.BlizzardIII.Name))
             {
                 return await MySpells.Blizzard.Cast();
             }
@@ -42,7 +42,7 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Fire()
         {
-            if (Core.Player.ClassLevel < MySpells.FireIII.Level)
+            if (!Actionmanager.HasSpell(MySpells.FireIII.Name))
             {
                 if (UmbralAura &&
                     Core.Player.CurrentManaPercent >= 90)
@@ -81,7 +81,7 @@ namespace UltimaCR.Rotations
                     return await MySpells.Transpose.Cast();
                 }
             }
-            if (Core.Player.ClassLevel < MySpells.BlizzardIII.Level &&
+            if (!Actionmanager.HasSpell(MySpells.BlizzardIII.Name) &&
                 LowMP)
             {
                 return await MySpells.Transpose.Cast();
@@ -94,24 +94,21 @@ namespace UltimaCR.Rotations
             if (UmbralAura &&
                 Core.Player.CurrentManaPercent < 100)
             {
-                if (Core.Player.ClassLevel < MySpells.BlizzardIII.Level &&
+                if (!Actionmanager.HasSpell(MySpells.BlizzardIII.Name) &&
                     !Core.Player.CurrentTarget.HasAura("Thunder", true, 3000))
                 {
                     return await MySpells.Thunder.Cast();
                 }
-                if (Core.Player.ClassLevel >= MySpells.BlizzardIII.Level)
+                Spell.RecentSpell.RemoveAll(t => DateTime.UtcNow > t);
+                if (!RecentThunder)
                 {
-                    Spell.RecentSpell.RemoveAll(t => DateTime.UtcNow > t);
-                    if (!RecentThunder)
-                    {
-                        return await MySpells.Thunder.Cast();
-                    }
+                    return await MySpells.Thunder.Cast();
                 }
             }
             if (!AstralAura &&
                 !UmbralAura)
             {
-                if (Core.Player.ClassLevel < MySpells.ThunderII.Level &&
+                if (!Actionmanager.HasSpell(MySpells.ThunderII.Name) &&
                     !Core.Player.CurrentTarget.HasAura("Thunder", true))
                 {
                     return await MySpells.Thunder.Cast();
@@ -143,7 +140,7 @@ namespace UltimaCR.Rotations
             {
                 return await MySpells.Scathe.Cast();
             }
-            if (Core.Player.ClassLevel > MySpells.BlizzardIII.Level &&
+            if (!Actionmanager.HasSpell(MySpells.BlizzardIII.Name) &&
                 UmbralAura &&
                 Core.Player.CurrentManaPercent < 100)
             {
@@ -172,24 +169,21 @@ namespace UltimaCR.Rotations
             if (UmbralAura &&
                 Core.Player.CurrentManaPercent < 100)
             {
-                if (Core.Player.ClassLevel < MySpells.BlizzardIII.Level &&
+                if (!Actionmanager.HasSpell(MySpells.BlizzardIII.Name) &&
                     !Core.Player.CurrentTarget.HasAura("Thunder", true, 3000))
                 {
                     return await MySpells.Thunder.Cast();
                 }
-                if (Core.Player.ClassLevel >= MySpells.BlizzardIII.Level)
+                Spell.RecentSpell.RemoveAll(t => DateTime.UtcNow > t);
+                if (!RecentThunder)
                 {
-                    Spell.RecentSpell.RemoveAll(t => DateTime.UtcNow > t);
-                    if (!RecentThunder)
-                    {
-                        return await MySpells.Thunder.Cast();
-                    }
+                    return await MySpells.Thunder.Cast();
                 }
             }
             if (!AstralAura &&
                 !UmbralAura)
             {
-                if (Core.Player.ClassLevel < MySpells.ThunderIII.Level &&
+                if (!Actionmanager.HasSpell(MySpells.ThunderIII.Name) &&
                     !Core.Player.CurrentTarget.HasAura("Thunder", true))
                 {
                     return await MySpells.Thunder.Cast();
@@ -611,7 +605,7 @@ namespace UltimaCR.Rotations
                         Ultima.LastSpell.Name == MySpells.FireII.Name ||
                         !Core.Player.HasAura("Thundercloud", false, 5000))
                     {
-                        if (Core.Player.ClassLevel < MySpells.ThunderIII.Level)
+                        if (!Actionmanager.HasSpell(MySpells.ThunderIII.Name))
                         {
                             return await MySpells.ThunderII.Cast();
                         }
@@ -623,7 +617,7 @@ namespace UltimaCR.Rotations
                     Spell.RecentSpell.RemoveAll(t => DateTime.UtcNow > t);
                     if (!RecentThunder)
                     {
-                        if (Core.Player.ClassLevel < MySpells.ThunderIII.Level)
+                        if (!Actionmanager.HasSpell(MySpells.ThunderIII.Name))
                         {
                             return await MySpells.ThunderII.Cast();
                         }

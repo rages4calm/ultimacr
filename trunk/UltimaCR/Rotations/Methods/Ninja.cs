@@ -46,7 +46,7 @@ namespace UltimaCR.Rotations
         private async Task<bool> KissOfTheWasp()
         {
             if (Ultima.UltSettings.NinjaKissOfTheWasp ||
-                Core.Player.ClassLevel < MySpells.KissOfTheViper.Level)
+                !Actionmanager.HasSpell(MySpells.KissOfTheViper.Name))
             {
                 if (!Core.Player.HasAura(MySpells.KissOfTheWasp.Name))
                 {
@@ -58,7 +58,7 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Mutilate()
         {
-            if (Core.Player.ClassLevel < MySpells.ShadowFang.Level ||
+            if (!Actionmanager.HasSpell(MySpells.ShadowFang.Name) ||
                 Core.Player.CurrentTarget.HasAura(MySpells.ShadowFang.Name, true, 4000))
             {
                 if (!Core.Player.CurrentTarget.HasAura("Mutilation", true, 4000))

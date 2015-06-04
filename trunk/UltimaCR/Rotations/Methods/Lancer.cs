@@ -48,8 +48,9 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> ImpulseDrive()
         {
-            if (!Core.Player.CurrentTarget.HasAura(MySpells.Disembowel.Name, false, 5000) &&
-                 !Core.Player.CurrentTarget.HasAura(MySpells.Disembowel.Name, true, 5000))
+            if (Actionmanager.HasSpell(MySpells.Disembowel.Name) &&
+                !Core.Player.CurrentTarget.HasAura(MySpells.Disembowel.Name, false, 5000) &&
+                !Core.Player.CurrentTarget.HasAura(MySpells.Disembowel.Name, true, 5000))
             {
                 return await MySpells.ImpulseDrive.Cast();
             }

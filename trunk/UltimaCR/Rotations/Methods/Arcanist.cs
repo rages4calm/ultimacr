@@ -42,7 +42,7 @@ namespace UltimaCR.Rotations
                 Ultima.UltSettings.ArcanistSummonPet)
             {
                 if (Ultima.UltSettings.ArcanistEmeraldCarbuncle ||
-                    Core.Player.ClassLevel < MySpells.SummonII.Level)
+                    !Actionmanager.HasSpell(MySpells.SummonII.Name))
                 {
                     return await MySpells.Summon.Cast();
                 }
@@ -168,8 +168,16 @@ namespace UltimaCR.Rotations
             {
                 if (Actionmanager.CanCast(MySpells.Aetherflow.Name, Core.Player) &&
                     !Core.Player.HasAura(MySpells.Aetherflow.Name) ||
+                    Actionmanager.CanCast(MySpells.EnergyDrain.Name, Core.Player.CurrentTarget) &&
+                    Core.Player.CurrentManaPercent <= 90 &&
+                    Helpers.EnemiesNearTarget(8) <= 1 &&
+                    Ultima.UltSettings.SmartTarget ||
+                    Actionmanager.CanCast(MySpells.EnergyDrain.Name, Core.Player.CurrentTarget) &&
+                    Core.Player.CurrentManaPercent <= 90 &&
+                    Ultima.UltSettings.SingleTarget ||
                     Actionmanager.CanCast(MySpells.Bane.Name, Core.Player.CurrentTarget) &&
                     !Ultima.UltSettings.SingleTarget &&
+                    Helpers.EnemiesNearTarget(8) > 1 &&
                     Core.Player.CurrentTarget.HasAura(MySpells.BioII.Name, true, 8000) &&
                     Core.Player.CurrentTarget.HasAura(MySpells.Miasma.Name, true, 8000) &&
                     Core.Player.CurrentTarget.HasAura(MySpells.Bio.Name, true, 5000) ||
@@ -198,8 +206,8 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> ShadowFlare()
         {
-            if (!Core.Player.HasAura(MySpells.ShadowFlare.Name, true, 4000) &&
-                Core.Player.CurrentTarget.HasAura(MySpells.Bio.Name, true, 4000))
+            if (Actionmanager.HasSpell(MySpells.ShadowFlare.Name) &&
+                !Core.Player.HasAura(MySpells.ShadowFlare.Name, true, 4000))
             {
                 if (Actionmanager.CanCast(MySpells.RuinII.Name, Core.Player.CurrentTarget) &&
                     Actionmanager.CanCast(MySpells.CrossClass.Swiftcast.Name, Core.Player))
