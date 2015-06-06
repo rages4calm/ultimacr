@@ -10,7 +10,6 @@ namespace UltimaCR.Rotations
             if (!Core.Player.IsMounted)
             {
                 if (await Ultima.SummonChocobo()) return true;
-                if (await ClericStance()) return true;
                 if (await Protect()) return true;
                 return await Stoneskin();
             }

@@ -83,15 +83,6 @@ namespace UltimaCR
                ie.IsTargetable;
         }
 
-        private static bool IsPartyMember(this Character pm)
-        {
-            return
-                pm != null &&
-                PartyManager.IsInParty &&
-                !pm.IsDead &&
-                pm.IsTargetable;
-        }
-
         public static IEnumerable<BattleCharacter> EnemyUnit
         {
             get
@@ -147,8 +138,9 @@ namespace UltimaCR
             get
             {
                 return
-                    GameObjectManager.GetObjectsOfType<Character>()
-                    .Where(ltp => ltp.IsPartyMember() && !ltp.IsMe && ltp.CurrentTP <= 800)
+                    PartyManager.VisibleMembers
+                    .Select(ag => ag.GameObject as Character)
+                    .Where(ag => !ag.IsMe && ag.CurrentTP <= 800)
                     .OrderByDescending(GetTPScore);
             }
         }
