@@ -505,6 +505,8 @@
             this.RogueTab = new System.Windows.Forms.TabPage();
             this.RogueSubTab = new UltimaCR.Settings.Forms.Design.TabDesign();
             this.RogueSettings = new System.Windows.Forms.TabPage();
+            this.RogueBuffGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.RogueGoad = new System.Windows.Forms.CheckBox();
             this.RogueAuraGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.RogueKissOfTheWasp = new System.Windows.Forms.RadioButton();
             this.RogueKissOfTheViper = new System.Windows.Forms.RadioButton();
@@ -557,6 +559,8 @@
             this.RogueRaise = new System.Windows.Forms.CheckBox();
             this.RogueStoneskin = new System.Windows.Forms.CheckBox();
             this.NinjaSettings = new System.Windows.Forms.TabPage();
+            this.NinjaBuffGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.NinjaGoad = new System.Windows.Forms.CheckBox();
             this.NinjaAuraGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.NinjaKissOfTheWasp = new System.Windows.Forms.RadioButton();
             this.NinjaKissOfTheViper = new System.Windows.Forms.RadioButton();
@@ -631,10 +635,6 @@
             this.BlackMageRagingStrikes = new System.Windows.Forms.CheckBox();
             this.BlackMageHawksEye = new System.Windows.Forms.CheckBox();
             this.BlackMageQuellingStrikes = new System.Windows.Forms.CheckBox();
-            this.RogueBuffGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
-            this.RogueGoad = new System.Windows.Forms.CheckBox();
-            this.NinjaBuffGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
-            this.NinjaGoad = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.UltimaBanner)).BeginInit();
             this.ClassTab.SuspendLayout();
             this.UltimaTab.SuspendLayout();
@@ -786,6 +786,7 @@
             this.RogueTab.SuspendLayout();
             this.RogueSubTab.SuspendLayout();
             this.RogueSettings.SuspendLayout();
+            this.RogueBuffGroup.SuspendLayout();
             this.RogueAuraGroup.SuspendLayout();
             this.RogueDebuffGroup.SuspendLayout();
             this.RogueExecuteGroup.SuspendLayout();
@@ -800,6 +801,7 @@
             this.RogueArcanistGroup.SuspendLayout();
             this.RogueConjurerGroup.SuspendLayout();
             this.NinjaSettings.SuspendLayout();
+            this.NinjaBuffGroup.SuspendLayout();
             this.NinjaAuraGroup.SuspendLayout();
             this.NinjaDebuffGroup.SuspendLayout();
             this.NinjaNinjutsuGroup.SuspendLayout();
@@ -824,8 +826,6 @@
             this.BlackMageCrossGroup.SuspendLayout();
             this.BlackMageArcanistGroup.SuspendLayout();
             this.BlackMageArcherGroup.SuspendLayout();
-            this.RogueBuffGroup.SuspendLayout();
-            this.NinjaBuffGroup.SuspendLayout();
             this.SuspendLayout();
             // 
             // CloseButton
@@ -1088,7 +1088,7 @@
             // 
             this.UltimaDonateBox.BackColor = System.Drawing.Color.Transparent;
             this.UltimaDonateBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.UltimaDonateBox.Location = new System.Drawing.Point(105, 140);
+            this.UltimaDonateBox.Location = new System.Drawing.Point(105, 170);
             this.UltimaDonateBox.Name = "UltimaDonateBox";
             this.UltimaDonateBox.Size = new System.Drawing.Size(450, 216);
             this.UltimaDonateBox.TabIndex = 8;
@@ -1640,7 +1640,7 @@
             this.ScholarSettings.Location = new System.Drawing.Point(114, 4);
             this.ScholarSettings.Margin = new System.Windows.Forms.Padding(0);
             this.ScholarSettings.Name = "ScholarSettings";
-            this.ScholarSettings.Size = new System.Drawing.Size(567, 387);
+            this.ScholarSettings.Size = new System.Drawing.Size(567, 402);
             this.ScholarSettings.TabIndex = 1;
             this.ScholarSettings.Text = "Scholar";
             this.ScholarSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -1882,7 +1882,7 @@
             this.SummonerSettings.Location = new System.Drawing.Point(114, 4);
             this.SummonerSettings.Margin = new System.Windows.Forms.Padding(0);
             this.SummonerSettings.Name = "SummonerSettings";
-            this.SummonerSettings.Size = new System.Drawing.Size(567, 387);
+            this.SummonerSettings.Size = new System.Drawing.Size(567, 402);
             this.SummonerSettings.TabIndex = 2;
             this.SummonerSettings.Text = "Summoner";
             this.SummonerSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -2660,7 +2660,7 @@
             this.BardSettings.Location = new System.Drawing.Point(114, 4);
             this.BardSettings.Margin = new System.Windows.Forms.Padding(0);
             this.BardSettings.Name = "BardSettings";
-            this.BardSettings.Size = new System.Drawing.Size(567, 387);
+            this.BardSettings.Size = new System.Drawing.Size(567, 402);
             this.BardSettings.TabIndex = 1;
             this.BardSettings.Text = "Bard";
             this.BardSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -3372,7 +3372,7 @@
             this.WhiteMageSettings.Location = new System.Drawing.Point(114, 4);
             this.WhiteMageSettings.Margin = new System.Windows.Forms.Padding(0);
             this.WhiteMageSettings.Name = "WhiteMageSettings";
-            this.WhiteMageSettings.Size = new System.Drawing.Size(567, 387);
+            this.WhiteMageSettings.Size = new System.Drawing.Size(567, 402);
             this.WhiteMageSettings.TabIndex = 1;
             this.WhiteMageSettings.Text = "White Mage";
             this.WhiteMageSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -4155,7 +4155,7 @@
             this.PaladinSettings.Location = new System.Drawing.Point(114, 4);
             this.PaladinSettings.Margin = new System.Windows.Forms.Padding(0);
             this.PaladinSettings.Name = "PaladinSettings";
-            this.PaladinSettings.Size = new System.Drawing.Size(567, 387);
+            this.PaladinSettings.Size = new System.Drawing.Size(567, 402);
             this.PaladinSettings.TabIndex = 1;
             this.PaladinSettings.Text = "Paladin";
             this.PaladinSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -5003,7 +5003,7 @@
             this.DragoonSettings.Location = new System.Drawing.Point(114, 4);
             this.DragoonSettings.Margin = new System.Windows.Forms.Padding(0);
             this.DragoonSettings.Name = "DragoonSettings";
-            this.DragoonSettings.Size = new System.Drawing.Size(567, 387);
+            this.DragoonSettings.Size = new System.Drawing.Size(567, 402);
             this.DragoonSettings.TabIndex = 1;
             this.DragoonSettings.Text = "Dragoon";
             this.DragoonSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -5889,7 +5889,7 @@
             this.WarriorSettings.Location = new System.Drawing.Point(114, 4);
             this.WarriorSettings.Margin = new System.Windows.Forms.Padding(0);
             this.WarriorSettings.Name = "WarriorSettings";
-            this.WarriorSettings.Size = new System.Drawing.Size(567, 387);
+            this.WarriorSettings.Size = new System.Drawing.Size(567, 402);
             this.WarriorSettings.TabIndex = 1;
             this.WarriorSettings.Text = "Warrior";
             this.WarriorSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -6751,7 +6751,7 @@
             this.MonkSettings.Location = new System.Drawing.Point(114, 4);
             this.MonkSettings.Margin = new System.Windows.Forms.Padding(0);
             this.MonkSettings.Name = "MonkSettings";
-            this.MonkSettings.Size = new System.Drawing.Size(567, 387);
+            this.MonkSettings.Size = new System.Drawing.Size(567, 402);
             this.MonkSettings.TabIndex = 1;
             this.MonkSettings.Text = "Monk";
             this.MonkSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -7051,6 +7051,29 @@
             this.RogueSettings.TabIndex = 0;
             this.RogueSettings.Text = "Rogue";
             this.RogueSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
+            // 
+            // RogueBuffGroup
+            // 
+            this.RogueBuffGroup.Controls.Add(this.RogueGoad);
+            this.RogueBuffGroup.ForeColor = System.Drawing.Color.White;
+            this.RogueBuffGroup.Location = new System.Drawing.Point(34, 357);
+            this.RogueBuffGroup.Name = "RogueBuffGroup";
+            this.RogueBuffGroup.Size = new System.Drawing.Size(64, 42);
+            this.RogueBuffGroup.TabIndex = 44;
+            this.RogueBuffGroup.TabStop = false;
+            this.RogueBuffGroup.Text = "Buff";
+            // 
+            // RogueGoad
+            // 
+            this.RogueGoad.AutoSize = true;
+            this.RogueGoad.ForeColor = System.Drawing.Color.White;
+            this.RogueGoad.Location = new System.Drawing.Point(6, 19);
+            this.RogueGoad.Name = "RogueGoad";
+            this.RogueGoad.Size = new System.Drawing.Size(52, 17);
+            this.RogueGoad.TabIndex = 7;
+            this.RogueGoad.Text = "Goad";
+            this.RogueGoad.UseVisualStyleBackColor = true;
+            this.RogueGoad.CheckedChanged += new System.EventHandler(this.RogueGoad_CheckedChanged);
             // 
             // RogueAuraGroup
             // 
@@ -7734,6 +7757,29 @@
             this.NinjaSettings.TabIndex = 1;
             this.NinjaSettings.Text = "Ninja";
             this.NinjaSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
+            // 
+            // NinjaBuffGroup
+            // 
+            this.NinjaBuffGroup.Controls.Add(this.NinjaGoad);
+            this.NinjaBuffGroup.ForeColor = System.Drawing.Color.White;
+            this.NinjaBuffGroup.Location = new System.Drawing.Point(207, 287);
+            this.NinjaBuffGroup.Name = "NinjaBuffGroup";
+            this.NinjaBuffGroup.Size = new System.Drawing.Size(64, 42);
+            this.NinjaBuffGroup.TabIndex = 45;
+            this.NinjaBuffGroup.TabStop = false;
+            this.NinjaBuffGroup.Text = "Buff";
+            // 
+            // NinjaGoad
+            // 
+            this.NinjaGoad.AutoSize = true;
+            this.NinjaGoad.ForeColor = System.Drawing.Color.White;
+            this.NinjaGoad.Location = new System.Drawing.Point(6, 19);
+            this.NinjaGoad.Name = "NinjaGoad";
+            this.NinjaGoad.Size = new System.Drawing.Size(52, 17);
+            this.NinjaGoad.TabIndex = 7;
+            this.NinjaGoad.Text = "Goad";
+            this.NinjaGoad.UseVisualStyleBackColor = true;
+            this.NinjaGoad.CheckedChanged += new System.EventHandler(this.NinjaGoad_CheckedChanged);
             // 
             // NinjaAuraGroup
             // 
@@ -8553,7 +8599,7 @@
             this.BlackMageSettings.Location = new System.Drawing.Point(114, 4);
             this.BlackMageSettings.Margin = new System.Windows.Forms.Padding(0);
             this.BlackMageSettings.Name = "BlackMageSettings";
-            this.BlackMageSettings.Size = new System.Drawing.Size(567, 387);
+            this.BlackMageSettings.Size = new System.Drawing.Size(567, 402);
             this.BlackMageSettings.TabIndex = 1;
             this.BlackMageSettings.Text = "Black Mage";
             this.BlackMageSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -8686,52 +8732,6 @@
             this.BlackMageQuellingStrikes.Text = "Quelling Strikes";
             this.BlackMageQuellingStrikes.UseVisualStyleBackColor = true;
             this.BlackMageQuellingStrikes.CheckedChanged += new System.EventHandler(this.BlackMageQuellingStrikes_CheckedChanged);
-            // 
-            // RogueBuffGroup
-            // 
-            this.RogueBuffGroup.Controls.Add(this.RogueGoad);
-            this.RogueBuffGroup.ForeColor = System.Drawing.Color.White;
-            this.RogueBuffGroup.Location = new System.Drawing.Point(34, 357);
-            this.RogueBuffGroup.Name = "RogueBuffGroup";
-            this.RogueBuffGroup.Size = new System.Drawing.Size(64, 42);
-            this.RogueBuffGroup.TabIndex = 44;
-            this.RogueBuffGroup.TabStop = false;
-            this.RogueBuffGroup.Text = "Buff";
-            // 
-            // RogueGoad
-            // 
-            this.RogueGoad.AutoSize = true;
-            this.RogueGoad.ForeColor = System.Drawing.Color.White;
-            this.RogueGoad.Location = new System.Drawing.Point(6, 19);
-            this.RogueGoad.Name = "RogueGoad";
-            this.RogueGoad.Size = new System.Drawing.Size(52, 17);
-            this.RogueGoad.TabIndex = 7;
-            this.RogueGoad.Text = "Goad";
-            this.RogueGoad.UseVisualStyleBackColor = true;
-            this.RogueGoad.CheckedChanged += new System.EventHandler(this.RogueGoad_CheckedChanged);
-            // 
-            // NinjaBuffGroup
-            // 
-            this.NinjaBuffGroup.Controls.Add(this.NinjaGoad);
-            this.NinjaBuffGroup.ForeColor = System.Drawing.Color.White;
-            this.NinjaBuffGroup.Location = new System.Drawing.Point(207, 287);
-            this.NinjaBuffGroup.Name = "NinjaBuffGroup";
-            this.NinjaBuffGroup.Size = new System.Drawing.Size(64, 42);
-            this.NinjaBuffGroup.TabIndex = 45;
-            this.NinjaBuffGroup.TabStop = false;
-            this.NinjaBuffGroup.Text = "Buff";
-            // 
-            // NinjaGoad
-            // 
-            this.NinjaGoad.AutoSize = true;
-            this.NinjaGoad.ForeColor = System.Drawing.Color.White;
-            this.NinjaGoad.Location = new System.Drawing.Point(6, 19);
-            this.NinjaGoad.Name = "NinjaGoad";
-            this.NinjaGoad.Size = new System.Drawing.Size(52, 17);
-            this.NinjaGoad.TabIndex = 7;
-            this.NinjaGoad.Text = "Goad";
-            this.NinjaGoad.UseVisualStyleBackColor = true;
-            this.NinjaGoad.CheckedChanged += new System.EventHandler(this.NinjaGoad_CheckedChanged);
             // 
             // UltimaForm
             // 
@@ -9001,6 +9001,8 @@
             this.RogueTab.ResumeLayout(false);
             this.RogueSubTab.ResumeLayout(false);
             this.RogueSettings.ResumeLayout(false);
+            this.RogueBuffGroup.ResumeLayout(false);
+            this.RogueBuffGroup.PerformLayout();
             this.RogueAuraGroup.ResumeLayout(false);
             this.RogueAuraGroup.PerformLayout();
             this.RogueDebuffGroup.ResumeLayout(false);
@@ -9027,6 +9029,8 @@
             this.RogueConjurerGroup.ResumeLayout(false);
             this.RogueConjurerGroup.PerformLayout();
             this.NinjaSettings.ResumeLayout(false);
+            this.NinjaBuffGroup.ResumeLayout(false);
+            this.NinjaBuffGroup.PerformLayout();
             this.NinjaAuraGroup.ResumeLayout(false);
             this.NinjaAuraGroup.PerformLayout();
             this.NinjaDebuffGroup.ResumeLayout(false);
@@ -9068,10 +9072,6 @@
             this.BlackMageArcanistGroup.PerformLayout();
             this.BlackMageArcherGroup.ResumeLayout(false);
             this.BlackMageArcherGroup.PerformLayout();
-            this.RogueBuffGroup.ResumeLayout(false);
-            this.RogueBuffGroup.PerformLayout();
-            this.NinjaBuffGroup.ResumeLayout(false);
-            this.NinjaBuffGroup.PerformLayout();
             this.ResumeLayout(false);
 
         }

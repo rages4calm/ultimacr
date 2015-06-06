@@ -24,7 +24,7 @@ namespace UltimaCR
                 ? unitasc.CharacterAuras.Where(r => r.CasterId == Core.Player.ObjectId && r.Name == spellname)
                 : unitasc.CharacterAuras.Where(r => r.Name == spellname);
 
-            var retval = auras.Any(aura => aura.TimespanLeft.TotalMilliseconds > msLeft);
+            var retval = auras.Any(aura => aura.TimespanLeft.TotalMilliseconds >= msLeft);
 
             return retval;
         }
@@ -40,7 +40,7 @@ namespace UltimaCR
                 ? unitasc.CharacterAuras.Where(r => r.CasterId == Core.Player.ObjectId && r.Id == spellid)
                 : unitasc.CharacterAuras.Where(r => r.Id == spellid);
 
-            var retval = auras.Any(aura => aura.TimespanLeft.TotalMilliseconds > msLeft);
+            var retval = auras.Any(aura => aura.TimespanLeft.TotalMilliseconds >= msLeft);
 
             return retval;
         }

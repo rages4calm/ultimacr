@@ -60,7 +60,21 @@ namespace UltimaCR.Spells
                 return false;
             }
             #endregion
-            
+
+            #region Bard Song Check
+
+            if (Core.Player.CurrentJob == ClassJobType.Bard &&
+                SpellType == SpellType.Buff)
+            {
+                if (Core.Player.HasAura(114, true) ||
+                    Core.Player.HasAura(116, true))
+                {
+                    return false;
+                }
+            }
+
+            #endregion
+
             #region AoE Check
 
             if (SpellType == SpellType.AoE &&
@@ -245,10 +259,15 @@ namespace UltimaCR.Spells
                         target.Face();
                         return false;
                 }
-                if (MovementManager.IsMoving &&
+                if (target != Core.Player &&
+                    MovementManager.IsMoving &&
                     target.InLineOfSight() &&
                     Core.Player.Distance(target) <= (DataManager.GetSpellData(ID).Range + Core.Player.CombatReach + target.CombatReach) &&
                     Core.Player.IsFacing(target))
+                {
+                    Navigator.PlayerMover.MoveStop();
+                }
+                if (target == Core.Player)
                 {
                     Navigator.PlayerMover.MoveStop();
                 }
@@ -367,13 +386,13 @@ namespace UltimaCR.Spells
                     Core.Player.HasAura("Cleric Stance"))
                 {
                     await Coroutine.Wait(1000, () => Actionmanager.DoAction(122, Core.Player));
-                    await Coroutine.Wait(3000, () => Actionmanager.CanCast(ID, target));
+                    await Coroutine.Wait(3000, () => !Core.Player.HasAura(145));
                 }
                 if (SpellType != SpellType.Heal &&
                     !Core.Player.HasAura("Cleric Stance"))
                 {
                     await Coroutine.Wait(1000, () => Actionmanager.DoAction(122, Core.Player));
-                    await Coroutine.Wait(3000, () => Actionmanager.CanCast(ID, target));
+                    await Coroutine.Wait(3000, () => Core.Player.HasAura(145));
                 }
             }
 
