@@ -1,5 +1,6 @@
 ﻿using ff14bot;
 using System.Threading.Tasks;
+using ff14bot.Managers;
 using UltimaCR.Spells.Main;
 
 namespace UltimaCR.Rotations
@@ -94,7 +95,15 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> HawksEye()
         {
-            return await MySpells.HawksEye.Cast();
+            if (Core.Player.HasAura(MySpells.CrossClass.BloodForBlood.Name))
+            {
+                return await MySpells.HawksEye.Cast();
+            }
+            if (!Actionmanager.HasSpell(MySpells.CrossClass.BloodForBlood.Name))
+            {
+                return await MySpells.HawksEye.Cast();
+            }
+            return false;
         }
 
         private async Task<bool> Windbite()
@@ -113,7 +122,15 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Barrage()
         {
-            return await MySpells.Barrage.Cast();
+            if (Core.Player.HasAura(MySpells.CrossClass.BloodForBlood.Name))
+            {
+                return await MySpells.Barrage.Cast();
+            }
+            if (!Actionmanager.HasSpell(MySpells.CrossClass.BloodForBlood.Name))
+            {
+                return await MySpells.Barrage.Cast();
+            }
+            return false;
         }
 
         private async Task<bool> BluntArrow()
@@ -173,7 +190,16 @@ namespace UltimaCR.Rotations
         {
             if (Ultima.UltSettings.BardBloodForBlood)
             {
-                return await MySpells.CrossClass.BloodForBlood.Cast();
+                if (Actionmanager.HasSpell(MySpells.Barrage.Name) &&
+                    Actionmanager.CanCast(MySpells.HawksEye.Name, Core.Player) &&
+                    Actionmanager.CanCast(MySpells.Barrage.Name, Core.Player))
+                {
+                    return await MySpells.CrossClass.BloodForBlood.Cast();
+                }
+                if (!Actionmanager.HasSpell(MySpells.Barrage.Name))
+                {
+                    return await MySpells.CrossClass.BloodForBlood.Cast();
+                }
             }
             return false;
         }

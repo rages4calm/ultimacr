@@ -29,8 +29,8 @@ namespace UltimaCR.Spells
         Heal,
         Summon,
         Pet,
-        Ninjutsu,
         Behind,
-        Flank
+        Flank,
+        Ninjutsu
     }
 }
