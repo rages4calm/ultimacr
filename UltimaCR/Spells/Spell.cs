@@ -171,6 +171,8 @@ namespace UltimaCR.Spells
                 if (Pet.PetMode != PetMode.Obey)
                 {
                     await Coroutine.Wait(1000, () => Pet.DoAction("Obey", Core.Player));
+                    Logging.Write(Colors.OrangeRed, @"[Ultima] Ability: Pet Obey");
+                    await Coroutine.Wait(3000, () => Pet.PetMode == PetMode.Obey);
                 }
                 if (!Pet.CanCast(Name, target))
                 {
@@ -264,10 +266,6 @@ namespace UltimaCR.Spells
                     target.InLineOfSight() &&
                     Core.Player.Distance(target) <= (DataManager.GetSpellData(ID).Range + Core.Player.CombatReach + target.CombatReach) &&
                     Core.Player.IsFacing(target))
-                {
-                    Navigator.PlayerMover.MoveStop();
-                }
-                if (target == Core.Player)
                 {
                     Navigator.PlayerMover.MoveStop();
                 }
@@ -382,36 +380,44 @@ namespace UltimaCR.Spells
 
             if (Actionmanager.HasSpell(122))
             {
-                if (SpellType == SpellType.Heal &&
-                    Core.Player.HasAura("Cleric Stance"))
+                switch (Core.Player.HasAura("Cleric Stance"))
                 {
-                    await Coroutine.Wait(1000, () => Actionmanager.DoAction(122, Core.Player));
-                    await Coroutine.Wait(3000, () => !Core.Player.HasAura(145));
-                }
-                if (SpellType != SpellType.Heal &&
-                    !Core.Player.HasAura("Cleric Stance"))
-                {
-                    await Coroutine.Wait(1000, () => Actionmanager.DoAction(122, Core.Player));
-                    await Coroutine.Wait(3000, () => Core.Player.HasAura(145));
+                    case true:
+                        if (SpellType == SpellType.Heal)
+                        {
+                            await Coroutine.Wait(1000, () => Actionmanager.DoAction(122, Core.Player));
+                            Logging.Write(Colors.OrangeRed, @"[Ultima] Removing Cleric Stance");
+                            await Coroutine.Wait(3000, () => !Core.Player.HasAura(145));
+                        }
+                        break;
+                    case false:
+                        if (SpellType != SpellType.Heal)
+                        {
+                            await Coroutine.Wait(1000, () => Actionmanager.DoAction(122, Core.Player));
+                            Logging.Write(Colors.OrangeRed, @"[Ultima] Ability: Cleric Stance");
+                            await Coroutine.Wait(3000, () => Core.Player.HasAura(145));
+                        }
+                        break;
                 }
             }
 
             #endregion
 
             #region DoAction
-            if (CastType == CastType.Location)
+            switch (CastType)
             {
-                if (!await Coroutine.Wait(1000, () => Actionmanager.DoActionLocation(ID, target.Location)))
-                {
-                    return false;
-                }
-            }
-            else
-            {
-                if (!await Coroutine.Wait(1000, () => Actionmanager.DoAction(ID, target)))
-                {
-                    return false;
-                }
+                case CastType.Location:
+                    if (!await Coroutine.Wait(1000, () => Actionmanager.DoActionLocation(ID, target.Location)))
+                    {
+                        return false;
+                    }
+                    break;
+                default:
+                    if (!await Coroutine.Wait(1000, () => Actionmanager.DoAction(ID, target)))
+                    {
+                        return false;
+                    }
+                    break;
             }
             #endregion
             Ultima.LastSpell = this;
