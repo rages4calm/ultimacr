@@ -264,7 +264,7 @@ namespace UltimaCR.Spells
                 if (target != Core.Player &&
                     MovementManager.IsMoving &&
                     target.InLineOfSight() &&
-                    Core.Player.Distance(target) <= (DataManager.GetSpellData(ID).Range + Core.Player.CombatReach + target.CombatReach) &&
+                    Core.Player.Distance(target) <= (DataManager.GetSpellData(ID).Range + target.CombatReach) &&
                     Core.Player.IsFacing(target))
                 {
                     Navigator.PlayerMover.MoveStop();

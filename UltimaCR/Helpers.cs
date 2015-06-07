@@ -140,7 +140,7 @@ namespace UltimaCR
                 return
                     PartyManager.VisibleMembers
                     .Select(ag => ag.GameObject as Character)
-                    .Where(ag => !ag.IsMe && ag.CurrentTP <= 800)
+                    .Where(ag => !ag.IsMe && ag.Type == GameObjectType.Pc && ag.CurrentTP <= 800)
                     .OrderByDescending(GetTPScore);
             }
         }
