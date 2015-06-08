@@ -1230,8 +1230,8 @@
             // 
             // ArcanistSurecast
             // 
-            this.ArcanistSurecast.AutoCheck = false;
             this.ArcanistSurecast.AutoSize = true;
+            this.ArcanistSurecast.Enabled = false;
             this.ArcanistSurecast.ForeColor = System.Drawing.Color.White;
             this.ArcanistSurecast.Location = new System.Drawing.Point(6, 19);
             this.ArcanistSurecast.Name = "ArcanistSurecast";
@@ -1255,8 +1255,8 @@
             // 
             // ArcanistBlizzardII
             // 
-            this.ArcanistBlizzardII.AutoCheck = false;
             this.ArcanistBlizzardII.AutoSize = true;
+            this.ArcanistBlizzardII.Enabled = false;
             this.ArcanistBlizzardII.ForeColor = System.Drawing.Color.White;
             this.ArcanistBlizzardII.Location = new System.Drawing.Point(6, 42);
             this.ArcanistBlizzardII.Name = "ArcanistBlizzardII";
@@ -1282,8 +1282,8 @@
             // 
             // ArcanistFeatherfoot
             // 
-            this.ArcanistFeatherfoot.AutoCheck = false;
             this.ArcanistFeatherfoot.AutoSize = true;
+            this.ArcanistFeatherfoot.Enabled = false;
             this.ArcanistFeatherfoot.ForeColor = System.Drawing.Color.White;
             this.ArcanistFeatherfoot.Location = new System.Drawing.Point(6, 19);
             this.ArcanistFeatherfoot.Name = "ArcanistFeatherfoot";
@@ -1295,8 +1295,8 @@
             // 
             // ArcanistSecondWind
             // 
-            this.ArcanistSecondWind.AutoCheck = false;
             this.ArcanistSecondWind.AutoSize = true;
+            this.ArcanistSecondWind.Enabled = false;
             this.ArcanistSecondWind.ForeColor = System.Drawing.Color.White;
             this.ArcanistSecondWind.Location = new System.Drawing.Point(6, 42);
             this.ArcanistSecondWind.Name = "ArcanistSecondWind";
@@ -1308,8 +1308,8 @@
             // 
             // ArcanistInternalRelease
             // 
-            this.ArcanistInternalRelease.AutoCheck = false;
             this.ArcanistInternalRelease.AutoSize = true;
+            this.ArcanistInternalRelease.Enabled = false;
             this.ArcanistInternalRelease.ForeColor = System.Drawing.Color.White;
             this.ArcanistInternalRelease.Location = new System.Drawing.Point(6, 65);
             this.ArcanistInternalRelease.Name = "ArcanistInternalRelease";
@@ -1321,8 +1321,8 @@
             // 
             // ArcanistMantra
             // 
-            this.ArcanistMantra.AutoCheck = false;
             this.ArcanistMantra.AutoSize = true;
+            this.ArcanistMantra.Enabled = false;
             this.ArcanistMantra.ForeColor = System.Drawing.Color.White;
             this.ArcanistMantra.Location = new System.Drawing.Point(6, 88);
             this.ArcanistMantra.Name = "ArcanistMantra";
@@ -1347,8 +1347,8 @@
             // 
             // ArcanistForesight
             // 
-            this.ArcanistForesight.AutoCheck = false;
             this.ArcanistForesight.AutoSize = true;
+            this.ArcanistForesight.Enabled = false;
             this.ArcanistForesight.ForeColor = System.Drawing.Color.White;
             this.ArcanistForesight.Location = new System.Drawing.Point(6, 19);
             this.ArcanistForesight.Name = "ArcanistForesight";
@@ -1360,8 +1360,8 @@
             // 
             // ArcanistBloodbath
             // 
-            this.ArcanistBloodbath.AutoCheck = false;
             this.ArcanistBloodbath.AutoSize = true;
+            this.ArcanistBloodbath.Enabled = false;
             this.ArcanistBloodbath.ForeColor = System.Drawing.Color.White;
             this.ArcanistBloodbath.Location = new System.Drawing.Point(6, 42);
             this.ArcanistBloodbath.Name = "ArcanistBloodbath";
@@ -1373,8 +1373,8 @@
             // 
             // ArcanistMercyStroke
             // 
-            this.ArcanistMercyStroke.AutoCheck = false;
             this.ArcanistMercyStroke.AutoSize = true;
+            this.ArcanistMercyStroke.Enabled = false;
             this.ArcanistMercyStroke.ForeColor = System.Drawing.Color.White;
             this.ArcanistMercyStroke.Location = new System.Drawing.Point(6, 65);
             this.ArcanistMercyStroke.Name = "ArcanistMercyStroke";
@@ -1411,8 +1411,8 @@
             // 
             // ArcanistHawksEye
             // 
-            this.ArcanistHawksEye.AutoCheck = false;
             this.ArcanistHawksEye.AutoSize = true;
+            this.ArcanistHawksEye.Enabled = false;
             this.ArcanistHawksEye.ForeColor = System.Drawing.Color.White;
             this.ArcanistHawksEye.Location = new System.Drawing.Point(6, 42);
             this.ArcanistHawksEye.Name = "ArcanistHawksEye";
@@ -1424,8 +1424,8 @@
             // 
             // ArcanistQuellingStrikes
             // 
-            this.ArcanistQuellingStrikes.AutoCheck = false;
             this.ArcanistQuellingStrikes.AutoSize = true;
+            this.ArcanistQuellingStrikes.Enabled = false;
             this.ArcanistQuellingStrikes.ForeColor = System.Drawing.Color.White;
             this.ArcanistQuellingStrikes.Location = new System.Drawing.Point(6, 65);
             this.ArcanistQuellingStrikes.Name = "ArcanistQuellingStrikes";
@@ -1452,8 +1452,8 @@
             // 
             // ArcanistCure
             // 
-            this.ArcanistCure.AutoCheck = false;
             this.ArcanistCure.AutoSize = true;
+            this.ArcanistCure.Enabled = false;
             this.ArcanistCure.ForeColor = System.Drawing.Color.White;
             this.ArcanistCure.Location = new System.Drawing.Point(6, 19);
             this.ArcanistCure.Name = "ArcanistCure";
@@ -1465,8 +1465,8 @@
             // 
             // ArcanistAero
             // 
-            this.ArcanistAero.AutoCheck = false;
             this.ArcanistAero.AutoSize = true;
+            this.ArcanistAero.Enabled = false;
             this.ArcanistAero.ForeColor = System.Drawing.Color.White;
             this.ArcanistAero.Location = new System.Drawing.Point(6, 42);
             this.ArcanistAero.Name = "ArcanistAero";
@@ -1490,8 +1490,8 @@
             // 
             // ArcanistRaise
             // 
-            this.ArcanistRaise.AutoCheck = false;
             this.ArcanistRaise.AutoSize = true;
+            this.ArcanistRaise.Enabled = false;
             this.ArcanistRaise.ForeColor = System.Drawing.Color.White;
             this.ArcanistRaise.Location = new System.Drawing.Point(6, 88);
             this.ArcanistRaise.Name = "ArcanistRaise";
@@ -1529,8 +1529,8 @@
             // 
             // ArcanistFlash
             // 
-            this.ArcanistFlash.AutoCheck = false;
             this.ArcanistFlash.AutoSize = true;
+            this.ArcanistFlash.Enabled = false;
             this.ArcanistFlash.ForeColor = System.Drawing.Color.White;
             this.ArcanistFlash.Location = new System.Drawing.Point(6, 19);
             this.ArcanistFlash.Name = "ArcanistFlash";
@@ -1542,8 +1542,8 @@
             // 
             // ArcanistConvalescence
             // 
-            this.ArcanistConvalescence.AutoCheck = false;
             this.ArcanistConvalescence.AutoSize = true;
+            this.ArcanistConvalescence.Enabled = false;
             this.ArcanistConvalescence.ForeColor = System.Drawing.Color.White;
             this.ArcanistConvalescence.Location = new System.Drawing.Point(6, 42);
             this.ArcanistConvalescence.Name = "ArcanistConvalescence";
@@ -1555,8 +1555,8 @@
             // 
             // ArcanistProvoke
             // 
-            this.ArcanistProvoke.AutoCheck = false;
             this.ArcanistProvoke.AutoSize = true;
+            this.ArcanistProvoke.Enabled = false;
             this.ArcanistProvoke.ForeColor = System.Drawing.Color.White;
             this.ArcanistProvoke.Location = new System.Drawing.Point(6, 65);
             this.ArcanistProvoke.Name = "ArcanistProvoke";
@@ -1568,8 +1568,8 @@
             // 
             // ArcanistAwareness
             // 
-            this.ArcanistAwareness.AutoCheck = false;
             this.ArcanistAwareness.AutoSize = true;
+            this.ArcanistAwareness.Enabled = false;
             this.ArcanistAwareness.ForeColor = System.Drawing.Color.White;
             this.ArcanistAwareness.Location = new System.Drawing.Point(6, 88);
             this.ArcanistAwareness.Name = "ArcanistAwareness";
@@ -1594,8 +1594,8 @@
             // 
             // ArcanistKeenFlurry
             // 
-            this.ArcanistKeenFlurry.AutoCheck = false;
             this.ArcanistKeenFlurry.AutoSize = true;
+            this.ArcanistKeenFlurry.Enabled = false;
             this.ArcanistKeenFlurry.ForeColor = System.Drawing.Color.White;
             this.ArcanistKeenFlurry.Location = new System.Drawing.Point(6, 19);
             this.ArcanistKeenFlurry.Name = "ArcanistKeenFlurry";
@@ -1607,8 +1607,8 @@
             // 
             // ArcanistInvigorate
             // 
-            this.ArcanistInvigorate.AutoCheck = false;
             this.ArcanistInvigorate.AutoSize = true;
+            this.ArcanistInvigorate.Enabled = false;
             this.ArcanistInvigorate.ForeColor = System.Drawing.Color.White;
             this.ArcanistInvigorate.Location = new System.Drawing.Point(6, 42);
             this.ArcanistInvigorate.Name = "ArcanistInvigorate";
@@ -1620,8 +1620,8 @@
             // 
             // ArcanistBloodForBlood
             // 
-            this.ArcanistBloodForBlood.AutoCheck = false;
             this.ArcanistBloodForBlood.AutoSize = true;
+            this.ArcanistBloodForBlood.Enabled = false;
             this.ArcanistBloodForBlood.ForeColor = System.Drawing.Color.White;
             this.ArcanistBloodForBlood.Location = new System.Drawing.Point(6, 65);
             this.ArcanistBloodForBlood.Name = "ArcanistBloodForBlood";
@@ -1747,8 +1747,8 @@
             // 
             // ScholarSurecast
             // 
-            this.ScholarSurecast.AutoCheck = false;
             this.ScholarSurecast.AutoSize = true;
+            this.ScholarSurecast.Enabled = false;
             this.ScholarSurecast.ForeColor = System.Drawing.Color.White;
             this.ScholarSurecast.Location = new System.Drawing.Point(6, 19);
             this.ScholarSurecast.Name = "ScholarSurecast";
@@ -1772,8 +1772,8 @@
             // 
             // ScholarBlizzardII
             // 
-            this.ScholarBlizzardII.AutoCheck = false;
             this.ScholarBlizzardII.AutoSize = true;
+            this.ScholarBlizzardII.Enabled = false;
             this.ScholarBlizzardII.ForeColor = System.Drawing.Color.White;
             this.ScholarBlizzardII.Location = new System.Drawing.Point(6, 42);
             this.ScholarBlizzardII.Name = "ScholarBlizzardII";
@@ -1813,8 +1813,8 @@
             // 
             // ScholarCure
             // 
-            this.ScholarCure.AutoCheck = false;
             this.ScholarCure.AutoSize = true;
+            this.ScholarCure.Enabled = false;
             this.ScholarCure.ForeColor = System.Drawing.Color.White;
             this.ScholarCure.Location = new System.Drawing.Point(6, 19);
             this.ScholarCure.Name = "ScholarCure";
@@ -1850,8 +1850,8 @@
             // 
             // ScholarRaise
             // 
-            this.ScholarRaise.AutoCheck = false;
             this.ScholarRaise.AutoSize = true;
+            this.ScholarRaise.Enabled = false;
             this.ScholarRaise.ForeColor = System.Drawing.Color.White;
             this.ScholarRaise.Location = new System.Drawing.Point(6, 111);
             this.ScholarRaise.Name = "ScholarRaise";
@@ -1989,8 +1989,8 @@
             // 
             // SummonerHawksEye
             // 
-            this.SummonerHawksEye.AutoCheck = false;
             this.SummonerHawksEye.AutoSize = true;
+            this.SummonerHawksEye.Enabled = false;
             this.SummonerHawksEye.ForeColor = System.Drawing.Color.White;
             this.SummonerHawksEye.Location = new System.Drawing.Point(6, 42);
             this.SummonerHawksEye.Name = "SummonerHawksEye";
@@ -2002,8 +2002,8 @@
             // 
             // SummonerQuellingStrikes
             // 
-            this.SummonerQuellingStrikes.AutoCheck = false;
             this.SummonerQuellingStrikes.AutoSize = true;
+            this.SummonerQuellingStrikes.Enabled = false;
             this.SummonerQuellingStrikes.ForeColor = System.Drawing.Color.White;
             this.SummonerQuellingStrikes.Location = new System.Drawing.Point(6, 65);
             this.SummonerQuellingStrikes.Name = "SummonerQuellingStrikes";
@@ -2028,8 +2028,8 @@
             // 
             // SummonerSurecast
             // 
-            this.SummonerSurecast.AutoCheck = false;
             this.SummonerSurecast.AutoSize = true;
+            this.SummonerSurecast.Enabled = false;
             this.SummonerSurecast.ForeColor = System.Drawing.Color.White;
             this.SummonerSurecast.Location = new System.Drawing.Point(6, 19);
             this.SummonerSurecast.Name = "SummonerSurecast";
@@ -2053,8 +2053,8 @@
             // 
             // SummonerBlizzardII
             // 
-            this.SummonerBlizzardII.AutoCheck = false;
             this.SummonerBlizzardII.AutoSize = true;
+            this.SummonerBlizzardII.Enabled = false;
             this.SummonerBlizzardII.ForeColor = System.Drawing.Color.White;
             this.SummonerBlizzardII.Location = new System.Drawing.Point(6, 42);
             this.SummonerBlizzardII.Name = "SummonerBlizzardII";
@@ -2182,8 +2182,8 @@
             // 
             // ArcherSurecast
             // 
-            this.ArcherSurecast.AutoCheck = false;
             this.ArcherSurecast.AutoSize = true;
+            this.ArcherSurecast.Enabled = false;
             this.ArcherSurecast.ForeColor = System.Drawing.Color.White;
             this.ArcherSurecast.Location = new System.Drawing.Point(6, 19);
             this.ArcherSurecast.Name = "ArcherSurecast";
@@ -2195,8 +2195,8 @@
             // 
             // ArcherSwiftcast
             // 
-            this.ArcherSwiftcast.AutoCheck = false;
             this.ArcherSwiftcast.AutoSize = true;
+            this.ArcherSwiftcast.Enabled = false;
             this.ArcherSwiftcast.ForeColor = System.Drawing.Color.White;
             this.ArcherSwiftcast.Location = new System.Drawing.Point(6, 42);
             this.ArcherSwiftcast.Name = "ArcherSwiftcast";
@@ -2219,8 +2219,8 @@
             // 
             // ArcherPerfectDodge
             // 
-            this.ArcherPerfectDodge.AutoCheck = false;
             this.ArcherPerfectDodge.AutoSize = true;
+            this.ArcherPerfectDodge.Enabled = false;
             this.ArcherPerfectDodge.ForeColor = System.Drawing.Color.White;
             this.ArcherPerfectDodge.Location = new System.Drawing.Point(6, 19);
             this.ArcherPerfectDodge.Name = "ArcherPerfectDodge";
@@ -2247,8 +2247,8 @@
             // 
             // ArcherHaymaker
             // 
-            this.ArcherHaymaker.AutoCheck = false;
             this.ArcherHaymaker.AutoSize = true;
+            this.ArcherHaymaker.Enabled = false;
             this.ArcherHaymaker.ForeColor = System.Drawing.Color.White;
             this.ArcherHaymaker.Location = new System.Drawing.Point(6, 65);
             this.ArcherHaymaker.Name = "ArcherHaymaker";
@@ -2260,8 +2260,8 @@
             // 
             // ArcherFeatherfoot
             // 
-            this.ArcherFeatherfoot.AutoCheck = false;
             this.ArcherFeatherfoot.AutoSize = true;
+            this.ArcherFeatherfoot.Enabled = false;
             this.ArcherFeatherfoot.ForeColor = System.Drawing.Color.White;
             this.ArcherFeatherfoot.Location = new System.Drawing.Point(6, 19);
             this.ArcherFeatherfoot.Name = "ArcherFeatherfoot";
@@ -2273,8 +2273,8 @@
             // 
             // ArcherSecondWind
             // 
-            this.ArcherSecondWind.AutoCheck = false;
             this.ArcherSecondWind.AutoSize = true;
+            this.ArcherSecondWind.Enabled = false;
             this.ArcherSecondWind.ForeColor = System.Drawing.Color.White;
             this.ArcherSecondWind.Location = new System.Drawing.Point(6, 42);
             this.ArcherSecondWind.Name = "ArcherSecondWind";
@@ -2298,8 +2298,8 @@
             // 
             // ArcherMantra
             // 
-            this.ArcherMantra.AutoCheck = false;
             this.ArcherMantra.AutoSize = true;
+            this.ArcherMantra.Enabled = false;
             this.ArcherMantra.ForeColor = System.Drawing.Color.White;
             this.ArcherMantra.Location = new System.Drawing.Point(6, 111);
             this.ArcherMantra.Name = "ArcherMantra";
@@ -2326,8 +2326,8 @@
             // 
             // ArcherFracture
             // 
-            this.ArcherFracture.AutoCheck = false;
             this.ArcherFracture.AutoSize = true;
+            this.ArcherFracture.Enabled = false;
             this.ArcherFracture.ForeColor = System.Drawing.Color.White;
             this.ArcherFracture.Location = new System.Drawing.Point(6, 65);
             this.ArcherFracture.Name = "ArcherFracture";
@@ -2339,8 +2339,8 @@
             // 
             // ArcherSkullSunder
             // 
-            this.ArcherSkullSunder.AutoCheck = false;
             this.ArcherSkullSunder.AutoSize = true;
+            this.ArcherSkullSunder.Enabled = false;
             this.ArcherSkullSunder.ForeColor = System.Drawing.Color.White;
             this.ArcherSkullSunder.Location = new System.Drawing.Point(6, 42);
             this.ArcherSkullSunder.Name = "ArcherSkullSunder";
@@ -2352,8 +2352,8 @@
             // 
             // ArcherBloodbath
             // 
-            this.ArcherBloodbath.AutoCheck = false;
             this.ArcherBloodbath.AutoSize = true;
+            this.ArcherBloodbath.Enabled = false;
             this.ArcherBloodbath.ForeColor = System.Drawing.Color.White;
             this.ArcherBloodbath.Location = new System.Drawing.Point(6, 88);
             this.ArcherBloodbath.Name = "ArcherBloodbath";
@@ -2365,8 +2365,8 @@
             // 
             // ArcherForesight
             // 
-            this.ArcherForesight.AutoCheck = false;
             this.ArcherForesight.AutoSize = true;
+            this.ArcherForesight.Enabled = false;
             this.ArcherForesight.ForeColor = System.Drawing.Color.White;
             this.ArcherForesight.Location = new System.Drawing.Point(6, 19);
             this.ArcherForesight.Name = "ArcherForesight";
@@ -2378,8 +2378,8 @@
             // 
             // ArcherMercyStroke
             // 
-            this.ArcherMercyStroke.AutoCheck = false;
             this.ArcherMercyStroke.AutoSize = true;
+            this.ArcherMercyStroke.Enabled = false;
             this.ArcherMercyStroke.ForeColor = System.Drawing.Color.White;
             this.ArcherMercyStroke.Location = new System.Drawing.Point(6, 111);
             this.ArcherMercyStroke.Name = "ArcherMercyStroke";
@@ -2404,8 +2404,8 @@
             // 
             // ArcherPhysick
             // 
-            this.ArcherPhysick.AutoCheck = false;
             this.ArcherPhysick.AutoSize = true;
+            this.ArcherPhysick.Enabled = false;
             this.ArcherPhysick.ForeColor = System.Drawing.Color.White;
             this.ArcherPhysick.Location = new System.Drawing.Point(6, 19);
             this.ArcherPhysick.Name = "ArcherPhysick";
@@ -2417,8 +2417,8 @@
             // 
             // ArcherVirus
             // 
-            this.ArcherVirus.AutoCheck = false;
             this.ArcherVirus.AutoSize = true;
+            this.ArcherVirus.Enabled = false;
             this.ArcherVirus.ForeColor = System.Drawing.Color.White;
             this.ArcherVirus.Location = new System.Drawing.Point(6, 42);
             this.ArcherVirus.Name = "ArcherVirus";
@@ -2430,8 +2430,8 @@
             // 
             // ArcherEyeForAnEye
             // 
-            this.ArcherEyeForAnEye.AutoCheck = false;
             this.ArcherEyeForAnEye.AutoSize = true;
+            this.ArcherEyeForAnEye.Enabled = false;
             this.ArcherEyeForAnEye.ForeColor = System.Drawing.Color.White;
             this.ArcherEyeForAnEye.Location = new System.Drawing.Point(6, 65);
             this.ArcherEyeForAnEye.Name = "ArcherEyeForAnEye";
@@ -2457,8 +2457,8 @@
             // 
             // ArcherCure
             // 
-            this.ArcherCure.AutoCheck = false;
             this.ArcherCure.AutoSize = true;
+            this.ArcherCure.Enabled = false;
             this.ArcherCure.ForeColor = System.Drawing.Color.White;
             this.ArcherCure.Location = new System.Drawing.Point(6, 19);
             this.ArcherCure.Name = "ArcherCure";
@@ -2470,8 +2470,8 @@
             // 
             // ArcherProtect
             // 
-            this.ArcherProtect.AutoCheck = false;
             this.ArcherProtect.AutoSize = true;
+            this.ArcherProtect.Enabled = false;
             this.ArcherProtect.ForeColor = System.Drawing.Color.White;
             this.ArcherProtect.Location = new System.Drawing.Point(6, 42);
             this.ArcherProtect.Name = "ArcherProtect";
@@ -2483,8 +2483,8 @@
             // 
             // ArcherRaise
             // 
-            this.ArcherRaise.AutoCheck = false;
             this.ArcherRaise.AutoSize = true;
+            this.ArcherRaise.Enabled = false;
             this.ArcherRaise.ForeColor = System.Drawing.Color.White;
             this.ArcherRaise.Location = new System.Drawing.Point(6, 65);
             this.ArcherRaise.Name = "ArcherRaise";
@@ -2496,8 +2496,8 @@
             // 
             // ArcherStoneskin
             // 
-            this.ArcherStoneskin.AutoCheck = false;
             this.ArcherStoneskin.AutoSize = true;
+            this.ArcherStoneskin.Enabled = false;
             this.ArcherStoneskin.ForeColor = System.Drawing.Color.White;
             this.ArcherStoneskin.Location = new System.Drawing.Point(6, 88);
             this.ArcherStoneskin.Name = "ArcherStoneskin";
@@ -2524,8 +2524,8 @@
             // 
             // ArcherFlash
             // 
-            this.ArcherFlash.AutoCheck = false;
             this.ArcherFlash.AutoSize = true;
+            this.ArcherFlash.Enabled = false;
             this.ArcherFlash.ForeColor = System.Drawing.Color.White;
             this.ArcherFlash.Location = new System.Drawing.Point(6, 42);
             this.ArcherFlash.Name = "ArcherFlash";
@@ -2537,8 +2537,8 @@
             // 
             // ArcherConvalescence
             // 
-            this.ArcherConvalescence.AutoCheck = false;
             this.ArcherConvalescence.AutoSize = true;
+            this.ArcherConvalescence.Enabled = false;
             this.ArcherConvalescence.ForeColor = System.Drawing.Color.White;
             this.ArcherConvalescence.Location = new System.Drawing.Point(6, 65);
             this.ArcherConvalescence.Name = "ArcherConvalescence";
@@ -2550,8 +2550,8 @@
             // 
             // ArcherSavageBlade
             // 
-            this.ArcherSavageBlade.AutoCheck = false;
             this.ArcherSavageBlade.AutoSize = true;
+            this.ArcherSavageBlade.Enabled = false;
             this.ArcherSavageBlade.ForeColor = System.Drawing.Color.White;
             this.ArcherSavageBlade.Location = new System.Drawing.Point(6, 19);
             this.ArcherSavageBlade.Name = "ArcherSavageBlade";
@@ -2563,8 +2563,8 @@
             // 
             // ArcherAwareness
             // 
-            this.ArcherAwareness.AutoCheck = false;
             this.ArcherAwareness.AutoSize = true;
+            this.ArcherAwareness.Enabled = false;
             this.ArcherAwareness.ForeColor = System.Drawing.Color.White;
             this.ArcherAwareness.Location = new System.Drawing.Point(6, 111);
             this.ArcherAwareness.Name = "ArcherAwareness";
@@ -2576,8 +2576,8 @@
             // 
             // ArcherProvoke
             // 
-            this.ArcherProvoke.AutoCheck = false;
             this.ArcherProvoke.AutoSize = true;
+            this.ArcherProvoke.Enabled = false;
             this.ArcherProvoke.ForeColor = System.Drawing.Color.White;
             this.ArcherProvoke.Location = new System.Drawing.Point(6, 88);
             this.ArcherProvoke.Name = "ArcherProvoke";
@@ -2603,8 +2603,8 @@
             // 
             // ArcherKeenFlurry
             // 
-            this.ArcherKeenFlurry.AutoCheck = false;
             this.ArcherKeenFlurry.AutoSize = true;
+            this.ArcherKeenFlurry.Enabled = false;
             this.ArcherKeenFlurry.ForeColor = System.Drawing.Color.White;
             this.ArcherKeenFlurry.Location = new System.Drawing.Point(6, 42);
             this.ArcherKeenFlurry.Name = "ArcherKeenFlurry";
@@ -2616,8 +2616,8 @@
             // 
             // ArcherFeint
             // 
-            this.ArcherFeint.AutoCheck = false;
             this.ArcherFeint.AutoSize = true;
+            this.ArcherFeint.Enabled = false;
             this.ArcherFeint.ForeColor = System.Drawing.Color.White;
             this.ArcherFeint.Location = new System.Drawing.Point(6, 19);
             this.ArcherFeint.Name = "ArcherFeint";
@@ -2740,8 +2740,8 @@
             // 
             // BardHaymaker
             // 
-            this.BardHaymaker.AutoCheck = false;
             this.BardHaymaker.AutoSize = true;
+            this.BardHaymaker.Enabled = false;
             this.BardHaymaker.ForeColor = System.Drawing.Color.White;
             this.BardHaymaker.Location = new System.Drawing.Point(6, 65);
             this.BardHaymaker.Name = "BardHaymaker";
@@ -2753,8 +2753,8 @@
             // 
             // BardFeatherfoot
             // 
-            this.BardFeatherfoot.AutoCheck = false;
             this.BardFeatherfoot.AutoSize = true;
+            this.BardFeatherfoot.Enabled = false;
             this.BardFeatherfoot.ForeColor = System.Drawing.Color.White;
             this.BardFeatherfoot.Location = new System.Drawing.Point(6, 19);
             this.BardFeatherfoot.Name = "BardFeatherfoot";
@@ -2766,8 +2766,8 @@
             // 
             // BardSecondWind
             // 
-            this.BardSecondWind.AutoCheck = false;
             this.BardSecondWind.AutoSize = true;
+            this.BardSecondWind.Enabled = false;
             this.BardSecondWind.ForeColor = System.Drawing.Color.White;
             this.BardSecondWind.Location = new System.Drawing.Point(6, 42);
             this.BardSecondWind.Name = "BardSecondWind";
@@ -2791,8 +2791,8 @@
             // 
             // BardMantra
             // 
-            this.BardMantra.AutoCheck = false;
             this.BardMantra.AutoSize = true;
+            this.BardMantra.Enabled = false;
             this.BardMantra.ForeColor = System.Drawing.Color.White;
             this.BardMantra.Location = new System.Drawing.Point(6, 111);
             this.BardMantra.Name = "BardMantra";
@@ -2818,8 +2818,8 @@
             // 
             // BardKeenFlurry
             // 
-            this.BardKeenFlurry.AutoCheck = false;
             this.BardKeenFlurry.AutoSize = true;
+            this.BardKeenFlurry.Enabled = false;
             this.BardKeenFlurry.ForeColor = System.Drawing.Color.White;
             this.BardKeenFlurry.Location = new System.Drawing.Point(6, 42);
             this.BardKeenFlurry.Name = "BardKeenFlurry";
@@ -2831,8 +2831,8 @@
             // 
             // BardFeint
             // 
-            this.BardFeint.AutoCheck = false;
             this.BardFeint.AutoSize = true;
+            this.BardFeint.Enabled = false;
             this.BardFeint.ForeColor = System.Drawing.Color.White;
             this.BardFeint.Location = new System.Drawing.Point(6, 19);
             this.BardFeint.Name = "BardFeint";
@@ -2974,8 +2974,8 @@
             // 
             // ConjurerRuin
             // 
-            this.ConjurerRuin.AutoCheck = false;
             this.ConjurerRuin.AutoSize = true;
+            this.ConjurerRuin.Enabled = false;
             this.ConjurerRuin.ForeColor = System.Drawing.Color.White;
             this.ConjurerRuin.Location = new System.Drawing.Point(6, 19);
             this.ConjurerRuin.Name = "ConjurerRuin";
@@ -2987,8 +2987,8 @@
             // 
             // ConjurerPhysick
             // 
-            this.ConjurerPhysick.AutoCheck = false;
             this.ConjurerPhysick.AutoSize = true;
+            this.ConjurerPhysick.Enabled = false;
             this.ConjurerPhysick.ForeColor = System.Drawing.Color.White;
             this.ConjurerPhysick.Location = new System.Drawing.Point(6, 42);
             this.ConjurerPhysick.Name = "ConjurerPhysick";
@@ -3000,8 +3000,8 @@
             // 
             // ConjurerVirus
             // 
-            this.ConjurerVirus.AutoCheck = false;
             this.ConjurerVirus.AutoSize = true;
+            this.ConjurerVirus.Enabled = false;
             this.ConjurerVirus.ForeColor = System.Drawing.Color.White;
             this.ConjurerVirus.Location = new System.Drawing.Point(6, 65);
             this.ConjurerVirus.Name = "ConjurerVirus";
@@ -3013,8 +3013,8 @@
             // 
             // ConjurerEyeForAnEye
             // 
-            this.ConjurerEyeForAnEye.AutoCheck = false;
             this.ConjurerEyeForAnEye.AutoSize = true;
+            this.ConjurerEyeForAnEye.Enabled = false;
             this.ConjurerEyeForAnEye.ForeColor = System.Drawing.Color.White;
             this.ConjurerEyeForAnEye.Location = new System.Drawing.Point(6, 88);
             this.ConjurerEyeForAnEye.Name = "ConjurerEyeForAnEye";
@@ -3039,8 +3039,8 @@
             // 
             // ConjurerSurecast
             // 
-            this.ConjurerSurecast.AutoCheck = false;
             this.ConjurerSurecast.AutoSize = true;
+            this.ConjurerSurecast.Enabled = false;
             this.ConjurerSurecast.ForeColor = System.Drawing.Color.White;
             this.ConjurerSurecast.Location = new System.Drawing.Point(6, 19);
             this.ConjurerSurecast.Name = "ConjurerSurecast";
@@ -3052,8 +3052,8 @@
             // 
             // ConjurerSwiftcast
             // 
-            this.ConjurerSwiftcast.AutoCheck = false;
             this.ConjurerSwiftcast.AutoSize = true;
+            this.ConjurerSwiftcast.Enabled = false;
             this.ConjurerSwiftcast.ForeColor = System.Drawing.Color.White;
             this.ConjurerSwiftcast.Location = new System.Drawing.Point(6, 65);
             this.ConjurerSwiftcast.Name = "ConjurerSwiftcast";
@@ -3065,8 +3065,8 @@
             // 
             // ConjurerBlizzardII
             // 
-            this.ConjurerBlizzardII.AutoCheck = false;
             this.ConjurerBlizzardII.AutoSize = true;
+            this.ConjurerBlizzardII.Enabled = false;
             this.ConjurerBlizzardII.ForeColor = System.Drawing.Color.White;
             this.ConjurerBlizzardII.Location = new System.Drawing.Point(6, 42);
             this.ConjurerBlizzardII.Name = "ConjurerBlizzardII";
@@ -3092,8 +3092,8 @@
             // 
             // ConjurerFeatherfoot
             // 
-            this.ConjurerFeatherfoot.AutoCheck = false;
             this.ConjurerFeatherfoot.AutoSize = true;
+            this.ConjurerFeatherfoot.Enabled = false;
             this.ConjurerFeatherfoot.ForeColor = System.Drawing.Color.White;
             this.ConjurerFeatherfoot.Location = new System.Drawing.Point(6, 19);
             this.ConjurerFeatherfoot.Name = "ConjurerFeatherfoot";
@@ -3105,8 +3105,8 @@
             // 
             // ConjurerSecondWind
             // 
-            this.ConjurerSecondWind.AutoCheck = false;
             this.ConjurerSecondWind.AutoSize = true;
+            this.ConjurerSecondWind.Enabled = false;
             this.ConjurerSecondWind.ForeColor = System.Drawing.Color.White;
             this.ConjurerSecondWind.Location = new System.Drawing.Point(6, 42);
             this.ConjurerSecondWind.Name = "ConjurerSecondWind";
@@ -3118,8 +3118,8 @@
             // 
             // ConjurerInternalRelease
             // 
-            this.ConjurerInternalRelease.AutoCheck = false;
             this.ConjurerInternalRelease.AutoSize = true;
+            this.ConjurerInternalRelease.Enabled = false;
             this.ConjurerInternalRelease.ForeColor = System.Drawing.Color.White;
             this.ConjurerInternalRelease.Location = new System.Drawing.Point(6, 65);
             this.ConjurerInternalRelease.Name = "ConjurerInternalRelease";
@@ -3131,8 +3131,8 @@
             // 
             // ConjurerMantra
             // 
-            this.ConjurerMantra.AutoCheck = false;
             this.ConjurerMantra.AutoSize = true;
+            this.ConjurerMantra.Enabled = false;
             this.ConjurerMantra.ForeColor = System.Drawing.Color.White;
             this.ConjurerMantra.Location = new System.Drawing.Point(6, 88);
             this.ConjurerMantra.Name = "ConjurerMantra";
@@ -3157,8 +3157,8 @@
             // 
             // ConjurerForesight
             // 
-            this.ConjurerForesight.AutoCheck = false;
             this.ConjurerForesight.AutoSize = true;
+            this.ConjurerForesight.Enabled = false;
             this.ConjurerForesight.ForeColor = System.Drawing.Color.White;
             this.ConjurerForesight.Location = new System.Drawing.Point(6, 19);
             this.ConjurerForesight.Name = "ConjurerForesight";
@@ -3170,8 +3170,8 @@
             // 
             // ConjurerBloodbath
             // 
-            this.ConjurerBloodbath.AutoCheck = false;
             this.ConjurerBloodbath.AutoSize = true;
+            this.ConjurerBloodbath.Enabled = false;
             this.ConjurerBloodbath.ForeColor = System.Drawing.Color.White;
             this.ConjurerBloodbath.Location = new System.Drawing.Point(6, 42);
             this.ConjurerBloodbath.Name = "ConjurerBloodbath";
@@ -3183,8 +3183,8 @@
             // 
             // ConjurerMercyStroke
             // 
-            this.ConjurerMercyStroke.AutoCheck = false;
             this.ConjurerMercyStroke.AutoSize = true;
+            this.ConjurerMercyStroke.Enabled = false;
             this.ConjurerMercyStroke.ForeColor = System.Drawing.Color.White;
             this.ConjurerMercyStroke.Location = new System.Drawing.Point(6, 65);
             this.ConjurerMercyStroke.Name = "ConjurerMercyStroke";
@@ -3209,8 +3209,8 @@
             // 
             // ConjurerRagingStrikes
             // 
-            this.ConjurerRagingStrikes.AutoCheck = false;
             this.ConjurerRagingStrikes.AutoSize = true;
+            this.ConjurerRagingStrikes.Enabled = false;
             this.ConjurerRagingStrikes.ForeColor = System.Drawing.Color.White;
             this.ConjurerRagingStrikes.Location = new System.Drawing.Point(6, 19);
             this.ConjurerRagingStrikes.Name = "ConjurerRagingStrikes";
@@ -3222,8 +3222,8 @@
             // 
             // ConjurerHawksEye
             // 
-            this.ConjurerHawksEye.AutoCheck = false;
             this.ConjurerHawksEye.AutoSize = true;
+            this.ConjurerHawksEye.Enabled = false;
             this.ConjurerHawksEye.ForeColor = System.Drawing.Color.White;
             this.ConjurerHawksEye.Location = new System.Drawing.Point(6, 42);
             this.ConjurerHawksEye.Name = "ConjurerHawksEye";
@@ -3235,8 +3235,8 @@
             // 
             // ConjurerQuellingStrikes
             // 
-            this.ConjurerQuellingStrikes.AutoCheck = false;
             this.ConjurerQuellingStrikes.AutoSize = true;
+            this.ConjurerQuellingStrikes.Enabled = false;
             this.ConjurerQuellingStrikes.ForeColor = System.Drawing.Color.White;
             this.ConjurerQuellingStrikes.Location = new System.Drawing.Point(6, 65);
             this.ConjurerQuellingStrikes.Name = "ConjurerQuellingStrikes";
@@ -3262,8 +3262,8 @@
             // 
             // ConjurerFlash
             // 
-            this.ConjurerFlash.AutoCheck = false;
             this.ConjurerFlash.AutoSize = true;
+            this.ConjurerFlash.Enabled = false;
             this.ConjurerFlash.ForeColor = System.Drawing.Color.White;
             this.ConjurerFlash.Location = new System.Drawing.Point(6, 19);
             this.ConjurerFlash.Name = "ConjurerFlash";
@@ -3275,8 +3275,8 @@
             // 
             // ConjurerConvalescence
             // 
-            this.ConjurerConvalescence.AutoCheck = false;
             this.ConjurerConvalescence.AutoSize = true;
+            this.ConjurerConvalescence.Enabled = false;
             this.ConjurerConvalescence.ForeColor = System.Drawing.Color.White;
             this.ConjurerConvalescence.Location = new System.Drawing.Point(6, 42);
             this.ConjurerConvalescence.Name = "ConjurerConvalescence";
@@ -3288,8 +3288,8 @@
             // 
             // ConjurerProvoke
             // 
-            this.ConjurerProvoke.AutoCheck = false;
             this.ConjurerProvoke.AutoSize = true;
+            this.ConjurerProvoke.Enabled = false;
             this.ConjurerProvoke.ForeColor = System.Drawing.Color.White;
             this.ConjurerProvoke.Location = new System.Drawing.Point(6, 65);
             this.ConjurerProvoke.Name = "ConjurerProvoke";
@@ -3301,8 +3301,8 @@
             // 
             // ConjurerAwareness
             // 
-            this.ConjurerAwareness.AutoCheck = false;
             this.ConjurerAwareness.AutoSize = true;
+            this.ConjurerAwareness.Enabled = false;
             this.ConjurerAwareness.ForeColor = System.Drawing.Color.White;
             this.ConjurerAwareness.Location = new System.Drawing.Point(6, 88);
             this.ConjurerAwareness.Name = "ConjurerAwareness";
@@ -3327,8 +3327,8 @@
             // 
             // ConjurerKeenFlurry
             // 
-            this.ConjurerKeenFlurry.AutoCheck = false;
             this.ConjurerKeenFlurry.AutoSize = true;
+            this.ConjurerKeenFlurry.Enabled = false;
             this.ConjurerKeenFlurry.ForeColor = System.Drawing.Color.White;
             this.ConjurerKeenFlurry.Location = new System.Drawing.Point(6, 19);
             this.ConjurerKeenFlurry.Name = "ConjurerKeenFlurry";
@@ -3340,8 +3340,8 @@
             // 
             // ConjurerInvigorate
             // 
-            this.ConjurerInvigorate.AutoCheck = false;
             this.ConjurerInvigorate.AutoSize = true;
+            this.ConjurerInvigorate.Enabled = false;
             this.ConjurerInvigorate.ForeColor = System.Drawing.Color.White;
             this.ConjurerInvigorate.Location = new System.Drawing.Point(6, 42);
             this.ConjurerInvigorate.Name = "ConjurerInvigorate";
@@ -3353,8 +3353,8 @@
             // 
             // ConjurerBloodForBlood
             // 
-            this.ConjurerBloodForBlood.AutoCheck = false;
             this.ConjurerBloodForBlood.AutoSize = true;
+            this.ConjurerBloodForBlood.Enabled = false;
             this.ConjurerBloodForBlood.ForeColor = System.Drawing.Color.White;
             this.ConjurerBloodForBlood.Location = new System.Drawing.Point(6, 65);
             this.ConjurerBloodForBlood.Name = "ConjurerBloodForBlood";
@@ -3454,8 +3454,8 @@
             // 
             // WhiteMageRuin
             // 
-            this.WhiteMageRuin.AutoCheck = false;
             this.WhiteMageRuin.AutoSize = true;
+            this.WhiteMageRuin.Enabled = false;
             this.WhiteMageRuin.ForeColor = System.Drawing.Color.White;
             this.WhiteMageRuin.Location = new System.Drawing.Point(6, 19);
             this.WhiteMageRuin.Name = "WhiteMageRuin";
@@ -3467,8 +3467,8 @@
             // 
             // WhiteMagePhysick
             // 
-            this.WhiteMagePhysick.AutoCheck = false;
             this.WhiteMagePhysick.AutoSize = true;
+            this.WhiteMagePhysick.Enabled = false;
             this.WhiteMagePhysick.ForeColor = System.Drawing.Color.White;
             this.WhiteMagePhysick.Location = new System.Drawing.Point(6, 42);
             this.WhiteMagePhysick.Name = "WhiteMagePhysick";
@@ -3480,8 +3480,8 @@
             // 
             // WhiteMageVirus
             // 
-            this.WhiteMageVirus.AutoCheck = false;
             this.WhiteMageVirus.AutoSize = true;
+            this.WhiteMageVirus.Enabled = false;
             this.WhiteMageVirus.ForeColor = System.Drawing.Color.White;
             this.WhiteMageVirus.Location = new System.Drawing.Point(6, 65);
             this.WhiteMageVirus.Name = "WhiteMageVirus";
@@ -3493,8 +3493,8 @@
             // 
             // WhiteMageEyeForAnEye
             // 
-            this.WhiteMageEyeForAnEye.AutoCheck = false;
             this.WhiteMageEyeForAnEye.AutoSize = true;
+            this.WhiteMageEyeForAnEye.Enabled = false;
             this.WhiteMageEyeForAnEye.ForeColor = System.Drawing.Color.White;
             this.WhiteMageEyeForAnEye.Location = new System.Drawing.Point(6, 88);
             this.WhiteMageEyeForAnEye.Name = "WhiteMageEyeForAnEye";
@@ -3519,8 +3519,8 @@
             // 
             // WhiteMageSurecast
             // 
-            this.WhiteMageSurecast.AutoCheck = false;
             this.WhiteMageSurecast.AutoSize = true;
+            this.WhiteMageSurecast.Enabled = false;
             this.WhiteMageSurecast.ForeColor = System.Drawing.Color.White;
             this.WhiteMageSurecast.Location = new System.Drawing.Point(6, 19);
             this.WhiteMageSurecast.Name = "WhiteMageSurecast";
@@ -3532,8 +3532,8 @@
             // 
             // WhiteMageSwiftcast
             // 
-            this.WhiteMageSwiftcast.AutoCheck = false;
             this.WhiteMageSwiftcast.AutoSize = true;
+            this.WhiteMageSwiftcast.Enabled = false;
             this.WhiteMageSwiftcast.ForeColor = System.Drawing.Color.White;
             this.WhiteMageSwiftcast.Location = new System.Drawing.Point(6, 65);
             this.WhiteMageSwiftcast.Name = "WhiteMageSwiftcast";
@@ -3545,8 +3545,8 @@
             // 
             // WhiteMageBlizzardII
             // 
-            this.WhiteMageBlizzardII.AutoCheck = false;
             this.WhiteMageBlizzardII.AutoSize = true;
+            this.WhiteMageBlizzardII.Enabled = false;
             this.WhiteMageBlizzardII.ForeColor = System.Drawing.Color.White;
             this.WhiteMageBlizzardII.Location = new System.Drawing.Point(6, 42);
             this.WhiteMageBlizzardII.Name = "WhiteMageBlizzardII";
@@ -3653,8 +3653,8 @@
             // 
             // GladiatorVenomousBite
             // 
-            this.GladiatorVenomousBite.AutoCheck = false;
             this.GladiatorVenomousBite.AutoSize = true;
+            this.GladiatorVenomousBite.Enabled = false;
             this.GladiatorVenomousBite.ForeColor = System.Drawing.Color.White;
             this.GladiatorVenomousBite.Location = new System.Drawing.Point(6, 65);
             this.GladiatorVenomousBite.Name = "GladiatorVenomousBite";
@@ -3666,8 +3666,8 @@
             // 
             // GladiatorRagingStrikes
             // 
-            this.GladiatorRagingStrikes.AutoCheck = false;
             this.GladiatorRagingStrikes.AutoSize = true;
+            this.GladiatorRagingStrikes.Enabled = false;
             this.GladiatorRagingStrikes.ForeColor = System.Drawing.Color.White;
             this.GladiatorRagingStrikes.Location = new System.Drawing.Point(6, 42);
             this.GladiatorRagingStrikes.Name = "GladiatorRagingStrikes";
@@ -3679,8 +3679,8 @@
             // 
             // GladiatorStraightShot
             // 
-            this.GladiatorStraightShot.AutoCheck = false;
             this.GladiatorStraightShot.AutoSize = true;
+            this.GladiatorStraightShot.Enabled = false;
             this.GladiatorStraightShot.ForeColor = System.Drawing.Color.White;
             this.GladiatorStraightShot.Location = new System.Drawing.Point(6, 19);
             this.GladiatorStraightShot.Name = "GladiatorStraightShot";
@@ -3692,8 +3692,8 @@
             // 
             // GladiatorHawksEye
             // 
-            this.GladiatorHawksEye.AutoCheck = false;
             this.GladiatorHawksEye.AutoSize = true;
+            this.GladiatorHawksEye.Enabled = false;
             this.GladiatorHawksEye.ForeColor = System.Drawing.Color.White;
             this.GladiatorHawksEye.Location = new System.Drawing.Point(6, 88);
             this.GladiatorHawksEye.Name = "GladiatorHawksEye";
@@ -3705,8 +3705,8 @@
             // 
             // GladiatorQuellingStrikes
             // 
-            this.GladiatorQuellingStrikes.AutoCheck = false;
             this.GladiatorQuellingStrikes.AutoSize = true;
+            this.GladiatorQuellingStrikes.Enabled = false;
             this.GladiatorQuellingStrikes.ForeColor = System.Drawing.Color.White;
             this.GladiatorQuellingStrikes.Location = new System.Drawing.Point(6, 111);
             this.GladiatorQuellingStrikes.Name = "GladiatorQuellingStrikes";
@@ -3730,8 +3730,8 @@
             // 
             // GladiatorSurecast
             // 
-            this.GladiatorSurecast.AutoCheck = false;
             this.GladiatorSurecast.AutoSize = true;
+            this.GladiatorSurecast.Enabled = false;
             this.GladiatorSurecast.ForeColor = System.Drawing.Color.White;
             this.GladiatorSurecast.Location = new System.Drawing.Point(6, 19);
             this.GladiatorSurecast.Name = "GladiatorSurecast";
@@ -3743,8 +3743,8 @@
             // 
             // GladiatorSwiftcast
             // 
-            this.GladiatorSwiftcast.AutoCheck = false;
             this.GladiatorSwiftcast.AutoSize = true;
+            this.GladiatorSwiftcast.Enabled = false;
             this.GladiatorSwiftcast.ForeColor = System.Drawing.Color.White;
             this.GladiatorSwiftcast.Location = new System.Drawing.Point(6, 42);
             this.GladiatorSwiftcast.Name = "GladiatorSwiftcast";
@@ -3769,8 +3769,8 @@
             // 
             // GladiatorDeathBlossom
             // 
-            this.GladiatorDeathBlossom.AutoCheck = false;
             this.GladiatorDeathBlossom.AutoSize = true;
+            this.GladiatorDeathBlossom.Enabled = false;
             this.GladiatorDeathBlossom.ForeColor = System.Drawing.Color.White;
             this.GladiatorDeathBlossom.Location = new System.Drawing.Point(6, 65);
             this.GladiatorDeathBlossom.Name = "GladiatorDeathBlossom";
@@ -3782,8 +3782,8 @@
             // 
             // GladiatorGoad
             // 
-            this.GladiatorGoad.AutoCheck = false;
             this.GladiatorGoad.AutoSize = true;
+            this.GladiatorGoad.Enabled = false;
             this.GladiatorGoad.ForeColor = System.Drawing.Color.White;
             this.GladiatorGoad.Location = new System.Drawing.Point(6, 42);
             this.GladiatorGoad.Name = "GladiatorGoad";
@@ -3795,8 +3795,8 @@
             // 
             // GladiatorPerfectDodge
             // 
-            this.GladiatorPerfectDodge.AutoCheck = false;
             this.GladiatorPerfectDodge.AutoSize = true;
+            this.GladiatorPerfectDodge.Enabled = false;
             this.GladiatorPerfectDodge.ForeColor = System.Drawing.Color.White;
             this.GladiatorPerfectDodge.Location = new System.Drawing.Point(6, 19);
             this.GladiatorPerfectDodge.Name = "GladiatorPerfectDodge";
@@ -3823,8 +3823,8 @@
             // 
             // GladiatorHaymaker
             // 
-            this.GladiatorHaymaker.AutoCheck = false;
             this.GladiatorHaymaker.AutoSize = true;
+            this.GladiatorHaymaker.Enabled = false;
             this.GladiatorHaymaker.ForeColor = System.Drawing.Color.White;
             this.GladiatorHaymaker.Location = new System.Drawing.Point(6, 65);
             this.GladiatorHaymaker.Name = "GladiatorHaymaker";
@@ -3836,8 +3836,8 @@
             // 
             // GladiatorFeatherfoot
             // 
-            this.GladiatorFeatherfoot.AutoCheck = false;
             this.GladiatorFeatherfoot.AutoSize = true;
+            this.GladiatorFeatherfoot.Enabled = false;
             this.GladiatorFeatherfoot.ForeColor = System.Drawing.Color.White;
             this.GladiatorFeatherfoot.Location = new System.Drawing.Point(6, 19);
             this.GladiatorFeatherfoot.Name = "GladiatorFeatherfoot";
@@ -3849,8 +3849,8 @@
             // 
             // GladiatorSecondWind
             // 
-            this.GladiatorSecondWind.AutoCheck = false;
             this.GladiatorSecondWind.AutoSize = true;
+            this.GladiatorSecondWind.Enabled = false;
             this.GladiatorSecondWind.ForeColor = System.Drawing.Color.White;
             this.GladiatorSecondWind.Location = new System.Drawing.Point(6, 42);
             this.GladiatorSecondWind.Name = "GladiatorSecondWind";
@@ -3862,8 +3862,8 @@
             // 
             // GladiatorInternalRelease
             // 
-            this.GladiatorInternalRelease.AutoCheck = false;
             this.GladiatorInternalRelease.AutoSize = true;
+            this.GladiatorInternalRelease.Enabled = false;
             this.GladiatorInternalRelease.ForeColor = System.Drawing.Color.White;
             this.GladiatorInternalRelease.Location = new System.Drawing.Point(6, 88);
             this.GladiatorInternalRelease.Name = "GladiatorInternalRelease";
@@ -3875,8 +3875,8 @@
             // 
             // GladiatorMantra
             // 
-            this.GladiatorMantra.AutoCheck = false;
             this.GladiatorMantra.AutoSize = true;
+            this.GladiatorMantra.Enabled = false;
             this.GladiatorMantra.ForeColor = System.Drawing.Color.White;
             this.GladiatorMantra.Location = new System.Drawing.Point(6, 111);
             this.GladiatorMantra.Name = "GladiatorMantra";
@@ -3915,8 +3915,8 @@
             // 
             // GladiatorSkullSunder
             // 
-            this.GladiatorSkullSunder.AutoCheck = false;
             this.GladiatorSkullSunder.AutoSize = true;
+            this.GladiatorSkullSunder.Enabled = false;
             this.GladiatorSkullSunder.ForeColor = System.Drawing.Color.White;
             this.GladiatorSkullSunder.Location = new System.Drawing.Point(6, 42);
             this.GladiatorSkullSunder.Name = "GladiatorSkullSunder";
@@ -3928,8 +3928,8 @@
             // 
             // GladiatorBloodbath
             // 
-            this.GladiatorBloodbath.AutoCheck = false;
             this.GladiatorBloodbath.AutoSize = true;
+            this.GladiatorBloodbath.Enabled = false;
             this.GladiatorBloodbath.ForeColor = System.Drawing.Color.White;
             this.GladiatorBloodbath.Location = new System.Drawing.Point(6, 88);
             this.GladiatorBloodbath.Name = "GladiatorBloodbath";
@@ -3941,8 +3941,8 @@
             // 
             // GladiatorForesight
             // 
-            this.GladiatorForesight.AutoCheck = false;
             this.GladiatorForesight.AutoSize = true;
+            this.GladiatorForesight.Enabled = false;
             this.GladiatorForesight.ForeColor = System.Drawing.Color.White;
             this.GladiatorForesight.Location = new System.Drawing.Point(6, 19);
             this.GladiatorForesight.Name = "GladiatorForesight";
@@ -3979,8 +3979,8 @@
             // 
             // GladiatorPhysick
             // 
-            this.GladiatorPhysick.AutoCheck = false;
             this.GladiatorPhysick.AutoSize = true;
+            this.GladiatorPhysick.Enabled = false;
             this.GladiatorPhysick.ForeColor = System.Drawing.Color.White;
             this.GladiatorPhysick.Location = new System.Drawing.Point(6, 19);
             this.GladiatorPhysick.Name = "GladiatorPhysick";
@@ -3992,8 +3992,8 @@
             // 
             // GladiatorVirus
             // 
-            this.GladiatorVirus.AutoCheck = false;
             this.GladiatorVirus.AutoSize = true;
+            this.GladiatorVirus.Enabled = false;
             this.GladiatorVirus.ForeColor = System.Drawing.Color.White;
             this.GladiatorVirus.Location = new System.Drawing.Point(6, 42);
             this.GladiatorVirus.Name = "GladiatorVirus";
@@ -4005,8 +4005,8 @@
             // 
             // GladiatorEyeForAnEye
             // 
-            this.GladiatorEyeForAnEye.AutoCheck = false;
             this.GladiatorEyeForAnEye.AutoSize = true;
+            this.GladiatorEyeForAnEye.Enabled = false;
             this.GladiatorEyeForAnEye.ForeColor = System.Drawing.Color.White;
             this.GladiatorEyeForAnEye.Location = new System.Drawing.Point(6, 65);
             this.GladiatorEyeForAnEye.Name = "GladiatorEyeForAnEye";
@@ -4032,8 +4032,8 @@
             // 
             // GladiatorCure
             // 
-            this.GladiatorCure.AutoCheck = false;
             this.GladiatorCure.AutoSize = true;
+            this.GladiatorCure.Enabled = false;
             this.GladiatorCure.ForeColor = System.Drawing.Color.White;
             this.GladiatorCure.Location = new System.Drawing.Point(6, 19);
             this.GladiatorCure.Name = "GladiatorCure";
@@ -4057,8 +4057,8 @@
             // 
             // GladiatorRaise
             // 
-            this.GladiatorRaise.AutoCheck = false;
             this.GladiatorRaise.AutoSize = true;
+            this.GladiatorRaise.Enabled = false;
             this.GladiatorRaise.ForeColor = System.Drawing.Color.White;
             this.GladiatorRaise.Location = new System.Drawing.Point(6, 65);
             this.GladiatorRaise.Name = "GladiatorRaise";
@@ -4096,8 +4096,8 @@
             // 
             // GladiatorKeenFlurry
             // 
-            this.GladiatorKeenFlurry.AutoCheck = false;
             this.GladiatorKeenFlurry.AutoSize = true;
+            this.GladiatorKeenFlurry.Enabled = false;
             this.GladiatorKeenFlurry.ForeColor = System.Drawing.Color.White;
             this.GladiatorKeenFlurry.Location = new System.Drawing.Point(6, 42);
             this.GladiatorKeenFlurry.Name = "GladiatorKeenFlurry";
@@ -4109,8 +4109,8 @@
             // 
             // GladiatorInvigorate
             // 
-            this.GladiatorInvigorate.AutoCheck = false;
             this.GladiatorInvigorate.AutoSize = true;
+            this.GladiatorInvigorate.Enabled = false;
             this.GladiatorInvigorate.ForeColor = System.Drawing.Color.White;
             this.GladiatorInvigorate.Location = new System.Drawing.Point(6, 65);
             this.GladiatorInvigorate.Name = "GladiatorInvigorate";
@@ -4122,8 +4122,8 @@
             // 
             // GladiatorBloodForBlood
             // 
-            this.GladiatorBloodForBlood.AutoCheck = false;
             this.GladiatorBloodForBlood.AutoSize = true;
+            this.GladiatorBloodForBlood.Enabled = false;
             this.GladiatorBloodForBlood.ForeColor = System.Drawing.Color.White;
             this.GladiatorBloodForBlood.Location = new System.Drawing.Point(6, 88);
             this.GladiatorBloodForBlood.Name = "GladiatorBloodForBlood";
@@ -4135,8 +4135,8 @@
             // 
             // GladiatorFeint
             // 
-            this.GladiatorFeint.AutoCheck = false;
             this.GladiatorFeint.AutoSize = true;
+            this.GladiatorFeint.Enabled = false;
             this.GladiatorFeint.ForeColor = System.Drawing.Color.White;
             this.GladiatorFeint.Location = new System.Drawing.Point(6, 19);
             this.GladiatorFeint.Name = "GladiatorFeint";
@@ -4275,8 +4275,8 @@
             // 
             // PaladinSkullSunder
             // 
-            this.PaladinSkullSunder.AutoCheck = false;
             this.PaladinSkullSunder.AutoSize = true;
+            this.PaladinSkullSunder.Enabled = false;
             this.PaladinSkullSunder.ForeColor = System.Drawing.Color.White;
             this.PaladinSkullSunder.Location = new System.Drawing.Point(6, 42);
             this.PaladinSkullSunder.Name = "PaladinSkullSunder";
@@ -4288,8 +4288,8 @@
             // 
             // PaladinBloodbath
             // 
-            this.PaladinBloodbath.AutoCheck = false;
             this.PaladinBloodbath.AutoSize = true;
+            this.PaladinBloodbath.Enabled = false;
             this.PaladinBloodbath.ForeColor = System.Drawing.Color.White;
             this.PaladinBloodbath.Location = new System.Drawing.Point(6, 88);
             this.PaladinBloodbath.Name = "PaladinBloodbath";
@@ -4301,8 +4301,8 @@
             // 
             // PaladinForesight
             // 
-            this.PaladinForesight.AutoCheck = false;
             this.PaladinForesight.AutoSize = true;
+            this.PaladinForesight.Enabled = false;
             this.PaladinForesight.ForeColor = System.Drawing.Color.White;
             this.PaladinForesight.Location = new System.Drawing.Point(6, 19);
             this.PaladinForesight.Name = "PaladinForesight";
@@ -4340,8 +4340,8 @@
             // 
             // PaladinCure
             // 
-            this.PaladinCure.AutoCheck = false;
             this.PaladinCure.AutoSize = true;
+            this.PaladinCure.Enabled = false;
             this.PaladinCure.ForeColor = System.Drawing.Color.White;
             this.PaladinCure.Location = new System.Drawing.Point(6, 19);
             this.PaladinCure.Name = "PaladinCure";
@@ -4365,8 +4365,8 @@
             // 
             // PaladinRaise
             // 
-            this.PaladinRaise.AutoCheck = false;
             this.PaladinRaise.AutoSize = true;
+            this.PaladinRaise.Enabled = false;
             this.PaladinRaise.ForeColor = System.Drawing.Color.White;
             this.PaladinRaise.Location = new System.Drawing.Point(6, 65);
             this.PaladinRaise.Name = "PaladinRaise";
@@ -4485,8 +4485,8 @@
             // 
             // LancerFlash
             // 
-            this.LancerFlash.AutoCheck = false;
             this.LancerFlash.AutoSize = true;
+            this.LancerFlash.Enabled = false;
             this.LancerFlash.ForeColor = System.Drawing.Color.White;
             this.LancerFlash.Location = new System.Drawing.Point(6, 42);
             this.LancerFlash.Name = "LancerFlash";
@@ -4498,8 +4498,8 @@
             // 
             // LancerConvalescence
             // 
-            this.LancerConvalescence.AutoCheck = false;
             this.LancerConvalescence.AutoSize = true;
+            this.LancerConvalescence.Enabled = false;
             this.LancerConvalescence.ForeColor = System.Drawing.Color.White;
             this.LancerConvalescence.Location = new System.Drawing.Point(6, 65);
             this.LancerConvalescence.Name = "LancerConvalescence";
@@ -4511,8 +4511,8 @@
             // 
             // LancerSavageBlade
             // 
-            this.LancerSavageBlade.AutoCheck = false;
             this.LancerSavageBlade.AutoSize = true;
+            this.LancerSavageBlade.Enabled = false;
             this.LancerSavageBlade.ForeColor = System.Drawing.Color.White;
             this.LancerSavageBlade.Location = new System.Drawing.Point(6, 19);
             this.LancerSavageBlade.Name = "LancerSavageBlade";
@@ -4524,8 +4524,8 @@
             // 
             // LancerAwareness
             // 
-            this.LancerAwareness.AutoCheck = false;
             this.LancerAwareness.AutoSize = true;
+            this.LancerAwareness.Enabled = false;
             this.LancerAwareness.ForeColor = System.Drawing.Color.White;
             this.LancerAwareness.Location = new System.Drawing.Point(6, 111);
             this.LancerAwareness.Name = "LancerAwareness";
@@ -4537,8 +4537,8 @@
             // 
             // LancerProvoke
             // 
-            this.LancerProvoke.AutoCheck = false;
             this.LancerProvoke.AutoSize = true;
+            this.LancerProvoke.Enabled = false;
             this.LancerProvoke.ForeColor = System.Drawing.Color.White;
             this.LancerProvoke.Location = new System.Drawing.Point(6, 88);
             this.LancerProvoke.Name = "LancerProvoke";
@@ -4565,8 +4565,8 @@
             // 
             // LancerVenomousBite
             // 
-            this.LancerVenomousBite.AutoCheck = false;
             this.LancerVenomousBite.AutoSize = true;
+            this.LancerVenomousBite.Enabled = false;
             this.LancerVenomousBite.ForeColor = System.Drawing.Color.White;
             this.LancerVenomousBite.Location = new System.Drawing.Point(6, 65);
             this.LancerVenomousBite.Name = "LancerVenomousBite";
@@ -4578,8 +4578,8 @@
             // 
             // LancerRagingStrikes
             // 
-            this.LancerRagingStrikes.AutoCheck = false;
             this.LancerRagingStrikes.AutoSize = true;
+            this.LancerRagingStrikes.Enabled = false;
             this.LancerRagingStrikes.ForeColor = System.Drawing.Color.White;
             this.LancerRagingStrikes.Location = new System.Drawing.Point(6, 42);
             this.LancerRagingStrikes.Name = "LancerRagingStrikes";
@@ -4591,8 +4591,8 @@
             // 
             // LancerStraightShot
             // 
-            this.LancerStraightShot.AutoCheck = false;
             this.LancerStraightShot.AutoSize = true;
+            this.LancerStraightShot.Enabled = false;
             this.LancerStraightShot.ForeColor = System.Drawing.Color.White;
             this.LancerStraightShot.Location = new System.Drawing.Point(6, 19);
             this.LancerStraightShot.Name = "LancerStraightShot";
@@ -4604,8 +4604,8 @@
             // 
             // LancerHawksEye
             // 
-            this.LancerHawksEye.AutoCheck = false;
             this.LancerHawksEye.AutoSize = true;
+            this.LancerHawksEye.Enabled = false;
             this.LancerHawksEye.ForeColor = System.Drawing.Color.White;
             this.LancerHawksEye.Location = new System.Drawing.Point(6, 88);
             this.LancerHawksEye.Name = "LancerHawksEye";
@@ -4617,8 +4617,8 @@
             // 
             // LancerQuellingStrikes
             // 
-            this.LancerQuellingStrikes.AutoCheck = false;
             this.LancerQuellingStrikes.AutoSize = true;
+            this.LancerQuellingStrikes.Enabled = false;
             this.LancerQuellingStrikes.ForeColor = System.Drawing.Color.White;
             this.LancerQuellingStrikes.Location = new System.Drawing.Point(6, 111);
             this.LancerQuellingStrikes.Name = "LancerQuellingStrikes";
@@ -4642,8 +4642,8 @@
             // 
             // LancerSurecast
             // 
-            this.LancerSurecast.AutoCheck = false;
             this.LancerSurecast.AutoSize = true;
+            this.LancerSurecast.Enabled = false;
             this.LancerSurecast.ForeColor = System.Drawing.Color.White;
             this.LancerSurecast.Location = new System.Drawing.Point(6, 19);
             this.LancerSurecast.Name = "LancerSurecast";
@@ -4655,8 +4655,8 @@
             // 
             // LancerSwiftcast
             // 
-            this.LancerSwiftcast.AutoCheck = false;
             this.LancerSwiftcast.AutoSize = true;
+            this.LancerSwiftcast.Enabled = false;
             this.LancerSwiftcast.ForeColor = System.Drawing.Color.White;
             this.LancerSwiftcast.Location = new System.Drawing.Point(6, 42);
             this.LancerSwiftcast.Name = "LancerSwiftcast";
@@ -4681,8 +4681,8 @@
             // 
             // LancerDeathBlossom
             // 
-            this.LancerDeathBlossom.AutoCheck = false;
             this.LancerDeathBlossom.AutoSize = true;
+            this.LancerDeathBlossom.Enabled = false;
             this.LancerDeathBlossom.ForeColor = System.Drawing.Color.White;
             this.LancerDeathBlossom.Location = new System.Drawing.Point(6, 65);
             this.LancerDeathBlossom.Name = "LancerDeathBlossom";
@@ -4694,8 +4694,8 @@
             // 
             // LancerGoad
             // 
-            this.LancerGoad.AutoCheck = false;
             this.LancerGoad.AutoSize = true;
+            this.LancerGoad.Enabled = false;
             this.LancerGoad.ForeColor = System.Drawing.Color.White;
             this.LancerGoad.Location = new System.Drawing.Point(6, 42);
             this.LancerGoad.Name = "LancerGoad";
@@ -4707,8 +4707,8 @@
             // 
             // LancerPerfectDodge
             // 
-            this.LancerPerfectDodge.AutoCheck = false;
             this.LancerPerfectDodge.AutoSize = true;
+            this.LancerPerfectDodge.Enabled = false;
             this.LancerPerfectDodge.ForeColor = System.Drawing.Color.White;
             this.LancerPerfectDodge.Location = new System.Drawing.Point(6, 19);
             this.LancerPerfectDodge.Name = "LancerPerfectDodge";
@@ -4735,8 +4735,8 @@
             // 
             // LancerHaymaker
             // 
-            this.LancerHaymaker.AutoCheck = false;
             this.LancerHaymaker.AutoSize = true;
+            this.LancerHaymaker.Enabled = false;
             this.LancerHaymaker.ForeColor = System.Drawing.Color.White;
             this.LancerHaymaker.Location = new System.Drawing.Point(6, 65);
             this.LancerHaymaker.Name = "LancerHaymaker";
@@ -4748,8 +4748,8 @@
             // 
             // LancerFeatherfoot
             // 
-            this.LancerFeatherfoot.AutoCheck = false;
             this.LancerFeatherfoot.AutoSize = true;
+            this.LancerFeatherfoot.Enabled = false;
             this.LancerFeatherfoot.ForeColor = System.Drawing.Color.White;
             this.LancerFeatherfoot.Location = new System.Drawing.Point(6, 19);
             this.LancerFeatherfoot.Name = "LancerFeatherfoot";
@@ -4761,8 +4761,8 @@
             // 
             // LancerSecondWind
             // 
-            this.LancerSecondWind.AutoCheck = false;
             this.LancerSecondWind.AutoSize = true;
+            this.LancerSecondWind.Enabled = false;
             this.LancerSecondWind.ForeColor = System.Drawing.Color.White;
             this.LancerSecondWind.Location = new System.Drawing.Point(6, 42);
             this.LancerSecondWind.Name = "LancerSecondWind";
@@ -4786,8 +4786,8 @@
             // 
             // LancerMantra
             // 
-            this.LancerMantra.AutoCheck = false;
             this.LancerMantra.AutoSize = true;
+            this.LancerMantra.Enabled = false;
             this.LancerMantra.ForeColor = System.Drawing.Color.White;
             this.LancerMantra.Location = new System.Drawing.Point(6, 111);
             this.LancerMantra.Name = "LancerMantra";
@@ -4814,8 +4814,8 @@
             // 
             // LancerFracture
             // 
-            this.LancerFracture.AutoCheck = false;
             this.LancerFracture.AutoSize = true;
+            this.LancerFracture.Enabled = false;
             this.LancerFracture.ForeColor = System.Drawing.Color.White;
             this.LancerFracture.Location = new System.Drawing.Point(6, 65);
             this.LancerFracture.Name = "LancerFracture";
@@ -4827,8 +4827,8 @@
             // 
             // LancerSkullSunder
             // 
-            this.LancerSkullSunder.AutoCheck = false;
             this.LancerSkullSunder.AutoSize = true;
+            this.LancerSkullSunder.Enabled = false;
             this.LancerSkullSunder.ForeColor = System.Drawing.Color.White;
             this.LancerSkullSunder.Location = new System.Drawing.Point(6, 42);
             this.LancerSkullSunder.Name = "LancerSkullSunder";
@@ -4840,8 +4840,8 @@
             // 
             // LancerBloodbath
             // 
-            this.LancerBloodbath.AutoCheck = false;
             this.LancerBloodbath.AutoSize = true;
+            this.LancerBloodbath.Enabled = false;
             this.LancerBloodbath.ForeColor = System.Drawing.Color.White;
             this.LancerBloodbath.Location = new System.Drawing.Point(6, 88);
             this.LancerBloodbath.Name = "LancerBloodbath";
@@ -4853,8 +4853,8 @@
             // 
             // LancerForesight
             // 
-            this.LancerForesight.AutoCheck = false;
             this.LancerForesight.AutoSize = true;
+            this.LancerForesight.Enabled = false;
             this.LancerForesight.ForeColor = System.Drawing.Color.White;
             this.LancerForesight.Location = new System.Drawing.Point(6, 19);
             this.LancerForesight.Name = "LancerForesight";
@@ -4891,8 +4891,8 @@
             // 
             // LancerPhysick
             // 
-            this.LancerPhysick.AutoCheck = false;
             this.LancerPhysick.AutoSize = true;
+            this.LancerPhysick.Enabled = false;
             this.LancerPhysick.ForeColor = System.Drawing.Color.White;
             this.LancerPhysick.Location = new System.Drawing.Point(6, 19);
             this.LancerPhysick.Name = "LancerPhysick";
@@ -4904,8 +4904,8 @@
             // 
             // LancerVirus
             // 
-            this.LancerVirus.AutoCheck = false;
             this.LancerVirus.AutoSize = true;
+            this.LancerVirus.Enabled = false;
             this.LancerVirus.ForeColor = System.Drawing.Color.White;
             this.LancerVirus.Location = new System.Drawing.Point(6, 42);
             this.LancerVirus.Name = "LancerVirus";
@@ -4917,8 +4917,8 @@
             // 
             // LancerEyeForAnEye
             // 
-            this.LancerEyeForAnEye.AutoCheck = false;
             this.LancerEyeForAnEye.AutoSize = true;
+            this.LancerEyeForAnEye.Enabled = false;
             this.LancerEyeForAnEye.ForeColor = System.Drawing.Color.White;
             this.LancerEyeForAnEye.Location = new System.Drawing.Point(6, 65);
             this.LancerEyeForAnEye.Name = "LancerEyeForAnEye";
@@ -4944,8 +4944,8 @@
             // 
             // LancerCure
             // 
-            this.LancerCure.AutoCheck = false;
             this.LancerCure.AutoSize = true;
+            this.LancerCure.Enabled = false;
             this.LancerCure.ForeColor = System.Drawing.Color.White;
             this.LancerCure.Location = new System.Drawing.Point(6, 19);
             this.LancerCure.Name = "LancerCure";
@@ -4957,8 +4957,8 @@
             // 
             // LancerProtect
             // 
-            this.LancerProtect.AutoCheck = false;
             this.LancerProtect.AutoSize = true;
+            this.LancerProtect.Enabled = false;
             this.LancerProtect.ForeColor = System.Drawing.Color.White;
             this.LancerProtect.Location = new System.Drawing.Point(6, 42);
             this.LancerProtect.Name = "LancerProtect";
@@ -4970,8 +4970,8 @@
             // 
             // LancerRaise
             // 
-            this.LancerRaise.AutoCheck = false;
             this.LancerRaise.AutoSize = true;
+            this.LancerRaise.Enabled = false;
             this.LancerRaise.ForeColor = System.Drawing.Color.White;
             this.LancerRaise.Location = new System.Drawing.Point(6, 65);
             this.LancerRaise.Name = "LancerRaise";
@@ -4983,8 +4983,8 @@
             // 
             // LancerStoneskin
             // 
-            this.LancerStoneskin.AutoCheck = false;
             this.LancerStoneskin.AutoSize = true;
+            this.LancerStoneskin.Enabled = false;
             this.LancerStoneskin.ForeColor = System.Drawing.Color.White;
             this.LancerStoneskin.Location = new System.Drawing.Point(6, 88);
             this.LancerStoneskin.Name = "LancerStoneskin";
@@ -5122,8 +5122,8 @@
             // 
             // DragoonHaymaker
             // 
-            this.DragoonHaymaker.AutoCheck = false;
             this.DragoonHaymaker.AutoSize = true;
+            this.DragoonHaymaker.Enabled = false;
             this.DragoonHaymaker.ForeColor = System.Drawing.Color.White;
             this.DragoonHaymaker.Location = new System.Drawing.Point(6, 65);
             this.DragoonHaymaker.Name = "DragoonHaymaker";
@@ -5135,8 +5135,8 @@
             // 
             // DragoonFeatherfoot
             // 
-            this.DragoonFeatherfoot.AutoCheck = false;
             this.DragoonFeatherfoot.AutoSize = true;
+            this.DragoonFeatherfoot.Enabled = false;
             this.DragoonFeatherfoot.ForeColor = System.Drawing.Color.White;
             this.DragoonFeatherfoot.Location = new System.Drawing.Point(6, 19);
             this.DragoonFeatherfoot.Name = "DragoonFeatherfoot";
@@ -5148,8 +5148,8 @@
             // 
             // DragoonSecondWind
             // 
-            this.DragoonSecondWind.AutoCheck = false;
             this.DragoonSecondWind.AutoSize = true;
+            this.DragoonSecondWind.Enabled = false;
             this.DragoonSecondWind.ForeColor = System.Drawing.Color.White;
             this.DragoonSecondWind.Location = new System.Drawing.Point(6, 42);
             this.DragoonSecondWind.Name = "DragoonSecondWind";
@@ -5173,8 +5173,8 @@
             // 
             // DragoonMantra
             // 
-            this.DragoonMantra.AutoCheck = false;
             this.DragoonMantra.AutoSize = true;
+            this.DragoonMantra.Enabled = false;
             this.DragoonMantra.ForeColor = System.Drawing.Color.White;
             this.DragoonMantra.Location = new System.Drawing.Point(6, 111);
             this.DragoonMantra.Name = "DragoonMantra";
@@ -5201,8 +5201,8 @@
             // 
             // DragoonFracture
             // 
-            this.DragoonFracture.AutoCheck = false;
             this.DragoonFracture.AutoSize = true;
+            this.DragoonFracture.Enabled = false;
             this.DragoonFracture.ForeColor = System.Drawing.Color.White;
             this.DragoonFracture.Location = new System.Drawing.Point(6, 65);
             this.DragoonFracture.Name = "DragoonFracture";
@@ -5214,8 +5214,8 @@
             // 
             // DragoonSkullSunder
             // 
-            this.DragoonSkullSunder.AutoCheck = false;
             this.DragoonSkullSunder.AutoSize = true;
+            this.DragoonSkullSunder.Enabled = false;
             this.DragoonSkullSunder.ForeColor = System.Drawing.Color.White;
             this.DragoonSkullSunder.Location = new System.Drawing.Point(6, 42);
             this.DragoonSkullSunder.Name = "DragoonSkullSunder";
@@ -5227,8 +5227,8 @@
             // 
             // DragoonBloodbath
             // 
-            this.DragoonBloodbath.AutoCheck = false;
             this.DragoonBloodbath.AutoSize = true;
+            this.DragoonBloodbath.Enabled = false;
             this.DragoonBloodbath.ForeColor = System.Drawing.Color.White;
             this.DragoonBloodbath.Location = new System.Drawing.Point(6, 88);
             this.DragoonBloodbath.Name = "DragoonBloodbath";
@@ -5240,8 +5240,8 @@
             // 
             // DragoonForesight
             // 
-            this.DragoonForesight.AutoCheck = false;
             this.DragoonForesight.AutoSize = true;
+            this.DragoonForesight.Enabled = false;
             this.DragoonForesight.ForeColor = System.Drawing.Color.White;
             this.DragoonForesight.Location = new System.Drawing.Point(6, 19);
             this.DragoonForesight.Name = "DragoonForesight";
@@ -5383,8 +5383,8 @@
             // 
             // MarauderKeenFlurry
             // 
-            this.MarauderKeenFlurry.AutoCheck = false;
             this.MarauderKeenFlurry.AutoSize = true;
+            this.MarauderKeenFlurry.Enabled = false;
             this.MarauderKeenFlurry.ForeColor = System.Drawing.Color.White;
             this.MarauderKeenFlurry.Location = new System.Drawing.Point(6, 42);
             this.MarauderKeenFlurry.Name = "MarauderKeenFlurry";
@@ -5396,8 +5396,8 @@
             // 
             // MarauderInvigorate
             // 
-            this.MarauderInvigorate.AutoCheck = false;
             this.MarauderInvigorate.AutoSize = true;
+            this.MarauderInvigorate.Enabled = false;
             this.MarauderInvigorate.ForeColor = System.Drawing.Color.White;
             this.MarauderInvigorate.Location = new System.Drawing.Point(6, 65);
             this.MarauderInvigorate.Name = "MarauderInvigorate";
@@ -5409,8 +5409,8 @@
             // 
             // MarauderBloodForBlood
             // 
-            this.MarauderBloodForBlood.AutoCheck = false;
             this.MarauderBloodForBlood.AutoSize = true;
+            this.MarauderBloodForBlood.Enabled = false;
             this.MarauderBloodForBlood.ForeColor = System.Drawing.Color.White;
             this.MarauderBloodForBlood.Location = new System.Drawing.Point(6, 88);
             this.MarauderBloodForBlood.Name = "MarauderBloodForBlood";
@@ -5422,8 +5422,8 @@
             // 
             // MarauderFeint
             // 
-            this.MarauderFeint.AutoCheck = false;
             this.MarauderFeint.AutoSize = true;
+            this.MarauderFeint.Enabled = false;
             this.MarauderFeint.ForeColor = System.Drawing.Color.White;
             this.MarauderFeint.Location = new System.Drawing.Point(6, 19);
             this.MarauderFeint.Name = "MarauderFeint";
@@ -5450,8 +5450,8 @@
             // 
             // MarauderFlash
             // 
-            this.MarauderFlash.AutoCheck = false;
             this.MarauderFlash.AutoSize = true;
+            this.MarauderFlash.Enabled = false;
             this.MarauderFlash.ForeColor = System.Drawing.Color.White;
             this.MarauderFlash.Location = new System.Drawing.Point(6, 42);
             this.MarauderFlash.Name = "MarauderFlash";
@@ -5463,8 +5463,8 @@
             // 
             // MarauderConvalescence
             // 
-            this.MarauderConvalescence.AutoCheck = false;
             this.MarauderConvalescence.AutoSize = true;
+            this.MarauderConvalescence.Enabled = false;
             this.MarauderConvalescence.ForeColor = System.Drawing.Color.White;
             this.MarauderConvalescence.Location = new System.Drawing.Point(6, 65);
             this.MarauderConvalescence.Name = "MarauderConvalescence";
@@ -5476,8 +5476,8 @@
             // 
             // MarauderSavageBlade
             // 
-            this.MarauderSavageBlade.AutoCheck = false;
             this.MarauderSavageBlade.AutoSize = true;
+            this.MarauderSavageBlade.Enabled = false;
             this.MarauderSavageBlade.ForeColor = System.Drawing.Color.White;
             this.MarauderSavageBlade.Location = new System.Drawing.Point(6, 19);
             this.MarauderSavageBlade.Name = "MarauderSavageBlade";
@@ -5489,8 +5489,8 @@
             // 
             // MarauderAwareness
             // 
-            this.MarauderAwareness.AutoCheck = false;
             this.MarauderAwareness.AutoSize = true;
+            this.MarauderAwareness.Enabled = false;
             this.MarauderAwareness.ForeColor = System.Drawing.Color.White;
             this.MarauderAwareness.Location = new System.Drawing.Point(6, 111);
             this.MarauderAwareness.Name = "MarauderAwareness";
@@ -5502,8 +5502,8 @@
             // 
             // MarauderProvoke
             // 
-            this.MarauderProvoke.AutoCheck = false;
             this.MarauderProvoke.AutoSize = true;
+            this.MarauderProvoke.Enabled = false;
             this.MarauderProvoke.ForeColor = System.Drawing.Color.White;
             this.MarauderProvoke.Location = new System.Drawing.Point(6, 88);
             this.MarauderProvoke.Name = "MarauderProvoke";
@@ -5530,8 +5530,8 @@
             // 
             // MarauderVenomousBite
             // 
-            this.MarauderVenomousBite.AutoCheck = false;
             this.MarauderVenomousBite.AutoSize = true;
+            this.MarauderVenomousBite.Enabled = false;
             this.MarauderVenomousBite.ForeColor = System.Drawing.Color.White;
             this.MarauderVenomousBite.Location = new System.Drawing.Point(6, 65);
             this.MarauderVenomousBite.Name = "MarauderVenomousBite";
@@ -5543,8 +5543,8 @@
             // 
             // MarauderRagingStrikes
             // 
-            this.MarauderRagingStrikes.AutoCheck = false;
             this.MarauderRagingStrikes.AutoSize = true;
+            this.MarauderRagingStrikes.Enabled = false;
             this.MarauderRagingStrikes.ForeColor = System.Drawing.Color.White;
             this.MarauderRagingStrikes.Location = new System.Drawing.Point(6, 42);
             this.MarauderRagingStrikes.Name = "MarauderRagingStrikes";
@@ -5556,8 +5556,8 @@
             // 
             // MarauderStraightShot
             // 
-            this.MarauderStraightShot.AutoCheck = false;
             this.MarauderStraightShot.AutoSize = true;
+            this.MarauderStraightShot.Enabled = false;
             this.MarauderStraightShot.ForeColor = System.Drawing.Color.White;
             this.MarauderStraightShot.Location = new System.Drawing.Point(6, 19);
             this.MarauderStraightShot.Name = "MarauderStraightShot";
@@ -5569,8 +5569,8 @@
             // 
             // MarauderHawksEye
             // 
-            this.MarauderHawksEye.AutoCheck = false;
             this.MarauderHawksEye.AutoSize = true;
+            this.MarauderHawksEye.Enabled = false;
             this.MarauderHawksEye.ForeColor = System.Drawing.Color.White;
             this.MarauderHawksEye.Location = new System.Drawing.Point(6, 88);
             this.MarauderHawksEye.Name = "MarauderHawksEye";
@@ -5582,8 +5582,8 @@
             // 
             // MarauderQuellingStrikes
             // 
-            this.MarauderQuellingStrikes.AutoCheck = false;
             this.MarauderQuellingStrikes.AutoSize = true;
+            this.MarauderQuellingStrikes.Enabled = false;
             this.MarauderQuellingStrikes.ForeColor = System.Drawing.Color.White;
             this.MarauderQuellingStrikes.Location = new System.Drawing.Point(6, 111);
             this.MarauderQuellingStrikes.Name = "MarauderQuellingStrikes";
@@ -5607,8 +5607,8 @@
             // 
             // MarauderSurecast
             // 
-            this.MarauderSurecast.AutoCheck = false;
             this.MarauderSurecast.AutoSize = true;
+            this.MarauderSurecast.Enabled = false;
             this.MarauderSurecast.ForeColor = System.Drawing.Color.White;
             this.MarauderSurecast.Location = new System.Drawing.Point(6, 19);
             this.MarauderSurecast.Name = "MarauderSurecast";
@@ -5620,8 +5620,8 @@
             // 
             // MarauderSwiftcast
             // 
-            this.MarauderSwiftcast.AutoCheck = false;
             this.MarauderSwiftcast.AutoSize = true;
+            this.MarauderSwiftcast.Enabled = false;
             this.MarauderSwiftcast.ForeColor = System.Drawing.Color.White;
             this.MarauderSwiftcast.Location = new System.Drawing.Point(6, 42);
             this.MarauderSwiftcast.Name = "MarauderSwiftcast";
@@ -5646,8 +5646,8 @@
             // 
             // MarauderDeathBlossom
             // 
-            this.MarauderDeathBlossom.AutoCheck = false;
             this.MarauderDeathBlossom.AutoSize = true;
+            this.MarauderDeathBlossom.Enabled = false;
             this.MarauderDeathBlossom.ForeColor = System.Drawing.Color.White;
             this.MarauderDeathBlossom.Location = new System.Drawing.Point(6, 65);
             this.MarauderDeathBlossom.Name = "MarauderDeathBlossom";
@@ -5659,8 +5659,8 @@
             // 
             // MarauderGoad
             // 
-            this.MarauderGoad.AutoCheck = false;
             this.MarauderGoad.AutoSize = true;
+            this.MarauderGoad.Enabled = false;
             this.MarauderGoad.ForeColor = System.Drawing.Color.White;
             this.MarauderGoad.Location = new System.Drawing.Point(6, 42);
             this.MarauderGoad.Name = "MarauderGoad";
@@ -5672,8 +5672,8 @@
             // 
             // MarauderPerfectDodge
             // 
-            this.MarauderPerfectDodge.AutoCheck = false;
             this.MarauderPerfectDodge.AutoSize = true;
+            this.MarauderPerfectDodge.Enabled = false;
             this.MarauderPerfectDodge.ForeColor = System.Drawing.Color.White;
             this.MarauderPerfectDodge.Location = new System.Drawing.Point(6, 19);
             this.MarauderPerfectDodge.Name = "MarauderPerfectDodge";
@@ -5700,8 +5700,8 @@
             // 
             // MarauderHaymaker
             // 
-            this.MarauderHaymaker.AutoCheck = false;
             this.MarauderHaymaker.AutoSize = true;
+            this.MarauderHaymaker.Enabled = false;
             this.MarauderHaymaker.ForeColor = System.Drawing.Color.White;
             this.MarauderHaymaker.Location = new System.Drawing.Point(6, 65);
             this.MarauderHaymaker.Name = "MarauderHaymaker";
@@ -5713,8 +5713,8 @@
             // 
             // MarauderFeatherfoot
             // 
-            this.MarauderFeatherfoot.AutoCheck = false;
             this.MarauderFeatherfoot.AutoSize = true;
+            this.MarauderFeatherfoot.Enabled = false;
             this.MarauderFeatherfoot.ForeColor = System.Drawing.Color.White;
             this.MarauderFeatherfoot.Location = new System.Drawing.Point(6, 19);
             this.MarauderFeatherfoot.Name = "MarauderFeatherfoot";
@@ -5726,8 +5726,8 @@
             // 
             // MarauderSecondWind
             // 
-            this.MarauderSecondWind.AutoCheck = false;
             this.MarauderSecondWind.AutoSize = true;
+            this.MarauderSecondWind.Enabled = false;
             this.MarauderSecondWind.ForeColor = System.Drawing.Color.White;
             this.MarauderSecondWind.Location = new System.Drawing.Point(6, 42);
             this.MarauderSecondWind.Name = "MarauderSecondWind";
@@ -5751,8 +5751,8 @@
             // 
             // MarauderMantra
             // 
-            this.MarauderMantra.AutoCheck = false;
             this.MarauderMantra.AutoSize = true;
+            this.MarauderMantra.Enabled = false;
             this.MarauderMantra.ForeColor = System.Drawing.Color.White;
             this.MarauderMantra.Location = new System.Drawing.Point(6, 111);
             this.MarauderMantra.Name = "MarauderMantra";
@@ -5777,8 +5777,8 @@
             // 
             // MarauderPhysick
             // 
-            this.MarauderPhysick.AutoCheck = false;
             this.MarauderPhysick.AutoSize = true;
+            this.MarauderPhysick.Enabled = false;
             this.MarauderPhysick.ForeColor = System.Drawing.Color.White;
             this.MarauderPhysick.Location = new System.Drawing.Point(6, 19);
             this.MarauderPhysick.Name = "MarauderPhysick";
@@ -5790,8 +5790,8 @@
             // 
             // MarauderVirus
             // 
-            this.MarauderVirus.AutoCheck = false;
             this.MarauderVirus.AutoSize = true;
+            this.MarauderVirus.Enabled = false;
             this.MarauderVirus.ForeColor = System.Drawing.Color.White;
             this.MarauderVirus.Location = new System.Drawing.Point(6, 42);
             this.MarauderVirus.Name = "MarauderVirus";
@@ -5803,8 +5803,8 @@
             // 
             // MarauderEyeForAnEye
             // 
-            this.MarauderEyeForAnEye.AutoCheck = false;
             this.MarauderEyeForAnEye.AutoSize = true;
+            this.MarauderEyeForAnEye.Enabled = false;
             this.MarauderEyeForAnEye.ForeColor = System.Drawing.Color.White;
             this.MarauderEyeForAnEye.Location = new System.Drawing.Point(6, 65);
             this.MarauderEyeForAnEye.Name = "MarauderEyeForAnEye";
@@ -5830,8 +5830,8 @@
             // 
             // MarauderCure
             // 
-            this.MarauderCure.AutoCheck = false;
             this.MarauderCure.AutoSize = true;
+            this.MarauderCure.Enabled = false;
             this.MarauderCure.ForeColor = System.Drawing.Color.White;
             this.MarauderCure.Location = new System.Drawing.Point(6, 19);
             this.MarauderCure.Name = "MarauderCure";
@@ -5843,8 +5843,8 @@
             // 
             // MarauderProtect
             // 
-            this.MarauderProtect.AutoCheck = false;
             this.MarauderProtect.AutoSize = true;
+            this.MarauderProtect.Enabled = false;
             this.MarauderProtect.ForeColor = System.Drawing.Color.White;
             this.MarauderProtect.Location = new System.Drawing.Point(6, 42);
             this.MarauderProtect.Name = "MarauderProtect";
@@ -5856,8 +5856,8 @@
             // 
             // MarauderRaise
             // 
-            this.MarauderRaise.AutoCheck = false;
             this.MarauderRaise.AutoSize = true;
+            this.MarauderRaise.Enabled = false;
             this.MarauderRaise.ForeColor = System.Drawing.Color.White;
             this.MarauderRaise.Location = new System.Drawing.Point(6, 65);
             this.MarauderRaise.Name = "MarauderRaise";
@@ -5869,8 +5869,8 @@
             // 
             // MarauderStoneskin
             // 
-            this.MarauderStoneskin.AutoCheck = false;
             this.MarauderStoneskin.AutoSize = true;
+            this.MarauderStoneskin.Enabled = false;
             this.MarauderStoneskin.ForeColor = System.Drawing.Color.White;
             this.MarauderStoneskin.Location = new System.Drawing.Point(6, 88);
             this.MarauderStoneskin.Name = "MarauderStoneskin";
@@ -5969,8 +5969,8 @@
             // 
             // WarriorFlash
             // 
-            this.WarriorFlash.AutoCheck = false;
             this.WarriorFlash.AutoSize = true;
+            this.WarriorFlash.Enabled = false;
             this.WarriorFlash.ForeColor = System.Drawing.Color.White;
             this.WarriorFlash.Location = new System.Drawing.Point(6, 42);
             this.WarriorFlash.Name = "WarriorFlash";
@@ -5982,8 +5982,8 @@
             // 
             // WarriorConvalescence
             // 
-            this.WarriorConvalescence.AutoCheck = false;
             this.WarriorConvalescence.AutoSize = true;
+            this.WarriorConvalescence.Enabled = false;
             this.WarriorConvalescence.ForeColor = System.Drawing.Color.White;
             this.WarriorConvalescence.Location = new System.Drawing.Point(6, 65);
             this.WarriorConvalescence.Name = "WarriorConvalescence";
@@ -5995,8 +5995,8 @@
             // 
             // WarriorSavageBlade
             // 
-            this.WarriorSavageBlade.AutoCheck = false;
             this.WarriorSavageBlade.AutoSize = true;
+            this.WarriorSavageBlade.Enabled = false;
             this.WarriorSavageBlade.ForeColor = System.Drawing.Color.White;
             this.WarriorSavageBlade.Location = new System.Drawing.Point(6, 19);
             this.WarriorSavageBlade.Name = "WarriorSavageBlade";
@@ -6008,8 +6008,8 @@
             // 
             // WarriorAwareness
             // 
-            this.WarriorAwareness.AutoCheck = false;
             this.WarriorAwareness.AutoSize = true;
+            this.WarriorAwareness.Enabled = false;
             this.WarriorAwareness.ForeColor = System.Drawing.Color.White;
             this.WarriorAwareness.Location = new System.Drawing.Point(6, 111);
             this.WarriorAwareness.Name = "WarriorAwareness";
@@ -6021,8 +6021,8 @@
             // 
             // WarriorProvoke
             // 
-            this.WarriorProvoke.AutoCheck = false;
             this.WarriorProvoke.AutoSize = true;
+            this.WarriorProvoke.Enabled = false;
             this.WarriorProvoke.ForeColor = System.Drawing.Color.White;
             this.WarriorProvoke.Location = new System.Drawing.Point(6, 88);
             this.WarriorProvoke.Name = "WarriorProvoke";
@@ -6049,8 +6049,8 @@
             // 
             // WarriorHaymaker
             // 
-            this.WarriorHaymaker.AutoCheck = false;
             this.WarriorHaymaker.AutoSize = true;
+            this.WarriorHaymaker.Enabled = false;
             this.WarriorHaymaker.ForeColor = System.Drawing.Color.White;
             this.WarriorHaymaker.Location = new System.Drawing.Point(6, 65);
             this.WarriorHaymaker.Name = "WarriorHaymaker";
@@ -6062,8 +6062,8 @@
             // 
             // WarriorFeatherfoot
             // 
-            this.WarriorFeatherfoot.AutoCheck = false;
             this.WarriorFeatherfoot.AutoSize = true;
+            this.WarriorFeatherfoot.Enabled = false;
             this.WarriorFeatherfoot.ForeColor = System.Drawing.Color.White;
             this.WarriorFeatherfoot.Location = new System.Drawing.Point(6, 19);
             this.WarriorFeatherfoot.Name = "WarriorFeatherfoot";
@@ -6075,8 +6075,8 @@
             // 
             // WarriorSecondWind
             // 
-            this.WarriorSecondWind.AutoCheck = false;
             this.WarriorSecondWind.AutoSize = true;
+            this.WarriorSecondWind.Enabled = false;
             this.WarriorSecondWind.ForeColor = System.Drawing.Color.White;
             this.WarriorSecondWind.Location = new System.Drawing.Point(6, 42);
             this.WarriorSecondWind.Name = "WarriorSecondWind";
@@ -6100,8 +6100,8 @@
             // 
             // WarriorMantra
             // 
-            this.WarriorMantra.AutoCheck = false;
             this.WarriorMantra.AutoSize = true;
+            this.WarriorMantra.Enabled = false;
             this.WarriorMantra.ForeColor = System.Drawing.Color.White;
             this.WarriorMantra.Location = new System.Drawing.Point(6, 111);
             this.WarriorMantra.Name = "WarriorMantra";
@@ -6247,8 +6247,8 @@
             // 
             // PugilistFracture
             // 
-            this.PugilistFracture.AutoCheck = false;
             this.PugilistFracture.AutoSize = true;
+            this.PugilistFracture.Enabled = false;
             this.PugilistFracture.ForeColor = System.Drawing.Color.White;
             this.PugilistFracture.Location = new System.Drawing.Point(6, 65);
             this.PugilistFracture.Name = "PugilistFracture";
@@ -6260,8 +6260,8 @@
             // 
             // PugilistSkullSunder
             // 
-            this.PugilistSkullSunder.AutoCheck = false;
             this.PugilistSkullSunder.AutoSize = true;
+            this.PugilistSkullSunder.Enabled = false;
             this.PugilistSkullSunder.ForeColor = System.Drawing.Color.White;
             this.PugilistSkullSunder.Location = new System.Drawing.Point(6, 42);
             this.PugilistSkullSunder.Name = "PugilistSkullSunder";
@@ -6273,8 +6273,8 @@
             // 
             // PugilistBloodbath
             // 
-            this.PugilistBloodbath.AutoCheck = false;
             this.PugilistBloodbath.AutoSize = true;
+            this.PugilistBloodbath.Enabled = false;
             this.PugilistBloodbath.ForeColor = System.Drawing.Color.White;
             this.PugilistBloodbath.Location = new System.Drawing.Point(6, 88);
             this.PugilistBloodbath.Name = "PugilistBloodbath";
@@ -6286,8 +6286,8 @@
             // 
             // PugilistForesight
             // 
-            this.PugilistForesight.AutoCheck = false;
             this.PugilistForesight.AutoSize = true;
+            this.PugilistForesight.Enabled = false;
             this.PugilistForesight.ForeColor = System.Drawing.Color.White;
             this.PugilistForesight.Location = new System.Drawing.Point(6, 19);
             this.PugilistForesight.Name = "PugilistForesight";
@@ -6325,8 +6325,8 @@
             // 
             // PugilistKeenFlurry
             // 
-            this.PugilistKeenFlurry.AutoCheck = false;
             this.PugilistKeenFlurry.AutoSize = true;
+            this.PugilistKeenFlurry.Enabled = false;
             this.PugilistKeenFlurry.ForeColor = System.Drawing.Color.White;
             this.PugilistKeenFlurry.Location = new System.Drawing.Point(6, 42);
             this.PugilistKeenFlurry.Name = "PugilistKeenFlurry";
@@ -6362,8 +6362,8 @@
             // 
             // PugilistFeint
             // 
-            this.PugilistFeint.AutoCheck = false;
             this.PugilistFeint.AutoSize = true;
+            this.PugilistFeint.Enabled = false;
             this.PugilistFeint.ForeColor = System.Drawing.Color.White;
             this.PugilistFeint.Location = new System.Drawing.Point(6, 19);
             this.PugilistFeint.Name = "PugilistFeint";
@@ -6390,8 +6390,8 @@
             // 
             // PugilistFlash
             // 
-            this.PugilistFlash.AutoCheck = false;
             this.PugilistFlash.AutoSize = true;
+            this.PugilistFlash.Enabled = false;
             this.PugilistFlash.ForeColor = System.Drawing.Color.White;
             this.PugilistFlash.Location = new System.Drawing.Point(6, 42);
             this.PugilistFlash.Name = "PugilistFlash";
@@ -6403,8 +6403,8 @@
             // 
             // PugilistConvalescence
             // 
-            this.PugilistConvalescence.AutoCheck = false;
             this.PugilistConvalescence.AutoSize = true;
+            this.PugilistConvalescence.Enabled = false;
             this.PugilistConvalescence.ForeColor = System.Drawing.Color.White;
             this.PugilistConvalescence.Location = new System.Drawing.Point(6, 65);
             this.PugilistConvalescence.Name = "PugilistConvalescence";
@@ -6416,8 +6416,8 @@
             // 
             // PugilistSavageBlade
             // 
-            this.PugilistSavageBlade.AutoCheck = false;
             this.PugilistSavageBlade.AutoSize = true;
+            this.PugilistSavageBlade.Enabled = false;
             this.PugilistSavageBlade.ForeColor = System.Drawing.Color.White;
             this.PugilistSavageBlade.Location = new System.Drawing.Point(6, 19);
             this.PugilistSavageBlade.Name = "PugilistSavageBlade";
@@ -6429,8 +6429,8 @@
             // 
             // PugilistAwareness
             // 
-            this.PugilistAwareness.AutoCheck = false;
             this.PugilistAwareness.AutoSize = true;
+            this.PugilistAwareness.Enabled = false;
             this.PugilistAwareness.ForeColor = System.Drawing.Color.White;
             this.PugilistAwareness.Location = new System.Drawing.Point(6, 111);
             this.PugilistAwareness.Name = "PugilistAwareness";
@@ -6442,8 +6442,8 @@
             // 
             // PugilistProvoke
             // 
-            this.PugilistProvoke.AutoCheck = false;
             this.PugilistProvoke.AutoSize = true;
+            this.PugilistProvoke.Enabled = false;
             this.PugilistProvoke.ForeColor = System.Drawing.Color.White;
             this.PugilistProvoke.Location = new System.Drawing.Point(6, 88);
             this.PugilistProvoke.Name = "PugilistProvoke";
@@ -6470,8 +6470,8 @@
             // 
             // PugilistVenomousBite
             // 
-            this.PugilistVenomousBite.AutoCheck = false;
             this.PugilistVenomousBite.AutoSize = true;
+            this.PugilistVenomousBite.Enabled = false;
             this.PugilistVenomousBite.ForeColor = System.Drawing.Color.White;
             this.PugilistVenomousBite.Location = new System.Drawing.Point(6, 65);
             this.PugilistVenomousBite.Name = "PugilistVenomousBite";
@@ -6483,8 +6483,8 @@
             // 
             // PugilistRagingStrikes
             // 
-            this.PugilistRagingStrikes.AutoCheck = false;
             this.PugilistRagingStrikes.AutoSize = true;
+            this.PugilistRagingStrikes.Enabled = false;
             this.PugilistRagingStrikes.ForeColor = System.Drawing.Color.White;
             this.PugilistRagingStrikes.Location = new System.Drawing.Point(6, 42);
             this.PugilistRagingStrikes.Name = "PugilistRagingStrikes";
@@ -6496,8 +6496,8 @@
             // 
             // PugilistStraightShot
             // 
-            this.PugilistStraightShot.AutoCheck = false;
             this.PugilistStraightShot.AutoSize = true;
+            this.PugilistStraightShot.Enabled = false;
             this.PugilistStraightShot.ForeColor = System.Drawing.Color.White;
             this.PugilistStraightShot.Location = new System.Drawing.Point(6, 19);
             this.PugilistStraightShot.Name = "PugilistStraightShot";
@@ -6509,8 +6509,8 @@
             // 
             // PugilistHawksEye
             // 
-            this.PugilistHawksEye.AutoCheck = false;
             this.PugilistHawksEye.AutoSize = true;
+            this.PugilistHawksEye.Enabled = false;
             this.PugilistHawksEye.ForeColor = System.Drawing.Color.White;
             this.PugilistHawksEye.Location = new System.Drawing.Point(6, 88);
             this.PugilistHawksEye.Name = "PugilistHawksEye";
@@ -6522,8 +6522,8 @@
             // 
             // PugilistQuellingStrikes
             // 
-            this.PugilistQuellingStrikes.AutoCheck = false;
             this.PugilistQuellingStrikes.AutoSize = true;
+            this.PugilistQuellingStrikes.Enabled = false;
             this.PugilistQuellingStrikes.ForeColor = System.Drawing.Color.White;
             this.PugilistQuellingStrikes.Location = new System.Drawing.Point(6, 111);
             this.PugilistQuellingStrikes.Name = "PugilistQuellingStrikes";
@@ -6547,8 +6547,8 @@
             // 
             // PugilistSurecast
             // 
-            this.PugilistSurecast.AutoCheck = false;
             this.PugilistSurecast.AutoSize = true;
+            this.PugilistSurecast.Enabled = false;
             this.PugilistSurecast.ForeColor = System.Drawing.Color.White;
             this.PugilistSurecast.Location = new System.Drawing.Point(6, 19);
             this.PugilistSurecast.Name = "PugilistSurecast";
@@ -6560,8 +6560,8 @@
             // 
             // PugilistSwiftcast
             // 
-            this.PugilistSwiftcast.AutoCheck = false;
             this.PugilistSwiftcast.AutoSize = true;
+            this.PugilistSwiftcast.Enabled = false;
             this.PugilistSwiftcast.ForeColor = System.Drawing.Color.White;
             this.PugilistSwiftcast.Location = new System.Drawing.Point(6, 42);
             this.PugilistSwiftcast.Name = "PugilistSwiftcast";
@@ -6586,8 +6586,8 @@
             // 
             // PugilistDeathBlossom
             // 
-            this.PugilistDeathBlossom.AutoCheck = false;
             this.PugilistDeathBlossom.AutoSize = true;
+            this.PugilistDeathBlossom.Enabled = false;
             this.PugilistDeathBlossom.ForeColor = System.Drawing.Color.White;
             this.PugilistDeathBlossom.Location = new System.Drawing.Point(6, 65);
             this.PugilistDeathBlossom.Name = "PugilistDeathBlossom";
@@ -6599,8 +6599,8 @@
             // 
             // PugilistGoad
             // 
-            this.PugilistGoad.AutoCheck = false;
             this.PugilistGoad.AutoSize = true;
+            this.PugilistGoad.Enabled = false;
             this.PugilistGoad.ForeColor = System.Drawing.Color.White;
             this.PugilistGoad.Location = new System.Drawing.Point(6, 42);
             this.PugilistGoad.Name = "PugilistGoad";
@@ -6612,8 +6612,8 @@
             // 
             // PugilistPerfectDodge
             // 
-            this.PugilistPerfectDodge.AutoCheck = false;
             this.PugilistPerfectDodge.AutoSize = true;
+            this.PugilistPerfectDodge.Enabled = false;
             this.PugilistPerfectDodge.ForeColor = System.Drawing.Color.White;
             this.PugilistPerfectDodge.Location = new System.Drawing.Point(6, 19);
             this.PugilistPerfectDodge.Name = "PugilistPerfectDodge";
@@ -6638,8 +6638,8 @@
             // 
             // PugilistPhysick
             // 
-            this.PugilistPhysick.AutoCheck = false;
             this.PugilistPhysick.AutoSize = true;
+            this.PugilistPhysick.Enabled = false;
             this.PugilistPhysick.ForeColor = System.Drawing.Color.White;
             this.PugilistPhysick.Location = new System.Drawing.Point(6, 19);
             this.PugilistPhysick.Name = "PugilistPhysick";
@@ -6651,8 +6651,8 @@
             // 
             // PugilistVirus
             // 
-            this.PugilistVirus.AutoCheck = false;
             this.PugilistVirus.AutoSize = true;
+            this.PugilistVirus.Enabled = false;
             this.PugilistVirus.ForeColor = System.Drawing.Color.White;
             this.PugilistVirus.Location = new System.Drawing.Point(6, 42);
             this.PugilistVirus.Name = "PugilistVirus";
@@ -6664,8 +6664,8 @@
             // 
             // PugilistEyeForAnEye
             // 
-            this.PugilistEyeForAnEye.AutoCheck = false;
             this.PugilistEyeForAnEye.AutoSize = true;
+            this.PugilistEyeForAnEye.Enabled = false;
             this.PugilistEyeForAnEye.ForeColor = System.Drawing.Color.White;
             this.PugilistEyeForAnEye.Location = new System.Drawing.Point(6, 65);
             this.PugilistEyeForAnEye.Name = "PugilistEyeForAnEye";
@@ -6691,8 +6691,8 @@
             // 
             // PugilistCure
             // 
-            this.PugilistCure.AutoCheck = false;
             this.PugilistCure.AutoSize = true;
+            this.PugilistCure.Enabled = false;
             this.PugilistCure.ForeColor = System.Drawing.Color.White;
             this.PugilistCure.Location = new System.Drawing.Point(6, 19);
             this.PugilistCure.Name = "PugilistCure";
@@ -6704,8 +6704,8 @@
             // 
             // PugilistProtect
             // 
-            this.PugilistProtect.AutoCheck = false;
             this.PugilistProtect.AutoSize = true;
+            this.PugilistProtect.Enabled = false;
             this.PugilistProtect.ForeColor = System.Drawing.Color.White;
             this.PugilistProtect.Location = new System.Drawing.Point(6, 42);
             this.PugilistProtect.Name = "PugilistProtect";
@@ -6717,8 +6717,8 @@
             // 
             // PugilistRaise
             // 
-            this.PugilistRaise.AutoCheck = false;
             this.PugilistRaise.AutoSize = true;
+            this.PugilistRaise.Enabled = false;
             this.PugilistRaise.ForeColor = System.Drawing.Color.White;
             this.PugilistRaise.Location = new System.Drawing.Point(6, 65);
             this.PugilistRaise.Name = "PugilistRaise";
@@ -6730,8 +6730,8 @@
             // 
             // PugilistStoneskin
             // 
-            this.PugilistStoneskin.AutoCheck = false;
             this.PugilistStoneskin.AutoSize = true;
+            this.PugilistStoneskin.Enabled = false;
             this.PugilistStoneskin.ForeColor = System.Drawing.Color.White;
             this.PugilistStoneskin.Location = new System.Drawing.Point(6, 88);
             this.PugilistStoneskin.Name = "PugilistStoneskin";
@@ -6883,8 +6883,8 @@
             // 
             // MonkFracture
             // 
-            this.MonkFracture.AutoCheck = false;
             this.MonkFracture.AutoSize = true;
+            this.MonkFracture.Enabled = false;
             this.MonkFracture.ForeColor = System.Drawing.Color.White;
             this.MonkFracture.Location = new System.Drawing.Point(6, 65);
             this.MonkFracture.Name = "MonkFracture";
@@ -6896,8 +6896,8 @@
             // 
             // MonkSkullSunder
             // 
-            this.MonkSkullSunder.AutoCheck = false;
             this.MonkSkullSunder.AutoSize = true;
+            this.MonkSkullSunder.Enabled = false;
             this.MonkSkullSunder.ForeColor = System.Drawing.Color.White;
             this.MonkSkullSunder.Location = new System.Drawing.Point(6, 42);
             this.MonkSkullSunder.Name = "MonkSkullSunder";
@@ -6909,8 +6909,8 @@
             // 
             // MonkBloodbath
             // 
-            this.MonkBloodbath.AutoCheck = false;
             this.MonkBloodbath.AutoSize = true;
+            this.MonkBloodbath.Enabled = false;
             this.MonkBloodbath.ForeColor = System.Drawing.Color.White;
             this.MonkBloodbath.Location = new System.Drawing.Point(6, 88);
             this.MonkBloodbath.Name = "MonkBloodbath";
@@ -6922,8 +6922,8 @@
             // 
             // MonkForesight
             // 
-            this.MonkForesight.AutoCheck = false;
             this.MonkForesight.AutoSize = true;
+            this.MonkForesight.Enabled = false;
             this.MonkForesight.ForeColor = System.Drawing.Color.White;
             this.MonkForesight.Location = new System.Drawing.Point(6, 19);
             this.MonkForesight.Name = "MonkForesight";
@@ -6961,8 +6961,8 @@
             // 
             // MonkKeenFlurry
             // 
-            this.MonkKeenFlurry.AutoCheck = false;
             this.MonkKeenFlurry.AutoSize = true;
+            this.MonkKeenFlurry.Enabled = false;
             this.MonkKeenFlurry.ForeColor = System.Drawing.Color.White;
             this.MonkKeenFlurry.Location = new System.Drawing.Point(6, 42);
             this.MonkKeenFlurry.Name = "MonkKeenFlurry";
@@ -6998,8 +6998,8 @@
             // 
             // MonkFeint
             // 
-            this.MonkFeint.AutoCheck = false;
             this.MonkFeint.AutoSize = true;
+            this.MonkFeint.Enabled = false;
             this.MonkFeint.ForeColor = System.Drawing.Color.White;
             this.MonkFeint.Location = new System.Drawing.Point(6, 19);
             this.MonkFeint.Name = "MonkFeint";
@@ -7217,8 +7217,8 @@
             // 
             // RogueHaymaker
             // 
-            this.RogueHaymaker.AutoCheck = false;
             this.RogueHaymaker.AutoSize = true;
+            this.RogueHaymaker.Enabled = false;
             this.RogueHaymaker.ForeColor = System.Drawing.Color.White;
             this.RogueHaymaker.Location = new System.Drawing.Point(6, 65);
             this.RogueHaymaker.Name = "RogueHaymaker";
@@ -7230,8 +7230,8 @@
             // 
             // RogueFeatherfoot
             // 
-            this.RogueFeatherfoot.AutoCheck = false;
             this.RogueFeatherfoot.AutoSize = true;
+            this.RogueFeatherfoot.Enabled = false;
             this.RogueFeatherfoot.ForeColor = System.Drawing.Color.White;
             this.RogueFeatherfoot.Location = new System.Drawing.Point(6, 19);
             this.RogueFeatherfoot.Name = "RogueFeatherfoot";
@@ -7243,8 +7243,8 @@
             // 
             // RogueSecondWind
             // 
-            this.RogueSecondWind.AutoCheck = false;
             this.RogueSecondWind.AutoSize = true;
+            this.RogueSecondWind.Enabled = false;
             this.RogueSecondWind.ForeColor = System.Drawing.Color.White;
             this.RogueSecondWind.Location = new System.Drawing.Point(6, 42);
             this.RogueSecondWind.Name = "RogueSecondWind";
@@ -7268,8 +7268,8 @@
             // 
             // RogueMantra
             // 
-            this.RogueMantra.AutoCheck = false;
             this.RogueMantra.AutoSize = true;
+            this.RogueMantra.Enabled = false;
             this.RogueMantra.ForeColor = System.Drawing.Color.White;
             this.RogueMantra.Location = new System.Drawing.Point(6, 111);
             this.RogueMantra.Name = "RogueMantra";
@@ -7296,8 +7296,8 @@
             // 
             // RogueFracture
             // 
-            this.RogueFracture.AutoCheck = false;
             this.RogueFracture.AutoSize = true;
+            this.RogueFracture.Enabled = false;
             this.RogueFracture.ForeColor = System.Drawing.Color.White;
             this.RogueFracture.Location = new System.Drawing.Point(6, 65);
             this.RogueFracture.Name = "RogueFracture";
@@ -7309,8 +7309,8 @@
             // 
             // RogueSkullSunder
             // 
-            this.RogueSkullSunder.AutoCheck = false;
             this.RogueSkullSunder.AutoSize = true;
+            this.RogueSkullSunder.Enabled = false;
             this.RogueSkullSunder.ForeColor = System.Drawing.Color.White;
             this.RogueSkullSunder.Location = new System.Drawing.Point(6, 42);
             this.RogueSkullSunder.Name = "RogueSkullSunder";
@@ -7322,8 +7322,8 @@
             // 
             // RogueBloodbath
             // 
-            this.RogueBloodbath.AutoCheck = false;
             this.RogueBloodbath.AutoSize = true;
+            this.RogueBloodbath.Enabled = false;
             this.RogueBloodbath.ForeColor = System.Drawing.Color.White;
             this.RogueBloodbath.Location = new System.Drawing.Point(6, 88);
             this.RogueBloodbath.Name = "RogueBloodbath";
@@ -7335,8 +7335,8 @@
             // 
             // RogueForesight
             // 
-            this.RogueForesight.AutoCheck = false;
             this.RogueForesight.AutoSize = true;
+            this.RogueForesight.Enabled = false;
             this.RogueForesight.ForeColor = System.Drawing.Color.White;
             this.RogueForesight.Location = new System.Drawing.Point(6, 19);
             this.RogueForesight.Name = "RogueForesight";
@@ -7348,8 +7348,8 @@
             // 
             // RogueMercyStroke
             // 
-            this.RogueMercyStroke.AutoCheck = false;
             this.RogueMercyStroke.AutoSize = true;
+            this.RogueMercyStroke.Enabled = false;
             this.RogueMercyStroke.ForeColor = System.Drawing.Color.White;
             this.RogueMercyStroke.Location = new System.Drawing.Point(6, 111);
             this.RogueMercyStroke.Name = "RogueMercyStroke";
@@ -7375,8 +7375,8 @@
             // 
             // RogueKeenFlurry
             // 
-            this.RogueKeenFlurry.AutoCheck = false;
             this.RogueKeenFlurry.AutoSize = true;
+            this.RogueKeenFlurry.Enabled = false;
             this.RogueKeenFlurry.ForeColor = System.Drawing.Color.White;
             this.RogueKeenFlurry.Location = new System.Drawing.Point(6, 42);
             this.RogueKeenFlurry.Name = "RogueKeenFlurry";
@@ -7412,8 +7412,8 @@
             // 
             // RogueFeint
             // 
-            this.RogueFeint.AutoCheck = false;
             this.RogueFeint.AutoSize = true;
+            this.RogueFeint.Enabled = false;
             this.RogueFeint.ForeColor = System.Drawing.Color.White;
             this.RogueFeint.Location = new System.Drawing.Point(6, 19);
             this.RogueFeint.Name = "RogueFeint";
@@ -7440,8 +7440,8 @@
             // 
             // RogueFlash
             // 
-            this.RogueFlash.AutoCheck = false;
             this.RogueFlash.AutoSize = true;
+            this.RogueFlash.Enabled = false;
             this.RogueFlash.ForeColor = System.Drawing.Color.White;
             this.RogueFlash.Location = new System.Drawing.Point(6, 42);
             this.RogueFlash.Name = "RogueFlash";
@@ -7453,8 +7453,8 @@
             // 
             // RogueConvalescence
             // 
-            this.RogueConvalescence.AutoCheck = false;
             this.RogueConvalescence.AutoSize = true;
+            this.RogueConvalescence.Enabled = false;
             this.RogueConvalescence.ForeColor = System.Drawing.Color.White;
             this.RogueConvalescence.Location = new System.Drawing.Point(6, 65);
             this.RogueConvalescence.Name = "RogueConvalescence";
@@ -7466,8 +7466,8 @@
             // 
             // RogueSavageBlade
             // 
-            this.RogueSavageBlade.AutoCheck = false;
             this.RogueSavageBlade.AutoSize = true;
+            this.RogueSavageBlade.Enabled = false;
             this.RogueSavageBlade.ForeColor = System.Drawing.Color.White;
             this.RogueSavageBlade.Location = new System.Drawing.Point(6, 19);
             this.RogueSavageBlade.Name = "RogueSavageBlade";
@@ -7479,8 +7479,8 @@
             // 
             // RogueAwareness
             // 
-            this.RogueAwareness.AutoCheck = false;
             this.RogueAwareness.AutoSize = true;
+            this.RogueAwareness.Enabled = false;
             this.RogueAwareness.ForeColor = System.Drawing.Color.White;
             this.RogueAwareness.Location = new System.Drawing.Point(6, 111);
             this.RogueAwareness.Name = "RogueAwareness";
@@ -7492,8 +7492,8 @@
             // 
             // RogueProvoke
             // 
-            this.RogueProvoke.AutoCheck = false;
             this.RogueProvoke.AutoSize = true;
+            this.RogueProvoke.Enabled = false;
             this.RogueProvoke.ForeColor = System.Drawing.Color.White;
             this.RogueProvoke.Location = new System.Drawing.Point(6, 88);
             this.RogueProvoke.Name = "RogueProvoke";
@@ -7520,8 +7520,8 @@
             // 
             // RogueVenomousBite
             // 
-            this.RogueVenomousBite.AutoCheck = false;
             this.RogueVenomousBite.AutoSize = true;
+            this.RogueVenomousBite.Enabled = false;
             this.RogueVenomousBite.ForeColor = System.Drawing.Color.White;
             this.RogueVenomousBite.Location = new System.Drawing.Point(6, 65);
             this.RogueVenomousBite.Name = "RogueVenomousBite";
@@ -7533,8 +7533,8 @@
             // 
             // RogueRagingStrikes
             // 
-            this.RogueRagingStrikes.AutoCheck = false;
             this.RogueRagingStrikes.AutoSize = true;
+            this.RogueRagingStrikes.Enabled = false;
             this.RogueRagingStrikes.ForeColor = System.Drawing.Color.White;
             this.RogueRagingStrikes.Location = new System.Drawing.Point(6, 42);
             this.RogueRagingStrikes.Name = "RogueRagingStrikes";
@@ -7546,8 +7546,8 @@
             // 
             // RogueStraightShot
             // 
-            this.RogueStraightShot.AutoCheck = false;
             this.RogueStraightShot.AutoSize = true;
+            this.RogueStraightShot.Enabled = false;
             this.RogueStraightShot.ForeColor = System.Drawing.Color.White;
             this.RogueStraightShot.Location = new System.Drawing.Point(6, 19);
             this.RogueStraightShot.Name = "RogueStraightShot";
@@ -7559,8 +7559,8 @@
             // 
             // RogueHawksEye
             // 
-            this.RogueHawksEye.AutoCheck = false;
             this.RogueHawksEye.AutoSize = true;
+            this.RogueHawksEye.Enabled = false;
             this.RogueHawksEye.ForeColor = System.Drawing.Color.White;
             this.RogueHawksEye.Location = new System.Drawing.Point(6, 88);
             this.RogueHawksEye.Name = "RogueHawksEye";
@@ -7572,8 +7572,8 @@
             // 
             // RogueQuellingStrikes
             // 
-            this.RogueQuellingStrikes.AutoCheck = false;
             this.RogueQuellingStrikes.AutoSize = true;
+            this.RogueQuellingStrikes.Enabled = false;
             this.RogueQuellingStrikes.ForeColor = System.Drawing.Color.White;
             this.RogueQuellingStrikes.Location = new System.Drawing.Point(6, 111);
             this.RogueQuellingStrikes.Name = "RogueQuellingStrikes";
@@ -7597,8 +7597,8 @@
             // 
             // RogueSurecast
             // 
-            this.RogueSurecast.AutoCheck = false;
             this.RogueSurecast.AutoSize = true;
+            this.RogueSurecast.Enabled = false;
             this.RogueSurecast.ForeColor = System.Drawing.Color.White;
             this.RogueSurecast.Location = new System.Drawing.Point(6, 19);
             this.RogueSurecast.Name = "RogueSurecast";
@@ -7610,8 +7610,8 @@
             // 
             // RogueSwiftcast
             // 
-            this.RogueSwiftcast.AutoCheck = false;
             this.RogueSwiftcast.AutoSize = true;
+            this.RogueSwiftcast.Enabled = false;
             this.RogueSwiftcast.ForeColor = System.Drawing.Color.White;
             this.RogueSwiftcast.Location = new System.Drawing.Point(6, 42);
             this.RogueSwiftcast.Name = "RogueSwiftcast";
@@ -7636,8 +7636,8 @@
             // 
             // RoguePhysick
             // 
-            this.RoguePhysick.AutoCheck = false;
             this.RoguePhysick.AutoSize = true;
+            this.RoguePhysick.Enabled = false;
             this.RoguePhysick.ForeColor = System.Drawing.Color.White;
             this.RoguePhysick.Location = new System.Drawing.Point(6, 19);
             this.RoguePhysick.Name = "RoguePhysick";
@@ -7649,8 +7649,8 @@
             // 
             // RogueVirus
             // 
-            this.RogueVirus.AutoCheck = false;
             this.RogueVirus.AutoSize = true;
+            this.RogueVirus.Enabled = false;
             this.RogueVirus.ForeColor = System.Drawing.Color.White;
             this.RogueVirus.Location = new System.Drawing.Point(6, 42);
             this.RogueVirus.Name = "RogueVirus";
@@ -7662,8 +7662,8 @@
             // 
             // RogueEyeForAnEye
             // 
-            this.RogueEyeForAnEye.AutoCheck = false;
             this.RogueEyeForAnEye.AutoSize = true;
+            this.RogueEyeForAnEye.Enabled = false;
             this.RogueEyeForAnEye.ForeColor = System.Drawing.Color.White;
             this.RogueEyeForAnEye.Location = new System.Drawing.Point(6, 65);
             this.RogueEyeForAnEye.Name = "RogueEyeForAnEye";
@@ -7689,8 +7689,8 @@
             // 
             // RogueCure
             // 
-            this.RogueCure.AutoCheck = false;
             this.RogueCure.AutoSize = true;
+            this.RogueCure.Enabled = false;
             this.RogueCure.ForeColor = System.Drawing.Color.White;
             this.RogueCure.Location = new System.Drawing.Point(6, 19);
             this.RogueCure.Name = "RogueCure";
@@ -7702,8 +7702,8 @@
             // 
             // RogueProtect
             // 
-            this.RogueProtect.AutoCheck = false;
             this.RogueProtect.AutoSize = true;
+            this.RogueProtect.Enabled = false;
             this.RogueProtect.ForeColor = System.Drawing.Color.White;
             this.RogueProtect.Location = new System.Drawing.Point(6, 42);
             this.RogueProtect.Name = "RogueProtect";
@@ -7715,8 +7715,8 @@
             // 
             // RogueRaise
             // 
-            this.RogueRaise.AutoCheck = false;
             this.RogueRaise.AutoSize = true;
+            this.RogueRaise.Enabled = false;
             this.RogueRaise.ForeColor = System.Drawing.Color.White;
             this.RogueRaise.Location = new System.Drawing.Point(6, 65);
             this.RogueRaise.Name = "RogueRaise";
@@ -7728,8 +7728,8 @@
             // 
             // RogueStoneskin
             // 
-            this.RogueStoneskin.AutoCheck = false;
             this.RogueStoneskin.AutoSize = true;
+            this.RogueStoneskin.Enabled = false;
             this.RogueStoneskin.ForeColor = System.Drawing.Color.White;
             this.RogueStoneskin.Location = new System.Drawing.Point(6, 88);
             this.RogueStoneskin.Name = "RogueStoneskin";
@@ -7978,8 +7978,8 @@
             // 
             // NinjaHaymaker
             // 
-            this.NinjaHaymaker.AutoCheck = false;
             this.NinjaHaymaker.AutoSize = true;
+            this.NinjaHaymaker.Enabled = false;
             this.NinjaHaymaker.ForeColor = System.Drawing.Color.White;
             this.NinjaHaymaker.Location = new System.Drawing.Point(6, 65);
             this.NinjaHaymaker.Name = "NinjaHaymaker";
@@ -7991,8 +7991,8 @@
             // 
             // NinjaFeatherfoot
             // 
-            this.NinjaFeatherfoot.AutoCheck = false;
             this.NinjaFeatherfoot.AutoSize = true;
+            this.NinjaFeatherfoot.Enabled = false;
             this.NinjaFeatherfoot.ForeColor = System.Drawing.Color.White;
             this.NinjaFeatherfoot.Location = new System.Drawing.Point(6, 19);
             this.NinjaFeatherfoot.Name = "NinjaFeatherfoot";
@@ -8004,8 +8004,8 @@
             // 
             // NinjaSecondWind
             // 
-            this.NinjaSecondWind.AutoCheck = false;
             this.NinjaSecondWind.AutoSize = true;
+            this.NinjaSecondWind.Enabled = false;
             this.NinjaSecondWind.ForeColor = System.Drawing.Color.White;
             this.NinjaSecondWind.Location = new System.Drawing.Point(6, 42);
             this.NinjaSecondWind.Name = "NinjaSecondWind";
@@ -8029,8 +8029,8 @@
             // 
             // NinjaMantra
             // 
-            this.NinjaMantra.AutoCheck = false;
             this.NinjaMantra.AutoSize = true;
+            this.NinjaMantra.Enabled = false;
             this.NinjaMantra.ForeColor = System.Drawing.Color.White;
             this.NinjaMantra.Location = new System.Drawing.Point(6, 111);
             this.NinjaMantra.Name = "NinjaMantra";
@@ -8056,8 +8056,8 @@
             // 
             // NinjaKeenFlurry
             // 
-            this.NinjaKeenFlurry.AutoCheck = false;
             this.NinjaKeenFlurry.AutoSize = true;
+            this.NinjaKeenFlurry.Enabled = false;
             this.NinjaKeenFlurry.ForeColor = System.Drawing.Color.White;
             this.NinjaKeenFlurry.Location = new System.Drawing.Point(6, 42);
             this.NinjaKeenFlurry.Name = "NinjaKeenFlurry";
@@ -8093,8 +8093,8 @@
             // 
             // NinjaFeint
             // 
-            this.NinjaFeint.AutoCheck = false;
             this.NinjaFeint.AutoSize = true;
+            this.NinjaFeint.Enabled = false;
             this.NinjaFeint.ForeColor = System.Drawing.Color.White;
             this.NinjaFeint.Location = new System.Drawing.Point(6, 19);
             this.NinjaFeint.Name = "NinjaFeint";
@@ -8176,8 +8176,8 @@
             // 
             // ThaumaturgeCure
             // 
-            this.ThaumaturgeCure.AutoCheck = false;
             this.ThaumaturgeCure.AutoSize = true;
+            this.ThaumaturgeCure.Enabled = false;
             this.ThaumaturgeCure.ForeColor = System.Drawing.Color.White;
             this.ThaumaturgeCure.Location = new System.Drawing.Point(6, 19);
             this.ThaumaturgeCure.Name = "ThaumaturgeCure";
@@ -8189,8 +8189,8 @@
             // 
             // ThaumaturgeAero
             // 
-            this.ThaumaturgeAero.AutoCheck = false;
             this.ThaumaturgeAero.AutoSize = true;
+            this.ThaumaturgeAero.Enabled = false;
             this.ThaumaturgeAero.ForeColor = System.Drawing.Color.White;
             this.ThaumaturgeAero.Location = new System.Drawing.Point(6, 42);
             this.ThaumaturgeAero.Name = "ThaumaturgeAero";
@@ -8202,8 +8202,8 @@
             // 
             // ThaumaturgeProtect
             // 
-            this.ThaumaturgeProtect.AutoCheck = false;
             this.ThaumaturgeProtect.AutoSize = true;
+            this.ThaumaturgeProtect.Enabled = false;
             this.ThaumaturgeProtect.ForeColor = System.Drawing.Color.White;
             this.ThaumaturgeProtect.Location = new System.Drawing.Point(6, 65);
             this.ThaumaturgeProtect.Name = "ThaumaturgeProtect";
@@ -8215,8 +8215,8 @@
             // 
             // ThaumaturgeRaise
             // 
-            this.ThaumaturgeRaise.AutoCheck = false;
             this.ThaumaturgeRaise.AutoSize = true;
+            this.ThaumaturgeRaise.Enabled = false;
             this.ThaumaturgeRaise.ForeColor = System.Drawing.Color.White;
             this.ThaumaturgeRaise.Location = new System.Drawing.Point(6, 88);
             this.ThaumaturgeRaise.Name = "ThaumaturgeRaise";
@@ -8228,8 +8228,8 @@
             // 
             // ThaumaturgeStoneskin
             // 
-            this.ThaumaturgeStoneskin.AutoCheck = false;
             this.ThaumaturgeStoneskin.AutoSize = true;
+            this.ThaumaturgeStoneskin.Enabled = false;
             this.ThaumaturgeStoneskin.ForeColor = System.Drawing.Color.White;
             this.ThaumaturgeStoneskin.Location = new System.Drawing.Point(6, 111);
             this.ThaumaturgeStoneskin.Name = "ThaumaturgeStoneskin";
@@ -8255,8 +8255,8 @@
             // 
             // ThaumaturgeRuin
             // 
-            this.ThaumaturgeRuin.AutoCheck = false;
             this.ThaumaturgeRuin.AutoSize = true;
+            this.ThaumaturgeRuin.Enabled = false;
             this.ThaumaturgeRuin.ForeColor = System.Drawing.Color.White;
             this.ThaumaturgeRuin.Location = new System.Drawing.Point(6, 19);
             this.ThaumaturgeRuin.Name = "ThaumaturgeRuin";
@@ -8268,8 +8268,8 @@
             // 
             // ThaumaturgePhysick
             // 
-            this.ThaumaturgePhysick.AutoCheck = false;
             this.ThaumaturgePhysick.AutoSize = true;
+            this.ThaumaturgePhysick.Enabled = false;
             this.ThaumaturgePhysick.ForeColor = System.Drawing.Color.White;
             this.ThaumaturgePhysick.Location = new System.Drawing.Point(6, 42);
             this.ThaumaturgePhysick.Name = "ThaumaturgePhysick";
@@ -8281,8 +8281,8 @@
             // 
             // ThaumaturgeVirus
             // 
-            this.ThaumaturgeVirus.AutoCheck = false;
             this.ThaumaturgeVirus.AutoSize = true;
+            this.ThaumaturgeVirus.Enabled = false;
             this.ThaumaturgeVirus.ForeColor = System.Drawing.Color.White;
             this.ThaumaturgeVirus.Location = new System.Drawing.Point(6, 65);
             this.ThaumaturgeVirus.Name = "ThaumaturgeVirus";
@@ -8294,8 +8294,8 @@
             // 
             // ThaumaturgeEyeForAnEye
             // 
-            this.ThaumaturgeEyeForAnEye.AutoCheck = false;
             this.ThaumaturgeEyeForAnEye.AutoSize = true;
+            this.ThaumaturgeEyeForAnEye.Enabled = false;
             this.ThaumaturgeEyeForAnEye.ForeColor = System.Drawing.Color.White;
             this.ThaumaturgeEyeForAnEye.Location = new System.Drawing.Point(6, 88);
             this.ThaumaturgeEyeForAnEye.Name = "ThaumaturgeEyeForAnEye";
@@ -8321,8 +8321,8 @@
             // 
             // ThaumaturgeFeatherfoot
             // 
-            this.ThaumaturgeFeatherfoot.AutoCheck = false;
             this.ThaumaturgeFeatherfoot.AutoSize = true;
+            this.ThaumaturgeFeatherfoot.Enabled = false;
             this.ThaumaturgeFeatherfoot.ForeColor = System.Drawing.Color.White;
             this.ThaumaturgeFeatherfoot.Location = new System.Drawing.Point(6, 19);
             this.ThaumaturgeFeatherfoot.Name = "ThaumaturgeFeatherfoot";
@@ -8334,8 +8334,8 @@
             // 
             // ThaumaturgeSecondWind
             // 
-            this.ThaumaturgeSecondWind.AutoCheck = false;
             this.ThaumaturgeSecondWind.AutoSize = true;
+            this.ThaumaturgeSecondWind.Enabled = false;
             this.ThaumaturgeSecondWind.ForeColor = System.Drawing.Color.White;
             this.ThaumaturgeSecondWind.Location = new System.Drawing.Point(6, 42);
             this.ThaumaturgeSecondWind.Name = "ThaumaturgeSecondWind";
@@ -8347,8 +8347,8 @@
             // 
             // ThaumaturgeInternalRelease
             // 
-            this.ThaumaturgeInternalRelease.AutoCheck = false;
             this.ThaumaturgeInternalRelease.AutoSize = true;
+            this.ThaumaturgeInternalRelease.Enabled = false;
             this.ThaumaturgeInternalRelease.ForeColor = System.Drawing.Color.White;
             this.ThaumaturgeInternalRelease.Location = new System.Drawing.Point(6, 65);
             this.ThaumaturgeInternalRelease.Name = "ThaumaturgeInternalRelease";
@@ -8360,8 +8360,8 @@
             // 
             // ThaumaturgeMantra
             // 
-            this.ThaumaturgeMantra.AutoCheck = false;
             this.ThaumaturgeMantra.AutoSize = true;
+            this.ThaumaturgeMantra.Enabled = false;
             this.ThaumaturgeMantra.ForeColor = System.Drawing.Color.White;
             this.ThaumaturgeMantra.Location = new System.Drawing.Point(6, 88);
             this.ThaumaturgeMantra.Name = "ThaumaturgeMantra";
@@ -8386,8 +8386,8 @@
             // 
             // ThaumaturgeForesight
             // 
-            this.ThaumaturgeForesight.AutoCheck = false;
             this.ThaumaturgeForesight.AutoSize = true;
+            this.ThaumaturgeForesight.Enabled = false;
             this.ThaumaturgeForesight.ForeColor = System.Drawing.Color.White;
             this.ThaumaturgeForesight.Location = new System.Drawing.Point(6, 19);
             this.ThaumaturgeForesight.Name = "ThaumaturgeForesight";
@@ -8399,8 +8399,8 @@
             // 
             // ThaumaturgeBloodbath
             // 
-            this.ThaumaturgeBloodbath.AutoCheck = false;
             this.ThaumaturgeBloodbath.AutoSize = true;
+            this.ThaumaturgeBloodbath.Enabled = false;
             this.ThaumaturgeBloodbath.ForeColor = System.Drawing.Color.White;
             this.ThaumaturgeBloodbath.Location = new System.Drawing.Point(6, 42);
             this.ThaumaturgeBloodbath.Name = "ThaumaturgeBloodbath";
@@ -8412,8 +8412,8 @@
             // 
             // ThaumaturgeMercyStroke
             // 
-            this.ThaumaturgeMercyStroke.AutoCheck = false;
             this.ThaumaturgeMercyStroke.AutoSize = true;
+            this.ThaumaturgeMercyStroke.Enabled = false;
             this.ThaumaturgeMercyStroke.ForeColor = System.Drawing.Color.White;
             this.ThaumaturgeMercyStroke.Location = new System.Drawing.Point(6, 65);
             this.ThaumaturgeMercyStroke.Name = "ThaumaturgeMercyStroke";
@@ -8450,8 +8450,8 @@
             // 
             // ThaumaturgeHawksEye
             // 
-            this.ThaumaturgeHawksEye.AutoCheck = false;
             this.ThaumaturgeHawksEye.AutoSize = true;
+            this.ThaumaturgeHawksEye.Enabled = false;
             this.ThaumaturgeHawksEye.ForeColor = System.Drawing.Color.White;
             this.ThaumaturgeHawksEye.Location = new System.Drawing.Point(6, 42);
             this.ThaumaturgeHawksEye.Name = "ThaumaturgeHawksEye";
@@ -8463,8 +8463,8 @@
             // 
             // ThaumaturgeQuellingStrikes
             // 
-            this.ThaumaturgeQuellingStrikes.AutoCheck = false;
             this.ThaumaturgeQuellingStrikes.AutoSize = true;
+            this.ThaumaturgeQuellingStrikes.Enabled = false;
             this.ThaumaturgeQuellingStrikes.ForeColor = System.Drawing.Color.White;
             this.ThaumaturgeQuellingStrikes.Location = new System.Drawing.Point(6, 65);
             this.ThaumaturgeQuellingStrikes.Name = "ThaumaturgeQuellingStrikes";
@@ -8490,8 +8490,8 @@
             // 
             // ThaumaturgeFlash
             // 
-            this.ThaumaturgeFlash.AutoCheck = false;
             this.ThaumaturgeFlash.AutoSize = true;
+            this.ThaumaturgeFlash.Enabled = false;
             this.ThaumaturgeFlash.ForeColor = System.Drawing.Color.White;
             this.ThaumaturgeFlash.Location = new System.Drawing.Point(6, 19);
             this.ThaumaturgeFlash.Name = "ThaumaturgeFlash";
@@ -8503,8 +8503,8 @@
             // 
             // ThaumaturgeConvalescence
             // 
-            this.ThaumaturgeConvalescence.AutoCheck = false;
             this.ThaumaturgeConvalescence.AutoSize = true;
+            this.ThaumaturgeConvalescence.Enabled = false;
             this.ThaumaturgeConvalescence.ForeColor = System.Drawing.Color.White;
             this.ThaumaturgeConvalescence.Location = new System.Drawing.Point(6, 42);
             this.ThaumaturgeConvalescence.Name = "ThaumaturgeConvalescence";
@@ -8516,8 +8516,8 @@
             // 
             // ThaumaturgeProvoke
             // 
-            this.ThaumaturgeProvoke.AutoCheck = false;
             this.ThaumaturgeProvoke.AutoSize = true;
+            this.ThaumaturgeProvoke.Enabled = false;
             this.ThaumaturgeProvoke.ForeColor = System.Drawing.Color.White;
             this.ThaumaturgeProvoke.Location = new System.Drawing.Point(6, 65);
             this.ThaumaturgeProvoke.Name = "ThaumaturgeProvoke";
@@ -8529,8 +8529,8 @@
             // 
             // ThaumaturgeAwareness
             // 
-            this.ThaumaturgeAwareness.AutoCheck = false;
             this.ThaumaturgeAwareness.AutoSize = true;
+            this.ThaumaturgeAwareness.Enabled = false;
             this.ThaumaturgeAwareness.ForeColor = System.Drawing.Color.White;
             this.ThaumaturgeAwareness.Location = new System.Drawing.Point(6, 88);
             this.ThaumaturgeAwareness.Name = "ThaumaturgeAwareness";
@@ -8555,8 +8555,8 @@
             // 
             // ThaumaturgeKeenFlurry
             // 
-            this.ThaumaturgeKeenFlurry.AutoCheck = false;
             this.ThaumaturgeKeenFlurry.AutoSize = true;
+            this.ThaumaturgeKeenFlurry.Enabled = false;
             this.ThaumaturgeKeenFlurry.ForeColor = System.Drawing.Color.White;
             this.ThaumaturgeKeenFlurry.Location = new System.Drawing.Point(6, 19);
             this.ThaumaturgeKeenFlurry.Name = "ThaumaturgeKeenFlurry";
@@ -8568,8 +8568,8 @@
             // 
             // ThaumaturgeInvigorate
             // 
-            this.ThaumaturgeInvigorate.AutoCheck = false;
             this.ThaumaturgeInvigorate.AutoSize = true;
+            this.ThaumaturgeInvigorate.Enabled = false;
             this.ThaumaturgeInvigorate.ForeColor = System.Drawing.Color.White;
             this.ThaumaturgeInvigorate.Location = new System.Drawing.Point(6, 42);
             this.ThaumaturgeInvigorate.Name = "ThaumaturgeInvigorate";
@@ -8581,8 +8581,8 @@
             // 
             // ThaumaturgeBloodForBlood
             // 
-            this.ThaumaturgeBloodForBlood.AutoCheck = false;
             this.ThaumaturgeBloodForBlood.AutoSize = true;
+            this.ThaumaturgeBloodForBlood.Enabled = false;
             this.ThaumaturgeBloodForBlood.ForeColor = System.Drawing.Color.White;
             this.ThaumaturgeBloodForBlood.Location = new System.Drawing.Point(6, 65);
             this.ThaumaturgeBloodForBlood.Name = "ThaumaturgeBloodForBlood";
@@ -8632,8 +8632,8 @@
             // 
             // BlackMageRuin
             // 
-            this.BlackMageRuin.AutoCheck = false;
             this.BlackMageRuin.AutoSize = true;
+            this.BlackMageRuin.Enabled = false;
             this.BlackMageRuin.ForeColor = System.Drawing.Color.White;
             this.BlackMageRuin.Location = new System.Drawing.Point(6, 19);
             this.BlackMageRuin.Name = "BlackMageRuin";
@@ -8645,8 +8645,8 @@
             // 
             // BlackMagePhysick
             // 
-            this.BlackMagePhysick.AutoCheck = false;
             this.BlackMagePhysick.AutoSize = true;
+            this.BlackMagePhysick.Enabled = false;
             this.BlackMagePhysick.ForeColor = System.Drawing.Color.White;
             this.BlackMagePhysick.Location = new System.Drawing.Point(6, 42);
             this.BlackMagePhysick.Name = "BlackMagePhysick";
@@ -8658,8 +8658,8 @@
             // 
             // BlackMageVirus
             // 
-            this.BlackMageVirus.AutoCheck = false;
             this.BlackMageVirus.AutoSize = true;
+            this.BlackMageVirus.Enabled = false;
             this.BlackMageVirus.ForeColor = System.Drawing.Color.White;
             this.BlackMageVirus.Location = new System.Drawing.Point(6, 65);
             this.BlackMageVirus.Name = "BlackMageVirus";
@@ -8671,8 +8671,8 @@
             // 
             // BlackMageEyeForAnEye
             // 
-            this.BlackMageEyeForAnEye.AutoCheck = false;
             this.BlackMageEyeForAnEye.AutoSize = true;
+            this.BlackMageEyeForAnEye.Enabled = false;
             this.BlackMageEyeForAnEye.ForeColor = System.Drawing.Color.White;
             this.BlackMageEyeForAnEye.Location = new System.Drawing.Point(6, 88);
             this.BlackMageEyeForAnEye.Name = "BlackMageEyeForAnEye";
@@ -8709,8 +8709,8 @@
             // 
             // BlackMageHawksEye
             // 
-            this.BlackMageHawksEye.AutoCheck = false;
             this.BlackMageHawksEye.AutoSize = true;
+            this.BlackMageHawksEye.Enabled = false;
             this.BlackMageHawksEye.ForeColor = System.Drawing.Color.White;
             this.BlackMageHawksEye.Location = new System.Drawing.Point(6, 42);
             this.BlackMageHawksEye.Name = "BlackMageHawksEye";
@@ -8722,8 +8722,8 @@
             // 
             // BlackMageQuellingStrikes
             // 
-            this.BlackMageQuellingStrikes.AutoCheck = false;
             this.BlackMageQuellingStrikes.AutoSize = true;
+            this.BlackMageQuellingStrikes.Enabled = false;
             this.BlackMageQuellingStrikes.ForeColor = System.Drawing.Color.White;
             this.BlackMageQuellingStrikes.Location = new System.Drawing.Point(6, 65);
             this.BlackMageQuellingStrikes.Name = "BlackMageQuellingStrikes";
