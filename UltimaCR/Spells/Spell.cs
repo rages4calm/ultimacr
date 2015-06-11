@@ -102,7 +102,7 @@ namespace UltimaCR.Spells
                 if (Core.Player.CurrentJob == ClassJobType.Lancer ||
                     Core.Player.CurrentJob == ClassJobType.Dragoon)
                 {
-                    if (EnemyCount < 4)
+                    if (EnemyCount < 3)
                     {
                         return false;
                     }
