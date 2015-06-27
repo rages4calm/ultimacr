@@ -31,6 +31,7 @@ namespace UltimaCR.Spells
         Pet,
         Behind,
         Flank,
-        Ninjutsu
+        Ninjutsu,
+        Card
     }
 }

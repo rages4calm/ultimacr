@@ -101,7 +101,7 @@ namespace UltimaCR.Spells.Main
                                Level = 30,
                                GCDType = GCDType.On,
                                SpellType = SpellType.Heal,
-                               CastType = CastType.Self
+                               CastType = CastType.Target
                            });
             }
         }

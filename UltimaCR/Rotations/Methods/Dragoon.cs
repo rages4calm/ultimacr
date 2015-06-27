@@ -1,5 +1,4 @@
-﻿using System;
-using Buddy.Coroutines;
+﻿using Buddy.Coroutines;
 using ff14bot;
 using ff14bot.Managers;
 using System.Threading.Tasks;

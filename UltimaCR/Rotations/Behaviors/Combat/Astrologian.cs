@@ -2,15 +2,15 @@
 
 namespace UltimaCR.Rotations
 {
-    public sealed partial class Conjurer : Rotation
+    public sealed partial class Astrologian : Rotation
     {
         public override async Task<bool> Combat()
         {
-            if (await FluidAura()) return true;
-            if (await AeroII()) return true;
+            if (await CombustII()) return true;
+            if (await Combust()) return true;
             if (await Aero()) return true;
-            if (await StoneII()) return true;
-            return await Stone();
+            if (await MaleficII()) return true;
+            return await Malefic();
         }
 
         public override async Task<bool> PVPRotation()

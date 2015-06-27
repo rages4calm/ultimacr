@@ -107,6 +107,24 @@ namespace UltimaCR.Spells.PVP
                                });
                 }
             }
+            private Spell _recouperate;
+            public Spell Recouperate
+            {
+                get
+                {
+                    return _recouperate ??
+                           (_recouperate =
+                               new Spell
+                               {
+                                   Name = "Recouperate",
+                                   ID = 1590,
+                                   Level = 0,
+                                   GCDType = GCDType.On,
+                                   SpellType = SpellType.Heal,
+                                   CastType = CastType.Self
+                               });
+                }
+            }
         }
     }
 }

@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace UltimaCR.Rotations
 {
-    public sealed partial class Lancer
+    public sealed partial class Machinist
     {
         public override async Task<bool> PreCombatBuff()
         {

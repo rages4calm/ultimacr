@@ -80,7 +80,7 @@ namespace UltimaCR.Spells
             if (SpellType == SpellType.AoE &&
                 Ultima.UltSettings.SmartTarget)
             {
-                var EnemyCount = Helpers.EnemyUnit.Count(eu => eu.Location.Distance3D(target.Location) <= DataManager.GetSpellData(ID).Radius);
+                var EnemyCount = Helpers.EnemyUnit.Count(eu => eu.Distance2D(target) <= DataManager.GetSpellData(ID).Radius + target.CombatReach);
 
                 if (Core.Player.CurrentJob == ClassJobType.Arcanist ||
                     Core.Player.CurrentJob == ClassJobType.Scholar ||
@@ -131,6 +131,28 @@ namespace UltimaCR.Spells
                         return false;
                     }
                 }
+                if (Core.Player.CurrentJob == ClassJobType.Astrologian)
+                {
+                    if (EnemyCount < 3)
+                    {
+                        return false;
+                    }
+                }
+                if (Core.Player.CurrentJob == ClassJobType.DarkKnight)
+                {
+                    if (EnemyCount < 3)
+                    {
+                        return false;
+                    }
+                }
+                if (Core.Player.CurrentJob == ClassJobType.Machinist)
+                {
+                    if (EnemyCount < 3)
+                    {
+                        return false;
+                    }
+                }
+
             }
 
             #region Cone Check
@@ -230,6 +252,26 @@ namespace UltimaCR.Spells
                 Logging.Write(Colors.OrangeRed, @"[Ultima] Ability: " + Name);
                 return true;
             }
+            #endregion
+
+            #region Card Exception
+
+            if (SpellType == SpellType.Card)
+            {
+                if (!await Coroutine.Wait(1000, () => Actionmanager.DoAction(ID, target)))
+                {
+                    return false;
+                }
+                Ultima.LastSpell = this;
+                #region Recent Spell Add
+                var key = target.ObjectId.ToString("X") + "-" + Name;
+                var val = DateTime.UtcNow + DataManager.GetSpellData(3590).AdjustedCastTime + TimeSpan.FromSeconds(5);
+                RecentSpell.Add(key, val);
+                #endregion
+                Logging.Write(Colors.OrangeRed, @"[Ultima] Ability: " + Name);
+                return true;
+            }
+
             #endregion
 
             #region HasSpell Check
@@ -369,6 +411,27 @@ namespace UltimaCR.Spells
                     Core.Player.CurrentJob == ClassJobType.BlackMage)
                 {
                     if (DataManager.GetSpellData(142).Cooldown.TotalMilliseconds <= 1000)
+                    {
+                        return false;
+                    }
+                }
+                if (Core.Player.CurrentJob == ClassJobType.Astrologian)
+                {
+                    if (DataManager.GetSpellData(3596).Cooldown.TotalMilliseconds <= 1000)
+                    {
+                        return false;
+                    }
+                }
+                if (Core.Player.CurrentJob == ClassJobType.DarkKnight)
+                {
+                    if (DataManager.GetSpellData(3617).Cooldown.TotalMilliseconds <= 1000)
+                    {
+                        return false;
+                    }
+                }
+                if (Core.Player.CurrentJob == ClassJobType.Machinist)
+                {
+                    if (DataManager.GetSpellData(2866).Cooldown.TotalMilliseconds <= 1000)
                     {
                         return false;
                     }
