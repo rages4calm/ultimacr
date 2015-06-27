@@ -1248,6 +1248,60 @@ namespace UltimaCR.Settings
 
         #region Job Settings
 
+        #region Astrologian Settings
+
+        #region Conjurer Cross-Class
+
+        [Setting, DefaultValue(false)]
+        public bool AstrologianCure { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool AstrologianAero { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool AstrologianClericStance { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool AstrologianProtect { get; set; }
+
+        [Setting, DefaultValue(false)]
+        public bool AstrologianRaise { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool AstrologianStoneskin { get; set; }
+
+        #endregion
+
+        #region Thaumaturge Cross-Class
+
+        [Setting, DefaultValue(false)]
+        public bool AstrologianSurecast { get; set; }
+
+        [Setting, DefaultValue(false)]
+        public bool AstrologianBlizzardII { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool AstrologianSwiftcast { get; set; }
+
+        #endregion
+
+        [Setting, DefaultValue(true)]
+        public bool AstrologianBenefic { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool AstrologianBeneficII { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool AstrologianAspectedBenefic { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool AstrologianEssentialDignity { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool AstrologianDraw { get; set; }
+
+        #endregion
+
         #region Bard Settings
 
         #region Lancer Cross-Class
@@ -1326,6 +1380,69 @@ namespace UltimaCR.Settings
 
         #endregion
 
+        #region Dark Knight Settings
+
+        #region Gladiator Cross-Class
+
+        [Setting, DefaultValue(false)]
+        public bool DarkKnightSavageBlade { get; set; }
+
+        [Setting, DefaultValue(false)]
+        public bool DarkKnightFlash { get; set; }
+
+        [Setting, DefaultValue(false)]
+        public bool DarkKnightConvalescence { get; set; }
+
+        [Setting, DefaultValue(false)]
+        public bool DarkKnightProvoke { get; set; }
+
+        [Setting, DefaultValue(false)]
+        public bool DarkKnightAwareness { get; set; }
+
+        #endregion
+
+        #region Marauder Cross-Class
+
+        [Setting, DefaultValue(false)]
+        public bool DarkKnightForesight { get; set; }
+
+        [Setting, DefaultValue(false)]
+        public bool DarkKnightSkullSunder { get; set; }
+
+        [Setting, DefaultValue(false)]
+        public bool DarkKnightFracture { get; set; }
+
+        [Setting, DefaultValue(false)]
+        public bool DarkKnightBloodbath { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool DarkKnightMercyStroke { get; set; }
+
+        #endregion
+
+        [Setting, DefaultValue(true)]
+        public bool DarkKnightBloodWeapon { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool DarkKnightDarkArts { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool DarkKnightReprisal { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool DarkKnightDelirium { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool DarkKnightPlunge { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool DarkKnightLowBlow { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool DarkKnightSaltedEarth { get; set; }
+
+        #endregion
+
         #region Dragoon Settings
 
         #region Marauder Cross-Class
@@ -1380,6 +1497,60 @@ namespace UltimaCR.Settings
 
         [Setting, DefaultValue(true)]
         public bool DragoonDragonfireDive { get; set; }
+
+        #endregion
+
+        #region Machinist Settings
+
+        #region Archer Cross-Class
+
+        [Setting, DefaultValue(true)]
+        public bool MachinistRagingStrikes { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool MachinistHawksEye { get; set; }
+
+        [Setting, DefaultValue(false)]
+        public bool MachinistQuellingStrikes { get; set; }
+
+        #endregion
+
+        #region Lancer Cross-Class
+
+        [Setting, DefaultValue(false)]
+        public bool MachinistFeint { get; set; }
+
+        [Setting, DefaultValue(false)]
+        public bool MachinistKeenFlurry { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool MachinistInvigorate { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool MachinistBloodForBlood { get; set; }
+
+        #endregion
+
+        [Setting, DefaultValue(true)]
+        public bool MachinistSummonTurret { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool MachinistRook { get; set; }
+
+        [Setting, DefaultValue(false)]
+        public bool MachinistBishop { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool MachinistHeadGraze { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool MachinistHypercharge { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool MachinistBlank { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool MachinistHeartbreak { get; set; }
 
         #endregion
 

@@ -918,6 +918,35 @@ namespace UltimaCR.Settings.Forms
 
             #region Job Settings
 
+            #region Astrologian Settings
+
+            #region Conjurer Cross-Class
+
+            AstrologianCure.Checked = Ultima.UltSettings.AstrologianCure;
+            AstrologianAero.Checked = Ultima.UltSettings.AstrologianAero;
+            AstrologianClericStance.Checked = Ultima.UltSettings.AstrologianClericStance;
+            AstrologianProtect.Checked = Ultima.UltSettings.AstrologianProtect;
+            AstrologianRaise.Checked = Ultima.UltSettings.AstrologianRaise;
+            AstrologianStoneskin.Checked = Ultima.UltSettings.AstrologianStoneskin;
+            
+            #endregion
+
+            #region Thaumaturge Cross-Class
+
+            AstrologianSurecast.Checked = Ultima.UltSettings.AstrologianSurecast;
+            AstrologianBlizzardII.Checked = Ultima.UltSettings.AstrologianBlizzardII;
+            AstrologianSwiftcast.Checked = Ultima.UltSettings.AstrologianSwiftcast;
+
+            #endregion
+
+            AstrologianBenefic.Checked = Ultima.UltSettings.AstrologianBenefic;
+            AstrologianBeneficII.Checked = Ultima.UltSettings.AstrologianBeneficII;
+            AstrologianAspectedBenefic.Checked = Ultima.UltSettings.AstrologianAspectedBenefic;
+            AstrologianEssentialDignity.Checked = Ultima.UltSettings.AstrologianEssentialDignity;
+            AstrologianDraw.Checked = Ultima.UltSettings.AstrologianDraw;
+
+            #endregion
+
             #region Bard Settings
 
             #region Lancer Cross-Class
@@ -965,6 +994,38 @@ namespace UltimaCR.Settings.Forms
 
             #endregion
 
+            #region Dark Knight Settings
+
+            #region Gladiator Cross-Class
+
+            DarkKnightSavageBlade.Checked = Ultima.UltSettings.DarkKnightSavageBlade;
+            DarkKnightFlash.Checked = Ultima.UltSettings.DarkKnightFlash;
+            DarkKnightConvalescence.Checked = Ultima.UltSettings.DarkKnightConvalescence;
+            DarkKnightProvoke.Checked = Ultima.UltSettings.DarkKnightProvoke;
+            DarkKnightAwareness.Checked = Ultima.UltSettings.DarkKnightAwareness;
+
+            #endregion
+
+            #region Marauder Cross-Class
+
+            DarkKnightForesight.Checked = Ultima.UltSettings.DarkKnightForesight;
+            DarkKnightSkullSunder.Checked = Ultima.UltSettings.DarkKnightSkullSunder;
+            DarkKnightFracture.Checked = Ultima.UltSettings.DarkKnightFracture;
+            DarkKnightBloodbath.Checked = Ultima.UltSettings.DarkKnightBloodbath;
+            DarkKnightMercyStroke.Checked = Ultima.UltSettings.DarkKnightMercyStroke;
+
+            #endregion
+
+            DarkKnightBloodWeapon.Checked = Ultima.UltSettings.DarkKnightBloodWeapon;
+            DarkKnightDarkArts.Checked = Ultima.UltSettings.DarkKnightDarkArts;
+            DarkKnightReprisal.Checked = Ultima.UltSettings.DarkKnightReprisal;
+            DarkKnightDelirium.Checked = Ultima.UltSettings.DarkKnightDelirium;
+            DarkKnightPlunge.Checked = Ultima.UltSettings.DarkKnightPlunge;
+            DarkKnightLowBlow.Checked = Ultima.UltSettings.DarkKnightLowBlow;
+            DarkKnightSaltedEarth.Checked = Ultima.UltSettings.DarkKnightSaltedEarth;
+
+            #endregion
+
             #region Dragoon Settings
 
             #region Marauder Cross-Class
@@ -992,6 +1053,41 @@ namespace UltimaCR.Settings.Forms
             DragoonSpineshatterDive.Checked = Ultima.UltSettings.DragoonSpineshatterDive;
             DragoonPowerSurge.Checked = Ultima.UltSettings.DragoonPowerSurge;
             DragoonDragonfireDive.Checked = Ultima.UltSettings.DragoonDragonfireDive;
+
+            #endregion
+
+            #region Machinist Settings
+
+            #region Archer Cross-Class
+
+            MachinistRagingStrikes.Checked = Ultima.UltSettings.MachinistRagingStrikes;
+            MachinistHawksEye.Checked = Ultima.UltSettings.MachinistHawksEye;
+            MachinistQuellingStrikes.Checked = Ultima.UltSettings.MachinistQuellingStrikes;
+
+            #endregion
+
+            #region Lancer Cross-Class
+
+            MachinistFeint.Checked = Ultima.UltSettings.MachinistFeint;
+            MachinistKeenFlurry.Checked = Ultima.UltSettings.MachinistKeenFlurry;
+            MachinistInvigorate.Checked = Ultima.UltSettings.MachinistInvigorate;
+            MachinistBloodForBlood.Checked = Ultima.UltSettings.MachinistBloodForBlood;
+
+            #endregion
+
+            MachinistSummonTurret.Checked = Ultima.UltSettings.MachinistSummonTurret;
+            if (Ultima.UltSettings.MachinistRook)
+            {
+                MachinistSummonTurretCombo.Text = @"Rook Autoturret";
+            }
+            if (Ultima.UltSettings.MachinistBishop)
+            {
+                MachinistSummonTurretCombo.Text = @"Bishop Autoturret";
+            }
+            MachinistHeadGraze.Checked = Ultima.UltSettings.MachinistHeadGraze;
+            MachinistHypercharge.Checked = Ultima.UltSettings.MachinistHypercharge;
+            MachinistBlank.Checked = Ultima.UltSettings.MachinistBlank;
+            MachinistHeartbreak.Checked = Ultima.UltSettings.MachinistHeartbreak;
 
             #endregion
 
@@ -3163,6 +3259,88 @@ namespace UltimaCR.Settings.Forms
 
         #region Job Settings
 
+        #region Astrologian Settings
+
+        #region Conjurer Cross-Class
+
+        private void AstrologianCure_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.AstrologianCure = AstrologianCure.Checked;
+        }
+
+        private void AstrologianAero_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.AstrologianAero = AstrologianAero.Checked;
+        }
+
+        private void AstrologianClericStance_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.AstrologianClericStance = AstrologianClericStance.Checked;
+        }
+
+        private void AstrologianProtect_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.AstrologianProtect = AstrologianProtect.Checked;
+        }
+
+        private void AstrologianRaise_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.AstrologianRaise = AstrologianRaise.Checked;
+        }
+
+        private void AstrologianStoneskin_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.AstrologianStoneskin = AstrologianStoneskin.Checked;
+        }
+
+        #endregion
+
+        #region Thaumaturge Cross-Class
+
+        private void AstrologianSurecast_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.AstrologianSurecast = AstrologianSurecast.Checked;
+        }
+
+        private void AstrologianBlizzardII_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.AstrologianBlizzardII = AstrologianBlizzardII.Checked;
+        }
+
+        private void AstrologianSwiftcast_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.AstrologianSwiftcast = AstrologianSwiftcast.Checked;
+        }
+
+        #endregion
+
+        private void AstrologianBenefic_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.AstrologianBenefic = AstrologianBenefic.Checked;
+        }
+
+        private void AstrologianBeneficII_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.AstrologianBeneficII = AstrologianBeneficII.Checked;
+        }
+
+        private void AstrologianAspectedBenefic_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.AstrologianAspectedBenefic = AstrologianAspectedBenefic.Checked;
+        }
+
+        private void AstrologianEssentialDignity_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.AstrologianEssentialDignity = AstrologianEssentialDignity.Checked;
+        }
+
+        private void AstrologianDraw_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.AstrologianDraw = AstrologianDraw.Checked;
+        }
+
+        #endregion
+
         #region Bard Settings
 
         #region Lancer Cross-Class
@@ -3277,6 +3455,103 @@ namespace UltimaCR.Settings.Forms
 
         #endregion
 
+        #region Dark Knight Settings
+
+        #region Gladiator Cross-Class
+
+        private void DarkKnightSavageBlade_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.DarkKnightSavageBlade = DarkKnightSavageBlade.Checked;
+        }
+
+        private void DarkKnightFlash_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.DarkKnightFlash = DarkKnightFlash.Checked;
+        }
+
+        private void DarkKnightConvalescence_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.DarkKnightConvalescence = DarkKnightConvalescence.Checked;
+        }
+
+        private void DarkKnightProvoke_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.DarkKnightProvoke = DarkKnightProvoke.Checked;
+        }
+
+        private void DarkKnightAwareness_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.DarkKnightAwareness = DarkKnightAwareness.Checked;
+        }
+
+        #endregion
+
+        #region Marauder Cross-Class
+
+        private void DarkKnightForesight_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.DarkKnightForesight = DarkKnightForesight.Checked;
+        }
+
+        private void DarkKnightSkullSunder_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.DarkKnightSkullSunder = DarkKnightSkullSunder.Checked;
+        }
+
+        private void DarkKnightFracture_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.DarkKnightFracture = DarkKnightFracture.Checked;
+        }
+
+        private void DarkKnightBloodbath_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.DarkKnightBloodbath = DarkKnightBloodbath.Checked;
+        }
+
+        private void DarkKnightMercyStroke_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.DarkKnightMercyStroke = DarkKnightMercyStroke.Checked;
+        }
+
+        #endregion
+
+        private void DarkKnightBloodWeapon_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.DarkKnightBloodWeapon = DarkKnightBloodWeapon.Checked;
+        }
+
+        private void DarkKnightDarkArts_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.DarkKnightDarkArts = DarkKnightDarkArts.Checked;
+        }
+
+        private void DarkKnightReprisal_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.DarkKnightReprisal = DarkKnightReprisal.Checked;
+        }
+
+        private void DarkKnightDelirium_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.DarkKnightDelirium = DarkKnightDelirium.Checked;
+        }
+
+        private void DarkKnightPlunge_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.DarkKnightPlunge = DarkKnightPlunge.Checked;
+        }
+
+        private void DarkKnightLowBlow_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.DarkKnightLowBlow = DarkKnightLowBlow.Checked;
+        }
+
+        private void DarkKnightSaltedEarth_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.DarkKnightSaltedEarth = DarkKnightSaltedEarth.Checked;
+        }
+
+        #endregion
+
         #region Dragoon Settings
 
         #region Marauder Cross-Class
@@ -3360,6 +3635,93 @@ namespace UltimaCR.Settings.Forms
         private void DragoonDragonfireDive_CheckedChanged(object sender, EventArgs e)
         {
             Ultima.UltSettings.DragoonDragonfireDive = DragoonDragonfireDive.Checked;
+        }
+
+        #endregion
+
+        #region Machinist Settings
+
+        #region Archer Cross-Class
+
+        private void MachinistRagingStrikes_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.MachinistRagingStrikes = MachinistRagingStrikes.Checked;
+        }
+
+        private void MachinistHawksEye_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.MachinistHawksEye = MachinistHawksEye.Checked;
+        }
+
+        private void MachinistQuellingStrikes_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.MachinistQuellingStrikes = MachinistQuellingStrikes.Checked;
+        }
+
+        #endregion
+
+        #region Lancer Cross-Class
+
+        private void MachinistFeint_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.MachinistFeint = MachinistFeint.Checked;
+        }
+
+        private void MachinistKeenFlurry_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.MachinistKeenFlurry = MachinistKeenFlurry.Checked;
+        }
+
+        private void MachinistInvigorate_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.MachinistInvigorate = MachinistInvigorate.Checked;
+        }
+
+        private void MachinistBloodForBlood_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.MachinistBloodForBlood = MachinistBloodForBlood.Checked;
+        }
+
+        #endregion
+
+        private void MachinistSummonTurret_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.MachinistSummonTurret = MachinistSummonTurret.Checked;
+        }
+
+        private void MachinistSummonTurretCombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (MachinistSummonTurretCombo.Text == @"Rook Autoturret")
+            {
+                Ultima.UltSettings.MachinistRook = true;
+                Ultima.UltSettings.MachinistBishop = false;
+            }
+
+            if (MachinistSummonTurretCombo.Text == @"Bishop Autoturret")
+            {
+                Ultima.UltSettings.MachinistRook = false;
+                Ultima.UltSettings.MachinistBishop = true;
+            }
+        }
+
+        private void MachinistHeadGraze_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.MachinistHeadGraze = MachinistHeadGraze.Checked;
+        }
+
+        private void MachinistHypercharge_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.MachinistHypercharge = MachinistHypercharge.Checked;
+        }
+
+        private void MachinistBlank_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.MachinistBlank = MachinistBlank.Checked;
+        }
+
+        private void MachinistHeartbreak_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.MachinistHeartbreak = MachinistHeartbreak.Checked;
         }
 
         #endregion

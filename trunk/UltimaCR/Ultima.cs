@@ -175,12 +175,18 @@ namespace UltimaCR
                     return new Thaumaturge();
                 #endregion
                 #region Job
+                case ClassJobType.Astrologian:
+                    return new Astrologian();
                 case ClassJobType.Bard:
                     return new Bard();
                 case ClassJobType.BlackMage:
                     return new BlackMage();
+                case ClassJobType.DarkKnight:
+                    return new DarkKnight();
                 case ClassJobType.Dragoon:
                     return new Dragoon();
+                case ClassJobType.Machinist:
+                    return new Machinist();
                 case ClassJobType.Monk:
                     return new Monk();
                 case ClassJobType.Ninja:
@@ -273,7 +279,7 @@ namespace UltimaCR
             get { return new ActionRunCoroutine(ctx => MyRotation.Combat()); }
         }
 
-        #region Not Used Behavior Composites
+        #region Unused Behavior Composites
 
         /*
         * These behaviors have been put in the CombatRoutine class,

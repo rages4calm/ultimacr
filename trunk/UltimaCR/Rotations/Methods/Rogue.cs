@@ -1,6 +1,6 @@
-﻿using System.Linq;
-using ff14bot;
+﻿using ff14bot;
 using ff14bot.Managers;
+using System.Linq;
 using System.Threading.Tasks;
 using UltimaCR.Spells.Main;
 

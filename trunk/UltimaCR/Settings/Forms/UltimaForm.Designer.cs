@@ -635,6 +635,76 @@
             this.BlackMageRagingStrikes = new System.Windows.Forms.CheckBox();
             this.BlackMageHawksEye = new System.Windows.Forms.CheckBox();
             this.BlackMageQuellingStrikes = new System.Windows.Forms.CheckBox();
+            this.ExtraJobTab = new System.Windows.Forms.TabPage();
+            this.ExtraJobsSubTab = new UltimaCR.Settings.Forms.Design.TabDesign();
+            this.AstrologianSettings = new System.Windows.Forms.TabPage();
+            this.groupBoxDesign2 = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.AstrologianDraw = new System.Windows.Forms.CheckBox();
+            this.AstrologianHealingGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.AstrologianEssentialDignity = new System.Windows.Forms.CheckBox();
+            this.AstrologianAspectedBenefic = new System.Windows.Forms.CheckBox();
+            this.AstrologianBeneficII = new System.Windows.Forms.CheckBox();
+            this.AstrologianBenefic = new System.Windows.Forms.CheckBox();
+            this.AstrologianCrossGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.AstrologianThaumaturgeGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.AstrologianSurecast = new System.Windows.Forms.CheckBox();
+            this.AstrologianSwiftcast = new System.Windows.Forms.CheckBox();
+            this.AstrologianBlizzardII = new System.Windows.Forms.CheckBox();
+            this.AstrologianConjurerGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.AstrologianClericStance = new System.Windows.Forms.CheckBox();
+            this.AstrologianCure = new System.Windows.Forms.CheckBox();
+            this.AstrologianAero = new System.Windows.Forms.CheckBox();
+            this.AstrologianProtect = new System.Windows.Forms.CheckBox();
+            this.AstrologianRaise = new System.Windows.Forms.CheckBox();
+            this.AstrologianStoneskin = new System.Windows.Forms.CheckBox();
+            this.DarkKnightSettings = new System.Windows.Forms.TabPage();
+            this.DarkKnightCooldownGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.DarkKnightSaltedEarth = new System.Windows.Forms.CheckBox();
+            this.DarkKnightBuffGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.DarkKnightDarkArts = new System.Windows.Forms.CheckBox();
+            this.DarkKnightBloodWeapon = new System.Windows.Forms.CheckBox();
+            this.DarkKnightDebuffGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.DarkKnightDelirium = new System.Windows.Forms.CheckBox();
+            this.DarkKnightReprisal = new System.Windows.Forms.CheckBox();
+            this.DarkKnightInterruptGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.DarkKnightLowBlow = new System.Windows.Forms.CheckBox();
+            this.DarkKnightMovementGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.DarkKnightPlunge = new System.Windows.Forms.CheckBox();
+            this.DarkKnightCrossGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.DarkKnightMarauderGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.DarkKnightFracture = new System.Windows.Forms.CheckBox();
+            this.DarkKnightSkullSunder = new System.Windows.Forms.CheckBox();
+            this.DarkKnightBloodbath = new System.Windows.Forms.CheckBox();
+            this.DarkKnightForesight = new System.Windows.Forms.CheckBox();
+            this.DarkKnightMercyStroke = new System.Windows.Forms.CheckBox();
+            this.DarkKnightGladiatorGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.DarkKnightFlash = new System.Windows.Forms.CheckBox();
+            this.DarkKnightConvalescence = new System.Windows.Forms.CheckBox();
+            this.DarkKnightSavageBlade = new System.Windows.Forms.CheckBox();
+            this.DarkKnightAwareness = new System.Windows.Forms.CheckBox();
+            this.DarkKnightProvoke = new System.Windows.Forms.CheckBox();
+            this.MachinistSettings = new System.Windows.Forms.TabPage();
+            this.MachinistKnockbackGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.MachinistBlank = new System.Windows.Forms.CheckBox();
+            this.MachinistBuffGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.MachinistHypercharge = new System.Windows.Forms.CheckBox();
+            this.MachinistExecuteGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.MachinistHeartbreak = new System.Windows.Forms.CheckBox();
+            this.MachinistInterruptGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.MachinistHeadGraze = new System.Windows.Forms.CheckBox();
+            this.groupBoxDesign3 = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.MachinistSummonTurretCombo = new System.Windows.Forms.ComboBox();
+            this.MachinistSummonTurret = new System.Windows.Forms.CheckBox();
+            this.MachinistCrossGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.MachinistLancerGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.MachinistKeenFlurry = new System.Windows.Forms.CheckBox();
+            this.MachinistInvigorate = new System.Windows.Forms.CheckBox();
+            this.MachinistBloodForBlood = new System.Windows.Forms.CheckBox();
+            this.MachinistFeint = new System.Windows.Forms.CheckBox();
+            this.MachinistArcherGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.MachinistRagingStrikes = new System.Windows.Forms.CheckBox();
+            this.MachinistHawksEye = new System.Windows.Forms.CheckBox();
+            this.MachinistQuellingStrikes = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.UltimaBanner)).BeginInit();
             this.ClassTab.SuspendLayout();
             this.UltimaTab.SuspendLayout();
@@ -826,6 +896,32 @@
             this.BlackMageCrossGroup.SuspendLayout();
             this.BlackMageArcanistGroup.SuspendLayout();
             this.BlackMageArcherGroup.SuspendLayout();
+            this.ExtraJobTab.SuspendLayout();
+            this.ExtraJobsSubTab.SuspendLayout();
+            this.AstrologianSettings.SuspendLayout();
+            this.groupBoxDesign2.SuspendLayout();
+            this.AstrologianHealingGroup.SuspendLayout();
+            this.AstrologianCrossGroup.SuspendLayout();
+            this.AstrologianThaumaturgeGroup.SuspendLayout();
+            this.AstrologianConjurerGroup.SuspendLayout();
+            this.DarkKnightSettings.SuspendLayout();
+            this.DarkKnightCooldownGroup.SuspendLayout();
+            this.DarkKnightBuffGroup.SuspendLayout();
+            this.DarkKnightDebuffGroup.SuspendLayout();
+            this.DarkKnightInterruptGroup.SuspendLayout();
+            this.DarkKnightMovementGroup.SuspendLayout();
+            this.DarkKnightCrossGroup.SuspendLayout();
+            this.DarkKnightMarauderGroup.SuspendLayout();
+            this.DarkKnightGladiatorGroup.SuspendLayout();
+            this.MachinistSettings.SuspendLayout();
+            this.MachinistKnockbackGroup.SuspendLayout();
+            this.MachinistBuffGroup.SuspendLayout();
+            this.MachinistExecuteGroup.SuspendLayout();
+            this.MachinistInterruptGroup.SuspendLayout();
+            this.groupBoxDesign3.SuspendLayout();
+            this.MachinistCrossGroup.SuspendLayout();
+            this.MachinistLancerGroup.SuspendLayout();
+            this.MachinistArcherGroup.SuspendLayout();
             this.SuspendLayout();
             // 
             // CloseButton
@@ -865,6 +961,7 @@
             this.ClassTab.Controls.Add(this.PugilistTab);
             this.ClassTab.Controls.Add(this.RogueTab);
             this.ClassTab.Controls.Add(this.ThaumaturgeTab);
+            this.ClassTab.Controls.Add(this.ExtraJobTab);
             this.ClassTab.ItemSize = new System.Drawing.Size(35, 110);
             this.ClassTab.Location = new System.Drawing.Point(0, 148);
             this.ClassTab.Multiline = true;
@@ -8733,6 +8830,885 @@
             this.BlackMageQuellingStrikes.UseVisualStyleBackColor = true;
             this.BlackMageQuellingStrikes.CheckedChanged += new System.EventHandler(this.BlackMageQuellingStrikes_CheckedChanged);
             // 
+            // ExtraJobTab
+            // 
+            this.ExtraJobTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ExtraJobTab.Controls.Add(this.ExtraJobsSubTab);
+            this.ExtraJobTab.Location = new System.Drawing.Point(114, 4);
+            this.ExtraJobTab.Margin = new System.Windows.Forms.Padding(0);
+            this.ExtraJobTab.Name = "ExtraJobTab";
+            this.ExtraJobTab.Size = new System.Drawing.Size(682, 402);
+            this.ExtraJobTab.TabIndex = 10;
+            this.ExtraJobTab.Text = "Extra Jobs";
+            // 
+            // ExtraJobsSubTab
+            // 
+            this.ExtraJobsSubTab.Alignment = System.Windows.Forms.TabAlignment.Left;
+            this.ExtraJobsSubTab.Controls.Add(this.AstrologianSettings);
+            this.ExtraJobsSubTab.Controls.Add(this.DarkKnightSettings);
+            this.ExtraJobsSubTab.Controls.Add(this.MachinistSettings);
+            this.ExtraJobsSubTab.ItemSize = new System.Drawing.Size(35, 110);
+            this.ExtraJobsSubTab.Location = new System.Drawing.Point(-1, -4);
+            this.ExtraJobsSubTab.Multiline = true;
+            this.ExtraJobsSubTab.Name = "ExtraJobsSubTab";
+            this.ExtraJobsSubTab.SelectedIndex = 0;
+            this.ExtraJobsSubTab.Size = new System.Drawing.Size(685, 410);
+            this.ExtraJobsSubTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.ExtraJobsSubTab.TabIndex = 6;
+            // 
+            // AstrologianSettings
+            // 
+            this.AstrologianSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.AstrologianSettings.Controls.Add(this.groupBoxDesign2);
+            this.AstrologianSettings.Controls.Add(this.AstrologianHealingGroup);
+            this.AstrologianSettings.Controls.Add(this.AstrologianCrossGroup);
+            this.AstrologianSettings.Location = new System.Drawing.Point(114, 4);
+            this.AstrologianSettings.Margin = new System.Windows.Forms.Padding(0);
+            this.AstrologianSettings.Name = "AstrologianSettings";
+            this.AstrologianSettings.Size = new System.Drawing.Size(567, 402);
+            this.AstrologianSettings.TabIndex = 0;
+            this.AstrologianSettings.Text = "Astrologian";
+            // 
+            // groupBoxDesign2
+            // 
+            this.groupBoxDesign2.Controls.Add(this.AstrologianDraw);
+            this.groupBoxDesign2.ForeColor = System.Drawing.Color.White;
+            this.groupBoxDesign2.Location = new System.Drawing.Point(162, 191);
+            this.groupBoxDesign2.Name = "groupBoxDesign2";
+            this.groupBoxDesign2.Size = new System.Drawing.Size(63, 42);
+            this.groupBoxDesign2.TabIndex = 45;
+            this.groupBoxDesign2.TabStop = false;
+            this.groupBoxDesign2.Text = "Buff";
+            // 
+            // AstrologianDraw
+            // 
+            this.AstrologianDraw.AutoSize = true;
+            this.AstrologianDraw.ForeColor = System.Drawing.Color.White;
+            this.AstrologianDraw.Location = new System.Drawing.Point(6, 19);
+            this.AstrologianDraw.Name = "AstrologianDraw";
+            this.AstrologianDraw.Size = new System.Drawing.Size(51, 17);
+            this.AstrologianDraw.TabIndex = 11;
+            this.AstrologianDraw.Text = "Draw";
+            this.AstrologianDraw.UseVisualStyleBackColor = true;
+            this.AstrologianDraw.CheckedChanged += new System.EventHandler(this.AstrologianDraw_CheckedChanged);
+            // 
+            // AstrologianHealingGroup
+            // 
+            this.AstrologianHealingGroup.Controls.Add(this.AstrologianEssentialDignity);
+            this.AstrologianHealingGroup.Controls.Add(this.AstrologianAspectedBenefic);
+            this.AstrologianHealingGroup.Controls.Add(this.AstrologianBeneficII);
+            this.AstrologianHealingGroup.Controls.Add(this.AstrologianBenefic);
+            this.AstrologianHealingGroup.ForeColor = System.Drawing.Color.White;
+            this.AstrologianHealingGroup.Location = new System.Drawing.Point(34, 191);
+            this.AstrologianHealingGroup.Name = "AstrologianHealingGroup";
+            this.AstrologianHealingGroup.Size = new System.Drawing.Size(122, 111);
+            this.AstrologianHealingGroup.TabIndex = 15;
+            this.AstrologianHealingGroup.TabStop = false;
+            this.AstrologianHealingGroup.Text = "Heal";
+            // 
+            // AstrologianEssentialDignity
+            // 
+            this.AstrologianEssentialDignity.AutoSize = true;
+            this.AstrologianEssentialDignity.ForeColor = System.Drawing.Color.White;
+            this.AstrologianEssentialDignity.Location = new System.Drawing.Point(6, 88);
+            this.AstrologianEssentialDignity.Name = "AstrologianEssentialDignity";
+            this.AstrologianEssentialDignity.Size = new System.Drawing.Size(103, 17);
+            this.AstrologianEssentialDignity.TabIndex = 10;
+            this.AstrologianEssentialDignity.Text = "Essential Dignity";
+            this.AstrologianEssentialDignity.UseVisualStyleBackColor = true;
+            this.AstrologianEssentialDignity.CheckedChanged += new System.EventHandler(this.AstrologianEssentialDignity_CheckedChanged);
+            // 
+            // AstrologianAspectedBenefic
+            // 
+            this.AstrologianAspectedBenefic.AutoSize = true;
+            this.AstrologianAspectedBenefic.ForeColor = System.Drawing.Color.White;
+            this.AstrologianAspectedBenefic.Location = new System.Drawing.Point(6, 65);
+            this.AstrologianAspectedBenefic.Name = "AstrologianAspectedBenefic";
+            this.AstrologianAspectedBenefic.Size = new System.Drawing.Size(110, 17);
+            this.AstrologianAspectedBenefic.TabIndex = 9;
+            this.AstrologianAspectedBenefic.Text = "Aspected Benefic";
+            this.AstrologianAspectedBenefic.UseVisualStyleBackColor = true;
+            this.AstrologianAspectedBenefic.CheckedChanged += new System.EventHandler(this.AstrologianAspectedBenefic_CheckedChanged);
+            // 
+            // AstrologianBeneficII
+            // 
+            this.AstrologianBeneficII.AutoSize = true;
+            this.AstrologianBeneficII.ForeColor = System.Drawing.Color.White;
+            this.AstrologianBeneficII.Location = new System.Drawing.Point(6, 42);
+            this.AstrologianBeneficII.Name = "AstrologianBeneficII";
+            this.AstrologianBeneficII.Size = new System.Drawing.Size(71, 17);
+            this.AstrologianBeneficII.TabIndex = 8;
+            this.AstrologianBeneficII.Text = "Benefic II";
+            this.AstrologianBeneficII.UseVisualStyleBackColor = true;
+            this.AstrologianBeneficII.CheckedChanged += new System.EventHandler(this.AstrologianBeneficII_CheckedChanged);
+            // 
+            // AstrologianBenefic
+            // 
+            this.AstrologianBenefic.AutoSize = true;
+            this.AstrologianBenefic.ForeColor = System.Drawing.Color.White;
+            this.AstrologianBenefic.Location = new System.Drawing.Point(6, 19);
+            this.AstrologianBenefic.Name = "AstrologianBenefic";
+            this.AstrologianBenefic.Size = new System.Drawing.Size(62, 17);
+            this.AstrologianBenefic.TabIndex = 7;
+            this.AstrologianBenefic.Text = "Benefic";
+            this.AstrologianBenefic.UseVisualStyleBackColor = true;
+            this.AstrologianBenefic.CheckedChanged += new System.EventHandler(this.AstrologianBenefic_CheckedChanged);
+            // 
+            // AstrologianCrossGroup
+            // 
+            this.AstrologianCrossGroup.Controls.Add(this.AstrologianThaumaturgeGroup);
+            this.AstrologianCrossGroup.Controls.Add(this.AstrologianConjurerGroup);
+            this.AstrologianCrossGroup.ForeColor = System.Drawing.Color.White;
+            this.AstrologianCrossGroup.Location = new System.Drawing.Point(34, 3);
+            this.AstrologianCrossGroup.Name = "AstrologianCrossGroup";
+            this.AstrologianCrossGroup.Size = new System.Drawing.Size(202, 182);
+            this.AstrologianCrossGroup.TabIndex = 10;
+            this.AstrologianCrossGroup.TabStop = false;
+            this.AstrologianCrossGroup.Text = "Cross-Class  ";
+            // 
+            // AstrologianThaumaturgeGroup
+            // 
+            this.AstrologianThaumaturgeGroup.Controls.Add(this.AstrologianSurecast);
+            this.AstrologianThaumaturgeGroup.Controls.Add(this.AstrologianSwiftcast);
+            this.AstrologianThaumaturgeGroup.Controls.Add(this.AstrologianBlizzardII);
+            this.AstrologianThaumaturgeGroup.ForeColor = System.Drawing.Color.White;
+            this.AstrologianThaumaturgeGroup.Location = new System.Drawing.Point(113, 19);
+            this.AstrologianThaumaturgeGroup.Name = "AstrologianThaumaturgeGroup";
+            this.AstrologianThaumaturgeGroup.Size = new System.Drawing.Size(83, 88);
+            this.AstrologianThaumaturgeGroup.TabIndex = 29;
+            this.AstrologianThaumaturgeGroup.TabStop = false;
+            this.AstrologianThaumaturgeGroup.Text = "Thaumaturge ";
+            // 
+            // AstrologianSurecast
+            // 
+            this.AstrologianSurecast.AutoSize = true;
+            this.AstrologianSurecast.Enabled = false;
+            this.AstrologianSurecast.ForeColor = System.Drawing.Color.White;
+            this.AstrologianSurecast.Location = new System.Drawing.Point(6, 19);
+            this.AstrologianSurecast.Name = "AstrologianSurecast";
+            this.AstrologianSurecast.Size = new System.Drawing.Size(68, 17);
+            this.AstrologianSurecast.TabIndex = 35;
+            this.AstrologianSurecast.Text = "Surecast";
+            this.AstrologianSurecast.UseVisualStyleBackColor = true;
+            this.AstrologianSurecast.CheckedChanged += new System.EventHandler(this.AstrologianSurecast_CheckedChanged);
+            // 
+            // AstrologianSwiftcast
+            // 
+            this.AstrologianSwiftcast.AutoSize = true;
+            this.AstrologianSwiftcast.ForeColor = System.Drawing.Color.White;
+            this.AstrologianSwiftcast.Location = new System.Drawing.Point(6, 65);
+            this.AstrologianSwiftcast.Name = "AstrologianSwiftcast";
+            this.AstrologianSwiftcast.Size = new System.Drawing.Size(69, 17);
+            this.AstrologianSwiftcast.TabIndex = 36;
+            this.AstrologianSwiftcast.Text = "Swiftcast";
+            this.AstrologianSwiftcast.UseVisualStyleBackColor = true;
+            this.AstrologianSwiftcast.CheckedChanged += new System.EventHandler(this.AstrologianSwiftcast_CheckedChanged);
+            // 
+            // AstrologianBlizzardII
+            // 
+            this.AstrologianBlizzardII.AutoSize = true;
+            this.AstrologianBlizzardII.Enabled = false;
+            this.AstrologianBlizzardII.ForeColor = System.Drawing.Color.White;
+            this.AstrologianBlizzardII.Location = new System.Drawing.Point(6, 42);
+            this.AstrologianBlizzardII.Name = "AstrologianBlizzardII";
+            this.AstrologianBlizzardII.Size = new System.Drawing.Size(71, 17);
+            this.AstrologianBlizzardII.TabIndex = 39;
+            this.AstrologianBlizzardII.Text = "Blizzard II";
+            this.AstrologianBlizzardII.UseVisualStyleBackColor = true;
+            this.AstrologianBlizzardII.CheckedChanged += new System.EventHandler(this.AstrologianBlizzardII_CheckedChanged);
+            // 
+            // AstrologianConjurerGroup
+            // 
+            this.AstrologianConjurerGroup.Controls.Add(this.AstrologianClericStance);
+            this.AstrologianConjurerGroup.Controls.Add(this.AstrologianCure);
+            this.AstrologianConjurerGroup.Controls.Add(this.AstrologianAero);
+            this.AstrologianConjurerGroup.Controls.Add(this.AstrologianProtect);
+            this.AstrologianConjurerGroup.Controls.Add(this.AstrologianRaise);
+            this.AstrologianConjurerGroup.Controls.Add(this.AstrologianStoneskin);
+            this.AstrologianConjurerGroup.ForeColor = System.Drawing.Color.White;
+            this.AstrologianConjurerGroup.Location = new System.Drawing.Point(6, 19);
+            this.AstrologianConjurerGroup.Name = "AstrologianConjurerGroup";
+            this.AstrologianConjurerGroup.Size = new System.Drawing.Size(101, 157);
+            this.AstrologianConjurerGroup.TabIndex = 23;
+            this.AstrologianConjurerGroup.TabStop = false;
+            this.AstrologianConjurerGroup.Text = "Conjurer ";
+            // 
+            // AstrologianClericStance
+            // 
+            this.AstrologianClericStance.AutoSize = true;
+            this.AstrologianClericStance.ForeColor = System.Drawing.Color.White;
+            this.AstrologianClericStance.Location = new System.Drawing.Point(6, 65);
+            this.AstrologianClericStance.Name = "AstrologianClericStance";
+            this.AstrologianClericStance.Size = new System.Drawing.Size(89, 17);
+            this.AstrologianClericStance.TabIndex = 15;
+            this.AstrologianClericStance.Text = "Cleric Stance";
+            this.AstrologianClericStance.UseVisualStyleBackColor = true;
+            this.AstrologianClericStance.CheckedChanged += new System.EventHandler(this.AstrologianClericStance_CheckedChanged);
+            // 
+            // AstrologianCure
+            // 
+            this.AstrologianCure.AutoSize = true;
+            this.AstrologianCure.Enabled = false;
+            this.AstrologianCure.ForeColor = System.Drawing.Color.White;
+            this.AstrologianCure.Location = new System.Drawing.Point(6, 19);
+            this.AstrologianCure.Name = "AstrologianCure";
+            this.AstrologianCure.Size = new System.Drawing.Size(48, 17);
+            this.AstrologianCure.TabIndex = 10;
+            this.AstrologianCure.Text = "Cure";
+            this.AstrologianCure.UseVisualStyleBackColor = true;
+            this.AstrologianCure.CheckedChanged += new System.EventHandler(this.AstrologianCure_CheckedChanged);
+            // 
+            // AstrologianAero
+            // 
+            this.AstrologianAero.AutoSize = true;
+            this.AstrologianAero.ForeColor = System.Drawing.Color.White;
+            this.AstrologianAero.Location = new System.Drawing.Point(6, 42);
+            this.AstrologianAero.Name = "AstrologianAero";
+            this.AstrologianAero.Size = new System.Drawing.Size(48, 17);
+            this.AstrologianAero.TabIndex = 11;
+            this.AstrologianAero.Text = "Aero";
+            this.AstrologianAero.UseVisualStyleBackColor = true;
+            this.AstrologianAero.CheckedChanged += new System.EventHandler(this.AstrologianAero_CheckedChanged);
+            // 
+            // AstrologianProtect
+            // 
+            this.AstrologianProtect.AutoSize = true;
+            this.AstrologianProtect.ForeColor = System.Drawing.Color.White;
+            this.AstrologianProtect.Location = new System.Drawing.Point(6, 88);
+            this.AstrologianProtect.Name = "AstrologianProtect";
+            this.AstrologianProtect.Size = new System.Drawing.Size(60, 17);
+            this.AstrologianProtect.TabIndex = 12;
+            this.AstrologianProtect.Text = "Protect";
+            this.AstrologianProtect.UseVisualStyleBackColor = true;
+            this.AstrologianProtect.CheckedChanged += new System.EventHandler(this.AstrologianProtect_CheckedChanged);
+            // 
+            // AstrologianRaise
+            // 
+            this.AstrologianRaise.AutoSize = true;
+            this.AstrologianRaise.Enabled = false;
+            this.AstrologianRaise.ForeColor = System.Drawing.Color.White;
+            this.AstrologianRaise.Location = new System.Drawing.Point(6, 111);
+            this.AstrologianRaise.Name = "AstrologianRaise";
+            this.AstrologianRaise.Size = new System.Drawing.Size(53, 17);
+            this.AstrologianRaise.TabIndex = 13;
+            this.AstrologianRaise.Text = "Raise";
+            this.AstrologianRaise.UseVisualStyleBackColor = true;
+            this.AstrologianRaise.CheckedChanged += new System.EventHandler(this.AstrologianRaise_CheckedChanged);
+            // 
+            // AstrologianStoneskin
+            // 
+            this.AstrologianStoneskin.AutoSize = true;
+            this.AstrologianStoneskin.ForeColor = System.Drawing.Color.White;
+            this.AstrologianStoneskin.Location = new System.Drawing.Point(6, 134);
+            this.AstrologianStoneskin.Name = "AstrologianStoneskin";
+            this.AstrologianStoneskin.Size = new System.Drawing.Size(73, 17);
+            this.AstrologianStoneskin.TabIndex = 14;
+            this.AstrologianStoneskin.Text = "Stoneskin";
+            this.AstrologianStoneskin.UseVisualStyleBackColor = true;
+            this.AstrologianStoneskin.CheckedChanged += new System.EventHandler(this.AstrologianStoneskin_CheckedChanged);
+            // 
+            // DarkKnightSettings
+            // 
+            this.DarkKnightSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DarkKnightSettings.Controls.Add(this.DarkKnightCooldownGroup);
+            this.DarkKnightSettings.Controls.Add(this.DarkKnightBuffGroup);
+            this.DarkKnightSettings.Controls.Add(this.DarkKnightDebuffGroup);
+            this.DarkKnightSettings.Controls.Add(this.DarkKnightInterruptGroup);
+            this.DarkKnightSettings.Controls.Add(this.DarkKnightMovementGroup);
+            this.DarkKnightSettings.Controls.Add(this.DarkKnightCrossGroup);
+            this.DarkKnightSettings.Location = new System.Drawing.Point(114, 4);
+            this.DarkKnightSettings.Margin = new System.Windows.Forms.Padding(0);
+            this.DarkKnightSettings.Name = "DarkKnightSettings";
+            this.DarkKnightSettings.Size = new System.Drawing.Size(567, 402);
+            this.DarkKnightSettings.TabIndex = 1;
+            this.DarkKnightSettings.Text = "Dark Knight";
+            // 
+            // DarkKnightCooldownGroup
+            // 
+            this.DarkKnightCooldownGroup.Controls.Add(this.DarkKnightSaltedEarth);
+            this.DarkKnightCooldownGroup.ForeColor = System.Drawing.Color.White;
+            this.DarkKnightCooldownGroup.Location = new System.Drawing.Point(34, 287);
+            this.DarkKnightCooldownGroup.Name = "DarkKnightCooldownGroup";
+            this.DarkKnightCooldownGroup.Size = new System.Drawing.Size(96, 42);
+            this.DarkKnightCooldownGroup.TabIndex = 49;
+            this.DarkKnightCooldownGroup.TabStop = false;
+            this.DarkKnightCooldownGroup.Text = "Cooldown ";
+            // 
+            // DarkKnightSaltedEarth
+            // 
+            this.DarkKnightSaltedEarth.AutoSize = true;
+            this.DarkKnightSaltedEarth.ForeColor = System.Drawing.Color.White;
+            this.DarkKnightSaltedEarth.Location = new System.Drawing.Point(6, 19);
+            this.DarkKnightSaltedEarth.Name = "DarkKnightSaltedEarth";
+            this.DarkKnightSaltedEarth.Size = new System.Drawing.Size(84, 17);
+            this.DarkKnightSaltedEarth.TabIndex = 7;
+            this.DarkKnightSaltedEarth.Text = "Salted Earth";
+            this.DarkKnightSaltedEarth.UseVisualStyleBackColor = true;
+            this.DarkKnightSaltedEarth.CheckedChanged += new System.EventHandler(this.DarkKnightSaltedEarth_CheckedChanged);
+            // 
+            // DarkKnightBuffGroup
+            // 
+            this.DarkKnightBuffGroup.Controls.Add(this.DarkKnightDarkArts);
+            this.DarkKnightBuffGroup.Controls.Add(this.DarkKnightBloodWeapon);
+            this.DarkKnightBuffGroup.ForeColor = System.Drawing.Color.White;
+            this.DarkKnightBuffGroup.Location = new System.Drawing.Point(34, 168);
+            this.DarkKnightBuffGroup.Name = "DarkKnightBuffGroup";
+            this.DarkKnightBuffGroup.Size = new System.Drawing.Size(109, 65);
+            this.DarkKnightBuffGroup.TabIndex = 49;
+            this.DarkKnightBuffGroup.TabStop = false;
+            this.DarkKnightBuffGroup.Text = "Buff";
+            // 
+            // DarkKnightDarkArts
+            // 
+            this.DarkKnightDarkArts.AutoSize = true;
+            this.DarkKnightDarkArts.ForeColor = System.Drawing.Color.White;
+            this.DarkKnightDarkArts.Location = new System.Drawing.Point(6, 42);
+            this.DarkKnightDarkArts.Name = "DarkKnightDarkArts";
+            this.DarkKnightDarkArts.Size = new System.Drawing.Size(70, 17);
+            this.DarkKnightDarkArts.TabIndex = 8;
+            this.DarkKnightDarkArts.Text = "Dark Arts";
+            this.DarkKnightDarkArts.UseVisualStyleBackColor = true;
+            this.DarkKnightDarkArts.CheckedChanged += new System.EventHandler(this.DarkKnightDarkArts_CheckedChanged);
+            // 
+            // DarkKnightBloodWeapon
+            // 
+            this.DarkKnightBloodWeapon.AutoSize = true;
+            this.DarkKnightBloodWeapon.ForeColor = System.Drawing.Color.White;
+            this.DarkKnightBloodWeapon.Location = new System.Drawing.Point(6, 19);
+            this.DarkKnightBloodWeapon.Name = "DarkKnightBloodWeapon";
+            this.DarkKnightBloodWeapon.Size = new System.Drawing.Size(97, 17);
+            this.DarkKnightBloodWeapon.TabIndex = 7;
+            this.DarkKnightBloodWeapon.Text = "Blood Weapon";
+            this.DarkKnightBloodWeapon.UseVisualStyleBackColor = true;
+            this.DarkKnightBloodWeapon.CheckedChanged += new System.EventHandler(this.DarkKnightBloodWeapon_CheckedChanged);
+            // 
+            // DarkKnightDebuffGroup
+            // 
+            this.DarkKnightDebuffGroup.Controls.Add(this.DarkKnightDelirium);
+            this.DarkKnightDebuffGroup.Controls.Add(this.DarkKnightReprisal);
+            this.DarkKnightDebuffGroup.ForeColor = System.Drawing.Color.White;
+            this.DarkKnightDebuffGroup.Location = new System.Drawing.Point(149, 168);
+            this.DarkKnightDebuffGroup.Name = "DarkKnightDebuffGroup";
+            this.DarkKnightDebuffGroup.Size = new System.Drawing.Size(76, 65);
+            this.DarkKnightDebuffGroup.TabIndex = 47;
+            this.DarkKnightDebuffGroup.TabStop = false;
+            this.DarkKnightDebuffGroup.Text = "Debuff";
+            // 
+            // DarkKnightDelirium
+            // 
+            this.DarkKnightDelirium.AutoSize = true;
+            this.DarkKnightDelirium.ForeColor = System.Drawing.Color.White;
+            this.DarkKnightDelirium.Location = new System.Drawing.Point(6, 42);
+            this.DarkKnightDelirium.Name = "DarkKnightDelirium";
+            this.DarkKnightDelirium.Size = new System.Drawing.Size(63, 17);
+            this.DarkKnightDelirium.TabIndex = 8;
+            this.DarkKnightDelirium.Text = "Delirium";
+            this.DarkKnightDelirium.UseVisualStyleBackColor = true;
+            this.DarkKnightDelirium.CheckedChanged += new System.EventHandler(this.DarkKnightDelirium_CheckedChanged);
+            // 
+            // DarkKnightReprisal
+            // 
+            this.DarkKnightReprisal.AutoSize = true;
+            this.DarkKnightReprisal.ForeColor = System.Drawing.Color.White;
+            this.DarkKnightReprisal.Location = new System.Drawing.Point(6, 19);
+            this.DarkKnightReprisal.Name = "DarkKnightReprisal";
+            this.DarkKnightReprisal.Size = new System.Drawing.Size(64, 17);
+            this.DarkKnightReprisal.TabIndex = 7;
+            this.DarkKnightReprisal.Text = "Reprisal";
+            this.DarkKnightReprisal.UseVisualStyleBackColor = true;
+            this.DarkKnightReprisal.CheckedChanged += new System.EventHandler(this.DarkKnightReprisal_CheckedChanged);
+            // 
+            // DarkKnightInterruptGroup
+            // 
+            this.DarkKnightInterruptGroup.Controls.Add(this.DarkKnightLowBlow);
+            this.DarkKnightInterruptGroup.ForeColor = System.Drawing.Color.White;
+            this.DarkKnightInterruptGroup.Location = new System.Drawing.Point(123, 239);
+            this.DarkKnightInterruptGroup.Name = "DarkKnightInterruptGroup";
+            this.DarkKnightInterruptGroup.Size = new System.Drawing.Size(84, 42);
+            this.DarkKnightInterruptGroup.TabIndex = 48;
+            this.DarkKnightInterruptGroup.TabStop = false;
+            this.DarkKnightInterruptGroup.Text = "Interrupt";
+            // 
+            // DarkKnightLowBlow
+            // 
+            this.DarkKnightLowBlow.AutoSize = true;
+            this.DarkKnightLowBlow.ForeColor = System.Drawing.Color.White;
+            this.DarkKnightLowBlow.Location = new System.Drawing.Point(6, 19);
+            this.DarkKnightLowBlow.Name = "DarkKnightLowBlow";
+            this.DarkKnightLowBlow.Size = new System.Drawing.Size(72, 17);
+            this.DarkKnightLowBlow.TabIndex = 7;
+            this.DarkKnightLowBlow.Text = "Low Blow";
+            this.DarkKnightLowBlow.UseVisualStyleBackColor = true;
+            this.DarkKnightLowBlow.CheckedChanged += new System.EventHandler(this.DarkKnightLowBlow_CheckedChanged);
+            // 
+            // DarkKnightMovementGroup
+            // 
+            this.DarkKnightMovementGroup.Controls.Add(this.DarkKnightPlunge);
+            this.DarkKnightMovementGroup.ForeColor = System.Drawing.Color.White;
+            this.DarkKnightMovementGroup.Location = new System.Drawing.Point(34, 239);
+            this.DarkKnightMovementGroup.Name = "DarkKnightMovementGroup";
+            this.DarkKnightMovementGroup.Size = new System.Drawing.Size(83, 42);
+            this.DarkKnightMovementGroup.TabIndex = 46;
+            this.DarkKnightMovementGroup.TabStop = false;
+            this.DarkKnightMovementGroup.Text = "Movement";
+            // 
+            // DarkKnightPlunge
+            // 
+            this.DarkKnightPlunge.AutoSize = true;
+            this.DarkKnightPlunge.ForeColor = System.Drawing.Color.White;
+            this.DarkKnightPlunge.Location = new System.Drawing.Point(6, 19);
+            this.DarkKnightPlunge.Name = "DarkKnightPlunge";
+            this.DarkKnightPlunge.Size = new System.Drawing.Size(59, 17);
+            this.DarkKnightPlunge.TabIndex = 7;
+            this.DarkKnightPlunge.Text = "Plunge";
+            this.DarkKnightPlunge.UseVisualStyleBackColor = true;
+            this.DarkKnightPlunge.CheckedChanged += new System.EventHandler(this.DarkKnightPlunge_CheckedChanged);
+            // 
+            // DarkKnightCrossGroup
+            // 
+            this.DarkKnightCrossGroup.Controls.Add(this.DarkKnightMarauderGroup);
+            this.DarkKnightCrossGroup.Controls.Add(this.DarkKnightGladiatorGroup);
+            this.DarkKnightCrossGroup.ForeColor = System.Drawing.Color.White;
+            this.DarkKnightCrossGroup.Location = new System.Drawing.Point(34, 3);
+            this.DarkKnightCrossGroup.Name = "DarkKnightCrossGroup";
+            this.DarkKnightCrossGroup.Size = new System.Drawing.Size(227, 159);
+            this.DarkKnightCrossGroup.TabIndex = 11;
+            this.DarkKnightCrossGroup.TabStop = false;
+            this.DarkKnightCrossGroup.Text = "Cross-Class  ";
+            // 
+            // DarkKnightMarauderGroup
+            // 
+            this.DarkKnightMarauderGroup.Controls.Add(this.DarkKnightFracture);
+            this.DarkKnightMarauderGroup.Controls.Add(this.DarkKnightSkullSunder);
+            this.DarkKnightMarauderGroup.Controls.Add(this.DarkKnightBloodbath);
+            this.DarkKnightMarauderGroup.Controls.Add(this.DarkKnightForesight);
+            this.DarkKnightMarauderGroup.Controls.Add(this.DarkKnightMercyStroke);
+            this.DarkKnightMarauderGroup.ForeColor = System.Drawing.Color.White;
+            this.DarkKnightMarauderGroup.Location = new System.Drawing.Point(120, 19);
+            this.DarkKnightMarauderGroup.Name = "DarkKnightMarauderGroup";
+            this.DarkKnightMarauderGroup.Size = new System.Drawing.Size(101, 134);
+            this.DarkKnightMarauderGroup.TabIndex = 44;
+            this.DarkKnightMarauderGroup.TabStop = false;
+            this.DarkKnightMarauderGroup.Text = "Marauder ";
+            // 
+            // DarkKnightFracture
+            // 
+            this.DarkKnightFracture.AutoSize = true;
+            this.DarkKnightFracture.Enabled = false;
+            this.DarkKnightFracture.ForeColor = System.Drawing.Color.White;
+            this.DarkKnightFracture.Location = new System.Drawing.Point(6, 65);
+            this.DarkKnightFracture.Name = "DarkKnightFracture";
+            this.DarkKnightFracture.Size = new System.Drawing.Size(65, 17);
+            this.DarkKnightFracture.TabIndex = 30;
+            this.DarkKnightFracture.Text = "Fracture";
+            this.DarkKnightFracture.UseVisualStyleBackColor = true;
+            this.DarkKnightFracture.CheckedChanged += new System.EventHandler(this.DarkKnightFracture_CheckedChanged);
+            // 
+            // DarkKnightSkullSunder
+            // 
+            this.DarkKnightSkullSunder.AutoSize = true;
+            this.DarkKnightSkullSunder.Enabled = false;
+            this.DarkKnightSkullSunder.ForeColor = System.Drawing.Color.White;
+            this.DarkKnightSkullSunder.Location = new System.Drawing.Point(6, 42);
+            this.DarkKnightSkullSunder.Name = "DarkKnightSkullSunder";
+            this.DarkKnightSkullSunder.Size = new System.Drawing.Size(86, 17);
+            this.DarkKnightSkullSunder.TabIndex = 29;
+            this.DarkKnightSkullSunder.Text = "Skull Sunder";
+            this.DarkKnightSkullSunder.UseVisualStyleBackColor = true;
+            this.DarkKnightSkullSunder.CheckedChanged += new System.EventHandler(this.DarkKnightSkullSunder_CheckedChanged);
+            // 
+            // DarkKnightBloodbath
+            // 
+            this.DarkKnightBloodbath.AutoSize = true;
+            this.DarkKnightBloodbath.Enabled = false;
+            this.DarkKnightBloodbath.ForeColor = System.Drawing.Color.White;
+            this.DarkKnightBloodbath.Location = new System.Drawing.Point(6, 88);
+            this.DarkKnightBloodbath.Name = "DarkKnightBloodbath";
+            this.DarkKnightBloodbath.Size = new System.Drawing.Size(74, 17);
+            this.DarkKnightBloodbath.TabIndex = 27;
+            this.DarkKnightBloodbath.Text = "Bloodbath";
+            this.DarkKnightBloodbath.UseVisualStyleBackColor = true;
+            this.DarkKnightBloodbath.CheckedChanged += new System.EventHandler(this.DarkKnightBloodbath_CheckedChanged);
+            // 
+            // DarkKnightForesight
+            // 
+            this.DarkKnightForesight.AutoSize = true;
+            this.DarkKnightForesight.Enabled = false;
+            this.DarkKnightForesight.ForeColor = System.Drawing.Color.White;
+            this.DarkKnightForesight.Location = new System.Drawing.Point(6, 19);
+            this.DarkKnightForesight.Name = "DarkKnightForesight";
+            this.DarkKnightForesight.Size = new System.Drawing.Size(69, 17);
+            this.DarkKnightForesight.TabIndex = 26;
+            this.DarkKnightForesight.Text = "Foresight";
+            this.DarkKnightForesight.UseVisualStyleBackColor = true;
+            this.DarkKnightForesight.CheckedChanged += new System.EventHandler(this.DarkKnightForesight_CheckedChanged);
+            // 
+            // DarkKnightMercyStroke
+            // 
+            this.DarkKnightMercyStroke.AutoSize = true;
+            this.DarkKnightMercyStroke.ForeColor = System.Drawing.Color.White;
+            this.DarkKnightMercyStroke.Location = new System.Drawing.Point(6, 111);
+            this.DarkKnightMercyStroke.Name = "DarkKnightMercyStroke";
+            this.DarkKnightMercyStroke.Size = new System.Drawing.Size(89, 17);
+            this.DarkKnightMercyStroke.TabIndex = 28;
+            this.DarkKnightMercyStroke.Text = "Mercy Stroke";
+            this.DarkKnightMercyStroke.UseVisualStyleBackColor = true;
+            this.DarkKnightMercyStroke.CheckedChanged += new System.EventHandler(this.DarkKnightMercyStroke_CheckedChanged);
+            // 
+            // DarkKnightGladiatorGroup
+            // 
+            this.DarkKnightGladiatorGroup.Controls.Add(this.DarkKnightFlash);
+            this.DarkKnightGladiatorGroup.Controls.Add(this.DarkKnightConvalescence);
+            this.DarkKnightGladiatorGroup.Controls.Add(this.DarkKnightSavageBlade);
+            this.DarkKnightGladiatorGroup.Controls.Add(this.DarkKnightAwareness);
+            this.DarkKnightGladiatorGroup.Controls.Add(this.DarkKnightProvoke);
+            this.DarkKnightGladiatorGroup.ForeColor = System.Drawing.Color.White;
+            this.DarkKnightGladiatorGroup.Location = new System.Drawing.Point(6, 19);
+            this.DarkKnightGladiatorGroup.Name = "DarkKnightGladiatorGroup";
+            this.DarkKnightGladiatorGroup.Size = new System.Drawing.Size(108, 134);
+            this.DarkKnightGladiatorGroup.TabIndex = 43;
+            this.DarkKnightGladiatorGroup.TabStop = false;
+            this.DarkKnightGladiatorGroup.Text = "Gladiator ";
+            // 
+            // DarkKnightFlash
+            // 
+            this.DarkKnightFlash.AutoSize = true;
+            this.DarkKnightFlash.Enabled = false;
+            this.DarkKnightFlash.ForeColor = System.Drawing.Color.White;
+            this.DarkKnightFlash.Location = new System.Drawing.Point(6, 42);
+            this.DarkKnightFlash.Name = "DarkKnightFlash";
+            this.DarkKnightFlash.Size = new System.Drawing.Size(51, 17);
+            this.DarkKnightFlash.TabIndex = 15;
+            this.DarkKnightFlash.Text = "Flash";
+            this.DarkKnightFlash.UseVisualStyleBackColor = true;
+            this.DarkKnightFlash.CheckedChanged += new System.EventHandler(this.DarkKnightFlash_CheckedChanged);
+            // 
+            // DarkKnightConvalescence
+            // 
+            this.DarkKnightConvalescence.AutoSize = true;
+            this.DarkKnightConvalescence.Enabled = false;
+            this.DarkKnightConvalescence.ForeColor = System.Drawing.Color.White;
+            this.DarkKnightConvalescence.Location = new System.Drawing.Point(6, 65);
+            this.DarkKnightConvalescence.Name = "DarkKnightConvalescence";
+            this.DarkKnightConvalescence.Size = new System.Drawing.Size(100, 17);
+            this.DarkKnightConvalescence.TabIndex = 16;
+            this.DarkKnightConvalescence.Text = "Convalescence";
+            this.DarkKnightConvalescence.UseVisualStyleBackColor = true;
+            this.DarkKnightConvalescence.CheckedChanged += new System.EventHandler(this.DarkKnightConvalescence_CheckedChanged);
+            // 
+            // DarkKnightSavageBlade
+            // 
+            this.DarkKnightSavageBlade.AutoSize = true;
+            this.DarkKnightSavageBlade.Enabled = false;
+            this.DarkKnightSavageBlade.ForeColor = System.Drawing.Color.White;
+            this.DarkKnightSavageBlade.Location = new System.Drawing.Point(6, 19);
+            this.DarkKnightSavageBlade.Name = "DarkKnightSavageBlade";
+            this.DarkKnightSavageBlade.Size = new System.Drawing.Size(93, 17);
+            this.DarkKnightSavageBlade.TabIndex = 30;
+            this.DarkKnightSavageBlade.Text = "Savage Blade";
+            this.DarkKnightSavageBlade.UseVisualStyleBackColor = true;
+            this.DarkKnightSavageBlade.CheckedChanged += new System.EventHandler(this.DarkKnightSavageBlade_CheckedChanged);
+            // 
+            // DarkKnightAwareness
+            // 
+            this.DarkKnightAwareness.AutoSize = true;
+            this.DarkKnightAwareness.Enabled = false;
+            this.DarkKnightAwareness.ForeColor = System.Drawing.Color.White;
+            this.DarkKnightAwareness.Location = new System.Drawing.Point(6, 111);
+            this.DarkKnightAwareness.Name = "DarkKnightAwareness";
+            this.DarkKnightAwareness.Size = new System.Drawing.Size(78, 17);
+            this.DarkKnightAwareness.TabIndex = 18;
+            this.DarkKnightAwareness.Text = "Awareness";
+            this.DarkKnightAwareness.UseVisualStyleBackColor = true;
+            this.DarkKnightAwareness.CheckedChanged += new System.EventHandler(this.DarkKnightAwareness_CheckedChanged);
+            // 
+            // DarkKnightProvoke
+            // 
+            this.DarkKnightProvoke.AutoSize = true;
+            this.DarkKnightProvoke.Enabled = false;
+            this.DarkKnightProvoke.ForeColor = System.Drawing.Color.White;
+            this.DarkKnightProvoke.Location = new System.Drawing.Point(6, 88);
+            this.DarkKnightProvoke.Name = "DarkKnightProvoke";
+            this.DarkKnightProvoke.Size = new System.Drawing.Size(66, 17);
+            this.DarkKnightProvoke.TabIndex = 17;
+            this.DarkKnightProvoke.Text = "Provoke";
+            this.DarkKnightProvoke.UseVisualStyleBackColor = true;
+            this.DarkKnightProvoke.CheckedChanged += new System.EventHandler(this.DarkKnightProvoke_CheckedChanged);
+            // 
+            // MachinistSettings
+            // 
+            this.MachinistSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.MachinistSettings.Controls.Add(this.MachinistKnockbackGroup);
+            this.MachinistSettings.Controls.Add(this.MachinistBuffGroup);
+            this.MachinistSettings.Controls.Add(this.MachinistExecuteGroup);
+            this.MachinistSettings.Controls.Add(this.MachinistInterruptGroup);
+            this.MachinistSettings.Controls.Add(this.groupBoxDesign3);
+            this.MachinistSettings.Controls.Add(this.MachinistCrossGroup);
+            this.MachinistSettings.Location = new System.Drawing.Point(114, 4);
+            this.MachinistSettings.Margin = new System.Windows.Forms.Padding(0);
+            this.MachinistSettings.Name = "MachinistSettings";
+            this.MachinistSettings.Size = new System.Drawing.Size(567, 402);
+            this.MachinistSettings.TabIndex = 2;
+            this.MachinistSettings.Text = "Machinist";
+            // 
+            // MachinistKnockbackGroup
+            // 
+            this.MachinistKnockbackGroup.Controls.Add(this.MachinistBlank);
+            this.MachinistKnockbackGroup.ForeColor = System.Drawing.Color.White;
+            this.MachinistKnockbackGroup.Location = new System.Drawing.Point(40, 252);
+            this.MachinistKnockbackGroup.Name = "MachinistKnockbackGroup";
+            this.MachinistKnockbackGroup.Size = new System.Drawing.Size(72, 42);
+            this.MachinistKnockbackGroup.TabIndex = 46;
+            this.MachinistKnockbackGroup.TabStop = false;
+            this.MachinistKnockbackGroup.Text = "Knockback";
+            // 
+            // MachinistBlank
+            // 
+            this.MachinistBlank.AutoSize = true;
+            this.MachinistBlank.ForeColor = System.Drawing.Color.White;
+            this.MachinistBlank.Location = new System.Drawing.Point(6, 19);
+            this.MachinistBlank.Name = "MachinistBlank";
+            this.MachinistBlank.Size = new System.Drawing.Size(53, 17);
+            this.MachinistBlank.TabIndex = 7;
+            this.MachinistBlank.Text = "Blank";
+            this.MachinistBlank.UseVisualStyleBackColor = true;
+            this.MachinistBlank.CheckedChanged += new System.EventHandler(this.MachinistBlank_CheckedChanged);
+            // 
+            // MachinistBuffGroup
+            // 
+            this.MachinistBuffGroup.Controls.Add(this.MachinistHypercharge);
+            this.MachinistBuffGroup.ForeColor = System.Drawing.Color.White;
+            this.MachinistBuffGroup.Location = new System.Drawing.Point(143, 204);
+            this.MachinistBuffGroup.Name = "MachinistBuffGroup";
+            this.MachinistBuffGroup.Size = new System.Drawing.Size(99, 42);
+            this.MachinistBuffGroup.TabIndex = 46;
+            this.MachinistBuffGroup.TabStop = false;
+            this.MachinistBuffGroup.Text = "Buff";
+            // 
+            // MachinistHypercharge
+            // 
+            this.MachinistHypercharge.AutoSize = true;
+            this.MachinistHypercharge.ForeColor = System.Drawing.Color.White;
+            this.MachinistHypercharge.Location = new System.Drawing.Point(6, 19);
+            this.MachinistHypercharge.Name = "MachinistHypercharge";
+            this.MachinistHypercharge.Size = new System.Drawing.Size(87, 17);
+            this.MachinistHypercharge.TabIndex = 7;
+            this.MachinistHypercharge.Text = "Hypercharge";
+            this.MachinistHypercharge.UseVisualStyleBackColor = true;
+            this.MachinistHypercharge.CheckedChanged += new System.EventHandler(this.MachinistHypercharge_CheckedChanged);
+            // 
+            // MachinistExecuteGroup
+            // 
+            this.MachinistExecuteGroup.Controls.Add(this.MachinistHeartbreak);
+            this.MachinistExecuteGroup.ForeColor = System.Drawing.Color.White;
+            this.MachinistExecuteGroup.Location = new System.Drawing.Point(118, 252);
+            this.MachinistExecuteGroup.Name = "MachinistExecuteGroup";
+            this.MachinistExecuteGroup.Size = new System.Drawing.Size(91, 42);
+            this.MachinistExecuteGroup.TabIndex = 19;
+            this.MachinistExecuteGroup.TabStop = false;
+            this.MachinistExecuteGroup.Text = "Execute";
+            // 
+            // MachinistHeartbreak
+            // 
+            this.MachinistHeartbreak.AutoSize = true;
+            this.MachinistHeartbreak.ForeColor = System.Drawing.Color.White;
+            this.MachinistHeartbreak.Location = new System.Drawing.Point(6, 19);
+            this.MachinistHeartbreak.Name = "MachinistHeartbreak";
+            this.MachinistHeartbreak.Size = new System.Drawing.Size(79, 17);
+            this.MachinistHeartbreak.TabIndex = 7;
+            this.MachinistHeartbreak.Text = "Heartbreak";
+            this.MachinistHeartbreak.UseVisualStyleBackColor = true;
+            this.MachinistHeartbreak.CheckedChanged += new System.EventHandler(this.MachinistHeartbreak_CheckedChanged);
+            // 
+            // MachinistInterruptGroup
+            // 
+            this.MachinistInterruptGroup.Controls.Add(this.MachinistHeadGraze);
+            this.MachinistInterruptGroup.ForeColor = System.Drawing.Color.White;
+            this.MachinistInterruptGroup.Location = new System.Drawing.Point(40, 204);
+            this.MachinistInterruptGroup.Name = "MachinistInterruptGroup";
+            this.MachinistInterruptGroup.Size = new System.Drawing.Size(95, 42);
+            this.MachinistInterruptGroup.TabIndex = 18;
+            this.MachinistInterruptGroup.TabStop = false;
+            this.MachinistInterruptGroup.Text = "Interrupt";
+            // 
+            // MachinistHeadGraze
+            // 
+            this.MachinistHeadGraze.AutoSize = true;
+            this.MachinistHeadGraze.ForeColor = System.Drawing.Color.White;
+            this.MachinistHeadGraze.Location = new System.Drawing.Point(6, 19);
+            this.MachinistHeadGraze.Name = "MachinistHeadGraze";
+            this.MachinistHeadGraze.Size = new System.Drawing.Size(83, 17);
+            this.MachinistHeadGraze.TabIndex = 7;
+            this.MachinistHeadGraze.Text = "Head Graze";
+            this.MachinistHeadGraze.UseVisualStyleBackColor = true;
+            this.MachinistHeadGraze.CheckedChanged += new System.EventHandler(this.MachinistHeadGraze_CheckedChanged);
+            // 
+            // groupBoxDesign3
+            // 
+            this.groupBoxDesign3.Controls.Add(this.MachinistSummonTurretCombo);
+            this.groupBoxDesign3.Controls.Add(this.MachinistSummonTurret);
+            this.groupBoxDesign3.ForeColor = System.Drawing.Color.White;
+            this.groupBoxDesign3.Location = new System.Drawing.Point(34, 145);
+            this.groupBoxDesign3.Name = "groupBoxDesign3";
+            this.groupBoxDesign3.Size = new System.Drawing.Size(240, 53);
+            this.groupBoxDesign3.TabIndex = 12;
+            this.groupBoxDesign3.TabStop = false;
+            this.groupBoxDesign3.Text = "Summon ";
+            // 
+            // MachinistSummonTurretCombo
+            // 
+            this.MachinistSummonTurretCombo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.MachinistSummonTurretCombo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MachinistSummonTurretCombo.ForeColor = System.Drawing.Color.White;
+            this.MachinistSummonTurretCombo.FormattingEnabled = true;
+            this.MachinistSummonTurretCombo.Items.AddRange(new object[] {
+            "Rook Autoturret",
+            "Bishop Autoturret"});
+            this.MachinistSummonTurretCombo.Location = new System.Drawing.Point(9, 21);
+            this.MachinistSummonTurretCombo.Name = "MachinistSummonTurretCombo";
+            this.MachinistSummonTurretCombo.Size = new System.Drawing.Size(121, 21);
+            this.MachinistSummonTurretCombo.TabIndex = 6;
+            this.MachinistSummonTurretCombo.SelectedIndexChanged += new System.EventHandler(this.MachinistSummonTurretCombo_SelectedIndexChanged);
+            // 
+            // MachinistSummonTurret
+            // 
+            this.MachinistSummonTurret.AutoSize = true;
+            this.MachinistSummonTurret.ForeColor = System.Drawing.Color.White;
+            this.MachinistSummonTurret.Location = new System.Drawing.Point(136, 23);
+            this.MachinistSummonTurret.Name = "MachinistSummonTurret";
+            this.MachinistSummonTurret.Size = new System.Drawing.Size(98, 17);
+            this.MachinistSummonTurret.TabIndex = 7;
+            this.MachinistSummonTurret.Text = "Summon Turret";
+            this.MachinistSummonTurret.UseVisualStyleBackColor = true;
+            this.MachinistSummonTurret.CheckedChanged += new System.EventHandler(this.MachinistSummonTurret_CheckedChanged);
+            // 
+            // MachinistCrossGroup
+            // 
+            this.MachinistCrossGroup.Controls.Add(this.MachinistLancerGroup);
+            this.MachinistCrossGroup.Controls.Add(this.MachinistArcherGroup);
+            this.MachinistCrossGroup.ForeColor = System.Drawing.Color.White;
+            this.MachinistCrossGroup.Location = new System.Drawing.Point(34, 3);
+            this.MachinistCrossGroup.Name = "MachinistCrossGroup";
+            this.MachinistCrossGroup.Size = new System.Drawing.Size(239, 136);
+            this.MachinistCrossGroup.TabIndex = 11;
+            this.MachinistCrossGroup.TabStop = false;
+            this.MachinistCrossGroup.Text = "Cross-Class  ";
+            // 
+            // MachinistLancerGroup
+            // 
+            this.MachinistLancerGroup.Controls.Add(this.MachinistKeenFlurry);
+            this.MachinistLancerGroup.Controls.Add(this.MachinistInvigorate);
+            this.MachinistLancerGroup.Controls.Add(this.MachinistBloodForBlood);
+            this.MachinistLancerGroup.Controls.Add(this.MachinistFeint);
+            this.MachinistLancerGroup.ForeColor = System.Drawing.Color.White;
+            this.MachinistLancerGroup.Location = new System.Drawing.Point(123, 19);
+            this.MachinistLancerGroup.Name = "MachinistLancerGroup";
+            this.MachinistLancerGroup.Size = new System.Drawing.Size(110, 111);
+            this.MachinistLancerGroup.TabIndex = 44;
+            this.MachinistLancerGroup.TabStop = false;
+            this.MachinistLancerGroup.Text = "Lancer";
+            // 
+            // MachinistKeenFlurry
+            // 
+            this.MachinistKeenFlurry.AutoSize = true;
+            this.MachinistKeenFlurry.Enabled = false;
+            this.MachinistKeenFlurry.ForeColor = System.Drawing.Color.White;
+            this.MachinistKeenFlurry.Location = new System.Drawing.Point(6, 42);
+            this.MachinistKeenFlurry.Name = "MachinistKeenFlurry";
+            this.MachinistKeenFlurry.Size = new System.Drawing.Size(79, 17);
+            this.MachinistKeenFlurry.TabIndex = 19;
+            this.MachinistKeenFlurry.Text = "Keen Flurry";
+            this.MachinistKeenFlurry.UseVisualStyleBackColor = true;
+            this.MachinistKeenFlurry.CheckedChanged += new System.EventHandler(this.MachinistKeenFlurry_CheckedChanged);
+            // 
+            // MachinistInvigorate
+            // 
+            this.MachinistInvigorate.AutoSize = true;
+            this.MachinistInvigorate.ForeColor = System.Drawing.Color.White;
+            this.MachinistInvigorate.Location = new System.Drawing.Point(6, 65);
+            this.MachinistInvigorate.Name = "MachinistInvigorate";
+            this.MachinistInvigorate.Size = new System.Drawing.Size(73, 17);
+            this.MachinistInvigorate.TabIndex = 20;
+            this.MachinistInvigorate.Text = "Invigorate";
+            this.MachinistInvigorate.UseVisualStyleBackColor = true;
+            this.MachinistInvigorate.CheckedChanged += new System.EventHandler(this.MachinistInvigorate_CheckedChanged);
+            // 
+            // MachinistBloodForBlood
+            // 
+            this.MachinistBloodForBlood.AutoSize = true;
+            this.MachinistBloodForBlood.ForeColor = System.Drawing.Color.White;
+            this.MachinistBloodForBlood.Location = new System.Drawing.Point(6, 88);
+            this.MachinistBloodForBlood.Name = "MachinistBloodForBlood";
+            this.MachinistBloodForBlood.Size = new System.Drawing.Size(98, 17);
+            this.MachinistBloodForBlood.TabIndex = 21;
+            this.MachinistBloodForBlood.Text = "Blood for Blood";
+            this.MachinistBloodForBlood.UseVisualStyleBackColor = true;
+            this.MachinistBloodForBlood.CheckedChanged += new System.EventHandler(this.MachinistBloodForBlood_CheckedChanged);
+            // 
+            // MachinistFeint
+            // 
+            this.MachinistFeint.AutoSize = true;
+            this.MachinistFeint.Enabled = false;
+            this.MachinistFeint.ForeColor = System.Drawing.Color.White;
+            this.MachinistFeint.Location = new System.Drawing.Point(6, 19);
+            this.MachinistFeint.Name = "MachinistFeint";
+            this.MachinistFeint.Size = new System.Drawing.Size(49, 17);
+            this.MachinistFeint.TabIndex = 30;
+            this.MachinistFeint.Text = "Feint";
+            this.MachinistFeint.UseVisualStyleBackColor = true;
+            this.MachinistFeint.CheckedChanged += new System.EventHandler(this.MachinistFeint_CheckedChanged);
+            // 
+            // MachinistArcherGroup
+            // 
+            this.MachinistArcherGroup.Controls.Add(this.MachinistRagingStrikes);
+            this.MachinistArcherGroup.Controls.Add(this.MachinistHawksEye);
+            this.MachinistArcherGroup.Controls.Add(this.MachinistQuellingStrikes);
+            this.MachinistArcherGroup.ForeColor = System.Drawing.Color.White;
+            this.MachinistArcherGroup.Location = new System.Drawing.Point(6, 19);
+            this.MachinistArcherGroup.Name = "MachinistArcherGroup";
+            this.MachinistArcherGroup.Size = new System.Drawing.Size(111, 88);
+            this.MachinistArcherGroup.TabIndex = 23;
+            this.MachinistArcherGroup.TabStop = false;
+            this.MachinistArcherGroup.Text = "Archer";
+            // 
+            // MachinistRagingStrikes
+            // 
+            this.MachinistRagingStrikes.AutoSize = true;
+            this.MachinistRagingStrikes.ForeColor = System.Drawing.Color.White;
+            this.MachinistRagingStrikes.Location = new System.Drawing.Point(6, 19);
+            this.MachinistRagingStrikes.Name = "MachinistRagingStrikes";
+            this.MachinistRagingStrikes.Size = new System.Drawing.Size(95, 17);
+            this.MachinistRagingStrikes.TabIndex = 7;
+            this.MachinistRagingStrikes.Text = "Raging Strikes";
+            this.MachinistRagingStrikes.UseVisualStyleBackColor = true;
+            this.MachinistRagingStrikes.CheckedChanged += new System.EventHandler(this.MachinistRagingStrikes_CheckedChanged);
+            // 
+            // MachinistHawksEye
+            // 
+            this.MachinistHawksEye.AutoSize = true;
+            this.MachinistHawksEye.Enabled = false;
+            this.MachinistHawksEye.ForeColor = System.Drawing.Color.White;
+            this.MachinistHawksEye.Location = new System.Drawing.Point(6, 42);
+            this.MachinistHawksEye.Name = "MachinistHawksEye";
+            this.MachinistHawksEye.Size = new System.Drawing.Size(82, 17);
+            this.MachinistHawksEye.TabIndex = 8;
+            this.MachinistHawksEye.Text = "Hawk\'s Eye";
+            this.MachinistHawksEye.UseVisualStyleBackColor = true;
+            this.MachinistHawksEye.CheckedChanged += new System.EventHandler(this.MachinistHawksEye_CheckedChanged);
+            // 
+            // MachinistQuellingStrikes
+            // 
+            this.MachinistQuellingStrikes.AutoSize = true;
+            this.MachinistQuellingStrikes.Enabled = false;
+            this.MachinistQuellingStrikes.ForeColor = System.Drawing.Color.White;
+            this.MachinistQuellingStrikes.Location = new System.Drawing.Point(6, 65);
+            this.MachinistQuellingStrikes.Name = "MachinistQuellingStrikes";
+            this.MachinistQuellingStrikes.Size = new System.Drawing.Size(99, 17);
+            this.MachinistQuellingStrikes.TabIndex = 9;
+            this.MachinistQuellingStrikes.Text = "Quelling Strikes";
+            this.MachinistQuellingStrikes.UseVisualStyleBackColor = true;
+            this.MachinistQuellingStrikes.CheckedChanged += new System.EventHandler(this.MachinistQuellingStrikes_CheckedChanged);
+            // 
             // UltimaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -9072,6 +10048,50 @@
             this.BlackMageArcanistGroup.PerformLayout();
             this.BlackMageArcherGroup.ResumeLayout(false);
             this.BlackMageArcherGroup.PerformLayout();
+            this.ExtraJobTab.ResumeLayout(false);
+            this.ExtraJobsSubTab.ResumeLayout(false);
+            this.AstrologianSettings.ResumeLayout(false);
+            this.groupBoxDesign2.ResumeLayout(false);
+            this.groupBoxDesign2.PerformLayout();
+            this.AstrologianHealingGroup.ResumeLayout(false);
+            this.AstrologianHealingGroup.PerformLayout();
+            this.AstrologianCrossGroup.ResumeLayout(false);
+            this.AstrologianThaumaturgeGroup.ResumeLayout(false);
+            this.AstrologianThaumaturgeGroup.PerformLayout();
+            this.AstrologianConjurerGroup.ResumeLayout(false);
+            this.AstrologianConjurerGroup.PerformLayout();
+            this.DarkKnightSettings.ResumeLayout(false);
+            this.DarkKnightCooldownGroup.ResumeLayout(false);
+            this.DarkKnightCooldownGroup.PerformLayout();
+            this.DarkKnightBuffGroup.ResumeLayout(false);
+            this.DarkKnightBuffGroup.PerformLayout();
+            this.DarkKnightDebuffGroup.ResumeLayout(false);
+            this.DarkKnightDebuffGroup.PerformLayout();
+            this.DarkKnightInterruptGroup.ResumeLayout(false);
+            this.DarkKnightInterruptGroup.PerformLayout();
+            this.DarkKnightMovementGroup.ResumeLayout(false);
+            this.DarkKnightMovementGroup.PerformLayout();
+            this.DarkKnightCrossGroup.ResumeLayout(false);
+            this.DarkKnightMarauderGroup.ResumeLayout(false);
+            this.DarkKnightMarauderGroup.PerformLayout();
+            this.DarkKnightGladiatorGroup.ResumeLayout(false);
+            this.DarkKnightGladiatorGroup.PerformLayout();
+            this.MachinistSettings.ResumeLayout(false);
+            this.MachinistKnockbackGroup.ResumeLayout(false);
+            this.MachinistKnockbackGroup.PerformLayout();
+            this.MachinistBuffGroup.ResumeLayout(false);
+            this.MachinistBuffGroup.PerformLayout();
+            this.MachinistExecuteGroup.ResumeLayout(false);
+            this.MachinistExecuteGroup.PerformLayout();
+            this.MachinistInterruptGroup.ResumeLayout(false);
+            this.MachinistInterruptGroup.PerformLayout();
+            this.groupBoxDesign3.ResumeLayout(false);
+            this.groupBoxDesign3.PerformLayout();
+            this.MachinistCrossGroup.ResumeLayout(false);
+            this.MachinistLancerGroup.ResumeLayout(false);
+            this.MachinistLancerGroup.PerformLayout();
+            this.MachinistArcherGroup.ResumeLayout(false);
+            this.MachinistArcherGroup.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -9685,5 +10705,75 @@
         private System.Windows.Forms.CheckBox RogueGoad;
         private Design.GroupBoxDesign NinjaBuffGroup;
         private System.Windows.Forms.CheckBox NinjaGoad;
+        private System.Windows.Forms.TabPage ExtraJobTab;
+        private Design.TabDesign ExtraJobsSubTab;
+        private System.Windows.Forms.TabPage AstrologianSettings;
+        private System.Windows.Forms.TabPage DarkKnightSettings;
+        private Design.GroupBoxDesign DarkKnightCrossGroup;
+        private System.Windows.Forms.TabPage MachinistSettings;
+        private Design.GroupBoxDesign MachinistCrossGroup;
+        private Design.GroupBoxDesign AstrologianCrossGroup;
+        private Design.GroupBoxDesign AstrologianThaumaturgeGroup;
+        private System.Windows.Forms.CheckBox AstrologianSurecast;
+        private System.Windows.Forms.CheckBox AstrologianSwiftcast;
+        private System.Windows.Forms.CheckBox AstrologianBlizzardII;
+        private Design.GroupBoxDesign AstrologianConjurerGroup;
+        private System.Windows.Forms.CheckBox AstrologianClericStance;
+        private System.Windows.Forms.CheckBox AstrologianCure;
+        private System.Windows.Forms.CheckBox AstrologianAero;
+        private System.Windows.Forms.CheckBox AstrologianProtect;
+        private System.Windows.Forms.CheckBox AstrologianRaise;
+        private System.Windows.Forms.CheckBox AstrologianStoneskin;
+        private Design.GroupBoxDesign DarkKnightMarauderGroup;
+        private System.Windows.Forms.CheckBox DarkKnightFracture;
+        private System.Windows.Forms.CheckBox DarkKnightSkullSunder;
+        private System.Windows.Forms.CheckBox DarkKnightBloodbath;
+        private System.Windows.Forms.CheckBox DarkKnightForesight;
+        private System.Windows.Forms.CheckBox DarkKnightMercyStroke;
+        private Design.GroupBoxDesign DarkKnightGladiatorGroup;
+        private System.Windows.Forms.CheckBox DarkKnightFlash;
+        private System.Windows.Forms.CheckBox DarkKnightConvalescence;
+        private System.Windows.Forms.CheckBox DarkKnightSavageBlade;
+        private System.Windows.Forms.CheckBox DarkKnightAwareness;
+        private System.Windows.Forms.CheckBox DarkKnightProvoke;
+        private Design.GroupBoxDesign MachinistLancerGroup;
+        private System.Windows.Forms.CheckBox MachinistKeenFlurry;
+        private System.Windows.Forms.CheckBox MachinistInvigorate;
+        private System.Windows.Forms.CheckBox MachinistBloodForBlood;
+        private System.Windows.Forms.CheckBox MachinistFeint;
+        private Design.GroupBoxDesign MachinistArcherGroup;
+        private System.Windows.Forms.CheckBox MachinistRagingStrikes;
+        private System.Windows.Forms.CheckBox MachinistHawksEye;
+        private System.Windows.Forms.CheckBox MachinistQuellingStrikes;
+        private Design.GroupBoxDesign AstrologianHealingGroup;
+        private System.Windows.Forms.CheckBox AstrologianDraw;
+        private System.Windows.Forms.CheckBox AstrologianEssentialDignity;
+        private System.Windows.Forms.CheckBox AstrologianAspectedBenefic;
+        private System.Windows.Forms.CheckBox AstrologianBeneficII;
+        private System.Windows.Forms.CheckBox AstrologianBenefic;
+        private Design.GroupBoxDesign groupBoxDesign2;
+        private Design.GroupBoxDesign DarkKnightCooldownGroup;
+        private System.Windows.Forms.CheckBox DarkKnightSaltedEarth;
+        private Design.GroupBoxDesign DarkKnightBuffGroup;
+        private System.Windows.Forms.CheckBox DarkKnightDarkArts;
+        private System.Windows.Forms.CheckBox DarkKnightBloodWeapon;
+        private Design.GroupBoxDesign DarkKnightDebuffGroup;
+        private System.Windows.Forms.CheckBox DarkKnightDelirium;
+        private System.Windows.Forms.CheckBox DarkKnightReprisal;
+        private Design.GroupBoxDesign DarkKnightInterruptGroup;
+        private System.Windows.Forms.CheckBox DarkKnightLowBlow;
+        private Design.GroupBoxDesign DarkKnightMovementGroup;
+        private System.Windows.Forms.CheckBox DarkKnightPlunge;
+        private Design.GroupBoxDesign MachinistKnockbackGroup;
+        private System.Windows.Forms.CheckBox MachinistBlank;
+        private Design.GroupBoxDesign MachinistBuffGroup;
+        private System.Windows.Forms.CheckBox MachinistHypercharge;
+        private Design.GroupBoxDesign MachinistExecuteGroup;
+        private System.Windows.Forms.CheckBox MachinistHeartbreak;
+        private Design.GroupBoxDesign MachinistInterruptGroup;
+        private System.Windows.Forms.CheckBox MachinistHeadGraze;
+        private Design.GroupBoxDesign groupBoxDesign3;
+        private System.Windows.Forms.ComboBox MachinistSummonTurretCombo;
+        private System.Windows.Forms.CheckBox MachinistSummonTurret;
     }
 }

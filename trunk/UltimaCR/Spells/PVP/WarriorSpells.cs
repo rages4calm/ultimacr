@@ -73,6 +73,24 @@ namespace UltimaCR.Spells.PVP
                                });
                 }
             }
+            private Spell _enliven;
+            public Spell Enliven
+            {
+                get
+                {
+                    return _enliven ??
+                           (_enliven =
+                               new Spell
+                               {
+                                   Name = "Enliven",
+                                   ID = 1580,
+                                   Level = 0,
+                                   GCDType = GCDType.On,
+                                   SpellType = SpellType.Buff,
+                                   CastType = CastType.Self
+                               });
+                }
+            }
         }
     }
 }

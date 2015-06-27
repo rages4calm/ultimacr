@@ -1,6 +1,6 @@
 ﻿using ff14bot;
-using System.Threading.Tasks;
 using ff14bot.Managers;
+using System.Threading.Tasks;
 using UltimaCR.Spells.Main;
 
 namespace UltimaCR.Rotations

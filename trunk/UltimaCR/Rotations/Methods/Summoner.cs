@@ -1,6 +1,4 @@
-﻿using System;
-using System.Windows.Forms;
-using Buddy.Coroutines;
+﻿using Buddy.Coroutines;
 using ff14bot;
 using ff14bot.Managers;
 using System.Threading.Tasks;
@@ -59,9 +57,7 @@ namespace UltimaCR.Rotations
         {
             if (Ultima.UltSettings.SummonerPhysick)
             {
-                if (Core.Player.CurrentHealthPercent < 70 ||
-                    Core.Player.Pet != null &&
-                    Core.Player.Pet.CurrentHealthPercent < 70)
+                if (Core.Player.CurrentHealthPercent < 70)
                 {
                     return await MySpells.Physick.Cast();
                 }

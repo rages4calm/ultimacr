@@ -13,7 +13,7 @@ namespace UltimaCR
 {
     public static class Helpers
     {
-        public static bool HasAura(this GameObject unit, string spellname, bool isMyAura = false, int msLeft = 0)
+        public static bool HasAura(this GameObject unit, string auraname, bool isMyAura = false, int msLeft = 0)
         {
             var unitasc = (unit as Character);
             if (unit == null || unitasc == null)
@@ -21,15 +21,13 @@ namespace UltimaCR
                 return false;
             }
             var auras = isMyAura
-                ? unitasc.CharacterAuras.Where(r => r.CasterId == Core.Player.ObjectId && r.Name == spellname)
-                : unitasc.CharacterAuras.Where(r => r.Name == spellname);
+                ? unitasc.CharacterAuras.Where(r => r.CasterId == Core.Player.ObjectId && r.Name == auraname)
+                : unitasc.CharacterAuras.Where(r => r.Name == auraname);
 
-            var retval = auras.Any(aura => aura.TimespanLeft.TotalMilliseconds >= msLeft);
-
-            return retval;
+            return auras.Any(aura => aura.TimespanLeft.TotalMilliseconds >= msLeft);
         }
 
-        public static bool HasAura(this GameObject unit, uint spellid, bool isMyAura = false, int msLeft = 0)
+        public static bool HasAura(this GameObject unit, uint auraid, bool isMyAura = false, int msLeft = 0)
         {
             var unitasc = (unit as Character);
             if (unit == null || unitasc == null)
@@ -37,12 +35,10 @@ namespace UltimaCR
                 return false;
             }
             var auras = isMyAura
-                ? unitasc.CharacterAuras.Where(r => r.CasterId == Core.Player.ObjectId && r.Id == spellid)
-                : unitasc.CharacterAuras.Where(r => r.Id == spellid);
+                ? unitasc.CharacterAuras.Where(r => r.CasterId == Core.Player.ObjectId && r.Id == auraid)
+                : unitasc.CharacterAuras.Where(r => r.Id == auraid);
 
-            var retval = auras.Any(aura => aura.TimespanLeft.TotalMilliseconds >= msLeft);
-
-            return retval;
+            return auras.Any(aura => aura.TimespanLeft.TotalMilliseconds >= msLeft);
         }
 
         public static bool InsideCone(Vector3 PlayerLocation, float PlayerHeading, Vector3 TargetLocation)
@@ -70,7 +66,7 @@ namespace UltimaCR
 
         public static bool TargetDistance(this LocalPlayer o, float range, bool useMinRange = true)
         {
-            return useMinRange ? o.HasTarget && o.Distance(o.CurrentTarget) >= range : o.HasTarget && o.Distance(o.CurrentTarget) <= range;
+            return useMinRange ? o.HasTarget && o.Distance(o.CurrentTarget) >= range + o.CurrentTarget.CombatReach : o.HasTarget && o.Distance(o.CurrentTarget) <= range + o.CurrentTarget.CombatReach;
         }
 
         private static bool IsEnemy(this BattleCharacter ie)
@@ -123,12 +119,12 @@ namespace UltimaCR
 
         public static int EnemiesNearTarget(float radius)
         {
-            return Core.Player.CurrentTarget == null ? 0 : EnemyUnit.Count(u => u.Location.Distance3D(Core.Player.CurrentTarget.Location) <= radius);
+            return Core.Player.CurrentTarget == null ? 0 : EnemyUnit.Count(u => u.Distance2D(Core.Player.CurrentTarget) <= radius + Core.Player.CurrentTarget.CombatReach);
         }
 
         public static int EnemiesNearPlayer(float radius)
         {
-            return EnemyUnit.Count(u => u.Location.Distance3D(Core.Player.Location) <= radius);
+            return EnemyUnit.Count(u => u.Distance2D(Core.Player) <= radius + Core.Player.CombatReach);
         }
 
         #region Auto-Goad
@@ -161,6 +157,7 @@ namespace UltimaCR
                 case ClassJobType.Monk:
                 case ClassJobType.Rogue:
                 case ClassJobType.Ninja:
+                case ClassJobType.Machinist:
                     if (c.CurrentTP <= 400)
                     {
                         score += 200;
@@ -192,6 +189,7 @@ namespace UltimaCR
                 case ClassJobType.Warrior:
                 case ClassJobType.Gladiator:
                 case ClassJobType.Paladin:
+                case ClassJobType.DarkKnight:
                     return true;
                 default:
                     return false;
@@ -206,6 +204,7 @@ namespace UltimaCR
                 case ClassJobType.Scholar:
                 case ClassJobType.Conjurer:
                 case ClassJobType.WhiteMage:
+                case ClassJobType.Astrologian:
                     return true;
                 default:
                     return false;
