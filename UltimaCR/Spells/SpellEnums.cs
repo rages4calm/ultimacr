@@ -32,6 +32,7 @@ namespace UltimaCR.Spells
         Behind,
         Flank,
         Ninjutsu,
+        Mudra,
         Card
     }
 }
