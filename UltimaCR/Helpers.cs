@@ -67,8 +67,8 @@ namespace UltimaCR
         public static bool TargetDistance(this LocalPlayer cp, float range, bool useMinRange = true)
         {
             return useMinRange
-                ? cp.HasTarget && cp.Distance(cp.CurrentTarget) - cp.CombatReach - cp.CurrentTarget.CombatReach >= range
-                : cp.HasTarget && cp.Distance(cp.CurrentTarget) - cp.CombatReach - cp.CurrentTarget.CombatReach <= range;
+                ? cp.HasTarget && cp.Distance2D(cp.CurrentTarget) - cp.CombatReach - cp.CurrentTarget.CombatReach >= range
+                : cp.HasTarget && cp.Distance2D(cp.CurrentTarget) - cp.CombatReach - cp.CurrentTarget.CombatReach <= range;
         }
 
         private static bool IsEnemy(this BattleCharacter ie)

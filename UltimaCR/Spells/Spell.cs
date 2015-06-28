@@ -159,7 +159,7 @@ namespace UltimaCR.Spells
 
             if (ID == 106 || ID == 41 || ID == 70)
             {
-                if (Core.Player.Distance(target) > DataManager.GetSpellData(ID).Range ||
+                if (Core.Player.Distance2D(target) - target.CombatReach - Core.Player.CombatReach > DataManager.GetSpellData(ID).Range ||
                     !Helpers.InsideCone(Core.Player.Location, Core.Player.Heading, target.Location))
                 {
                     return false;
@@ -172,7 +172,7 @@ namespace UltimaCR.Spells
 
             if (ID == 86)
             {
-                if (Core.Player.Distance(target) > DataManager.GetSpellData(ID).Range ||
+                if (Core.Player.Distance2D(target) - target.CombatReach - Core.Player.CombatReach > DataManager.GetSpellData(ID).Range ||
                     !Core.Player.IsFacing(target))
                 {
                     return false;
