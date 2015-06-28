@@ -216,7 +216,11 @@ namespace UltimaCR.Rotations
         }
         private async Task<bool> Hypercharge()
         {
-            return await MySpells.Hypercharge.Cast();
+            if (Ultima.UltSettings.MachinistHypercharge)
+            {
+                return await MySpells.Hypercharge.Cast();
+            }
+            return false;
         }
         private async Task<bool> Ricochet()
         {
