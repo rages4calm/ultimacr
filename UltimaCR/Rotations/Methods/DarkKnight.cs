@@ -56,7 +56,11 @@ namespace UltimaCR.Rotations
         }
         private async Task<bool> LowBlow()
         {
-            return await MySpells.LowBlow.Cast();
+            if (Ultima.UltSettings.DarkKnightLowBlow)
+            {
+                return await MySpells.LowBlow.Cast();
+            }
+            return false;
         }
         private async Task<bool> SyphonStrike()
         {
@@ -76,11 +80,19 @@ namespace UltimaCR.Rotations
         }
         private async Task<bool> BloodWeapon()
         {
-            return await MySpells.BloodWeapon.Cast();
+            if (Ultima.UltSettings.DarkKnightBloodWeapon)
+            {
+                return await MySpells.BloodWeapon.Cast();
+            }
+            return false;
         }
         private async Task<bool> Reprisal()
         {
-            return await MySpells.Reprisal.Cast();
+            if (Ultima.UltSettings.DarkKnightReprisal)
+            {
+                return await MySpells.Reprisal.Cast();
+            }
+            return false;
         }
         private async Task<bool> PowerSlash()
         {
@@ -128,7 +140,11 @@ namespace UltimaCR.Rotations
         }
         private async Task<bool> DarkArts()
         {
-            return await MySpells.DarkArts.Cast();
+            if (Ultima.UltSettings.DarkKnightDarkArts)
+            {
+                return await MySpells.DarkArts.Cast();
+            }
+            return false;
         }
         private async Task<bool> ShadowWall()
         {
@@ -136,7 +152,8 @@ namespace UltimaCR.Rotations
         }
         private async Task<bool> Delirium()
         {
-            if (Actionmanager.LastSpell.Name == MySpells.SyphonStrike.Name)
+            if (Ultima.UltSettings.DarkKnightDelirium &&
+                Actionmanager.LastSpell.Name == MySpells.SyphonStrike.Name)
             {
                 if (!Core.Player.CurrentTarget.HasAura(MySpells.Delirium.Name, true, 5000) &&
                     !Core.Player.CurrentTarget.HasAura("Dragon Kick") ||
@@ -153,11 +170,19 @@ namespace UltimaCR.Rotations
         }
         private async Task<bool> SaltedEarth()
         {
-            return await MySpells.SaltedEarth.Cast();
+            if (Ultima.UltSettings.DarkKnightSaltedEarth)
+            {
+                return await MySpells.SaltedEarth.Cast();
+            }
+            return false;
         }
         private async Task<bool> Plunge()
         {
-            return await MySpells.Plunge.Cast();
+            if (Ultima.UltSettings.DarkKnightPlunge)
+            {
+                return await MySpells.Plunge.Cast();
+            }
+            return false;
         }
         private async Task<bool> AbyssalDrain()
         {

@@ -99,7 +99,7 @@ namespace UltimaCR.Spells.Main
                                Name = "Heartbreak",
                                ID = 2875,
                                Level = 8,
-                               GCDType = GCDType.On,
+                               GCDType = GCDType.Off,
                                SpellType = SpellType.Execute,
                                CastType = CastType.Target
                            });
