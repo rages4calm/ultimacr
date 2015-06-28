@@ -9686,7 +9686,6 @@
             // MachinistHawksEye
             // 
             this.MachinistHawksEye.AutoSize = true;
-            this.MachinistHawksEye.Enabled = false;
             this.MachinistHawksEye.ForeColor = System.Drawing.Color.White;
             this.MachinistHawksEye.Location = new System.Drawing.Point(6, 42);
             this.MachinistHawksEye.Name = "MachinistHawksEye";

@@ -66,10 +66,14 @@ namespace UltimaCR.Rotations
         }
         private async Task<bool> Reassemble()
         {
-            if (Core.Player.HasAura(862) &&
-                Core.Player.HasAura(857))
+            if (Core.Player.HasAura(862))
             {
-                return await MySpells.Reassemble.Cast();
+                if (Core.Player.HasAura(857) ||
+                    !Actionmanager.HasSpell(MySpells.CleanShot.Name) &&
+                    Core.Player.HasAura(856))
+                {
+                    return await MySpells.Reassemble.Cast();
+                }
             }
             return false;
         }

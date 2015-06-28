@@ -6,6 +6,7 @@ namespace UltimaCR.Rotations
     {
         public override async Task<bool> CombatBuff()
         {
+            if (await Ultima.SummonChocobo()) return true;
             if (await Darkside()) return true;
             if (await BloodWeapon()) return true;
             if (await Plunge()) return true;
