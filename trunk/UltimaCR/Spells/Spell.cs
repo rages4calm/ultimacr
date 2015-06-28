@@ -80,7 +80,7 @@ namespace UltimaCR.Spells
             if (SpellType == SpellType.AoE &&
                 Ultima.UltSettings.SmartTarget)
             {
-                var EnemyCount = Helpers.EnemyUnit.Count(eu => eu.Distance2D(target) <= DataManager.GetSpellData(ID).Radius + target.CombatReach);
+                var EnemyCount = Helpers.EnemyUnit.Count(eu => eu.Distance2D(target) - eu.CombatReach - target.CombatReach <= DataManager.GetSpellData(ID).Radius);
 
                 if (Core.Player.CurrentJob == ClassJobType.Arcanist ||
                     Core.Player.CurrentJob == ClassJobType.Scholar ||
@@ -192,9 +192,11 @@ namespace UltimaCR.Spells
                 }
                 if (Pet.PetMode != PetMode.Obey)
                 {
-                    await Coroutine.Wait(1000, () => Pet.DoAction("Obey", Core.Player));
+                    if (!await Coroutine.Wait(1000, () => Pet.DoAction("Obey", Core.Player)))
+                    {
+                        return false;
+                    }
                     Logging.Write(Colors.OrangeRed, @"[Ultima] Ability: Pet Obey");
-                    await Coroutine.Wait(3000, () => Pet.PetMode == PetMode.Obey);
                 }
                 if (!Pet.CanCast(Name, target))
                 {
@@ -216,7 +218,8 @@ namespace UltimaCR.Spells
             #endregion
 
             #region Ninjutsu Exception
-            if (SpellType == SpellType.Ninjutsu)
+            if (SpellType == SpellType.Ninjutsu ||
+                SpellType == SpellType.Mudra)
             {
                 if (BotManager.Current.IsAutonomous)
                 {
@@ -236,19 +239,31 @@ namespace UltimaCR.Spells
                             }
                             target.Face();
                             return true;
+                        case SpellRangeCheck.Success:
+                            if (MovementManager.IsMoving)
+                            {
+                                Navigator.PlayerMover.MoveStop();
+                            }
+                            break;
                     }
-                    if (MovementManager.IsMoving &&
-                        target.InLineOfSight() &&
-                        Core.Player.Distance(target) <= 15 &&
-                        Core.Player.IsFacing(target))
-                    {
-                        Navigator.PlayerMover.MoveStop();
-                    }
+                }
+                if (!Actionmanager.CanCast(ID, target))
+                {
+                    return true;
                 }
                 if (!await Coroutine.Wait(1000, () => Actionmanager.DoAction(ID, target)))
                 {
-                    return false;
+                    return true;
                 }
+                Ultima.LastSpell = this;
+                #region Recent Spell Add
+                if (SpellType == SpellType.Mudra)
+                {
+                    var key = target.ObjectId.ToString("X") + "-" + Name;
+                    var val = DateTime.UtcNow + DataManager.GetSpellData(ID).AdjustedCastTime + TimeSpan.FromSeconds(6);
+                    RecentSpell.Add(key, val);
+                }
+                #endregion
                 Logging.Write(Colors.OrangeRed, @"[Ultima] Ability: " + Name);
                 return true;
             }
@@ -302,14 +317,12 @@ namespace UltimaCR.Spells
                         }
                         target.Face();
                         return false;
-                }
-                if (target != Core.Player &&
-                    MovementManager.IsMoving &&
-                    target.InLineOfSight() &&
-                    Core.Player.Distance(target) <= (DataManager.GetSpellData(ID).Range + target.CombatReach) &&
-                    Core.Player.IsFacing(target))
-                {
-                    Navigator.PlayerMover.MoveStop();
+                    case SpellRangeCheck.Success:
+                        if (MovementManager.IsMoving)
+                        {
+                            Navigator.PlayerMover.MoveStop();
+                        }
+                        break;
                 }
                 if (!MovementManager.IsMoving &&
                     Core.Player.IsMounted)

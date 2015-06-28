@@ -331,7 +331,8 @@ namespace UltimaCR.Rotations
                 {
                     if (Ultima.LastSpell.ID != MySpells.Ten.ID &&
                         Ultima.LastSpell.ID != MySpells.Chi.ID &&
-                        Ultima.LastSpell.ID != MySpells.Jin.ID)
+                        Ultima.LastSpell.ID != MySpells.Jin.ID &&
+                        Ultima.LastSpell.ID != MySpells.Ninjutsu.ID)
                     {
                         if (await MySpells.Ten.Cast())
                         {
@@ -365,7 +366,8 @@ namespace UltimaCR.Rotations
                 {
                     if (Ultima.LastSpell.ID != MySpells.Ten.ID &&
                         Ultima.LastSpell.ID != MySpells.Chi.ID &&
-                        Ultima.LastSpell.ID != MySpells.Jin.ID)
+                        Ultima.LastSpell.ID != MySpells.Jin.ID &&
+                        Ultima.LastSpell.ID != MySpells.Ninjutsu.ID)
                     {
                         if (await MySpells.Chi.Cast())
                         {
@@ -405,7 +407,8 @@ namespace UltimaCR.Rotations
                 {
                     if (Ultima.LastSpell.ID != MySpells.Ten.ID &&
                         Ultima.LastSpell.ID != MySpells.Chi.ID &&
-                        Ultima.LastSpell.ID != MySpells.Jin.ID)
+                        Ultima.LastSpell.ID != MySpells.Jin.ID &&
+                        Ultima.LastSpell.ID != MySpells.Ninjutsu.ID)
                     {
                         if (await MySpells.Ten.Cast())
                         {
@@ -443,7 +446,8 @@ namespace UltimaCR.Rotations
             {
                 if (Ultima.LastSpell.ID != MySpells.Ten.ID &&
                     Ultima.LastSpell.ID != MySpells.Chi.ID &&
-                    Ultima.LastSpell.ID != MySpells.Jin.ID)
+                        Ultima.LastSpell.ID != MySpells.Jin.ID &&
+                        Ultima.LastSpell.ID != MySpells.Ninjutsu.ID)
                 {
                     if (await MySpells.Ten.Cast())
                     {
@@ -479,7 +483,8 @@ namespace UltimaCR.Rotations
                 {
                     if (Ultima.LastSpell.ID != MySpells.Ten.ID &&
                         Ultima.LastSpell.ID != MySpells.Chi.ID &&
-                        Ultima.LastSpell.ID != MySpells.Jin.ID)
+                        Ultima.LastSpell.ID != MySpells.Jin.ID &&
+                        Ultima.LastSpell.ID != MySpells.Ninjutsu.ID)
                     {
                     }
                     if (await MySpells.Chi.Cast())
@@ -524,7 +529,8 @@ namespace UltimaCR.Rotations
                 {
                     if (Ultima.LastSpell.ID != MySpells.Ten.ID &&
                         Ultima.LastSpell.ID != MySpells.Chi.ID &&
-                        Ultima.LastSpell.ID != MySpells.Jin.ID)
+                        Ultima.LastSpell.ID != MySpells.Jin.ID &&
+                        Ultima.LastSpell.ID != MySpells.Ninjutsu.ID)
                     {
                     }
                     if (await MySpells.Ten.Cast())
@@ -563,16 +569,15 @@ namespace UltimaCR.Rotations
             if (Actionmanager.CanCast(MySpells.Jin.ID, Core.Player) &&
                 DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds >= 1000 &&
                 DataManager.GetSpellData(MySpells.TrickAttack.ID).Cooldown.TotalMilliseconds == 0 &&
-                Core.Player.HasTarget &&
+                Core.Player.TargetDistance(15, false) &&
                 !Core.Player.CurrentTarget.HasAura(MySpells.TrickAttack.Name, true, 3000) &&
                 !Core.Player.CurrentTarget.HasAura(MySpells.TrickAttack.Name, false, 3000) &&
-                Core.Player.CurrentTarget.Type == GameObjectType.BattleNpc &&
-                Core.Player.CurrentTarget.IsBehind &&
-                Core.Player.Distance(Core.Player.CurrentTarget) <= (3 + Core.Player.CombatReach + Core.Player.CurrentTarget.CombatReach))
+                Core.Player.CurrentTarget.Type == GameObjectType.BattleNpc)
             {
                 if (Ultima.LastSpell.ID != MySpells.Ten.ID &&
                     Ultima.LastSpell.ID != MySpells.Chi.ID &&
-                    Ultima.LastSpell.ID != MySpells.Jin.ID)
+                    Ultima.LastSpell.ID != MySpells.Jin.ID &&
+                    Ultima.LastSpell.ID != MySpells.Ninjutsu.ID)
                 {
                     if (await MySpells.Ten.Cast())
                     {

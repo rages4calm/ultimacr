@@ -64,9 +64,11 @@ namespace UltimaCR
         }
 
 
-        public static bool TargetDistance(this LocalPlayer o, float range, bool useMinRange = true)
+        public static bool TargetDistance(this LocalPlayer cp, float range, bool useMinRange = true)
         {
-            return useMinRange ? o.HasTarget && o.Distance(o.CurrentTarget) >= range + o.CurrentTarget.CombatReach : o.HasTarget && o.Distance(o.CurrentTarget) <= range + o.CurrentTarget.CombatReach;
+            return useMinRange
+                ? cp.HasTarget && cp.Distance(cp.CurrentTarget) - cp.CombatReach - cp.CurrentTarget.CombatReach >= range
+                : cp.HasTarget && cp.Distance(cp.CurrentTarget) - cp.CombatReach - cp.CurrentTarget.CombatReach <= range;
         }
 
         private static bool IsEnemy(this BattleCharacter ie)
@@ -119,12 +121,14 @@ namespace UltimaCR
 
         public static int EnemiesNearTarget(float radius)
         {
-            return Core.Player.CurrentTarget == null ? 0 : EnemyUnit.Count(u => u.Distance2D(Core.Player.CurrentTarget) <= radius + Core.Player.CurrentTarget.CombatReach);
+            return Core.Player.CurrentTarget == null
+                ? 0
+                : EnemyUnit.Count(eu => eu.Distance2D(Core.Player.CurrentTarget) - eu.CombatReach - Core.Player.CurrentTarget.CombatReach <= radius);
         }
 
         public static int EnemiesNearPlayer(float radius)
         {
-            return EnemyUnit.Count(u => u.Distance2D(Core.Player) <= radius + Core.Player.CombatReach);
+            return EnemyUnit.Count(eu => eu.Distance2D(Core.Player) - eu.CombatReach - Core.Player.CombatReach <= radius);
         }
 
         #region Auto-Goad

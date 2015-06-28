@@ -46,7 +46,7 @@ namespace UltimaCR.Spells.Main
                                ID = 2259,
                                Level = 30,
                                GCDType = GCDType.On,
-                               SpellType = SpellType.Buff,
+                               SpellType = SpellType.Mudra,
                                CastType = CastType.Self
                            });
             }
@@ -61,7 +61,7 @@ namespace UltimaCR.Spells.Main
                            new Spell
                            {
                                Name = "Fuma Shuriken",
-                               ID = 2265,
+                               ID = 2260,
                                Level = 30,
                                GCDType = GCDType.On,
                                SpellType = SpellType.Ninjutsu,
@@ -82,7 +82,7 @@ namespace UltimaCR.Spells.Main
                                ID = 2261,
                                Level = 35,
                                GCDType = GCDType.On,
-                               SpellType = SpellType.Buff,
+                               SpellType = SpellType.Mudra,
                                CastType = CastType.Self
                            });
             }
@@ -97,7 +97,7 @@ namespace UltimaCR.Spells.Main
                            new Spell
                            {
                                Name = "Katon",
-                               ID = 2266,
+                               ID = 2260,
                                Level = 35,
                                GCDType = GCDType.On,
                                SpellType = SpellType.Ninjutsu,
@@ -115,7 +115,7 @@ namespace UltimaCR.Spells.Main
                            new Spell
                            {
                                Name = "Raiton",
-                               ID = 2267,
+                               ID = 2260,
                                Level = 35,
                                GCDType = GCDType.On,
                                SpellType = SpellType.Ninjutsu,
@@ -154,7 +154,7 @@ namespace UltimaCR.Spells.Main
                                ID = 2263,
                                Level = 45,
                                GCDType = GCDType.On,
-                               SpellType = SpellType.Buff,
+                               SpellType = SpellType.Mudra,
                                CastType = CastType.Self
                            });
             }
@@ -169,7 +169,7 @@ namespace UltimaCR.Spells.Main
                            new Spell
                            {
                                Name = "Hyoton",
-                               ID = 2268,
+                               ID = 2260,
                                Level = 45,
                                GCDType = GCDType.On,
                                SpellType = SpellType.Ninjutsu,
@@ -187,7 +187,7 @@ namespace UltimaCR.Spells.Main
                            new Spell
                            {
                                Name = "Huton",
-                               ID = 2269,
+                               ID = 2260,
                                Level = 45,
                                GCDType = GCDType.On,
                                SpellType = SpellType.Ninjutsu,
@@ -205,7 +205,7 @@ namespace UltimaCR.Spells.Main
                            new Spell
                            {
                                Name = "Doton",
-                               ID = 2270,
+                               ID = 2260,
                                Level = 45,
                                GCDType = GCDType.On,
                                SpellType = SpellType.Ninjutsu,
@@ -223,7 +223,7 @@ namespace UltimaCR.Spells.Main
                            new Spell
                            {
                                Name = "Suiton",
-                               ID = 2271,
+                               ID = 2260,
                                Level = 45,
                                GCDType = GCDType.On,
                                SpellType = SpellType.Ninjutsu,
