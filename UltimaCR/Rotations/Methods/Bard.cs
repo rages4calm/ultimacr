@@ -14,11 +14,6 @@ namespace UltimaCR.Rotations
             get { return _mySpells ?? (_mySpells = new BardSpells()); }
         }
 
-        public override float PullRange
-        {
-            get { return 15.0f; }
-        }
-
         #region Class Spells
 
         private async Task<bool> HeavyShot()

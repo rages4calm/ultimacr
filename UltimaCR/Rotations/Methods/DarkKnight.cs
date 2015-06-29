@@ -14,11 +14,6 @@ namespace UltimaCR.Rotations
             get { return _mySpells ?? (_mySpells = new DarkKnightSpells()); }
         }
 
-        public override float PullRange
-        {
-            get { return 15.0f; }
-        }
-
         #region Job Spells
 
         private async Task<bool> HardSlash()

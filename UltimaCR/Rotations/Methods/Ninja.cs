@@ -17,11 +17,6 @@ namespace UltimaCR.Rotations
             get { return _mySpells ?? (_mySpells = new NinjaSpells()); }
         }
 
-        public override float PullRange
-        {
-            get { return 15.0f; }
-        }
-
         #region Class Spells
 
         private async Task<bool> SpinningEdge()
@@ -180,7 +175,8 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> TrickAttack()
         {
-            if (Core.Player.CurrentTarget.IsBehind &&
+            if (Core.Player.HasTarget &&
+                Core.Player.CurrentTarget.IsBehind &&
                 Core.Player.HasAura("Suiton"))
             {
                 return await MySpells.TrickAttack.Cast();
@@ -566,7 +562,8 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Suiton()
         {
-            if (Actionmanager.CanCast(MySpells.Jin.ID, Core.Player) &&
+            if (!BotManager.Current.IsAutonomous && 
+                Actionmanager.CanCast(MySpells.Jin.ID, Core.Player) &&
                 DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds >= 1000 &&
                 DataManager.GetSpellData(MySpells.TrickAttack.ID).Cooldown.TotalMilliseconds == 0 &&
                 Core.Player.TargetDistance(15, false) &&
