@@ -17,11 +17,6 @@ namespace UltimaCR.Rotations
             get { return _mySpells ?? (_mySpells = new ThaumaturgeSpells()); }
         }
 
-        public override float PullRange
-        {
-            get { return 15.0f; }
-        }
-
         #region Class Spells
 
         private async Task<bool> Blizzard()

@@ -4,15 +4,6 @@ namespace UltimaCR.Rotations
 {
     public abstract class Rotation : IRotation
     {
-        #region ISpellBook
-
-        public virtual float PullRange
-        {
-            get { return 25.0f; }
-        }
-
-        #endregion
-
         #region IRotation
 
         #region Rest

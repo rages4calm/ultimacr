@@ -4,8 +4,6 @@ namespace UltimaCR.Rotations
 {
     public interface IRotation
     {
-        float PullRange { get; }
-
         #region Rest
 
         Task<bool> Rest();

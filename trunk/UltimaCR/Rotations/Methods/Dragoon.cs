@@ -15,11 +15,6 @@ namespace UltimaCR.Rotations
             get { return _mySpells ?? (_mySpells = new DragoonSpells()); }
         }
 
-        public override float PullRange
-        {
-            get { return 15.0f; }
-        }
-
         #region Class Spells
 
         private async Task<bool> TrueThrust()

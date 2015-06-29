@@ -13,11 +13,6 @@ namespace UltimaCR.Rotations
             get { return _mySpells ?? (_mySpells = new AstrologianSpells()); }
         }
 
-        public override float PullRange
-        {
-            get { return 25.0f; }
-        }
-
         #region Job Spells
 
         private async Task<bool> Malefic()
