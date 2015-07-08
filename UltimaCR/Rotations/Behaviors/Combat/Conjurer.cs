@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using ff14bot;
 
 namespace UltimaCR.Rotations
 {
@@ -6,11 +7,16 @@ namespace UltimaCR.Rotations
     {
         public override async Task<bool> Combat()
         {
-            if (await FluidAura()) return true;
-            if (await AeroII()) return true;
-            if (await Aero()) return true;
-            if (await StoneII()) return true;
-            return await Stone();
+            if (Core.Player.HasTarget &&
+                Core.Player.CurrentTarget.CanAttack)
+            {
+                if (await FluidAura()) return true;
+                if (await AeroII()) return true;
+                if (await Aero()) return true;
+                if (await StoneII()) return true;
+                return await Stone();
+            }
+            return false;
         }
 
         public override async Task<bool> PVPRotation()

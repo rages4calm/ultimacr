@@ -497,7 +497,8 @@ namespace UltimaCR.Spells
                         }
                         break;
                     case false:
-                        if (SpellType != SpellType.Heal)
+                        if (SpellType == SpellType.Damage ||
+                            SpellType == SpellType.DoT)
                         {
                             await Coroutine.Wait(1000, () => Actionmanager.DoAction(122, Core.Player));
                             Logging.Write(Colors.OrangeRed, @"[Ultima] Ability: Cleric Stance");
