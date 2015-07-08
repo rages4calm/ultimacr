@@ -353,6 +353,12 @@ namespace UltimaCR.Spells
                         return false;
                     }
                     break;
+                case CastType.SelfLocation:
+                    if (!Actionmanager.CanCastLocation(ID, target.Location))
+                    {
+                        return false;
+                    }
+                    break;
                 default:
                     if (!Actionmanager.CanCast(ID, target))
                     {
