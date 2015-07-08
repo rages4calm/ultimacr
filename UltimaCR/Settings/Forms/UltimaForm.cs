@@ -371,7 +371,7 @@ namespace UltimaCR.Settings.Forms
 
             #region Rogue Cross-Class
 
-            ArcherPerfectDodge.Checked = Ultima.UltSettings.ArcherPerfectDodge;
+            ArcherShadeShift.Checked = Ultima.UltSettings.ArcherShadeShift;
 
             #endregion
 
@@ -448,8 +448,11 @@ namespace UltimaCR.Settings.Forms
 
             #endregion
 
-            ConjurerCure.Checked = Ultima.UltSettings.ConjurerCure;
-            ConjurerCureII.Checked = Ultima.UltSettings.ConjurerCureII;
+            ConjurerRaise.Checked = Ultima.UltSettings.ConjurerRaise;
+            ConjurerProtect.Checked = Ultima.UltSettings.ConjurerProtect;
+            ConjurerStoneskin.Checked = Ultima.UltSettings.ConjurerStoneskin;
+            ConjurerStoneskinII.Checked = Ultima.UltSettings.ConjurerStoneskinII;
+            ConjurerShroudOfSaints.Checked = Ultima.UltSettings.ConjurerShroudOfSaints;
 
             #endregion
 
@@ -513,7 +516,7 @@ namespace UltimaCR.Settings.Forms
 
             #region Rogue Cross-Class
 
-            GladiatorPerfectDodge.Checked = Ultima.UltSettings.GladiatorPerfectDodge;
+            GladiatorShadeShift.Checked = Ultima.UltSettings.GladiatorShadeShift;
             GladiatorGoad.Checked = Ultima.UltSettings.GladiatorGoad;
             GladiatorDeathBlossom.Checked = Ultima.UltSettings.GladiatorDeathBlossom;
 
@@ -591,7 +594,7 @@ namespace UltimaCR.Settings.Forms
 
             #region Rogue Cross-Class
 
-            LancerPerfectDodge.Checked = Ultima.UltSettings.LancerPerfectDodge;
+            LancerShadeShift.Checked = Ultima.UltSettings.LancerShadeShift;
             LancerGoad.Checked = Ultima.UltSettings.LancerGoad;
             LancerDeathBlossom.Checked = Ultima.UltSettings.LancerDeathBlossom;
 
@@ -668,7 +671,7 @@ namespace UltimaCR.Settings.Forms
 
             #region Rogue Cross-Class
 
-            MarauderPerfectDodge.Checked = Ultima.UltSettings.MarauderPerfectDodge;
+            MarauderShadeShift.Checked = Ultima.UltSettings.MarauderShadeShift;
             MarauderGoad.Checked = Ultima.UltSettings.MarauderGoad;
             MarauderDeathBlossom.Checked = Ultima.UltSettings.MarauderDeathBlossom;
 
@@ -746,7 +749,7 @@ namespace UltimaCR.Settings.Forms
 
             #region Rogue Cross-CLass
 
-            PugilistPerfectDodge.Checked = Ultima.UltSettings.PugilistPerfectDodge;
+            PugilistShadeShift.Checked = Ultima.UltSettings.PugilistShadeShift;
             PugilistGoad.Checked = Ultima.UltSettings.PugilistGoad;
             PugilistDeathBlossom.Checked = Ultima.UltSettings.PugilistDeathBlossom;
 
@@ -1297,9 +1300,15 @@ namespace UltimaCR.Settings.Forms
 
             #endregion
 
-            WhiteMageCure.Checked = Ultima.UltSettings.WhiteMageCure;
-            WhiteMageCureII.Checked = Ultima.UltSettings.WhiteMageCureII;
-            WhiteMageRegen.Checked = Ultima.UltSettings.WhiteMageRegen;
+            WhiteMageRaise.Checked = Ultima.UltSettings.WhiteMageRaise;
+            WhiteMageBenediction.Checked = Ultima.UltSettings.WhiteMageBenediction;
+            WhiteMageTetragrammaton.Checked = Ultima.UltSettings.WhiteMageTetragrammaton;
+            WhiteMageShroudOfSaints.Checked = Ultima.UltSettings.WhiteMageShroudOfSaints;
+            WhiteMagePresenceOfMind.Checked = Ultima.UltSettings.WhiteMagePresenceOfMind;
+            WhiteMageDivineSeal.Checked = Ultima.UltSettings.WhiteMageDivineSeal;
+            WhiteMageProtect.Checked = Ultima.UltSettings.WhiteMageProtect;
+            WhiteMageStoneskin.Checked = Ultima.UltSettings.WhiteMageStoneskin;
+            WhiteMageStoneskinII.Checked = Ultima.UltSettings.WhiteMageStoneskinII;
 
             #endregion
 
@@ -1865,9 +1874,9 @@ namespace UltimaCR.Settings.Forms
 
         #region Rogue Cross-Class
 
-        private void ArcherPerfectDodge_CheckedChanged(object sender, EventArgs e)
+        private void ArcherShadeShift_CheckedChanged(object sender, EventArgs e)
         {
-            Ultima.UltSettings.ArcherPerfectDodge = ArcherPerfectDodge.Checked;
+            Ultima.UltSettings.ArcherShadeShift = ArcherShadeShift.Checked;
         }
 
         #endregion
@@ -2048,14 +2057,29 @@ namespace UltimaCR.Settings.Forms
 
         #endregion
 
-        private void ConjurerCure_CheckedChanged(object sender, EventArgs e)
+        private void ConjurerRaise_CheckedChanged(object sender, EventArgs e)
         {
-            Ultima.UltSettings.ConjurerCure = ConjurerCure.Checked;
+            Ultima.UltSettings.ConjurerRaise = ConjurerRaise.Checked;
         }
 
-        private void ConjurerCureII_CheckedChanged(object sender, EventArgs e)
+        private void ConjurerProtect_CheckedChanged(object sender, EventArgs e)
         {
-            Ultima.UltSettings.ConjurerCureII = ConjurerCureII.Checked;
+            Ultima.UltSettings.ConjurerProtect = ConjurerProtect.Checked;
+        }
+
+        private void ConjurerStoneskin_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.ConjurerStoneskin = ConjurerStoneskin.Checked;
+        }
+
+        private void ConjurerStoneskinII_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.ConjurerStoneskinII = ConjurerStoneskinII.Checked;
+        }
+
+        private void ConjurerShroudOfSaints_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.ConjurerShroudOfSaints = ConjurerShroudOfSaints.Checked;
         }
 
         #endregion
@@ -2218,9 +2242,9 @@ namespace UltimaCR.Settings.Forms
 
         #region Rogue Cross-Class
 
-        private void GladiatorPerfectDodge_CheckedChanged(object sender, EventArgs e)
+        private void GladiatorShadeShift_CheckedChanged(object sender, EventArgs e)
         {
-            Ultima.UltSettings.GladiatorPerfectDodge = GladiatorPerfectDodge.Checked;
+            Ultima.UltSettings.GladiatorShadeShift = GladiatorShadeShift.Checked;
         }
 
         private void GladiatorGoad_CheckedChanged(object sender, EventArgs e)
@@ -2419,9 +2443,9 @@ namespace UltimaCR.Settings.Forms
 
         #region Rogue Cross-Class
 
-        private void LancerPerfectDodge_CheckedChanged(object sender, EventArgs e)
+        private void LancerShadeShift_CheckedChanged(object sender, EventArgs e)
         {
-            Ultima.UltSettings.LancerPerfectDodge = LancerPerfectDodge.Checked;
+            Ultima.UltSettings.LancerShadeShift = LancerShadeShift.Checked;
         }
 
         private void LancerGoad_CheckedChanged(object sender, EventArgs e)
@@ -2615,9 +2639,9 @@ namespace UltimaCR.Settings.Forms
 
         #region Rogue Cross-Class
 
-        private void MarauderPerfectDodge_CheckedChanged(object sender, EventArgs e)
+        private void MarauderShadeShift_CheckedChanged(object sender, EventArgs e)
         {
-            Ultima.UltSettings.MarauderPerfectDodge = MarauderPerfectDodge.Checked;
+            Ultima.UltSettings.MarauderShadeShift = MarauderShadeShift.Checked;
         }
 
         private void MarauderGoad_CheckedChanged(object sender, EventArgs e)
@@ -2816,9 +2840,9 @@ namespace UltimaCR.Settings.Forms
 
         #region Rogue Cross-Class
 
-        private void PugilistPerfectDodge_CheckedChanged(object sender, EventArgs e)
+        private void PugilistShadeShift_CheckedChanged(object sender, EventArgs e)
         {
-            Ultima.UltSettings.PugilistPerfectDodge = PugilistPerfectDodge.Checked;
+            Ultima.UltSettings.PugilistShadeShift = PugilistShadeShift.Checked;
         }
 
         private void PugilistGoad_CheckedChanged(object sender, EventArgs e)
@@ -4266,19 +4290,49 @@ namespace UltimaCR.Settings.Forms
 
         #endregion
 
-        private void WhiteMageCure_CheckedChanged(object sender, EventArgs e)
+        private void WhiteMageRaise_CheckedChanged(object sender, EventArgs e)
         {
-            Ultima.UltSettings.WhiteMageCure = WhiteMageCure.Checked;
+            Ultima.UltSettings.WhiteMageRaise = WhiteMageRaise.Checked;
         }
 
-        private void WhiteMageCureII_CheckedChanged(object sender, EventArgs e)
+        private void WhiteMageBenediction_CheckedChanged(object sender, EventArgs e)
         {
-            Ultima.UltSettings.WhiteMageCureII = WhiteMageCureII.Checked;
+            Ultima.UltSettings.WhiteMageBenediction = WhiteMageBenediction.Checked;
         }
 
-        private void WhiteMageRegen_CheckedChanged(object sender, EventArgs e)
+        private void WhiteMageTetragrammaton_CheckedChanged(object sender, EventArgs e)
         {
-            Ultima.UltSettings.WhiteMageRegen = WhiteMageRegen.Checked;
+            Ultima.UltSettings.WhiteMageTetragrammaton = WhiteMageTetragrammaton.Checked;
+        }
+
+        private void WhiteMageShroudOfSaints_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.WhiteMageShroudOfSaints = WhiteMageShroudOfSaints.Checked;
+        }
+
+        private void WhiteMagePresenceOfMind_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.WhiteMagePresenceOfMind = WhiteMagePresenceOfMind.Checked;
+        }
+
+        private void WhiteMageDivineSeal_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.WhiteMageDivineSeal = WhiteMageDivineSeal.Checked;
+        }
+
+        private void WhiteMageProtect_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.WhiteMageProtect = WhiteMageProtect.Checked;
+        }
+
+        private void WhiteMageStoneskin_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.WhiteMageStoneskin = WhiteMageStoneskin.Checked;
+        }
+
+        private void WhiteMageStoneskinII_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.WhiteMageStoneskinII = WhiteMageStoneskinII.Checked;
         }
 
         #endregion

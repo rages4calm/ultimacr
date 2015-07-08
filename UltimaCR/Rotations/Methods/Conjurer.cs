@@ -1,5 +1,9 @@
-﻿using ff14bot;
+﻿using System.Linq;
+using Buddy.Coroutines;
+using ff14bot;
 using System.Threading.Tasks;
+using ff14bot.Enums;
+using ff14bot.Managers;
 using UltimaCR.Spells.Main;
 
 namespace UltimaCR.Rotations
@@ -22,10 +26,17 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Cure()
         {
-            if (Ultima.UltSettings.ConjurerCure &&
-                Core.Player.CurrentHealthPercent < 70)
+            if (!Core.Player.HasAura(155))
             {
-                return await MySpells.Cure.Cast();
+                var target = Helpers.HealManager.FirstOrDefault(hm =>
+                    hm.IsHealer() && hm.CurrentHealthPercent <= 75 ||
+                    hm.IsDPS() && hm.CurrentHealthPercent <= 80 ||
+                    hm.IsTank() && hm.CurrentHealthPercent <= 85);
+
+                if (target != null)
+                {
+                    return await MySpells.Cure.Cast(target);
+                }
             }
             return false;
         }
@@ -46,21 +57,56 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Protect()
         {
-            if (!Core.Player.HasAura(MySpells.Protect.Name))
+            if (Ultima.UltSettings.ConjurerProtect)
             {
-                return await MySpells.Protect.Cast();
+                var target = Helpers.HealManager.FirstOrDefault(hm => !hm.HasAura(MySpells.Protect.Name) && !hm.InCombat);
+
+                if (target != null)
+                {
+                    return await MySpells.Protect.Cast(target);
+                }
             }
             return false;
         }
 
         private async Task<bool> Medica()
         {
-            return await MySpells.Medica.Cast();
+            if (Helpers.HealManager.Count(hm =>
+                hm.Distance2D(Core.Player) - hm.CombatReach - Core.Player.CombatReach <= 15 &&
+                (hm.IsHealer() && hm.CurrentHealthPercent <= 60 ||
+                hm.IsDPS() && hm.CurrentHealthPercent <= 65 ||
+                hm.IsTank() && hm.CurrentHealthPercent <= 70)) > 2)
+            {
+                return await MySpells.Medica.Cast();
+            }
+            return false;
         }
 
         private async Task<bool> Raise()
         {
-            return await MySpells.Raise.Cast();
+            if (Ultima.UltSettings.ConjurerRaise &&
+                !Helpers.HealManager.Any(hm => hm.CurrentHealthPercent <= 70))
+            {
+                var target = Helpers.PartyMembers.FirstOrDefault(pm =>
+                    pm.IsDead &&
+                    pm.Type == GameObjectType.Pc &&
+                    !pm.HasAura(MySpells.Raise.Name));
+
+                if (target != null &&
+                    Actionmanager.CanCast(MySpells.Raise.Name, target))
+                {
+                    if (Actionmanager.CanCast(MySpells.CrossClass.Swiftcast.Name, Core.Player))
+                    {
+                        if (await MySpells.CrossClass.Swiftcast.Cast())
+                        {
+                            await Coroutine.Wait(3000, () => Actionmanager.CanCast(MySpells.Raise.Name, target) &&
+                                                             Core.Player.HasAura(MySpells.CrossClass.Swiftcast.Name));
+                        }
+                    }
+                    return await MySpells.Raise.Cast(target);
+                }
+            }
+            return false;
         }
 
         private async Task<bool> FluidAura()
@@ -89,26 +135,38 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> CureII()
         {
-            if (Ultima.UltSettings.ConjurerCureII &&
-                Core.Player.CurrentHealthPercent < 50)
+            var target = Helpers.HealManager.FirstOrDefault(hm =>
+                hm.IsHealer() && hm.CurrentHealthPercent <= 60 ||
+                hm.IsDPS() && hm.CurrentHealthPercent <= 65 ||
+                hm.IsTank() && hm.CurrentHealthPercent <= 70);
+
+            if (target != null)
             {
-                return await MySpells.CureII.Cast();
+                return await MySpells.CureII.Cast(target);
             }
             return false;
         }
 
         private async Task<bool> Stoneskin()
         {
-            if (!Core.Player.HasAura(MySpells.Stoneskin.Name))
+            if (Ultima.UltSettings.ConjurerStoneskin &&
+                Ultima.LastSpell.Name != MySpells.StoneskinII.Name)
             {
-                return await MySpells.Stoneskin.Cast();
+                var target =
+                    Helpers.HealManager.FirstOrDefault(hm => !hm.HasAura(MySpells.Stoneskin.Name) && !hm.InCombat);
+
+                if (target != null)
+                {
+                    return await MySpells.Stoneskin.Cast(target);
+                }
             }
             return false;
         }
 
         private async Task<bool> ShroudOfSaints()
         {
-            if (Core.Player.CurrentManaPercent <= 50)
+            if (Ultima.UltSettings.ConjurerShroudOfSaints &&
+                Core.Player.CurrentManaPercent <= 50)
             {
                 return await MySpells.ShroudOfSaints.Cast();
             }
@@ -117,7 +175,18 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> CureIII()
         {
-            return await MySpells.CureIII.Cast();
+            var target = Helpers.HealManager.FirstOrDefault(pm1 =>
+                Helpers.HealManager.Count(pm2 =>
+                    pm1.Distance2D(pm2) - pm1.CombatReach - pm2.CombatReach <= 4 &&
+                    (pm2.IsHealer() && pm2.CurrentHealthPercent <= 60 ||
+                    pm2.IsDPS() && pm2.CurrentHealthPercent <= 65 ||
+                    pm2.IsTank() && pm2.CurrentHealthPercent <= 70)) > 2);
+
+            if (target != null)
+            {
+                return await MySpells.CureIII.Cast(target);
+            }
+            return false;
         }
 
         private async Task<bool> AeroII()
@@ -131,7 +200,29 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> MedicaII()
         {
-            return await MySpells.MedicaII.Cast();
+            if (Helpers.HealManager.Count(hm =>
+                hm.Distance2D(Core.Player) - hm.CombatReach - Core.Player.CombatReach <= 25 &&
+                (hm.IsHealer() && hm.CurrentHealthPercent <= 60 ||
+                hm.IsDPS() && hm.CurrentHealthPercent <= 65 ||
+                hm.IsTank() && hm.CurrentHealthPercent <= 70)) > 2)
+            {
+                return await MySpells.MedicaII.Cast();
+            }
+            return false;
+        }
+
+        private async Task<bool> StoneskinII()
+        {
+            if (Ultima.UltSettings.ConjurerStoneskinII)
+            {
+                var target = Helpers.HealManager.FirstOrDefault(hm => !hm.HasAura(MySpells.Stoneskin.Name) && !hm.InCombat);
+
+                if (target != null)
+                {
+                    return await MySpells.StoneskinII.Cast(target);
+                }
+            }
+            return false;
         }
 
         #endregion

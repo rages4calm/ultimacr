@@ -443,7 +443,7 @@ namespace UltimaCR.Spells.Main
                                Level = 50,
                                GCDType = GCDType.On,
                                SpellType = SpellType.OnLocation,
-                               CastType = CastType.Location
+                               CastType = CastType.TargetLocation
                            });
             }
         }

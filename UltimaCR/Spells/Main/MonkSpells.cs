@@ -105,5 +105,113 @@ namespace UltimaCR.Spells.Main
                            });
             }
         }
+        private Spell _formshift;
+        public Spell FormShift
+        {
+            get
+            {
+                return _formshift ??
+                       (_formshift =
+                           new Spell
+                           {
+                               Name = "Form Shift",
+                               ID = 4262,
+                               Level = 52,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Buff,
+                               CastType = CastType.Self
+                           });
+            }
+        }
+        private Spell _meditation;
+        public Spell Meditation
+        {
+            get
+            {
+                return _meditation ??
+                       (_meditation =
+                           new Spell
+                           {
+                               Name = "Meditation",
+                               ID = 3546,
+                               Level = 54,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Buff,
+                               CastType = CastType.Self
+                           });
+            }
+        }
+        private Spell _forbiddenchakra;
+        public Spell ForbiddenChakra
+        {
+            get
+            {
+                return _forbiddenchakra ??
+                       (_forbiddenchakra =
+                           new Spell
+                           {
+                               Name = "Forbidden Chakra",
+                               ID = 3547,
+                               Level = 54,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Cooldown,
+                               CastType = CastType.Target
+                           });
+            }
+        }
+        private Spell _elixirfield;
+        public Spell ElixirField
+        {
+            get
+            {
+                return _elixirfield ??
+                       (_elixirfield =
+                           new Spell
+                           {
+                               Name = "Elixir Field",
+                               ID = 3545,
+                               Level = 56,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.AoE,
+                               CastType = CastType.Self
+                           });
+            }
+        }
+        private Spell _purification;
+        public Spell Purification
+        {
+            get
+            {
+                return _purification ??
+                       (_purification =
+                           new Spell
+                           {
+                               Name = "Purification",
+                               ID = 3544,
+                               Level = 58,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Buff,
+                               CastType = CastType.Self
+                           });
+            }
+        }
+        private Spell _tornadokick;
+        public Spell TornadoKick
+        {
+            get
+            {
+                return _tornadokick ??
+                       (_tornadokick =
+                           new Spell
+                           {
+                               Name = "Tornado Kick",
+                               ID = 3543,
+                               Level = 60,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Cooldown,
+                               CastType = CastType.Target
+                           });
+            }
+        }
     }
 }

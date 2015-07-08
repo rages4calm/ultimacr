@@ -105,5 +105,95 @@ namespace UltimaCR.Spells.Main
                            });
             }
         }
+        private Spell _deliverance;
+        public Spell Deliverance
+        {
+            get
+            {
+                return _deliverance ??
+                       (_deliverance =
+                           new Spell
+                           {
+                               Name = "Deliverance",
+                               ID = 3548,
+                               Level = 52,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Aura,
+                               CastType = CastType.Self
+                           });
+            }
+        }
+        private Spell _fellcleave;
+        public Spell FellCleave
+        {
+            get
+            {
+                return _fellcleave ??
+                       (_fellcleave =
+                           new Spell
+                           {
+                               Name = "Fell Cleave",
+                               ID = 3549,
+                               Level = 54,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Cooldown,
+                               CastType = CastType.Target
+                           });
+            }
+        }
+        private Spell _rawintuition;
+        public Spell RawIntuition
+        {
+            get
+            {
+                return _rawintuition ??
+                       (_rawintuition =
+                           new Spell
+                           {
+                               Name = "Raw Intuition",
+                               ID = 3551,
+                               Level = 52,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Defensive,
+                               CastType = CastType.Self
+                           });
+            }
+        }
+        private Spell _equilibrium;
+        public Spell Equilibrium
+        {
+            get
+            {
+                return _equilibrium ??
+                       (_equilibrium =
+                           new Spell
+                           {
+                               Name = "Equilibrium",
+                               ID = 3552,
+                               Level = 58,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Buff,
+                               CastType = CastType.Self
+                           });
+            }
+        }
+        private Spell _decimate;
+        public Spell Decimate
+        {
+            get
+            {
+                return _decimate ??
+                       (_decimate =
+                           new Spell
+                           {
+                               Name = "Decimate",
+                               ID = 3550,
+                               Level = 60,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.AoE,
+                               CastType = CastType.Self
+                           });
+            }
+        }
     }
 }

@@ -22,9 +22,9 @@ namespace UltimaCR.Rotations
             return await MySpells.SpinningEdge.Cast();
         }
 
-        private async Task<bool> PerfectDodge()
+        private async Task<bool> ShadeShift()
         {
-            return await MySpells.PerfectDodge.Cast();
+            return await MySpells.ShadeShift.Cast();
         }
 
         private async Task<bool> GustSlash()
@@ -92,12 +92,14 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Goad()
         {
-            var target = Helpers.AutoGoad.FirstOrDefault();
-
-            if (target != null &&
-                Ultima.UltSettings.RogueGoad)
+            if (Ultima.UltSettings.RogueGoad)
             {
-                return await MySpells.Goad.Cast(target);
+                var target = Helpers.GoadManager.FirstOrDefault();
+
+                if (target != null)
+                {
+                    return await MySpells.Goad.Cast(target);
+                }
             }
             return false;
         }

@@ -134,7 +134,7 @@
             this.ArcherSurecast = new System.Windows.Forms.CheckBox();
             this.ArcherSwiftcast = new System.Windows.Forms.CheckBox();
             this.ArcherRogueGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
-            this.ArcherPerfectDodge = new System.Windows.Forms.CheckBox();
+            this.ArcherShadeShift = new System.Windows.Forms.CheckBox();
             this.ArcherPugilistGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.ArcherHaymaker = new System.Windows.Forms.CheckBox();
             this.ArcherFeatherfoot = new System.Windows.Forms.CheckBox();
@@ -187,9 +187,6 @@
             this.ConjurerTab = new System.Windows.Forms.TabPage();
             this.ConjurerSubTab = new UltimaCR.Settings.Forms.Design.TabDesign();
             this.ConjurerSettings = new System.Windows.Forms.TabPage();
-            this.ConjurerHealingGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
-            this.ConjurerCureII = new System.Windows.Forms.CheckBox();
-            this.ConjurerCure = new System.Windows.Forms.CheckBox();
             this.ConjurerCrossGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.ConjurerArcanistGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.ConjurerRuin = new System.Windows.Forms.CheckBox();
@@ -223,10 +220,6 @@
             this.ConjurerInvigorate = new System.Windows.Forms.CheckBox();
             this.ConjurerBloodForBlood = new System.Windows.Forms.CheckBox();
             this.WhiteMageSettings = new System.Windows.Forms.TabPage();
-            this.WhiteMageHealGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
-            this.WhiteMageCureII = new System.Windows.Forms.CheckBox();
-            this.WhiteMageRegen = new System.Windows.Forms.CheckBox();
-            this.WhiteMageCure = new System.Windows.Forms.CheckBox();
             this.WhiteMageCrossGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.WhiteMageArcanistGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.WhiteMageRuin = new System.Windows.Forms.CheckBox();
@@ -255,7 +248,7 @@
             this.GladiatorRogueGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.GladiatorDeathBlossom = new System.Windows.Forms.CheckBox();
             this.GladiatorGoad = new System.Windows.Forms.CheckBox();
-            this.GladiatorPerfectDodge = new System.Windows.Forms.CheckBox();
+            this.GladiatorShadeShift = new System.Windows.Forms.CheckBox();
             this.GladiatorPugilistGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.GladiatorHaymaker = new System.Windows.Forms.CheckBox();
             this.GladiatorFeatherfoot = new System.Windows.Forms.CheckBox();
@@ -325,7 +318,7 @@
             this.LancerRogueGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.LancerDeathBlossom = new System.Windows.Forms.CheckBox();
             this.LancerGoad = new System.Windows.Forms.CheckBox();
-            this.LancerPerfectDodge = new System.Windows.Forms.CheckBox();
+            this.LancerShadeShift = new System.Windows.Forms.CheckBox();
             this.LancerPugilistGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.LancerHaymaker = new System.Windows.Forms.CheckBox();
             this.LancerFeatherfoot = new System.Windows.Forms.CheckBox();
@@ -399,7 +392,7 @@
             this.MarauderRogueGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.MarauderDeathBlossom = new System.Windows.Forms.CheckBox();
             this.MarauderGoad = new System.Windows.Forms.CheckBox();
-            this.MarauderPerfectDodge = new System.Windows.Forms.CheckBox();
+            this.MarauderShadeShift = new System.Windows.Forms.CheckBox();
             this.MarauderPugilistGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.MarauderHaymaker = new System.Windows.Forms.CheckBox();
             this.MarauderFeatherfoot = new System.Windows.Forms.CheckBox();
@@ -471,7 +464,7 @@
             this.PugilistRogueGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.PugilistDeathBlossom = new System.Windows.Forms.CheckBox();
             this.PugilistGoad = new System.Windows.Forms.CheckBox();
-            this.PugilistPerfectDodge = new System.Windows.Forms.CheckBox();
+            this.PugilistShadeShift = new System.Windows.Forms.CheckBox();
             this.PugilistArcanistGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.PugilistPhysick = new System.Windows.Forms.CheckBox();
             this.PugilistVirus = new System.Windows.Forms.CheckBox();
@@ -705,6 +698,26 @@
             this.MachinistRagingStrikes = new System.Windows.Forms.CheckBox();
             this.MachinistHawksEye = new System.Windows.Forms.CheckBox();
             this.MachinistQuellingStrikes = new System.Windows.Forms.CheckBox();
+            this.WhiteMageHealGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.WhiteMageBenediction = new System.Windows.Forms.CheckBox();
+            this.WhiteMageRaise = new System.Windows.Forms.CheckBox();
+            this.WhiteMageCooldownGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.WhiteMagePresenceOfMind = new System.Windows.Forms.CheckBox();
+            this.WhiteMageShroudOfSaints = new System.Windows.Forms.CheckBox();
+            this.WhiteMageBuffGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.WhiteMageStoneskin = new System.Windows.Forms.CheckBox();
+            this.WhiteMageProtect = new System.Windows.Forms.CheckBox();
+            this.WhiteMageTetragrammaton = new System.Windows.Forms.CheckBox();
+            this.WhiteMageDivineSeal = new System.Windows.Forms.CheckBox();
+            this.WhiteMageStoneskinII = new System.Windows.Forms.CheckBox();
+            this.ConjurerBuffGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.ConjurerStoneskinII = new System.Windows.Forms.CheckBox();
+            this.ConjurerStoneskin = new System.Windows.Forms.CheckBox();
+            this.ConjurerProtect = new System.Windows.Forms.CheckBox();
+            this.ConjurerCooldownGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.ConjurerShroudOfSaints = new System.Windows.Forms.CheckBox();
+            this.ConjurerHealGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.ConjurerRaise = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.UltimaBanner)).BeginInit();
             this.ClassTab.SuspendLayout();
             this.UltimaTab.SuspendLayout();
@@ -760,7 +773,6 @@
             this.ConjurerTab.SuspendLayout();
             this.ConjurerSubTab.SuspendLayout();
             this.ConjurerSettings.SuspendLayout();
-            this.ConjurerHealingGroup.SuspendLayout();
             this.ConjurerCrossGroup.SuspendLayout();
             this.ConjurerArcanistGroup.SuspendLayout();
             this.ConjurerThaumaturgeGroup.SuspendLayout();
@@ -770,7 +782,6 @@
             this.ConjurerGladiatorGroup.SuspendLayout();
             this.ConjurerLancerGroup.SuspendLayout();
             this.WhiteMageSettings.SuspendLayout();
-            this.WhiteMageHealGroup.SuspendLayout();
             this.WhiteMageCrossGroup.SuspendLayout();
             this.WhiteMageArcanistGroup.SuspendLayout();
             this.WhiteMageThaumaturgeGroup.SuspendLayout();
@@ -922,6 +933,12 @@
             this.MachinistCrossGroup.SuspendLayout();
             this.MachinistLancerGroup.SuspendLayout();
             this.MachinistArcherGroup.SuspendLayout();
+            this.WhiteMageHealGroup.SuspendLayout();
+            this.WhiteMageCooldownGroup.SuspendLayout();
+            this.WhiteMageBuffGroup.SuspendLayout();
+            this.ConjurerBuffGroup.SuspendLayout();
+            this.ConjurerCooldownGroup.SuspendLayout();
+            this.ConjurerHealGroup.SuspendLayout();
             this.SuspendLayout();
             // 
             // CloseButton
@@ -2305,7 +2322,7 @@
             // 
             // ArcherRogueGroup
             // 
-            this.ArcherRogueGroup.Controls.Add(this.ArcherPerfectDodge);
+            this.ArcherRogueGroup.Controls.Add(this.ArcherShadeShift);
             this.ArcherRogueGroup.ForeColor = System.Drawing.Color.White;
             this.ArcherRogueGroup.Location = new System.Drawing.Point(261, 160);
             this.ArcherRogueGroup.Name = "ArcherRogueGroup";
@@ -2314,18 +2331,18 @@
             this.ArcherRogueGroup.TabStop = false;
             this.ArcherRogueGroup.Text = "Rogue";
             // 
-            // ArcherPerfectDodge
+            // ArcherShadeShift
             // 
-            this.ArcherPerfectDodge.AutoSize = true;
-            this.ArcherPerfectDodge.Enabled = false;
-            this.ArcherPerfectDodge.ForeColor = System.Drawing.Color.White;
-            this.ArcherPerfectDodge.Location = new System.Drawing.Point(6, 19);
-            this.ArcherPerfectDodge.Name = "ArcherPerfectDodge";
-            this.ArcherPerfectDodge.Size = new System.Drawing.Size(95, 17);
-            this.ArcherPerfectDodge.TabIndex = 35;
-            this.ArcherPerfectDodge.Text = "Perfect Dodge";
-            this.ArcherPerfectDodge.UseVisualStyleBackColor = true;
-            this.ArcherPerfectDodge.CheckedChanged += new System.EventHandler(this.ArcherPerfectDodge_CheckedChanged);
+            this.ArcherShadeShift.AutoSize = true;
+            this.ArcherShadeShift.Enabled = false;
+            this.ArcherShadeShift.ForeColor = System.Drawing.Color.White;
+            this.ArcherShadeShift.Location = new System.Drawing.Point(6, 19);
+            this.ArcherShadeShift.Name = "ArcherShadeShift";
+            this.ArcherShadeShift.Size = new System.Drawing.Size(81, 17);
+            this.ArcherShadeShift.TabIndex = 35;
+            this.ArcherShadeShift.Text = "Shade Shift";
+            this.ArcherShadeShift.UseVisualStyleBackColor = true;
+            this.ArcherShadeShift.CheckedChanged += new System.EventHandler(this.ArcherShadeShift_CheckedChanged);
             // 
             // ArcherPugilistGroup
             // 
@@ -2992,8 +3009,10 @@
             // ConjurerSettings
             // 
             this.ConjurerSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ConjurerSettings.Controls.Add(this.ConjurerHealingGroup);
+            this.ConjurerSettings.Controls.Add(this.ConjurerBuffGroup);
             this.ConjurerSettings.Controls.Add(this.ConjurerCrossGroup);
+            this.ConjurerSettings.Controls.Add(this.ConjurerHealGroup);
+            this.ConjurerSettings.Controls.Add(this.ConjurerCooldownGroup);
             this.ConjurerSettings.Location = new System.Drawing.Point(114, 4);
             this.ConjurerSettings.Margin = new System.Windows.Forms.Padding(0);
             this.ConjurerSettings.Name = "ConjurerSettings";
@@ -3001,42 +3020,6 @@
             this.ConjurerSettings.TabIndex = 0;
             this.ConjurerSettings.Text = "Conjurer";
             this.ConjurerSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
-            // 
-            // ConjurerHealingGroup
-            // 
-            this.ConjurerHealingGroup.Controls.Add(this.ConjurerCureII);
-            this.ConjurerHealingGroup.Controls.Add(this.ConjurerCure);
-            this.ConjurerHealingGroup.ForeColor = System.Drawing.Color.White;
-            this.ConjurerHealingGroup.Location = new System.Drawing.Point(34, 286);
-            this.ConjurerHealingGroup.Name = "ConjurerHealingGroup";
-            this.ConjurerHealingGroup.Size = new System.Drawing.Size(69, 65);
-            this.ConjurerHealingGroup.TabIndex = 14;
-            this.ConjurerHealingGroup.TabStop = false;
-            this.ConjurerHealingGroup.Text = "Heal";
-            // 
-            // ConjurerCureII
-            // 
-            this.ConjurerCureII.AutoSize = true;
-            this.ConjurerCureII.ForeColor = System.Drawing.Color.White;
-            this.ConjurerCureII.Location = new System.Drawing.Point(6, 42);
-            this.ConjurerCureII.Name = "ConjurerCureII";
-            this.ConjurerCureII.Size = new System.Drawing.Size(57, 17);
-            this.ConjurerCureII.TabIndex = 8;
-            this.ConjurerCureII.Text = "Cure II";
-            this.ConjurerCureII.UseVisualStyleBackColor = true;
-            this.ConjurerCureII.CheckedChanged += new System.EventHandler(this.ConjurerCureII_CheckedChanged);
-            // 
-            // ConjurerCure
-            // 
-            this.ConjurerCure.AutoSize = true;
-            this.ConjurerCure.ForeColor = System.Drawing.Color.White;
-            this.ConjurerCure.Location = new System.Drawing.Point(6, 19);
-            this.ConjurerCure.Name = "ConjurerCure";
-            this.ConjurerCure.Size = new System.Drawing.Size(48, 17);
-            this.ConjurerCure.TabIndex = 7;
-            this.ConjurerCure.Text = "Cure";
-            this.ConjurerCure.UseVisualStyleBackColor = true;
-            this.ConjurerCure.CheckedChanged += new System.EventHandler(this.ConjurerCure_CheckedChanged);
             // 
             // ConjurerCrossGroup
             // 
@@ -3150,7 +3133,6 @@
             // ConjurerSwiftcast
             // 
             this.ConjurerSwiftcast.AutoSize = true;
-            this.ConjurerSwiftcast.Enabled = false;
             this.ConjurerSwiftcast.ForeColor = System.Drawing.Color.White;
             this.ConjurerSwiftcast.Location = new System.Drawing.Point(6, 65);
             this.ConjurerSwiftcast.Name = "ConjurerSwiftcast";
@@ -3464,6 +3446,8 @@
             // WhiteMageSettings
             // 
             this.WhiteMageSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.WhiteMageSettings.Controls.Add(this.WhiteMageBuffGroup);
+            this.WhiteMageSettings.Controls.Add(this.WhiteMageCooldownGroup);
             this.WhiteMageSettings.Controls.Add(this.WhiteMageHealGroup);
             this.WhiteMageSettings.Controls.Add(this.WhiteMageCrossGroup);
             this.WhiteMageSettings.Location = new System.Drawing.Point(114, 4);
@@ -3473,55 +3457,6 @@
             this.WhiteMageSettings.TabIndex = 1;
             this.WhiteMageSettings.Text = "White Mage";
             this.WhiteMageSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
-            // 
-            // WhiteMageHealGroup
-            // 
-            this.WhiteMageHealGroup.Controls.Add(this.WhiteMageCureII);
-            this.WhiteMageHealGroup.Controls.Add(this.WhiteMageRegen);
-            this.WhiteMageHealGroup.Controls.Add(this.WhiteMageCure);
-            this.WhiteMageHealGroup.ForeColor = System.Drawing.Color.White;
-            this.WhiteMageHealGroup.Location = new System.Drawing.Point(34, 145);
-            this.WhiteMageHealGroup.Name = "WhiteMageHealGroup";
-            this.WhiteMageHealGroup.Size = new System.Drawing.Size(70, 88);
-            this.WhiteMageHealGroup.TabIndex = 15;
-            this.WhiteMageHealGroup.TabStop = false;
-            this.WhiteMageHealGroup.Text = "Heal";
-            // 
-            // WhiteMageCureII
-            // 
-            this.WhiteMageCureII.AutoSize = true;
-            this.WhiteMageCureII.ForeColor = System.Drawing.Color.White;
-            this.WhiteMageCureII.Location = new System.Drawing.Point(6, 42);
-            this.WhiteMageCureII.Name = "WhiteMageCureII";
-            this.WhiteMageCureII.Size = new System.Drawing.Size(57, 17);
-            this.WhiteMageCureII.TabIndex = 16;
-            this.WhiteMageCureII.Text = "Cure II";
-            this.WhiteMageCureII.UseVisualStyleBackColor = true;
-            this.WhiteMageCureII.CheckedChanged += new System.EventHandler(this.WhiteMageCureII_CheckedChanged);
-            // 
-            // WhiteMageRegen
-            // 
-            this.WhiteMageRegen.AutoSize = true;
-            this.WhiteMageRegen.ForeColor = System.Drawing.Color.White;
-            this.WhiteMageRegen.Location = new System.Drawing.Point(6, 65);
-            this.WhiteMageRegen.Name = "WhiteMageRegen";
-            this.WhiteMageRegen.Size = new System.Drawing.Size(58, 17);
-            this.WhiteMageRegen.TabIndex = 8;
-            this.WhiteMageRegen.Text = "Regen";
-            this.WhiteMageRegen.UseVisualStyleBackColor = true;
-            this.WhiteMageRegen.CheckedChanged += new System.EventHandler(this.WhiteMageRegen_CheckedChanged);
-            // 
-            // WhiteMageCure
-            // 
-            this.WhiteMageCure.AutoSize = true;
-            this.WhiteMageCure.ForeColor = System.Drawing.Color.White;
-            this.WhiteMageCure.Location = new System.Drawing.Point(6, 19);
-            this.WhiteMageCure.Name = "WhiteMageCure";
-            this.WhiteMageCure.Size = new System.Drawing.Size(48, 17);
-            this.WhiteMageCure.TabIndex = 7;
-            this.WhiteMageCure.Text = "Cure";
-            this.WhiteMageCure.UseVisualStyleBackColor = true;
-            this.WhiteMageCure.CheckedChanged += new System.EventHandler(this.WhiteMageCure_CheckedChanged);
             // 
             // WhiteMageCrossGroup
             // 
@@ -3630,7 +3565,6 @@
             // WhiteMageSwiftcast
             // 
             this.WhiteMageSwiftcast.AutoSize = true;
-            this.WhiteMageSwiftcast.Enabled = false;
             this.WhiteMageSwiftcast.ForeColor = System.Drawing.Color.White;
             this.WhiteMageSwiftcast.Location = new System.Drawing.Point(6, 65);
             this.WhiteMageSwiftcast.Name = "WhiteMageSwiftcast";
@@ -3855,7 +3789,7 @@
             // 
             this.GladiatorRogueGroup.Controls.Add(this.GladiatorDeathBlossom);
             this.GladiatorRogueGroup.Controls.Add(this.GladiatorGoad);
-            this.GladiatorRogueGroup.Controls.Add(this.GladiatorPerfectDodge);
+            this.GladiatorRogueGroup.Controls.Add(this.GladiatorShadeShift);
             this.GladiatorRogueGroup.ForeColor = System.Drawing.Color.White;
             this.GladiatorRogueGroup.Location = new System.Drawing.Point(261, 160);
             this.GladiatorRogueGroup.Name = "GladiatorRogueGroup";
@@ -3890,18 +3824,18 @@
             this.GladiatorGoad.UseVisualStyleBackColor = true;
             this.GladiatorGoad.CheckedChanged += new System.EventHandler(this.GladiatorGoad_CheckedChanged);
             // 
-            // GladiatorPerfectDodge
+            // GladiatorShadeShift
             // 
-            this.GladiatorPerfectDodge.AutoSize = true;
-            this.GladiatorPerfectDodge.Enabled = false;
-            this.GladiatorPerfectDodge.ForeColor = System.Drawing.Color.White;
-            this.GladiatorPerfectDodge.Location = new System.Drawing.Point(6, 19);
-            this.GladiatorPerfectDodge.Name = "GladiatorPerfectDodge";
-            this.GladiatorPerfectDodge.Size = new System.Drawing.Size(95, 17);
-            this.GladiatorPerfectDodge.TabIndex = 35;
-            this.GladiatorPerfectDodge.Text = "Perfect Dodge";
-            this.GladiatorPerfectDodge.UseVisualStyleBackColor = true;
-            this.GladiatorPerfectDodge.CheckedChanged += new System.EventHandler(this.GladiatorPerfectDodge_CheckedChanged);
+            this.GladiatorShadeShift.AutoSize = true;
+            this.GladiatorShadeShift.Enabled = false;
+            this.GladiatorShadeShift.ForeColor = System.Drawing.Color.White;
+            this.GladiatorShadeShift.Location = new System.Drawing.Point(6, 19);
+            this.GladiatorShadeShift.Name = "GladiatorShadeShift";
+            this.GladiatorShadeShift.Size = new System.Drawing.Size(81, 17);
+            this.GladiatorShadeShift.TabIndex = 35;
+            this.GladiatorShadeShift.Text = "Shade Shift";
+            this.GladiatorShadeShift.UseVisualStyleBackColor = true;
+            this.GladiatorShadeShift.CheckedChanged += new System.EventHandler(this.GladiatorShadeShift_CheckedChanged);
             // 
             // GladiatorPugilistGroup
             // 
@@ -4767,7 +4701,7 @@
             // 
             this.LancerRogueGroup.Controls.Add(this.LancerDeathBlossom);
             this.LancerRogueGroup.Controls.Add(this.LancerGoad);
-            this.LancerRogueGroup.Controls.Add(this.LancerPerfectDodge);
+            this.LancerRogueGroup.Controls.Add(this.LancerShadeShift);
             this.LancerRogueGroup.ForeColor = System.Drawing.Color.White;
             this.LancerRogueGroup.Location = new System.Drawing.Point(261, 160);
             this.LancerRogueGroup.Name = "LancerRogueGroup";
@@ -4802,18 +4736,18 @@
             this.LancerGoad.UseVisualStyleBackColor = true;
             this.LancerGoad.CheckedChanged += new System.EventHandler(this.LancerGoad_CheckedChanged);
             // 
-            // LancerPerfectDodge
+            // LancerShadeShift
             // 
-            this.LancerPerfectDodge.AutoSize = true;
-            this.LancerPerfectDodge.Enabled = false;
-            this.LancerPerfectDodge.ForeColor = System.Drawing.Color.White;
-            this.LancerPerfectDodge.Location = new System.Drawing.Point(6, 19);
-            this.LancerPerfectDodge.Name = "LancerPerfectDodge";
-            this.LancerPerfectDodge.Size = new System.Drawing.Size(95, 17);
-            this.LancerPerfectDodge.TabIndex = 35;
-            this.LancerPerfectDodge.Text = "Perfect Dodge";
-            this.LancerPerfectDodge.UseVisualStyleBackColor = true;
-            this.LancerPerfectDodge.CheckedChanged += new System.EventHandler(this.LancerPerfectDodge_CheckedChanged);
+            this.LancerShadeShift.AutoSize = true;
+            this.LancerShadeShift.Enabled = false;
+            this.LancerShadeShift.ForeColor = System.Drawing.Color.White;
+            this.LancerShadeShift.Location = new System.Drawing.Point(6, 19);
+            this.LancerShadeShift.Name = "LancerShadeShift";
+            this.LancerShadeShift.Size = new System.Drawing.Size(81, 17);
+            this.LancerShadeShift.TabIndex = 35;
+            this.LancerShadeShift.Text = "Shade Shift";
+            this.LancerShadeShift.UseVisualStyleBackColor = true;
+            this.LancerShadeShift.CheckedChanged += new System.EventHandler(this.LancerShadeShift_CheckedChanged);
             // 
             // LancerPugilistGroup
             // 
@@ -5732,7 +5666,7 @@
             // 
             this.MarauderRogueGroup.Controls.Add(this.MarauderDeathBlossom);
             this.MarauderRogueGroup.Controls.Add(this.MarauderGoad);
-            this.MarauderRogueGroup.Controls.Add(this.MarauderPerfectDodge);
+            this.MarauderRogueGroup.Controls.Add(this.MarauderShadeShift);
             this.MarauderRogueGroup.ForeColor = System.Drawing.Color.White;
             this.MarauderRogueGroup.Location = new System.Drawing.Point(261, 160);
             this.MarauderRogueGroup.Name = "MarauderRogueGroup";
@@ -5767,18 +5701,18 @@
             this.MarauderGoad.UseVisualStyleBackColor = true;
             this.MarauderGoad.CheckedChanged += new System.EventHandler(this.MarauderGoad_CheckedChanged);
             // 
-            // MarauderPerfectDodge
+            // MarauderShadeShift
             // 
-            this.MarauderPerfectDodge.AutoSize = true;
-            this.MarauderPerfectDodge.Enabled = false;
-            this.MarauderPerfectDodge.ForeColor = System.Drawing.Color.White;
-            this.MarauderPerfectDodge.Location = new System.Drawing.Point(6, 19);
-            this.MarauderPerfectDodge.Name = "MarauderPerfectDodge";
-            this.MarauderPerfectDodge.Size = new System.Drawing.Size(95, 17);
-            this.MarauderPerfectDodge.TabIndex = 35;
-            this.MarauderPerfectDodge.Text = "Perfect Dodge";
-            this.MarauderPerfectDodge.UseVisualStyleBackColor = true;
-            this.MarauderPerfectDodge.CheckedChanged += new System.EventHandler(this.MarauderPerfectDodge_CheckedChanged);
+            this.MarauderShadeShift.AutoSize = true;
+            this.MarauderShadeShift.Enabled = false;
+            this.MarauderShadeShift.ForeColor = System.Drawing.Color.White;
+            this.MarauderShadeShift.Location = new System.Drawing.Point(6, 19);
+            this.MarauderShadeShift.Name = "MarauderShadeShift";
+            this.MarauderShadeShift.Size = new System.Drawing.Size(81, 17);
+            this.MarauderShadeShift.TabIndex = 35;
+            this.MarauderShadeShift.Text = "Shade Shift";
+            this.MarauderShadeShift.UseVisualStyleBackColor = true;
+            this.MarauderShadeShift.CheckedChanged += new System.EventHandler(this.MarauderShadeShift_CheckedChanged);
             // 
             // MarauderPugilistGroup
             // 
@@ -6672,7 +6606,7 @@
             // 
             this.PugilistRogueGroup.Controls.Add(this.PugilistDeathBlossom);
             this.PugilistRogueGroup.Controls.Add(this.PugilistGoad);
-            this.PugilistRogueGroup.Controls.Add(this.PugilistPerfectDodge);
+            this.PugilistRogueGroup.Controls.Add(this.PugilistShadeShift);
             this.PugilistRogueGroup.ForeColor = System.Drawing.Color.White;
             this.PugilistRogueGroup.Location = new System.Drawing.Point(261, 160);
             this.PugilistRogueGroup.Name = "PugilistRogueGroup";
@@ -6707,18 +6641,18 @@
             this.PugilistGoad.UseVisualStyleBackColor = true;
             this.PugilistGoad.CheckedChanged += new System.EventHandler(this.PugilistGoad_CheckedChanged);
             // 
-            // PugilistPerfectDodge
+            // PugilistShadeShift
             // 
-            this.PugilistPerfectDodge.AutoSize = true;
-            this.PugilistPerfectDodge.Enabled = false;
-            this.PugilistPerfectDodge.ForeColor = System.Drawing.Color.White;
-            this.PugilistPerfectDodge.Location = new System.Drawing.Point(6, 19);
-            this.PugilistPerfectDodge.Name = "PugilistPerfectDodge";
-            this.PugilistPerfectDodge.Size = new System.Drawing.Size(95, 17);
-            this.PugilistPerfectDodge.TabIndex = 35;
-            this.PugilistPerfectDodge.Text = "Perfect Dodge";
-            this.PugilistPerfectDodge.UseVisualStyleBackColor = true;
-            this.PugilistPerfectDodge.CheckedChanged += new System.EventHandler(this.PugilistPerfectDodge_CheckedChanged);
+            this.PugilistShadeShift.AutoSize = true;
+            this.PugilistShadeShift.Enabled = false;
+            this.PugilistShadeShift.ForeColor = System.Drawing.Color.White;
+            this.PugilistShadeShift.Location = new System.Drawing.Point(6, 19);
+            this.PugilistShadeShift.Name = "PugilistShadeShift";
+            this.PugilistShadeShift.Size = new System.Drawing.Size(81, 17);
+            this.PugilistShadeShift.TabIndex = 35;
+            this.PugilistShadeShift.Text = "Shade Shift";
+            this.PugilistShadeShift.UseVisualStyleBackColor = true;
+            this.PugilistShadeShift.CheckedChanged += new System.EventHandler(this.PugilistShadeShift_CheckedChanged);
             // 
             // PugilistArcanistGroup
             // 
@@ -9708,6 +9642,248 @@
             this.MachinistQuellingStrikes.UseVisualStyleBackColor = true;
             this.MachinistQuellingStrikes.CheckedChanged += new System.EventHandler(this.MachinistQuellingStrikes_CheckedChanged);
             // 
+            // WhiteMageHealGroup
+            // 
+            this.WhiteMageHealGroup.Controls.Add(this.WhiteMageTetragrammaton);
+            this.WhiteMageHealGroup.Controls.Add(this.WhiteMageBenediction);
+            this.WhiteMageHealGroup.Controls.Add(this.WhiteMageRaise);
+            this.WhiteMageHealGroup.ForeColor = System.Drawing.Color.White;
+            this.WhiteMageHealGroup.Location = new System.Drawing.Point(34, 145);
+            this.WhiteMageHealGroup.Name = "WhiteMageHealGroup";
+            this.WhiteMageHealGroup.Size = new System.Drawing.Size(115, 88);
+            this.WhiteMageHealGroup.TabIndex = 15;
+            this.WhiteMageHealGroup.TabStop = false;
+            this.WhiteMageHealGroup.Text = "Heal";
+            // 
+            // WhiteMageBenediction
+            // 
+            this.WhiteMageBenediction.AutoSize = true;
+            this.WhiteMageBenediction.ForeColor = System.Drawing.Color.White;
+            this.WhiteMageBenediction.Location = new System.Drawing.Point(6, 42);
+            this.WhiteMageBenediction.Name = "WhiteMageBenediction";
+            this.WhiteMageBenediction.Size = new System.Drawing.Size(82, 17);
+            this.WhiteMageBenediction.TabIndex = 8;
+            this.WhiteMageBenediction.Text = "Benediction";
+            this.WhiteMageBenediction.UseVisualStyleBackColor = true;
+            this.WhiteMageBenediction.CheckedChanged += new System.EventHandler(this.WhiteMageBenediction_CheckedChanged);
+            // 
+            // WhiteMageRaise
+            // 
+            this.WhiteMageRaise.AutoSize = true;
+            this.WhiteMageRaise.ForeColor = System.Drawing.Color.White;
+            this.WhiteMageRaise.Location = new System.Drawing.Point(6, 19);
+            this.WhiteMageRaise.Name = "WhiteMageRaise";
+            this.WhiteMageRaise.Size = new System.Drawing.Size(53, 17);
+            this.WhiteMageRaise.TabIndex = 7;
+            this.WhiteMageRaise.Text = "Raise";
+            this.WhiteMageRaise.UseVisualStyleBackColor = true;
+            this.WhiteMageRaise.CheckedChanged += new System.EventHandler(this.WhiteMageRaise_CheckedChanged);
+            // 
+            // WhiteMageCooldownGroup
+            // 
+            this.WhiteMageCooldownGroup.Controls.Add(this.WhiteMageDivineSeal);
+            this.WhiteMageCooldownGroup.Controls.Add(this.WhiteMagePresenceOfMind);
+            this.WhiteMageCooldownGroup.Controls.Add(this.WhiteMageShroudOfSaints);
+            this.WhiteMageCooldownGroup.ForeColor = System.Drawing.Color.White;
+            this.WhiteMageCooldownGroup.Location = new System.Drawing.Point(34, 239);
+            this.WhiteMageCooldownGroup.Name = "WhiteMageCooldownGroup";
+            this.WhiteMageCooldownGroup.Size = new System.Drawing.Size(121, 88);
+            this.WhiteMageCooldownGroup.TabIndex = 16;
+            this.WhiteMageCooldownGroup.TabStop = false;
+            this.WhiteMageCooldownGroup.Text = "Cooldown ";
+            // 
+            // WhiteMagePresenceOfMind
+            // 
+            this.WhiteMagePresenceOfMind.AutoSize = true;
+            this.WhiteMagePresenceOfMind.ForeColor = System.Drawing.Color.White;
+            this.WhiteMagePresenceOfMind.Location = new System.Drawing.Point(6, 42);
+            this.WhiteMagePresenceOfMind.Name = "WhiteMagePresenceOfMind";
+            this.WhiteMagePresenceOfMind.Size = new System.Drawing.Size(109, 17);
+            this.WhiteMagePresenceOfMind.TabIndex = 8;
+            this.WhiteMagePresenceOfMind.Text = "Presence of Mind";
+            this.WhiteMagePresenceOfMind.UseVisualStyleBackColor = true;
+            this.WhiteMagePresenceOfMind.CheckedChanged += new System.EventHandler(this.WhiteMagePresenceOfMind_CheckedChanged);
+            // 
+            // WhiteMageShroudOfSaints
+            // 
+            this.WhiteMageShroudOfSaints.AutoSize = true;
+            this.WhiteMageShroudOfSaints.ForeColor = System.Drawing.Color.White;
+            this.WhiteMageShroudOfSaints.Location = new System.Drawing.Point(6, 19);
+            this.WhiteMageShroudOfSaints.Name = "WhiteMageShroudOfSaints";
+            this.WhiteMageShroudOfSaints.Size = new System.Drawing.Size(104, 17);
+            this.WhiteMageShroudOfSaints.TabIndex = 7;
+            this.WhiteMageShroudOfSaints.Text = "Shroud of Saints";
+            this.WhiteMageShroudOfSaints.UseVisualStyleBackColor = true;
+            this.WhiteMageShroudOfSaints.CheckedChanged += new System.EventHandler(this.WhiteMageShroudOfSaints_CheckedChanged);
+            // 
+            // WhiteMageBuffGroup
+            // 
+            this.WhiteMageBuffGroup.Controls.Add(this.WhiteMageStoneskinII);
+            this.WhiteMageBuffGroup.Controls.Add(this.WhiteMageStoneskin);
+            this.WhiteMageBuffGroup.Controls.Add(this.WhiteMageProtect);
+            this.WhiteMageBuffGroup.ForeColor = System.Drawing.Color.White;
+            this.WhiteMageBuffGroup.Location = new System.Drawing.Point(156, 145);
+            this.WhiteMageBuffGroup.Name = "WhiteMageBuffGroup";
+            this.WhiteMageBuffGroup.Size = new System.Drawing.Size(94, 88);
+            this.WhiteMageBuffGroup.TabIndex = 17;
+            this.WhiteMageBuffGroup.TabStop = false;
+            this.WhiteMageBuffGroup.Text = "Buff";
+            // 
+            // WhiteMageStoneskin
+            // 
+            this.WhiteMageStoneskin.AutoSize = true;
+            this.WhiteMageStoneskin.ForeColor = System.Drawing.Color.White;
+            this.WhiteMageStoneskin.Location = new System.Drawing.Point(6, 42);
+            this.WhiteMageStoneskin.Name = "WhiteMageStoneskin";
+            this.WhiteMageStoneskin.Size = new System.Drawing.Size(73, 17);
+            this.WhiteMageStoneskin.TabIndex = 8;
+            this.WhiteMageStoneskin.Text = "Stoneskin";
+            this.WhiteMageStoneskin.UseVisualStyleBackColor = true;
+            this.WhiteMageStoneskin.CheckedChanged += new System.EventHandler(this.WhiteMageStoneskin_CheckedChanged);
+            // 
+            // WhiteMageProtect
+            // 
+            this.WhiteMageProtect.AutoSize = true;
+            this.WhiteMageProtect.ForeColor = System.Drawing.Color.White;
+            this.WhiteMageProtect.Location = new System.Drawing.Point(6, 19);
+            this.WhiteMageProtect.Name = "WhiteMageProtect";
+            this.WhiteMageProtect.Size = new System.Drawing.Size(60, 17);
+            this.WhiteMageProtect.TabIndex = 7;
+            this.WhiteMageProtect.Text = "Protect";
+            this.WhiteMageProtect.UseVisualStyleBackColor = true;
+            this.WhiteMageProtect.CheckedChanged += new System.EventHandler(this.WhiteMageProtect_CheckedChanged);
+            // 
+            // WhiteMageTetragrammaton
+            // 
+            this.WhiteMageTetragrammaton.AutoSize = true;
+            this.WhiteMageTetragrammaton.ForeColor = System.Drawing.Color.White;
+            this.WhiteMageTetragrammaton.Location = new System.Drawing.Point(6, 65);
+            this.WhiteMageTetragrammaton.Name = "WhiteMageTetragrammaton";
+            this.WhiteMageTetragrammaton.Size = new System.Drawing.Size(103, 17);
+            this.WhiteMageTetragrammaton.TabIndex = 9;
+            this.WhiteMageTetragrammaton.Text = "Tetragrammaton";
+            this.WhiteMageTetragrammaton.UseVisualStyleBackColor = true;
+            this.WhiteMageTetragrammaton.CheckedChanged += new System.EventHandler(this.WhiteMageTetragrammaton_CheckedChanged);
+            // 
+            // WhiteMageDivineSeal
+            // 
+            this.WhiteMageDivineSeal.AutoSize = true;
+            this.WhiteMageDivineSeal.ForeColor = System.Drawing.Color.White;
+            this.WhiteMageDivineSeal.Location = new System.Drawing.Point(6, 65);
+            this.WhiteMageDivineSeal.Name = "WhiteMageDivineSeal";
+            this.WhiteMageDivineSeal.Size = new System.Drawing.Size(80, 17);
+            this.WhiteMageDivineSeal.TabIndex = 9;
+            this.WhiteMageDivineSeal.Text = "Divine Seal";
+            this.WhiteMageDivineSeal.UseVisualStyleBackColor = true;
+            this.WhiteMageDivineSeal.CheckedChanged += new System.EventHandler(this.WhiteMageDivineSeal_CheckedChanged);
+            // 
+            // WhiteMageStoneskinII
+            // 
+            this.WhiteMageStoneskinII.AutoSize = true;
+            this.WhiteMageStoneskinII.ForeColor = System.Drawing.Color.White;
+            this.WhiteMageStoneskinII.Location = new System.Drawing.Point(6, 65);
+            this.WhiteMageStoneskinII.Name = "WhiteMageStoneskinII";
+            this.WhiteMageStoneskinII.Size = new System.Drawing.Size(82, 17);
+            this.WhiteMageStoneskinII.TabIndex = 9;
+            this.WhiteMageStoneskinII.Text = "Stoneskin II";
+            this.WhiteMageStoneskinII.UseVisualStyleBackColor = true;
+            this.WhiteMageStoneskinII.CheckedChanged += new System.EventHandler(this.WhiteMageStoneskinII_CheckedChanged);
+            // 
+            // ConjurerBuffGroup
+            // 
+            this.ConjurerBuffGroup.Controls.Add(this.ConjurerStoneskinII);
+            this.ConjurerBuffGroup.Controls.Add(this.ConjurerStoneskin);
+            this.ConjurerBuffGroup.Controls.Add(this.ConjurerProtect);
+            this.ConjurerBuffGroup.ForeColor = System.Drawing.Color.White;
+            this.ConjurerBuffGroup.Location = new System.Drawing.Point(105, 286);
+            this.ConjurerBuffGroup.Name = "ConjurerBuffGroup";
+            this.ConjurerBuffGroup.Size = new System.Drawing.Size(94, 88);
+            this.ConjurerBuffGroup.TabIndex = 20;
+            this.ConjurerBuffGroup.TabStop = false;
+            this.ConjurerBuffGroup.Text = "Buff";
+            // 
+            // ConjurerStoneskinII
+            // 
+            this.ConjurerStoneskinII.AutoSize = true;
+            this.ConjurerStoneskinII.ForeColor = System.Drawing.Color.White;
+            this.ConjurerStoneskinII.Location = new System.Drawing.Point(6, 65);
+            this.ConjurerStoneskinII.Name = "ConjurerStoneskinII";
+            this.ConjurerStoneskinII.Size = new System.Drawing.Size(82, 17);
+            this.ConjurerStoneskinII.TabIndex = 9;
+            this.ConjurerStoneskinII.Text = "Stoneskin II";
+            this.ConjurerStoneskinII.UseVisualStyleBackColor = true;
+            this.ConjurerStoneskinII.CheckedChanged += new System.EventHandler(this.ConjurerStoneskinII_CheckedChanged);
+            // 
+            // ConjurerStoneskin
+            // 
+            this.ConjurerStoneskin.AutoSize = true;
+            this.ConjurerStoneskin.ForeColor = System.Drawing.Color.White;
+            this.ConjurerStoneskin.Location = new System.Drawing.Point(6, 42);
+            this.ConjurerStoneskin.Name = "ConjurerStoneskin";
+            this.ConjurerStoneskin.Size = new System.Drawing.Size(73, 17);
+            this.ConjurerStoneskin.TabIndex = 8;
+            this.ConjurerStoneskin.Text = "Stoneskin";
+            this.ConjurerStoneskin.UseVisualStyleBackColor = true;
+            this.ConjurerStoneskin.CheckedChanged += new System.EventHandler(this.ConjurerStoneskin_CheckedChanged);
+            // 
+            // ConjurerProtect
+            // 
+            this.ConjurerProtect.AutoSize = true;
+            this.ConjurerProtect.ForeColor = System.Drawing.Color.White;
+            this.ConjurerProtect.Location = new System.Drawing.Point(6, 19);
+            this.ConjurerProtect.Name = "ConjurerProtect";
+            this.ConjurerProtect.Size = new System.Drawing.Size(60, 17);
+            this.ConjurerProtect.TabIndex = 7;
+            this.ConjurerProtect.Text = "Protect";
+            this.ConjurerProtect.UseVisualStyleBackColor = true;
+            this.ConjurerProtect.CheckedChanged += new System.EventHandler(this.ConjurerProtect_CheckedChanged);
+            // 
+            // ConjurerCooldownGroup
+            // 
+            this.ConjurerCooldownGroup.Controls.Add(this.ConjurerShroudOfSaints);
+            this.ConjurerCooldownGroup.ForeColor = System.Drawing.Color.White;
+            this.ConjurerCooldownGroup.Location = new System.Drawing.Point(205, 286);
+            this.ConjurerCooldownGroup.Name = "ConjurerCooldownGroup";
+            this.ConjurerCooldownGroup.Size = new System.Drawing.Size(116, 42);
+            this.ConjurerCooldownGroup.TabIndex = 19;
+            this.ConjurerCooldownGroup.TabStop = false;
+            this.ConjurerCooldownGroup.Text = "Cooldown ";
+            // 
+            // ConjurerShroudOfSaints
+            // 
+            this.ConjurerShroudOfSaints.AutoSize = true;
+            this.ConjurerShroudOfSaints.ForeColor = System.Drawing.Color.White;
+            this.ConjurerShroudOfSaints.Location = new System.Drawing.Point(6, 19);
+            this.ConjurerShroudOfSaints.Name = "ConjurerShroudOfSaints";
+            this.ConjurerShroudOfSaints.Size = new System.Drawing.Size(104, 17);
+            this.ConjurerShroudOfSaints.TabIndex = 7;
+            this.ConjurerShroudOfSaints.Text = "Shroud of Saints";
+            this.ConjurerShroudOfSaints.UseVisualStyleBackColor = true;
+            this.ConjurerShroudOfSaints.CheckedChanged += new System.EventHandler(this.ConjurerShroudOfSaints_CheckedChanged);
+            // 
+            // ConjurerHealGroup
+            // 
+            this.ConjurerHealGroup.Controls.Add(this.ConjurerRaise);
+            this.ConjurerHealGroup.ForeColor = System.Drawing.Color.White;
+            this.ConjurerHealGroup.Location = new System.Drawing.Point(34, 286);
+            this.ConjurerHealGroup.Name = "ConjurerHealGroup";
+            this.ConjurerHealGroup.Size = new System.Drawing.Size(65, 42);
+            this.ConjurerHealGroup.TabIndex = 18;
+            this.ConjurerHealGroup.TabStop = false;
+            this.ConjurerHealGroup.Text = "Heal";
+            // 
+            // ConjurerRaise
+            // 
+            this.ConjurerRaise.AutoSize = true;
+            this.ConjurerRaise.ForeColor = System.Drawing.Color.White;
+            this.ConjurerRaise.Location = new System.Drawing.Point(6, 19);
+            this.ConjurerRaise.Name = "ConjurerRaise";
+            this.ConjurerRaise.Size = new System.Drawing.Size(53, 17);
+            this.ConjurerRaise.TabIndex = 7;
+            this.ConjurerRaise.Text = "Raise";
+            this.ConjurerRaise.UseVisualStyleBackColor = true;
+            this.ConjurerRaise.CheckedChanged += new System.EventHandler(this.ConjurerRaise_CheckedChanged);
+            // 
             // UltimaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -9814,8 +9990,6 @@
             this.ConjurerTab.ResumeLayout(false);
             this.ConjurerSubTab.ResumeLayout(false);
             this.ConjurerSettings.ResumeLayout(false);
-            this.ConjurerHealingGroup.ResumeLayout(false);
-            this.ConjurerHealingGroup.PerformLayout();
             this.ConjurerCrossGroup.ResumeLayout(false);
             this.ConjurerArcanistGroup.ResumeLayout(false);
             this.ConjurerArcanistGroup.PerformLayout();
@@ -9832,8 +10006,6 @@
             this.ConjurerLancerGroup.ResumeLayout(false);
             this.ConjurerLancerGroup.PerformLayout();
             this.WhiteMageSettings.ResumeLayout(false);
-            this.WhiteMageHealGroup.ResumeLayout(false);
-            this.WhiteMageHealGroup.PerformLayout();
             this.WhiteMageCrossGroup.ResumeLayout(false);
             this.WhiteMageArcanistGroup.ResumeLayout(false);
             this.WhiteMageArcanistGroup.PerformLayout();
@@ -10091,6 +10263,18 @@
             this.MachinistLancerGroup.PerformLayout();
             this.MachinistArcherGroup.ResumeLayout(false);
             this.MachinistArcherGroup.PerformLayout();
+            this.WhiteMageHealGroup.ResumeLayout(false);
+            this.WhiteMageHealGroup.PerformLayout();
+            this.WhiteMageCooldownGroup.ResumeLayout(false);
+            this.WhiteMageCooldownGroup.PerformLayout();
+            this.WhiteMageBuffGroup.ResumeLayout(false);
+            this.WhiteMageBuffGroup.PerformLayout();
+            this.ConjurerBuffGroup.ResumeLayout(false);
+            this.ConjurerBuffGroup.PerformLayout();
+            this.ConjurerCooldownGroup.ResumeLayout(false);
+            this.ConjurerCooldownGroup.PerformLayout();
+            this.ConjurerHealGroup.ResumeLayout(false);
+            this.ConjurerHealGroup.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -10209,7 +10393,7 @@
         private System.Windows.Forms.CheckBox ArcherSurecast;
         private System.Windows.Forms.CheckBox ArcherSwiftcast;
         private Design.GroupBoxDesign ArcherRogueGroup;
-        private System.Windows.Forms.CheckBox ArcherPerfectDodge;
+        private System.Windows.Forms.CheckBox ArcherShadeShift;
         private Design.GroupBoxDesign ArcherPugilistGroup;
         private System.Windows.Forms.CheckBox ArcherFeatherfoot;
         private System.Windows.Forms.CheckBox ArcherSecondWind;
@@ -10301,7 +10485,7 @@
         private System.Windows.Forms.CheckBox GladiatorSurecast;
         private System.Windows.Forms.CheckBox GladiatorSwiftcast;
         private Design.GroupBoxDesign GladiatorRogueGroup;
-        private System.Windows.Forms.CheckBox GladiatorPerfectDodge;
+        private System.Windows.Forms.CheckBox GladiatorShadeShift;
         private Design.GroupBoxDesign GladiatorPugilistGroup;
         private System.Windows.Forms.CheckBox GladiatorHaymaker;
         private System.Windows.Forms.CheckBox GladiatorFeatherfoot;
@@ -10367,7 +10551,7 @@
         private Design.GroupBoxDesign LancerRogueGroup;
         private System.Windows.Forms.CheckBox LancerDeathBlossom;
         private System.Windows.Forms.CheckBox LancerGoad;
-        private System.Windows.Forms.CheckBox LancerPerfectDodge;
+        private System.Windows.Forms.CheckBox LancerShadeShift;
         private Design.GroupBoxDesign LancerPugilistGroup;
         private System.Windows.Forms.CheckBox LancerHaymaker;
         private System.Windows.Forms.CheckBox LancerFeatherfoot;
@@ -10426,7 +10610,7 @@
         private Design.GroupBoxDesign MarauderRogueGroup;
         private System.Windows.Forms.CheckBox MarauderDeathBlossom;
         private System.Windows.Forms.CheckBox MarauderGoad;
-        private System.Windows.Forms.CheckBox MarauderPerfectDodge;
+        private System.Windows.Forms.CheckBox MarauderShadeShift;
         private Design.GroupBoxDesign MarauderPugilistGroup;
         private System.Windows.Forms.CheckBox MarauderHaymaker;
         private System.Windows.Forms.CheckBox MarauderFeatherfoot;
@@ -10485,7 +10669,7 @@
         private Design.GroupBoxDesign PugilistRogueGroup;
         private System.Windows.Forms.CheckBox PugilistDeathBlossom;
         private System.Windows.Forms.CheckBox PugilistGoad;
-        private System.Windows.Forms.CheckBox PugilistPerfectDodge;
+        private System.Windows.Forms.CheckBox PugilistShadeShift;
         private Design.GroupBoxDesign PugilistArcanistGroup;
         private System.Windows.Forms.CheckBox PugilistPhysick;
         private System.Windows.Forms.CheckBox PugilistVirus;
@@ -10622,11 +10806,6 @@
         private System.Windows.Forms.CheckBox ArcherBluntArrow;
         private Design.GroupBoxDesign BardInterruptGroup;
         private System.Windows.Forms.CheckBox BardBluntArrow;
-        private Design.GroupBoxDesign ConjurerHealingGroup;
-        private System.Windows.Forms.CheckBox ConjurerCure;
-        private Design.GroupBoxDesign WhiteMageHealGroup;
-        private System.Windows.Forms.CheckBox WhiteMageRegen;
-        private System.Windows.Forms.CheckBox WhiteMageCure;
         private Design.GroupBoxDesign PaladinInterruptGroup;
         private System.Windows.Forms.CheckBox PaladinSpiritsWithin;
         private Design.GroupBoxDesign RogueInterruptGroup;
@@ -10650,8 +10829,6 @@
         private System.Windows.Forms.CheckBox PugilistPerfectBalance;
         private Design.GroupBoxDesign MonkCooldownGroup;
         private System.Windows.Forms.CheckBox MonkPerfectBalance;
-        private System.Windows.Forms.CheckBox ConjurerCureII;
-        private System.Windows.Forms.CheckBox WhiteMageCureII;
         private Design.GroupBoxDesign ArcherExecuteGroup;
         private System.Windows.Forms.CheckBox ArcherMiserysEnd;
         private Design.GroupBoxDesign BardExecuteGroup;
@@ -10774,5 +10951,25 @@
         private Design.GroupBoxDesign groupBoxDesign3;
         private System.Windows.Forms.ComboBox MachinistSummonTurretCombo;
         private System.Windows.Forms.CheckBox MachinistSummonTurret;
+        private Design.GroupBoxDesign WhiteMageBuffGroup;
+        private System.Windows.Forms.CheckBox WhiteMageStoneskinII;
+        private System.Windows.Forms.CheckBox WhiteMageStoneskin;
+        private System.Windows.Forms.CheckBox WhiteMageProtect;
+        private Design.GroupBoxDesign WhiteMageCooldownGroup;
+        private System.Windows.Forms.CheckBox WhiteMageDivineSeal;
+        private System.Windows.Forms.CheckBox WhiteMagePresenceOfMind;
+        private System.Windows.Forms.CheckBox WhiteMageShroudOfSaints;
+        private Design.GroupBoxDesign WhiteMageHealGroup;
+        private System.Windows.Forms.CheckBox WhiteMageTetragrammaton;
+        private System.Windows.Forms.CheckBox WhiteMageBenediction;
+        private System.Windows.Forms.CheckBox WhiteMageRaise;
+        private Design.GroupBoxDesign ConjurerBuffGroup;
+        private System.Windows.Forms.CheckBox ConjurerStoneskinII;
+        private System.Windows.Forms.CheckBox ConjurerStoneskin;
+        private System.Windows.Forms.CheckBox ConjurerProtect;
+        private Design.GroupBoxDesign ConjurerHealGroup;
+        private System.Windows.Forms.CheckBox ConjurerRaise;
+        private Design.GroupBoxDesign ConjurerCooldownGroup;
+        private System.Windows.Forms.CheckBox ConjurerShroudOfSaints;
     }
 }

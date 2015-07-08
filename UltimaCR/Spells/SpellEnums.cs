@@ -5,7 +5,8 @@ namespace UltimaCR.Spells
     {
         Target,
         Self,
-        Location
+        TargetLocation,
+        SelfLocation
     }
     public enum GCDType
     {

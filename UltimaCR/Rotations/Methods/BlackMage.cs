@@ -419,6 +419,31 @@ namespace UltimaCR.Rotations
             return false;
         }
 
+        private async Task<bool> LeyLines()
+        {
+            return await MySpells.LeyLines.Cast();
+        }
+
+        private async Task<bool> Sharpcast()
+        {
+            return await MySpells.Sharpcast.Cast();
+        }
+
+        private async Task<bool> Enochian()
+        {
+            return await MySpells.Enochian.Cast();
+        }
+
+        private async Task<bool> BlizzardIV()
+        {
+            return await MySpells.BlizzardIV.Cast();
+        }
+
+        private async Task<bool> FireIV()
+        {
+            return await MySpells.FireIV.Cast();
+        }
+
         #endregion
 
         #region Custom Spells

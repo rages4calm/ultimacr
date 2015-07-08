@@ -392,9 +392,9 @@ namespace UltimaCR.Rotations
             return false;
         }
 
-        private async Task<bool> TriDisaster()
+        private async Task<bool> Tribind()
         {
-            return await MySpells.TriDisaster.Cast();
+            return await MySpells.Tribind.Cast();
         }
 
         private async Task<bool> Spur()
@@ -410,6 +410,31 @@ namespace UltimaCR.Rotations
                 return await MySpells.Enkindle.Cast();
             }
             return false;
+        }
+
+        private async Task<bool> Painflare()
+        {
+            return await MySpells.Painflare.Cast();
+        }
+
+        private async Task<bool> RuinIII()
+        {
+            return await MySpells.RuinIII.Cast();
+        }
+
+        private async Task<bool> Tridisaster()
+        {
+            return await MySpells.Tridisaster.Cast();
+        }
+
+        private async Task<bool> DreadwyrmTrance()
+        {
+            return await MySpells.DreadwyrmTrance.Cast();
+        }
+
+        private async Task<bool> Deathflare()
+        {
+            return await MySpells.Deathflare.Cast();
         }
 
         #endregion

@@ -137,7 +137,7 @@ namespace UltimaCR.Spells.Main
                                Level = 40,
                                GCDType = GCDType.On,
                                SpellType = SpellType.OnLocation,
-                               CastType = CastType.Location
+                               CastType = CastType.TargetLocation
                            });
             }
         }
@@ -246,6 +246,96 @@ namespace UltimaCR.Spells.Main
                                GCDType = GCDType.Off,
                                SpellType = SpellType.Buff,
                                CastType = CastType.Self
+                           });
+            }
+        }
+        private Spell _smokescreen;
+        public Spell SmokeScreen
+        {
+            get
+            {
+                return _smokescreen ??
+                       (_smokescreen =
+                           new Spell
+                           {
+                               Name = "Smoke Screen",
+                               ID = 3565,
+                               Level = 52,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Defensive,
+                               CastType = CastType.Target
+                           });
+            }
+        }
+        private Spell _armorcrush;
+        public Spell ArmorCrush
+        {
+            get
+            {
+                return _armorcrush ??
+                       (_armorcrush =
+                           new Spell
+                           {
+                               Name = "Armor Crush",
+                               ID = 3563,
+                               Level = 54,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Flank,
+                               CastType = CastType.Target
+                           });
+            }
+        }
+        private Spell _shadewalker;
+        public Spell Shadewalker
+        {
+            get
+            {
+                return _shadewalker ??
+                       (_shadewalker =
+                           new Spell
+                           {
+                               Name = "Shadewalker",
+                               ID = 3564,
+                               Level = 56,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Defensive,
+                               CastType = CastType.Target
+                           });
+            }
+        }
+        private Spell _duality;
+        public Spell Duality
+        {
+            get
+            {
+                return _duality ??
+                       (_duality =
+                           new Spell
+                           {
+                               Name = "Duality",
+                               ID = 3567,
+                               Level = 58,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Buff,
+                               CastType = CastType.Self
+                           });
+            }
+        }
+        private Spell _dreamwithinadream;
+        public Spell DreamWithinADream
+        {
+            get
+            {
+                return _dreamwithinadream ??
+                       (_dreamwithinadream =
+                           new Spell
+                           {
+                               Name = "Dream Within a Dream",
+                               ID = 3566,
+                               Level = 60,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Cooldown,
+                               CastType = CastType.Target
                            });
             }
         }

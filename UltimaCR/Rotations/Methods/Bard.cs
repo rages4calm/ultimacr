@@ -61,7 +61,7 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Bloodletter()
         {
-                return await MySpells.Bloodletter.Cast();
+            return await MySpells.Bloodletter.Cast();
         }
 
         private async Task<bool> RepellingShot()
@@ -281,6 +281,31 @@ namespace UltimaCR.Rotations
         private async Task<bool> BattleVoice()
         {
             return await MySpells.BattleVoice.Cast();
+        }
+
+        private async Task<bool> WanderersMinuet()
+        {
+            return await MySpells.WanderersMinuet.Cast();
+        }
+
+        private async Task<bool> EmpyrealArrow()
+        {
+            return await MySpells.EmpyrealArrow.Cast();
+        }
+
+        private async Task<bool> IronJaws()
+        {
+            return await MySpells.IronJaws.Cast();
+        }
+
+        private async Task<bool> TheWardensPaean()
+        {
+            return await MySpells.TheWardensPaean.Cast();
+        }
+
+        private async Task<bool> Sidewinder()
+        {
+            return await MySpells.Sidewinder.Cast();
         }
 
         #endregion

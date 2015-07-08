@@ -137,7 +137,7 @@ namespace UltimaCR.Spells.PVP
                                    Level = 0,
                                    GCDType = GCDType.On,
                                    SpellType = SpellType.OnLocation,
-                                   CastType = CastType.Location
+                                   CastType = CastType.TargetLocation
                                });
                 }
             }

@@ -309,7 +309,7 @@ namespace UltimaCR.Settings
         #region Rogue Cross-Class
 
         [Setting, DefaultValue(false)]
-        public bool ArcherPerfectDodge { get; set; }
+        public bool ArcherShadeShift { get; set; }
 
         #endregion
 
@@ -428,16 +428,25 @@ namespace UltimaCR.Settings
         [Setting, DefaultValue(false)]
         public bool ConjurerBlizzardII { get; set; }
 
-        [Setting, DefaultValue(false)]
+        [Setting, DefaultValue(true)]
         public bool ConjurerSwiftcast { get; set; }
 
         #endregion
 
         [Setting, DefaultValue(true)]
-        public bool ConjurerCure { get; set; }
+        public bool ConjurerRaise { get; set; }
 
         [Setting, DefaultValue(true)]
-        public bool ConjurerCureII { get; set; }
+        public bool ConjurerProtect { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool ConjurerStoneskin { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool ConjurerStoneskinII { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool ConjurerShroudOfSaints { get; set; }
 
         #endregion
 
@@ -548,7 +557,7 @@ namespace UltimaCR.Settings
         #region Rogue Cross-Class
 
         [Setting, DefaultValue(false)]
-        public bool GladiatorPerfectDodge { get; set; }
+        public bool GladiatorShadeShift { get; set; }
 
         [Setting, DefaultValue(false)]
         public bool GladiatorGoad { get; set; }
@@ -683,7 +692,7 @@ namespace UltimaCR.Settings
         #region Rogue Cross-Class
 
         [Setting, DefaultValue(false)]
-        public bool LancerPerfectDodge { get; set; }
+        public bool LancerShadeShift { get; set; }
 
         [Setting, DefaultValue(false)]
         public bool LancerGoad { get; set; }
@@ -815,7 +824,7 @@ namespace UltimaCR.Settings
         #region Rogue Cross-Class
 
         [Setting, DefaultValue(false)]
-        public bool MarauderPerfectDodge { get; set; }
+        public bool MarauderShadeShift { get; set; }
 
         [Setting, DefaultValue(false)]
         public bool MarauderGoad { get; set; }
@@ -950,7 +959,7 @@ namespace UltimaCR.Settings
         #region Rogue Cross-Class
 
         [Setting, DefaultValue(false)]
-        public bool PugilistPerfectDodge { get; set; }
+        public bool PugilistShadeShift { get; set; }
 
         [Setting, DefaultValue(false)]
         public bool PugilistGoad { get; set; }
@@ -1898,19 +1907,38 @@ namespace UltimaCR.Settings
         [Setting, DefaultValue(false)]
         public bool WhiteMageBlizzardII { get; set; }
 
-        [Setting, DefaultValue(false)]
+        [Setting, DefaultValue(true)]
         public bool WhiteMageSwiftcast { get; set; }
 
         #endregion
 
-        [Setting, DefaultValue(true)]
-        public bool WhiteMageCure { get; set; }
 
         [Setting, DefaultValue(true)]
-        public bool WhiteMageCureII { get; set; }
+        public bool WhiteMageRaise { get; set; }
 
         [Setting, DefaultValue(true)]
-        public bool WhiteMageRegen { get; set; }
+        public bool WhiteMageBenediction { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool WhiteMageTetragrammaton { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool WhiteMageShroudOfSaints { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool WhiteMagePresenceOfMind { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool WhiteMageDivineSeal { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool WhiteMageProtect { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool WhiteMageStoneskin { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool WhiteMageStoneskinII { get; set; }
 
         #endregion
 

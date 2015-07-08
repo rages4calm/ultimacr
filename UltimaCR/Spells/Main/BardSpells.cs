@@ -105,5 +105,95 @@ namespace UltimaCR.Spells.Main
                            });
             }
         }
+        private Spell _wanderersminuet;
+        public Spell WanderersMinuet
+        {
+            get
+            {
+                return _wanderersminuet ??
+                       (_wanderersminuet =
+                           new Spell
+                           {
+                               Name = "Wanderer's Minuet",
+                               ID = 3559,
+                               Level = 52,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Aura,
+                               CastType = CastType.Self
+                           });
+            }
+        }
+        private Spell _empyrealarrow;
+        public Spell EmpyrealArrow
+        {
+            get
+            {
+                return _empyrealarrow ??
+                       (_empyrealarrow =
+                           new Spell
+                           {
+                               Name = "Empyreal Arrow",
+                               ID = 3558,
+                               Level = 54,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Damage,
+                               CastType = CastType.Target
+                           });
+            }
+        }
+        private Spell _ironjaws;
+        public Spell IronJaws
+        {
+            get
+            {
+                return _ironjaws ??
+                       (_ironjaws =
+                           new Spell
+                           {
+                               Name = "Iron Jaws",
+                               ID = 3560,
+                               Level = 56,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.DoT,
+                               CastType = CastType.Target
+                           });
+            }
+        }
+        private Spell _thewardenspaean;
+        public Spell TheWardensPaean
+        {
+            get
+            {
+                return _thewardenspaean ??
+                       (_thewardenspaean =
+                           new Spell
+                           {
+                               Name = "The Warden's Paean",
+                               ID = 3561,
+                               Level = 58,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Defensive,
+                               CastType = CastType.Target
+                           });
+            }
+        }
+        private Spell _sidewinder;
+        public Spell Sidewinder
+        {
+            get
+            {
+                return _sidewinder ??
+                       (_sidewinder =
+                           new Spell
+                           {
+                               Name = "Sidewinder",
+                               ID = 3562,
+                               Level = 60,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Cooldown,
+                               CastType = CastType.Target
+                           });
+            }
+        }
     }
 }

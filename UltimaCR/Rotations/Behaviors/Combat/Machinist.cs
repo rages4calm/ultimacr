@@ -8,6 +8,7 @@ namespace UltimaCR.Rotations
         {
             if (await HotShot()) return true;
             if (await LeadShot()) return true;
+            if (await Reassemble()) return true;
             if (await CleanShot()) return true;
             if (await SlugShot()) return true;
             return await SplitShot();

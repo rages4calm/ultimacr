@@ -314,6 +314,31 @@ namespace UltimaCR.Rotations
             return false;
         }
 
+        private async Task<bool> BattleLitany()
+        {
+            return await MySpells.BattleLitany.Cast();
+        }
+
+        private async Task<bool> BloodOfTheDragon()
+        {
+            return await MySpells.BloodOfTheDragon.Cast();
+        }
+
+        private async Task<bool> FangAndClaw()
+        {
+            return await MySpells.FangAndClaw.Cast();
+        }
+
+        private async Task<bool> WheelingThrust()
+        {
+            return await MySpells.WheelingThrust.Cast();
+        }
+
+        private async Task<bool> Geirskogul()
+        {
+            return await MySpells.Geirskogul.Cast();
+        }
+
         #endregion
 
         #region PvP Spells

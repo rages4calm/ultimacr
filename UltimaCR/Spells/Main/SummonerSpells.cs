@@ -213,16 +213,16 @@ namespace UltimaCR.Spells.Main
                            });
             }
         }
-        private Spell _tridisaster;
-        public Spell TriDisaster
+        private Spell _tribind;
+        public Spell Tribind
         {
             get
             {
-                return _tridisaster ??
-                       (_tridisaster =
+                return _tribind ??
+                       (_tribind =
                            new Spell
                            {
-                               Name = "Tri-disaster",
+                               Name = "Tri-bind",
                                ID = 182,
                                Level = 40,
                                GCDType = GCDType.On,
@@ -261,6 +261,96 @@ namespace UltimaCR.Spells.Main
                                Name = "Enkindle",
                                ID = 184,
                                Level = 50,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Cooldown,
+                               CastType = CastType.Target
+                           });
+            }
+        }
+        private Spell _painflare;
+        public Spell Painflare
+        {
+            get
+            {
+                return _painflare ??
+                       (_painflare =
+                           new Spell
+                           {
+                               Name = "Painflare",
+                               ID = 3578,
+                               Level = 52,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.AoE,
+                               CastType = CastType.Target
+                           });
+            }
+        }
+        private Spell _ruinIII;
+        public Spell RuinIII
+        {
+            get
+            {
+                return _ruinIII ??
+                       (_ruinIII =
+                           new Spell
+                           {
+                               Name = "Ruin III",
+                               ID = 3579,
+                               Level = 54,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Damage,
+                               CastType = CastType.Target
+                           });
+            }
+        }
+        private Spell _tridisaster;
+        public Spell Tridisaster
+        {
+            get
+            {
+                return _tridisaster ??
+                       (_tridisaster =
+                           new Spell
+                           {
+                               Name = "Tri-disaster",
+                               ID = 3580,
+                               Level = 56,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Debuff,
+                               CastType = CastType.Target
+                           });
+            }
+        }
+        private Spell _dreadwyrmtrance;
+        public Spell DreadwyrmTrance
+        {
+            get
+            {
+                return _dreadwyrmtrance ??
+                       (_dreadwyrmtrance =
+                           new Spell
+                           {
+                               Name = "Dreadwyrm Trance",
+                               ID = 3581,
+                               Level = 58,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Buff,
+                               CastType = CastType.Self
+                           });
+            }
+        }
+        private Spell _deathflare;
+        public Spell Deathflare
+        {
+            get
+            {
+                return _deathflare ??
+                       (_deathflare =
+                           new Spell
+                           {
+                               Name = "Deathflare",
+                               ID = 3582,
+                               Level = 60,
                                GCDType = GCDType.On,
                                SpellType = SpellType.Cooldown,
                                CastType = CastType.Target
