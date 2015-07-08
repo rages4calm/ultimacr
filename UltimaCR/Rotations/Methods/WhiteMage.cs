@@ -214,7 +214,7 @@ namespace UltimaCR.Rotations
         private async Task<bool> StoneskinII()
         {
             if (Ultima.UltSettings.WhiteMageStoneskinII &&
-                Helpers.HealManager.Any(hm => !hm.HasAura(MySpells.Stoneskin.Name)))
+                Helpers.HealManager.Any(hm => !hm.HasAura(MySpells.Stoneskin.Name) && hm.Distance2D(Core.Player) - hm.CombatReach - Core.Player.CombatReach <= 15))
             {
                 return await MySpells.StoneskinII.Cast();
             }
