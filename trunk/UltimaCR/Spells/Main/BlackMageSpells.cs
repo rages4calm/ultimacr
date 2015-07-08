@@ -47,7 +47,7 @@ namespace UltimaCR.Spells.Main
                                Level = 35,
                                GCDType = GCDType.On,
                                SpellType = SpellType.OnLocation,
-                               CastType = CastType.Location
+                               CastType = CastType.TargetLocation
                            });
             }
         }
@@ -101,6 +101,96 @@ namespace UltimaCR.Spells.Main
                                Level = 50,
                                GCDType = GCDType.On,
                                SpellType = SpellType.Cooldown,
+                               CastType = CastType.Target
+                           });
+            }
+        }
+        private Spell _leylines;
+        public Spell LeyLines
+        {
+            get
+            {
+                return _leylines ??
+                       (_leylines =
+                           new Spell
+                           {
+                               Name = "Ley Lines",
+                               ID = 3573,
+                               Level = 52,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.OnLocation,
+                               CastType = CastType.SelfLocation
+                           });
+            }
+        }
+        private Spell _sharpcast;
+        public Spell Sharpcast
+        {
+            get
+            {
+                return _sharpcast ??
+                       (_sharpcast =
+                           new Spell
+                           {
+                               Name = "Sharpcast",
+                               ID = 3574,
+                               Level = 54,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Buff,
+                               CastType = CastType.Self
+                           });
+            }
+        }
+        private Spell _enochian;
+        public Spell Enochian
+        {
+            get
+            {
+                return _enochian ??
+                       (_enochian =
+                           new Spell
+                           {
+                               Name = "Enochian",
+                               ID = 3575,
+                               Level = 56,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Buff,
+                               CastType = CastType.Self
+                           });
+            }
+        }
+        private Spell _blizzardIV;
+        public Spell BlizzardIV
+        {
+            get
+            {
+                return _blizzardIV ??
+                       (_blizzardIV =
+                           new Spell
+                           {
+                               Name = "Blizzard IV",
+                               ID = 3576,
+                               Level = 58,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Damage,
+                               CastType = CastType.Target
+                           });
+            }
+        }
+        private Spell _fireIV;
+        public Spell FireIV
+        {
+            get
+            {
+                return _fireIV ??
+                       (_fireIV =
+                           new Spell
+                           {
+                               Name = "Fire IV",
+                               ID = 3577,
+                               Level = 60,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Damage,
                                CastType = CastType.Target
                            });
             }

@@ -31,7 +31,7 @@ namespace UltimaCR.Spells
             {
                 switch (CastType)
                 {
-                    case CastType.Location:
+                    case CastType.TargetLocation:
                         if (!Core.Player.HasTarget)
                         {
                             return false;
@@ -299,6 +299,7 @@ namespace UltimaCR.Spells
             #endregion
 
             #region Player Movement
+
             if (BotManager.Current.IsAutonomous)
             {
                 switch (Actionmanager.InSpellInRangeLOS(ID, target))
@@ -324,18 +325,40 @@ namespace UltimaCR.Spells
                         }
                         break;
                 }
+
+                if (CastType == CastType.TargetLocation &&
+                    Actionmanager.InSpellInRangeLOS(ID, target.Location) == SpellRangeCheck.ErrorNotInRange)
+                {
+                    Navigator.MoveTo(target.Location);
+                    await Coroutine.Wait(3000, () => Actionmanager.InSpellInRangeLOS(ID, target.Location) != SpellRangeCheck.ErrorNotInRange);
+                    return false;
+                }
+                
                 if (!MovementManager.IsMoving &&
                     Core.Player.IsMounted)
                 {
                     Actionmanager.Dismount();
                 }
             }
+
             #endregion
 
             #region CanCast Check
-            if (!Actionmanager.CanCast(ID, target))
+
+            switch (CastType)
             {
-                return false;
+                case CastType.TargetLocation:
+                    if (!Actionmanager.CanCastLocation(ID, target.Location))
+                    {
+                        return false;
+                    }
+                    break;
+                default:
+                    if (!Actionmanager.CanCast(ID, target))
+                    {
+                        return false;
+                    }
+                    break;
             }
 
             if (MovementManager.IsMoving &&
@@ -347,6 +370,7 @@ namespace UltimaCR.Spells
                 }
                 Navigator.PlayerMover.MoveStop();
             }
+
             #endregion
 
             #region Off-GCD Check
@@ -482,7 +506,7 @@ namespace UltimaCR.Spells
             #region DoAction
             switch (CastType)
             {
-                case CastType.Location:
+                case CastType.TargetLocation:
                     if (!await Coroutine.Wait(1000, () => Actionmanager.DoActionLocation(ID, target.Location)))
                     {
                         return false;
@@ -499,12 +523,19 @@ namespace UltimaCR.Spells
             Ultima.LastSpell = this;
             #region Recent Spell Add
             if (SpellType != SpellType.Damage &&
+                SpellType != SpellType.Heal &&
                 SpellType != SpellType.AoE &&
                 SpellType != SpellType.Behind &&
                 SpellType != SpellType.Flank)
             {
                 var key = target.ObjectId.ToString("X") + "-" + Name;
                 var val = DateTime.UtcNow + DataManager.GetSpellData(ID).AdjustedCastTime + TimeSpan.FromSeconds(5);
+                RecentSpell.Add(key, val);
+            }
+            if (SpellType == SpellType.Heal)
+            {
+                var key = target.ObjectId.ToString("X") + "-" + Name;
+                var val = DateTime.UtcNow + DataManager.GetSpellData(ID).AdjustedCastTime + TimeSpan.FromSeconds(3);
                 RecentSpell.Add(key, val);
             }
             #endregion

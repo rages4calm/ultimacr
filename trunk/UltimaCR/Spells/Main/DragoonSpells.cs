@@ -105,5 +105,95 @@ namespace UltimaCR.Spells.Main
                            });
             }
         }
+        private Spell _battlelitany;
+        public Spell BattleLitany
+        {
+            get
+            {
+                return _battlelitany ??
+                       (_battlelitany =
+                           new Spell
+                           {
+                               Name = "Battle Litany",
+                               ID = 3557,
+                               Level = 52,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Buff,
+                               CastType = CastType.Self
+                           });
+            }
+        }
+        private Spell _bloodofthedragon;
+        public Spell BloodOfTheDragon
+        {
+            get
+            {
+                return _bloodofthedragon ??
+                       (_bloodofthedragon =
+                           new Spell
+                           {
+                               Name = "Blood of the Dragon",
+                               ID = 3553,
+                               Level = 54,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Buff,
+                               CastType = CastType.Self
+                           });
+            }
+        }
+        private Spell _fangandclaw;
+        public Spell FangAndClaw
+        {
+            get
+            {
+                return _fangandclaw ??
+                       (_fangandclaw =
+                           new Spell
+                           {
+                               Name = "Fang and Claw",
+                               ID = 3554,
+                               Level = 56,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Flank,
+                               CastType = CastType.Target
+                           });
+            }
+        }
+        private Spell _wheelingthrust;
+        public Spell WheelingThrust
+        {
+            get
+            {
+                return _wheelingthrust ??
+                       (_wheelingthrust =
+                           new Spell
+                           {
+                               Name = "Wheeling Thrust",
+                               ID = 3556,
+                               Level = 58,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Behind,
+                               CastType = CastType.Target
+                           });
+            }
+        }
+        private Spell _geirskogul;
+        public Spell Geirskogul
+        {
+            get
+            {
+                return _geirskogul ??
+                       (_geirskogul =
+                           new Spell
+                           {
+                               Name = "Geirskogul",
+                               ID = 3555,
+                               Level = 60,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Cooldown,
+                               CastType = CastType.Target
+                           });
+            }
+        }
     }
 }

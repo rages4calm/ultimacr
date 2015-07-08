@@ -105,5 +105,95 @@ namespace UltimaCR.Spells.Main
                            });
             }
         }
+        private Spell _asylum;
+        public Spell Asylum
+        {
+            get
+            {
+                return _asylum ??
+                       (_asylum =
+                           new Spell
+                           {
+                               Name = "Asylum",
+                               ID = 3569,
+                               Level = 52,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.OnLocation,
+                               CastType = CastType.TargetLocation
+                           });
+            }
+        }
+        private Spell _stoneIII;
+        public Spell StoneIII
+        {
+            get
+            {
+                return _stoneIII ??
+                       (_stoneIII =
+                           new Spell
+                           {
+                               Name = "Stone III",
+                               ID = 3568,
+                               Level = 54,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Damage,
+                               CastType = CastType.Target
+                           });
+            }
+        }
+        private Spell _assize;
+        public Spell Assize
+        {
+            get
+            {
+                return _assize ??
+                       (_assize =
+                           new Spell
+                           {
+                               Name = "Assize",
+                               ID = 3571,
+                               Level = 56,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Heal,
+                               CastType = CastType.Self
+                           });
+            }
+        }
+        private Spell _aeroIII;
+        public Spell AeroIII
+        {
+            get
+            {
+                return _aeroIII ??
+                       (_aeroIII =
+                           new Spell
+                           {
+                               Name = "Aero III",
+                               ID = 3572,
+                               Level = 58,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.DoT,
+                               CastType = CastType.Target
+                           });
+            }
+        }
+        private Spell _tetragrammaton;
+        public Spell Tetragrammaton
+        {
+            get
+            {
+                return _tetragrammaton ??
+                       (_tetragrammaton =
+                           new Spell
+                           {
+                               Name = "Tetragrammaton",
+                               ID = 3570,
+                               Level = 60,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Heal,
+                               CastType = CastType.Target
+                           });
+            }
+        }
     }
 }

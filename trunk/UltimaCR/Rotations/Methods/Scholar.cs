@@ -363,6 +363,31 @@ namespace UltimaCR.Rotations
             return await MySpells.Lustrate.Cast();
         }
 
+        private async Task<bool> Indomitability()
+        {
+            return await MySpells.Indomitability.Cast();
+        }
+
+        private async Task<bool> Broil()
+        {
+            return await MySpells.Broil.Cast();
+        }
+
+        private async Task<bool> DeploymentTactics()
+        {
+            return await MySpells.DeploymentTactics.Cast();
+        }
+
+        private async Task<bool> EmergencyTactics()
+        {
+            return await MySpells.EmergencyTactics.Cast();
+        }
+
+        private async Task<bool> Dissipation()
+        {
+            return await MySpells.Dissipation.Cast();
+        }
+
         #endregion
 
         #region PvP Spells

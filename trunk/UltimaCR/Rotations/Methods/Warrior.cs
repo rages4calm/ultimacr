@@ -279,6 +279,31 @@ namespace UltimaCR.Rotations
             return await MySpells.Infuriate.Cast();
         }
 
+        private async Task<bool> Deliverance()
+        {
+            return await MySpells.Deliverance.Cast();
+        }
+
+        private async Task<bool> FellCleave()
+        {
+            return await MySpells.FellCleave.Cast();
+        }
+
+        private async Task<bool> RawIntuition()
+        {
+            return await MySpells.RawIntuition.Cast();
+        }
+
+        private async Task<bool> Equilibrium()
+        {
+            return await MySpells.Equilibrium.Cast();
+        }
+
+        private async Task<bool> Decimate()
+        {
+            return await MySpells.Decimate.Cast();
+        }
+
         #endregion
 
         #region PvP Spells

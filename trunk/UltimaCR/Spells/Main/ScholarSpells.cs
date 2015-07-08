@@ -191,7 +191,7 @@ namespace UltimaCR.Spells.Main
                                Level = 45,
                                GCDType = GCDType.On,
                                SpellType = SpellType.OnLocation,
-                               CastType = CastType.Location
+                               CastType = CastType.TargetLocation
                            });
             }
         }
@@ -210,6 +210,96 @@ namespace UltimaCR.Spells.Main
                                GCDType = GCDType.On,
                                SpellType = SpellType.Heal,
                                CastType = CastType.Target
+                           });
+            }
+        }
+        private Spell _indomitability;
+        public Spell Indomitability
+        {
+            get
+            {
+                return _indomitability ??
+                       (_indomitability =
+                           new Spell
+                           {
+                               Name = "Indomitability",
+                               ID = 3583,
+                               Level = 52,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Heal,
+                               CastType = CastType.Self
+                           });
+            }
+        }
+        private Spell _broil;
+        public Spell Broil
+        {
+            get
+            {
+                return _broil ??
+                       (_broil =
+                           new Spell
+                           {
+                               Name = "Broil",
+                               ID = 3584,
+                               Level = 54,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Damage,
+                               CastType = CastType.Target
+                           });
+            }
+        }
+        private Spell _deploymenttactics;
+        public Spell DeploymentTactics
+        {
+            get
+            {
+                return _deploymenttactics ??
+                       (_deploymenttactics =
+                           new Spell
+                           {
+                               Name = "Deployment Tactics",
+                               ID = 3585,
+                               Level = 56,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Defensive,
+                               CastType = CastType.Target
+                           });
+            }
+        }
+        private Spell _emergencytactics;
+        public Spell EmergencyTactics
+        {
+            get
+            {
+                return _emergencytactics ??
+                       (_emergencytactics =
+                           new Spell
+                           {
+                               Name = "Emergency Tactics",
+                               ID = 3586,
+                               Level = 58,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Buff,
+                               CastType = CastType.Self
+                           });
+            }
+        }
+        private Spell _dissipation;
+        public Spell Dissipation
+        {
+            get
+            {
+                return _dissipation ??
+                       (_dissipation =
+                           new Spell
+                           {
+                               Name = "Dissipation",
+                               ID = 3587,
+                               Level = 60,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Buff,
+                               CastType = CastType.Self
                            });
             }
         }

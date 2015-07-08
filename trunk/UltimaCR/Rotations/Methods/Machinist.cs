@@ -1,5 +1,6 @@
 ﻿using ff14bot;
 using ff14bot.Managers;
+using System.Linq;
 using System.Threading.Tasks;
 using UltimaCR.Spells.Main;
 
@@ -142,13 +143,17 @@ namespace UltimaCR.Rotations
         }
         private async Task<bool> RookAutoturret()
         {
-            if (Core.Player.Pet == null &&
-                Ultima.UltSettings.MachinistSummonTurret)
+            if (Ultima.UltSettings.MachinistSummonTurret)
             {
                 if (Ultima.UltSettings.MachinistRook ||
                     !Actionmanager.HasSpell(MySpells.BishopAutoturret.Name))
                 {
-                    return await MySpells.RookAutoturret.Cast();
+                    if (Core.Player.Pet == null ||
+                        Core.Player.HasTarget &&
+                        Core.Player.Pet.Distance2D(Core.Player.CurrentTarget) - Core.Player.CurrentTarget.CombatReach - Core.Player.Pet.CombatReach > 20)
+                    {
+                        return await MySpells.RookAutoturret.Cast();
+                    }
                 }
             }
             return false;
@@ -171,11 +176,18 @@ namespace UltimaCR.Rotations
         }
         private async Task<bool> BishopAutoturret()
         {
-            if (Core.Player.Pet == null &&
-                Ultima.UltSettings.MachinistSummonTurret &&
+            if (Ultima.UltSettings.MachinistSummonTurret &&
                 Ultima.UltSettings.MachinistBishop)
             {
-                return await MySpells.BishopAutoturret.Cast();
+                if (Core.Player.Pet == null &&
+                    Helpers.EnemyUnit.Count(eu => eu.Distance2D(Core.Player.CurrentTarget) - eu.CombatReach - 1 <= 5) >= 3 ||
+                    Core.Player.Pet != null &&
+                    Core.Player.HasTarget &&
+                    Core.Player.Pet.Distance2D(Core.Player.CurrentTarget) - Core.Player.CurrentTarget.CombatReach - Core.Player.Pet.CombatReach > 5 &&
+                    Helpers.EnemyUnit.Count(eu => eu.Distance2D(Core.Player.CurrentTarget) - eu.CombatReach - 1 <= 5) >= 3)
+                {
+                    return await MySpells.BishopAutoturret.Cast();
+                }
             }
             return false;
         }

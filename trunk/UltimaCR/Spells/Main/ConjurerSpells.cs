@@ -101,7 +101,7 @@ namespace UltimaCR.Spells.Main
                                Level = 8,
                                GCDType = GCDType.On,
                                SpellType = SpellType.Buff,
-                               CastType = CastType.Self
+                               CastType = CastType.Target
                            });
             }
         }
@@ -136,7 +136,7 @@ namespace UltimaCR.Spells.Main
                                ID = 125,
                                Level = 12,
                                GCDType = GCDType.On,
-                               SpellType = SpellType.Heal,
+                               SpellType = SpellType.Defensive,
                                CastType = CastType.Target
                            });
             }
@@ -245,7 +245,7 @@ namespace UltimaCR.Spells.Main
                                Level = 34,
                                GCDType = GCDType.On,
                                SpellType = SpellType.Defensive,
-                               CastType = CastType.Self
+                               CastType = CastType.Target
                            });
             }
         }
@@ -335,7 +335,7 @@ namespace UltimaCR.Spells.Main
                                Level = 50,
                                GCDType = GCDType.On,
                                SpellType = SpellType.Defensive,
-                               CastType = CastType.Self
+                               CastType = CastType.Target
                            });
             }
         }

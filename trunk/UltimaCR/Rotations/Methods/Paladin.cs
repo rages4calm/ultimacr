@@ -267,6 +267,31 @@ namespace UltimaCR.Rotations
             return await MySpells.HallowedGround.Cast();
         }
 
+        private async Task<bool> Sheltron()
+        {
+            return await MySpells.Sheltron.Cast();
+        }
+
+        private async Task<bool> GoringBlade()
+        {
+            return await MySpells.GoringBlade.Cast();
+        }
+
+        private async Task<bool> DivineVeil()
+        {
+            return await MySpells.DivineVeil.Cast();
+        }
+
+        private async Task<bool> Clemency()
+        {
+            return await MySpells.Clemency.Cast();
+        }
+
+        private async Task<bool> RoyalAuthority()
+        {
+            return await MySpells.RoyalAuthority.Cast();
+        }
+
         #endregion
 
         #region PvP Spells

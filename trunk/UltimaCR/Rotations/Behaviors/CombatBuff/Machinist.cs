@@ -12,7 +12,6 @@ namespace UltimaCR.Rotations
             if (await RookAutoturret()) return true;
             if (await BishopAutoturret()) return true;
             if (await Invigorate()) return true;
-            if (await Reassemble()) return true;
             if (await HawksEye()) return true;
             if (await RagingStrikes()) return true;
             if (await BloodForBlood()) return true;

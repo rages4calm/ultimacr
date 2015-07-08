@@ -486,16 +486,16 @@ namespace UltimaCR.Spells.CrossClass
             }
             #endregion
             #region Rogue
-            private Spell _perfectdodge;
-            public Spell PerfectDodge
+            private Spell _shadeshift;
+            public Spell ShadeShift
             {
                 get
                 {
-                    return _perfectdodge ??
-                           (_perfectdodge =
+                    return _shadeshift ??
+                           (_shadeshift =
                                new Spell
                                {
-                                   Name = "Perfect Dodge",
+                                   Name = "Shade Shift",
                                    ID = 2241,
                                    Level = 2,
                                    GCDType = GCDType.On,

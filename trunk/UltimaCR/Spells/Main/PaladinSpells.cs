@@ -105,5 +105,95 @@ namespace UltimaCR.Spells.Main
                            });
             }
         }
+        private Spell _sheltron;
+        public Spell Sheltron
+        {
+            get
+            {
+                return _sheltron ??
+                       (_sheltron =
+                           new Spell
+                           {
+                               Name = "Sheltron",
+                               ID = 3542,
+                               Level = 52,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Defensive,
+                               CastType = CastType.Self
+                           });
+            }
+        }
+        private Spell _goringblade;
+        public Spell GoringBlade
+        {
+            get
+            {
+                return _goringblade ??
+                       (_goringblade =
+                           new Spell
+                           {
+                               Name = "Goring Blade",
+                               ID = 3538,
+                               Level = 54,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Damage,
+                               CastType = CastType.Target
+                           });
+            }
+        }
+        private Spell _divineveil;
+        public Spell DivineVeil
+        {
+            get
+            {
+                return _divineveil ??
+                       (_divineveil =
+                           new Spell
+                           {
+                               Name = "Divine Veil",
+                               ID = 3540,
+                               Level = 56,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Defensive,
+                               CastType = CastType.Self
+                           });
+            }
+        }
+        private Spell _clemency;
+        public Spell Clemency
+        {
+            get
+            {
+                return _clemency ??
+                       (_clemency =
+                           new Spell
+                           {
+                               Name = "Clemency",
+                               ID = 3541,
+                               Level = 58,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Heal,
+                               CastType = CastType.Target
+                           });
+            }
+        }
+        private Spell _royalauthority;
+        public Spell RoyalAuthority
+        {
+            get
+            {
+                return _royalauthority ??
+                       (_royalauthority =
+                           new Spell
+                           {
+                               Name = "Royal Authority",
+                               ID = 3539,
+                               Level = 60,
+                               GCDType = GCDType.On,
+                               SpellType = SpellType.Damage,
+                               CastType = CastType.Target
+                           });
+            }
+        }
     }
 }

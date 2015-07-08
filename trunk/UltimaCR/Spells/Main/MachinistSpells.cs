@@ -135,7 +135,7 @@ namespace UltimaCR.Spells.Main
                                Name = "Reassemble",
                                ID = 2876,
                                Level = 12,
-                               GCDType = GCDType.Off,
+                               GCDType = GCDType.On,
                                SpellType = SpellType.Buff,
                                CastType = CastType.Self
                            });
@@ -315,9 +315,9 @@ namespace UltimaCR.Spells.Main
                                Name = "Rook Autoturret",
                                ID = 2864,
                                Level = 40,
-                               GCDType = GCDType.Off,
+                               GCDType = GCDType.On,
                                SpellType = SpellType.OnLocation,
-                               CastType = CastType.Location
+                               CastType = CastType.TargetLocation
                            });
             }
         }
@@ -405,9 +405,9 @@ namespace UltimaCR.Spells.Main
                                Name = "Bishop Autoturret",
                                ID = 2865,
                                Level = 50,
-                               GCDType = GCDType.Off,
+                               GCDType = GCDType.On,
                                SpellType = SpellType.OnLocation,
-                               CastType = CastType.Location
+                               CastType = CastType.TargetLocation
                            });
             }
         }

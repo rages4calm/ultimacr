@@ -88,7 +88,7 @@ namespace UltimaCR.Settings.Forms.Design
                     g.SmoothingMode = SmoothingMode.HighQuality;
                     Point[] p =
                     {
-                        // This is the triangle location, have to add or substract from the Location.Y equally
+                        // This is the triangle location, have to add or substract from the location.Y equally
                         new Point(ItemSize.Height - 3, GetTabRect(i).Location.Y + 15),
                         new Point(ItemSize.Height + 4, GetTabRect(i).Location.Y + 9),
                         new Point(ItemSize.Height + 4, GetTabRect(i).Location.Y + 22)

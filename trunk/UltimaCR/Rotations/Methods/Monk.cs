@@ -296,6 +296,36 @@ namespace UltimaCR.Rotations
             return false;
         }
 
+        private async Task<bool> FormShift()
+        {
+            return await MySpells.FormShift.Cast();
+        }
+
+        private async Task<bool> Meditation()
+        {
+            return await MySpells.Meditation.Cast();
+        }
+
+        private async Task<bool> ForbiddenChakra()
+        {
+            return await MySpells.ForbiddenChakra.Cast();
+        }
+
+        private async Task<bool> ElixirField()
+        {
+            return await MySpells.ElixirField.Cast();
+        }
+
+        private async Task<bool> Purification()
+        {
+            return await MySpells.Purification.Cast();
+        }
+
+        private async Task<bool> TornadoKick()
+        {
+            return await MySpells.TornadoKick.Cast();
+        }
+
         #endregion
 
         #region Custom Spells

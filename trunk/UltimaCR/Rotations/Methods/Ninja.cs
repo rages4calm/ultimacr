@@ -24,9 +24,9 @@ namespace UltimaCR.Rotations
             return await MySpells.SpinningEdge.Cast();
         }
 
-        private async Task<bool> PerfectDodge()
+        private async Task<bool> ShadeShift()
         {
-            return await MySpells.PerfectDodge.Cast();
+            return await MySpells.ShadeShift.Cast();
         }
 
         private async Task<bool> GustSlash()
@@ -94,12 +94,14 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Goad()
         {
-            var target = Helpers.AutoGoad.FirstOrDefault();
-
-            if (target != null &&
-                Ultima.UltSettings.NinjaGoad)
+            if (Ultima.UltSettings.NinjaGoad)
             {
-                return await MySpells.Goad.Cast(target);
+                var target = Helpers.GoadManager.FirstOrDefault();
+
+                if (target != null)
+                {
+                    return await MySpells.Goad.Cast(target);
+                }
             }
             return false;
         }
@@ -562,7 +564,7 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Suiton()
         {
-            if (!BotManager.Current.IsAutonomous && 
+            if (!BotManager.Current.IsAutonomous &&
                 Actionmanager.CanCast(MySpells.Jin.ID, Core.Player) &&
                 DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds >= 1000 &&
                 DataManager.GetSpellData(MySpells.TrickAttack.ID).Cooldown.TotalMilliseconds == 0 &&
@@ -606,6 +608,32 @@ namespace UltimaCR.Rotations
             }
             return false;
         }
+
+        private async Task<bool> SmokeScreen()
+        {
+            return await MySpells.SmokeScreen.Cast();
+        }
+
+        private async Task<bool> ArmorCrush()
+        {
+            return await MySpells.ArmorCrush.Cast();
+        }
+
+        private async Task<bool> Shadewalker()
+        {
+            return await MySpells.Shadewalker.Cast();
+        }
+
+        private async Task<bool> Duality()
+        {
+            return await MySpells.Duality.Cast();
+        }
+
+        private async Task<bool> DreamWithinADream()
+        {
+            return await MySpells.DreamWithinADream.Cast();
+        }
+
         #endregion
 
         #region PvP Spells

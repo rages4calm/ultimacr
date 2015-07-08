@@ -416,11 +416,11 @@ namespace UltimaCR.Rotations
 
         #region Rogue
 
-        private async Task<bool> PerfectDodge()
+        private async Task<bool> ShadeShift()
         {
-            if (Ultima.UltSettings.PugilistPerfectDodge)
+            if (Ultima.UltSettings.PugilistShadeShift)
             {
-                return await MySpells.CrossClass.PerfectDodge.Cast();
+                return await MySpells.CrossClass.ShadeShift.Cast();
             }
             return false;
         }

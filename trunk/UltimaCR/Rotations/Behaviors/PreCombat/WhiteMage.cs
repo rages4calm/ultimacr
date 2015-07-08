@@ -11,6 +11,7 @@ namespace UltimaCR.Rotations
             {
                 if (await Ultima.SummonChocobo()) return true;
                 if (await Protect()) return true;
+                if (await StoneskinII()) return true;
                 return await Stoneskin();
             }
             return false;
