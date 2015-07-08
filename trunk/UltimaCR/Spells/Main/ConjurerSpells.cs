@@ -335,7 +335,7 @@ namespace UltimaCR.Spells.Main
                                Level = 50,
                                GCDType = GCDType.On,
                                SpellType = SpellType.Defensive,
-                               CastType = CastType.Target
+                               CastType = CastType.Self
                            });
             }
         }

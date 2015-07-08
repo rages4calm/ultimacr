@@ -213,14 +213,10 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> StoneskinII()
         {
-            if (Ultima.UltSettings.WhiteMageStoneskinII)
+            if (Ultima.UltSettings.WhiteMageStoneskinII &&
+                Helpers.HealManager.Any(hm => !hm.HasAura(MySpells.Stoneskin.Name)))
             {
-                var target = Helpers.HealManager.FirstOrDefault(hm => !hm.HasAura(MySpells.Stoneskin.Name) && !hm.InCombat);
-
-                if (target != null)
-                {
-                    return await MySpells.StoneskinII.Cast(target);
-                }
+                return await MySpells.StoneskinII.Cast();
             }
             return false;
         }
