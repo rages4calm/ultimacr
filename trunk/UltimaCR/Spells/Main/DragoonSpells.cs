@@ -28,7 +28,7 @@ namespace UltimaCR.Spells.Main
                                ID = 92,
                                Level = 30,
                                GCDType = GCDType.Off,
-                               SpellType = SpellType.Cooldown,
+                               SpellType = SpellType.Movement,
                                CastType = CastType.Target
                            });
             }
@@ -64,7 +64,7 @@ namespace UltimaCR.Spells.Main
                                ID = 95,
                                Level = 40,
                                GCDType = GCDType.Off,
-                               SpellType = SpellType.Cooldown,
+                               SpellType = SpellType.Movement,
                                CastType = CastType.Target
                            });
             }
@@ -100,7 +100,7 @@ namespace UltimaCR.Spells.Main
                                ID = 96,
                                Level = 50,
                                GCDType = GCDType.Off,
-                               SpellType = SpellType.Cooldown,
+                               SpellType = SpellType.Movement,
                                CastType = CastType.Target
                            });
             }
@@ -189,7 +189,7 @@ namespace UltimaCR.Spells.Main
                                Name = "Geirskogul",
                                ID = 3555,
                                Level = 60,
-                               GCDType = GCDType.On,
+                               GCDType = GCDType.Off,
                                SpellType = SpellType.Cooldown,
                                CastType = CastType.Target
                            });

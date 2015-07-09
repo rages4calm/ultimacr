@@ -1526,7 +1526,7 @@ namespace UltimaCR.Settings
 
         #region Lancer Cross-Class
 
-        [Setting, DefaultValue(false)]
+        [Setting, DefaultValue(true)]
         public bool MachinistFeint { get; set; }
 
         [Setting, DefaultValue(false)]

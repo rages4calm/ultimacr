@@ -316,7 +316,7 @@ namespace UltimaCR.Spells.Main
                                ID = 2864,
                                Level = 40,
                                GCDType = GCDType.On,
-                               SpellType = SpellType.OnLocation,
+                               SpellType = SpellType.Summon,
                                CastType = CastType.TargetLocation
                            });
             }
@@ -406,7 +406,7 @@ namespace UltimaCR.Spells.Main
                                ID = 2865,
                                Level = 50,
                                GCDType = GCDType.On,
-                               SpellType = SpellType.OnLocation,
+                               SpellType = SpellType.Summon,
                                CastType = CastType.TargetLocation
                            });
             }
@@ -441,7 +441,7 @@ namespace UltimaCR.Spells.Main
                                Name = "Gauss Barrel",
                                ID = 2880,
                                Level = 52,
-                               GCDType = GCDType.Off,
+                               GCDType = GCDType.On,
                                SpellType = SpellType.Aura,
                                CastType = CastType.Self
                            });

@@ -9,7 +9,8 @@ namespace UltimaCR.Rotations
         {
             if (!Core.Player.IsMounted)
             {
-                return await Ultima.SummonChocobo();
+                if (await Ultima.SummonChocobo()) return true;
+                return await WanderersMinuet();
             }
             return false;
         }

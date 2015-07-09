@@ -190,7 +190,7 @@ namespace UltimaCR.Spells.Main
                                ID = 188,
                                Level = 45,
                                GCDType = GCDType.On,
-                               SpellType = SpellType.OnLocation,
+                               SpellType = SpellType.Defensive,
                                CastType = CastType.TargetLocation
                            });
             }

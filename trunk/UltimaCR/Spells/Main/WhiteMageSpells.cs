@@ -118,7 +118,7 @@ namespace UltimaCR.Spells.Main
                                ID = 3569,
                                Level = 52,
                                GCDType = GCDType.On,
-                               SpellType = SpellType.OnLocation,
+                               SpellType = SpellType.Heal,
                                CastType = CastType.TargetLocation
                            });
             }

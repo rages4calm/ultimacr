@@ -187,6 +187,10 @@
             this.ConjurerTab = new System.Windows.Forms.TabPage();
             this.ConjurerSubTab = new UltimaCR.Settings.Forms.Design.TabDesign();
             this.ConjurerSettings = new System.Windows.Forms.TabPage();
+            this.ConjurerBuffGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.ConjurerStoneskinII = new System.Windows.Forms.CheckBox();
+            this.ConjurerStoneskin = new System.Windows.Forms.CheckBox();
+            this.ConjurerProtect = new System.Windows.Forms.CheckBox();
             this.ConjurerCrossGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.ConjurerArcanistGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.ConjurerRuin = new System.Windows.Forms.CheckBox();
@@ -219,7 +223,23 @@
             this.ConjurerKeenFlurry = new System.Windows.Forms.CheckBox();
             this.ConjurerInvigorate = new System.Windows.Forms.CheckBox();
             this.ConjurerBloodForBlood = new System.Windows.Forms.CheckBox();
+            this.ConjurerHealGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.ConjurerRaise = new System.Windows.Forms.CheckBox();
+            this.ConjurerCooldownGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.ConjurerShroudOfSaints = new System.Windows.Forms.CheckBox();
             this.WhiteMageSettings = new System.Windows.Forms.TabPage();
+            this.WhiteMageBuffGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.WhiteMageStoneskinII = new System.Windows.Forms.CheckBox();
+            this.WhiteMageStoneskin = new System.Windows.Forms.CheckBox();
+            this.WhiteMageProtect = new System.Windows.Forms.CheckBox();
+            this.WhiteMageCooldownGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.WhiteMageDivineSeal = new System.Windows.Forms.CheckBox();
+            this.WhiteMagePresenceOfMind = new System.Windows.Forms.CheckBox();
+            this.WhiteMageShroudOfSaints = new System.Windows.Forms.CheckBox();
+            this.WhiteMageHealGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.WhiteMageTetragrammaton = new System.Windows.Forms.CheckBox();
+            this.WhiteMageBenediction = new System.Windows.Forms.CheckBox();
+            this.WhiteMageRaise = new System.Windows.Forms.CheckBox();
             this.WhiteMageCrossGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.WhiteMageArcanistGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.WhiteMageRuin = new System.Windows.Forms.CheckBox();
@@ -698,26 +718,6 @@
             this.MachinistRagingStrikes = new System.Windows.Forms.CheckBox();
             this.MachinistHawksEye = new System.Windows.Forms.CheckBox();
             this.MachinistQuellingStrikes = new System.Windows.Forms.CheckBox();
-            this.WhiteMageHealGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
-            this.WhiteMageBenediction = new System.Windows.Forms.CheckBox();
-            this.WhiteMageRaise = new System.Windows.Forms.CheckBox();
-            this.WhiteMageCooldownGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
-            this.WhiteMagePresenceOfMind = new System.Windows.Forms.CheckBox();
-            this.WhiteMageShroudOfSaints = new System.Windows.Forms.CheckBox();
-            this.WhiteMageBuffGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
-            this.WhiteMageStoneskin = new System.Windows.Forms.CheckBox();
-            this.WhiteMageProtect = new System.Windows.Forms.CheckBox();
-            this.WhiteMageTetragrammaton = new System.Windows.Forms.CheckBox();
-            this.WhiteMageDivineSeal = new System.Windows.Forms.CheckBox();
-            this.WhiteMageStoneskinII = new System.Windows.Forms.CheckBox();
-            this.ConjurerBuffGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
-            this.ConjurerStoneskinII = new System.Windows.Forms.CheckBox();
-            this.ConjurerStoneskin = new System.Windows.Forms.CheckBox();
-            this.ConjurerProtect = new System.Windows.Forms.CheckBox();
-            this.ConjurerCooldownGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
-            this.ConjurerShroudOfSaints = new System.Windows.Forms.CheckBox();
-            this.ConjurerHealGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
-            this.ConjurerRaise = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.UltimaBanner)).BeginInit();
             this.ClassTab.SuspendLayout();
             this.UltimaTab.SuspendLayout();
@@ -773,6 +773,7 @@
             this.ConjurerTab.SuspendLayout();
             this.ConjurerSubTab.SuspendLayout();
             this.ConjurerSettings.SuspendLayout();
+            this.ConjurerBuffGroup.SuspendLayout();
             this.ConjurerCrossGroup.SuspendLayout();
             this.ConjurerArcanistGroup.SuspendLayout();
             this.ConjurerThaumaturgeGroup.SuspendLayout();
@@ -781,7 +782,12 @@
             this.ConjurerArcherGroup.SuspendLayout();
             this.ConjurerGladiatorGroup.SuspendLayout();
             this.ConjurerLancerGroup.SuspendLayout();
+            this.ConjurerHealGroup.SuspendLayout();
+            this.ConjurerCooldownGroup.SuspendLayout();
             this.WhiteMageSettings.SuspendLayout();
+            this.WhiteMageBuffGroup.SuspendLayout();
+            this.WhiteMageCooldownGroup.SuspendLayout();
+            this.WhiteMageHealGroup.SuspendLayout();
             this.WhiteMageCrossGroup.SuspendLayout();
             this.WhiteMageArcanistGroup.SuspendLayout();
             this.WhiteMageThaumaturgeGroup.SuspendLayout();
@@ -933,12 +939,6 @@
             this.MachinistCrossGroup.SuspendLayout();
             this.MachinistLancerGroup.SuspendLayout();
             this.MachinistArcherGroup.SuspendLayout();
-            this.WhiteMageHealGroup.SuspendLayout();
-            this.WhiteMageCooldownGroup.SuspendLayout();
-            this.WhiteMageBuffGroup.SuspendLayout();
-            this.ConjurerBuffGroup.SuspendLayout();
-            this.ConjurerCooldownGroup.SuspendLayout();
-            this.ConjurerHealGroup.SuspendLayout();
             this.SuspendLayout();
             // 
             // CloseButton
@@ -948,9 +948,10 @@
             this.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CloseButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CloseButton.ForeColor = System.Drawing.Color.White;
-            this.CloseButton.Location = new System.Drawing.Point(700, 515);
+            this.CloseButton.Location = new System.Drawing.Point(933, 634);
+            this.CloseButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CloseButton.Name = "CloseButton";
-            this.CloseButton.Size = new System.Drawing.Size(90, 30);
+            this.CloseButton.Size = new System.Drawing.Size(120, 37);
             this.CloseButton.TabIndex = 6;
             this.CloseButton.Text = "Close";
             this.CloseButton.UseVisualStyleBackColor = false;
@@ -959,8 +960,9 @@
             // UltimaBanner
             // 
             this.UltimaBanner.Location = new System.Drawing.Point(0, 0);
+            this.UltimaBanner.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.UltimaBanner.Name = "UltimaBanner";
-            this.UltimaBanner.Size = new System.Drawing.Size(800, 148);
+            this.UltimaBanner.Size = new System.Drawing.Size(1067, 182);
             this.UltimaBanner.TabIndex = 7;
             this.UltimaBanner.TabStop = false;
             this.UltimaBanner.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -980,11 +982,12 @@
             this.ClassTab.Controls.Add(this.ThaumaturgeTab);
             this.ClassTab.Controls.Add(this.ExtraJobTab);
             this.ClassTab.ItemSize = new System.Drawing.Size(35, 110);
-            this.ClassTab.Location = new System.Drawing.Point(0, 148);
+            this.ClassTab.Location = new System.Drawing.Point(0, 182);
+            this.ClassTab.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ClassTab.Multiline = true;
             this.ClassTab.Name = "ClassTab";
             this.ClassTab.SelectedIndex = 0;
-            this.ClassTab.Size = new System.Drawing.Size(800, 410);
+            this.ClassTab.Size = new System.Drawing.Size(1067, 505);
             this.ClassTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.ClassTab.TabIndex = 4;
             this.ClassTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -999,7 +1002,7 @@
             this.UltimaTab.Location = new System.Drawing.Point(114, 4);
             this.UltimaTab.Margin = new System.Windows.Forms.Padding(0);
             this.UltimaTab.Name = "UltimaTab";
-            this.UltimaTab.Size = new System.Drawing.Size(682, 402);
+            this.UltimaTab.Size = new System.Drawing.Size(949, 497);
             this.UltimaTab.TabIndex = 9;
             this.UltimaTab.Text = "Ultima";
             this.UltimaTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -1008,9 +1011,11 @@
             // 
             this.UltimaGroup.Controls.Add(this.DefaultCRCheck);
             this.UltimaGroup.ForeColor = System.Drawing.Color.White;
-            this.UltimaGroup.Location = new System.Drawing.Point(550, 3);
+            this.UltimaGroup.Location = new System.Drawing.Point(733, 4);
+            this.UltimaGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.UltimaGroup.Name = "UltimaGroup";
-            this.UltimaGroup.Size = new System.Drawing.Size(124, 42);
+            this.UltimaGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UltimaGroup.Size = new System.Drawing.Size(165, 52);
             this.UltimaGroup.TabIndex = 9;
             this.UltimaGroup.TabStop = false;
             this.UltimaGroup.Text = "Ultima";
@@ -1019,9 +1024,10 @@
             // 
             this.DefaultCRCheck.AutoSize = true;
             this.DefaultCRCheck.ForeColor = System.Drawing.Color.White;
-            this.DefaultCRCheck.Location = new System.Drawing.Point(6, 19);
+            this.DefaultCRCheck.Location = new System.Drawing.Point(8, 23);
+            this.DefaultCRCheck.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DefaultCRCheck.Name = "DefaultCRCheck";
-            this.DefaultCRCheck.Size = new System.Drawing.Size(112, 17);
+            this.DefaultCRCheck.Size = new System.Drawing.Size(143, 21);
             this.DefaultCRCheck.TabIndex = 7;
             this.DefaultCRCheck.Text = "Set As Default CR";
             this.DefaultCRCheck.UseVisualStyleBackColor = true;
@@ -1037,9 +1043,11 @@
             this.RotationGroup.Controls.Add(this.OverlayCheck);
             this.RotationGroup.Controls.Add(this.RotationModeCombo);
             this.RotationGroup.ForeColor = System.Drawing.Color.White;
-            this.RotationGroup.Location = new System.Drawing.Point(169, 3);
+            this.RotationGroup.Location = new System.Drawing.Point(225, 4);
+            this.RotationGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RotationGroup.Name = "RotationGroup";
-            this.RotationGroup.Size = new System.Drawing.Size(260, 106);
+            this.RotationGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RotationGroup.Size = new System.Drawing.Size(347, 130);
             this.RotationGroup.TabIndex = 9;
             this.RotationGroup.TabStop = false;
             this.RotationGroup.Text = "Rotation";
@@ -1048,9 +1056,10 @@
             // 
             this.RotationModifierLabel.AutoSize = true;
             this.RotationModifierLabel.ForeColor = System.Drawing.Color.White;
-            this.RotationModifierLabel.Location = new System.Drawing.Point(133, 16);
+            this.RotationModifierLabel.Location = new System.Drawing.Point(177, 20);
+            this.RotationModifierLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.RotationModifierLabel.Name = "RotationModifierLabel";
-            this.RotationModifierLabel.Size = new System.Drawing.Size(65, 13);
+            this.RotationModifierLabel.Size = new System.Drawing.Size(86, 17);
             this.RotationModifierLabel.TabIndex = 14;
             this.RotationModifierLabel.Text = "Modifier Key";
             // 
@@ -1066,9 +1075,10 @@
             "Control",
             "Shift",
             "Windows"});
-            this.RotationModifierCombo.Location = new System.Drawing.Point(133, 33);
+            this.RotationModifierCombo.Location = new System.Drawing.Point(177, 41);
+            this.RotationModifierCombo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RotationModifierCombo.Name = "RotationModifierCombo";
-            this.RotationModifierCombo.Size = new System.Drawing.Size(121, 21);
+            this.RotationModifierCombo.Size = new System.Drawing.Size(160, 24);
             this.RotationModifierCombo.TabIndex = 13;
             this.RotationModifierCombo.SelectedIndexChanged += new System.EventHandler(this.RotationModifierCombo_SelectedIndexChanged);
             // 
@@ -1076,9 +1086,10 @@
             // 
             this.RotationHotkeyLabel.AutoSize = true;
             this.RotationHotkeyLabel.ForeColor = System.Drawing.Color.White;
-            this.RotationHotkeyLabel.Location = new System.Drawing.Point(133, 62);
+            this.RotationHotkeyLabel.Location = new System.Drawing.Point(177, 76);
+            this.RotationHotkeyLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.RotationHotkeyLabel.Name = "RotationHotkeyLabel";
-            this.RotationHotkeyLabel.Size = new System.Drawing.Size(41, 13);
+            this.RotationHotkeyLabel.Size = new System.Drawing.Size(52, 17);
             this.RotationHotkeyLabel.TabIndex = 12;
             this.RotationHotkeyLabel.Text = "Hotkey";
             // 
@@ -1102,9 +1113,10 @@
             "Z",
             "X",
             "C"});
-            this.RotationHotkeyCombo.Location = new System.Drawing.Point(133, 79);
+            this.RotationHotkeyCombo.Location = new System.Drawing.Point(177, 97);
+            this.RotationHotkeyCombo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RotationHotkeyCombo.Name = "RotationHotkeyCombo";
-            this.RotationHotkeyCombo.Size = new System.Drawing.Size(121, 21);
+            this.RotationHotkeyCombo.Size = new System.Drawing.Size(160, 24);
             this.RotationHotkeyCombo.TabIndex = 11;
             this.RotationHotkeyCombo.SelectedIndexChanged += new System.EventHandler(this.RotationHotkeyCombo_SelectedIndexChanged);
             // 
@@ -1112,9 +1124,10 @@
             // 
             this.RotationModeLabel.AutoSize = true;
             this.RotationModeLabel.ForeColor = System.Drawing.Color.White;
-            this.RotationModeLabel.Location = new System.Drawing.Point(6, 62);
+            this.RotationModeLabel.Location = new System.Drawing.Point(8, 76);
+            this.RotationModeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.RotationModeLabel.Name = "RotationModeLabel";
-            this.RotationModeLabel.Size = new System.Drawing.Size(77, 13);
+            this.RotationModeLabel.Size = new System.Drawing.Size(100, 17);
             this.RotationModeLabel.TabIndex = 10;
             this.RotationModeLabel.Text = "Rotation Mode";
             // 
@@ -1122,9 +1135,10 @@
             // 
             this.OverlayCheck.AutoSize = true;
             this.OverlayCheck.ForeColor = System.Drawing.Color.White;
-            this.OverlayCheck.Location = new System.Drawing.Point(6, 19);
+            this.OverlayCheck.Location = new System.Drawing.Point(8, 23);
+            this.OverlayCheck.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.OverlayCheck.Name = "OverlayCheck";
-            this.OverlayCheck.Size = new System.Drawing.Size(84, 17);
+            this.OverlayCheck.Size = new System.Drawing.Size(108, 21);
             this.OverlayCheck.TabIndex = 7;
             this.OverlayCheck.Text = "Use Overlay";
             this.OverlayCheck.UseVisualStyleBackColor = true;
@@ -1140,9 +1154,10 @@
             "Smart Target",
             "Single Target",
             "Multi Target"});
-            this.RotationModeCombo.Location = new System.Drawing.Point(6, 79);
+            this.RotationModeCombo.Location = new System.Drawing.Point(8, 97);
+            this.RotationModeCombo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RotationModeCombo.Name = "RotationModeCombo";
-            this.RotationModeCombo.Size = new System.Drawing.Size(121, 21);
+            this.RotationModeCombo.Size = new System.Drawing.Size(160, 24);
             this.RotationModeCombo.TabIndex = 9;
             this.RotationModeCombo.SelectedIndexChanged += new System.EventHandler(this.RotationModeCombo_SelectedIndexChanged);
             // 
@@ -1152,9 +1167,11 @@
             this.ChocoboGroup.Controls.Add(this.ChocoboStanceCombo);
             this.ChocoboGroup.Controls.Add(this.SummonChocobo);
             this.ChocoboGroup.ForeColor = System.Drawing.Color.White;
-            this.ChocoboGroup.Location = new System.Drawing.Point(30, 3);
+            this.ChocoboGroup.Location = new System.Drawing.Point(40, 4);
+            this.ChocoboGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ChocoboGroup.Name = "ChocoboGroup";
-            this.ChocoboGroup.Size = new System.Drawing.Size(133, 106);
+            this.ChocoboGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ChocoboGroup.Size = new System.Drawing.Size(177, 130);
             this.ChocoboGroup.TabIndex = 7;
             this.ChocoboGroup.TabStop = false;
             this.ChocoboGroup.Text = "Chocobo";
@@ -1163,9 +1180,10 @@
             // 
             this.ChocoboStanceLabel.AutoSize = true;
             this.ChocoboStanceLabel.ForeColor = System.Drawing.Color.White;
-            this.ChocoboStanceLabel.Location = new System.Drawing.Point(6, 62);
+            this.ChocoboStanceLabel.Location = new System.Drawing.Point(8, 76);
+            this.ChocoboStanceLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ChocoboStanceLabel.Name = "ChocoboStanceLabel";
-            this.ChocoboStanceLabel.Size = new System.Drawing.Size(87, 13);
+            this.ChocoboStanceLabel.Size = new System.Drawing.Size(112, 17);
             this.ChocoboStanceLabel.TabIndex = 8;
             this.ChocoboStanceLabel.Text = "Chocobo Stance";
             // 
@@ -1180,9 +1198,10 @@
             "Defender Stance",
             "Attacker Stance",
             "Healer Stance"});
-            this.ChocoboStanceCombo.Location = new System.Drawing.Point(6, 79);
+            this.ChocoboStanceCombo.Location = new System.Drawing.Point(8, 97);
+            this.ChocoboStanceCombo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ChocoboStanceCombo.Name = "ChocoboStanceCombo";
-            this.ChocoboStanceCombo.Size = new System.Drawing.Size(121, 21);
+            this.ChocoboStanceCombo.Size = new System.Drawing.Size(160, 24);
             this.ChocoboStanceCombo.TabIndex = 6;
             this.ChocoboStanceCombo.SelectedIndexChanged += new System.EventHandler(this.ChocoboStanceCombo_SelectedIndexChanged);
             // 
@@ -1190,9 +1209,10 @@
             // 
             this.SummonChocobo.AutoSize = true;
             this.SummonChocobo.ForeColor = System.Drawing.Color.White;
-            this.SummonChocobo.Location = new System.Drawing.Point(6, 19);
+            this.SummonChocobo.Location = new System.Drawing.Point(8, 23);
+            this.SummonChocobo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SummonChocobo.Name = "SummonChocobo";
-            this.SummonChocobo.Size = new System.Drawing.Size(113, 17);
+            this.SummonChocobo.Size = new System.Drawing.Size(145, 21);
             this.SummonChocobo.TabIndex = 7;
             this.SummonChocobo.Text = "Summon Chocobo";
             this.SummonChocobo.UseVisualStyleBackColor = true;
@@ -1202,9 +1222,10 @@
             // 
             this.UltimaDonateBox.BackColor = System.Drawing.Color.Transparent;
             this.UltimaDonateBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.UltimaDonateBox.Location = new System.Drawing.Point(105, 170);
+            this.UltimaDonateBox.Location = new System.Drawing.Point(140, 209);
+            this.UltimaDonateBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.UltimaDonateBox.Name = "UltimaDonateBox";
-            this.UltimaDonateBox.Size = new System.Drawing.Size(450, 216);
+            this.UltimaDonateBox.Size = new System.Drawing.Size(600, 266);
             this.UltimaDonateBox.TabIndex = 8;
             this.UltimaDonateBox.TabStop = false;
             this.UltimaDonateBox.Click += new System.EventHandler(this.UltimaDonateBox_Click);
@@ -1216,7 +1237,7 @@
             this.ArcanistTab.Location = new System.Drawing.Point(114, 4);
             this.ArcanistTab.Margin = new System.Windows.Forms.Padding(0);
             this.ArcanistTab.Name = "ArcanistTab";
-            this.ArcanistTab.Size = new System.Drawing.Size(682, 402);
+            this.ArcanistTab.Size = new System.Drawing.Size(949, 497);
             this.ArcanistTab.TabIndex = 0;
             this.ArcanistTab.Text = "Arcanist";
             // 
@@ -1227,11 +1248,12 @@
             this.ArcanistSubTab.Controls.Add(this.ScholarSettings);
             this.ArcanistSubTab.Controls.Add(this.SummonerSettings);
             this.ArcanistSubTab.ItemSize = new System.Drawing.Size(35, 110);
-            this.ArcanistSubTab.Location = new System.Drawing.Point(-1, -4);
+            this.ArcanistSubTab.Location = new System.Drawing.Point(-1, -5);
+            this.ArcanistSubTab.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistSubTab.Multiline = true;
             this.ArcanistSubTab.Name = "ArcanistSubTab";
             this.ArcanistSubTab.SelectedIndex = 0;
-            this.ArcanistSubTab.Size = new System.Drawing.Size(685, 410);
+            this.ArcanistSubTab.Size = new System.Drawing.Size(913, 505);
             this.ArcanistSubTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.ArcanistSubTab.TabIndex = 5;
             this.ArcanistSubTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -1245,7 +1267,7 @@
             this.ArcanistSettings.Location = new System.Drawing.Point(114, 4);
             this.ArcanistSettings.Margin = new System.Windows.Forms.Padding(0);
             this.ArcanistSettings.Name = "ArcanistSettings";
-            this.ArcanistSettings.Size = new System.Drawing.Size(567, 402);
+            this.ArcanistSettings.Size = new System.Drawing.Size(795, 497);
             this.ArcanistSettings.TabIndex = 0;
             this.ArcanistSettings.Text = "Arcanist";
             this.ArcanistSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -1254,9 +1276,11 @@
             // 
             this.ArcanistHealingGroup.Controls.Add(this.ArcanistPhysick);
             this.ArcanistHealingGroup.ForeColor = System.Drawing.Color.White;
-            this.ArcanistHealingGroup.Location = new System.Drawing.Point(266, 286);
+            this.ArcanistHealingGroup.Location = new System.Drawing.Point(355, 352);
+            this.ArcanistHealingGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistHealingGroup.Name = "ArcanistHealingGroup";
-            this.ArcanistHealingGroup.Size = new System.Drawing.Size(75, 53);
+            this.ArcanistHealingGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ArcanistHealingGroup.Size = new System.Drawing.Size(100, 65);
             this.ArcanistHealingGroup.TabIndex = 10;
             this.ArcanistHealingGroup.TabStop = false;
             this.ArcanistHealingGroup.Text = "Heal";
@@ -1265,9 +1289,10 @@
             // 
             this.ArcanistPhysick.AutoSize = true;
             this.ArcanistPhysick.ForeColor = System.Drawing.Color.White;
-            this.ArcanistPhysick.Location = new System.Drawing.Point(6, 23);
+            this.ArcanistPhysick.Location = new System.Drawing.Point(8, 28);
+            this.ArcanistPhysick.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistPhysick.Name = "ArcanistPhysick";
-            this.ArcanistPhysick.Size = new System.Drawing.Size(63, 17);
+            this.ArcanistPhysick.Size = new System.Drawing.Size(78, 21);
             this.ArcanistPhysick.TabIndex = 7;
             this.ArcanistPhysick.Text = "Physick";
             this.ArcanistPhysick.UseVisualStyleBackColor = true;
@@ -1278,9 +1303,11 @@
             this.ArcanistSummonGroup.Controls.Add(this.ArcanistSummonPetCombo);
             this.ArcanistSummonGroup.Controls.Add(this.ArcanistSummonPet);
             this.ArcanistSummonGroup.ForeColor = System.Drawing.Color.White;
-            this.ArcanistSummonGroup.Location = new System.Drawing.Point(34, 286);
+            this.ArcanistSummonGroup.Location = new System.Drawing.Point(45, 352);
+            this.ArcanistSummonGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistSummonGroup.Name = "ArcanistSummonGroup";
-            this.ArcanistSummonGroup.Size = new System.Drawing.Size(226, 53);
+            this.ArcanistSummonGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ArcanistSummonGroup.Size = new System.Drawing.Size(301, 65);
             this.ArcanistSummonGroup.TabIndex = 9;
             this.ArcanistSummonGroup.TabStop = false;
             this.ArcanistSummonGroup.Text = "Summon ";
@@ -1294,9 +1321,10 @@
             this.ArcanistSummonPetCombo.Items.AddRange(new object[] {
             "Emerald Carbuncle",
             "Topaz Carbuncle"});
-            this.ArcanistSummonPetCombo.Location = new System.Drawing.Point(9, 21);
+            this.ArcanistSummonPetCombo.Location = new System.Drawing.Point(12, 26);
+            this.ArcanistSummonPetCombo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistSummonPetCombo.Name = "ArcanistSummonPetCombo";
-            this.ArcanistSummonPetCombo.Size = new System.Drawing.Size(121, 21);
+            this.ArcanistSummonPetCombo.Size = new System.Drawing.Size(160, 24);
             this.ArcanistSummonPetCombo.TabIndex = 6;
             this.ArcanistSummonPetCombo.SelectedIndexChanged += new System.EventHandler(this.ArcanistSummonPetCombo_SelectedIndexChanged);
             // 
@@ -1304,9 +1332,10 @@
             // 
             this.ArcanistSummonPet.AutoSize = true;
             this.ArcanistSummonPet.ForeColor = System.Drawing.Color.White;
-            this.ArcanistSummonPet.Location = new System.Drawing.Point(136, 23);
+            this.ArcanistSummonPet.Location = new System.Drawing.Point(181, 28);
+            this.ArcanistSummonPet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistSummonPet.Name = "ArcanistSummonPet";
-            this.ArcanistSummonPet.Size = new System.Drawing.Size(86, 17);
+            this.ArcanistSummonPet.Size = new System.Drawing.Size(110, 21);
             this.ArcanistSummonPet.TabIndex = 7;
             this.ArcanistSummonPet.Text = "Summon Pet";
             this.ArcanistSummonPet.UseVisualStyleBackColor = true;
@@ -1322,9 +1351,11 @@
             this.ArcanistCrossGroup.Controls.Add(this.ArcanistGladiatorGroup);
             this.ArcanistCrossGroup.Controls.Add(this.ArcanistLancerGroup);
             this.ArcanistCrossGroup.ForeColor = System.Drawing.Color.White;
-            this.ArcanistCrossGroup.Location = new System.Drawing.Point(34, 3);
+            this.ArcanistCrossGroup.Location = new System.Drawing.Point(45, 4);
+            this.ArcanistCrossGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistCrossGroup.Name = "ArcanistCrossGroup";
-            this.ArcanistCrossGroup.Size = new System.Drawing.Size(504, 277);
+            this.ArcanistCrossGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ArcanistCrossGroup.Size = new System.Drawing.Size(672, 341);
             this.ArcanistCrossGroup.TabIndex = 8;
             this.ArcanistCrossGroup.TabStop = false;
             this.ArcanistCrossGroup.Text = "Cross-Class  ";
@@ -1335,9 +1366,11 @@
             this.ArcanistThaumaturgeGroup.Controls.Add(this.ArcanistSwiftcast);
             this.ArcanistThaumaturgeGroup.Controls.Add(this.ArcanistBlizzardII);
             this.ArcanistThaumaturgeGroup.ForeColor = System.Drawing.Color.White;
-            this.ArcanistThaumaturgeGroup.Location = new System.Drawing.Point(261, 160);
+            this.ArcanistThaumaturgeGroup.Location = new System.Drawing.Point(348, 197);
+            this.ArcanistThaumaturgeGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistThaumaturgeGroup.Name = "ArcanistThaumaturgeGroup";
-            this.ArcanistThaumaturgeGroup.Size = new System.Drawing.Size(113, 88);
+            this.ArcanistThaumaturgeGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ArcanistThaumaturgeGroup.Size = new System.Drawing.Size(151, 108);
             this.ArcanistThaumaturgeGroup.TabIndex = 29;
             this.ArcanistThaumaturgeGroup.TabStop = false;
             this.ArcanistThaumaturgeGroup.Text = "Thaumaturge ";
@@ -1347,9 +1380,10 @@
             this.ArcanistSurecast.AutoSize = true;
             this.ArcanistSurecast.Enabled = false;
             this.ArcanistSurecast.ForeColor = System.Drawing.Color.White;
-            this.ArcanistSurecast.Location = new System.Drawing.Point(6, 19);
+            this.ArcanistSurecast.Location = new System.Drawing.Point(8, 23);
+            this.ArcanistSurecast.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistSurecast.Name = "ArcanistSurecast";
-            this.ArcanistSurecast.Size = new System.Drawing.Size(68, 17);
+            this.ArcanistSurecast.Size = new System.Drawing.Size(86, 21);
             this.ArcanistSurecast.TabIndex = 35;
             this.ArcanistSurecast.Text = "Surecast";
             this.ArcanistSurecast.UseVisualStyleBackColor = true;
@@ -1359,9 +1393,10 @@
             // 
             this.ArcanistSwiftcast.AutoSize = true;
             this.ArcanistSwiftcast.ForeColor = System.Drawing.Color.White;
-            this.ArcanistSwiftcast.Location = new System.Drawing.Point(6, 65);
+            this.ArcanistSwiftcast.Location = new System.Drawing.Point(8, 80);
+            this.ArcanistSwiftcast.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistSwiftcast.Name = "ArcanistSwiftcast";
-            this.ArcanistSwiftcast.Size = new System.Drawing.Size(69, 17);
+            this.ArcanistSwiftcast.Size = new System.Drawing.Size(85, 21);
             this.ArcanistSwiftcast.TabIndex = 36;
             this.ArcanistSwiftcast.Text = "Swiftcast";
             this.ArcanistSwiftcast.UseVisualStyleBackColor = true;
@@ -1372,9 +1407,10 @@
             this.ArcanistBlizzardII.AutoSize = true;
             this.ArcanistBlizzardII.Enabled = false;
             this.ArcanistBlizzardII.ForeColor = System.Drawing.Color.White;
-            this.ArcanistBlizzardII.Location = new System.Drawing.Point(6, 42);
+            this.ArcanistBlizzardII.Location = new System.Drawing.Point(8, 52);
+            this.ArcanistBlizzardII.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistBlizzardII.Name = "ArcanistBlizzardII";
-            this.ArcanistBlizzardII.Size = new System.Drawing.Size(71, 17);
+            this.ArcanistBlizzardII.Size = new System.Drawing.Size(90, 21);
             this.ArcanistBlizzardII.TabIndex = 39;
             this.ArcanistBlizzardII.Text = "Blizzard II";
             this.ArcanistBlizzardII.UseVisualStyleBackColor = true;
@@ -1387,9 +1423,11 @@
             this.ArcanistPugilistGroup.Controls.Add(this.ArcanistInternalRelease);
             this.ArcanistPugilistGroup.Controls.Add(this.ArcanistMantra);
             this.ArcanistPugilistGroup.ForeColor = System.Drawing.Color.White;
-            this.ArcanistPugilistGroup.Location = new System.Drawing.Point(132, 160);
+            this.ArcanistPugilistGroup.Location = new System.Drawing.Point(176, 197);
+            this.ArcanistPugilistGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistPugilistGroup.Name = "ArcanistPugilistGroup";
-            this.ArcanistPugilistGroup.Size = new System.Drawing.Size(113, 111);
+            this.ArcanistPugilistGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ArcanistPugilistGroup.Size = new System.Drawing.Size(151, 137);
             this.ArcanistPugilistGroup.TabIndex = 23;
             this.ArcanistPugilistGroup.TabStop = false;
             this.ArcanistPugilistGroup.Text = "Pugilist ";
@@ -1399,9 +1437,10 @@
             this.ArcanistFeatherfoot.AutoSize = true;
             this.ArcanistFeatherfoot.Enabled = false;
             this.ArcanistFeatherfoot.ForeColor = System.Drawing.Color.White;
-            this.ArcanistFeatherfoot.Location = new System.Drawing.Point(6, 19);
+            this.ArcanistFeatherfoot.Location = new System.Drawing.Point(8, 23);
+            this.ArcanistFeatherfoot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistFeatherfoot.Name = "ArcanistFeatherfoot";
-            this.ArcanistFeatherfoot.Size = new System.Drawing.Size(80, 17);
+            this.ArcanistFeatherfoot.Size = new System.Drawing.Size(103, 21);
             this.ArcanistFeatherfoot.TabIndex = 30;
             this.ArcanistFeatherfoot.Text = "Featherfoot";
             this.ArcanistFeatherfoot.UseVisualStyleBackColor = true;
@@ -1412,9 +1451,10 @@
             this.ArcanistSecondWind.AutoSize = true;
             this.ArcanistSecondWind.Enabled = false;
             this.ArcanistSecondWind.ForeColor = System.Drawing.Color.White;
-            this.ArcanistSecondWind.Location = new System.Drawing.Point(6, 42);
+            this.ArcanistSecondWind.Location = new System.Drawing.Point(8, 52);
+            this.ArcanistSecondWind.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistSecondWind.Name = "ArcanistSecondWind";
-            this.ArcanistSecondWind.Size = new System.Drawing.Size(91, 17);
+            this.ArcanistSecondWind.Size = new System.Drawing.Size(114, 21);
             this.ArcanistSecondWind.TabIndex = 31;
             this.ArcanistSecondWind.Text = "Second Wind";
             this.ArcanistSecondWind.UseVisualStyleBackColor = true;
@@ -1425,9 +1465,10 @@
             this.ArcanistInternalRelease.AutoSize = true;
             this.ArcanistInternalRelease.Enabled = false;
             this.ArcanistInternalRelease.ForeColor = System.Drawing.Color.White;
-            this.ArcanistInternalRelease.Location = new System.Drawing.Point(6, 65);
+            this.ArcanistInternalRelease.Location = new System.Drawing.Point(8, 80);
+            this.ArcanistInternalRelease.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistInternalRelease.Name = "ArcanistInternalRelease";
-            this.ArcanistInternalRelease.Size = new System.Drawing.Size(103, 17);
+            this.ArcanistInternalRelease.Size = new System.Drawing.Size(133, 21);
             this.ArcanistInternalRelease.TabIndex = 32;
             this.ArcanistInternalRelease.Text = "Internal Release";
             this.ArcanistInternalRelease.UseVisualStyleBackColor = true;
@@ -1438,9 +1479,10 @@
             this.ArcanistMantra.AutoSize = true;
             this.ArcanistMantra.Enabled = false;
             this.ArcanistMantra.ForeColor = System.Drawing.Color.White;
-            this.ArcanistMantra.Location = new System.Drawing.Point(6, 88);
+            this.ArcanistMantra.Location = new System.Drawing.Point(8, 108);
+            this.ArcanistMantra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistMantra.Name = "ArcanistMantra";
-            this.ArcanistMantra.Size = new System.Drawing.Size(59, 17);
+            this.ArcanistMantra.Size = new System.Drawing.Size(74, 21);
             this.ArcanistMantra.TabIndex = 34;
             this.ArcanistMantra.Text = "Mantra";
             this.ArcanistMantra.UseVisualStyleBackColor = true;
@@ -1452,9 +1494,11 @@
             this.ArcanistMarauderGroup.Controls.Add(this.ArcanistBloodbath);
             this.ArcanistMarauderGroup.Controls.Add(this.ArcanistMercyStroke);
             this.ArcanistMarauderGroup.ForeColor = System.Drawing.Color.White;
-            this.ArcanistMarauderGroup.Location = new System.Drawing.Point(6, 160);
+            this.ArcanistMarauderGroup.Location = new System.Drawing.Point(8, 197);
+            this.ArcanistMarauderGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistMarauderGroup.Name = "ArcanistMarauderGroup";
-            this.ArcanistMarauderGroup.Size = new System.Drawing.Size(110, 88);
+            this.ArcanistMarauderGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ArcanistMarauderGroup.Size = new System.Drawing.Size(147, 108);
             this.ArcanistMarauderGroup.TabIndex = 23;
             this.ArcanistMarauderGroup.TabStop = false;
             this.ArcanistMarauderGroup.Text = "Marauder ";
@@ -1464,9 +1508,10 @@
             this.ArcanistForesight.AutoSize = true;
             this.ArcanistForesight.Enabled = false;
             this.ArcanistForesight.ForeColor = System.Drawing.Color.White;
-            this.ArcanistForesight.Location = new System.Drawing.Point(6, 19);
+            this.ArcanistForesight.Location = new System.Drawing.Point(8, 23);
+            this.ArcanistForesight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistForesight.Name = "ArcanistForesight";
-            this.ArcanistForesight.Size = new System.Drawing.Size(69, 17);
+            this.ArcanistForesight.Size = new System.Drawing.Size(89, 21);
             this.ArcanistForesight.TabIndex = 26;
             this.ArcanistForesight.Text = "Foresight";
             this.ArcanistForesight.UseVisualStyleBackColor = true;
@@ -1477,9 +1522,10 @@
             this.ArcanistBloodbath.AutoSize = true;
             this.ArcanistBloodbath.Enabled = false;
             this.ArcanistBloodbath.ForeColor = System.Drawing.Color.White;
-            this.ArcanistBloodbath.Location = new System.Drawing.Point(6, 42);
+            this.ArcanistBloodbath.Location = new System.Drawing.Point(8, 52);
+            this.ArcanistBloodbath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistBloodbath.Name = "ArcanistBloodbath";
-            this.ArcanistBloodbath.Size = new System.Drawing.Size(74, 17);
+            this.ArcanistBloodbath.Size = new System.Drawing.Size(94, 21);
             this.ArcanistBloodbath.TabIndex = 27;
             this.ArcanistBloodbath.Text = "Bloodbath";
             this.ArcanistBloodbath.UseVisualStyleBackColor = true;
@@ -1490,9 +1536,10 @@
             this.ArcanistMercyStroke.AutoSize = true;
             this.ArcanistMercyStroke.Enabled = false;
             this.ArcanistMercyStroke.ForeColor = System.Drawing.Color.White;
-            this.ArcanistMercyStroke.Location = new System.Drawing.Point(6, 65);
+            this.ArcanistMercyStroke.Location = new System.Drawing.Point(8, 80);
+            this.ArcanistMercyStroke.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistMercyStroke.Name = "ArcanistMercyStroke";
-            this.ArcanistMercyStroke.Size = new System.Drawing.Size(89, 17);
+            this.ArcanistMercyStroke.Size = new System.Drawing.Size(113, 21);
             this.ArcanistMercyStroke.TabIndex = 28;
             this.ArcanistMercyStroke.Text = "Mercy Stroke";
             this.ArcanistMercyStroke.UseVisualStyleBackColor = true;
@@ -1504,9 +1551,11 @@
             this.ArcanistArcherGroup.Controls.Add(this.ArcanistHawksEye);
             this.ArcanistArcherGroup.Controls.Add(this.ArcanistQuellingStrikes);
             this.ArcanistArcherGroup.ForeColor = System.Drawing.Color.White;
-            this.ArcanistArcherGroup.Location = new System.Drawing.Point(6, 19);
+            this.ArcanistArcherGroup.Location = new System.Drawing.Point(8, 23);
+            this.ArcanistArcherGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistArcherGroup.Name = "ArcanistArcherGroup";
-            this.ArcanistArcherGroup.Size = new System.Drawing.Size(110, 88);
+            this.ArcanistArcherGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ArcanistArcherGroup.Size = new System.Drawing.Size(147, 108);
             this.ArcanistArcherGroup.TabIndex = 22;
             this.ArcanistArcherGroup.TabStop = false;
             this.ArcanistArcherGroup.Text = "Archer";
@@ -1515,9 +1564,10 @@
             // 
             this.ArcanistRagingStrikes.AutoSize = true;
             this.ArcanistRagingStrikes.ForeColor = System.Drawing.Color.White;
-            this.ArcanistRagingStrikes.Location = new System.Drawing.Point(6, 19);
+            this.ArcanistRagingStrikes.Location = new System.Drawing.Point(8, 23);
+            this.ArcanistRagingStrikes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistRagingStrikes.Name = "ArcanistRagingStrikes";
-            this.ArcanistRagingStrikes.Size = new System.Drawing.Size(95, 17);
+            this.ArcanistRagingStrikes.Size = new System.Drawing.Size(122, 21);
             this.ArcanistRagingStrikes.TabIndex = 7;
             this.ArcanistRagingStrikes.Text = "Raging Strikes";
             this.ArcanistRagingStrikes.UseVisualStyleBackColor = true;
@@ -1528,9 +1578,10 @@
             this.ArcanistHawksEye.AutoSize = true;
             this.ArcanistHawksEye.Enabled = false;
             this.ArcanistHawksEye.ForeColor = System.Drawing.Color.White;
-            this.ArcanistHawksEye.Location = new System.Drawing.Point(6, 42);
+            this.ArcanistHawksEye.Location = new System.Drawing.Point(8, 52);
+            this.ArcanistHawksEye.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistHawksEye.Name = "ArcanistHawksEye";
-            this.ArcanistHawksEye.Size = new System.Drawing.Size(82, 17);
+            this.ArcanistHawksEye.Size = new System.Drawing.Size(102, 21);
             this.ArcanistHawksEye.TabIndex = 8;
             this.ArcanistHawksEye.Text = "Hawk\'s Eye";
             this.ArcanistHawksEye.UseVisualStyleBackColor = true;
@@ -1541,9 +1592,10 @@
             this.ArcanistQuellingStrikes.AutoSize = true;
             this.ArcanistQuellingStrikes.Enabled = false;
             this.ArcanistQuellingStrikes.ForeColor = System.Drawing.Color.White;
-            this.ArcanistQuellingStrikes.Location = new System.Drawing.Point(6, 65);
+            this.ArcanistQuellingStrikes.Location = new System.Drawing.Point(8, 80);
+            this.ArcanistQuellingStrikes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistQuellingStrikes.Name = "ArcanistQuellingStrikes";
-            this.ArcanistQuellingStrikes.Size = new System.Drawing.Size(99, 17);
+            this.ArcanistQuellingStrikes.Size = new System.Drawing.Size(129, 21);
             this.ArcanistQuellingStrikes.TabIndex = 9;
             this.ArcanistQuellingStrikes.Text = "Quelling Strikes";
             this.ArcanistQuellingStrikes.UseVisualStyleBackColor = true;
@@ -1557,9 +1609,11 @@
             this.ArcanistConjurerGroup.Controls.Add(this.ArcanistRaise);
             this.ArcanistConjurerGroup.Controls.Add(this.ArcanistStoneskin);
             this.ArcanistConjurerGroup.ForeColor = System.Drawing.Color.White;
-            this.ArcanistConjurerGroup.Location = new System.Drawing.Point(132, 19);
+            this.ArcanistConjurerGroup.Location = new System.Drawing.Point(176, 23);
+            this.ArcanistConjurerGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistConjurerGroup.Name = "ArcanistConjurerGroup";
-            this.ArcanistConjurerGroup.Size = new System.Drawing.Size(113, 134);
+            this.ArcanistConjurerGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ArcanistConjurerGroup.Size = new System.Drawing.Size(151, 165);
             this.ArcanistConjurerGroup.TabIndex = 23;
             this.ArcanistConjurerGroup.TabStop = false;
             this.ArcanistConjurerGroup.Text = "Conjurer ";
@@ -1569,9 +1623,10 @@
             this.ArcanistCure.AutoSize = true;
             this.ArcanistCure.Enabled = false;
             this.ArcanistCure.ForeColor = System.Drawing.Color.White;
-            this.ArcanistCure.Location = new System.Drawing.Point(6, 19);
+            this.ArcanistCure.Location = new System.Drawing.Point(8, 23);
+            this.ArcanistCure.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistCure.Name = "ArcanistCure";
-            this.ArcanistCure.Size = new System.Drawing.Size(48, 17);
+            this.ArcanistCure.Size = new System.Drawing.Size(60, 21);
             this.ArcanistCure.TabIndex = 10;
             this.ArcanistCure.Text = "Cure";
             this.ArcanistCure.UseVisualStyleBackColor = true;
@@ -1582,9 +1637,10 @@
             this.ArcanistAero.AutoSize = true;
             this.ArcanistAero.Enabled = false;
             this.ArcanistAero.ForeColor = System.Drawing.Color.White;
-            this.ArcanistAero.Location = new System.Drawing.Point(6, 42);
+            this.ArcanistAero.Location = new System.Drawing.Point(8, 52);
+            this.ArcanistAero.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistAero.Name = "ArcanistAero";
-            this.ArcanistAero.Size = new System.Drawing.Size(48, 17);
+            this.ArcanistAero.Size = new System.Drawing.Size(60, 21);
             this.ArcanistAero.TabIndex = 11;
             this.ArcanistAero.Text = "Aero";
             this.ArcanistAero.UseVisualStyleBackColor = true;
@@ -1594,9 +1650,10 @@
             // 
             this.ArcanistProtect.AutoSize = true;
             this.ArcanistProtect.ForeColor = System.Drawing.Color.White;
-            this.ArcanistProtect.Location = new System.Drawing.Point(6, 65);
+            this.ArcanistProtect.Location = new System.Drawing.Point(8, 80);
+            this.ArcanistProtect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistProtect.Name = "ArcanistProtect";
-            this.ArcanistProtect.Size = new System.Drawing.Size(60, 17);
+            this.ArcanistProtect.Size = new System.Drawing.Size(75, 21);
             this.ArcanistProtect.TabIndex = 12;
             this.ArcanistProtect.Text = "Protect";
             this.ArcanistProtect.UseVisualStyleBackColor = true;
@@ -1607,9 +1664,10 @@
             this.ArcanistRaise.AutoSize = true;
             this.ArcanistRaise.Enabled = false;
             this.ArcanistRaise.ForeColor = System.Drawing.Color.White;
-            this.ArcanistRaise.Location = new System.Drawing.Point(6, 88);
+            this.ArcanistRaise.Location = new System.Drawing.Point(8, 108);
+            this.ArcanistRaise.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistRaise.Name = "ArcanistRaise";
-            this.ArcanistRaise.Size = new System.Drawing.Size(53, 17);
+            this.ArcanistRaise.Size = new System.Drawing.Size(66, 21);
             this.ArcanistRaise.TabIndex = 13;
             this.ArcanistRaise.Text = "Raise";
             this.ArcanistRaise.UseVisualStyleBackColor = true;
@@ -1619,9 +1677,10 @@
             // 
             this.ArcanistStoneskin.AutoSize = true;
             this.ArcanistStoneskin.ForeColor = System.Drawing.Color.White;
-            this.ArcanistStoneskin.Location = new System.Drawing.Point(6, 111);
+            this.ArcanistStoneskin.Location = new System.Drawing.Point(8, 137);
+            this.ArcanistStoneskin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistStoneskin.Name = "ArcanistStoneskin";
-            this.ArcanistStoneskin.Size = new System.Drawing.Size(73, 17);
+            this.ArcanistStoneskin.Size = new System.Drawing.Size(92, 21);
             this.ArcanistStoneskin.TabIndex = 14;
             this.ArcanistStoneskin.Text = "Stoneskin";
             this.ArcanistStoneskin.UseVisualStyleBackColor = true;
@@ -1634,9 +1693,11 @@
             this.ArcanistGladiatorGroup.Controls.Add(this.ArcanistProvoke);
             this.ArcanistGladiatorGroup.Controls.Add(this.ArcanistAwareness);
             this.ArcanistGladiatorGroup.ForeColor = System.Drawing.Color.White;
-            this.ArcanistGladiatorGroup.Location = new System.Drawing.Point(261, 19);
+            this.ArcanistGladiatorGroup.Location = new System.Drawing.Point(348, 23);
+            this.ArcanistGladiatorGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistGladiatorGroup.Name = "ArcanistGladiatorGroup";
-            this.ArcanistGladiatorGroup.Size = new System.Drawing.Size(113, 111);
+            this.ArcanistGladiatorGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ArcanistGladiatorGroup.Size = new System.Drawing.Size(151, 137);
             this.ArcanistGladiatorGroup.TabIndex = 22;
             this.ArcanistGladiatorGroup.TabStop = false;
             this.ArcanistGladiatorGroup.Text = "Gladiator ";
@@ -1646,9 +1707,10 @@
             this.ArcanistFlash.AutoSize = true;
             this.ArcanistFlash.Enabled = false;
             this.ArcanistFlash.ForeColor = System.Drawing.Color.White;
-            this.ArcanistFlash.Location = new System.Drawing.Point(6, 19);
+            this.ArcanistFlash.Location = new System.Drawing.Point(8, 23);
+            this.ArcanistFlash.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistFlash.Name = "ArcanistFlash";
-            this.ArcanistFlash.Size = new System.Drawing.Size(51, 17);
+            this.ArcanistFlash.Size = new System.Drawing.Size(64, 21);
             this.ArcanistFlash.TabIndex = 15;
             this.ArcanistFlash.Text = "Flash";
             this.ArcanistFlash.UseVisualStyleBackColor = true;
@@ -1659,9 +1721,10 @@
             this.ArcanistConvalescence.AutoSize = true;
             this.ArcanistConvalescence.Enabled = false;
             this.ArcanistConvalescence.ForeColor = System.Drawing.Color.White;
-            this.ArcanistConvalescence.Location = new System.Drawing.Point(6, 42);
+            this.ArcanistConvalescence.Location = new System.Drawing.Point(8, 52);
+            this.ArcanistConvalescence.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistConvalescence.Name = "ArcanistConvalescence";
-            this.ArcanistConvalescence.Size = new System.Drawing.Size(100, 17);
+            this.ArcanistConvalescence.Size = new System.Drawing.Size(126, 21);
             this.ArcanistConvalescence.TabIndex = 16;
             this.ArcanistConvalescence.Text = "Convalescence";
             this.ArcanistConvalescence.UseVisualStyleBackColor = true;
@@ -1672,9 +1735,10 @@
             this.ArcanistProvoke.AutoSize = true;
             this.ArcanistProvoke.Enabled = false;
             this.ArcanistProvoke.ForeColor = System.Drawing.Color.White;
-            this.ArcanistProvoke.Location = new System.Drawing.Point(6, 65);
+            this.ArcanistProvoke.Location = new System.Drawing.Point(8, 80);
+            this.ArcanistProvoke.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistProvoke.Name = "ArcanistProvoke";
-            this.ArcanistProvoke.Size = new System.Drawing.Size(66, 17);
+            this.ArcanistProvoke.Size = new System.Drawing.Size(82, 21);
             this.ArcanistProvoke.TabIndex = 17;
             this.ArcanistProvoke.Text = "Provoke";
             this.ArcanistProvoke.UseVisualStyleBackColor = true;
@@ -1685,9 +1749,10 @@
             this.ArcanistAwareness.AutoSize = true;
             this.ArcanistAwareness.Enabled = false;
             this.ArcanistAwareness.ForeColor = System.Drawing.Color.White;
-            this.ArcanistAwareness.Location = new System.Drawing.Point(6, 88);
+            this.ArcanistAwareness.Location = new System.Drawing.Point(8, 108);
+            this.ArcanistAwareness.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistAwareness.Name = "ArcanistAwareness";
-            this.ArcanistAwareness.Size = new System.Drawing.Size(78, 17);
+            this.ArcanistAwareness.Size = new System.Drawing.Size(99, 21);
             this.ArcanistAwareness.TabIndex = 18;
             this.ArcanistAwareness.Text = "Awareness";
             this.ArcanistAwareness.UseVisualStyleBackColor = true;
@@ -1699,9 +1764,11 @@
             this.ArcanistLancerGroup.Controls.Add(this.ArcanistInvigorate);
             this.ArcanistLancerGroup.Controls.Add(this.ArcanistBloodForBlood);
             this.ArcanistLancerGroup.ForeColor = System.Drawing.Color.White;
-            this.ArcanistLancerGroup.Location = new System.Drawing.Point(390, 19);
+            this.ArcanistLancerGroup.Location = new System.Drawing.Point(520, 23);
+            this.ArcanistLancerGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistLancerGroup.Name = "ArcanistLancerGroup";
-            this.ArcanistLancerGroup.Size = new System.Drawing.Size(108, 88);
+            this.ArcanistLancerGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ArcanistLancerGroup.Size = new System.Drawing.Size(144, 108);
             this.ArcanistLancerGroup.TabIndex = 10;
             this.ArcanistLancerGroup.TabStop = false;
             this.ArcanistLancerGroup.Text = "Lancer";
@@ -1711,9 +1778,10 @@
             this.ArcanistKeenFlurry.AutoSize = true;
             this.ArcanistKeenFlurry.Enabled = false;
             this.ArcanistKeenFlurry.ForeColor = System.Drawing.Color.White;
-            this.ArcanistKeenFlurry.Location = new System.Drawing.Point(6, 19);
+            this.ArcanistKeenFlurry.Location = new System.Drawing.Point(8, 23);
+            this.ArcanistKeenFlurry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistKeenFlurry.Name = "ArcanistKeenFlurry";
-            this.ArcanistKeenFlurry.Size = new System.Drawing.Size(79, 17);
+            this.ArcanistKeenFlurry.Size = new System.Drawing.Size(103, 21);
             this.ArcanistKeenFlurry.TabIndex = 19;
             this.ArcanistKeenFlurry.Text = "Keen Flurry";
             this.ArcanistKeenFlurry.UseVisualStyleBackColor = true;
@@ -1724,9 +1792,10 @@
             this.ArcanistInvigorate.AutoSize = true;
             this.ArcanistInvigorate.Enabled = false;
             this.ArcanistInvigorate.ForeColor = System.Drawing.Color.White;
-            this.ArcanistInvigorate.Location = new System.Drawing.Point(6, 42);
+            this.ArcanistInvigorate.Location = new System.Drawing.Point(8, 52);
+            this.ArcanistInvigorate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistInvigorate.Name = "ArcanistInvigorate";
-            this.ArcanistInvigorate.Size = new System.Drawing.Size(73, 17);
+            this.ArcanistInvigorate.Size = new System.Drawing.Size(92, 21);
             this.ArcanistInvigorate.TabIndex = 20;
             this.ArcanistInvigorate.Text = "Invigorate";
             this.ArcanistInvigorate.UseVisualStyleBackColor = true;
@@ -1737,9 +1806,10 @@
             this.ArcanistBloodForBlood.AutoSize = true;
             this.ArcanistBloodForBlood.Enabled = false;
             this.ArcanistBloodForBlood.ForeColor = System.Drawing.Color.White;
-            this.ArcanistBloodForBlood.Location = new System.Drawing.Point(6, 65);
+            this.ArcanistBloodForBlood.Location = new System.Drawing.Point(8, 80);
+            this.ArcanistBloodForBlood.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcanistBloodForBlood.Name = "ArcanistBloodForBlood";
-            this.ArcanistBloodForBlood.Size = new System.Drawing.Size(98, 17);
+            this.ArcanistBloodForBlood.Size = new System.Drawing.Size(127, 21);
             this.ArcanistBloodForBlood.TabIndex = 21;
             this.ArcanistBloodForBlood.Text = "Blood for Blood";
             this.ArcanistBloodForBlood.UseVisualStyleBackColor = true;
@@ -1754,7 +1824,7 @@
             this.ScholarSettings.Location = new System.Drawing.Point(114, 4);
             this.ScholarSettings.Margin = new System.Windows.Forms.Padding(0);
             this.ScholarSettings.Name = "ScholarSettings";
-            this.ScholarSettings.Size = new System.Drawing.Size(567, 402);
+            this.ScholarSettings.Size = new System.Drawing.Size(795, 497);
             this.ScholarSettings.TabIndex = 1;
             this.ScholarSettings.Text = "Scholar";
             this.ScholarSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -1764,9 +1834,11 @@
             this.ScholarHealingGroup.Controls.Add(this.ScholarAdloquium);
             this.ScholarHealingGroup.Controls.Add(this.ScholarPhysick);
             this.ScholarHealingGroup.ForeColor = System.Drawing.Color.White;
-            this.ScholarHealingGroup.Location = new System.Drawing.Point(34, 250);
+            this.ScholarHealingGroup.Location = new System.Drawing.Point(45, 308);
+            this.ScholarHealingGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ScholarHealingGroup.Name = "ScholarHealingGroup";
-            this.ScholarHealingGroup.Size = new System.Drawing.Size(87, 65);
+            this.ScholarHealingGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ScholarHealingGroup.Size = new System.Drawing.Size(116, 80);
             this.ScholarHealingGroup.TabIndex = 14;
             this.ScholarHealingGroup.TabStop = false;
             this.ScholarHealingGroup.Text = "Heal";
@@ -1775,9 +1847,10 @@
             // 
             this.ScholarAdloquium.AutoSize = true;
             this.ScholarAdloquium.ForeColor = System.Drawing.Color.White;
-            this.ScholarAdloquium.Location = new System.Drawing.Point(6, 42);
+            this.ScholarAdloquium.Location = new System.Drawing.Point(8, 52);
+            this.ScholarAdloquium.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ScholarAdloquium.Name = "ScholarAdloquium";
-            this.ScholarAdloquium.Size = new System.Drawing.Size(75, 17);
+            this.ScholarAdloquium.Size = new System.Drawing.Size(96, 21);
             this.ScholarAdloquium.TabIndex = 8;
             this.ScholarAdloquium.Text = "Adloquium";
             this.ScholarAdloquium.UseVisualStyleBackColor = true;
@@ -1787,9 +1860,10 @@
             // 
             this.ScholarPhysick.AutoSize = true;
             this.ScholarPhysick.ForeColor = System.Drawing.Color.White;
-            this.ScholarPhysick.Location = new System.Drawing.Point(6, 19);
+            this.ScholarPhysick.Location = new System.Drawing.Point(8, 23);
+            this.ScholarPhysick.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ScholarPhysick.Name = "ScholarPhysick";
-            this.ScholarPhysick.Size = new System.Drawing.Size(63, 17);
+            this.ScholarPhysick.Size = new System.Drawing.Size(78, 21);
             this.ScholarPhysick.TabIndex = 7;
             this.ScholarPhysick.Text = "Physick";
             this.ScholarPhysick.UseVisualStyleBackColor = true;
@@ -1800,9 +1874,11 @@
             this.ScholarSummonGroup.Controls.Add(this.ScholarSummonPetCombo);
             this.ScholarSummonGroup.Controls.Add(this.ScholarSummonPet);
             this.ScholarSummonGroup.ForeColor = System.Drawing.Color.White;
-            this.ScholarSummonGroup.Location = new System.Drawing.Point(34, 191);
+            this.ScholarSummonGroup.Location = new System.Drawing.Point(45, 235);
+            this.ScholarSummonGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ScholarSummonGroup.Name = "ScholarSummonGroup";
-            this.ScholarSummonGroup.Size = new System.Drawing.Size(226, 53);
+            this.ScholarSummonGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ScholarSummonGroup.Size = new System.Drawing.Size(301, 65);
             this.ScholarSummonGroup.TabIndex = 10;
             this.ScholarSummonGroup.TabStop = false;
             this.ScholarSummonGroup.Text = "Summon ";
@@ -1816,9 +1892,10 @@
             this.ScholarSummonPetCombo.Items.AddRange(new object[] {
             "Eos",
             "Selene"});
-            this.ScholarSummonPetCombo.Location = new System.Drawing.Point(9, 21);
+            this.ScholarSummonPetCombo.Location = new System.Drawing.Point(12, 26);
+            this.ScholarSummonPetCombo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ScholarSummonPetCombo.Name = "ScholarSummonPetCombo";
-            this.ScholarSummonPetCombo.Size = new System.Drawing.Size(121, 21);
+            this.ScholarSummonPetCombo.Size = new System.Drawing.Size(160, 24);
             this.ScholarSummonPetCombo.TabIndex = 6;
             this.ScholarSummonPetCombo.SelectedIndexChanged += new System.EventHandler(this.ScholarSummonPetCombo_SelectedIndexChanged);
             // 
@@ -1826,9 +1903,10 @@
             // 
             this.ScholarSummonPet.AutoSize = true;
             this.ScholarSummonPet.ForeColor = System.Drawing.Color.White;
-            this.ScholarSummonPet.Location = new System.Drawing.Point(136, 23);
+            this.ScholarSummonPet.Location = new System.Drawing.Point(181, 28);
+            this.ScholarSummonPet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ScholarSummonPet.Name = "ScholarSummonPet";
-            this.ScholarSummonPet.Size = new System.Drawing.Size(86, 17);
+            this.ScholarSummonPet.Size = new System.Drawing.Size(110, 21);
             this.ScholarSummonPet.TabIndex = 7;
             this.ScholarSummonPet.Text = "Summon Pet";
             this.ScholarSummonPet.UseVisualStyleBackColor = true;
@@ -1839,9 +1917,11 @@
             this.ScholarCrossGroup.Controls.Add(this.ScholarThaumaturgeGroup);
             this.ScholarCrossGroup.Controls.Add(this.ScholarConjurerGroup);
             this.ScholarCrossGroup.ForeColor = System.Drawing.Color.White;
-            this.ScholarCrossGroup.Location = new System.Drawing.Point(34, 3);
+            this.ScholarCrossGroup.Location = new System.Drawing.Point(45, 4);
+            this.ScholarCrossGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ScholarCrossGroup.Name = "ScholarCrossGroup";
-            this.ScholarCrossGroup.Size = new System.Drawing.Size(202, 182);
+            this.ScholarCrossGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ScholarCrossGroup.Size = new System.Drawing.Size(269, 224);
             this.ScholarCrossGroup.TabIndex = 9;
             this.ScholarCrossGroup.TabStop = false;
             this.ScholarCrossGroup.Text = "Cross-Class  ";
@@ -1852,9 +1932,11 @@
             this.ScholarThaumaturgeGroup.Controls.Add(this.ScholarSwiftcast);
             this.ScholarThaumaturgeGroup.Controls.Add(this.ScholarBlizzardII);
             this.ScholarThaumaturgeGroup.ForeColor = System.Drawing.Color.White;
-            this.ScholarThaumaturgeGroup.Location = new System.Drawing.Point(113, 19);
+            this.ScholarThaumaturgeGroup.Location = new System.Drawing.Point(151, 23);
+            this.ScholarThaumaturgeGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ScholarThaumaturgeGroup.Name = "ScholarThaumaturgeGroup";
-            this.ScholarThaumaturgeGroup.Size = new System.Drawing.Size(83, 88);
+            this.ScholarThaumaturgeGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ScholarThaumaturgeGroup.Size = new System.Drawing.Size(111, 108);
             this.ScholarThaumaturgeGroup.TabIndex = 29;
             this.ScholarThaumaturgeGroup.TabStop = false;
             this.ScholarThaumaturgeGroup.Text = "Thaumaturge ";
@@ -1864,9 +1946,10 @@
             this.ScholarSurecast.AutoSize = true;
             this.ScholarSurecast.Enabled = false;
             this.ScholarSurecast.ForeColor = System.Drawing.Color.White;
-            this.ScholarSurecast.Location = new System.Drawing.Point(6, 19);
+            this.ScholarSurecast.Location = new System.Drawing.Point(8, 23);
+            this.ScholarSurecast.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ScholarSurecast.Name = "ScholarSurecast";
-            this.ScholarSurecast.Size = new System.Drawing.Size(68, 17);
+            this.ScholarSurecast.Size = new System.Drawing.Size(86, 21);
             this.ScholarSurecast.TabIndex = 35;
             this.ScholarSurecast.Text = "Surecast";
             this.ScholarSurecast.UseVisualStyleBackColor = true;
@@ -1876,9 +1959,10 @@
             // 
             this.ScholarSwiftcast.AutoSize = true;
             this.ScholarSwiftcast.ForeColor = System.Drawing.Color.White;
-            this.ScholarSwiftcast.Location = new System.Drawing.Point(6, 65);
+            this.ScholarSwiftcast.Location = new System.Drawing.Point(8, 80);
+            this.ScholarSwiftcast.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ScholarSwiftcast.Name = "ScholarSwiftcast";
-            this.ScholarSwiftcast.Size = new System.Drawing.Size(69, 17);
+            this.ScholarSwiftcast.Size = new System.Drawing.Size(85, 21);
             this.ScholarSwiftcast.TabIndex = 36;
             this.ScholarSwiftcast.Text = "Swiftcast";
             this.ScholarSwiftcast.UseVisualStyleBackColor = true;
@@ -1889,9 +1973,10 @@
             this.ScholarBlizzardII.AutoSize = true;
             this.ScholarBlizzardII.Enabled = false;
             this.ScholarBlizzardII.ForeColor = System.Drawing.Color.White;
-            this.ScholarBlizzardII.Location = new System.Drawing.Point(6, 42);
+            this.ScholarBlizzardII.Location = new System.Drawing.Point(8, 52);
+            this.ScholarBlizzardII.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ScholarBlizzardII.Name = "ScholarBlizzardII";
-            this.ScholarBlizzardII.Size = new System.Drawing.Size(71, 17);
+            this.ScholarBlizzardII.Size = new System.Drawing.Size(90, 21);
             this.ScholarBlizzardII.TabIndex = 39;
             this.ScholarBlizzardII.Text = "Blizzard II";
             this.ScholarBlizzardII.UseVisualStyleBackColor = true;
@@ -1906,9 +1991,11 @@
             this.ScholarConjurerGroup.Controls.Add(this.ScholarRaise);
             this.ScholarConjurerGroup.Controls.Add(this.ScholarStoneskin);
             this.ScholarConjurerGroup.ForeColor = System.Drawing.Color.White;
-            this.ScholarConjurerGroup.Location = new System.Drawing.Point(6, 19);
+            this.ScholarConjurerGroup.Location = new System.Drawing.Point(8, 23);
+            this.ScholarConjurerGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ScholarConjurerGroup.Name = "ScholarConjurerGroup";
-            this.ScholarConjurerGroup.Size = new System.Drawing.Size(101, 157);
+            this.ScholarConjurerGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ScholarConjurerGroup.Size = new System.Drawing.Size(135, 193);
             this.ScholarConjurerGroup.TabIndex = 23;
             this.ScholarConjurerGroup.TabStop = false;
             this.ScholarConjurerGroup.Text = "Conjurer ";
@@ -1917,9 +2004,10 @@
             // 
             this.ScholarClericStance.AutoSize = true;
             this.ScholarClericStance.ForeColor = System.Drawing.Color.White;
-            this.ScholarClericStance.Location = new System.Drawing.Point(6, 65);
+            this.ScholarClericStance.Location = new System.Drawing.Point(8, 80);
+            this.ScholarClericStance.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ScholarClericStance.Name = "ScholarClericStance";
-            this.ScholarClericStance.Size = new System.Drawing.Size(89, 17);
+            this.ScholarClericStance.Size = new System.Drawing.Size(113, 21);
             this.ScholarClericStance.TabIndex = 15;
             this.ScholarClericStance.Text = "Cleric Stance";
             this.ScholarClericStance.UseVisualStyleBackColor = true;
@@ -1930,9 +2018,10 @@
             this.ScholarCure.AutoSize = true;
             this.ScholarCure.Enabled = false;
             this.ScholarCure.ForeColor = System.Drawing.Color.White;
-            this.ScholarCure.Location = new System.Drawing.Point(6, 19);
+            this.ScholarCure.Location = new System.Drawing.Point(8, 23);
+            this.ScholarCure.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ScholarCure.Name = "ScholarCure";
-            this.ScholarCure.Size = new System.Drawing.Size(48, 17);
+            this.ScholarCure.Size = new System.Drawing.Size(60, 21);
             this.ScholarCure.TabIndex = 10;
             this.ScholarCure.Text = "Cure";
             this.ScholarCure.UseVisualStyleBackColor = true;
@@ -1942,9 +2031,10 @@
             // 
             this.ScholarAero.AutoSize = true;
             this.ScholarAero.ForeColor = System.Drawing.Color.White;
-            this.ScholarAero.Location = new System.Drawing.Point(6, 42);
+            this.ScholarAero.Location = new System.Drawing.Point(8, 52);
+            this.ScholarAero.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ScholarAero.Name = "ScholarAero";
-            this.ScholarAero.Size = new System.Drawing.Size(48, 17);
+            this.ScholarAero.Size = new System.Drawing.Size(60, 21);
             this.ScholarAero.TabIndex = 11;
             this.ScholarAero.Text = "Aero";
             this.ScholarAero.UseVisualStyleBackColor = true;
@@ -1954,9 +2044,10 @@
             // 
             this.ScholarProtect.AutoSize = true;
             this.ScholarProtect.ForeColor = System.Drawing.Color.White;
-            this.ScholarProtect.Location = new System.Drawing.Point(6, 88);
+            this.ScholarProtect.Location = new System.Drawing.Point(8, 108);
+            this.ScholarProtect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ScholarProtect.Name = "ScholarProtect";
-            this.ScholarProtect.Size = new System.Drawing.Size(60, 17);
+            this.ScholarProtect.Size = new System.Drawing.Size(75, 21);
             this.ScholarProtect.TabIndex = 12;
             this.ScholarProtect.Text = "Protect";
             this.ScholarProtect.UseVisualStyleBackColor = true;
@@ -1967,9 +2058,10 @@
             this.ScholarRaise.AutoSize = true;
             this.ScholarRaise.Enabled = false;
             this.ScholarRaise.ForeColor = System.Drawing.Color.White;
-            this.ScholarRaise.Location = new System.Drawing.Point(6, 111);
+            this.ScholarRaise.Location = new System.Drawing.Point(8, 137);
+            this.ScholarRaise.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ScholarRaise.Name = "ScholarRaise";
-            this.ScholarRaise.Size = new System.Drawing.Size(53, 17);
+            this.ScholarRaise.Size = new System.Drawing.Size(66, 21);
             this.ScholarRaise.TabIndex = 13;
             this.ScholarRaise.Text = "Raise";
             this.ScholarRaise.UseVisualStyleBackColor = true;
@@ -1979,9 +2071,10 @@
             // 
             this.ScholarStoneskin.AutoSize = true;
             this.ScholarStoneskin.ForeColor = System.Drawing.Color.White;
-            this.ScholarStoneskin.Location = new System.Drawing.Point(6, 134);
+            this.ScholarStoneskin.Location = new System.Drawing.Point(8, 165);
+            this.ScholarStoneskin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ScholarStoneskin.Name = "ScholarStoneskin";
-            this.ScholarStoneskin.Size = new System.Drawing.Size(73, 17);
+            this.ScholarStoneskin.Size = new System.Drawing.Size(92, 21);
             this.ScholarStoneskin.TabIndex = 14;
             this.ScholarStoneskin.Text = "Stoneskin";
             this.ScholarStoneskin.UseVisualStyleBackColor = true;
@@ -1996,7 +2089,7 @@
             this.SummonerSettings.Location = new System.Drawing.Point(114, 4);
             this.SummonerSettings.Margin = new System.Windows.Forms.Padding(0);
             this.SummonerSettings.Name = "SummonerSettings";
-            this.SummonerSettings.Size = new System.Drawing.Size(567, 402);
+            this.SummonerSettings.Size = new System.Drawing.Size(795, 497);
             this.SummonerSettings.TabIndex = 2;
             this.SummonerSettings.Text = "Summoner";
             this.SummonerSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -2005,9 +2098,11 @@
             // 
             this.SummonerHealingGroup.Controls.Add(this.SummonerPhysick);
             this.SummonerHealingGroup.ForeColor = System.Drawing.Color.White;
-            this.SummonerHealingGroup.Location = new System.Drawing.Point(34, 181);
+            this.SummonerHealingGroup.Location = new System.Drawing.Point(45, 223);
+            this.SummonerHealingGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SummonerHealingGroup.Name = "SummonerHealingGroup";
-            this.SummonerHealingGroup.Size = new System.Drawing.Size(75, 42);
+            this.SummonerHealingGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SummonerHealingGroup.Size = new System.Drawing.Size(100, 52);
             this.SummonerHealingGroup.TabIndex = 13;
             this.SummonerHealingGroup.TabStop = false;
             this.SummonerHealingGroup.Text = "Heal";
@@ -2016,9 +2111,10 @@
             // 
             this.SummonerPhysick.AutoSize = true;
             this.SummonerPhysick.ForeColor = System.Drawing.Color.White;
-            this.SummonerPhysick.Location = new System.Drawing.Point(6, 19);
+            this.SummonerPhysick.Location = new System.Drawing.Point(8, 23);
+            this.SummonerPhysick.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SummonerPhysick.Name = "SummonerPhysick";
-            this.SummonerPhysick.Size = new System.Drawing.Size(63, 17);
+            this.SummonerPhysick.Size = new System.Drawing.Size(78, 21);
             this.SummonerPhysick.TabIndex = 7;
             this.SummonerPhysick.Text = "Physick";
             this.SummonerPhysick.UseVisualStyleBackColor = true;
@@ -2029,9 +2125,11 @@
             this.SummonerSummonGroup.Controls.Add(this.SummonerSummonPetCombo);
             this.SummonerSummonGroup.Controls.Add(this.SummonerSummonPet);
             this.SummonerSummonGroup.ForeColor = System.Drawing.Color.White;
-            this.SummonerSummonGroup.Location = new System.Drawing.Point(34, 122);
+            this.SummonerSummonGroup.Location = new System.Drawing.Point(45, 150);
+            this.SummonerSummonGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SummonerSummonGroup.Name = "SummonerSummonGroup";
-            this.SummonerSummonGroup.Size = new System.Drawing.Size(226, 53);
+            this.SummonerSummonGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SummonerSummonGroup.Size = new System.Drawing.Size(301, 65);
             this.SummonerSummonGroup.TabIndex = 12;
             this.SummonerSummonGroup.TabStop = false;
             this.SummonerSummonGroup.Text = "Summon ";
@@ -2046,9 +2144,10 @@
             "Ifrit-Egi",
             "Titan-Egi",
             "Garuda-Egi"});
-            this.SummonerSummonPetCombo.Location = new System.Drawing.Point(9, 21);
+            this.SummonerSummonPetCombo.Location = new System.Drawing.Point(12, 26);
+            this.SummonerSummonPetCombo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SummonerSummonPetCombo.Name = "SummonerSummonPetCombo";
-            this.SummonerSummonPetCombo.Size = new System.Drawing.Size(121, 21);
+            this.SummonerSummonPetCombo.Size = new System.Drawing.Size(160, 24);
             this.SummonerSummonPetCombo.TabIndex = 6;
             this.SummonerSummonPetCombo.SelectedIndexChanged += new System.EventHandler(this.SummonerSummonPetCombo_SelectedIndexChanged);
             // 
@@ -2056,9 +2155,10 @@
             // 
             this.SummonerSummonPet.AutoSize = true;
             this.SummonerSummonPet.ForeColor = System.Drawing.Color.White;
-            this.SummonerSummonPet.Location = new System.Drawing.Point(136, 23);
+            this.SummonerSummonPet.Location = new System.Drawing.Point(181, 28);
+            this.SummonerSummonPet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SummonerSummonPet.Name = "SummonerSummonPet";
-            this.SummonerSummonPet.Size = new System.Drawing.Size(86, 17);
+            this.SummonerSummonPet.Size = new System.Drawing.Size(110, 21);
             this.SummonerSummonPet.TabIndex = 7;
             this.SummonerSummonPet.Text = "Summon Pet";
             this.SummonerSummonPet.UseVisualStyleBackColor = true;
@@ -2069,9 +2169,11 @@
             this.SummonerCrossGroup.Controls.Add(this.SummonerArcherGroup);
             this.SummonerCrossGroup.Controls.Add(this.SummonerThaumaturgeGroup);
             this.SummonerCrossGroup.ForeColor = System.Drawing.Color.White;
-            this.SummonerCrossGroup.Location = new System.Drawing.Point(34, 3);
+            this.SummonerCrossGroup.Location = new System.Drawing.Point(45, 4);
+            this.SummonerCrossGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SummonerCrossGroup.Name = "SummonerCrossGroup";
-            this.SummonerCrossGroup.Size = new System.Drawing.Size(211, 113);
+            this.SummonerCrossGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SummonerCrossGroup.Size = new System.Drawing.Size(281, 139);
             this.SummonerCrossGroup.TabIndex = 11;
             this.SummonerCrossGroup.TabStop = false;
             this.SummonerCrossGroup.Text = "Cross-Class  ";
@@ -2082,9 +2184,11 @@
             this.SummonerArcherGroup.Controls.Add(this.SummonerHawksEye);
             this.SummonerArcherGroup.Controls.Add(this.SummonerQuellingStrikes);
             this.SummonerArcherGroup.ForeColor = System.Drawing.Color.White;
-            this.SummonerArcherGroup.Location = new System.Drawing.Point(6, 19);
+            this.SummonerArcherGroup.Location = new System.Drawing.Point(8, 23);
+            this.SummonerArcherGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SummonerArcherGroup.Name = "SummonerArcherGroup";
-            this.SummonerArcherGroup.Size = new System.Drawing.Size(110, 88);
+            this.SummonerArcherGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SummonerArcherGroup.Size = new System.Drawing.Size(147, 108);
             this.SummonerArcherGroup.TabIndex = 23;
             this.SummonerArcherGroup.TabStop = false;
             this.SummonerArcherGroup.Text = "Archer";
@@ -2093,9 +2197,10 @@
             // 
             this.SummonerRagingStrikes.AutoSize = true;
             this.SummonerRagingStrikes.ForeColor = System.Drawing.Color.White;
-            this.SummonerRagingStrikes.Location = new System.Drawing.Point(6, 19);
+            this.SummonerRagingStrikes.Location = new System.Drawing.Point(8, 23);
+            this.SummonerRagingStrikes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SummonerRagingStrikes.Name = "SummonerRagingStrikes";
-            this.SummonerRagingStrikes.Size = new System.Drawing.Size(95, 17);
+            this.SummonerRagingStrikes.Size = new System.Drawing.Size(122, 21);
             this.SummonerRagingStrikes.TabIndex = 7;
             this.SummonerRagingStrikes.Text = "Raging Strikes";
             this.SummonerRagingStrikes.UseVisualStyleBackColor = true;
@@ -2106,9 +2211,10 @@
             this.SummonerHawksEye.AutoSize = true;
             this.SummonerHawksEye.Enabled = false;
             this.SummonerHawksEye.ForeColor = System.Drawing.Color.White;
-            this.SummonerHawksEye.Location = new System.Drawing.Point(6, 42);
+            this.SummonerHawksEye.Location = new System.Drawing.Point(8, 52);
+            this.SummonerHawksEye.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SummonerHawksEye.Name = "SummonerHawksEye";
-            this.SummonerHawksEye.Size = new System.Drawing.Size(82, 17);
+            this.SummonerHawksEye.Size = new System.Drawing.Size(102, 21);
             this.SummonerHawksEye.TabIndex = 8;
             this.SummonerHawksEye.Text = "Hawk\'s Eye";
             this.SummonerHawksEye.UseVisualStyleBackColor = true;
@@ -2119,9 +2225,10 @@
             this.SummonerQuellingStrikes.AutoSize = true;
             this.SummonerQuellingStrikes.Enabled = false;
             this.SummonerQuellingStrikes.ForeColor = System.Drawing.Color.White;
-            this.SummonerQuellingStrikes.Location = new System.Drawing.Point(6, 65);
+            this.SummonerQuellingStrikes.Location = new System.Drawing.Point(8, 80);
+            this.SummonerQuellingStrikes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SummonerQuellingStrikes.Name = "SummonerQuellingStrikes";
-            this.SummonerQuellingStrikes.Size = new System.Drawing.Size(99, 17);
+            this.SummonerQuellingStrikes.Size = new System.Drawing.Size(129, 21);
             this.SummonerQuellingStrikes.TabIndex = 9;
             this.SummonerQuellingStrikes.Text = "Quelling Strikes";
             this.SummonerQuellingStrikes.UseVisualStyleBackColor = true;
@@ -2133,9 +2240,11 @@
             this.SummonerThaumaturgeGroup.Controls.Add(this.SummonerSwiftcast);
             this.SummonerThaumaturgeGroup.Controls.Add(this.SummonerBlizzardII);
             this.SummonerThaumaturgeGroup.ForeColor = System.Drawing.Color.White;
-            this.SummonerThaumaturgeGroup.Location = new System.Drawing.Point(122, 19);
+            this.SummonerThaumaturgeGroup.Location = new System.Drawing.Point(163, 23);
+            this.SummonerThaumaturgeGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SummonerThaumaturgeGroup.Name = "SummonerThaumaturgeGroup";
-            this.SummonerThaumaturgeGroup.Size = new System.Drawing.Size(83, 88);
+            this.SummonerThaumaturgeGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SummonerThaumaturgeGroup.Size = new System.Drawing.Size(111, 108);
             this.SummonerThaumaturgeGroup.TabIndex = 29;
             this.SummonerThaumaturgeGroup.TabStop = false;
             this.SummonerThaumaturgeGroup.Text = "Thaumaturge ";
@@ -2145,9 +2254,10 @@
             this.SummonerSurecast.AutoSize = true;
             this.SummonerSurecast.Enabled = false;
             this.SummonerSurecast.ForeColor = System.Drawing.Color.White;
-            this.SummonerSurecast.Location = new System.Drawing.Point(6, 19);
+            this.SummonerSurecast.Location = new System.Drawing.Point(8, 23);
+            this.SummonerSurecast.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SummonerSurecast.Name = "SummonerSurecast";
-            this.SummonerSurecast.Size = new System.Drawing.Size(68, 17);
+            this.SummonerSurecast.Size = new System.Drawing.Size(86, 21);
             this.SummonerSurecast.TabIndex = 35;
             this.SummonerSurecast.Text = "Surecast";
             this.SummonerSurecast.UseVisualStyleBackColor = true;
@@ -2157,9 +2267,10 @@
             // 
             this.SummonerSwiftcast.AutoSize = true;
             this.SummonerSwiftcast.ForeColor = System.Drawing.Color.White;
-            this.SummonerSwiftcast.Location = new System.Drawing.Point(6, 65);
+            this.SummonerSwiftcast.Location = new System.Drawing.Point(8, 80);
+            this.SummonerSwiftcast.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SummonerSwiftcast.Name = "SummonerSwiftcast";
-            this.SummonerSwiftcast.Size = new System.Drawing.Size(69, 17);
+            this.SummonerSwiftcast.Size = new System.Drawing.Size(85, 21);
             this.SummonerSwiftcast.TabIndex = 36;
             this.SummonerSwiftcast.Text = "Swiftcast";
             this.SummonerSwiftcast.UseVisualStyleBackColor = true;
@@ -2170,9 +2281,10 @@
             this.SummonerBlizzardII.AutoSize = true;
             this.SummonerBlizzardII.Enabled = false;
             this.SummonerBlizzardII.ForeColor = System.Drawing.Color.White;
-            this.SummonerBlizzardII.Location = new System.Drawing.Point(6, 42);
+            this.SummonerBlizzardII.Location = new System.Drawing.Point(8, 52);
+            this.SummonerBlizzardII.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SummonerBlizzardII.Name = "SummonerBlizzardII";
-            this.SummonerBlizzardII.Size = new System.Drawing.Size(71, 17);
+            this.SummonerBlizzardII.Size = new System.Drawing.Size(90, 21);
             this.SummonerBlizzardII.TabIndex = 39;
             this.SummonerBlizzardII.Text = "Blizzard II";
             this.SummonerBlizzardII.UseVisualStyleBackColor = true;
@@ -2185,7 +2297,7 @@
             this.ArcherTab.Location = new System.Drawing.Point(114, 4);
             this.ArcherTab.Margin = new System.Windows.Forms.Padding(0);
             this.ArcherTab.Name = "ArcherTab";
-            this.ArcherTab.Size = new System.Drawing.Size(682, 402);
+            this.ArcherTab.Size = new System.Drawing.Size(949, 497);
             this.ArcherTab.TabIndex = 1;
             this.ArcherTab.Text = "Archer";
             // 
@@ -2195,11 +2307,12 @@
             this.ArcherSubTab.Controls.Add(this.ArcherSettings);
             this.ArcherSubTab.Controls.Add(this.BardSettings);
             this.ArcherSubTab.ItemSize = new System.Drawing.Size(35, 110);
-            this.ArcherSubTab.Location = new System.Drawing.Point(-1, -4);
+            this.ArcherSubTab.Location = new System.Drawing.Point(-1, -5);
+            this.ArcherSubTab.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherSubTab.Multiline = true;
             this.ArcherSubTab.Name = "ArcherSubTab";
             this.ArcherSubTab.SelectedIndex = 0;
-            this.ArcherSubTab.Size = new System.Drawing.Size(685, 410);
+            this.ArcherSubTab.Size = new System.Drawing.Size(913, 505);
             this.ArcherSubTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.ArcherSubTab.TabIndex = 5;
             this.ArcherSubTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -2213,7 +2326,7 @@
             this.ArcherSettings.Location = new System.Drawing.Point(114, 4);
             this.ArcherSettings.Margin = new System.Windows.Forms.Padding(0);
             this.ArcherSettings.Name = "ArcherSettings";
-            this.ArcherSettings.Size = new System.Drawing.Size(567, 402);
+            this.ArcherSettings.Size = new System.Drawing.Size(795, 497);
             this.ArcherSettings.TabIndex = 0;
             this.ArcherSettings.Text = "Archer";
             this.ArcherSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -2222,9 +2335,11 @@
             // 
             this.ArcherExecuteGroup.Controls.Add(this.ArcherMiserysEnd);
             this.ArcherExecuteGroup.ForeColor = System.Drawing.Color.White;
-            this.ArcherExecuteGroup.Location = new System.Drawing.Point(132, 309);
+            this.ArcherExecuteGroup.Location = new System.Drawing.Point(176, 380);
+            this.ArcherExecuteGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherExecuteGroup.Name = "ArcherExecuteGroup";
-            this.ArcherExecuteGroup.Size = new System.Drawing.Size(97, 42);
+            this.ArcherExecuteGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ArcherExecuteGroup.Size = new System.Drawing.Size(129, 52);
             this.ArcherExecuteGroup.TabIndex = 17;
             this.ArcherExecuteGroup.TabStop = false;
             this.ArcherExecuteGroup.Text = "Execute";
@@ -2233,9 +2348,10 @@
             // 
             this.ArcherMiserysEnd.AutoSize = true;
             this.ArcherMiserysEnd.ForeColor = System.Drawing.Color.White;
-            this.ArcherMiserysEnd.Location = new System.Drawing.Point(6, 19);
+            this.ArcherMiserysEnd.Location = new System.Drawing.Point(8, 23);
+            this.ArcherMiserysEnd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherMiserysEnd.Name = "ArcherMiserysEnd";
-            this.ArcherMiserysEnd.Size = new System.Drawing.Size(85, 17);
+            this.ArcherMiserysEnd.Size = new System.Drawing.Size(110, 21);
             this.ArcherMiserysEnd.TabIndex = 7;
             this.ArcherMiserysEnd.Text = "Misery\'s End";
             this.ArcherMiserysEnd.UseVisualStyleBackColor = true;
@@ -2245,9 +2361,11 @@
             // 
             this.ArcherInterruptGroup.Controls.Add(this.ArcherBluntArrow);
             this.ArcherInterruptGroup.ForeColor = System.Drawing.Color.White;
-            this.ArcherInterruptGroup.Location = new System.Drawing.Point(34, 309);
+            this.ArcherInterruptGroup.Location = new System.Drawing.Point(45, 380);
+            this.ArcherInterruptGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherInterruptGroup.Name = "ArcherInterruptGroup";
-            this.ArcherInterruptGroup.Size = new System.Drawing.Size(92, 42);
+            this.ArcherInterruptGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ArcherInterruptGroup.Size = new System.Drawing.Size(123, 52);
             this.ArcherInterruptGroup.TabIndex = 16;
             this.ArcherInterruptGroup.TabStop = false;
             this.ArcherInterruptGroup.Text = "Interrupt";
@@ -2256,9 +2374,10 @@
             // 
             this.ArcherBluntArrow.AutoSize = true;
             this.ArcherBluntArrow.ForeColor = System.Drawing.Color.White;
-            this.ArcherBluntArrow.Location = new System.Drawing.Point(6, 19);
+            this.ArcherBluntArrow.Location = new System.Drawing.Point(8, 23);
+            this.ArcherBluntArrow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherBluntArrow.Name = "ArcherBluntArrow";
-            this.ArcherBluntArrow.Size = new System.Drawing.Size(80, 17);
+            this.ArcherBluntArrow.Size = new System.Drawing.Size(102, 21);
             this.ArcherBluntArrow.TabIndex = 7;
             this.ArcherBluntArrow.Text = "Blunt Arrow";
             this.ArcherBluntArrow.UseVisualStyleBackColor = true;
@@ -2275,9 +2394,11 @@
             this.ArcherCrossGroup.Controls.Add(this.ArcherGladiatorGroup);
             this.ArcherCrossGroup.Controls.Add(this.ArcherLancerGroup);
             this.ArcherCrossGroup.ForeColor = System.Drawing.Color.White;
-            this.ArcherCrossGroup.Location = new System.Drawing.Point(34, 3);
+            this.ArcherCrossGroup.Location = new System.Drawing.Point(45, 4);
+            this.ArcherCrossGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherCrossGroup.Name = "ArcherCrossGroup";
-            this.ArcherCrossGroup.Size = new System.Drawing.Size(504, 300);
+            this.ArcherCrossGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ArcherCrossGroup.Size = new System.Drawing.Size(672, 369);
             this.ArcherCrossGroup.TabIndex = 9;
             this.ArcherCrossGroup.TabStop = false;
             this.ArcherCrossGroup.Text = "Cross-Class  ";
@@ -2287,9 +2408,11 @@
             this.ArcherThaumaturgeGroup.Controls.Add(this.ArcherSurecast);
             this.ArcherThaumaturgeGroup.Controls.Add(this.ArcherSwiftcast);
             this.ArcherThaumaturgeGroup.ForeColor = System.Drawing.Color.White;
-            this.ArcherThaumaturgeGroup.Location = new System.Drawing.Point(390, 160);
+            this.ArcherThaumaturgeGroup.Location = new System.Drawing.Point(520, 197);
+            this.ArcherThaumaturgeGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherThaumaturgeGroup.Name = "ArcherThaumaturgeGroup";
-            this.ArcherThaumaturgeGroup.Size = new System.Drawing.Size(108, 65);
+            this.ArcherThaumaturgeGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ArcherThaumaturgeGroup.Size = new System.Drawing.Size(144, 80);
             this.ArcherThaumaturgeGroup.TabIndex = 40;
             this.ArcherThaumaturgeGroup.TabStop = false;
             this.ArcherThaumaturgeGroup.Text = "Thaumaturge ";
@@ -2299,9 +2422,10 @@
             this.ArcherSurecast.AutoSize = true;
             this.ArcherSurecast.Enabled = false;
             this.ArcherSurecast.ForeColor = System.Drawing.Color.White;
-            this.ArcherSurecast.Location = new System.Drawing.Point(6, 19);
+            this.ArcherSurecast.Location = new System.Drawing.Point(8, 23);
+            this.ArcherSurecast.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherSurecast.Name = "ArcherSurecast";
-            this.ArcherSurecast.Size = new System.Drawing.Size(68, 17);
+            this.ArcherSurecast.Size = new System.Drawing.Size(86, 21);
             this.ArcherSurecast.TabIndex = 35;
             this.ArcherSurecast.Text = "Surecast";
             this.ArcherSurecast.UseVisualStyleBackColor = true;
@@ -2312,9 +2436,10 @@
             this.ArcherSwiftcast.AutoSize = true;
             this.ArcherSwiftcast.Enabled = false;
             this.ArcherSwiftcast.ForeColor = System.Drawing.Color.White;
-            this.ArcherSwiftcast.Location = new System.Drawing.Point(6, 42);
+            this.ArcherSwiftcast.Location = new System.Drawing.Point(8, 52);
+            this.ArcherSwiftcast.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherSwiftcast.Name = "ArcherSwiftcast";
-            this.ArcherSwiftcast.Size = new System.Drawing.Size(69, 17);
+            this.ArcherSwiftcast.Size = new System.Drawing.Size(85, 21);
             this.ArcherSwiftcast.TabIndex = 39;
             this.ArcherSwiftcast.Text = "Swiftcast";
             this.ArcherSwiftcast.UseVisualStyleBackColor = true;
@@ -2324,9 +2449,11 @@
             // 
             this.ArcherRogueGroup.Controls.Add(this.ArcherShadeShift);
             this.ArcherRogueGroup.ForeColor = System.Drawing.Color.White;
-            this.ArcherRogueGroup.Location = new System.Drawing.Point(261, 160);
+            this.ArcherRogueGroup.Location = new System.Drawing.Point(348, 197);
+            this.ArcherRogueGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherRogueGroup.Name = "ArcherRogueGroup";
-            this.ArcherRogueGroup.Size = new System.Drawing.Size(113, 42);
+            this.ArcherRogueGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ArcherRogueGroup.Size = new System.Drawing.Size(151, 52);
             this.ArcherRogueGroup.TabIndex = 29;
             this.ArcherRogueGroup.TabStop = false;
             this.ArcherRogueGroup.Text = "Rogue";
@@ -2336,9 +2463,10 @@
             this.ArcherShadeShift.AutoSize = true;
             this.ArcherShadeShift.Enabled = false;
             this.ArcherShadeShift.ForeColor = System.Drawing.Color.White;
-            this.ArcherShadeShift.Location = new System.Drawing.Point(6, 19);
+            this.ArcherShadeShift.Location = new System.Drawing.Point(8, 23);
+            this.ArcherShadeShift.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherShadeShift.Name = "ArcherShadeShift";
-            this.ArcherShadeShift.Size = new System.Drawing.Size(81, 17);
+            this.ArcherShadeShift.Size = new System.Drawing.Size(103, 21);
             this.ArcherShadeShift.TabIndex = 35;
             this.ArcherShadeShift.Text = "Shade Shift";
             this.ArcherShadeShift.UseVisualStyleBackColor = true;
@@ -2352,9 +2480,11 @@
             this.ArcherPugilistGroup.Controls.Add(this.ArcherInternalRelease);
             this.ArcherPugilistGroup.Controls.Add(this.ArcherMantra);
             this.ArcherPugilistGroup.ForeColor = System.Drawing.Color.White;
-            this.ArcherPugilistGroup.Location = new System.Drawing.Point(132, 160);
+            this.ArcherPugilistGroup.Location = new System.Drawing.Point(176, 197);
+            this.ArcherPugilistGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherPugilistGroup.Name = "ArcherPugilistGroup";
-            this.ArcherPugilistGroup.Size = new System.Drawing.Size(113, 134);
+            this.ArcherPugilistGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ArcherPugilistGroup.Size = new System.Drawing.Size(151, 165);
             this.ArcherPugilistGroup.TabIndex = 23;
             this.ArcherPugilistGroup.TabStop = false;
             this.ArcherPugilistGroup.Text = "Pugilist ";
@@ -2364,9 +2494,10 @@
             this.ArcherHaymaker.AutoSize = true;
             this.ArcherHaymaker.Enabled = false;
             this.ArcherHaymaker.ForeColor = System.Drawing.Color.White;
-            this.ArcherHaymaker.Location = new System.Drawing.Point(6, 65);
+            this.ArcherHaymaker.Location = new System.Drawing.Point(8, 80);
+            this.ArcherHaymaker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherHaymaker.Name = "ArcherHaymaker";
-            this.ArcherHaymaker.Size = new System.Drawing.Size(74, 17);
+            this.ArcherHaymaker.Size = new System.Drawing.Size(94, 21);
             this.ArcherHaymaker.TabIndex = 35;
             this.ArcherHaymaker.Text = "Haymaker";
             this.ArcherHaymaker.UseVisualStyleBackColor = true;
@@ -2377,9 +2508,10 @@
             this.ArcherFeatherfoot.AutoSize = true;
             this.ArcherFeatherfoot.Enabled = false;
             this.ArcherFeatherfoot.ForeColor = System.Drawing.Color.White;
-            this.ArcherFeatherfoot.Location = new System.Drawing.Point(6, 19);
+            this.ArcherFeatherfoot.Location = new System.Drawing.Point(8, 23);
+            this.ArcherFeatherfoot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherFeatherfoot.Name = "ArcherFeatherfoot";
-            this.ArcherFeatherfoot.Size = new System.Drawing.Size(80, 17);
+            this.ArcherFeatherfoot.Size = new System.Drawing.Size(103, 21);
             this.ArcherFeatherfoot.TabIndex = 30;
             this.ArcherFeatherfoot.Text = "Featherfoot";
             this.ArcherFeatherfoot.UseVisualStyleBackColor = true;
@@ -2390,9 +2522,10 @@
             this.ArcherSecondWind.AutoSize = true;
             this.ArcherSecondWind.Enabled = false;
             this.ArcherSecondWind.ForeColor = System.Drawing.Color.White;
-            this.ArcherSecondWind.Location = new System.Drawing.Point(6, 42);
+            this.ArcherSecondWind.Location = new System.Drawing.Point(8, 52);
+            this.ArcherSecondWind.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherSecondWind.Name = "ArcherSecondWind";
-            this.ArcherSecondWind.Size = new System.Drawing.Size(91, 17);
+            this.ArcherSecondWind.Size = new System.Drawing.Size(114, 21);
             this.ArcherSecondWind.TabIndex = 31;
             this.ArcherSecondWind.Text = "Second Wind";
             this.ArcherSecondWind.UseVisualStyleBackColor = true;
@@ -2402,9 +2535,10 @@
             // 
             this.ArcherInternalRelease.AutoSize = true;
             this.ArcherInternalRelease.ForeColor = System.Drawing.Color.White;
-            this.ArcherInternalRelease.Location = new System.Drawing.Point(6, 88);
+            this.ArcherInternalRelease.Location = new System.Drawing.Point(8, 108);
+            this.ArcherInternalRelease.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherInternalRelease.Name = "ArcherInternalRelease";
-            this.ArcherInternalRelease.Size = new System.Drawing.Size(103, 17);
+            this.ArcherInternalRelease.Size = new System.Drawing.Size(133, 21);
             this.ArcherInternalRelease.TabIndex = 32;
             this.ArcherInternalRelease.Text = "Internal Release";
             this.ArcherInternalRelease.UseVisualStyleBackColor = true;
@@ -2415,9 +2549,10 @@
             this.ArcherMantra.AutoSize = true;
             this.ArcherMantra.Enabled = false;
             this.ArcherMantra.ForeColor = System.Drawing.Color.White;
-            this.ArcherMantra.Location = new System.Drawing.Point(6, 111);
+            this.ArcherMantra.Location = new System.Drawing.Point(8, 137);
+            this.ArcherMantra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherMantra.Name = "ArcherMantra";
-            this.ArcherMantra.Size = new System.Drawing.Size(59, 17);
+            this.ArcherMantra.Size = new System.Drawing.Size(74, 21);
             this.ArcherMantra.TabIndex = 34;
             this.ArcherMantra.Text = "Mantra";
             this.ArcherMantra.UseVisualStyleBackColor = true;
@@ -2431,9 +2566,11 @@
             this.ArcherMarauderGroup.Controls.Add(this.ArcherForesight);
             this.ArcherMarauderGroup.Controls.Add(this.ArcherMercyStroke);
             this.ArcherMarauderGroup.ForeColor = System.Drawing.Color.White;
-            this.ArcherMarauderGroup.Location = new System.Drawing.Point(6, 160);
+            this.ArcherMarauderGroup.Location = new System.Drawing.Point(8, 197);
+            this.ArcherMarauderGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherMarauderGroup.Name = "ArcherMarauderGroup";
-            this.ArcherMarauderGroup.Size = new System.Drawing.Size(110, 134);
+            this.ArcherMarauderGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ArcherMarauderGroup.Size = new System.Drawing.Size(147, 165);
             this.ArcherMarauderGroup.TabIndex = 23;
             this.ArcherMarauderGroup.TabStop = false;
             this.ArcherMarauderGroup.Text = "Marauder ";
@@ -2443,9 +2580,10 @@
             this.ArcherFracture.AutoSize = true;
             this.ArcherFracture.Enabled = false;
             this.ArcherFracture.ForeColor = System.Drawing.Color.White;
-            this.ArcherFracture.Location = new System.Drawing.Point(6, 65);
+            this.ArcherFracture.Location = new System.Drawing.Point(8, 80);
+            this.ArcherFracture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherFracture.Name = "ArcherFracture";
-            this.ArcherFracture.Size = new System.Drawing.Size(65, 17);
+            this.ArcherFracture.Size = new System.Drawing.Size(83, 21);
             this.ArcherFracture.TabIndex = 30;
             this.ArcherFracture.Text = "Fracture";
             this.ArcherFracture.UseVisualStyleBackColor = true;
@@ -2456,9 +2594,10 @@
             this.ArcherSkullSunder.AutoSize = true;
             this.ArcherSkullSunder.Enabled = false;
             this.ArcherSkullSunder.ForeColor = System.Drawing.Color.White;
-            this.ArcherSkullSunder.Location = new System.Drawing.Point(6, 42);
+            this.ArcherSkullSunder.Location = new System.Drawing.Point(8, 52);
+            this.ArcherSkullSunder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherSkullSunder.Name = "ArcherSkullSunder";
-            this.ArcherSkullSunder.Size = new System.Drawing.Size(86, 17);
+            this.ArcherSkullSunder.Size = new System.Drawing.Size(110, 21);
             this.ArcherSkullSunder.TabIndex = 29;
             this.ArcherSkullSunder.Text = "Skull Sunder";
             this.ArcherSkullSunder.UseVisualStyleBackColor = true;
@@ -2469,9 +2608,10 @@
             this.ArcherBloodbath.AutoSize = true;
             this.ArcherBloodbath.Enabled = false;
             this.ArcherBloodbath.ForeColor = System.Drawing.Color.White;
-            this.ArcherBloodbath.Location = new System.Drawing.Point(6, 88);
+            this.ArcherBloodbath.Location = new System.Drawing.Point(8, 108);
+            this.ArcherBloodbath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherBloodbath.Name = "ArcherBloodbath";
-            this.ArcherBloodbath.Size = new System.Drawing.Size(74, 17);
+            this.ArcherBloodbath.Size = new System.Drawing.Size(94, 21);
             this.ArcherBloodbath.TabIndex = 27;
             this.ArcherBloodbath.Text = "Bloodbath";
             this.ArcherBloodbath.UseVisualStyleBackColor = true;
@@ -2482,9 +2622,10 @@
             this.ArcherForesight.AutoSize = true;
             this.ArcherForesight.Enabled = false;
             this.ArcherForesight.ForeColor = System.Drawing.Color.White;
-            this.ArcherForesight.Location = new System.Drawing.Point(6, 19);
+            this.ArcherForesight.Location = new System.Drawing.Point(8, 23);
+            this.ArcherForesight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherForesight.Name = "ArcherForesight";
-            this.ArcherForesight.Size = new System.Drawing.Size(69, 17);
+            this.ArcherForesight.Size = new System.Drawing.Size(89, 21);
             this.ArcherForesight.TabIndex = 26;
             this.ArcherForesight.Text = "Foresight";
             this.ArcherForesight.UseVisualStyleBackColor = true;
@@ -2495,9 +2636,10 @@
             this.ArcherMercyStroke.AutoSize = true;
             this.ArcherMercyStroke.Enabled = false;
             this.ArcherMercyStroke.ForeColor = System.Drawing.Color.White;
-            this.ArcherMercyStroke.Location = new System.Drawing.Point(6, 111);
+            this.ArcherMercyStroke.Location = new System.Drawing.Point(8, 137);
+            this.ArcherMercyStroke.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherMercyStroke.Name = "ArcherMercyStroke";
-            this.ArcherMercyStroke.Size = new System.Drawing.Size(89, 17);
+            this.ArcherMercyStroke.Size = new System.Drawing.Size(113, 21);
             this.ArcherMercyStroke.TabIndex = 28;
             this.ArcherMercyStroke.Text = "Mercy Stroke";
             this.ArcherMercyStroke.UseVisualStyleBackColor = true;
@@ -2509,9 +2651,11 @@
             this.ArcherArcanistGroup.Controls.Add(this.ArcherVirus);
             this.ArcherArcanistGroup.Controls.Add(this.ArcherEyeForAnEye);
             this.ArcherArcanistGroup.ForeColor = System.Drawing.Color.White;
-            this.ArcherArcanistGroup.Location = new System.Drawing.Point(6, 19);
+            this.ArcherArcanistGroup.Location = new System.Drawing.Point(8, 23);
+            this.ArcherArcanistGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherArcanistGroup.Name = "ArcherArcanistGroup";
-            this.ArcherArcanistGroup.Size = new System.Drawing.Size(110, 88);
+            this.ArcherArcanistGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ArcherArcanistGroup.Size = new System.Drawing.Size(147, 108);
             this.ArcherArcanistGroup.TabIndex = 22;
             this.ArcherArcanistGroup.TabStop = false;
             this.ArcherArcanistGroup.Text = "Arcanist";
@@ -2521,9 +2665,10 @@
             this.ArcherPhysick.AutoSize = true;
             this.ArcherPhysick.Enabled = false;
             this.ArcherPhysick.ForeColor = System.Drawing.Color.White;
-            this.ArcherPhysick.Location = new System.Drawing.Point(6, 19);
+            this.ArcherPhysick.Location = new System.Drawing.Point(8, 23);
+            this.ArcherPhysick.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherPhysick.Name = "ArcherPhysick";
-            this.ArcherPhysick.Size = new System.Drawing.Size(63, 17);
+            this.ArcherPhysick.Size = new System.Drawing.Size(78, 21);
             this.ArcherPhysick.TabIndex = 7;
             this.ArcherPhysick.Text = "Physick";
             this.ArcherPhysick.UseVisualStyleBackColor = true;
@@ -2534,9 +2679,10 @@
             this.ArcherVirus.AutoSize = true;
             this.ArcherVirus.Enabled = false;
             this.ArcherVirus.ForeColor = System.Drawing.Color.White;
-            this.ArcherVirus.Location = new System.Drawing.Point(6, 42);
+            this.ArcherVirus.Location = new System.Drawing.Point(8, 52);
+            this.ArcherVirus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherVirus.Name = "ArcherVirus";
-            this.ArcherVirus.Size = new System.Drawing.Size(49, 17);
+            this.ArcherVirus.Size = new System.Drawing.Size(62, 21);
             this.ArcherVirus.TabIndex = 8;
             this.ArcherVirus.Text = "Virus";
             this.ArcherVirus.UseVisualStyleBackColor = true;
@@ -2547,9 +2693,10 @@
             this.ArcherEyeForAnEye.AutoSize = true;
             this.ArcherEyeForAnEye.Enabled = false;
             this.ArcherEyeForAnEye.ForeColor = System.Drawing.Color.White;
-            this.ArcherEyeForAnEye.Location = new System.Drawing.Point(6, 65);
+            this.ArcherEyeForAnEye.Location = new System.Drawing.Point(8, 80);
+            this.ArcherEyeForAnEye.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherEyeForAnEye.Name = "ArcherEyeForAnEye";
-            this.ArcherEyeForAnEye.Size = new System.Drawing.Size(95, 17);
+            this.ArcherEyeForAnEye.Size = new System.Drawing.Size(123, 21);
             this.ArcherEyeForAnEye.TabIndex = 9;
             this.ArcherEyeForAnEye.Text = "Eye for an Eye";
             this.ArcherEyeForAnEye.UseVisualStyleBackColor = true;
@@ -2562,9 +2709,11 @@
             this.ArcherConjurerGroup.Controls.Add(this.ArcherRaise);
             this.ArcherConjurerGroup.Controls.Add(this.ArcherStoneskin);
             this.ArcherConjurerGroup.ForeColor = System.Drawing.Color.White;
-            this.ArcherConjurerGroup.Location = new System.Drawing.Point(132, 19);
+            this.ArcherConjurerGroup.Location = new System.Drawing.Point(176, 23);
+            this.ArcherConjurerGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherConjurerGroup.Name = "ArcherConjurerGroup";
-            this.ArcherConjurerGroup.Size = new System.Drawing.Size(113, 111);
+            this.ArcherConjurerGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ArcherConjurerGroup.Size = new System.Drawing.Size(151, 137);
             this.ArcherConjurerGroup.TabIndex = 23;
             this.ArcherConjurerGroup.TabStop = false;
             this.ArcherConjurerGroup.Text = "Conjurer ";
@@ -2574,9 +2723,10 @@
             this.ArcherCure.AutoSize = true;
             this.ArcherCure.Enabled = false;
             this.ArcherCure.ForeColor = System.Drawing.Color.White;
-            this.ArcherCure.Location = new System.Drawing.Point(6, 19);
+            this.ArcherCure.Location = new System.Drawing.Point(8, 23);
+            this.ArcherCure.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherCure.Name = "ArcherCure";
-            this.ArcherCure.Size = new System.Drawing.Size(48, 17);
+            this.ArcherCure.Size = new System.Drawing.Size(60, 21);
             this.ArcherCure.TabIndex = 10;
             this.ArcherCure.Text = "Cure";
             this.ArcherCure.UseVisualStyleBackColor = true;
@@ -2587,9 +2737,10 @@
             this.ArcherProtect.AutoSize = true;
             this.ArcherProtect.Enabled = false;
             this.ArcherProtect.ForeColor = System.Drawing.Color.White;
-            this.ArcherProtect.Location = new System.Drawing.Point(6, 42);
+            this.ArcherProtect.Location = new System.Drawing.Point(8, 52);
+            this.ArcherProtect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherProtect.Name = "ArcherProtect";
-            this.ArcherProtect.Size = new System.Drawing.Size(60, 17);
+            this.ArcherProtect.Size = new System.Drawing.Size(75, 21);
             this.ArcherProtect.TabIndex = 12;
             this.ArcherProtect.Text = "Protect";
             this.ArcherProtect.UseVisualStyleBackColor = true;
@@ -2600,9 +2751,10 @@
             this.ArcherRaise.AutoSize = true;
             this.ArcherRaise.Enabled = false;
             this.ArcherRaise.ForeColor = System.Drawing.Color.White;
-            this.ArcherRaise.Location = new System.Drawing.Point(6, 65);
+            this.ArcherRaise.Location = new System.Drawing.Point(8, 80);
+            this.ArcherRaise.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherRaise.Name = "ArcherRaise";
-            this.ArcherRaise.Size = new System.Drawing.Size(53, 17);
+            this.ArcherRaise.Size = new System.Drawing.Size(66, 21);
             this.ArcherRaise.TabIndex = 13;
             this.ArcherRaise.Text = "Raise";
             this.ArcherRaise.UseVisualStyleBackColor = true;
@@ -2613,9 +2765,10 @@
             this.ArcherStoneskin.AutoSize = true;
             this.ArcherStoneskin.Enabled = false;
             this.ArcherStoneskin.ForeColor = System.Drawing.Color.White;
-            this.ArcherStoneskin.Location = new System.Drawing.Point(6, 88);
+            this.ArcherStoneskin.Location = new System.Drawing.Point(8, 108);
+            this.ArcherStoneskin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherStoneskin.Name = "ArcherStoneskin";
-            this.ArcherStoneskin.Size = new System.Drawing.Size(73, 17);
+            this.ArcherStoneskin.Size = new System.Drawing.Size(92, 21);
             this.ArcherStoneskin.TabIndex = 14;
             this.ArcherStoneskin.Text = "Stoneskin";
             this.ArcherStoneskin.UseVisualStyleBackColor = true;
@@ -2629,9 +2782,11 @@
             this.ArcherGladiatorGroup.Controls.Add(this.ArcherAwareness);
             this.ArcherGladiatorGroup.Controls.Add(this.ArcherProvoke);
             this.ArcherGladiatorGroup.ForeColor = System.Drawing.Color.White;
-            this.ArcherGladiatorGroup.Location = new System.Drawing.Point(261, 19);
+            this.ArcherGladiatorGroup.Location = new System.Drawing.Point(348, 23);
+            this.ArcherGladiatorGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherGladiatorGroup.Name = "ArcherGladiatorGroup";
-            this.ArcherGladiatorGroup.Size = new System.Drawing.Size(113, 134);
+            this.ArcherGladiatorGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ArcherGladiatorGroup.Size = new System.Drawing.Size(151, 165);
             this.ArcherGladiatorGroup.TabIndex = 22;
             this.ArcherGladiatorGroup.TabStop = false;
             this.ArcherGladiatorGroup.Text = "Gladiator ";
@@ -2641,9 +2796,10 @@
             this.ArcherFlash.AutoSize = true;
             this.ArcherFlash.Enabled = false;
             this.ArcherFlash.ForeColor = System.Drawing.Color.White;
-            this.ArcherFlash.Location = new System.Drawing.Point(6, 42);
+            this.ArcherFlash.Location = new System.Drawing.Point(8, 52);
+            this.ArcherFlash.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherFlash.Name = "ArcherFlash";
-            this.ArcherFlash.Size = new System.Drawing.Size(51, 17);
+            this.ArcherFlash.Size = new System.Drawing.Size(64, 21);
             this.ArcherFlash.TabIndex = 15;
             this.ArcherFlash.Text = "Flash";
             this.ArcherFlash.UseVisualStyleBackColor = true;
@@ -2654,9 +2810,10 @@
             this.ArcherConvalescence.AutoSize = true;
             this.ArcherConvalescence.Enabled = false;
             this.ArcherConvalescence.ForeColor = System.Drawing.Color.White;
-            this.ArcherConvalescence.Location = new System.Drawing.Point(6, 65);
+            this.ArcherConvalescence.Location = new System.Drawing.Point(8, 80);
+            this.ArcherConvalescence.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherConvalescence.Name = "ArcherConvalescence";
-            this.ArcherConvalescence.Size = new System.Drawing.Size(100, 17);
+            this.ArcherConvalescence.Size = new System.Drawing.Size(126, 21);
             this.ArcherConvalescence.TabIndex = 16;
             this.ArcherConvalescence.Text = "Convalescence";
             this.ArcherConvalescence.UseVisualStyleBackColor = true;
@@ -2667,9 +2824,10 @@
             this.ArcherSavageBlade.AutoSize = true;
             this.ArcherSavageBlade.Enabled = false;
             this.ArcherSavageBlade.ForeColor = System.Drawing.Color.White;
-            this.ArcherSavageBlade.Location = new System.Drawing.Point(6, 19);
+            this.ArcherSavageBlade.Location = new System.Drawing.Point(8, 23);
+            this.ArcherSavageBlade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherSavageBlade.Name = "ArcherSavageBlade";
-            this.ArcherSavageBlade.Size = new System.Drawing.Size(93, 17);
+            this.ArcherSavageBlade.Size = new System.Drawing.Size(118, 21);
             this.ArcherSavageBlade.TabIndex = 30;
             this.ArcherSavageBlade.Text = "Savage Blade";
             this.ArcherSavageBlade.UseVisualStyleBackColor = true;
@@ -2680,9 +2838,10 @@
             this.ArcherAwareness.AutoSize = true;
             this.ArcherAwareness.Enabled = false;
             this.ArcherAwareness.ForeColor = System.Drawing.Color.White;
-            this.ArcherAwareness.Location = new System.Drawing.Point(6, 111);
+            this.ArcherAwareness.Location = new System.Drawing.Point(8, 137);
+            this.ArcherAwareness.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherAwareness.Name = "ArcherAwareness";
-            this.ArcherAwareness.Size = new System.Drawing.Size(78, 17);
+            this.ArcherAwareness.Size = new System.Drawing.Size(99, 21);
             this.ArcherAwareness.TabIndex = 18;
             this.ArcherAwareness.Text = "Awareness";
             this.ArcherAwareness.UseVisualStyleBackColor = true;
@@ -2693,9 +2852,10 @@
             this.ArcherProvoke.AutoSize = true;
             this.ArcherProvoke.Enabled = false;
             this.ArcherProvoke.ForeColor = System.Drawing.Color.White;
-            this.ArcherProvoke.Location = new System.Drawing.Point(6, 88);
+            this.ArcherProvoke.Location = new System.Drawing.Point(8, 108);
+            this.ArcherProvoke.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherProvoke.Name = "ArcherProvoke";
-            this.ArcherProvoke.Size = new System.Drawing.Size(66, 17);
+            this.ArcherProvoke.Size = new System.Drawing.Size(82, 21);
             this.ArcherProvoke.TabIndex = 17;
             this.ArcherProvoke.Text = "Provoke";
             this.ArcherProvoke.UseVisualStyleBackColor = true;
@@ -2708,9 +2868,11 @@
             this.ArcherLancerGroup.Controls.Add(this.ArcherInvigorate);
             this.ArcherLancerGroup.Controls.Add(this.ArcherBloodForBlood);
             this.ArcherLancerGroup.ForeColor = System.Drawing.Color.White;
-            this.ArcherLancerGroup.Location = new System.Drawing.Point(390, 19);
+            this.ArcherLancerGroup.Location = new System.Drawing.Point(520, 23);
+            this.ArcherLancerGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherLancerGroup.Name = "ArcherLancerGroup";
-            this.ArcherLancerGroup.Size = new System.Drawing.Size(108, 111);
+            this.ArcherLancerGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ArcherLancerGroup.Size = new System.Drawing.Size(144, 137);
             this.ArcherLancerGroup.TabIndex = 10;
             this.ArcherLancerGroup.TabStop = false;
             this.ArcherLancerGroup.Text = "Lancer";
@@ -2720,9 +2882,10 @@
             this.ArcherKeenFlurry.AutoSize = true;
             this.ArcherKeenFlurry.Enabled = false;
             this.ArcherKeenFlurry.ForeColor = System.Drawing.Color.White;
-            this.ArcherKeenFlurry.Location = new System.Drawing.Point(6, 42);
+            this.ArcherKeenFlurry.Location = new System.Drawing.Point(8, 52);
+            this.ArcherKeenFlurry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherKeenFlurry.Name = "ArcherKeenFlurry";
-            this.ArcherKeenFlurry.Size = new System.Drawing.Size(79, 17);
+            this.ArcherKeenFlurry.Size = new System.Drawing.Size(103, 21);
             this.ArcherKeenFlurry.TabIndex = 19;
             this.ArcherKeenFlurry.Text = "Keen Flurry";
             this.ArcherKeenFlurry.UseVisualStyleBackColor = true;
@@ -2733,9 +2896,10 @@
             this.ArcherFeint.AutoSize = true;
             this.ArcherFeint.Enabled = false;
             this.ArcherFeint.ForeColor = System.Drawing.Color.White;
-            this.ArcherFeint.Location = new System.Drawing.Point(6, 19);
+            this.ArcherFeint.Location = new System.Drawing.Point(8, 23);
+            this.ArcherFeint.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherFeint.Name = "ArcherFeint";
-            this.ArcherFeint.Size = new System.Drawing.Size(49, 17);
+            this.ArcherFeint.Size = new System.Drawing.Size(61, 21);
             this.ArcherFeint.TabIndex = 30;
             this.ArcherFeint.Text = "Feint";
             this.ArcherFeint.UseVisualStyleBackColor = true;
@@ -2745,9 +2909,10 @@
             // 
             this.ArcherInvigorate.AutoSize = true;
             this.ArcherInvigorate.ForeColor = System.Drawing.Color.White;
-            this.ArcherInvigorate.Location = new System.Drawing.Point(6, 65);
+            this.ArcherInvigorate.Location = new System.Drawing.Point(8, 80);
+            this.ArcherInvigorate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherInvigorate.Name = "ArcherInvigorate";
-            this.ArcherInvigorate.Size = new System.Drawing.Size(73, 17);
+            this.ArcherInvigorate.Size = new System.Drawing.Size(92, 21);
             this.ArcherInvigorate.TabIndex = 20;
             this.ArcherInvigorate.Text = "Invigorate";
             this.ArcherInvigorate.UseVisualStyleBackColor = true;
@@ -2757,9 +2922,10 @@
             // 
             this.ArcherBloodForBlood.AutoSize = true;
             this.ArcherBloodForBlood.ForeColor = System.Drawing.Color.White;
-            this.ArcherBloodForBlood.Location = new System.Drawing.Point(6, 88);
+            this.ArcherBloodForBlood.Location = new System.Drawing.Point(8, 108);
+            this.ArcherBloodForBlood.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArcherBloodForBlood.Name = "ArcherBloodForBlood";
-            this.ArcherBloodForBlood.Size = new System.Drawing.Size(98, 17);
+            this.ArcherBloodForBlood.Size = new System.Drawing.Size(127, 21);
             this.ArcherBloodForBlood.TabIndex = 21;
             this.ArcherBloodForBlood.Text = "Blood for Blood";
             this.ArcherBloodForBlood.UseVisualStyleBackColor = true;
@@ -2774,7 +2940,7 @@
             this.BardSettings.Location = new System.Drawing.Point(114, 4);
             this.BardSettings.Margin = new System.Windows.Forms.Padding(0);
             this.BardSettings.Name = "BardSettings";
-            this.BardSettings.Size = new System.Drawing.Size(567, 402);
+            this.BardSettings.Size = new System.Drawing.Size(795, 497);
             this.BardSettings.TabIndex = 1;
             this.BardSettings.Text = "Bard";
             this.BardSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -2783,9 +2949,11 @@
             // 
             this.BardExecuteGroup.Controls.Add(this.BardMiserysEnd);
             this.BardExecuteGroup.ForeColor = System.Drawing.Color.White;
-            this.BardExecuteGroup.Location = new System.Drawing.Point(132, 168);
+            this.BardExecuteGroup.Location = new System.Drawing.Point(176, 207);
+            this.BardExecuteGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BardExecuteGroup.Name = "BardExecuteGroup";
-            this.BardExecuteGroup.Size = new System.Drawing.Size(97, 42);
+            this.BardExecuteGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BardExecuteGroup.Size = new System.Drawing.Size(129, 52);
             this.BardExecuteGroup.TabIndex = 18;
             this.BardExecuteGroup.TabStop = false;
             this.BardExecuteGroup.Text = "Execute";
@@ -2794,9 +2962,10 @@
             // 
             this.BardMiserysEnd.AutoSize = true;
             this.BardMiserysEnd.ForeColor = System.Drawing.Color.White;
-            this.BardMiserysEnd.Location = new System.Drawing.Point(6, 19);
+            this.BardMiserysEnd.Location = new System.Drawing.Point(8, 23);
+            this.BardMiserysEnd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BardMiserysEnd.Name = "BardMiserysEnd";
-            this.BardMiserysEnd.Size = new System.Drawing.Size(85, 17);
+            this.BardMiserysEnd.Size = new System.Drawing.Size(110, 21);
             this.BardMiserysEnd.TabIndex = 7;
             this.BardMiserysEnd.Text = "Misery\'s End";
             this.BardMiserysEnd.UseVisualStyleBackColor = true;
@@ -2806,9 +2975,11 @@
             // 
             this.BardInterruptGroup.Controls.Add(this.BardBluntArrow);
             this.BardInterruptGroup.ForeColor = System.Drawing.Color.White;
-            this.BardInterruptGroup.Location = new System.Drawing.Point(34, 168);
+            this.BardInterruptGroup.Location = new System.Drawing.Point(45, 207);
+            this.BardInterruptGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BardInterruptGroup.Name = "BardInterruptGroup";
-            this.BardInterruptGroup.Size = new System.Drawing.Size(92, 42);
+            this.BardInterruptGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BardInterruptGroup.Size = new System.Drawing.Size(123, 52);
             this.BardInterruptGroup.TabIndex = 15;
             this.BardInterruptGroup.TabStop = false;
             this.BardInterruptGroup.Text = "Interrupt";
@@ -2817,9 +2988,10 @@
             // 
             this.BardBluntArrow.AutoSize = true;
             this.BardBluntArrow.ForeColor = System.Drawing.Color.White;
-            this.BardBluntArrow.Location = new System.Drawing.Point(6, 19);
+            this.BardBluntArrow.Location = new System.Drawing.Point(8, 23);
+            this.BardBluntArrow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BardBluntArrow.Name = "BardBluntArrow";
-            this.BardBluntArrow.Size = new System.Drawing.Size(80, 17);
+            this.BardBluntArrow.Size = new System.Drawing.Size(102, 21);
             this.BardBluntArrow.TabIndex = 7;
             this.BardBluntArrow.Text = "Blunt Arrow";
             this.BardBluntArrow.UseVisualStyleBackColor = true;
@@ -2830,9 +3002,11 @@
             this.BardCrossGroup.Controls.Add(this.BardPugilistGroup);
             this.BardCrossGroup.Controls.Add(this.BardLancerGroup);
             this.BardCrossGroup.ForeColor = System.Drawing.Color.White;
-            this.BardCrossGroup.Location = new System.Drawing.Point(34, 3);
+            this.BardCrossGroup.Location = new System.Drawing.Point(45, 4);
+            this.BardCrossGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BardCrossGroup.Name = "BardCrossGroup";
-            this.BardCrossGroup.Size = new System.Drawing.Size(238, 159);
+            this.BardCrossGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BardCrossGroup.Size = new System.Drawing.Size(317, 196);
             this.BardCrossGroup.TabIndex = 12;
             this.BardCrossGroup.TabStop = false;
             this.BardCrossGroup.Text = "Cross-Class  ";
@@ -2845,9 +3019,11 @@
             this.BardPugilistGroup.Controls.Add(this.BardInternalRelease);
             this.BardPugilistGroup.Controls.Add(this.BardMantra);
             this.BardPugilistGroup.ForeColor = System.Drawing.Color.White;
-            this.BardPugilistGroup.Location = new System.Drawing.Point(119, 19);
+            this.BardPugilistGroup.Location = new System.Drawing.Point(159, 23);
+            this.BardPugilistGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BardPugilistGroup.Name = "BardPugilistGroup";
-            this.BardPugilistGroup.Size = new System.Drawing.Size(113, 134);
+            this.BardPugilistGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BardPugilistGroup.Size = new System.Drawing.Size(151, 165);
             this.BardPugilistGroup.TabIndex = 25;
             this.BardPugilistGroup.TabStop = false;
             this.BardPugilistGroup.Text = "Pugilist ";
@@ -2857,9 +3033,10 @@
             this.BardHaymaker.AutoSize = true;
             this.BardHaymaker.Enabled = false;
             this.BardHaymaker.ForeColor = System.Drawing.Color.White;
-            this.BardHaymaker.Location = new System.Drawing.Point(6, 65);
+            this.BardHaymaker.Location = new System.Drawing.Point(8, 80);
+            this.BardHaymaker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BardHaymaker.Name = "BardHaymaker";
-            this.BardHaymaker.Size = new System.Drawing.Size(74, 17);
+            this.BardHaymaker.Size = new System.Drawing.Size(94, 21);
             this.BardHaymaker.TabIndex = 35;
             this.BardHaymaker.Text = "Haymaker";
             this.BardHaymaker.UseVisualStyleBackColor = true;
@@ -2870,9 +3047,10 @@
             this.BardFeatherfoot.AutoSize = true;
             this.BardFeatherfoot.Enabled = false;
             this.BardFeatherfoot.ForeColor = System.Drawing.Color.White;
-            this.BardFeatherfoot.Location = new System.Drawing.Point(6, 19);
+            this.BardFeatherfoot.Location = new System.Drawing.Point(8, 23);
+            this.BardFeatherfoot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BardFeatherfoot.Name = "BardFeatherfoot";
-            this.BardFeatherfoot.Size = new System.Drawing.Size(80, 17);
+            this.BardFeatherfoot.Size = new System.Drawing.Size(103, 21);
             this.BardFeatherfoot.TabIndex = 30;
             this.BardFeatherfoot.Text = "Featherfoot";
             this.BardFeatherfoot.UseVisualStyleBackColor = true;
@@ -2883,9 +3061,10 @@
             this.BardSecondWind.AutoSize = true;
             this.BardSecondWind.Enabled = false;
             this.BardSecondWind.ForeColor = System.Drawing.Color.White;
-            this.BardSecondWind.Location = new System.Drawing.Point(6, 42);
+            this.BardSecondWind.Location = new System.Drawing.Point(8, 52);
+            this.BardSecondWind.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BardSecondWind.Name = "BardSecondWind";
-            this.BardSecondWind.Size = new System.Drawing.Size(91, 17);
+            this.BardSecondWind.Size = new System.Drawing.Size(114, 21);
             this.BardSecondWind.TabIndex = 31;
             this.BardSecondWind.Text = "Second Wind";
             this.BardSecondWind.UseVisualStyleBackColor = true;
@@ -2895,9 +3074,10 @@
             // 
             this.BardInternalRelease.AutoSize = true;
             this.BardInternalRelease.ForeColor = System.Drawing.Color.White;
-            this.BardInternalRelease.Location = new System.Drawing.Point(6, 88);
+            this.BardInternalRelease.Location = new System.Drawing.Point(8, 108);
+            this.BardInternalRelease.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BardInternalRelease.Name = "BardInternalRelease";
-            this.BardInternalRelease.Size = new System.Drawing.Size(103, 17);
+            this.BardInternalRelease.Size = new System.Drawing.Size(133, 21);
             this.BardInternalRelease.TabIndex = 32;
             this.BardInternalRelease.Text = "Internal Release";
             this.BardInternalRelease.UseVisualStyleBackColor = true;
@@ -2908,9 +3088,10 @@
             this.BardMantra.AutoSize = true;
             this.BardMantra.Enabled = false;
             this.BardMantra.ForeColor = System.Drawing.Color.White;
-            this.BardMantra.Location = new System.Drawing.Point(6, 111);
+            this.BardMantra.Location = new System.Drawing.Point(8, 137);
+            this.BardMantra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BardMantra.Name = "BardMantra";
-            this.BardMantra.Size = new System.Drawing.Size(59, 17);
+            this.BardMantra.Size = new System.Drawing.Size(74, 21);
             this.BardMantra.TabIndex = 34;
             this.BardMantra.Text = "Mantra";
             this.BardMantra.UseVisualStyleBackColor = true;
@@ -2923,9 +3104,11 @@
             this.BardLancerGroup.Controls.Add(this.BardInvigorate);
             this.BardLancerGroup.Controls.Add(this.BardBloodForBlood);
             this.BardLancerGroup.ForeColor = System.Drawing.Color.White;
-            this.BardLancerGroup.Location = new System.Drawing.Point(6, 19);
+            this.BardLancerGroup.Location = new System.Drawing.Point(8, 23);
+            this.BardLancerGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BardLancerGroup.Name = "BardLancerGroup";
-            this.BardLancerGroup.Size = new System.Drawing.Size(107, 111);
+            this.BardLancerGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BardLancerGroup.Size = new System.Drawing.Size(143, 137);
             this.BardLancerGroup.TabIndex = 24;
             this.BardLancerGroup.TabStop = false;
             this.BardLancerGroup.Text = "Lancer";
@@ -2935,9 +3118,10 @@
             this.BardKeenFlurry.AutoSize = true;
             this.BardKeenFlurry.Enabled = false;
             this.BardKeenFlurry.ForeColor = System.Drawing.Color.White;
-            this.BardKeenFlurry.Location = new System.Drawing.Point(6, 42);
+            this.BardKeenFlurry.Location = new System.Drawing.Point(8, 52);
+            this.BardKeenFlurry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BardKeenFlurry.Name = "BardKeenFlurry";
-            this.BardKeenFlurry.Size = new System.Drawing.Size(79, 17);
+            this.BardKeenFlurry.Size = new System.Drawing.Size(103, 21);
             this.BardKeenFlurry.TabIndex = 19;
             this.BardKeenFlurry.Text = "Keen Flurry";
             this.BardKeenFlurry.UseVisualStyleBackColor = true;
@@ -2948,9 +3132,10 @@
             this.BardFeint.AutoSize = true;
             this.BardFeint.Enabled = false;
             this.BardFeint.ForeColor = System.Drawing.Color.White;
-            this.BardFeint.Location = new System.Drawing.Point(6, 19);
+            this.BardFeint.Location = new System.Drawing.Point(8, 23);
+            this.BardFeint.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BardFeint.Name = "BardFeint";
-            this.BardFeint.Size = new System.Drawing.Size(49, 17);
+            this.BardFeint.Size = new System.Drawing.Size(61, 21);
             this.BardFeint.TabIndex = 30;
             this.BardFeint.Text = "Feint";
             this.BardFeint.UseVisualStyleBackColor = true;
@@ -2960,9 +3145,10 @@
             // 
             this.BardInvigorate.AutoSize = true;
             this.BardInvigorate.ForeColor = System.Drawing.Color.White;
-            this.BardInvigorate.Location = new System.Drawing.Point(6, 65);
+            this.BardInvigorate.Location = new System.Drawing.Point(8, 80);
+            this.BardInvigorate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BardInvigorate.Name = "BardInvigorate";
-            this.BardInvigorate.Size = new System.Drawing.Size(73, 17);
+            this.BardInvigorate.Size = new System.Drawing.Size(92, 21);
             this.BardInvigorate.TabIndex = 20;
             this.BardInvigorate.Text = "Invigorate";
             this.BardInvigorate.UseVisualStyleBackColor = true;
@@ -2972,9 +3158,10 @@
             // 
             this.BardBloodForBlood.AutoSize = true;
             this.BardBloodForBlood.ForeColor = System.Drawing.Color.White;
-            this.BardBloodForBlood.Location = new System.Drawing.Point(6, 88);
+            this.BardBloodForBlood.Location = new System.Drawing.Point(8, 108);
+            this.BardBloodForBlood.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BardBloodForBlood.Name = "BardBloodForBlood";
-            this.BardBloodForBlood.Size = new System.Drawing.Size(98, 17);
+            this.BardBloodForBlood.Size = new System.Drawing.Size(127, 21);
             this.BardBloodForBlood.TabIndex = 21;
             this.BardBloodForBlood.Text = "Blood for Blood";
             this.BardBloodForBlood.UseVisualStyleBackColor = true;
@@ -2987,7 +3174,7 @@
             this.ConjurerTab.Location = new System.Drawing.Point(114, 4);
             this.ConjurerTab.Margin = new System.Windows.Forms.Padding(0);
             this.ConjurerTab.Name = "ConjurerTab";
-            this.ConjurerTab.Size = new System.Drawing.Size(682, 402);
+            this.ConjurerTab.Size = new System.Drawing.Size(949, 497);
             this.ConjurerTab.TabIndex = 2;
             this.ConjurerTab.Text = "Conjurer";
             // 
@@ -2997,11 +3184,12 @@
             this.ConjurerSubTab.Controls.Add(this.ConjurerSettings);
             this.ConjurerSubTab.Controls.Add(this.WhiteMageSettings);
             this.ConjurerSubTab.ItemSize = new System.Drawing.Size(35, 110);
-            this.ConjurerSubTab.Location = new System.Drawing.Point(-1, -4);
+            this.ConjurerSubTab.Location = new System.Drawing.Point(-1, -5);
+            this.ConjurerSubTab.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerSubTab.Multiline = true;
             this.ConjurerSubTab.Name = "ConjurerSubTab";
             this.ConjurerSubTab.SelectedIndex = 0;
-            this.ConjurerSubTab.Size = new System.Drawing.Size(685, 410);
+            this.ConjurerSubTab.Size = new System.Drawing.Size(913, 505);
             this.ConjurerSubTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.ConjurerSubTab.TabIndex = 5;
             this.ConjurerSubTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -3016,10 +3204,64 @@
             this.ConjurerSettings.Location = new System.Drawing.Point(114, 4);
             this.ConjurerSettings.Margin = new System.Windows.Forms.Padding(0);
             this.ConjurerSettings.Name = "ConjurerSettings";
-            this.ConjurerSettings.Size = new System.Drawing.Size(567, 402);
+            this.ConjurerSettings.Size = new System.Drawing.Size(795, 497);
             this.ConjurerSettings.TabIndex = 0;
             this.ConjurerSettings.Text = "Conjurer";
             this.ConjurerSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
+            // 
+            // ConjurerBuffGroup
+            // 
+            this.ConjurerBuffGroup.Controls.Add(this.ConjurerStoneskinII);
+            this.ConjurerBuffGroup.Controls.Add(this.ConjurerStoneskin);
+            this.ConjurerBuffGroup.Controls.Add(this.ConjurerProtect);
+            this.ConjurerBuffGroup.ForeColor = System.Drawing.Color.White;
+            this.ConjurerBuffGroup.Location = new System.Drawing.Point(140, 352);
+            this.ConjurerBuffGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ConjurerBuffGroup.Name = "ConjurerBuffGroup";
+            this.ConjurerBuffGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ConjurerBuffGroup.Size = new System.Drawing.Size(125, 108);
+            this.ConjurerBuffGroup.TabIndex = 20;
+            this.ConjurerBuffGroup.TabStop = false;
+            this.ConjurerBuffGroup.Text = "Buff";
+            // 
+            // ConjurerStoneskinII
+            // 
+            this.ConjurerStoneskinII.AutoSize = true;
+            this.ConjurerStoneskinII.ForeColor = System.Drawing.Color.White;
+            this.ConjurerStoneskinII.Location = new System.Drawing.Point(8, 80);
+            this.ConjurerStoneskinII.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ConjurerStoneskinII.Name = "ConjurerStoneskinII";
+            this.ConjurerStoneskinII.Size = new System.Drawing.Size(102, 21);
+            this.ConjurerStoneskinII.TabIndex = 9;
+            this.ConjurerStoneskinII.Text = "Stoneskin II";
+            this.ConjurerStoneskinII.UseVisualStyleBackColor = true;
+            this.ConjurerStoneskinII.CheckedChanged += new System.EventHandler(this.ConjurerStoneskinII_CheckedChanged);
+            // 
+            // ConjurerStoneskin
+            // 
+            this.ConjurerStoneskin.AutoSize = true;
+            this.ConjurerStoneskin.ForeColor = System.Drawing.Color.White;
+            this.ConjurerStoneskin.Location = new System.Drawing.Point(8, 52);
+            this.ConjurerStoneskin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ConjurerStoneskin.Name = "ConjurerStoneskin";
+            this.ConjurerStoneskin.Size = new System.Drawing.Size(92, 21);
+            this.ConjurerStoneskin.TabIndex = 8;
+            this.ConjurerStoneskin.Text = "Stoneskin";
+            this.ConjurerStoneskin.UseVisualStyleBackColor = true;
+            this.ConjurerStoneskin.CheckedChanged += new System.EventHandler(this.ConjurerStoneskin_CheckedChanged);
+            // 
+            // ConjurerProtect
+            // 
+            this.ConjurerProtect.AutoSize = true;
+            this.ConjurerProtect.ForeColor = System.Drawing.Color.White;
+            this.ConjurerProtect.Location = new System.Drawing.Point(8, 23);
+            this.ConjurerProtect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ConjurerProtect.Name = "ConjurerProtect";
+            this.ConjurerProtect.Size = new System.Drawing.Size(75, 21);
+            this.ConjurerProtect.TabIndex = 7;
+            this.ConjurerProtect.Text = "Protect";
+            this.ConjurerProtect.UseVisualStyleBackColor = true;
+            this.ConjurerProtect.CheckedChanged += new System.EventHandler(this.ConjurerProtect_CheckedChanged);
             // 
             // ConjurerCrossGroup
             // 
@@ -3031,9 +3273,11 @@
             this.ConjurerCrossGroup.Controls.Add(this.ConjurerGladiatorGroup);
             this.ConjurerCrossGroup.Controls.Add(this.ConjurerLancerGroup);
             this.ConjurerCrossGroup.ForeColor = System.Drawing.Color.White;
-            this.ConjurerCrossGroup.Location = new System.Drawing.Point(34, 3);
+            this.ConjurerCrossGroup.Location = new System.Drawing.Point(45, 4);
+            this.ConjurerCrossGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerCrossGroup.Name = "ConjurerCrossGroup";
-            this.ConjurerCrossGroup.Size = new System.Drawing.Size(504, 277);
+            this.ConjurerCrossGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ConjurerCrossGroup.Size = new System.Drawing.Size(672, 341);
             this.ConjurerCrossGroup.TabIndex = 9;
             this.ConjurerCrossGroup.TabStop = false;
             this.ConjurerCrossGroup.Text = "Cross-Class  ";
@@ -3045,9 +3289,11 @@
             this.ConjurerArcanistGroup.Controls.Add(this.ConjurerVirus);
             this.ConjurerArcanistGroup.Controls.Add(this.ConjurerEyeForAnEye);
             this.ConjurerArcanistGroup.ForeColor = System.Drawing.Color.White;
-            this.ConjurerArcanistGroup.Location = new System.Drawing.Point(6, 19);
+            this.ConjurerArcanistGroup.Location = new System.Drawing.Point(8, 23);
+            this.ConjurerArcanistGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerArcanistGroup.Name = "ConjurerArcanistGroup";
-            this.ConjurerArcanistGroup.Size = new System.Drawing.Size(110, 111);
+            this.ConjurerArcanistGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ConjurerArcanistGroup.Size = new System.Drawing.Size(147, 137);
             this.ConjurerArcanistGroup.TabIndex = 30;
             this.ConjurerArcanistGroup.TabStop = false;
             this.ConjurerArcanistGroup.Text = "Arcanist";
@@ -3057,9 +3303,10 @@
             this.ConjurerRuin.AutoSize = true;
             this.ConjurerRuin.Enabled = false;
             this.ConjurerRuin.ForeColor = System.Drawing.Color.White;
-            this.ConjurerRuin.Location = new System.Drawing.Point(6, 19);
+            this.ConjurerRuin.Location = new System.Drawing.Point(8, 23);
+            this.ConjurerRuin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerRuin.Name = "ConjurerRuin";
-            this.ConjurerRuin.Size = new System.Drawing.Size(48, 17);
+            this.ConjurerRuin.Size = new System.Drawing.Size(59, 21);
             this.ConjurerRuin.TabIndex = 10;
             this.ConjurerRuin.Text = "Ruin";
             this.ConjurerRuin.UseVisualStyleBackColor = true;
@@ -3070,9 +3317,10 @@
             this.ConjurerPhysick.AutoSize = true;
             this.ConjurerPhysick.Enabled = false;
             this.ConjurerPhysick.ForeColor = System.Drawing.Color.White;
-            this.ConjurerPhysick.Location = new System.Drawing.Point(6, 42);
+            this.ConjurerPhysick.Location = new System.Drawing.Point(8, 52);
+            this.ConjurerPhysick.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerPhysick.Name = "ConjurerPhysick";
-            this.ConjurerPhysick.Size = new System.Drawing.Size(63, 17);
+            this.ConjurerPhysick.Size = new System.Drawing.Size(78, 21);
             this.ConjurerPhysick.TabIndex = 7;
             this.ConjurerPhysick.Text = "Physick";
             this.ConjurerPhysick.UseVisualStyleBackColor = true;
@@ -3083,9 +3331,10 @@
             this.ConjurerVirus.AutoSize = true;
             this.ConjurerVirus.Enabled = false;
             this.ConjurerVirus.ForeColor = System.Drawing.Color.White;
-            this.ConjurerVirus.Location = new System.Drawing.Point(6, 65);
+            this.ConjurerVirus.Location = new System.Drawing.Point(8, 80);
+            this.ConjurerVirus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerVirus.Name = "ConjurerVirus";
-            this.ConjurerVirus.Size = new System.Drawing.Size(49, 17);
+            this.ConjurerVirus.Size = new System.Drawing.Size(62, 21);
             this.ConjurerVirus.TabIndex = 8;
             this.ConjurerVirus.Text = "Virus";
             this.ConjurerVirus.UseVisualStyleBackColor = true;
@@ -3096,9 +3345,10 @@
             this.ConjurerEyeForAnEye.AutoSize = true;
             this.ConjurerEyeForAnEye.Enabled = false;
             this.ConjurerEyeForAnEye.ForeColor = System.Drawing.Color.White;
-            this.ConjurerEyeForAnEye.Location = new System.Drawing.Point(6, 88);
+            this.ConjurerEyeForAnEye.Location = new System.Drawing.Point(8, 108);
+            this.ConjurerEyeForAnEye.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerEyeForAnEye.Name = "ConjurerEyeForAnEye";
-            this.ConjurerEyeForAnEye.Size = new System.Drawing.Size(95, 17);
+            this.ConjurerEyeForAnEye.Size = new System.Drawing.Size(123, 21);
             this.ConjurerEyeForAnEye.TabIndex = 9;
             this.ConjurerEyeForAnEye.Text = "Eye for an Eye";
             this.ConjurerEyeForAnEye.UseVisualStyleBackColor = true;
@@ -3110,9 +3360,11 @@
             this.ConjurerThaumaturgeGroup.Controls.Add(this.ConjurerSwiftcast);
             this.ConjurerThaumaturgeGroup.Controls.Add(this.ConjurerBlizzardII);
             this.ConjurerThaumaturgeGroup.ForeColor = System.Drawing.Color.White;
-            this.ConjurerThaumaturgeGroup.Location = new System.Drawing.Point(261, 160);
+            this.ConjurerThaumaturgeGroup.Location = new System.Drawing.Point(348, 197);
+            this.ConjurerThaumaturgeGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerThaumaturgeGroup.Name = "ConjurerThaumaturgeGroup";
-            this.ConjurerThaumaturgeGroup.Size = new System.Drawing.Size(113, 88);
+            this.ConjurerThaumaturgeGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ConjurerThaumaturgeGroup.Size = new System.Drawing.Size(151, 108);
             this.ConjurerThaumaturgeGroup.TabIndex = 29;
             this.ConjurerThaumaturgeGroup.TabStop = false;
             this.ConjurerThaumaturgeGroup.Text = "Thaumaturge ";
@@ -3122,9 +3374,10 @@
             this.ConjurerSurecast.AutoSize = true;
             this.ConjurerSurecast.Enabled = false;
             this.ConjurerSurecast.ForeColor = System.Drawing.Color.White;
-            this.ConjurerSurecast.Location = new System.Drawing.Point(6, 19);
+            this.ConjurerSurecast.Location = new System.Drawing.Point(8, 23);
+            this.ConjurerSurecast.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerSurecast.Name = "ConjurerSurecast";
-            this.ConjurerSurecast.Size = new System.Drawing.Size(68, 17);
+            this.ConjurerSurecast.Size = new System.Drawing.Size(86, 21);
             this.ConjurerSurecast.TabIndex = 35;
             this.ConjurerSurecast.Text = "Surecast";
             this.ConjurerSurecast.UseVisualStyleBackColor = true;
@@ -3134,9 +3387,10 @@
             // 
             this.ConjurerSwiftcast.AutoSize = true;
             this.ConjurerSwiftcast.ForeColor = System.Drawing.Color.White;
-            this.ConjurerSwiftcast.Location = new System.Drawing.Point(6, 65);
+            this.ConjurerSwiftcast.Location = new System.Drawing.Point(8, 80);
+            this.ConjurerSwiftcast.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerSwiftcast.Name = "ConjurerSwiftcast";
-            this.ConjurerSwiftcast.Size = new System.Drawing.Size(69, 17);
+            this.ConjurerSwiftcast.Size = new System.Drawing.Size(85, 21);
             this.ConjurerSwiftcast.TabIndex = 36;
             this.ConjurerSwiftcast.Text = "Swiftcast";
             this.ConjurerSwiftcast.UseVisualStyleBackColor = true;
@@ -3147,9 +3401,10 @@
             this.ConjurerBlizzardII.AutoSize = true;
             this.ConjurerBlizzardII.Enabled = false;
             this.ConjurerBlizzardII.ForeColor = System.Drawing.Color.White;
-            this.ConjurerBlizzardII.Location = new System.Drawing.Point(6, 42);
+            this.ConjurerBlizzardII.Location = new System.Drawing.Point(8, 52);
+            this.ConjurerBlizzardII.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerBlizzardII.Name = "ConjurerBlizzardII";
-            this.ConjurerBlizzardII.Size = new System.Drawing.Size(71, 17);
+            this.ConjurerBlizzardII.Size = new System.Drawing.Size(90, 21);
             this.ConjurerBlizzardII.TabIndex = 39;
             this.ConjurerBlizzardII.Text = "Blizzard II";
             this.ConjurerBlizzardII.UseVisualStyleBackColor = true;
@@ -3162,9 +3417,11 @@
             this.ConjurerPugilistGroup.Controls.Add(this.ConjurerInternalRelease);
             this.ConjurerPugilistGroup.Controls.Add(this.ConjurerMantra);
             this.ConjurerPugilistGroup.ForeColor = System.Drawing.Color.White;
-            this.ConjurerPugilistGroup.Location = new System.Drawing.Point(132, 160);
+            this.ConjurerPugilistGroup.Location = new System.Drawing.Point(176, 197);
+            this.ConjurerPugilistGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerPugilistGroup.Name = "ConjurerPugilistGroup";
-            this.ConjurerPugilistGroup.Size = new System.Drawing.Size(113, 111);
+            this.ConjurerPugilistGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ConjurerPugilistGroup.Size = new System.Drawing.Size(151, 137);
             this.ConjurerPugilistGroup.TabIndex = 23;
             this.ConjurerPugilistGroup.TabStop = false;
             this.ConjurerPugilistGroup.Text = "Pugilist ";
@@ -3174,9 +3431,10 @@
             this.ConjurerFeatherfoot.AutoSize = true;
             this.ConjurerFeatherfoot.Enabled = false;
             this.ConjurerFeatherfoot.ForeColor = System.Drawing.Color.White;
-            this.ConjurerFeatherfoot.Location = new System.Drawing.Point(6, 19);
+            this.ConjurerFeatherfoot.Location = new System.Drawing.Point(8, 23);
+            this.ConjurerFeatherfoot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerFeatherfoot.Name = "ConjurerFeatherfoot";
-            this.ConjurerFeatherfoot.Size = new System.Drawing.Size(80, 17);
+            this.ConjurerFeatherfoot.Size = new System.Drawing.Size(103, 21);
             this.ConjurerFeatherfoot.TabIndex = 30;
             this.ConjurerFeatherfoot.Text = "Featherfoot";
             this.ConjurerFeatherfoot.UseVisualStyleBackColor = true;
@@ -3187,9 +3445,10 @@
             this.ConjurerSecondWind.AutoSize = true;
             this.ConjurerSecondWind.Enabled = false;
             this.ConjurerSecondWind.ForeColor = System.Drawing.Color.White;
-            this.ConjurerSecondWind.Location = new System.Drawing.Point(6, 42);
+            this.ConjurerSecondWind.Location = new System.Drawing.Point(8, 52);
+            this.ConjurerSecondWind.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerSecondWind.Name = "ConjurerSecondWind";
-            this.ConjurerSecondWind.Size = new System.Drawing.Size(91, 17);
+            this.ConjurerSecondWind.Size = new System.Drawing.Size(114, 21);
             this.ConjurerSecondWind.TabIndex = 31;
             this.ConjurerSecondWind.Text = "Second Wind";
             this.ConjurerSecondWind.UseVisualStyleBackColor = true;
@@ -3200,9 +3459,10 @@
             this.ConjurerInternalRelease.AutoSize = true;
             this.ConjurerInternalRelease.Enabled = false;
             this.ConjurerInternalRelease.ForeColor = System.Drawing.Color.White;
-            this.ConjurerInternalRelease.Location = new System.Drawing.Point(6, 65);
+            this.ConjurerInternalRelease.Location = new System.Drawing.Point(8, 80);
+            this.ConjurerInternalRelease.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerInternalRelease.Name = "ConjurerInternalRelease";
-            this.ConjurerInternalRelease.Size = new System.Drawing.Size(103, 17);
+            this.ConjurerInternalRelease.Size = new System.Drawing.Size(133, 21);
             this.ConjurerInternalRelease.TabIndex = 32;
             this.ConjurerInternalRelease.Text = "Internal Release";
             this.ConjurerInternalRelease.UseVisualStyleBackColor = true;
@@ -3213,9 +3473,10 @@
             this.ConjurerMantra.AutoSize = true;
             this.ConjurerMantra.Enabled = false;
             this.ConjurerMantra.ForeColor = System.Drawing.Color.White;
-            this.ConjurerMantra.Location = new System.Drawing.Point(6, 88);
+            this.ConjurerMantra.Location = new System.Drawing.Point(8, 108);
+            this.ConjurerMantra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerMantra.Name = "ConjurerMantra";
-            this.ConjurerMantra.Size = new System.Drawing.Size(59, 17);
+            this.ConjurerMantra.Size = new System.Drawing.Size(74, 21);
             this.ConjurerMantra.TabIndex = 34;
             this.ConjurerMantra.Text = "Mantra";
             this.ConjurerMantra.UseVisualStyleBackColor = true;
@@ -3227,9 +3488,11 @@
             this.ConjurerMarauderGroup.Controls.Add(this.ConjurerBloodbath);
             this.ConjurerMarauderGroup.Controls.Add(this.ConjurerMercyStroke);
             this.ConjurerMarauderGroup.ForeColor = System.Drawing.Color.White;
-            this.ConjurerMarauderGroup.Location = new System.Drawing.Point(6, 160);
+            this.ConjurerMarauderGroup.Location = new System.Drawing.Point(8, 197);
+            this.ConjurerMarauderGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerMarauderGroup.Name = "ConjurerMarauderGroup";
-            this.ConjurerMarauderGroup.Size = new System.Drawing.Size(110, 88);
+            this.ConjurerMarauderGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ConjurerMarauderGroup.Size = new System.Drawing.Size(147, 108);
             this.ConjurerMarauderGroup.TabIndex = 23;
             this.ConjurerMarauderGroup.TabStop = false;
             this.ConjurerMarauderGroup.Text = "Marauder ";
@@ -3239,9 +3502,10 @@
             this.ConjurerForesight.AutoSize = true;
             this.ConjurerForesight.Enabled = false;
             this.ConjurerForesight.ForeColor = System.Drawing.Color.White;
-            this.ConjurerForesight.Location = new System.Drawing.Point(6, 19);
+            this.ConjurerForesight.Location = new System.Drawing.Point(8, 23);
+            this.ConjurerForesight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerForesight.Name = "ConjurerForesight";
-            this.ConjurerForesight.Size = new System.Drawing.Size(69, 17);
+            this.ConjurerForesight.Size = new System.Drawing.Size(89, 21);
             this.ConjurerForesight.TabIndex = 26;
             this.ConjurerForesight.Text = "Foresight";
             this.ConjurerForesight.UseVisualStyleBackColor = true;
@@ -3252,9 +3516,10 @@
             this.ConjurerBloodbath.AutoSize = true;
             this.ConjurerBloodbath.Enabled = false;
             this.ConjurerBloodbath.ForeColor = System.Drawing.Color.White;
-            this.ConjurerBloodbath.Location = new System.Drawing.Point(6, 42);
+            this.ConjurerBloodbath.Location = new System.Drawing.Point(8, 52);
+            this.ConjurerBloodbath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerBloodbath.Name = "ConjurerBloodbath";
-            this.ConjurerBloodbath.Size = new System.Drawing.Size(74, 17);
+            this.ConjurerBloodbath.Size = new System.Drawing.Size(94, 21);
             this.ConjurerBloodbath.TabIndex = 27;
             this.ConjurerBloodbath.Text = "Bloodbath";
             this.ConjurerBloodbath.UseVisualStyleBackColor = true;
@@ -3265,9 +3530,10 @@
             this.ConjurerMercyStroke.AutoSize = true;
             this.ConjurerMercyStroke.Enabled = false;
             this.ConjurerMercyStroke.ForeColor = System.Drawing.Color.White;
-            this.ConjurerMercyStroke.Location = new System.Drawing.Point(6, 65);
+            this.ConjurerMercyStroke.Location = new System.Drawing.Point(8, 80);
+            this.ConjurerMercyStroke.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerMercyStroke.Name = "ConjurerMercyStroke";
-            this.ConjurerMercyStroke.Size = new System.Drawing.Size(89, 17);
+            this.ConjurerMercyStroke.Size = new System.Drawing.Size(113, 21);
             this.ConjurerMercyStroke.TabIndex = 28;
             this.ConjurerMercyStroke.Text = "Mercy Stroke";
             this.ConjurerMercyStroke.UseVisualStyleBackColor = true;
@@ -3279,9 +3545,11 @@
             this.ConjurerArcherGroup.Controls.Add(this.ConjurerHawksEye);
             this.ConjurerArcherGroup.Controls.Add(this.ConjurerQuellingStrikes);
             this.ConjurerArcherGroup.ForeColor = System.Drawing.Color.White;
-            this.ConjurerArcherGroup.Location = new System.Drawing.Point(132, 19);
+            this.ConjurerArcherGroup.Location = new System.Drawing.Point(176, 23);
+            this.ConjurerArcherGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerArcherGroup.Name = "ConjurerArcherGroup";
-            this.ConjurerArcherGroup.Size = new System.Drawing.Size(113, 88);
+            this.ConjurerArcherGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ConjurerArcherGroup.Size = new System.Drawing.Size(151, 108);
             this.ConjurerArcherGroup.TabIndex = 22;
             this.ConjurerArcherGroup.TabStop = false;
             this.ConjurerArcherGroup.Text = "Archer";
@@ -3291,9 +3559,10 @@
             this.ConjurerRagingStrikes.AutoSize = true;
             this.ConjurerRagingStrikes.Enabled = false;
             this.ConjurerRagingStrikes.ForeColor = System.Drawing.Color.White;
-            this.ConjurerRagingStrikes.Location = new System.Drawing.Point(6, 19);
+            this.ConjurerRagingStrikes.Location = new System.Drawing.Point(8, 23);
+            this.ConjurerRagingStrikes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerRagingStrikes.Name = "ConjurerRagingStrikes";
-            this.ConjurerRagingStrikes.Size = new System.Drawing.Size(95, 17);
+            this.ConjurerRagingStrikes.Size = new System.Drawing.Size(122, 21);
             this.ConjurerRagingStrikes.TabIndex = 7;
             this.ConjurerRagingStrikes.Text = "Raging Strikes";
             this.ConjurerRagingStrikes.UseVisualStyleBackColor = true;
@@ -3304,9 +3573,10 @@
             this.ConjurerHawksEye.AutoSize = true;
             this.ConjurerHawksEye.Enabled = false;
             this.ConjurerHawksEye.ForeColor = System.Drawing.Color.White;
-            this.ConjurerHawksEye.Location = new System.Drawing.Point(6, 42);
+            this.ConjurerHawksEye.Location = new System.Drawing.Point(8, 52);
+            this.ConjurerHawksEye.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerHawksEye.Name = "ConjurerHawksEye";
-            this.ConjurerHawksEye.Size = new System.Drawing.Size(82, 17);
+            this.ConjurerHawksEye.Size = new System.Drawing.Size(102, 21);
             this.ConjurerHawksEye.TabIndex = 8;
             this.ConjurerHawksEye.Text = "Hawk\'s Eye";
             this.ConjurerHawksEye.UseVisualStyleBackColor = true;
@@ -3317,9 +3587,10 @@
             this.ConjurerQuellingStrikes.AutoSize = true;
             this.ConjurerQuellingStrikes.Enabled = false;
             this.ConjurerQuellingStrikes.ForeColor = System.Drawing.Color.White;
-            this.ConjurerQuellingStrikes.Location = new System.Drawing.Point(6, 65);
+            this.ConjurerQuellingStrikes.Location = new System.Drawing.Point(8, 80);
+            this.ConjurerQuellingStrikes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerQuellingStrikes.Name = "ConjurerQuellingStrikes";
-            this.ConjurerQuellingStrikes.Size = new System.Drawing.Size(99, 17);
+            this.ConjurerQuellingStrikes.Size = new System.Drawing.Size(129, 21);
             this.ConjurerQuellingStrikes.TabIndex = 9;
             this.ConjurerQuellingStrikes.Text = "Quelling Strikes";
             this.ConjurerQuellingStrikes.UseVisualStyleBackColor = true;
@@ -3332,9 +3603,11 @@
             this.ConjurerGladiatorGroup.Controls.Add(this.ConjurerProvoke);
             this.ConjurerGladiatorGroup.Controls.Add(this.ConjurerAwareness);
             this.ConjurerGladiatorGroup.ForeColor = System.Drawing.Color.White;
-            this.ConjurerGladiatorGroup.Location = new System.Drawing.Point(261, 19);
+            this.ConjurerGladiatorGroup.Location = new System.Drawing.Point(348, 23);
+            this.ConjurerGladiatorGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerGladiatorGroup.Name = "ConjurerGladiatorGroup";
-            this.ConjurerGladiatorGroup.Size = new System.Drawing.Size(113, 111);
+            this.ConjurerGladiatorGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ConjurerGladiatorGroup.Size = new System.Drawing.Size(151, 137);
             this.ConjurerGladiatorGroup.TabIndex = 22;
             this.ConjurerGladiatorGroup.TabStop = false;
             this.ConjurerGladiatorGroup.Text = "Gladiator ";
@@ -3344,9 +3617,10 @@
             this.ConjurerFlash.AutoSize = true;
             this.ConjurerFlash.Enabled = false;
             this.ConjurerFlash.ForeColor = System.Drawing.Color.White;
-            this.ConjurerFlash.Location = new System.Drawing.Point(6, 19);
+            this.ConjurerFlash.Location = new System.Drawing.Point(8, 23);
+            this.ConjurerFlash.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerFlash.Name = "ConjurerFlash";
-            this.ConjurerFlash.Size = new System.Drawing.Size(51, 17);
+            this.ConjurerFlash.Size = new System.Drawing.Size(64, 21);
             this.ConjurerFlash.TabIndex = 15;
             this.ConjurerFlash.Text = "Flash";
             this.ConjurerFlash.UseVisualStyleBackColor = true;
@@ -3357,9 +3631,10 @@
             this.ConjurerConvalescence.AutoSize = true;
             this.ConjurerConvalescence.Enabled = false;
             this.ConjurerConvalescence.ForeColor = System.Drawing.Color.White;
-            this.ConjurerConvalescence.Location = new System.Drawing.Point(6, 42);
+            this.ConjurerConvalescence.Location = new System.Drawing.Point(8, 52);
+            this.ConjurerConvalescence.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerConvalescence.Name = "ConjurerConvalescence";
-            this.ConjurerConvalescence.Size = new System.Drawing.Size(100, 17);
+            this.ConjurerConvalescence.Size = new System.Drawing.Size(126, 21);
             this.ConjurerConvalescence.TabIndex = 16;
             this.ConjurerConvalescence.Text = "Convalescence";
             this.ConjurerConvalescence.UseVisualStyleBackColor = true;
@@ -3370,9 +3645,10 @@
             this.ConjurerProvoke.AutoSize = true;
             this.ConjurerProvoke.Enabled = false;
             this.ConjurerProvoke.ForeColor = System.Drawing.Color.White;
-            this.ConjurerProvoke.Location = new System.Drawing.Point(6, 65);
+            this.ConjurerProvoke.Location = new System.Drawing.Point(8, 80);
+            this.ConjurerProvoke.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerProvoke.Name = "ConjurerProvoke";
-            this.ConjurerProvoke.Size = new System.Drawing.Size(66, 17);
+            this.ConjurerProvoke.Size = new System.Drawing.Size(82, 21);
             this.ConjurerProvoke.TabIndex = 17;
             this.ConjurerProvoke.Text = "Provoke";
             this.ConjurerProvoke.UseVisualStyleBackColor = true;
@@ -3383,9 +3659,10 @@
             this.ConjurerAwareness.AutoSize = true;
             this.ConjurerAwareness.Enabled = false;
             this.ConjurerAwareness.ForeColor = System.Drawing.Color.White;
-            this.ConjurerAwareness.Location = new System.Drawing.Point(6, 88);
+            this.ConjurerAwareness.Location = new System.Drawing.Point(8, 108);
+            this.ConjurerAwareness.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerAwareness.Name = "ConjurerAwareness";
-            this.ConjurerAwareness.Size = new System.Drawing.Size(78, 17);
+            this.ConjurerAwareness.Size = new System.Drawing.Size(99, 21);
             this.ConjurerAwareness.TabIndex = 18;
             this.ConjurerAwareness.Text = "Awareness";
             this.ConjurerAwareness.UseVisualStyleBackColor = true;
@@ -3397,9 +3674,11 @@
             this.ConjurerLancerGroup.Controls.Add(this.ConjurerInvigorate);
             this.ConjurerLancerGroup.Controls.Add(this.ConjurerBloodForBlood);
             this.ConjurerLancerGroup.ForeColor = System.Drawing.Color.White;
-            this.ConjurerLancerGroup.Location = new System.Drawing.Point(390, 19);
+            this.ConjurerLancerGroup.Location = new System.Drawing.Point(520, 23);
+            this.ConjurerLancerGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerLancerGroup.Name = "ConjurerLancerGroup";
-            this.ConjurerLancerGroup.Size = new System.Drawing.Size(108, 88);
+            this.ConjurerLancerGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ConjurerLancerGroup.Size = new System.Drawing.Size(144, 108);
             this.ConjurerLancerGroup.TabIndex = 10;
             this.ConjurerLancerGroup.TabStop = false;
             this.ConjurerLancerGroup.Text = "Lancer";
@@ -3409,9 +3688,10 @@
             this.ConjurerKeenFlurry.AutoSize = true;
             this.ConjurerKeenFlurry.Enabled = false;
             this.ConjurerKeenFlurry.ForeColor = System.Drawing.Color.White;
-            this.ConjurerKeenFlurry.Location = new System.Drawing.Point(6, 19);
+            this.ConjurerKeenFlurry.Location = new System.Drawing.Point(8, 23);
+            this.ConjurerKeenFlurry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerKeenFlurry.Name = "ConjurerKeenFlurry";
-            this.ConjurerKeenFlurry.Size = new System.Drawing.Size(79, 17);
+            this.ConjurerKeenFlurry.Size = new System.Drawing.Size(103, 21);
             this.ConjurerKeenFlurry.TabIndex = 19;
             this.ConjurerKeenFlurry.Text = "Keen Flurry";
             this.ConjurerKeenFlurry.UseVisualStyleBackColor = true;
@@ -3422,9 +3702,10 @@
             this.ConjurerInvigorate.AutoSize = true;
             this.ConjurerInvigorate.Enabled = false;
             this.ConjurerInvigorate.ForeColor = System.Drawing.Color.White;
-            this.ConjurerInvigorate.Location = new System.Drawing.Point(6, 42);
+            this.ConjurerInvigorate.Location = new System.Drawing.Point(8, 52);
+            this.ConjurerInvigorate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerInvigorate.Name = "ConjurerInvigorate";
-            this.ConjurerInvigorate.Size = new System.Drawing.Size(73, 17);
+            this.ConjurerInvigorate.Size = new System.Drawing.Size(92, 21);
             this.ConjurerInvigorate.TabIndex = 20;
             this.ConjurerInvigorate.Text = "Invigorate";
             this.ConjurerInvigorate.UseVisualStyleBackColor = true;
@@ -3435,13 +3716,66 @@
             this.ConjurerBloodForBlood.AutoSize = true;
             this.ConjurerBloodForBlood.Enabled = false;
             this.ConjurerBloodForBlood.ForeColor = System.Drawing.Color.White;
-            this.ConjurerBloodForBlood.Location = new System.Drawing.Point(6, 65);
+            this.ConjurerBloodForBlood.Location = new System.Drawing.Point(8, 80);
+            this.ConjurerBloodForBlood.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConjurerBloodForBlood.Name = "ConjurerBloodForBlood";
-            this.ConjurerBloodForBlood.Size = new System.Drawing.Size(98, 17);
+            this.ConjurerBloodForBlood.Size = new System.Drawing.Size(127, 21);
             this.ConjurerBloodForBlood.TabIndex = 21;
             this.ConjurerBloodForBlood.Text = "Blood for Blood";
             this.ConjurerBloodForBlood.UseVisualStyleBackColor = true;
             this.ConjurerBloodForBlood.CheckedChanged += new System.EventHandler(this.ConjurerBloodForBlood_CheckedChanged);
+            // 
+            // ConjurerHealGroup
+            // 
+            this.ConjurerHealGroup.Controls.Add(this.ConjurerRaise);
+            this.ConjurerHealGroup.ForeColor = System.Drawing.Color.White;
+            this.ConjurerHealGroup.Location = new System.Drawing.Point(45, 352);
+            this.ConjurerHealGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ConjurerHealGroup.Name = "ConjurerHealGroup";
+            this.ConjurerHealGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ConjurerHealGroup.Size = new System.Drawing.Size(87, 52);
+            this.ConjurerHealGroup.TabIndex = 18;
+            this.ConjurerHealGroup.TabStop = false;
+            this.ConjurerHealGroup.Text = "Heal";
+            // 
+            // ConjurerRaise
+            // 
+            this.ConjurerRaise.AutoSize = true;
+            this.ConjurerRaise.ForeColor = System.Drawing.Color.White;
+            this.ConjurerRaise.Location = new System.Drawing.Point(8, 23);
+            this.ConjurerRaise.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ConjurerRaise.Name = "ConjurerRaise";
+            this.ConjurerRaise.Size = new System.Drawing.Size(66, 21);
+            this.ConjurerRaise.TabIndex = 7;
+            this.ConjurerRaise.Text = "Raise";
+            this.ConjurerRaise.UseVisualStyleBackColor = true;
+            this.ConjurerRaise.CheckedChanged += new System.EventHandler(this.ConjurerRaise_CheckedChanged);
+            // 
+            // ConjurerCooldownGroup
+            // 
+            this.ConjurerCooldownGroup.Controls.Add(this.ConjurerShroudOfSaints);
+            this.ConjurerCooldownGroup.ForeColor = System.Drawing.Color.White;
+            this.ConjurerCooldownGroup.Location = new System.Drawing.Point(273, 352);
+            this.ConjurerCooldownGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ConjurerCooldownGroup.Name = "ConjurerCooldownGroup";
+            this.ConjurerCooldownGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ConjurerCooldownGroup.Size = new System.Drawing.Size(155, 52);
+            this.ConjurerCooldownGroup.TabIndex = 19;
+            this.ConjurerCooldownGroup.TabStop = false;
+            this.ConjurerCooldownGroup.Text = "Cooldown ";
+            // 
+            // ConjurerShroudOfSaints
+            // 
+            this.ConjurerShroudOfSaints.AutoSize = true;
+            this.ConjurerShroudOfSaints.ForeColor = System.Drawing.Color.White;
+            this.ConjurerShroudOfSaints.Location = new System.Drawing.Point(8, 23);
+            this.ConjurerShroudOfSaints.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ConjurerShroudOfSaints.Name = "ConjurerShroudOfSaints";
+            this.ConjurerShroudOfSaints.Size = new System.Drawing.Size(135, 21);
+            this.ConjurerShroudOfSaints.TabIndex = 7;
+            this.ConjurerShroudOfSaints.Text = "Shroud of Saints";
+            this.ConjurerShroudOfSaints.UseVisualStyleBackColor = true;
+            this.ConjurerShroudOfSaints.CheckedChanged += new System.EventHandler(this.ConjurerShroudOfSaints_CheckedChanged);
             // 
             // WhiteMageSettings
             // 
@@ -3453,19 +3787,183 @@
             this.WhiteMageSettings.Location = new System.Drawing.Point(114, 4);
             this.WhiteMageSettings.Margin = new System.Windows.Forms.Padding(0);
             this.WhiteMageSettings.Name = "WhiteMageSettings";
-            this.WhiteMageSettings.Size = new System.Drawing.Size(567, 402);
+            this.WhiteMageSettings.Size = new System.Drawing.Size(795, 497);
             this.WhiteMageSettings.TabIndex = 1;
             this.WhiteMageSettings.Text = "White Mage";
             this.WhiteMageSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
+            // 
+            // WhiteMageBuffGroup
+            // 
+            this.WhiteMageBuffGroup.Controls.Add(this.WhiteMageStoneskinII);
+            this.WhiteMageBuffGroup.Controls.Add(this.WhiteMageStoneskin);
+            this.WhiteMageBuffGroup.Controls.Add(this.WhiteMageProtect);
+            this.WhiteMageBuffGroup.ForeColor = System.Drawing.Color.White;
+            this.WhiteMageBuffGroup.Location = new System.Drawing.Point(208, 178);
+            this.WhiteMageBuffGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.WhiteMageBuffGroup.Name = "WhiteMageBuffGroup";
+            this.WhiteMageBuffGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.WhiteMageBuffGroup.Size = new System.Drawing.Size(125, 108);
+            this.WhiteMageBuffGroup.TabIndex = 17;
+            this.WhiteMageBuffGroup.TabStop = false;
+            this.WhiteMageBuffGroup.Text = "Buff";
+            // 
+            // WhiteMageStoneskinII
+            // 
+            this.WhiteMageStoneskinII.AutoSize = true;
+            this.WhiteMageStoneskinII.ForeColor = System.Drawing.Color.White;
+            this.WhiteMageStoneskinII.Location = new System.Drawing.Point(8, 80);
+            this.WhiteMageStoneskinII.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.WhiteMageStoneskinII.Name = "WhiteMageStoneskinII";
+            this.WhiteMageStoneskinII.Size = new System.Drawing.Size(102, 21);
+            this.WhiteMageStoneskinII.TabIndex = 9;
+            this.WhiteMageStoneskinII.Text = "Stoneskin II";
+            this.WhiteMageStoneskinII.UseVisualStyleBackColor = true;
+            this.WhiteMageStoneskinII.CheckedChanged += new System.EventHandler(this.WhiteMageStoneskinII_CheckedChanged);
+            // 
+            // WhiteMageStoneskin
+            // 
+            this.WhiteMageStoneskin.AutoSize = true;
+            this.WhiteMageStoneskin.ForeColor = System.Drawing.Color.White;
+            this.WhiteMageStoneskin.Location = new System.Drawing.Point(8, 52);
+            this.WhiteMageStoneskin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.WhiteMageStoneskin.Name = "WhiteMageStoneskin";
+            this.WhiteMageStoneskin.Size = new System.Drawing.Size(92, 21);
+            this.WhiteMageStoneskin.TabIndex = 8;
+            this.WhiteMageStoneskin.Text = "Stoneskin";
+            this.WhiteMageStoneskin.UseVisualStyleBackColor = true;
+            this.WhiteMageStoneskin.CheckedChanged += new System.EventHandler(this.WhiteMageStoneskin_CheckedChanged);
+            // 
+            // WhiteMageProtect
+            // 
+            this.WhiteMageProtect.AutoSize = true;
+            this.WhiteMageProtect.ForeColor = System.Drawing.Color.White;
+            this.WhiteMageProtect.Location = new System.Drawing.Point(8, 23);
+            this.WhiteMageProtect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.WhiteMageProtect.Name = "WhiteMageProtect";
+            this.WhiteMageProtect.Size = new System.Drawing.Size(75, 21);
+            this.WhiteMageProtect.TabIndex = 7;
+            this.WhiteMageProtect.Text = "Protect";
+            this.WhiteMageProtect.UseVisualStyleBackColor = true;
+            this.WhiteMageProtect.CheckedChanged += new System.EventHandler(this.WhiteMageProtect_CheckedChanged);
+            // 
+            // WhiteMageCooldownGroup
+            // 
+            this.WhiteMageCooldownGroup.Controls.Add(this.WhiteMageDivineSeal);
+            this.WhiteMageCooldownGroup.Controls.Add(this.WhiteMagePresenceOfMind);
+            this.WhiteMageCooldownGroup.Controls.Add(this.WhiteMageShroudOfSaints);
+            this.WhiteMageCooldownGroup.ForeColor = System.Drawing.Color.White;
+            this.WhiteMageCooldownGroup.Location = new System.Drawing.Point(45, 294);
+            this.WhiteMageCooldownGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.WhiteMageCooldownGroup.Name = "WhiteMageCooldownGroup";
+            this.WhiteMageCooldownGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.WhiteMageCooldownGroup.Size = new System.Drawing.Size(161, 108);
+            this.WhiteMageCooldownGroup.TabIndex = 16;
+            this.WhiteMageCooldownGroup.TabStop = false;
+            this.WhiteMageCooldownGroup.Text = "Cooldown ";
+            // 
+            // WhiteMageDivineSeal
+            // 
+            this.WhiteMageDivineSeal.AutoSize = true;
+            this.WhiteMageDivineSeal.ForeColor = System.Drawing.Color.White;
+            this.WhiteMageDivineSeal.Location = new System.Drawing.Point(8, 80);
+            this.WhiteMageDivineSeal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.WhiteMageDivineSeal.Name = "WhiteMageDivineSeal";
+            this.WhiteMageDivineSeal.Size = new System.Drawing.Size(101, 21);
+            this.WhiteMageDivineSeal.TabIndex = 9;
+            this.WhiteMageDivineSeal.Text = "Divine Seal";
+            this.WhiteMageDivineSeal.UseVisualStyleBackColor = true;
+            this.WhiteMageDivineSeal.CheckedChanged += new System.EventHandler(this.WhiteMageDivineSeal_CheckedChanged);
+            // 
+            // WhiteMagePresenceOfMind
+            // 
+            this.WhiteMagePresenceOfMind.AutoSize = true;
+            this.WhiteMagePresenceOfMind.ForeColor = System.Drawing.Color.White;
+            this.WhiteMagePresenceOfMind.Location = new System.Drawing.Point(8, 52);
+            this.WhiteMagePresenceOfMind.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.WhiteMagePresenceOfMind.Name = "WhiteMagePresenceOfMind";
+            this.WhiteMagePresenceOfMind.Size = new System.Drawing.Size(140, 21);
+            this.WhiteMagePresenceOfMind.TabIndex = 8;
+            this.WhiteMagePresenceOfMind.Text = "Presence of Mind";
+            this.WhiteMagePresenceOfMind.UseVisualStyleBackColor = true;
+            this.WhiteMagePresenceOfMind.CheckedChanged += new System.EventHandler(this.WhiteMagePresenceOfMind_CheckedChanged);
+            // 
+            // WhiteMageShroudOfSaints
+            // 
+            this.WhiteMageShroudOfSaints.AutoSize = true;
+            this.WhiteMageShroudOfSaints.ForeColor = System.Drawing.Color.White;
+            this.WhiteMageShroudOfSaints.Location = new System.Drawing.Point(8, 23);
+            this.WhiteMageShroudOfSaints.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.WhiteMageShroudOfSaints.Name = "WhiteMageShroudOfSaints";
+            this.WhiteMageShroudOfSaints.Size = new System.Drawing.Size(135, 21);
+            this.WhiteMageShroudOfSaints.TabIndex = 7;
+            this.WhiteMageShroudOfSaints.Text = "Shroud of Saints";
+            this.WhiteMageShroudOfSaints.UseVisualStyleBackColor = true;
+            this.WhiteMageShroudOfSaints.CheckedChanged += new System.EventHandler(this.WhiteMageShroudOfSaints_CheckedChanged);
+            // 
+            // WhiteMageHealGroup
+            // 
+            this.WhiteMageHealGroup.Controls.Add(this.WhiteMageTetragrammaton);
+            this.WhiteMageHealGroup.Controls.Add(this.WhiteMageBenediction);
+            this.WhiteMageHealGroup.Controls.Add(this.WhiteMageRaise);
+            this.WhiteMageHealGroup.ForeColor = System.Drawing.Color.White;
+            this.WhiteMageHealGroup.Location = new System.Drawing.Point(45, 178);
+            this.WhiteMageHealGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.WhiteMageHealGroup.Name = "WhiteMageHealGroup";
+            this.WhiteMageHealGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.WhiteMageHealGroup.Size = new System.Drawing.Size(153, 108);
+            this.WhiteMageHealGroup.TabIndex = 15;
+            this.WhiteMageHealGroup.TabStop = false;
+            this.WhiteMageHealGroup.Text = "Heal";
+            // 
+            // WhiteMageTetragrammaton
+            // 
+            this.WhiteMageTetragrammaton.AutoSize = true;
+            this.WhiteMageTetragrammaton.ForeColor = System.Drawing.Color.White;
+            this.WhiteMageTetragrammaton.Location = new System.Drawing.Point(8, 80);
+            this.WhiteMageTetragrammaton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.WhiteMageTetragrammaton.Name = "WhiteMageTetragrammaton";
+            this.WhiteMageTetragrammaton.Size = new System.Drawing.Size(135, 21);
+            this.WhiteMageTetragrammaton.TabIndex = 9;
+            this.WhiteMageTetragrammaton.Text = "Tetragrammaton";
+            this.WhiteMageTetragrammaton.UseVisualStyleBackColor = true;
+            this.WhiteMageTetragrammaton.CheckedChanged += new System.EventHandler(this.WhiteMageTetragrammaton_CheckedChanged);
+            // 
+            // WhiteMageBenediction
+            // 
+            this.WhiteMageBenediction.AutoSize = true;
+            this.WhiteMageBenediction.ForeColor = System.Drawing.Color.White;
+            this.WhiteMageBenediction.Location = new System.Drawing.Point(8, 52);
+            this.WhiteMageBenediction.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.WhiteMageBenediction.Name = "WhiteMageBenediction";
+            this.WhiteMageBenediction.Size = new System.Drawing.Size(104, 21);
+            this.WhiteMageBenediction.TabIndex = 8;
+            this.WhiteMageBenediction.Text = "Benediction";
+            this.WhiteMageBenediction.UseVisualStyleBackColor = true;
+            this.WhiteMageBenediction.CheckedChanged += new System.EventHandler(this.WhiteMageBenediction_CheckedChanged);
+            // 
+            // WhiteMageRaise
+            // 
+            this.WhiteMageRaise.AutoSize = true;
+            this.WhiteMageRaise.ForeColor = System.Drawing.Color.White;
+            this.WhiteMageRaise.Location = new System.Drawing.Point(8, 23);
+            this.WhiteMageRaise.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.WhiteMageRaise.Name = "WhiteMageRaise";
+            this.WhiteMageRaise.Size = new System.Drawing.Size(66, 21);
+            this.WhiteMageRaise.TabIndex = 7;
+            this.WhiteMageRaise.Text = "Raise";
+            this.WhiteMageRaise.UseVisualStyleBackColor = true;
+            this.WhiteMageRaise.CheckedChanged += new System.EventHandler(this.WhiteMageRaise_CheckedChanged);
             // 
             // WhiteMageCrossGroup
             // 
             this.WhiteMageCrossGroup.Controls.Add(this.WhiteMageArcanistGroup);
             this.WhiteMageCrossGroup.Controls.Add(this.WhiteMageThaumaturgeGroup);
             this.WhiteMageCrossGroup.ForeColor = System.Drawing.Color.White;
-            this.WhiteMageCrossGroup.Location = new System.Drawing.Point(34, 3);
+            this.WhiteMageCrossGroup.Location = new System.Drawing.Point(45, 4);
+            this.WhiteMageCrossGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.WhiteMageCrossGroup.Name = "WhiteMageCrossGroup";
-            this.WhiteMageCrossGroup.Size = new System.Drawing.Size(205, 136);
+            this.WhiteMageCrossGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.WhiteMageCrossGroup.Size = new System.Drawing.Size(273, 167);
             this.WhiteMageCrossGroup.TabIndex = 10;
             this.WhiteMageCrossGroup.TabStop = false;
             this.WhiteMageCrossGroup.Text = "Cross-Class  ";
@@ -3477,9 +3975,11 @@
             this.WhiteMageArcanistGroup.Controls.Add(this.WhiteMageVirus);
             this.WhiteMageArcanistGroup.Controls.Add(this.WhiteMageEyeForAnEye);
             this.WhiteMageArcanistGroup.ForeColor = System.Drawing.Color.White;
-            this.WhiteMageArcanistGroup.Location = new System.Drawing.Point(6, 19);
+            this.WhiteMageArcanistGroup.Location = new System.Drawing.Point(8, 23);
+            this.WhiteMageArcanistGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.WhiteMageArcanistGroup.Name = "WhiteMageArcanistGroup";
-            this.WhiteMageArcanistGroup.Size = new System.Drawing.Size(104, 111);
+            this.WhiteMageArcanistGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.WhiteMageArcanistGroup.Size = new System.Drawing.Size(139, 137);
             this.WhiteMageArcanistGroup.TabIndex = 30;
             this.WhiteMageArcanistGroup.TabStop = false;
             this.WhiteMageArcanistGroup.Text = "Arcanist";
@@ -3489,9 +3989,10 @@
             this.WhiteMageRuin.AutoSize = true;
             this.WhiteMageRuin.Enabled = false;
             this.WhiteMageRuin.ForeColor = System.Drawing.Color.White;
-            this.WhiteMageRuin.Location = new System.Drawing.Point(6, 19);
+            this.WhiteMageRuin.Location = new System.Drawing.Point(8, 23);
+            this.WhiteMageRuin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.WhiteMageRuin.Name = "WhiteMageRuin";
-            this.WhiteMageRuin.Size = new System.Drawing.Size(48, 17);
+            this.WhiteMageRuin.Size = new System.Drawing.Size(59, 21);
             this.WhiteMageRuin.TabIndex = 10;
             this.WhiteMageRuin.Text = "Ruin";
             this.WhiteMageRuin.UseVisualStyleBackColor = true;
@@ -3502,9 +4003,10 @@
             this.WhiteMagePhysick.AutoSize = true;
             this.WhiteMagePhysick.Enabled = false;
             this.WhiteMagePhysick.ForeColor = System.Drawing.Color.White;
-            this.WhiteMagePhysick.Location = new System.Drawing.Point(6, 42);
+            this.WhiteMagePhysick.Location = new System.Drawing.Point(8, 52);
+            this.WhiteMagePhysick.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.WhiteMagePhysick.Name = "WhiteMagePhysick";
-            this.WhiteMagePhysick.Size = new System.Drawing.Size(63, 17);
+            this.WhiteMagePhysick.Size = new System.Drawing.Size(78, 21);
             this.WhiteMagePhysick.TabIndex = 7;
             this.WhiteMagePhysick.Text = "Physick";
             this.WhiteMagePhysick.UseVisualStyleBackColor = true;
@@ -3515,9 +4017,10 @@
             this.WhiteMageVirus.AutoSize = true;
             this.WhiteMageVirus.Enabled = false;
             this.WhiteMageVirus.ForeColor = System.Drawing.Color.White;
-            this.WhiteMageVirus.Location = new System.Drawing.Point(6, 65);
+            this.WhiteMageVirus.Location = new System.Drawing.Point(8, 80);
+            this.WhiteMageVirus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.WhiteMageVirus.Name = "WhiteMageVirus";
-            this.WhiteMageVirus.Size = new System.Drawing.Size(49, 17);
+            this.WhiteMageVirus.Size = new System.Drawing.Size(62, 21);
             this.WhiteMageVirus.TabIndex = 8;
             this.WhiteMageVirus.Text = "Virus";
             this.WhiteMageVirus.UseVisualStyleBackColor = true;
@@ -3528,9 +4031,10 @@
             this.WhiteMageEyeForAnEye.AutoSize = true;
             this.WhiteMageEyeForAnEye.Enabled = false;
             this.WhiteMageEyeForAnEye.ForeColor = System.Drawing.Color.White;
-            this.WhiteMageEyeForAnEye.Location = new System.Drawing.Point(6, 88);
+            this.WhiteMageEyeForAnEye.Location = new System.Drawing.Point(8, 108);
+            this.WhiteMageEyeForAnEye.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.WhiteMageEyeForAnEye.Name = "WhiteMageEyeForAnEye";
-            this.WhiteMageEyeForAnEye.Size = new System.Drawing.Size(95, 17);
+            this.WhiteMageEyeForAnEye.Size = new System.Drawing.Size(123, 21);
             this.WhiteMageEyeForAnEye.TabIndex = 9;
             this.WhiteMageEyeForAnEye.Text = "Eye for an Eye";
             this.WhiteMageEyeForAnEye.UseVisualStyleBackColor = true;
@@ -3542,9 +4046,11 @@
             this.WhiteMageThaumaturgeGroup.Controls.Add(this.WhiteMageSwiftcast);
             this.WhiteMageThaumaturgeGroup.Controls.Add(this.WhiteMageBlizzardII);
             this.WhiteMageThaumaturgeGroup.ForeColor = System.Drawing.Color.White;
-            this.WhiteMageThaumaturgeGroup.Location = new System.Drawing.Point(116, 19);
+            this.WhiteMageThaumaturgeGroup.Location = new System.Drawing.Point(155, 23);
+            this.WhiteMageThaumaturgeGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.WhiteMageThaumaturgeGroup.Name = "WhiteMageThaumaturgeGroup";
-            this.WhiteMageThaumaturgeGroup.Size = new System.Drawing.Size(83, 88);
+            this.WhiteMageThaumaturgeGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.WhiteMageThaumaturgeGroup.Size = new System.Drawing.Size(111, 108);
             this.WhiteMageThaumaturgeGroup.TabIndex = 29;
             this.WhiteMageThaumaturgeGroup.TabStop = false;
             this.WhiteMageThaumaturgeGroup.Text = "Thaumaturge ";
@@ -3554,9 +4060,10 @@
             this.WhiteMageSurecast.AutoSize = true;
             this.WhiteMageSurecast.Enabled = false;
             this.WhiteMageSurecast.ForeColor = System.Drawing.Color.White;
-            this.WhiteMageSurecast.Location = new System.Drawing.Point(6, 19);
+            this.WhiteMageSurecast.Location = new System.Drawing.Point(8, 23);
+            this.WhiteMageSurecast.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.WhiteMageSurecast.Name = "WhiteMageSurecast";
-            this.WhiteMageSurecast.Size = new System.Drawing.Size(68, 17);
+            this.WhiteMageSurecast.Size = new System.Drawing.Size(86, 21);
             this.WhiteMageSurecast.TabIndex = 35;
             this.WhiteMageSurecast.Text = "Surecast";
             this.WhiteMageSurecast.UseVisualStyleBackColor = true;
@@ -3566,9 +4073,10 @@
             // 
             this.WhiteMageSwiftcast.AutoSize = true;
             this.WhiteMageSwiftcast.ForeColor = System.Drawing.Color.White;
-            this.WhiteMageSwiftcast.Location = new System.Drawing.Point(6, 65);
+            this.WhiteMageSwiftcast.Location = new System.Drawing.Point(8, 80);
+            this.WhiteMageSwiftcast.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.WhiteMageSwiftcast.Name = "WhiteMageSwiftcast";
-            this.WhiteMageSwiftcast.Size = new System.Drawing.Size(69, 17);
+            this.WhiteMageSwiftcast.Size = new System.Drawing.Size(85, 21);
             this.WhiteMageSwiftcast.TabIndex = 36;
             this.WhiteMageSwiftcast.Text = "Swiftcast";
             this.WhiteMageSwiftcast.UseVisualStyleBackColor = true;
@@ -3579,9 +4087,10 @@
             this.WhiteMageBlizzardII.AutoSize = true;
             this.WhiteMageBlizzardII.Enabled = false;
             this.WhiteMageBlizzardII.ForeColor = System.Drawing.Color.White;
-            this.WhiteMageBlizzardII.Location = new System.Drawing.Point(6, 42);
+            this.WhiteMageBlizzardII.Location = new System.Drawing.Point(8, 52);
+            this.WhiteMageBlizzardII.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.WhiteMageBlizzardII.Name = "WhiteMageBlizzardII";
-            this.WhiteMageBlizzardII.Size = new System.Drawing.Size(71, 17);
+            this.WhiteMageBlizzardII.Size = new System.Drawing.Size(90, 21);
             this.WhiteMageBlizzardII.TabIndex = 39;
             this.WhiteMageBlizzardII.Text = "Blizzard II";
             this.WhiteMageBlizzardII.UseVisualStyleBackColor = true;
@@ -3594,7 +4103,7 @@
             this.GladiatorTab.Location = new System.Drawing.Point(114, 4);
             this.GladiatorTab.Margin = new System.Windows.Forms.Padding(0);
             this.GladiatorTab.Name = "GladiatorTab";
-            this.GladiatorTab.Size = new System.Drawing.Size(682, 402);
+            this.GladiatorTab.Size = new System.Drawing.Size(949, 497);
             this.GladiatorTab.TabIndex = 3;
             this.GladiatorTab.Text = "Gladiator";
             // 
@@ -3604,11 +4113,12 @@
             this.GladiatorSubTab.Controls.Add(this.GladiatorSettings);
             this.GladiatorSubTab.Controls.Add(this.PaladinSettings);
             this.GladiatorSubTab.ItemSize = new System.Drawing.Size(35, 110);
-            this.GladiatorSubTab.Location = new System.Drawing.Point(-1, -4);
+            this.GladiatorSubTab.Location = new System.Drawing.Point(-1, -5);
+            this.GladiatorSubTab.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorSubTab.Multiline = true;
             this.GladiatorSubTab.Name = "GladiatorSubTab";
             this.GladiatorSubTab.SelectedIndex = 0;
-            this.GladiatorSubTab.Size = new System.Drawing.Size(685, 410);
+            this.GladiatorSubTab.Size = new System.Drawing.Size(913, 505);
             this.GladiatorSubTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.GladiatorSubTab.TabIndex = 5;
             this.GladiatorSubTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -3621,7 +4131,7 @@
             this.GladiatorSettings.Location = new System.Drawing.Point(114, 4);
             this.GladiatorSettings.Margin = new System.Windows.Forms.Padding(0);
             this.GladiatorSettings.Name = "GladiatorSettings";
-            this.GladiatorSettings.Size = new System.Drawing.Size(567, 402);
+            this.GladiatorSettings.Size = new System.Drawing.Size(795, 497);
             this.GladiatorSettings.TabIndex = 0;
             this.GladiatorSettings.Text = "Gladiator";
             this.GladiatorSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -3630,9 +4140,11 @@
             // 
             this.groupBoxDesign1.Controls.Add(this.GladiatorShieldSwipe);
             this.groupBoxDesign1.ForeColor = System.Drawing.Color.White;
-            this.groupBoxDesign1.Location = new System.Drawing.Point(34, 309);
+            this.groupBoxDesign1.Location = new System.Drawing.Point(45, 380);
+            this.groupBoxDesign1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBoxDesign1.Name = "groupBoxDesign1";
-            this.groupBoxDesign1.Size = new System.Drawing.Size(99, 42);
+            this.groupBoxDesign1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxDesign1.Size = new System.Drawing.Size(132, 52);
             this.groupBoxDesign1.TabIndex = 18;
             this.groupBoxDesign1.TabStop = false;
             this.groupBoxDesign1.Text = "Interrupt";
@@ -3641,9 +4153,10 @@
             // 
             this.GladiatorShieldSwipe.AutoSize = true;
             this.GladiatorShieldSwipe.ForeColor = System.Drawing.Color.White;
-            this.GladiatorShieldSwipe.Location = new System.Drawing.Point(6, 19);
+            this.GladiatorShieldSwipe.Location = new System.Drawing.Point(8, 23);
+            this.GladiatorShieldSwipe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorShieldSwipe.Name = "GladiatorShieldSwipe";
-            this.GladiatorShieldSwipe.Size = new System.Drawing.Size(87, 17);
+            this.GladiatorShieldSwipe.Size = new System.Drawing.Size(110, 21);
             this.GladiatorShieldSwipe.TabIndex = 7;
             this.GladiatorShieldSwipe.Text = "Shield Swipe";
             this.GladiatorShieldSwipe.UseVisualStyleBackColor = true;
@@ -3660,9 +4173,11 @@
             this.GladiatorCrossGroup.Controls.Add(this.GladiatorConjurerGroup);
             this.GladiatorCrossGroup.Controls.Add(this.GladiatorLancerGroup);
             this.GladiatorCrossGroup.ForeColor = System.Drawing.Color.White;
-            this.GladiatorCrossGroup.Location = new System.Drawing.Point(34, 3);
+            this.GladiatorCrossGroup.Location = new System.Drawing.Point(45, 4);
+            this.GladiatorCrossGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorCrossGroup.Name = "GladiatorCrossGroup";
-            this.GladiatorCrossGroup.Size = new System.Drawing.Size(504, 300);
+            this.GladiatorCrossGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GladiatorCrossGroup.Size = new System.Drawing.Size(672, 369);
             this.GladiatorCrossGroup.TabIndex = 10;
             this.GladiatorCrossGroup.TabStop = false;
             this.GladiatorCrossGroup.Text = "Cross-Class  ";
@@ -3675,9 +4190,11 @@
             this.GladiatorArcherGroup.Controls.Add(this.GladiatorHawksEye);
             this.GladiatorArcherGroup.Controls.Add(this.GladiatorQuellingStrikes);
             this.GladiatorArcherGroup.ForeColor = System.Drawing.Color.White;
-            this.GladiatorArcherGroup.Location = new System.Drawing.Point(132, 19);
+            this.GladiatorArcherGroup.Location = new System.Drawing.Point(176, 23);
+            this.GladiatorArcherGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorArcherGroup.Name = "GladiatorArcherGroup";
-            this.GladiatorArcherGroup.Size = new System.Drawing.Size(113, 134);
+            this.GladiatorArcherGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GladiatorArcherGroup.Size = new System.Drawing.Size(151, 165);
             this.GladiatorArcherGroup.TabIndex = 41;
             this.GladiatorArcherGroup.TabStop = false;
             this.GladiatorArcherGroup.Text = "Archer";
@@ -3687,9 +4204,10 @@
             this.GladiatorVenomousBite.AutoSize = true;
             this.GladiatorVenomousBite.Enabled = false;
             this.GladiatorVenomousBite.ForeColor = System.Drawing.Color.White;
-            this.GladiatorVenomousBite.Location = new System.Drawing.Point(6, 65);
+            this.GladiatorVenomousBite.Location = new System.Drawing.Point(8, 80);
+            this.GladiatorVenomousBite.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorVenomousBite.Name = "GladiatorVenomousBite";
-            this.GladiatorVenomousBite.Size = new System.Drawing.Size(97, 17);
+            this.GladiatorVenomousBite.Size = new System.Drawing.Size(125, 21);
             this.GladiatorVenomousBite.TabIndex = 11;
             this.GladiatorVenomousBite.Text = "Venomous Bite";
             this.GladiatorVenomousBite.UseVisualStyleBackColor = true;
@@ -3700,9 +4218,10 @@
             this.GladiatorRagingStrikes.AutoSize = true;
             this.GladiatorRagingStrikes.Enabled = false;
             this.GladiatorRagingStrikes.ForeColor = System.Drawing.Color.White;
-            this.GladiatorRagingStrikes.Location = new System.Drawing.Point(6, 42);
+            this.GladiatorRagingStrikes.Location = new System.Drawing.Point(8, 52);
+            this.GladiatorRagingStrikes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorRagingStrikes.Name = "GladiatorRagingStrikes";
-            this.GladiatorRagingStrikes.Size = new System.Drawing.Size(95, 17);
+            this.GladiatorRagingStrikes.Size = new System.Drawing.Size(122, 21);
             this.GladiatorRagingStrikes.TabIndex = 10;
             this.GladiatorRagingStrikes.Text = "Raging Strikes";
             this.GladiatorRagingStrikes.UseVisualStyleBackColor = true;
@@ -3713,9 +4232,10 @@
             this.GladiatorStraightShot.AutoSize = true;
             this.GladiatorStraightShot.Enabled = false;
             this.GladiatorStraightShot.ForeColor = System.Drawing.Color.White;
-            this.GladiatorStraightShot.Location = new System.Drawing.Point(6, 19);
+            this.GladiatorStraightShot.Location = new System.Drawing.Point(8, 23);
+            this.GladiatorStraightShot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorStraightShot.Name = "GladiatorStraightShot";
-            this.GladiatorStraightShot.Size = new System.Drawing.Size(87, 17);
+            this.GladiatorStraightShot.Size = new System.Drawing.Size(112, 21);
             this.GladiatorStraightShot.TabIndex = 7;
             this.GladiatorStraightShot.Text = "Straight Shot";
             this.GladiatorStraightShot.UseVisualStyleBackColor = true;
@@ -3726,9 +4246,10 @@
             this.GladiatorHawksEye.AutoSize = true;
             this.GladiatorHawksEye.Enabled = false;
             this.GladiatorHawksEye.ForeColor = System.Drawing.Color.White;
-            this.GladiatorHawksEye.Location = new System.Drawing.Point(6, 88);
+            this.GladiatorHawksEye.Location = new System.Drawing.Point(8, 108);
+            this.GladiatorHawksEye.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorHawksEye.Name = "GladiatorHawksEye";
-            this.GladiatorHawksEye.Size = new System.Drawing.Size(82, 17);
+            this.GladiatorHawksEye.Size = new System.Drawing.Size(102, 21);
             this.GladiatorHawksEye.TabIndex = 8;
             this.GladiatorHawksEye.Text = "Hawk\'s Eye";
             this.GladiatorHawksEye.UseVisualStyleBackColor = true;
@@ -3739,9 +4260,10 @@
             this.GladiatorQuellingStrikes.AutoSize = true;
             this.GladiatorQuellingStrikes.Enabled = false;
             this.GladiatorQuellingStrikes.ForeColor = System.Drawing.Color.White;
-            this.GladiatorQuellingStrikes.Location = new System.Drawing.Point(6, 111);
+            this.GladiatorQuellingStrikes.Location = new System.Drawing.Point(8, 137);
+            this.GladiatorQuellingStrikes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorQuellingStrikes.Name = "GladiatorQuellingStrikes";
-            this.GladiatorQuellingStrikes.Size = new System.Drawing.Size(99, 17);
+            this.GladiatorQuellingStrikes.Size = new System.Drawing.Size(129, 21);
             this.GladiatorQuellingStrikes.TabIndex = 9;
             this.GladiatorQuellingStrikes.Text = "Quelling Strikes";
             this.GladiatorQuellingStrikes.UseVisualStyleBackColor = true;
@@ -3752,9 +4274,11 @@
             this.GladiatorThaumaturgeGroup.Controls.Add(this.GladiatorSurecast);
             this.GladiatorThaumaturgeGroup.Controls.Add(this.GladiatorSwiftcast);
             this.GladiatorThaumaturgeGroup.ForeColor = System.Drawing.Color.White;
-            this.GladiatorThaumaturgeGroup.Location = new System.Drawing.Point(390, 160);
+            this.GladiatorThaumaturgeGroup.Location = new System.Drawing.Point(520, 197);
+            this.GladiatorThaumaturgeGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorThaumaturgeGroup.Name = "GladiatorThaumaturgeGroup";
-            this.GladiatorThaumaturgeGroup.Size = new System.Drawing.Size(108, 65);
+            this.GladiatorThaumaturgeGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GladiatorThaumaturgeGroup.Size = new System.Drawing.Size(144, 80);
             this.GladiatorThaumaturgeGroup.TabIndex = 40;
             this.GladiatorThaumaturgeGroup.TabStop = false;
             this.GladiatorThaumaturgeGroup.Text = "Thaumaturge ";
@@ -3764,9 +4288,10 @@
             this.GladiatorSurecast.AutoSize = true;
             this.GladiatorSurecast.Enabled = false;
             this.GladiatorSurecast.ForeColor = System.Drawing.Color.White;
-            this.GladiatorSurecast.Location = new System.Drawing.Point(6, 19);
+            this.GladiatorSurecast.Location = new System.Drawing.Point(8, 23);
+            this.GladiatorSurecast.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorSurecast.Name = "GladiatorSurecast";
-            this.GladiatorSurecast.Size = new System.Drawing.Size(68, 17);
+            this.GladiatorSurecast.Size = new System.Drawing.Size(86, 21);
             this.GladiatorSurecast.TabIndex = 35;
             this.GladiatorSurecast.Text = "Surecast";
             this.GladiatorSurecast.UseVisualStyleBackColor = true;
@@ -3777,9 +4302,10 @@
             this.GladiatorSwiftcast.AutoSize = true;
             this.GladiatorSwiftcast.Enabled = false;
             this.GladiatorSwiftcast.ForeColor = System.Drawing.Color.White;
-            this.GladiatorSwiftcast.Location = new System.Drawing.Point(6, 42);
+            this.GladiatorSwiftcast.Location = new System.Drawing.Point(8, 52);
+            this.GladiatorSwiftcast.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorSwiftcast.Name = "GladiatorSwiftcast";
-            this.GladiatorSwiftcast.Size = new System.Drawing.Size(69, 17);
+            this.GladiatorSwiftcast.Size = new System.Drawing.Size(85, 21);
             this.GladiatorSwiftcast.TabIndex = 39;
             this.GladiatorSwiftcast.Text = "Swiftcast";
             this.GladiatorSwiftcast.UseVisualStyleBackColor = true;
@@ -3791,9 +4317,11 @@
             this.GladiatorRogueGroup.Controls.Add(this.GladiatorGoad);
             this.GladiatorRogueGroup.Controls.Add(this.GladiatorShadeShift);
             this.GladiatorRogueGroup.ForeColor = System.Drawing.Color.White;
-            this.GladiatorRogueGroup.Location = new System.Drawing.Point(261, 160);
+            this.GladiatorRogueGroup.Location = new System.Drawing.Point(348, 197);
+            this.GladiatorRogueGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorRogueGroup.Name = "GladiatorRogueGroup";
-            this.GladiatorRogueGroup.Size = new System.Drawing.Size(113, 88);
+            this.GladiatorRogueGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GladiatorRogueGroup.Size = new System.Drawing.Size(151, 108);
             this.GladiatorRogueGroup.TabIndex = 29;
             this.GladiatorRogueGroup.TabStop = false;
             this.GladiatorRogueGroup.Text = "Rogue";
@@ -3803,9 +4331,10 @@
             this.GladiatorDeathBlossom.AutoSize = true;
             this.GladiatorDeathBlossom.Enabled = false;
             this.GladiatorDeathBlossom.ForeColor = System.Drawing.Color.White;
-            this.GladiatorDeathBlossom.Location = new System.Drawing.Point(6, 65);
+            this.GladiatorDeathBlossom.Location = new System.Drawing.Point(8, 80);
+            this.GladiatorDeathBlossom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorDeathBlossom.Name = "GladiatorDeathBlossom";
-            this.GladiatorDeathBlossom.Size = new System.Drawing.Size(97, 17);
+            this.GladiatorDeathBlossom.Size = new System.Drawing.Size(125, 21);
             this.GladiatorDeathBlossom.TabIndex = 37;
             this.GladiatorDeathBlossom.Text = "Death Blossom";
             this.GladiatorDeathBlossom.UseVisualStyleBackColor = true;
@@ -3816,9 +4345,10 @@
             this.GladiatorGoad.AutoSize = true;
             this.GladiatorGoad.Enabled = false;
             this.GladiatorGoad.ForeColor = System.Drawing.Color.White;
-            this.GladiatorGoad.Location = new System.Drawing.Point(6, 42);
+            this.GladiatorGoad.Location = new System.Drawing.Point(8, 52);
+            this.GladiatorGoad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorGoad.Name = "GladiatorGoad";
-            this.GladiatorGoad.Size = new System.Drawing.Size(52, 17);
+            this.GladiatorGoad.Size = new System.Drawing.Size(65, 21);
             this.GladiatorGoad.TabIndex = 36;
             this.GladiatorGoad.Text = "Goad";
             this.GladiatorGoad.UseVisualStyleBackColor = true;
@@ -3829,9 +4359,10 @@
             this.GladiatorShadeShift.AutoSize = true;
             this.GladiatorShadeShift.Enabled = false;
             this.GladiatorShadeShift.ForeColor = System.Drawing.Color.White;
-            this.GladiatorShadeShift.Location = new System.Drawing.Point(6, 19);
+            this.GladiatorShadeShift.Location = new System.Drawing.Point(8, 23);
+            this.GladiatorShadeShift.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorShadeShift.Name = "GladiatorShadeShift";
-            this.GladiatorShadeShift.Size = new System.Drawing.Size(81, 17);
+            this.GladiatorShadeShift.Size = new System.Drawing.Size(103, 21);
             this.GladiatorShadeShift.TabIndex = 35;
             this.GladiatorShadeShift.Text = "Shade Shift";
             this.GladiatorShadeShift.UseVisualStyleBackColor = true;
@@ -3845,9 +4376,11 @@
             this.GladiatorPugilistGroup.Controls.Add(this.GladiatorInternalRelease);
             this.GladiatorPugilistGroup.Controls.Add(this.GladiatorMantra);
             this.GladiatorPugilistGroup.ForeColor = System.Drawing.Color.White;
-            this.GladiatorPugilistGroup.Location = new System.Drawing.Point(132, 160);
+            this.GladiatorPugilistGroup.Location = new System.Drawing.Point(176, 197);
+            this.GladiatorPugilistGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorPugilistGroup.Name = "GladiatorPugilistGroup";
-            this.GladiatorPugilistGroup.Size = new System.Drawing.Size(113, 134);
+            this.GladiatorPugilistGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GladiatorPugilistGroup.Size = new System.Drawing.Size(151, 165);
             this.GladiatorPugilistGroup.TabIndex = 23;
             this.GladiatorPugilistGroup.TabStop = false;
             this.GladiatorPugilistGroup.Text = "Pugilist ";
@@ -3857,9 +4390,10 @@
             this.GladiatorHaymaker.AutoSize = true;
             this.GladiatorHaymaker.Enabled = false;
             this.GladiatorHaymaker.ForeColor = System.Drawing.Color.White;
-            this.GladiatorHaymaker.Location = new System.Drawing.Point(6, 65);
+            this.GladiatorHaymaker.Location = new System.Drawing.Point(8, 80);
+            this.GladiatorHaymaker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorHaymaker.Name = "GladiatorHaymaker";
-            this.GladiatorHaymaker.Size = new System.Drawing.Size(74, 17);
+            this.GladiatorHaymaker.Size = new System.Drawing.Size(94, 21);
             this.GladiatorHaymaker.TabIndex = 35;
             this.GladiatorHaymaker.Text = "Haymaker";
             this.GladiatorHaymaker.UseVisualStyleBackColor = true;
@@ -3870,9 +4404,10 @@
             this.GladiatorFeatherfoot.AutoSize = true;
             this.GladiatorFeatherfoot.Enabled = false;
             this.GladiatorFeatherfoot.ForeColor = System.Drawing.Color.White;
-            this.GladiatorFeatherfoot.Location = new System.Drawing.Point(6, 19);
+            this.GladiatorFeatherfoot.Location = new System.Drawing.Point(8, 23);
+            this.GladiatorFeatherfoot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorFeatherfoot.Name = "GladiatorFeatherfoot";
-            this.GladiatorFeatherfoot.Size = new System.Drawing.Size(80, 17);
+            this.GladiatorFeatherfoot.Size = new System.Drawing.Size(103, 21);
             this.GladiatorFeatherfoot.TabIndex = 30;
             this.GladiatorFeatherfoot.Text = "Featherfoot";
             this.GladiatorFeatherfoot.UseVisualStyleBackColor = true;
@@ -3883,9 +4418,10 @@
             this.GladiatorSecondWind.AutoSize = true;
             this.GladiatorSecondWind.Enabled = false;
             this.GladiatorSecondWind.ForeColor = System.Drawing.Color.White;
-            this.GladiatorSecondWind.Location = new System.Drawing.Point(6, 42);
+            this.GladiatorSecondWind.Location = new System.Drawing.Point(8, 52);
+            this.GladiatorSecondWind.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorSecondWind.Name = "GladiatorSecondWind";
-            this.GladiatorSecondWind.Size = new System.Drawing.Size(91, 17);
+            this.GladiatorSecondWind.Size = new System.Drawing.Size(114, 21);
             this.GladiatorSecondWind.TabIndex = 31;
             this.GladiatorSecondWind.Text = "Second Wind";
             this.GladiatorSecondWind.UseVisualStyleBackColor = true;
@@ -3896,9 +4432,10 @@
             this.GladiatorInternalRelease.AutoSize = true;
             this.GladiatorInternalRelease.Enabled = false;
             this.GladiatorInternalRelease.ForeColor = System.Drawing.Color.White;
-            this.GladiatorInternalRelease.Location = new System.Drawing.Point(6, 88);
+            this.GladiatorInternalRelease.Location = new System.Drawing.Point(8, 108);
+            this.GladiatorInternalRelease.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorInternalRelease.Name = "GladiatorInternalRelease";
-            this.GladiatorInternalRelease.Size = new System.Drawing.Size(103, 17);
+            this.GladiatorInternalRelease.Size = new System.Drawing.Size(133, 21);
             this.GladiatorInternalRelease.TabIndex = 32;
             this.GladiatorInternalRelease.Text = "Internal Release";
             this.GladiatorInternalRelease.UseVisualStyleBackColor = true;
@@ -3909,9 +4446,10 @@
             this.GladiatorMantra.AutoSize = true;
             this.GladiatorMantra.Enabled = false;
             this.GladiatorMantra.ForeColor = System.Drawing.Color.White;
-            this.GladiatorMantra.Location = new System.Drawing.Point(6, 111);
+            this.GladiatorMantra.Location = new System.Drawing.Point(8, 137);
+            this.GladiatorMantra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorMantra.Name = "GladiatorMantra";
-            this.GladiatorMantra.Size = new System.Drawing.Size(59, 17);
+            this.GladiatorMantra.Size = new System.Drawing.Size(74, 21);
             this.GladiatorMantra.TabIndex = 34;
             this.GladiatorMantra.Text = "Mantra";
             this.GladiatorMantra.UseVisualStyleBackColor = true;
@@ -3925,9 +4463,11 @@
             this.GladiatorMarauderGroup.Controls.Add(this.GladiatorForesight);
             this.GladiatorMarauderGroup.Controls.Add(this.GladiatorMercyStroke);
             this.GladiatorMarauderGroup.ForeColor = System.Drawing.Color.White;
-            this.GladiatorMarauderGroup.Location = new System.Drawing.Point(6, 160);
+            this.GladiatorMarauderGroup.Location = new System.Drawing.Point(8, 197);
+            this.GladiatorMarauderGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorMarauderGroup.Name = "GladiatorMarauderGroup";
-            this.GladiatorMarauderGroup.Size = new System.Drawing.Size(110, 134);
+            this.GladiatorMarauderGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GladiatorMarauderGroup.Size = new System.Drawing.Size(147, 165);
             this.GladiatorMarauderGroup.TabIndex = 23;
             this.GladiatorMarauderGroup.TabStop = false;
             this.GladiatorMarauderGroup.Text = "Marauder ";
@@ -3936,9 +4476,10 @@
             // 
             this.GladiatorFracture.AutoSize = true;
             this.GladiatorFracture.ForeColor = System.Drawing.Color.White;
-            this.GladiatorFracture.Location = new System.Drawing.Point(6, 65);
+            this.GladiatorFracture.Location = new System.Drawing.Point(8, 80);
+            this.GladiatorFracture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorFracture.Name = "GladiatorFracture";
-            this.GladiatorFracture.Size = new System.Drawing.Size(65, 17);
+            this.GladiatorFracture.Size = new System.Drawing.Size(83, 21);
             this.GladiatorFracture.TabIndex = 30;
             this.GladiatorFracture.Text = "Fracture";
             this.GladiatorFracture.UseVisualStyleBackColor = true;
@@ -3949,9 +4490,10 @@
             this.GladiatorSkullSunder.AutoSize = true;
             this.GladiatorSkullSunder.Enabled = false;
             this.GladiatorSkullSunder.ForeColor = System.Drawing.Color.White;
-            this.GladiatorSkullSunder.Location = new System.Drawing.Point(6, 42);
+            this.GladiatorSkullSunder.Location = new System.Drawing.Point(8, 52);
+            this.GladiatorSkullSunder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorSkullSunder.Name = "GladiatorSkullSunder";
-            this.GladiatorSkullSunder.Size = new System.Drawing.Size(86, 17);
+            this.GladiatorSkullSunder.Size = new System.Drawing.Size(110, 21);
             this.GladiatorSkullSunder.TabIndex = 29;
             this.GladiatorSkullSunder.Text = "Skull Sunder";
             this.GladiatorSkullSunder.UseVisualStyleBackColor = true;
@@ -3962,9 +4504,10 @@
             this.GladiatorBloodbath.AutoSize = true;
             this.GladiatorBloodbath.Enabled = false;
             this.GladiatorBloodbath.ForeColor = System.Drawing.Color.White;
-            this.GladiatorBloodbath.Location = new System.Drawing.Point(6, 88);
+            this.GladiatorBloodbath.Location = new System.Drawing.Point(8, 108);
+            this.GladiatorBloodbath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorBloodbath.Name = "GladiatorBloodbath";
-            this.GladiatorBloodbath.Size = new System.Drawing.Size(74, 17);
+            this.GladiatorBloodbath.Size = new System.Drawing.Size(94, 21);
             this.GladiatorBloodbath.TabIndex = 27;
             this.GladiatorBloodbath.Text = "Bloodbath";
             this.GladiatorBloodbath.UseVisualStyleBackColor = true;
@@ -3975,9 +4518,10 @@
             this.GladiatorForesight.AutoSize = true;
             this.GladiatorForesight.Enabled = false;
             this.GladiatorForesight.ForeColor = System.Drawing.Color.White;
-            this.GladiatorForesight.Location = new System.Drawing.Point(6, 19);
+            this.GladiatorForesight.Location = new System.Drawing.Point(8, 23);
+            this.GladiatorForesight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorForesight.Name = "GladiatorForesight";
-            this.GladiatorForesight.Size = new System.Drawing.Size(69, 17);
+            this.GladiatorForesight.Size = new System.Drawing.Size(89, 21);
             this.GladiatorForesight.TabIndex = 26;
             this.GladiatorForesight.Text = "Foresight";
             this.GladiatorForesight.UseVisualStyleBackColor = true;
@@ -3987,9 +4531,10 @@
             // 
             this.GladiatorMercyStroke.AutoSize = true;
             this.GladiatorMercyStroke.ForeColor = System.Drawing.Color.White;
-            this.GladiatorMercyStroke.Location = new System.Drawing.Point(6, 111);
+            this.GladiatorMercyStroke.Location = new System.Drawing.Point(8, 137);
+            this.GladiatorMercyStroke.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorMercyStroke.Name = "GladiatorMercyStroke";
-            this.GladiatorMercyStroke.Size = new System.Drawing.Size(89, 17);
+            this.GladiatorMercyStroke.Size = new System.Drawing.Size(113, 21);
             this.GladiatorMercyStroke.TabIndex = 28;
             this.GladiatorMercyStroke.Text = "Mercy Stroke";
             this.GladiatorMercyStroke.UseVisualStyleBackColor = true;
@@ -4001,9 +4546,11 @@
             this.GladiatorArcanistGroup.Controls.Add(this.GladiatorVirus);
             this.GladiatorArcanistGroup.Controls.Add(this.GladiatorEyeForAnEye);
             this.GladiatorArcanistGroup.ForeColor = System.Drawing.Color.White;
-            this.GladiatorArcanistGroup.Location = new System.Drawing.Point(6, 19);
+            this.GladiatorArcanistGroup.Location = new System.Drawing.Point(8, 23);
+            this.GladiatorArcanistGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorArcanistGroup.Name = "GladiatorArcanistGroup";
-            this.GladiatorArcanistGroup.Size = new System.Drawing.Size(110, 88);
+            this.GladiatorArcanistGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GladiatorArcanistGroup.Size = new System.Drawing.Size(147, 108);
             this.GladiatorArcanistGroup.TabIndex = 22;
             this.GladiatorArcanistGroup.TabStop = false;
             this.GladiatorArcanistGroup.Text = "Arcanist";
@@ -4013,9 +4560,10 @@
             this.GladiatorPhysick.AutoSize = true;
             this.GladiatorPhysick.Enabled = false;
             this.GladiatorPhysick.ForeColor = System.Drawing.Color.White;
-            this.GladiatorPhysick.Location = new System.Drawing.Point(6, 19);
+            this.GladiatorPhysick.Location = new System.Drawing.Point(8, 23);
+            this.GladiatorPhysick.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorPhysick.Name = "GladiatorPhysick";
-            this.GladiatorPhysick.Size = new System.Drawing.Size(63, 17);
+            this.GladiatorPhysick.Size = new System.Drawing.Size(78, 21);
             this.GladiatorPhysick.TabIndex = 7;
             this.GladiatorPhysick.Text = "Physick";
             this.GladiatorPhysick.UseVisualStyleBackColor = true;
@@ -4026,9 +4574,10 @@
             this.GladiatorVirus.AutoSize = true;
             this.GladiatorVirus.Enabled = false;
             this.GladiatorVirus.ForeColor = System.Drawing.Color.White;
-            this.GladiatorVirus.Location = new System.Drawing.Point(6, 42);
+            this.GladiatorVirus.Location = new System.Drawing.Point(8, 52);
+            this.GladiatorVirus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorVirus.Name = "GladiatorVirus";
-            this.GladiatorVirus.Size = new System.Drawing.Size(49, 17);
+            this.GladiatorVirus.Size = new System.Drawing.Size(62, 21);
             this.GladiatorVirus.TabIndex = 8;
             this.GladiatorVirus.Text = "Virus";
             this.GladiatorVirus.UseVisualStyleBackColor = true;
@@ -4039,9 +4588,10 @@
             this.GladiatorEyeForAnEye.AutoSize = true;
             this.GladiatorEyeForAnEye.Enabled = false;
             this.GladiatorEyeForAnEye.ForeColor = System.Drawing.Color.White;
-            this.GladiatorEyeForAnEye.Location = new System.Drawing.Point(6, 65);
+            this.GladiatorEyeForAnEye.Location = new System.Drawing.Point(8, 80);
+            this.GladiatorEyeForAnEye.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorEyeForAnEye.Name = "GladiatorEyeForAnEye";
-            this.GladiatorEyeForAnEye.Size = new System.Drawing.Size(95, 17);
+            this.GladiatorEyeForAnEye.Size = new System.Drawing.Size(123, 21);
             this.GladiatorEyeForAnEye.TabIndex = 9;
             this.GladiatorEyeForAnEye.Text = "Eye for an Eye";
             this.GladiatorEyeForAnEye.UseVisualStyleBackColor = true;
@@ -4054,9 +4604,11 @@
             this.GladiatorConjurerGroup.Controls.Add(this.GladiatorRaise);
             this.GladiatorConjurerGroup.Controls.Add(this.GladiatorStoneskin);
             this.GladiatorConjurerGroup.ForeColor = System.Drawing.Color.White;
-            this.GladiatorConjurerGroup.Location = new System.Drawing.Point(261, 19);
+            this.GladiatorConjurerGroup.Location = new System.Drawing.Point(348, 23);
+            this.GladiatorConjurerGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorConjurerGroup.Name = "GladiatorConjurerGroup";
-            this.GladiatorConjurerGroup.Size = new System.Drawing.Size(113, 111);
+            this.GladiatorConjurerGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GladiatorConjurerGroup.Size = new System.Drawing.Size(151, 137);
             this.GladiatorConjurerGroup.TabIndex = 23;
             this.GladiatorConjurerGroup.TabStop = false;
             this.GladiatorConjurerGroup.Text = "Conjurer ";
@@ -4066,9 +4618,10 @@
             this.GladiatorCure.AutoSize = true;
             this.GladiatorCure.Enabled = false;
             this.GladiatorCure.ForeColor = System.Drawing.Color.White;
-            this.GladiatorCure.Location = new System.Drawing.Point(6, 19);
+            this.GladiatorCure.Location = new System.Drawing.Point(8, 23);
+            this.GladiatorCure.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorCure.Name = "GladiatorCure";
-            this.GladiatorCure.Size = new System.Drawing.Size(48, 17);
+            this.GladiatorCure.Size = new System.Drawing.Size(60, 21);
             this.GladiatorCure.TabIndex = 10;
             this.GladiatorCure.Text = "Cure";
             this.GladiatorCure.UseVisualStyleBackColor = true;
@@ -4078,9 +4631,10 @@
             // 
             this.GladiatorProtect.AutoSize = true;
             this.GladiatorProtect.ForeColor = System.Drawing.Color.White;
-            this.GladiatorProtect.Location = new System.Drawing.Point(6, 42);
+            this.GladiatorProtect.Location = new System.Drawing.Point(8, 52);
+            this.GladiatorProtect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorProtect.Name = "GladiatorProtect";
-            this.GladiatorProtect.Size = new System.Drawing.Size(60, 17);
+            this.GladiatorProtect.Size = new System.Drawing.Size(75, 21);
             this.GladiatorProtect.TabIndex = 12;
             this.GladiatorProtect.Text = "Protect";
             this.GladiatorProtect.UseVisualStyleBackColor = true;
@@ -4091,9 +4645,10 @@
             this.GladiatorRaise.AutoSize = true;
             this.GladiatorRaise.Enabled = false;
             this.GladiatorRaise.ForeColor = System.Drawing.Color.White;
-            this.GladiatorRaise.Location = new System.Drawing.Point(6, 65);
+            this.GladiatorRaise.Location = new System.Drawing.Point(8, 80);
+            this.GladiatorRaise.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorRaise.Name = "GladiatorRaise";
-            this.GladiatorRaise.Size = new System.Drawing.Size(53, 17);
+            this.GladiatorRaise.Size = new System.Drawing.Size(66, 21);
             this.GladiatorRaise.TabIndex = 13;
             this.GladiatorRaise.Text = "Raise";
             this.GladiatorRaise.UseVisualStyleBackColor = true;
@@ -4103,9 +4658,10 @@
             // 
             this.GladiatorStoneskin.AutoSize = true;
             this.GladiatorStoneskin.ForeColor = System.Drawing.Color.White;
-            this.GladiatorStoneskin.Location = new System.Drawing.Point(6, 88);
+            this.GladiatorStoneskin.Location = new System.Drawing.Point(8, 108);
+            this.GladiatorStoneskin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorStoneskin.Name = "GladiatorStoneskin";
-            this.GladiatorStoneskin.Size = new System.Drawing.Size(73, 17);
+            this.GladiatorStoneskin.Size = new System.Drawing.Size(92, 21);
             this.GladiatorStoneskin.TabIndex = 14;
             this.GladiatorStoneskin.Text = "Stoneskin";
             this.GladiatorStoneskin.UseVisualStyleBackColor = true;
@@ -4118,9 +4674,11 @@
             this.GladiatorLancerGroup.Controls.Add(this.GladiatorBloodForBlood);
             this.GladiatorLancerGroup.Controls.Add(this.GladiatorFeint);
             this.GladiatorLancerGroup.ForeColor = System.Drawing.Color.White;
-            this.GladiatorLancerGroup.Location = new System.Drawing.Point(390, 19);
+            this.GladiatorLancerGroup.Location = new System.Drawing.Point(520, 23);
+            this.GladiatorLancerGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorLancerGroup.Name = "GladiatorLancerGroup";
-            this.GladiatorLancerGroup.Size = new System.Drawing.Size(108, 111);
+            this.GladiatorLancerGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GladiatorLancerGroup.Size = new System.Drawing.Size(144, 137);
             this.GladiatorLancerGroup.TabIndex = 10;
             this.GladiatorLancerGroup.TabStop = false;
             this.GladiatorLancerGroup.Text = "Lancer";
@@ -4130,9 +4688,10 @@
             this.GladiatorKeenFlurry.AutoSize = true;
             this.GladiatorKeenFlurry.Enabled = false;
             this.GladiatorKeenFlurry.ForeColor = System.Drawing.Color.White;
-            this.GladiatorKeenFlurry.Location = new System.Drawing.Point(6, 42);
+            this.GladiatorKeenFlurry.Location = new System.Drawing.Point(8, 52);
+            this.GladiatorKeenFlurry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorKeenFlurry.Name = "GladiatorKeenFlurry";
-            this.GladiatorKeenFlurry.Size = new System.Drawing.Size(79, 17);
+            this.GladiatorKeenFlurry.Size = new System.Drawing.Size(103, 21);
             this.GladiatorKeenFlurry.TabIndex = 19;
             this.GladiatorKeenFlurry.Text = "Keen Flurry";
             this.GladiatorKeenFlurry.UseVisualStyleBackColor = true;
@@ -4143,9 +4702,10 @@
             this.GladiatorInvigorate.AutoSize = true;
             this.GladiatorInvigorate.Enabled = false;
             this.GladiatorInvigorate.ForeColor = System.Drawing.Color.White;
-            this.GladiatorInvigorate.Location = new System.Drawing.Point(6, 65);
+            this.GladiatorInvigorate.Location = new System.Drawing.Point(8, 80);
+            this.GladiatorInvigorate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorInvigorate.Name = "GladiatorInvigorate";
-            this.GladiatorInvigorate.Size = new System.Drawing.Size(73, 17);
+            this.GladiatorInvigorate.Size = new System.Drawing.Size(92, 21);
             this.GladiatorInvigorate.TabIndex = 20;
             this.GladiatorInvigorate.Text = "Invigorate";
             this.GladiatorInvigorate.UseVisualStyleBackColor = true;
@@ -4156,9 +4716,10 @@
             this.GladiatorBloodForBlood.AutoSize = true;
             this.GladiatorBloodForBlood.Enabled = false;
             this.GladiatorBloodForBlood.ForeColor = System.Drawing.Color.White;
-            this.GladiatorBloodForBlood.Location = new System.Drawing.Point(6, 88);
+            this.GladiatorBloodForBlood.Location = new System.Drawing.Point(8, 108);
+            this.GladiatorBloodForBlood.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorBloodForBlood.Name = "GladiatorBloodForBlood";
-            this.GladiatorBloodForBlood.Size = new System.Drawing.Size(98, 17);
+            this.GladiatorBloodForBlood.Size = new System.Drawing.Size(127, 21);
             this.GladiatorBloodForBlood.TabIndex = 21;
             this.GladiatorBloodForBlood.Text = "Blood for Blood";
             this.GladiatorBloodForBlood.UseVisualStyleBackColor = true;
@@ -4169,9 +4730,10 @@
             this.GladiatorFeint.AutoSize = true;
             this.GladiatorFeint.Enabled = false;
             this.GladiatorFeint.ForeColor = System.Drawing.Color.White;
-            this.GladiatorFeint.Location = new System.Drawing.Point(6, 19);
+            this.GladiatorFeint.Location = new System.Drawing.Point(8, 23);
+            this.GladiatorFeint.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GladiatorFeint.Name = "GladiatorFeint";
-            this.GladiatorFeint.Size = new System.Drawing.Size(49, 17);
+            this.GladiatorFeint.Size = new System.Drawing.Size(61, 21);
             this.GladiatorFeint.TabIndex = 30;
             this.GladiatorFeint.Text = "Feint";
             this.GladiatorFeint.UseVisualStyleBackColor = true;
@@ -4186,7 +4748,7 @@
             this.PaladinSettings.Location = new System.Drawing.Point(114, 4);
             this.PaladinSettings.Margin = new System.Windows.Forms.Padding(0);
             this.PaladinSettings.Name = "PaladinSettings";
-            this.PaladinSettings.Size = new System.Drawing.Size(567, 402);
+            this.PaladinSettings.Size = new System.Drawing.Size(795, 497);
             this.PaladinSettings.TabIndex = 1;
             this.PaladinSettings.Text = "Paladin";
             this.PaladinSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -4196,9 +4758,11 @@
             this.PaladinAuraGroup.Controls.Add(this.PaladinSwordOath);
             this.PaladinAuraGroup.Controls.Add(this.PaladinShieldOath);
             this.PaladinAuraGroup.ForeColor = System.Drawing.Color.White;
-            this.PaladinAuraGroup.Location = new System.Drawing.Point(143, 168);
+            this.PaladinAuraGroup.Location = new System.Drawing.Point(191, 207);
+            this.PaladinAuraGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PaladinAuraGroup.Name = "PaladinAuraGroup";
-            this.PaladinAuraGroup.Size = new System.Drawing.Size(93, 65);
+            this.PaladinAuraGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PaladinAuraGroup.Size = new System.Drawing.Size(124, 80);
             this.PaladinAuraGroup.TabIndex = 44;
             this.PaladinAuraGroup.TabStop = false;
             this.PaladinAuraGroup.Text = "Aura";
@@ -4207,9 +4771,10 @@
             // 
             this.PaladinSwordOath.AutoSize = true;
             this.PaladinSwordOath.ForeColor = System.Drawing.Color.White;
-            this.PaladinSwordOath.Location = new System.Drawing.Point(6, 19);
+            this.PaladinSwordOath.Location = new System.Drawing.Point(8, 23);
+            this.PaladinSwordOath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PaladinSwordOath.Name = "PaladinSwordOath";
-            this.PaladinSwordOath.Size = new System.Drawing.Size(81, 17);
+            this.PaladinSwordOath.Size = new System.Drawing.Size(103, 21);
             this.PaladinSwordOath.TabIndex = 24;
             this.PaladinSwordOath.TabStop = true;
             this.PaladinSwordOath.Text = "Sword Oath";
@@ -4220,9 +4785,10 @@
             // 
             this.PaladinShieldOath.AutoSize = true;
             this.PaladinShieldOath.ForeColor = System.Drawing.Color.White;
-            this.PaladinShieldOath.Location = new System.Drawing.Point(6, 42);
+            this.PaladinShieldOath.Location = new System.Drawing.Point(8, 52);
+            this.PaladinShieldOath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PaladinShieldOath.Name = "PaladinShieldOath";
-            this.PaladinShieldOath.Size = new System.Drawing.Size(80, 17);
+            this.PaladinShieldOath.Size = new System.Drawing.Size(103, 21);
             this.PaladinShieldOath.TabIndex = 25;
             this.PaladinShieldOath.TabStop = true;
             this.PaladinShieldOath.Text = "Shield Oath";
@@ -4234,9 +4800,11 @@
             this.PaladinInterruptGroup.Controls.Add(this.PaladinShieldSwipe);
             this.PaladinInterruptGroup.Controls.Add(this.PaladinSpiritsWithin);
             this.PaladinInterruptGroup.ForeColor = System.Drawing.Color.White;
-            this.PaladinInterruptGroup.Location = new System.Drawing.Point(34, 168);
+            this.PaladinInterruptGroup.Location = new System.Drawing.Point(45, 207);
+            this.PaladinInterruptGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PaladinInterruptGroup.Name = "PaladinInterruptGroup";
-            this.PaladinInterruptGroup.Size = new System.Drawing.Size(99, 65);
+            this.PaladinInterruptGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PaladinInterruptGroup.Size = new System.Drawing.Size(132, 80);
             this.PaladinInterruptGroup.TabIndex = 17;
             this.PaladinInterruptGroup.TabStop = false;
             this.PaladinInterruptGroup.Text = "Interrupt";
@@ -4245,9 +4813,10 @@
             // 
             this.PaladinShieldSwipe.AutoSize = true;
             this.PaladinShieldSwipe.ForeColor = System.Drawing.Color.White;
-            this.PaladinShieldSwipe.Location = new System.Drawing.Point(6, 19);
+            this.PaladinShieldSwipe.Location = new System.Drawing.Point(8, 23);
+            this.PaladinShieldSwipe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PaladinShieldSwipe.Name = "PaladinShieldSwipe";
-            this.PaladinShieldSwipe.Size = new System.Drawing.Size(87, 17);
+            this.PaladinShieldSwipe.Size = new System.Drawing.Size(110, 21);
             this.PaladinShieldSwipe.TabIndex = 8;
             this.PaladinShieldSwipe.Text = "Shield Swipe";
             this.PaladinShieldSwipe.UseVisualStyleBackColor = true;
@@ -4257,9 +4826,10 @@
             // 
             this.PaladinSpiritsWithin.AutoSize = true;
             this.PaladinSpiritsWithin.ForeColor = System.Drawing.Color.White;
-            this.PaladinSpiritsWithin.Location = new System.Drawing.Point(6, 42);
+            this.PaladinSpiritsWithin.Location = new System.Drawing.Point(8, 52);
+            this.PaladinSpiritsWithin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PaladinSpiritsWithin.Name = "PaladinSpiritsWithin";
-            this.PaladinSpiritsWithin.Size = new System.Drawing.Size(87, 17);
+            this.PaladinSpiritsWithin.Size = new System.Drawing.Size(112, 21);
             this.PaladinSpiritsWithin.TabIndex = 7;
             this.PaladinSpiritsWithin.Text = "Spirits Within";
             this.PaladinSpiritsWithin.UseVisualStyleBackColor = true;
@@ -4270,9 +4840,11 @@
             this.PaladinCrossGroup.Controls.Add(this.PaladinMarauderGroup);
             this.PaladinCrossGroup.Controls.Add(this.PaladinConjurerGroup);
             this.PaladinCrossGroup.ForeColor = System.Drawing.Color.White;
-            this.PaladinCrossGroup.Location = new System.Drawing.Point(34, 3);
+            this.PaladinCrossGroup.Location = new System.Drawing.Point(45, 4);
+            this.PaladinCrossGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PaladinCrossGroup.Name = "PaladinCrossGroup";
-            this.PaladinCrossGroup.Size = new System.Drawing.Size(202, 159);
+            this.PaladinCrossGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PaladinCrossGroup.Size = new System.Drawing.Size(269, 196);
             this.PaladinCrossGroup.TabIndex = 11;
             this.PaladinCrossGroup.TabStop = false;
             this.PaladinCrossGroup.Text = "Cross-Class  ";
@@ -4285,9 +4857,11 @@
             this.PaladinMarauderGroup.Controls.Add(this.PaladinForesight);
             this.PaladinMarauderGroup.Controls.Add(this.PaladinMercyStroke);
             this.PaladinMarauderGroup.ForeColor = System.Drawing.Color.White;
-            this.PaladinMarauderGroup.Location = new System.Drawing.Point(95, 19);
+            this.PaladinMarauderGroup.Location = new System.Drawing.Point(127, 23);
+            this.PaladinMarauderGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PaladinMarauderGroup.Name = "PaladinMarauderGroup";
-            this.PaladinMarauderGroup.Size = new System.Drawing.Size(101, 134);
+            this.PaladinMarauderGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PaladinMarauderGroup.Size = new System.Drawing.Size(135, 165);
             this.PaladinMarauderGroup.TabIndex = 23;
             this.PaladinMarauderGroup.TabStop = false;
             this.PaladinMarauderGroup.Text = "Marauder ";
@@ -4296,9 +4870,10 @@
             // 
             this.PaladinFracture.AutoSize = true;
             this.PaladinFracture.ForeColor = System.Drawing.Color.White;
-            this.PaladinFracture.Location = new System.Drawing.Point(6, 65);
+            this.PaladinFracture.Location = new System.Drawing.Point(8, 80);
+            this.PaladinFracture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PaladinFracture.Name = "PaladinFracture";
-            this.PaladinFracture.Size = new System.Drawing.Size(65, 17);
+            this.PaladinFracture.Size = new System.Drawing.Size(83, 21);
             this.PaladinFracture.TabIndex = 30;
             this.PaladinFracture.Text = "Fracture";
             this.PaladinFracture.UseVisualStyleBackColor = true;
@@ -4309,9 +4884,10 @@
             this.PaladinSkullSunder.AutoSize = true;
             this.PaladinSkullSunder.Enabled = false;
             this.PaladinSkullSunder.ForeColor = System.Drawing.Color.White;
-            this.PaladinSkullSunder.Location = new System.Drawing.Point(6, 42);
+            this.PaladinSkullSunder.Location = new System.Drawing.Point(8, 52);
+            this.PaladinSkullSunder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PaladinSkullSunder.Name = "PaladinSkullSunder";
-            this.PaladinSkullSunder.Size = new System.Drawing.Size(86, 17);
+            this.PaladinSkullSunder.Size = new System.Drawing.Size(110, 21);
             this.PaladinSkullSunder.TabIndex = 29;
             this.PaladinSkullSunder.Text = "Skull Sunder";
             this.PaladinSkullSunder.UseVisualStyleBackColor = true;
@@ -4322,9 +4898,10 @@
             this.PaladinBloodbath.AutoSize = true;
             this.PaladinBloodbath.Enabled = false;
             this.PaladinBloodbath.ForeColor = System.Drawing.Color.White;
-            this.PaladinBloodbath.Location = new System.Drawing.Point(6, 88);
+            this.PaladinBloodbath.Location = new System.Drawing.Point(8, 108);
+            this.PaladinBloodbath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PaladinBloodbath.Name = "PaladinBloodbath";
-            this.PaladinBloodbath.Size = new System.Drawing.Size(74, 17);
+            this.PaladinBloodbath.Size = new System.Drawing.Size(94, 21);
             this.PaladinBloodbath.TabIndex = 27;
             this.PaladinBloodbath.Text = "Bloodbath";
             this.PaladinBloodbath.UseVisualStyleBackColor = true;
@@ -4335,9 +4912,10 @@
             this.PaladinForesight.AutoSize = true;
             this.PaladinForesight.Enabled = false;
             this.PaladinForesight.ForeColor = System.Drawing.Color.White;
-            this.PaladinForesight.Location = new System.Drawing.Point(6, 19);
+            this.PaladinForesight.Location = new System.Drawing.Point(8, 23);
+            this.PaladinForesight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PaladinForesight.Name = "PaladinForesight";
-            this.PaladinForesight.Size = new System.Drawing.Size(69, 17);
+            this.PaladinForesight.Size = new System.Drawing.Size(89, 21);
             this.PaladinForesight.TabIndex = 26;
             this.PaladinForesight.Text = "Foresight";
             this.PaladinForesight.UseVisualStyleBackColor = true;
@@ -4347,9 +4925,10 @@
             // 
             this.PaladinMercyStroke.AutoSize = true;
             this.PaladinMercyStroke.ForeColor = System.Drawing.Color.White;
-            this.PaladinMercyStroke.Location = new System.Drawing.Point(6, 111);
+            this.PaladinMercyStroke.Location = new System.Drawing.Point(8, 137);
+            this.PaladinMercyStroke.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PaladinMercyStroke.Name = "PaladinMercyStroke";
-            this.PaladinMercyStroke.Size = new System.Drawing.Size(89, 17);
+            this.PaladinMercyStroke.Size = new System.Drawing.Size(113, 21);
             this.PaladinMercyStroke.TabIndex = 28;
             this.PaladinMercyStroke.Text = "Mercy Stroke";
             this.PaladinMercyStroke.UseVisualStyleBackColor = true;
@@ -4362,9 +4941,11 @@
             this.PaladinConjurerGroup.Controls.Add(this.PaladinRaise);
             this.PaladinConjurerGroup.Controls.Add(this.PaladinStoneskin);
             this.PaladinConjurerGroup.ForeColor = System.Drawing.Color.White;
-            this.PaladinConjurerGroup.Location = new System.Drawing.Point(6, 19);
+            this.PaladinConjurerGroup.Location = new System.Drawing.Point(8, 23);
+            this.PaladinConjurerGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PaladinConjurerGroup.Name = "PaladinConjurerGroup";
-            this.PaladinConjurerGroup.Size = new System.Drawing.Size(83, 111);
+            this.PaladinConjurerGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PaladinConjurerGroup.Size = new System.Drawing.Size(111, 137);
             this.PaladinConjurerGroup.TabIndex = 23;
             this.PaladinConjurerGroup.TabStop = false;
             this.PaladinConjurerGroup.Text = "Conjurer ";
@@ -4374,9 +4955,10 @@
             this.PaladinCure.AutoSize = true;
             this.PaladinCure.Enabled = false;
             this.PaladinCure.ForeColor = System.Drawing.Color.White;
-            this.PaladinCure.Location = new System.Drawing.Point(6, 19);
+            this.PaladinCure.Location = new System.Drawing.Point(8, 23);
+            this.PaladinCure.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PaladinCure.Name = "PaladinCure";
-            this.PaladinCure.Size = new System.Drawing.Size(48, 17);
+            this.PaladinCure.Size = new System.Drawing.Size(60, 21);
             this.PaladinCure.TabIndex = 10;
             this.PaladinCure.Text = "Cure";
             this.PaladinCure.UseVisualStyleBackColor = true;
@@ -4386,9 +4968,10 @@
             // 
             this.PaladinProtect.AutoSize = true;
             this.PaladinProtect.ForeColor = System.Drawing.Color.White;
-            this.PaladinProtect.Location = new System.Drawing.Point(6, 42);
+            this.PaladinProtect.Location = new System.Drawing.Point(8, 52);
+            this.PaladinProtect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PaladinProtect.Name = "PaladinProtect";
-            this.PaladinProtect.Size = new System.Drawing.Size(60, 17);
+            this.PaladinProtect.Size = new System.Drawing.Size(75, 21);
             this.PaladinProtect.TabIndex = 12;
             this.PaladinProtect.Text = "Protect";
             this.PaladinProtect.UseVisualStyleBackColor = true;
@@ -4399,9 +4982,10 @@
             this.PaladinRaise.AutoSize = true;
             this.PaladinRaise.Enabled = false;
             this.PaladinRaise.ForeColor = System.Drawing.Color.White;
-            this.PaladinRaise.Location = new System.Drawing.Point(6, 65);
+            this.PaladinRaise.Location = new System.Drawing.Point(8, 80);
+            this.PaladinRaise.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PaladinRaise.Name = "PaladinRaise";
-            this.PaladinRaise.Size = new System.Drawing.Size(53, 17);
+            this.PaladinRaise.Size = new System.Drawing.Size(66, 21);
             this.PaladinRaise.TabIndex = 13;
             this.PaladinRaise.Text = "Raise";
             this.PaladinRaise.UseVisualStyleBackColor = true;
@@ -4411,9 +4995,10 @@
             // 
             this.PaladinStoneskin.AutoSize = true;
             this.PaladinStoneskin.ForeColor = System.Drawing.Color.White;
-            this.PaladinStoneskin.Location = new System.Drawing.Point(6, 88);
+            this.PaladinStoneskin.Location = new System.Drawing.Point(8, 108);
+            this.PaladinStoneskin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PaladinStoneskin.Name = "PaladinStoneskin";
-            this.PaladinStoneskin.Size = new System.Drawing.Size(73, 17);
+            this.PaladinStoneskin.Size = new System.Drawing.Size(92, 21);
             this.PaladinStoneskin.TabIndex = 14;
             this.PaladinStoneskin.Text = "Stoneskin";
             this.PaladinStoneskin.UseVisualStyleBackColor = true;
@@ -4426,7 +5011,7 @@
             this.LancerTab.Location = new System.Drawing.Point(114, 4);
             this.LancerTab.Margin = new System.Windows.Forms.Padding(0);
             this.LancerTab.Name = "LancerTab";
-            this.LancerTab.Size = new System.Drawing.Size(682, 402);
+            this.LancerTab.Size = new System.Drawing.Size(949, 497);
             this.LancerTab.TabIndex = 4;
             this.LancerTab.Text = "Lancer";
             // 
@@ -4436,11 +5021,12 @@
             this.LancerSubTab.Controls.Add(this.LancerSettings);
             this.LancerSubTab.Controls.Add(this.DragoonSettings);
             this.LancerSubTab.ItemSize = new System.Drawing.Size(35, 110);
-            this.LancerSubTab.Location = new System.Drawing.Point(-1, -4);
+            this.LancerSubTab.Location = new System.Drawing.Point(-1, -5);
+            this.LancerSubTab.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerSubTab.Multiline = true;
             this.LancerSubTab.Name = "LancerSubTab";
             this.LancerSubTab.SelectedIndex = 0;
-            this.LancerSubTab.Size = new System.Drawing.Size(685, 410);
+            this.LancerSubTab.Size = new System.Drawing.Size(913, 505);
             this.LancerSubTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.LancerSubTab.TabIndex = 5;
             this.LancerSubTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -4453,7 +5039,7 @@
             this.LancerSettings.Location = new System.Drawing.Point(114, 4);
             this.LancerSettings.Margin = new System.Windows.Forms.Padding(0);
             this.LancerSettings.Name = "LancerSettings";
-            this.LancerSettings.Size = new System.Drawing.Size(567, 402);
+            this.LancerSettings.Size = new System.Drawing.Size(795, 497);
             this.LancerSettings.TabIndex = 0;
             this.LancerSettings.Text = "Lancer";
             this.LancerSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -4462,9 +5048,11 @@
             // 
             this.LancerInterruptGroup.Controls.Add(this.LancerLegSweep);
             this.LancerInterruptGroup.ForeColor = System.Drawing.Color.White;
-            this.LancerInterruptGroup.Location = new System.Drawing.Point(34, 309);
+            this.LancerInterruptGroup.Location = new System.Drawing.Point(45, 380);
+            this.LancerInterruptGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerInterruptGroup.Name = "LancerInterruptGroup";
-            this.LancerInterruptGroup.Size = new System.Drawing.Size(92, 42);
+            this.LancerInterruptGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LancerInterruptGroup.Size = new System.Drawing.Size(123, 52);
             this.LancerInterruptGroup.TabIndex = 19;
             this.LancerInterruptGroup.TabStop = false;
             this.LancerInterruptGroup.Text = "Interrupt";
@@ -4473,9 +5061,10 @@
             // 
             this.LancerLegSweep.AutoSize = true;
             this.LancerLegSweep.ForeColor = System.Drawing.Color.White;
-            this.LancerLegSweep.Location = new System.Drawing.Point(6, 19);
+            this.LancerLegSweep.Location = new System.Drawing.Point(8, 23);
+            this.LancerLegSweep.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerLegSweep.Name = "LancerLegSweep";
-            this.LancerLegSweep.Size = new System.Drawing.Size(80, 17);
+            this.LancerLegSweep.Size = new System.Drawing.Size(100, 21);
             this.LancerLegSweep.TabIndex = 7;
             this.LancerLegSweep.Text = "Leg Sweep";
             this.LancerLegSweep.UseVisualStyleBackColor = true;
@@ -4492,9 +5081,11 @@
             this.LancerCrossGroup.Controls.Add(this.LancerArcanistGroup);
             this.LancerCrossGroup.Controls.Add(this.LancerConjurerGroup);
             this.LancerCrossGroup.ForeColor = System.Drawing.Color.White;
-            this.LancerCrossGroup.Location = new System.Drawing.Point(34, 3);
+            this.LancerCrossGroup.Location = new System.Drawing.Point(45, 4);
+            this.LancerCrossGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerCrossGroup.Name = "LancerCrossGroup";
-            this.LancerCrossGroup.Size = new System.Drawing.Size(504, 300);
+            this.LancerCrossGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LancerCrossGroup.Size = new System.Drawing.Size(672, 369);
             this.LancerCrossGroup.TabIndex = 11;
             this.LancerCrossGroup.TabStop = false;
             this.LancerCrossGroup.Text = "Cross-Class  ";
@@ -4507,9 +5098,11 @@
             this.LancerGladiatorGroup.Controls.Add(this.LancerAwareness);
             this.LancerGladiatorGroup.Controls.Add(this.LancerProvoke);
             this.LancerGladiatorGroup.ForeColor = System.Drawing.Color.White;
-            this.LancerGladiatorGroup.Location = new System.Drawing.Point(390, 19);
+            this.LancerGladiatorGroup.Location = new System.Drawing.Point(520, 23);
+            this.LancerGladiatorGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerGladiatorGroup.Name = "LancerGladiatorGroup";
-            this.LancerGladiatorGroup.Size = new System.Drawing.Size(108, 134);
+            this.LancerGladiatorGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LancerGladiatorGroup.Size = new System.Drawing.Size(144, 165);
             this.LancerGladiatorGroup.TabIndex = 42;
             this.LancerGladiatorGroup.TabStop = false;
             this.LancerGladiatorGroup.Text = "Gladiator ";
@@ -4519,9 +5112,10 @@
             this.LancerFlash.AutoSize = true;
             this.LancerFlash.Enabled = false;
             this.LancerFlash.ForeColor = System.Drawing.Color.White;
-            this.LancerFlash.Location = new System.Drawing.Point(6, 42);
+            this.LancerFlash.Location = new System.Drawing.Point(8, 52);
+            this.LancerFlash.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerFlash.Name = "LancerFlash";
-            this.LancerFlash.Size = new System.Drawing.Size(51, 17);
+            this.LancerFlash.Size = new System.Drawing.Size(64, 21);
             this.LancerFlash.TabIndex = 15;
             this.LancerFlash.Text = "Flash";
             this.LancerFlash.UseVisualStyleBackColor = true;
@@ -4532,9 +5126,10 @@
             this.LancerConvalescence.AutoSize = true;
             this.LancerConvalescence.Enabled = false;
             this.LancerConvalescence.ForeColor = System.Drawing.Color.White;
-            this.LancerConvalescence.Location = new System.Drawing.Point(6, 65);
+            this.LancerConvalescence.Location = new System.Drawing.Point(8, 80);
+            this.LancerConvalescence.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerConvalescence.Name = "LancerConvalescence";
-            this.LancerConvalescence.Size = new System.Drawing.Size(100, 17);
+            this.LancerConvalescence.Size = new System.Drawing.Size(126, 21);
             this.LancerConvalescence.TabIndex = 16;
             this.LancerConvalescence.Text = "Convalescence";
             this.LancerConvalescence.UseVisualStyleBackColor = true;
@@ -4545,9 +5140,10 @@
             this.LancerSavageBlade.AutoSize = true;
             this.LancerSavageBlade.Enabled = false;
             this.LancerSavageBlade.ForeColor = System.Drawing.Color.White;
-            this.LancerSavageBlade.Location = new System.Drawing.Point(6, 19);
+            this.LancerSavageBlade.Location = new System.Drawing.Point(8, 23);
+            this.LancerSavageBlade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerSavageBlade.Name = "LancerSavageBlade";
-            this.LancerSavageBlade.Size = new System.Drawing.Size(93, 17);
+            this.LancerSavageBlade.Size = new System.Drawing.Size(118, 21);
             this.LancerSavageBlade.TabIndex = 30;
             this.LancerSavageBlade.Text = "Savage Blade";
             this.LancerSavageBlade.UseVisualStyleBackColor = true;
@@ -4558,9 +5154,10 @@
             this.LancerAwareness.AutoSize = true;
             this.LancerAwareness.Enabled = false;
             this.LancerAwareness.ForeColor = System.Drawing.Color.White;
-            this.LancerAwareness.Location = new System.Drawing.Point(6, 111);
+            this.LancerAwareness.Location = new System.Drawing.Point(8, 137);
+            this.LancerAwareness.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerAwareness.Name = "LancerAwareness";
-            this.LancerAwareness.Size = new System.Drawing.Size(78, 17);
+            this.LancerAwareness.Size = new System.Drawing.Size(99, 21);
             this.LancerAwareness.TabIndex = 18;
             this.LancerAwareness.Text = "Awareness";
             this.LancerAwareness.UseVisualStyleBackColor = true;
@@ -4571,9 +5168,10 @@
             this.LancerProvoke.AutoSize = true;
             this.LancerProvoke.Enabled = false;
             this.LancerProvoke.ForeColor = System.Drawing.Color.White;
-            this.LancerProvoke.Location = new System.Drawing.Point(6, 88);
+            this.LancerProvoke.Location = new System.Drawing.Point(8, 108);
+            this.LancerProvoke.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerProvoke.Name = "LancerProvoke";
-            this.LancerProvoke.Size = new System.Drawing.Size(66, 17);
+            this.LancerProvoke.Size = new System.Drawing.Size(82, 21);
             this.LancerProvoke.TabIndex = 17;
             this.LancerProvoke.Text = "Provoke";
             this.LancerProvoke.UseVisualStyleBackColor = true;
@@ -4587,9 +5185,11 @@
             this.LancerArcherGroup.Controls.Add(this.LancerHawksEye);
             this.LancerArcherGroup.Controls.Add(this.LancerQuellingStrikes);
             this.LancerArcherGroup.ForeColor = System.Drawing.Color.White;
-            this.LancerArcherGroup.Location = new System.Drawing.Point(132, 19);
+            this.LancerArcherGroup.Location = new System.Drawing.Point(176, 23);
+            this.LancerArcherGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerArcherGroup.Name = "LancerArcherGroup";
-            this.LancerArcherGroup.Size = new System.Drawing.Size(113, 134);
+            this.LancerArcherGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LancerArcherGroup.Size = new System.Drawing.Size(151, 165);
             this.LancerArcherGroup.TabIndex = 41;
             this.LancerArcherGroup.TabStop = false;
             this.LancerArcherGroup.Text = "Archer";
@@ -4599,9 +5199,10 @@
             this.LancerVenomousBite.AutoSize = true;
             this.LancerVenomousBite.Enabled = false;
             this.LancerVenomousBite.ForeColor = System.Drawing.Color.White;
-            this.LancerVenomousBite.Location = new System.Drawing.Point(6, 65);
+            this.LancerVenomousBite.Location = new System.Drawing.Point(8, 80);
+            this.LancerVenomousBite.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerVenomousBite.Name = "LancerVenomousBite";
-            this.LancerVenomousBite.Size = new System.Drawing.Size(97, 17);
+            this.LancerVenomousBite.Size = new System.Drawing.Size(125, 21);
             this.LancerVenomousBite.TabIndex = 11;
             this.LancerVenomousBite.Text = "Venomous Bite";
             this.LancerVenomousBite.UseVisualStyleBackColor = true;
@@ -4612,9 +5213,10 @@
             this.LancerRagingStrikes.AutoSize = true;
             this.LancerRagingStrikes.Enabled = false;
             this.LancerRagingStrikes.ForeColor = System.Drawing.Color.White;
-            this.LancerRagingStrikes.Location = new System.Drawing.Point(6, 42);
+            this.LancerRagingStrikes.Location = new System.Drawing.Point(8, 52);
+            this.LancerRagingStrikes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerRagingStrikes.Name = "LancerRagingStrikes";
-            this.LancerRagingStrikes.Size = new System.Drawing.Size(95, 17);
+            this.LancerRagingStrikes.Size = new System.Drawing.Size(122, 21);
             this.LancerRagingStrikes.TabIndex = 10;
             this.LancerRagingStrikes.Text = "Raging Strikes";
             this.LancerRagingStrikes.UseVisualStyleBackColor = true;
@@ -4625,9 +5227,10 @@
             this.LancerStraightShot.AutoSize = true;
             this.LancerStraightShot.Enabled = false;
             this.LancerStraightShot.ForeColor = System.Drawing.Color.White;
-            this.LancerStraightShot.Location = new System.Drawing.Point(6, 19);
+            this.LancerStraightShot.Location = new System.Drawing.Point(8, 23);
+            this.LancerStraightShot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerStraightShot.Name = "LancerStraightShot";
-            this.LancerStraightShot.Size = new System.Drawing.Size(87, 17);
+            this.LancerStraightShot.Size = new System.Drawing.Size(112, 21);
             this.LancerStraightShot.TabIndex = 7;
             this.LancerStraightShot.Text = "Straight Shot";
             this.LancerStraightShot.UseVisualStyleBackColor = true;
@@ -4638,9 +5241,10 @@
             this.LancerHawksEye.AutoSize = true;
             this.LancerHawksEye.Enabled = false;
             this.LancerHawksEye.ForeColor = System.Drawing.Color.White;
-            this.LancerHawksEye.Location = new System.Drawing.Point(6, 88);
+            this.LancerHawksEye.Location = new System.Drawing.Point(8, 108);
+            this.LancerHawksEye.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerHawksEye.Name = "LancerHawksEye";
-            this.LancerHawksEye.Size = new System.Drawing.Size(82, 17);
+            this.LancerHawksEye.Size = new System.Drawing.Size(102, 21);
             this.LancerHawksEye.TabIndex = 8;
             this.LancerHawksEye.Text = "Hawk\'s Eye";
             this.LancerHawksEye.UseVisualStyleBackColor = true;
@@ -4651,9 +5255,10 @@
             this.LancerQuellingStrikes.AutoSize = true;
             this.LancerQuellingStrikes.Enabled = false;
             this.LancerQuellingStrikes.ForeColor = System.Drawing.Color.White;
-            this.LancerQuellingStrikes.Location = new System.Drawing.Point(6, 111);
+            this.LancerQuellingStrikes.Location = new System.Drawing.Point(8, 137);
+            this.LancerQuellingStrikes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerQuellingStrikes.Name = "LancerQuellingStrikes";
-            this.LancerQuellingStrikes.Size = new System.Drawing.Size(99, 17);
+            this.LancerQuellingStrikes.Size = new System.Drawing.Size(129, 21);
             this.LancerQuellingStrikes.TabIndex = 9;
             this.LancerQuellingStrikes.Text = "Quelling Strikes";
             this.LancerQuellingStrikes.UseVisualStyleBackColor = true;
@@ -4664,9 +5269,11 @@
             this.LancerThaumaturgeGroup.Controls.Add(this.LancerSurecast);
             this.LancerThaumaturgeGroup.Controls.Add(this.LancerSwiftcast);
             this.LancerThaumaturgeGroup.ForeColor = System.Drawing.Color.White;
-            this.LancerThaumaturgeGroup.Location = new System.Drawing.Point(390, 160);
+            this.LancerThaumaturgeGroup.Location = new System.Drawing.Point(520, 197);
+            this.LancerThaumaturgeGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerThaumaturgeGroup.Name = "LancerThaumaturgeGroup";
-            this.LancerThaumaturgeGroup.Size = new System.Drawing.Size(108, 65);
+            this.LancerThaumaturgeGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LancerThaumaturgeGroup.Size = new System.Drawing.Size(144, 80);
             this.LancerThaumaturgeGroup.TabIndex = 40;
             this.LancerThaumaturgeGroup.TabStop = false;
             this.LancerThaumaturgeGroup.Text = "Thaumaturge ";
@@ -4676,9 +5283,10 @@
             this.LancerSurecast.AutoSize = true;
             this.LancerSurecast.Enabled = false;
             this.LancerSurecast.ForeColor = System.Drawing.Color.White;
-            this.LancerSurecast.Location = new System.Drawing.Point(6, 19);
+            this.LancerSurecast.Location = new System.Drawing.Point(8, 23);
+            this.LancerSurecast.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerSurecast.Name = "LancerSurecast";
-            this.LancerSurecast.Size = new System.Drawing.Size(68, 17);
+            this.LancerSurecast.Size = new System.Drawing.Size(86, 21);
             this.LancerSurecast.TabIndex = 35;
             this.LancerSurecast.Text = "Surecast";
             this.LancerSurecast.UseVisualStyleBackColor = true;
@@ -4689,9 +5297,10 @@
             this.LancerSwiftcast.AutoSize = true;
             this.LancerSwiftcast.Enabled = false;
             this.LancerSwiftcast.ForeColor = System.Drawing.Color.White;
-            this.LancerSwiftcast.Location = new System.Drawing.Point(6, 42);
+            this.LancerSwiftcast.Location = new System.Drawing.Point(8, 52);
+            this.LancerSwiftcast.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerSwiftcast.Name = "LancerSwiftcast";
-            this.LancerSwiftcast.Size = new System.Drawing.Size(69, 17);
+            this.LancerSwiftcast.Size = new System.Drawing.Size(85, 21);
             this.LancerSwiftcast.TabIndex = 39;
             this.LancerSwiftcast.Text = "Swiftcast";
             this.LancerSwiftcast.UseVisualStyleBackColor = true;
@@ -4703,9 +5312,11 @@
             this.LancerRogueGroup.Controls.Add(this.LancerGoad);
             this.LancerRogueGroup.Controls.Add(this.LancerShadeShift);
             this.LancerRogueGroup.ForeColor = System.Drawing.Color.White;
-            this.LancerRogueGroup.Location = new System.Drawing.Point(261, 160);
+            this.LancerRogueGroup.Location = new System.Drawing.Point(348, 197);
+            this.LancerRogueGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerRogueGroup.Name = "LancerRogueGroup";
-            this.LancerRogueGroup.Size = new System.Drawing.Size(113, 88);
+            this.LancerRogueGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LancerRogueGroup.Size = new System.Drawing.Size(151, 108);
             this.LancerRogueGroup.TabIndex = 29;
             this.LancerRogueGroup.TabStop = false;
             this.LancerRogueGroup.Text = "Rogue";
@@ -4715,9 +5326,10 @@
             this.LancerDeathBlossom.AutoSize = true;
             this.LancerDeathBlossom.Enabled = false;
             this.LancerDeathBlossom.ForeColor = System.Drawing.Color.White;
-            this.LancerDeathBlossom.Location = new System.Drawing.Point(6, 65);
+            this.LancerDeathBlossom.Location = new System.Drawing.Point(8, 80);
+            this.LancerDeathBlossom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerDeathBlossom.Name = "LancerDeathBlossom";
-            this.LancerDeathBlossom.Size = new System.Drawing.Size(97, 17);
+            this.LancerDeathBlossom.Size = new System.Drawing.Size(125, 21);
             this.LancerDeathBlossom.TabIndex = 37;
             this.LancerDeathBlossom.Text = "Death Blossom";
             this.LancerDeathBlossom.UseVisualStyleBackColor = true;
@@ -4728,9 +5340,10 @@
             this.LancerGoad.AutoSize = true;
             this.LancerGoad.Enabled = false;
             this.LancerGoad.ForeColor = System.Drawing.Color.White;
-            this.LancerGoad.Location = new System.Drawing.Point(6, 42);
+            this.LancerGoad.Location = new System.Drawing.Point(8, 52);
+            this.LancerGoad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerGoad.Name = "LancerGoad";
-            this.LancerGoad.Size = new System.Drawing.Size(52, 17);
+            this.LancerGoad.Size = new System.Drawing.Size(65, 21);
             this.LancerGoad.TabIndex = 36;
             this.LancerGoad.Text = "Goad";
             this.LancerGoad.UseVisualStyleBackColor = true;
@@ -4741,9 +5354,10 @@
             this.LancerShadeShift.AutoSize = true;
             this.LancerShadeShift.Enabled = false;
             this.LancerShadeShift.ForeColor = System.Drawing.Color.White;
-            this.LancerShadeShift.Location = new System.Drawing.Point(6, 19);
+            this.LancerShadeShift.Location = new System.Drawing.Point(8, 23);
+            this.LancerShadeShift.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerShadeShift.Name = "LancerShadeShift";
-            this.LancerShadeShift.Size = new System.Drawing.Size(81, 17);
+            this.LancerShadeShift.Size = new System.Drawing.Size(103, 21);
             this.LancerShadeShift.TabIndex = 35;
             this.LancerShadeShift.Text = "Shade Shift";
             this.LancerShadeShift.UseVisualStyleBackColor = true;
@@ -4757,9 +5371,11 @@
             this.LancerPugilistGroup.Controls.Add(this.LancerInternalRelease);
             this.LancerPugilistGroup.Controls.Add(this.LancerMantra);
             this.LancerPugilistGroup.ForeColor = System.Drawing.Color.White;
-            this.LancerPugilistGroup.Location = new System.Drawing.Point(132, 160);
+            this.LancerPugilistGroup.Location = new System.Drawing.Point(176, 197);
+            this.LancerPugilistGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerPugilistGroup.Name = "LancerPugilistGroup";
-            this.LancerPugilistGroup.Size = new System.Drawing.Size(113, 134);
+            this.LancerPugilistGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LancerPugilistGroup.Size = new System.Drawing.Size(151, 165);
             this.LancerPugilistGroup.TabIndex = 23;
             this.LancerPugilistGroup.TabStop = false;
             this.LancerPugilistGroup.Text = "Pugilist ";
@@ -4769,9 +5385,10 @@
             this.LancerHaymaker.AutoSize = true;
             this.LancerHaymaker.Enabled = false;
             this.LancerHaymaker.ForeColor = System.Drawing.Color.White;
-            this.LancerHaymaker.Location = new System.Drawing.Point(6, 65);
+            this.LancerHaymaker.Location = new System.Drawing.Point(8, 80);
+            this.LancerHaymaker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerHaymaker.Name = "LancerHaymaker";
-            this.LancerHaymaker.Size = new System.Drawing.Size(74, 17);
+            this.LancerHaymaker.Size = new System.Drawing.Size(94, 21);
             this.LancerHaymaker.TabIndex = 35;
             this.LancerHaymaker.Text = "Haymaker";
             this.LancerHaymaker.UseVisualStyleBackColor = true;
@@ -4782,9 +5399,10 @@
             this.LancerFeatherfoot.AutoSize = true;
             this.LancerFeatherfoot.Enabled = false;
             this.LancerFeatherfoot.ForeColor = System.Drawing.Color.White;
-            this.LancerFeatherfoot.Location = new System.Drawing.Point(6, 19);
+            this.LancerFeatherfoot.Location = new System.Drawing.Point(8, 23);
+            this.LancerFeatherfoot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerFeatherfoot.Name = "LancerFeatherfoot";
-            this.LancerFeatherfoot.Size = new System.Drawing.Size(80, 17);
+            this.LancerFeatherfoot.Size = new System.Drawing.Size(103, 21);
             this.LancerFeatherfoot.TabIndex = 30;
             this.LancerFeatherfoot.Text = "Featherfoot";
             this.LancerFeatherfoot.UseVisualStyleBackColor = true;
@@ -4795,9 +5413,10 @@
             this.LancerSecondWind.AutoSize = true;
             this.LancerSecondWind.Enabled = false;
             this.LancerSecondWind.ForeColor = System.Drawing.Color.White;
-            this.LancerSecondWind.Location = new System.Drawing.Point(6, 42);
+            this.LancerSecondWind.Location = new System.Drawing.Point(8, 52);
+            this.LancerSecondWind.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerSecondWind.Name = "LancerSecondWind";
-            this.LancerSecondWind.Size = new System.Drawing.Size(91, 17);
+            this.LancerSecondWind.Size = new System.Drawing.Size(114, 21);
             this.LancerSecondWind.TabIndex = 31;
             this.LancerSecondWind.Text = "Second Wind";
             this.LancerSecondWind.UseVisualStyleBackColor = true;
@@ -4807,9 +5426,10 @@
             // 
             this.LancerInternalRelease.AutoSize = true;
             this.LancerInternalRelease.ForeColor = System.Drawing.Color.White;
-            this.LancerInternalRelease.Location = new System.Drawing.Point(6, 88);
+            this.LancerInternalRelease.Location = new System.Drawing.Point(8, 108);
+            this.LancerInternalRelease.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerInternalRelease.Name = "LancerInternalRelease";
-            this.LancerInternalRelease.Size = new System.Drawing.Size(103, 17);
+            this.LancerInternalRelease.Size = new System.Drawing.Size(133, 21);
             this.LancerInternalRelease.TabIndex = 32;
             this.LancerInternalRelease.Text = "Internal Release";
             this.LancerInternalRelease.UseVisualStyleBackColor = true;
@@ -4820,9 +5440,10 @@
             this.LancerMantra.AutoSize = true;
             this.LancerMantra.Enabled = false;
             this.LancerMantra.ForeColor = System.Drawing.Color.White;
-            this.LancerMantra.Location = new System.Drawing.Point(6, 111);
+            this.LancerMantra.Location = new System.Drawing.Point(8, 137);
+            this.LancerMantra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerMantra.Name = "LancerMantra";
-            this.LancerMantra.Size = new System.Drawing.Size(59, 17);
+            this.LancerMantra.Size = new System.Drawing.Size(74, 21);
             this.LancerMantra.TabIndex = 34;
             this.LancerMantra.Text = "Mantra";
             this.LancerMantra.UseVisualStyleBackColor = true;
@@ -4836,9 +5457,11 @@
             this.LancerMarauderGroup.Controls.Add(this.LancerForesight);
             this.LancerMarauderGroup.Controls.Add(this.LancerMercyStroke);
             this.LancerMarauderGroup.ForeColor = System.Drawing.Color.White;
-            this.LancerMarauderGroup.Location = new System.Drawing.Point(6, 160);
+            this.LancerMarauderGroup.Location = new System.Drawing.Point(8, 197);
+            this.LancerMarauderGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerMarauderGroup.Name = "LancerMarauderGroup";
-            this.LancerMarauderGroup.Size = new System.Drawing.Size(110, 134);
+            this.LancerMarauderGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LancerMarauderGroup.Size = new System.Drawing.Size(147, 165);
             this.LancerMarauderGroup.TabIndex = 23;
             this.LancerMarauderGroup.TabStop = false;
             this.LancerMarauderGroup.Text = "Marauder ";
@@ -4848,9 +5471,10 @@
             this.LancerFracture.AutoSize = true;
             this.LancerFracture.Enabled = false;
             this.LancerFracture.ForeColor = System.Drawing.Color.White;
-            this.LancerFracture.Location = new System.Drawing.Point(6, 65);
+            this.LancerFracture.Location = new System.Drawing.Point(8, 80);
+            this.LancerFracture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerFracture.Name = "LancerFracture";
-            this.LancerFracture.Size = new System.Drawing.Size(65, 17);
+            this.LancerFracture.Size = new System.Drawing.Size(83, 21);
             this.LancerFracture.TabIndex = 30;
             this.LancerFracture.Text = "Fracture";
             this.LancerFracture.UseVisualStyleBackColor = true;
@@ -4861,9 +5485,10 @@
             this.LancerSkullSunder.AutoSize = true;
             this.LancerSkullSunder.Enabled = false;
             this.LancerSkullSunder.ForeColor = System.Drawing.Color.White;
-            this.LancerSkullSunder.Location = new System.Drawing.Point(6, 42);
+            this.LancerSkullSunder.Location = new System.Drawing.Point(8, 52);
+            this.LancerSkullSunder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerSkullSunder.Name = "LancerSkullSunder";
-            this.LancerSkullSunder.Size = new System.Drawing.Size(86, 17);
+            this.LancerSkullSunder.Size = new System.Drawing.Size(110, 21);
             this.LancerSkullSunder.TabIndex = 29;
             this.LancerSkullSunder.Text = "Skull Sunder";
             this.LancerSkullSunder.UseVisualStyleBackColor = true;
@@ -4874,9 +5499,10 @@
             this.LancerBloodbath.AutoSize = true;
             this.LancerBloodbath.Enabled = false;
             this.LancerBloodbath.ForeColor = System.Drawing.Color.White;
-            this.LancerBloodbath.Location = new System.Drawing.Point(6, 88);
+            this.LancerBloodbath.Location = new System.Drawing.Point(8, 108);
+            this.LancerBloodbath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerBloodbath.Name = "LancerBloodbath";
-            this.LancerBloodbath.Size = new System.Drawing.Size(74, 17);
+            this.LancerBloodbath.Size = new System.Drawing.Size(94, 21);
             this.LancerBloodbath.TabIndex = 27;
             this.LancerBloodbath.Text = "Bloodbath";
             this.LancerBloodbath.UseVisualStyleBackColor = true;
@@ -4887,9 +5513,10 @@
             this.LancerForesight.AutoSize = true;
             this.LancerForesight.Enabled = false;
             this.LancerForesight.ForeColor = System.Drawing.Color.White;
-            this.LancerForesight.Location = new System.Drawing.Point(6, 19);
+            this.LancerForesight.Location = new System.Drawing.Point(8, 23);
+            this.LancerForesight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerForesight.Name = "LancerForesight";
-            this.LancerForesight.Size = new System.Drawing.Size(69, 17);
+            this.LancerForesight.Size = new System.Drawing.Size(89, 21);
             this.LancerForesight.TabIndex = 26;
             this.LancerForesight.Text = "Foresight";
             this.LancerForesight.UseVisualStyleBackColor = true;
@@ -4899,9 +5526,10 @@
             // 
             this.LancerMercyStroke.AutoSize = true;
             this.LancerMercyStroke.ForeColor = System.Drawing.Color.White;
-            this.LancerMercyStroke.Location = new System.Drawing.Point(6, 111);
+            this.LancerMercyStroke.Location = new System.Drawing.Point(8, 137);
+            this.LancerMercyStroke.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerMercyStroke.Name = "LancerMercyStroke";
-            this.LancerMercyStroke.Size = new System.Drawing.Size(89, 17);
+            this.LancerMercyStroke.Size = new System.Drawing.Size(113, 21);
             this.LancerMercyStroke.TabIndex = 28;
             this.LancerMercyStroke.Text = "Mercy Stroke";
             this.LancerMercyStroke.UseVisualStyleBackColor = true;
@@ -4913,9 +5541,11 @@
             this.LancerArcanistGroup.Controls.Add(this.LancerVirus);
             this.LancerArcanistGroup.Controls.Add(this.LancerEyeForAnEye);
             this.LancerArcanistGroup.ForeColor = System.Drawing.Color.White;
-            this.LancerArcanistGroup.Location = new System.Drawing.Point(6, 19);
+            this.LancerArcanistGroup.Location = new System.Drawing.Point(8, 23);
+            this.LancerArcanistGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerArcanistGroup.Name = "LancerArcanistGroup";
-            this.LancerArcanistGroup.Size = new System.Drawing.Size(110, 88);
+            this.LancerArcanistGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LancerArcanistGroup.Size = new System.Drawing.Size(147, 108);
             this.LancerArcanistGroup.TabIndex = 22;
             this.LancerArcanistGroup.TabStop = false;
             this.LancerArcanistGroup.Text = "Arcanist";
@@ -4925,9 +5555,10 @@
             this.LancerPhysick.AutoSize = true;
             this.LancerPhysick.Enabled = false;
             this.LancerPhysick.ForeColor = System.Drawing.Color.White;
-            this.LancerPhysick.Location = new System.Drawing.Point(6, 19);
+            this.LancerPhysick.Location = new System.Drawing.Point(8, 23);
+            this.LancerPhysick.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerPhysick.Name = "LancerPhysick";
-            this.LancerPhysick.Size = new System.Drawing.Size(63, 17);
+            this.LancerPhysick.Size = new System.Drawing.Size(78, 21);
             this.LancerPhysick.TabIndex = 7;
             this.LancerPhysick.Text = "Physick";
             this.LancerPhysick.UseVisualStyleBackColor = true;
@@ -4938,9 +5569,10 @@
             this.LancerVirus.AutoSize = true;
             this.LancerVirus.Enabled = false;
             this.LancerVirus.ForeColor = System.Drawing.Color.White;
-            this.LancerVirus.Location = new System.Drawing.Point(6, 42);
+            this.LancerVirus.Location = new System.Drawing.Point(8, 52);
+            this.LancerVirus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerVirus.Name = "LancerVirus";
-            this.LancerVirus.Size = new System.Drawing.Size(49, 17);
+            this.LancerVirus.Size = new System.Drawing.Size(62, 21);
             this.LancerVirus.TabIndex = 8;
             this.LancerVirus.Text = "Virus";
             this.LancerVirus.UseVisualStyleBackColor = true;
@@ -4951,9 +5583,10 @@
             this.LancerEyeForAnEye.AutoSize = true;
             this.LancerEyeForAnEye.Enabled = false;
             this.LancerEyeForAnEye.ForeColor = System.Drawing.Color.White;
-            this.LancerEyeForAnEye.Location = new System.Drawing.Point(6, 65);
+            this.LancerEyeForAnEye.Location = new System.Drawing.Point(8, 80);
+            this.LancerEyeForAnEye.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerEyeForAnEye.Name = "LancerEyeForAnEye";
-            this.LancerEyeForAnEye.Size = new System.Drawing.Size(95, 17);
+            this.LancerEyeForAnEye.Size = new System.Drawing.Size(123, 21);
             this.LancerEyeForAnEye.TabIndex = 9;
             this.LancerEyeForAnEye.Text = "Eye for an Eye";
             this.LancerEyeForAnEye.UseVisualStyleBackColor = true;
@@ -4966,9 +5599,11 @@
             this.LancerConjurerGroup.Controls.Add(this.LancerRaise);
             this.LancerConjurerGroup.Controls.Add(this.LancerStoneskin);
             this.LancerConjurerGroup.ForeColor = System.Drawing.Color.White;
-            this.LancerConjurerGroup.Location = new System.Drawing.Point(261, 19);
+            this.LancerConjurerGroup.Location = new System.Drawing.Point(348, 23);
+            this.LancerConjurerGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerConjurerGroup.Name = "LancerConjurerGroup";
-            this.LancerConjurerGroup.Size = new System.Drawing.Size(113, 111);
+            this.LancerConjurerGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LancerConjurerGroup.Size = new System.Drawing.Size(151, 137);
             this.LancerConjurerGroup.TabIndex = 23;
             this.LancerConjurerGroup.TabStop = false;
             this.LancerConjurerGroup.Text = "Conjurer ";
@@ -4978,9 +5613,10 @@
             this.LancerCure.AutoSize = true;
             this.LancerCure.Enabled = false;
             this.LancerCure.ForeColor = System.Drawing.Color.White;
-            this.LancerCure.Location = new System.Drawing.Point(6, 19);
+            this.LancerCure.Location = new System.Drawing.Point(8, 23);
+            this.LancerCure.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerCure.Name = "LancerCure";
-            this.LancerCure.Size = new System.Drawing.Size(48, 17);
+            this.LancerCure.Size = new System.Drawing.Size(60, 21);
             this.LancerCure.TabIndex = 10;
             this.LancerCure.Text = "Cure";
             this.LancerCure.UseVisualStyleBackColor = true;
@@ -4991,9 +5627,10 @@
             this.LancerProtect.AutoSize = true;
             this.LancerProtect.Enabled = false;
             this.LancerProtect.ForeColor = System.Drawing.Color.White;
-            this.LancerProtect.Location = new System.Drawing.Point(6, 42);
+            this.LancerProtect.Location = new System.Drawing.Point(8, 52);
+            this.LancerProtect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerProtect.Name = "LancerProtect";
-            this.LancerProtect.Size = new System.Drawing.Size(60, 17);
+            this.LancerProtect.Size = new System.Drawing.Size(75, 21);
             this.LancerProtect.TabIndex = 12;
             this.LancerProtect.Text = "Protect";
             this.LancerProtect.UseVisualStyleBackColor = true;
@@ -5004,9 +5641,10 @@
             this.LancerRaise.AutoSize = true;
             this.LancerRaise.Enabled = false;
             this.LancerRaise.ForeColor = System.Drawing.Color.White;
-            this.LancerRaise.Location = new System.Drawing.Point(6, 65);
+            this.LancerRaise.Location = new System.Drawing.Point(8, 80);
+            this.LancerRaise.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerRaise.Name = "LancerRaise";
-            this.LancerRaise.Size = new System.Drawing.Size(53, 17);
+            this.LancerRaise.Size = new System.Drawing.Size(66, 21);
             this.LancerRaise.TabIndex = 13;
             this.LancerRaise.Text = "Raise";
             this.LancerRaise.UseVisualStyleBackColor = true;
@@ -5017,9 +5655,10 @@
             this.LancerStoneskin.AutoSize = true;
             this.LancerStoneskin.Enabled = false;
             this.LancerStoneskin.ForeColor = System.Drawing.Color.White;
-            this.LancerStoneskin.Location = new System.Drawing.Point(6, 88);
+            this.LancerStoneskin.Location = new System.Drawing.Point(8, 108);
+            this.LancerStoneskin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LancerStoneskin.Name = "LancerStoneskin";
-            this.LancerStoneskin.Size = new System.Drawing.Size(73, 17);
+            this.LancerStoneskin.Size = new System.Drawing.Size(92, 21);
             this.LancerStoneskin.TabIndex = 14;
             this.LancerStoneskin.Text = "Stoneskin";
             this.LancerStoneskin.UseVisualStyleBackColor = true;
@@ -5034,7 +5673,7 @@
             this.DragoonSettings.Location = new System.Drawing.Point(114, 4);
             this.DragoonSettings.Margin = new System.Windows.Forms.Padding(0);
             this.DragoonSettings.Name = "DragoonSettings";
-            this.DragoonSettings.Size = new System.Drawing.Size(567, 402);
+            this.DragoonSettings.Size = new System.Drawing.Size(795, 497);
             this.DragoonSettings.TabIndex = 1;
             this.DragoonSettings.Text = "Dragoon";
             this.DragoonSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -5046,9 +5685,11 @@
             this.DragoonCooldownGroup.Controls.Add(this.DragoonSpineshatterDive);
             this.DragoonCooldownGroup.Controls.Add(this.DragoonJump);
             this.DragoonCooldownGroup.ForeColor = System.Drawing.Color.White;
-            this.DragoonCooldownGroup.Location = new System.Drawing.Point(132, 168);
+            this.DragoonCooldownGroup.Location = new System.Drawing.Point(176, 207);
+            this.DragoonCooldownGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DragoonCooldownGroup.Name = "DragoonCooldownGroup";
-            this.DragoonCooldownGroup.Size = new System.Drawing.Size(122, 111);
+            this.DragoonCooldownGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DragoonCooldownGroup.Size = new System.Drawing.Size(163, 137);
             this.DragoonCooldownGroup.TabIndex = 19;
             this.DragoonCooldownGroup.TabStop = false;
             this.DragoonCooldownGroup.Text = "Cooldown ";
@@ -5057,9 +5698,10 @@
             // 
             this.DragoonPowerSurge.AutoSize = true;
             this.DragoonPowerSurge.ForeColor = System.Drawing.Color.White;
-            this.DragoonPowerSurge.Location = new System.Drawing.Point(6, 65);
+            this.DragoonPowerSurge.Location = new System.Drawing.Point(8, 80);
+            this.DragoonPowerSurge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DragoonPowerSurge.Name = "DragoonPowerSurge";
-            this.DragoonPowerSurge.Size = new System.Drawing.Size(87, 17);
+            this.DragoonPowerSurge.Size = new System.Drawing.Size(111, 21);
             this.DragoonPowerSurge.TabIndex = 10;
             this.DragoonPowerSurge.Text = "Power Surge";
             this.DragoonPowerSurge.UseVisualStyleBackColor = true;
@@ -5069,9 +5711,10 @@
             // 
             this.DragoonDragonfireDive.AutoSize = true;
             this.DragoonDragonfireDive.ForeColor = System.Drawing.Color.White;
-            this.DragoonDragonfireDive.Location = new System.Drawing.Point(6, 88);
+            this.DragoonDragonfireDive.Location = new System.Drawing.Point(8, 108);
+            this.DragoonDragonfireDive.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DragoonDragonfireDive.Name = "DragoonDragonfireDive";
-            this.DragoonDragonfireDive.Size = new System.Drawing.Size(100, 17);
+            this.DragoonDragonfireDive.Size = new System.Drawing.Size(129, 21);
             this.DragoonDragonfireDive.TabIndex = 9;
             this.DragoonDragonfireDive.Text = "Dragonfire Dive";
             this.DragoonDragonfireDive.UseVisualStyleBackColor = true;
@@ -5081,9 +5724,10 @@
             // 
             this.DragoonSpineshatterDive.AutoSize = true;
             this.DragoonSpineshatterDive.ForeColor = System.Drawing.Color.White;
-            this.DragoonSpineshatterDive.Location = new System.Drawing.Point(6, 42);
+            this.DragoonSpineshatterDive.Location = new System.Drawing.Point(8, 52);
+            this.DragoonSpineshatterDive.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DragoonSpineshatterDive.Name = "DragoonSpineshatterDive";
-            this.DragoonSpineshatterDive.Size = new System.Drawing.Size(110, 17);
+            this.DragoonSpineshatterDive.Size = new System.Drawing.Size(142, 21);
             this.DragoonSpineshatterDive.TabIndex = 8;
             this.DragoonSpineshatterDive.Text = "Spineshatter Dive";
             this.DragoonSpineshatterDive.UseVisualStyleBackColor = true;
@@ -5093,9 +5737,10 @@
             // 
             this.DragoonJump.AutoSize = true;
             this.DragoonJump.ForeColor = System.Drawing.Color.White;
-            this.DragoonJump.Location = new System.Drawing.Point(6, 19);
+            this.DragoonJump.Location = new System.Drawing.Point(8, 23);
+            this.DragoonJump.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DragoonJump.Name = "DragoonJump";
-            this.DragoonJump.Size = new System.Drawing.Size(51, 17);
+            this.DragoonJump.Size = new System.Drawing.Size(64, 21);
             this.DragoonJump.TabIndex = 7;
             this.DragoonJump.Text = "Jump";
             this.DragoonJump.UseVisualStyleBackColor = true;
@@ -5105,9 +5750,11 @@
             // 
             this.DragoonInterruptGroup.Controls.Add(this.DragoonLegSweep);
             this.DragoonInterruptGroup.ForeColor = System.Drawing.Color.White;
-            this.DragoonInterruptGroup.Location = new System.Drawing.Point(34, 168);
+            this.DragoonInterruptGroup.Location = new System.Drawing.Point(45, 207);
+            this.DragoonInterruptGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DragoonInterruptGroup.Name = "DragoonInterruptGroup";
-            this.DragoonInterruptGroup.Size = new System.Drawing.Size(92, 42);
+            this.DragoonInterruptGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DragoonInterruptGroup.Size = new System.Drawing.Size(123, 52);
             this.DragoonInterruptGroup.TabIndex = 18;
             this.DragoonInterruptGroup.TabStop = false;
             this.DragoonInterruptGroup.Text = "Interrupt";
@@ -5116,9 +5763,10 @@
             // 
             this.DragoonLegSweep.AutoSize = true;
             this.DragoonLegSweep.ForeColor = System.Drawing.Color.White;
-            this.DragoonLegSweep.Location = new System.Drawing.Point(6, 19);
+            this.DragoonLegSweep.Location = new System.Drawing.Point(8, 23);
+            this.DragoonLegSweep.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DragoonLegSweep.Name = "DragoonLegSweep";
-            this.DragoonLegSweep.Size = new System.Drawing.Size(80, 17);
+            this.DragoonLegSweep.Size = new System.Drawing.Size(100, 21);
             this.DragoonLegSweep.TabIndex = 7;
             this.DragoonLegSweep.Text = "Leg Sweep";
             this.DragoonLegSweep.UseVisualStyleBackColor = true;
@@ -5129,9 +5777,11 @@
             this.DragoonCrossGroup.Controls.Add(this.DragoonPugilistGroup);
             this.DragoonCrossGroup.Controls.Add(this.DragoonMarauderGroup);
             this.DragoonCrossGroup.ForeColor = System.Drawing.Color.White;
-            this.DragoonCrossGroup.Location = new System.Drawing.Point(34, 3);
+            this.DragoonCrossGroup.Location = new System.Drawing.Point(45, 4);
+            this.DragoonCrossGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DragoonCrossGroup.Name = "DragoonCrossGroup";
-            this.DragoonCrossGroup.Size = new System.Drawing.Size(232, 159);
+            this.DragoonCrossGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DragoonCrossGroup.Size = new System.Drawing.Size(309, 196);
             this.DragoonCrossGroup.TabIndex = 12;
             this.DragoonCrossGroup.TabStop = false;
             this.DragoonCrossGroup.Text = "Cross-Class  ";
@@ -5144,9 +5794,11 @@
             this.DragoonPugilistGroup.Controls.Add(this.DragoonInternalRelease);
             this.DragoonPugilistGroup.Controls.Add(this.DragoonMantra);
             this.DragoonPugilistGroup.ForeColor = System.Drawing.Color.White;
-            this.DragoonPugilistGroup.Location = new System.Drawing.Point(113, 19);
+            this.DragoonPugilistGroup.Location = new System.Drawing.Point(151, 23);
+            this.DragoonPugilistGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DragoonPugilistGroup.Name = "DragoonPugilistGroup";
-            this.DragoonPugilistGroup.Size = new System.Drawing.Size(113, 134);
+            this.DragoonPugilistGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DragoonPugilistGroup.Size = new System.Drawing.Size(151, 165);
             this.DragoonPugilistGroup.TabIndex = 23;
             this.DragoonPugilistGroup.TabStop = false;
             this.DragoonPugilistGroup.Text = "Pugilist ";
@@ -5156,9 +5808,10 @@
             this.DragoonHaymaker.AutoSize = true;
             this.DragoonHaymaker.Enabled = false;
             this.DragoonHaymaker.ForeColor = System.Drawing.Color.White;
-            this.DragoonHaymaker.Location = new System.Drawing.Point(6, 65);
+            this.DragoonHaymaker.Location = new System.Drawing.Point(8, 80);
+            this.DragoonHaymaker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DragoonHaymaker.Name = "DragoonHaymaker";
-            this.DragoonHaymaker.Size = new System.Drawing.Size(74, 17);
+            this.DragoonHaymaker.Size = new System.Drawing.Size(94, 21);
             this.DragoonHaymaker.TabIndex = 35;
             this.DragoonHaymaker.Text = "Haymaker";
             this.DragoonHaymaker.UseVisualStyleBackColor = true;
@@ -5169,9 +5822,10 @@
             this.DragoonFeatherfoot.AutoSize = true;
             this.DragoonFeatherfoot.Enabled = false;
             this.DragoonFeatherfoot.ForeColor = System.Drawing.Color.White;
-            this.DragoonFeatherfoot.Location = new System.Drawing.Point(6, 19);
+            this.DragoonFeatherfoot.Location = new System.Drawing.Point(8, 23);
+            this.DragoonFeatherfoot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DragoonFeatherfoot.Name = "DragoonFeatherfoot";
-            this.DragoonFeatherfoot.Size = new System.Drawing.Size(80, 17);
+            this.DragoonFeatherfoot.Size = new System.Drawing.Size(103, 21);
             this.DragoonFeatherfoot.TabIndex = 30;
             this.DragoonFeatherfoot.Text = "Featherfoot";
             this.DragoonFeatherfoot.UseVisualStyleBackColor = true;
@@ -5182,9 +5836,10 @@
             this.DragoonSecondWind.AutoSize = true;
             this.DragoonSecondWind.Enabled = false;
             this.DragoonSecondWind.ForeColor = System.Drawing.Color.White;
-            this.DragoonSecondWind.Location = new System.Drawing.Point(6, 42);
+            this.DragoonSecondWind.Location = new System.Drawing.Point(8, 52);
+            this.DragoonSecondWind.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DragoonSecondWind.Name = "DragoonSecondWind";
-            this.DragoonSecondWind.Size = new System.Drawing.Size(91, 17);
+            this.DragoonSecondWind.Size = new System.Drawing.Size(114, 21);
             this.DragoonSecondWind.TabIndex = 31;
             this.DragoonSecondWind.Text = "Second Wind";
             this.DragoonSecondWind.UseVisualStyleBackColor = true;
@@ -5194,9 +5849,10 @@
             // 
             this.DragoonInternalRelease.AutoSize = true;
             this.DragoonInternalRelease.ForeColor = System.Drawing.Color.White;
-            this.DragoonInternalRelease.Location = new System.Drawing.Point(6, 88);
+            this.DragoonInternalRelease.Location = new System.Drawing.Point(8, 108);
+            this.DragoonInternalRelease.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DragoonInternalRelease.Name = "DragoonInternalRelease";
-            this.DragoonInternalRelease.Size = new System.Drawing.Size(103, 17);
+            this.DragoonInternalRelease.Size = new System.Drawing.Size(133, 21);
             this.DragoonInternalRelease.TabIndex = 32;
             this.DragoonInternalRelease.Text = "Internal Release";
             this.DragoonInternalRelease.UseVisualStyleBackColor = true;
@@ -5207,9 +5863,10 @@
             this.DragoonMantra.AutoSize = true;
             this.DragoonMantra.Enabled = false;
             this.DragoonMantra.ForeColor = System.Drawing.Color.White;
-            this.DragoonMantra.Location = new System.Drawing.Point(6, 111);
+            this.DragoonMantra.Location = new System.Drawing.Point(8, 137);
+            this.DragoonMantra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DragoonMantra.Name = "DragoonMantra";
-            this.DragoonMantra.Size = new System.Drawing.Size(59, 17);
+            this.DragoonMantra.Size = new System.Drawing.Size(74, 21);
             this.DragoonMantra.TabIndex = 34;
             this.DragoonMantra.Text = "Mantra";
             this.DragoonMantra.UseVisualStyleBackColor = true;
@@ -5223,9 +5880,11 @@
             this.DragoonMarauderGroup.Controls.Add(this.DragoonForesight);
             this.DragoonMarauderGroup.Controls.Add(this.DragoonMercyStroke);
             this.DragoonMarauderGroup.ForeColor = System.Drawing.Color.White;
-            this.DragoonMarauderGroup.Location = new System.Drawing.Point(6, 19);
+            this.DragoonMarauderGroup.Location = new System.Drawing.Point(8, 23);
+            this.DragoonMarauderGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DragoonMarauderGroup.Name = "DragoonMarauderGroup";
-            this.DragoonMarauderGroup.Size = new System.Drawing.Size(101, 134);
+            this.DragoonMarauderGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DragoonMarauderGroup.Size = new System.Drawing.Size(135, 165);
             this.DragoonMarauderGroup.TabIndex = 23;
             this.DragoonMarauderGroup.TabStop = false;
             this.DragoonMarauderGroup.Text = "Marauder ";
@@ -5235,9 +5894,10 @@
             this.DragoonFracture.AutoSize = true;
             this.DragoonFracture.Enabled = false;
             this.DragoonFracture.ForeColor = System.Drawing.Color.White;
-            this.DragoonFracture.Location = new System.Drawing.Point(6, 65);
+            this.DragoonFracture.Location = new System.Drawing.Point(8, 80);
+            this.DragoonFracture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DragoonFracture.Name = "DragoonFracture";
-            this.DragoonFracture.Size = new System.Drawing.Size(65, 17);
+            this.DragoonFracture.Size = new System.Drawing.Size(83, 21);
             this.DragoonFracture.TabIndex = 30;
             this.DragoonFracture.Text = "Fracture";
             this.DragoonFracture.UseVisualStyleBackColor = true;
@@ -5248,9 +5908,10 @@
             this.DragoonSkullSunder.AutoSize = true;
             this.DragoonSkullSunder.Enabled = false;
             this.DragoonSkullSunder.ForeColor = System.Drawing.Color.White;
-            this.DragoonSkullSunder.Location = new System.Drawing.Point(6, 42);
+            this.DragoonSkullSunder.Location = new System.Drawing.Point(8, 52);
+            this.DragoonSkullSunder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DragoonSkullSunder.Name = "DragoonSkullSunder";
-            this.DragoonSkullSunder.Size = new System.Drawing.Size(86, 17);
+            this.DragoonSkullSunder.Size = new System.Drawing.Size(110, 21);
             this.DragoonSkullSunder.TabIndex = 29;
             this.DragoonSkullSunder.Text = "Skull Sunder";
             this.DragoonSkullSunder.UseVisualStyleBackColor = true;
@@ -5261,9 +5922,10 @@
             this.DragoonBloodbath.AutoSize = true;
             this.DragoonBloodbath.Enabled = false;
             this.DragoonBloodbath.ForeColor = System.Drawing.Color.White;
-            this.DragoonBloodbath.Location = new System.Drawing.Point(6, 88);
+            this.DragoonBloodbath.Location = new System.Drawing.Point(8, 108);
+            this.DragoonBloodbath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DragoonBloodbath.Name = "DragoonBloodbath";
-            this.DragoonBloodbath.Size = new System.Drawing.Size(74, 17);
+            this.DragoonBloodbath.Size = new System.Drawing.Size(94, 21);
             this.DragoonBloodbath.TabIndex = 27;
             this.DragoonBloodbath.Text = "Bloodbath";
             this.DragoonBloodbath.UseVisualStyleBackColor = true;
@@ -5274,9 +5936,10 @@
             this.DragoonForesight.AutoSize = true;
             this.DragoonForesight.Enabled = false;
             this.DragoonForesight.ForeColor = System.Drawing.Color.White;
-            this.DragoonForesight.Location = new System.Drawing.Point(6, 19);
+            this.DragoonForesight.Location = new System.Drawing.Point(8, 23);
+            this.DragoonForesight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DragoonForesight.Name = "DragoonForesight";
-            this.DragoonForesight.Size = new System.Drawing.Size(69, 17);
+            this.DragoonForesight.Size = new System.Drawing.Size(89, 21);
             this.DragoonForesight.TabIndex = 26;
             this.DragoonForesight.Text = "Foresight";
             this.DragoonForesight.UseVisualStyleBackColor = true;
@@ -5286,9 +5949,10 @@
             // 
             this.DragoonMercyStroke.AutoSize = true;
             this.DragoonMercyStroke.ForeColor = System.Drawing.Color.White;
-            this.DragoonMercyStroke.Location = new System.Drawing.Point(6, 111);
+            this.DragoonMercyStroke.Location = new System.Drawing.Point(8, 137);
+            this.DragoonMercyStroke.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DragoonMercyStroke.Name = "DragoonMercyStroke";
-            this.DragoonMercyStroke.Size = new System.Drawing.Size(89, 17);
+            this.DragoonMercyStroke.Size = new System.Drawing.Size(113, 21);
             this.DragoonMercyStroke.TabIndex = 28;
             this.DragoonMercyStroke.Text = "Mercy Stroke";
             this.DragoonMercyStroke.UseVisualStyleBackColor = true;
@@ -5301,7 +5965,7 @@
             this.MarauderTab.Location = new System.Drawing.Point(114, 4);
             this.MarauderTab.Margin = new System.Windows.Forms.Padding(0);
             this.MarauderTab.Name = "MarauderTab";
-            this.MarauderTab.Size = new System.Drawing.Size(682, 402);
+            this.MarauderTab.Size = new System.Drawing.Size(949, 497);
             this.MarauderTab.TabIndex = 5;
             this.MarauderTab.Text = "Marauder";
             // 
@@ -5311,11 +5975,12 @@
             this.MarauderSubTab.Controls.Add(this.MarauderSettings);
             this.MarauderSubTab.Controls.Add(this.WarriorSettings);
             this.MarauderSubTab.ItemSize = new System.Drawing.Size(35, 110);
-            this.MarauderSubTab.Location = new System.Drawing.Point(-1, -4);
+            this.MarauderSubTab.Location = new System.Drawing.Point(-1, -5);
+            this.MarauderSubTab.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderSubTab.Multiline = true;
             this.MarauderSubTab.Name = "MarauderSubTab";
             this.MarauderSubTab.SelectedIndex = 0;
-            this.MarauderSubTab.Size = new System.Drawing.Size(685, 410);
+            this.MarauderSubTab.Size = new System.Drawing.Size(913, 505);
             this.MarauderSubTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.MarauderSubTab.TabIndex = 5;
             this.MarauderSubTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -5329,7 +5994,7 @@
             this.MarauderSettings.Location = new System.Drawing.Point(114, 4);
             this.MarauderSettings.Margin = new System.Windows.Forms.Padding(0);
             this.MarauderSettings.Name = "MarauderSettings";
-            this.MarauderSettings.Size = new System.Drawing.Size(567, 402);
+            this.MarauderSettings.Size = new System.Drawing.Size(795, 497);
             this.MarauderSettings.TabIndex = 0;
             this.MarauderSettings.Text = "Marauder";
             this.MarauderSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -5338,9 +6003,11 @@
             // 
             this.MarauderExecuteGroup.Controls.Add(this.MarauderMercyStroke);
             this.MarauderExecuteGroup.ForeColor = System.Drawing.Color.White;
-            this.MarauderExecuteGroup.Location = new System.Drawing.Point(137, 309);
+            this.MarauderExecuteGroup.Location = new System.Drawing.Point(183, 380);
+            this.MarauderExecuteGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderExecuteGroup.Name = "MarauderExecuteGroup";
-            this.MarauderExecuteGroup.Size = new System.Drawing.Size(101, 42);
+            this.MarauderExecuteGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MarauderExecuteGroup.Size = new System.Drawing.Size(135, 52);
             this.MarauderExecuteGroup.TabIndex = 20;
             this.MarauderExecuteGroup.TabStop = false;
             this.MarauderExecuteGroup.Text = "Execute";
@@ -5349,9 +6016,10 @@
             // 
             this.MarauderMercyStroke.AutoSize = true;
             this.MarauderMercyStroke.ForeColor = System.Drawing.Color.White;
-            this.MarauderMercyStroke.Location = new System.Drawing.Point(6, 19);
+            this.MarauderMercyStroke.Location = new System.Drawing.Point(8, 23);
+            this.MarauderMercyStroke.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderMercyStroke.Name = "MarauderMercyStroke";
-            this.MarauderMercyStroke.Size = new System.Drawing.Size(89, 17);
+            this.MarauderMercyStroke.Size = new System.Drawing.Size(113, 21);
             this.MarauderMercyStroke.TabIndex = 7;
             this.MarauderMercyStroke.Text = "Mercy Stroke";
             this.MarauderMercyStroke.UseVisualStyleBackColor = true;
@@ -5361,9 +6029,11 @@
             // 
             this.MarauderInterruptGroup.Controls.Add(this.MarauderBrutalSwing);
             this.MarauderInterruptGroup.ForeColor = System.Drawing.Color.White;
-            this.MarauderInterruptGroup.Location = new System.Drawing.Point(34, 309);
+            this.MarauderInterruptGroup.Location = new System.Drawing.Point(45, 380);
+            this.MarauderInterruptGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderInterruptGroup.Name = "MarauderInterruptGroup";
-            this.MarauderInterruptGroup.Size = new System.Drawing.Size(97, 42);
+            this.MarauderInterruptGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MarauderInterruptGroup.Size = new System.Drawing.Size(129, 52);
             this.MarauderInterruptGroup.TabIndex = 19;
             this.MarauderInterruptGroup.TabStop = false;
             this.MarauderInterruptGroup.Text = "Interrupt";
@@ -5372,9 +6042,10 @@
             // 
             this.MarauderBrutalSwing.AutoSize = true;
             this.MarauderBrutalSwing.ForeColor = System.Drawing.Color.White;
-            this.MarauderBrutalSwing.Location = new System.Drawing.Point(6, 19);
+            this.MarauderBrutalSwing.Location = new System.Drawing.Point(8, 23);
+            this.MarauderBrutalSwing.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderBrutalSwing.Name = "MarauderBrutalSwing";
-            this.MarauderBrutalSwing.Size = new System.Drawing.Size(85, 17);
+            this.MarauderBrutalSwing.Size = new System.Drawing.Size(108, 21);
             this.MarauderBrutalSwing.TabIndex = 7;
             this.MarauderBrutalSwing.Text = "Brutal Swing";
             this.MarauderBrutalSwing.UseVisualStyleBackColor = true;
@@ -5391,9 +6062,11 @@
             this.MarauderCrossGroup.Controls.Add(this.MarauderArcanistGroup);
             this.MarauderCrossGroup.Controls.Add(this.MarauderConjurerGroup);
             this.MarauderCrossGroup.ForeColor = System.Drawing.Color.White;
-            this.MarauderCrossGroup.Location = new System.Drawing.Point(34, 3);
+            this.MarauderCrossGroup.Location = new System.Drawing.Point(45, 4);
+            this.MarauderCrossGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderCrossGroup.Name = "MarauderCrossGroup";
-            this.MarauderCrossGroup.Size = new System.Drawing.Size(504, 300);
+            this.MarauderCrossGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MarauderCrossGroup.Size = new System.Drawing.Size(672, 369);
             this.MarauderCrossGroup.TabIndex = 12;
             this.MarauderCrossGroup.TabStop = false;
             this.MarauderCrossGroup.Text = "Cross-Class  ";
@@ -5405,9 +6078,11 @@
             this.MarauderLancerGroup.Controls.Add(this.MarauderBloodForBlood);
             this.MarauderLancerGroup.Controls.Add(this.MarauderFeint);
             this.MarauderLancerGroup.ForeColor = System.Drawing.Color.White;
-            this.MarauderLancerGroup.Location = new System.Drawing.Point(6, 160);
+            this.MarauderLancerGroup.Location = new System.Drawing.Point(8, 197);
+            this.MarauderLancerGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderLancerGroup.Name = "MarauderLancerGroup";
-            this.MarauderLancerGroup.Size = new System.Drawing.Size(110, 111);
+            this.MarauderLancerGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MarauderLancerGroup.Size = new System.Drawing.Size(147, 137);
             this.MarauderLancerGroup.TabIndex = 43;
             this.MarauderLancerGroup.TabStop = false;
             this.MarauderLancerGroup.Text = "Lancer";
@@ -5417,9 +6092,10 @@
             this.MarauderKeenFlurry.AutoSize = true;
             this.MarauderKeenFlurry.Enabled = false;
             this.MarauderKeenFlurry.ForeColor = System.Drawing.Color.White;
-            this.MarauderKeenFlurry.Location = new System.Drawing.Point(6, 42);
+            this.MarauderKeenFlurry.Location = new System.Drawing.Point(8, 52);
+            this.MarauderKeenFlurry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderKeenFlurry.Name = "MarauderKeenFlurry";
-            this.MarauderKeenFlurry.Size = new System.Drawing.Size(79, 17);
+            this.MarauderKeenFlurry.Size = new System.Drawing.Size(103, 21);
             this.MarauderKeenFlurry.TabIndex = 19;
             this.MarauderKeenFlurry.Text = "Keen Flurry";
             this.MarauderKeenFlurry.UseVisualStyleBackColor = true;
@@ -5430,9 +6106,10 @@
             this.MarauderInvigorate.AutoSize = true;
             this.MarauderInvigorate.Enabled = false;
             this.MarauderInvigorate.ForeColor = System.Drawing.Color.White;
-            this.MarauderInvigorate.Location = new System.Drawing.Point(6, 65);
+            this.MarauderInvigorate.Location = new System.Drawing.Point(8, 80);
+            this.MarauderInvigorate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderInvigorate.Name = "MarauderInvigorate";
-            this.MarauderInvigorate.Size = new System.Drawing.Size(73, 17);
+            this.MarauderInvigorate.Size = new System.Drawing.Size(92, 21);
             this.MarauderInvigorate.TabIndex = 20;
             this.MarauderInvigorate.Text = "Invigorate";
             this.MarauderInvigorate.UseVisualStyleBackColor = true;
@@ -5443,9 +6120,10 @@
             this.MarauderBloodForBlood.AutoSize = true;
             this.MarauderBloodForBlood.Enabled = false;
             this.MarauderBloodForBlood.ForeColor = System.Drawing.Color.White;
-            this.MarauderBloodForBlood.Location = new System.Drawing.Point(6, 88);
+            this.MarauderBloodForBlood.Location = new System.Drawing.Point(8, 108);
+            this.MarauderBloodForBlood.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderBloodForBlood.Name = "MarauderBloodForBlood";
-            this.MarauderBloodForBlood.Size = new System.Drawing.Size(98, 17);
+            this.MarauderBloodForBlood.Size = new System.Drawing.Size(127, 21);
             this.MarauderBloodForBlood.TabIndex = 21;
             this.MarauderBloodForBlood.Text = "Blood for Blood";
             this.MarauderBloodForBlood.UseVisualStyleBackColor = true;
@@ -5456,9 +6134,10 @@
             this.MarauderFeint.AutoSize = true;
             this.MarauderFeint.Enabled = false;
             this.MarauderFeint.ForeColor = System.Drawing.Color.White;
-            this.MarauderFeint.Location = new System.Drawing.Point(6, 19);
+            this.MarauderFeint.Location = new System.Drawing.Point(8, 23);
+            this.MarauderFeint.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderFeint.Name = "MarauderFeint";
-            this.MarauderFeint.Size = new System.Drawing.Size(49, 17);
+            this.MarauderFeint.Size = new System.Drawing.Size(61, 21);
             this.MarauderFeint.TabIndex = 30;
             this.MarauderFeint.Text = "Feint";
             this.MarauderFeint.UseVisualStyleBackColor = true;
@@ -5472,9 +6151,11 @@
             this.MarauderGladiatorGroup.Controls.Add(this.MarauderAwareness);
             this.MarauderGladiatorGroup.Controls.Add(this.MarauderProvoke);
             this.MarauderGladiatorGroup.ForeColor = System.Drawing.Color.White;
-            this.MarauderGladiatorGroup.Location = new System.Drawing.Point(390, 19);
+            this.MarauderGladiatorGroup.Location = new System.Drawing.Point(520, 23);
+            this.MarauderGladiatorGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderGladiatorGroup.Name = "MarauderGladiatorGroup";
-            this.MarauderGladiatorGroup.Size = new System.Drawing.Size(108, 134);
+            this.MarauderGladiatorGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MarauderGladiatorGroup.Size = new System.Drawing.Size(144, 165);
             this.MarauderGladiatorGroup.TabIndex = 42;
             this.MarauderGladiatorGroup.TabStop = false;
             this.MarauderGladiatorGroup.Text = "Gladiator ";
@@ -5484,9 +6165,10 @@
             this.MarauderFlash.AutoSize = true;
             this.MarauderFlash.Enabled = false;
             this.MarauderFlash.ForeColor = System.Drawing.Color.White;
-            this.MarauderFlash.Location = new System.Drawing.Point(6, 42);
+            this.MarauderFlash.Location = new System.Drawing.Point(8, 52);
+            this.MarauderFlash.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderFlash.Name = "MarauderFlash";
-            this.MarauderFlash.Size = new System.Drawing.Size(51, 17);
+            this.MarauderFlash.Size = new System.Drawing.Size(64, 21);
             this.MarauderFlash.TabIndex = 15;
             this.MarauderFlash.Text = "Flash";
             this.MarauderFlash.UseVisualStyleBackColor = true;
@@ -5497,9 +6179,10 @@
             this.MarauderConvalescence.AutoSize = true;
             this.MarauderConvalescence.Enabled = false;
             this.MarauderConvalescence.ForeColor = System.Drawing.Color.White;
-            this.MarauderConvalescence.Location = new System.Drawing.Point(6, 65);
+            this.MarauderConvalescence.Location = new System.Drawing.Point(8, 80);
+            this.MarauderConvalescence.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderConvalescence.Name = "MarauderConvalescence";
-            this.MarauderConvalescence.Size = new System.Drawing.Size(100, 17);
+            this.MarauderConvalescence.Size = new System.Drawing.Size(126, 21);
             this.MarauderConvalescence.TabIndex = 16;
             this.MarauderConvalescence.Text = "Convalescence";
             this.MarauderConvalescence.UseVisualStyleBackColor = true;
@@ -5510,9 +6193,10 @@
             this.MarauderSavageBlade.AutoSize = true;
             this.MarauderSavageBlade.Enabled = false;
             this.MarauderSavageBlade.ForeColor = System.Drawing.Color.White;
-            this.MarauderSavageBlade.Location = new System.Drawing.Point(6, 19);
+            this.MarauderSavageBlade.Location = new System.Drawing.Point(8, 23);
+            this.MarauderSavageBlade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderSavageBlade.Name = "MarauderSavageBlade";
-            this.MarauderSavageBlade.Size = new System.Drawing.Size(93, 17);
+            this.MarauderSavageBlade.Size = new System.Drawing.Size(118, 21);
             this.MarauderSavageBlade.TabIndex = 30;
             this.MarauderSavageBlade.Text = "Savage Blade";
             this.MarauderSavageBlade.UseVisualStyleBackColor = true;
@@ -5523,9 +6207,10 @@
             this.MarauderAwareness.AutoSize = true;
             this.MarauderAwareness.Enabled = false;
             this.MarauderAwareness.ForeColor = System.Drawing.Color.White;
-            this.MarauderAwareness.Location = new System.Drawing.Point(6, 111);
+            this.MarauderAwareness.Location = new System.Drawing.Point(8, 137);
+            this.MarauderAwareness.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderAwareness.Name = "MarauderAwareness";
-            this.MarauderAwareness.Size = new System.Drawing.Size(78, 17);
+            this.MarauderAwareness.Size = new System.Drawing.Size(99, 21);
             this.MarauderAwareness.TabIndex = 18;
             this.MarauderAwareness.Text = "Awareness";
             this.MarauderAwareness.UseVisualStyleBackColor = true;
@@ -5536,9 +6221,10 @@
             this.MarauderProvoke.AutoSize = true;
             this.MarauderProvoke.Enabled = false;
             this.MarauderProvoke.ForeColor = System.Drawing.Color.White;
-            this.MarauderProvoke.Location = new System.Drawing.Point(6, 88);
+            this.MarauderProvoke.Location = new System.Drawing.Point(8, 108);
+            this.MarauderProvoke.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderProvoke.Name = "MarauderProvoke";
-            this.MarauderProvoke.Size = new System.Drawing.Size(66, 17);
+            this.MarauderProvoke.Size = new System.Drawing.Size(82, 21);
             this.MarauderProvoke.TabIndex = 17;
             this.MarauderProvoke.Text = "Provoke";
             this.MarauderProvoke.UseVisualStyleBackColor = true;
@@ -5552,9 +6238,11 @@
             this.MarauderArcherGroup.Controls.Add(this.MarauderHawksEye);
             this.MarauderArcherGroup.Controls.Add(this.MarauderQuellingStrikes);
             this.MarauderArcherGroup.ForeColor = System.Drawing.Color.White;
-            this.MarauderArcherGroup.Location = new System.Drawing.Point(132, 19);
+            this.MarauderArcherGroup.Location = new System.Drawing.Point(176, 23);
+            this.MarauderArcherGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderArcherGroup.Name = "MarauderArcherGroup";
-            this.MarauderArcherGroup.Size = new System.Drawing.Size(113, 134);
+            this.MarauderArcherGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MarauderArcherGroup.Size = new System.Drawing.Size(151, 165);
             this.MarauderArcherGroup.TabIndex = 41;
             this.MarauderArcherGroup.TabStop = false;
             this.MarauderArcherGroup.Text = "Archer";
@@ -5564,9 +6252,10 @@
             this.MarauderVenomousBite.AutoSize = true;
             this.MarauderVenomousBite.Enabled = false;
             this.MarauderVenomousBite.ForeColor = System.Drawing.Color.White;
-            this.MarauderVenomousBite.Location = new System.Drawing.Point(6, 65);
+            this.MarauderVenomousBite.Location = new System.Drawing.Point(8, 80);
+            this.MarauderVenomousBite.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderVenomousBite.Name = "MarauderVenomousBite";
-            this.MarauderVenomousBite.Size = new System.Drawing.Size(97, 17);
+            this.MarauderVenomousBite.Size = new System.Drawing.Size(125, 21);
             this.MarauderVenomousBite.TabIndex = 11;
             this.MarauderVenomousBite.Text = "Venomous Bite";
             this.MarauderVenomousBite.UseVisualStyleBackColor = true;
@@ -5577,9 +6266,10 @@
             this.MarauderRagingStrikes.AutoSize = true;
             this.MarauderRagingStrikes.Enabled = false;
             this.MarauderRagingStrikes.ForeColor = System.Drawing.Color.White;
-            this.MarauderRagingStrikes.Location = new System.Drawing.Point(6, 42);
+            this.MarauderRagingStrikes.Location = new System.Drawing.Point(8, 52);
+            this.MarauderRagingStrikes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderRagingStrikes.Name = "MarauderRagingStrikes";
-            this.MarauderRagingStrikes.Size = new System.Drawing.Size(95, 17);
+            this.MarauderRagingStrikes.Size = new System.Drawing.Size(122, 21);
             this.MarauderRagingStrikes.TabIndex = 10;
             this.MarauderRagingStrikes.Text = "Raging Strikes";
             this.MarauderRagingStrikes.UseVisualStyleBackColor = true;
@@ -5590,9 +6280,10 @@
             this.MarauderStraightShot.AutoSize = true;
             this.MarauderStraightShot.Enabled = false;
             this.MarauderStraightShot.ForeColor = System.Drawing.Color.White;
-            this.MarauderStraightShot.Location = new System.Drawing.Point(6, 19);
+            this.MarauderStraightShot.Location = new System.Drawing.Point(8, 23);
+            this.MarauderStraightShot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderStraightShot.Name = "MarauderStraightShot";
-            this.MarauderStraightShot.Size = new System.Drawing.Size(87, 17);
+            this.MarauderStraightShot.Size = new System.Drawing.Size(112, 21);
             this.MarauderStraightShot.TabIndex = 7;
             this.MarauderStraightShot.Text = "Straight Shot";
             this.MarauderStraightShot.UseVisualStyleBackColor = true;
@@ -5603,9 +6294,10 @@
             this.MarauderHawksEye.AutoSize = true;
             this.MarauderHawksEye.Enabled = false;
             this.MarauderHawksEye.ForeColor = System.Drawing.Color.White;
-            this.MarauderHawksEye.Location = new System.Drawing.Point(6, 88);
+            this.MarauderHawksEye.Location = new System.Drawing.Point(8, 108);
+            this.MarauderHawksEye.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderHawksEye.Name = "MarauderHawksEye";
-            this.MarauderHawksEye.Size = new System.Drawing.Size(82, 17);
+            this.MarauderHawksEye.Size = new System.Drawing.Size(102, 21);
             this.MarauderHawksEye.TabIndex = 8;
             this.MarauderHawksEye.Text = "Hawk\'s Eye";
             this.MarauderHawksEye.UseVisualStyleBackColor = true;
@@ -5616,9 +6308,10 @@
             this.MarauderQuellingStrikes.AutoSize = true;
             this.MarauderQuellingStrikes.Enabled = false;
             this.MarauderQuellingStrikes.ForeColor = System.Drawing.Color.White;
-            this.MarauderQuellingStrikes.Location = new System.Drawing.Point(6, 111);
+            this.MarauderQuellingStrikes.Location = new System.Drawing.Point(8, 137);
+            this.MarauderQuellingStrikes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderQuellingStrikes.Name = "MarauderQuellingStrikes";
-            this.MarauderQuellingStrikes.Size = new System.Drawing.Size(99, 17);
+            this.MarauderQuellingStrikes.Size = new System.Drawing.Size(129, 21);
             this.MarauderQuellingStrikes.TabIndex = 9;
             this.MarauderQuellingStrikes.Text = "Quelling Strikes";
             this.MarauderQuellingStrikes.UseVisualStyleBackColor = true;
@@ -5629,9 +6322,11 @@
             this.MarauderThaumaturgeGroup.Controls.Add(this.MarauderSurecast);
             this.MarauderThaumaturgeGroup.Controls.Add(this.MarauderSwiftcast);
             this.MarauderThaumaturgeGroup.ForeColor = System.Drawing.Color.White;
-            this.MarauderThaumaturgeGroup.Location = new System.Drawing.Point(390, 160);
+            this.MarauderThaumaturgeGroup.Location = new System.Drawing.Point(520, 197);
+            this.MarauderThaumaturgeGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderThaumaturgeGroup.Name = "MarauderThaumaturgeGroup";
-            this.MarauderThaumaturgeGroup.Size = new System.Drawing.Size(108, 65);
+            this.MarauderThaumaturgeGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MarauderThaumaturgeGroup.Size = new System.Drawing.Size(144, 80);
             this.MarauderThaumaturgeGroup.TabIndex = 40;
             this.MarauderThaumaturgeGroup.TabStop = false;
             this.MarauderThaumaturgeGroup.Text = "Thaumaturge ";
@@ -5641,9 +6336,10 @@
             this.MarauderSurecast.AutoSize = true;
             this.MarauderSurecast.Enabled = false;
             this.MarauderSurecast.ForeColor = System.Drawing.Color.White;
-            this.MarauderSurecast.Location = new System.Drawing.Point(6, 19);
+            this.MarauderSurecast.Location = new System.Drawing.Point(8, 23);
+            this.MarauderSurecast.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderSurecast.Name = "MarauderSurecast";
-            this.MarauderSurecast.Size = new System.Drawing.Size(68, 17);
+            this.MarauderSurecast.Size = new System.Drawing.Size(86, 21);
             this.MarauderSurecast.TabIndex = 35;
             this.MarauderSurecast.Text = "Surecast";
             this.MarauderSurecast.UseVisualStyleBackColor = true;
@@ -5654,9 +6350,10 @@
             this.MarauderSwiftcast.AutoSize = true;
             this.MarauderSwiftcast.Enabled = false;
             this.MarauderSwiftcast.ForeColor = System.Drawing.Color.White;
-            this.MarauderSwiftcast.Location = new System.Drawing.Point(6, 42);
+            this.MarauderSwiftcast.Location = new System.Drawing.Point(8, 52);
+            this.MarauderSwiftcast.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderSwiftcast.Name = "MarauderSwiftcast";
-            this.MarauderSwiftcast.Size = new System.Drawing.Size(69, 17);
+            this.MarauderSwiftcast.Size = new System.Drawing.Size(85, 21);
             this.MarauderSwiftcast.TabIndex = 39;
             this.MarauderSwiftcast.Text = "Swiftcast";
             this.MarauderSwiftcast.UseVisualStyleBackColor = true;
@@ -5668,9 +6365,11 @@
             this.MarauderRogueGroup.Controls.Add(this.MarauderGoad);
             this.MarauderRogueGroup.Controls.Add(this.MarauderShadeShift);
             this.MarauderRogueGroup.ForeColor = System.Drawing.Color.White;
-            this.MarauderRogueGroup.Location = new System.Drawing.Point(261, 160);
+            this.MarauderRogueGroup.Location = new System.Drawing.Point(348, 197);
+            this.MarauderRogueGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderRogueGroup.Name = "MarauderRogueGroup";
-            this.MarauderRogueGroup.Size = new System.Drawing.Size(113, 88);
+            this.MarauderRogueGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MarauderRogueGroup.Size = new System.Drawing.Size(151, 108);
             this.MarauderRogueGroup.TabIndex = 29;
             this.MarauderRogueGroup.TabStop = false;
             this.MarauderRogueGroup.Text = "Rogue";
@@ -5680,9 +6379,10 @@
             this.MarauderDeathBlossom.AutoSize = true;
             this.MarauderDeathBlossom.Enabled = false;
             this.MarauderDeathBlossom.ForeColor = System.Drawing.Color.White;
-            this.MarauderDeathBlossom.Location = new System.Drawing.Point(6, 65);
+            this.MarauderDeathBlossom.Location = new System.Drawing.Point(8, 80);
+            this.MarauderDeathBlossom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderDeathBlossom.Name = "MarauderDeathBlossom";
-            this.MarauderDeathBlossom.Size = new System.Drawing.Size(97, 17);
+            this.MarauderDeathBlossom.Size = new System.Drawing.Size(125, 21);
             this.MarauderDeathBlossom.TabIndex = 37;
             this.MarauderDeathBlossom.Text = "Death Blossom";
             this.MarauderDeathBlossom.UseVisualStyleBackColor = true;
@@ -5693,9 +6393,10 @@
             this.MarauderGoad.AutoSize = true;
             this.MarauderGoad.Enabled = false;
             this.MarauderGoad.ForeColor = System.Drawing.Color.White;
-            this.MarauderGoad.Location = new System.Drawing.Point(6, 42);
+            this.MarauderGoad.Location = new System.Drawing.Point(8, 52);
+            this.MarauderGoad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderGoad.Name = "MarauderGoad";
-            this.MarauderGoad.Size = new System.Drawing.Size(52, 17);
+            this.MarauderGoad.Size = new System.Drawing.Size(65, 21);
             this.MarauderGoad.TabIndex = 36;
             this.MarauderGoad.Text = "Goad";
             this.MarauderGoad.UseVisualStyleBackColor = true;
@@ -5706,9 +6407,10 @@
             this.MarauderShadeShift.AutoSize = true;
             this.MarauderShadeShift.Enabled = false;
             this.MarauderShadeShift.ForeColor = System.Drawing.Color.White;
-            this.MarauderShadeShift.Location = new System.Drawing.Point(6, 19);
+            this.MarauderShadeShift.Location = new System.Drawing.Point(8, 23);
+            this.MarauderShadeShift.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderShadeShift.Name = "MarauderShadeShift";
-            this.MarauderShadeShift.Size = new System.Drawing.Size(81, 17);
+            this.MarauderShadeShift.Size = new System.Drawing.Size(103, 21);
             this.MarauderShadeShift.TabIndex = 35;
             this.MarauderShadeShift.Text = "Shade Shift";
             this.MarauderShadeShift.UseVisualStyleBackColor = true;
@@ -5722,9 +6424,11 @@
             this.MarauderPugilistGroup.Controls.Add(this.MarauderInternalRelease);
             this.MarauderPugilistGroup.Controls.Add(this.MarauderMantra);
             this.MarauderPugilistGroup.ForeColor = System.Drawing.Color.White;
-            this.MarauderPugilistGroup.Location = new System.Drawing.Point(132, 160);
+            this.MarauderPugilistGroup.Location = new System.Drawing.Point(176, 197);
+            this.MarauderPugilistGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderPugilistGroup.Name = "MarauderPugilistGroup";
-            this.MarauderPugilistGroup.Size = new System.Drawing.Size(113, 134);
+            this.MarauderPugilistGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MarauderPugilistGroup.Size = new System.Drawing.Size(151, 165);
             this.MarauderPugilistGroup.TabIndex = 23;
             this.MarauderPugilistGroup.TabStop = false;
             this.MarauderPugilistGroup.Text = "Pugilist ";
@@ -5734,9 +6438,10 @@
             this.MarauderHaymaker.AutoSize = true;
             this.MarauderHaymaker.Enabled = false;
             this.MarauderHaymaker.ForeColor = System.Drawing.Color.White;
-            this.MarauderHaymaker.Location = new System.Drawing.Point(6, 65);
+            this.MarauderHaymaker.Location = new System.Drawing.Point(8, 80);
+            this.MarauderHaymaker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderHaymaker.Name = "MarauderHaymaker";
-            this.MarauderHaymaker.Size = new System.Drawing.Size(74, 17);
+            this.MarauderHaymaker.Size = new System.Drawing.Size(94, 21);
             this.MarauderHaymaker.TabIndex = 35;
             this.MarauderHaymaker.Text = "Haymaker";
             this.MarauderHaymaker.UseVisualStyleBackColor = true;
@@ -5747,9 +6452,10 @@
             this.MarauderFeatherfoot.AutoSize = true;
             this.MarauderFeatherfoot.Enabled = false;
             this.MarauderFeatherfoot.ForeColor = System.Drawing.Color.White;
-            this.MarauderFeatherfoot.Location = new System.Drawing.Point(6, 19);
+            this.MarauderFeatherfoot.Location = new System.Drawing.Point(8, 23);
+            this.MarauderFeatherfoot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderFeatherfoot.Name = "MarauderFeatherfoot";
-            this.MarauderFeatherfoot.Size = new System.Drawing.Size(80, 17);
+            this.MarauderFeatherfoot.Size = new System.Drawing.Size(103, 21);
             this.MarauderFeatherfoot.TabIndex = 30;
             this.MarauderFeatherfoot.Text = "Featherfoot";
             this.MarauderFeatherfoot.UseVisualStyleBackColor = true;
@@ -5760,9 +6466,10 @@
             this.MarauderSecondWind.AutoSize = true;
             this.MarauderSecondWind.Enabled = false;
             this.MarauderSecondWind.ForeColor = System.Drawing.Color.White;
-            this.MarauderSecondWind.Location = new System.Drawing.Point(6, 42);
+            this.MarauderSecondWind.Location = new System.Drawing.Point(8, 52);
+            this.MarauderSecondWind.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderSecondWind.Name = "MarauderSecondWind";
-            this.MarauderSecondWind.Size = new System.Drawing.Size(91, 17);
+            this.MarauderSecondWind.Size = new System.Drawing.Size(114, 21);
             this.MarauderSecondWind.TabIndex = 31;
             this.MarauderSecondWind.Text = "Second Wind";
             this.MarauderSecondWind.UseVisualStyleBackColor = true;
@@ -5772,9 +6479,10 @@
             // 
             this.MarauderInternalRelease.AutoSize = true;
             this.MarauderInternalRelease.ForeColor = System.Drawing.Color.White;
-            this.MarauderInternalRelease.Location = new System.Drawing.Point(6, 88);
+            this.MarauderInternalRelease.Location = new System.Drawing.Point(8, 108);
+            this.MarauderInternalRelease.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderInternalRelease.Name = "MarauderInternalRelease";
-            this.MarauderInternalRelease.Size = new System.Drawing.Size(103, 17);
+            this.MarauderInternalRelease.Size = new System.Drawing.Size(133, 21);
             this.MarauderInternalRelease.TabIndex = 32;
             this.MarauderInternalRelease.Text = "Internal Release";
             this.MarauderInternalRelease.UseVisualStyleBackColor = true;
@@ -5785,9 +6493,10 @@
             this.MarauderMantra.AutoSize = true;
             this.MarauderMantra.Enabled = false;
             this.MarauderMantra.ForeColor = System.Drawing.Color.White;
-            this.MarauderMantra.Location = new System.Drawing.Point(6, 111);
+            this.MarauderMantra.Location = new System.Drawing.Point(8, 137);
+            this.MarauderMantra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderMantra.Name = "MarauderMantra";
-            this.MarauderMantra.Size = new System.Drawing.Size(59, 17);
+            this.MarauderMantra.Size = new System.Drawing.Size(74, 21);
             this.MarauderMantra.TabIndex = 34;
             this.MarauderMantra.Text = "Mantra";
             this.MarauderMantra.UseVisualStyleBackColor = true;
@@ -5799,9 +6508,11 @@
             this.MarauderArcanistGroup.Controls.Add(this.MarauderVirus);
             this.MarauderArcanistGroup.Controls.Add(this.MarauderEyeForAnEye);
             this.MarauderArcanistGroup.ForeColor = System.Drawing.Color.White;
-            this.MarauderArcanistGroup.Location = new System.Drawing.Point(6, 19);
+            this.MarauderArcanistGroup.Location = new System.Drawing.Point(8, 23);
+            this.MarauderArcanistGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderArcanistGroup.Name = "MarauderArcanistGroup";
-            this.MarauderArcanistGroup.Size = new System.Drawing.Size(110, 88);
+            this.MarauderArcanistGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MarauderArcanistGroup.Size = new System.Drawing.Size(147, 108);
             this.MarauderArcanistGroup.TabIndex = 22;
             this.MarauderArcanistGroup.TabStop = false;
             this.MarauderArcanistGroup.Text = "Arcanist";
@@ -5811,9 +6522,10 @@
             this.MarauderPhysick.AutoSize = true;
             this.MarauderPhysick.Enabled = false;
             this.MarauderPhysick.ForeColor = System.Drawing.Color.White;
-            this.MarauderPhysick.Location = new System.Drawing.Point(6, 19);
+            this.MarauderPhysick.Location = new System.Drawing.Point(8, 23);
+            this.MarauderPhysick.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderPhysick.Name = "MarauderPhysick";
-            this.MarauderPhysick.Size = new System.Drawing.Size(63, 17);
+            this.MarauderPhysick.Size = new System.Drawing.Size(78, 21);
             this.MarauderPhysick.TabIndex = 7;
             this.MarauderPhysick.Text = "Physick";
             this.MarauderPhysick.UseVisualStyleBackColor = true;
@@ -5824,9 +6536,10 @@
             this.MarauderVirus.AutoSize = true;
             this.MarauderVirus.Enabled = false;
             this.MarauderVirus.ForeColor = System.Drawing.Color.White;
-            this.MarauderVirus.Location = new System.Drawing.Point(6, 42);
+            this.MarauderVirus.Location = new System.Drawing.Point(8, 52);
+            this.MarauderVirus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderVirus.Name = "MarauderVirus";
-            this.MarauderVirus.Size = new System.Drawing.Size(49, 17);
+            this.MarauderVirus.Size = new System.Drawing.Size(62, 21);
             this.MarauderVirus.TabIndex = 8;
             this.MarauderVirus.Text = "Virus";
             this.MarauderVirus.UseVisualStyleBackColor = true;
@@ -5837,9 +6550,10 @@
             this.MarauderEyeForAnEye.AutoSize = true;
             this.MarauderEyeForAnEye.Enabled = false;
             this.MarauderEyeForAnEye.ForeColor = System.Drawing.Color.White;
-            this.MarauderEyeForAnEye.Location = new System.Drawing.Point(6, 65);
+            this.MarauderEyeForAnEye.Location = new System.Drawing.Point(8, 80);
+            this.MarauderEyeForAnEye.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderEyeForAnEye.Name = "MarauderEyeForAnEye";
-            this.MarauderEyeForAnEye.Size = new System.Drawing.Size(95, 17);
+            this.MarauderEyeForAnEye.Size = new System.Drawing.Size(123, 21);
             this.MarauderEyeForAnEye.TabIndex = 9;
             this.MarauderEyeForAnEye.Text = "Eye for an Eye";
             this.MarauderEyeForAnEye.UseVisualStyleBackColor = true;
@@ -5852,9 +6566,11 @@
             this.MarauderConjurerGroup.Controls.Add(this.MarauderRaise);
             this.MarauderConjurerGroup.Controls.Add(this.MarauderStoneskin);
             this.MarauderConjurerGroup.ForeColor = System.Drawing.Color.White;
-            this.MarauderConjurerGroup.Location = new System.Drawing.Point(261, 19);
+            this.MarauderConjurerGroup.Location = new System.Drawing.Point(348, 23);
+            this.MarauderConjurerGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderConjurerGroup.Name = "MarauderConjurerGroup";
-            this.MarauderConjurerGroup.Size = new System.Drawing.Size(113, 111);
+            this.MarauderConjurerGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MarauderConjurerGroup.Size = new System.Drawing.Size(151, 137);
             this.MarauderConjurerGroup.TabIndex = 23;
             this.MarauderConjurerGroup.TabStop = false;
             this.MarauderConjurerGroup.Text = "Conjurer ";
@@ -5864,9 +6580,10 @@
             this.MarauderCure.AutoSize = true;
             this.MarauderCure.Enabled = false;
             this.MarauderCure.ForeColor = System.Drawing.Color.White;
-            this.MarauderCure.Location = new System.Drawing.Point(6, 19);
+            this.MarauderCure.Location = new System.Drawing.Point(8, 23);
+            this.MarauderCure.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderCure.Name = "MarauderCure";
-            this.MarauderCure.Size = new System.Drawing.Size(48, 17);
+            this.MarauderCure.Size = new System.Drawing.Size(60, 21);
             this.MarauderCure.TabIndex = 10;
             this.MarauderCure.Text = "Cure";
             this.MarauderCure.UseVisualStyleBackColor = true;
@@ -5877,9 +6594,10 @@
             this.MarauderProtect.AutoSize = true;
             this.MarauderProtect.Enabled = false;
             this.MarauderProtect.ForeColor = System.Drawing.Color.White;
-            this.MarauderProtect.Location = new System.Drawing.Point(6, 42);
+            this.MarauderProtect.Location = new System.Drawing.Point(8, 52);
+            this.MarauderProtect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderProtect.Name = "MarauderProtect";
-            this.MarauderProtect.Size = new System.Drawing.Size(60, 17);
+            this.MarauderProtect.Size = new System.Drawing.Size(75, 21);
             this.MarauderProtect.TabIndex = 12;
             this.MarauderProtect.Text = "Protect";
             this.MarauderProtect.UseVisualStyleBackColor = true;
@@ -5890,9 +6608,10 @@
             this.MarauderRaise.AutoSize = true;
             this.MarauderRaise.Enabled = false;
             this.MarauderRaise.ForeColor = System.Drawing.Color.White;
-            this.MarauderRaise.Location = new System.Drawing.Point(6, 65);
+            this.MarauderRaise.Location = new System.Drawing.Point(8, 80);
+            this.MarauderRaise.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderRaise.Name = "MarauderRaise";
-            this.MarauderRaise.Size = new System.Drawing.Size(53, 17);
+            this.MarauderRaise.Size = new System.Drawing.Size(66, 21);
             this.MarauderRaise.TabIndex = 13;
             this.MarauderRaise.Text = "Raise";
             this.MarauderRaise.UseVisualStyleBackColor = true;
@@ -5903,9 +6622,10 @@
             this.MarauderStoneskin.AutoSize = true;
             this.MarauderStoneskin.Enabled = false;
             this.MarauderStoneskin.ForeColor = System.Drawing.Color.White;
-            this.MarauderStoneskin.Location = new System.Drawing.Point(6, 88);
+            this.MarauderStoneskin.Location = new System.Drawing.Point(8, 108);
+            this.MarauderStoneskin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MarauderStoneskin.Name = "MarauderStoneskin";
-            this.MarauderStoneskin.Size = new System.Drawing.Size(73, 17);
+            this.MarauderStoneskin.Size = new System.Drawing.Size(92, 21);
             this.MarauderStoneskin.TabIndex = 14;
             this.MarauderStoneskin.Text = "Stoneskin";
             this.MarauderStoneskin.UseVisualStyleBackColor = true;
@@ -5920,7 +6640,7 @@
             this.WarriorSettings.Location = new System.Drawing.Point(114, 4);
             this.WarriorSettings.Margin = new System.Windows.Forms.Padding(0);
             this.WarriorSettings.Name = "WarriorSettings";
-            this.WarriorSettings.Size = new System.Drawing.Size(567, 402);
+            this.WarriorSettings.Size = new System.Drawing.Size(795, 497);
             this.WarriorSettings.TabIndex = 1;
             this.WarriorSettings.Text = "Warrior";
             this.WarriorSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -5929,9 +6649,11 @@
             // 
             this.WarriorExecuteGroup.Controls.Add(this.WarriorMercyStroke);
             this.WarriorExecuteGroup.ForeColor = System.Drawing.Color.White;
-            this.WarriorExecuteGroup.Location = new System.Drawing.Point(137, 168);
+            this.WarriorExecuteGroup.Location = new System.Drawing.Point(183, 207);
+            this.WarriorExecuteGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.WarriorExecuteGroup.Name = "WarriorExecuteGroup";
-            this.WarriorExecuteGroup.Size = new System.Drawing.Size(101, 42);
+            this.WarriorExecuteGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.WarriorExecuteGroup.Size = new System.Drawing.Size(135, 52);
             this.WarriorExecuteGroup.TabIndex = 21;
             this.WarriorExecuteGroup.TabStop = false;
             this.WarriorExecuteGroup.Text = "Execute";
@@ -5940,9 +6662,10 @@
             // 
             this.WarriorMercyStroke.AutoSize = true;
             this.WarriorMercyStroke.ForeColor = System.Drawing.Color.White;
-            this.WarriorMercyStroke.Location = new System.Drawing.Point(6, 19);
+            this.WarriorMercyStroke.Location = new System.Drawing.Point(8, 23);
+            this.WarriorMercyStroke.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.WarriorMercyStroke.Name = "WarriorMercyStroke";
-            this.WarriorMercyStroke.Size = new System.Drawing.Size(89, 17);
+            this.WarriorMercyStroke.Size = new System.Drawing.Size(113, 21);
             this.WarriorMercyStroke.TabIndex = 7;
             this.WarriorMercyStroke.Text = "Mercy Stroke";
             this.WarriorMercyStroke.UseVisualStyleBackColor = true;
@@ -5952,9 +6675,11 @@
             // 
             this.WarriorInterruptGroup.Controls.Add(this.WarriorBrutalSwing);
             this.WarriorInterruptGroup.ForeColor = System.Drawing.Color.White;
-            this.WarriorInterruptGroup.Location = new System.Drawing.Point(34, 168);
+            this.WarriorInterruptGroup.Location = new System.Drawing.Point(45, 207);
+            this.WarriorInterruptGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.WarriorInterruptGroup.Name = "WarriorInterruptGroup";
-            this.WarriorInterruptGroup.Size = new System.Drawing.Size(97, 42);
+            this.WarriorInterruptGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.WarriorInterruptGroup.Size = new System.Drawing.Size(129, 52);
             this.WarriorInterruptGroup.TabIndex = 18;
             this.WarriorInterruptGroup.TabStop = false;
             this.WarriorInterruptGroup.Text = "Interrupt";
@@ -5963,9 +6688,10 @@
             // 
             this.WarriorBrutalSwing.AutoSize = true;
             this.WarriorBrutalSwing.ForeColor = System.Drawing.Color.White;
-            this.WarriorBrutalSwing.Location = new System.Drawing.Point(6, 19);
+            this.WarriorBrutalSwing.Location = new System.Drawing.Point(8, 23);
+            this.WarriorBrutalSwing.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.WarriorBrutalSwing.Name = "WarriorBrutalSwing";
-            this.WarriorBrutalSwing.Size = new System.Drawing.Size(85, 17);
+            this.WarriorBrutalSwing.Size = new System.Drawing.Size(108, 21);
             this.WarriorBrutalSwing.TabIndex = 7;
             this.WarriorBrutalSwing.Text = "Brutal Swing";
             this.WarriorBrutalSwing.UseVisualStyleBackColor = true;
@@ -5976,9 +6702,11 @@
             this.WarriorCrossGroup.Controls.Add(this.WarriorGladiatorGroup);
             this.WarriorCrossGroup.Controls.Add(this.WarriorPugilistGroup);
             this.WarriorCrossGroup.ForeColor = System.Drawing.Color.White;
-            this.WarriorCrossGroup.Location = new System.Drawing.Point(34, 3);
+            this.WarriorCrossGroup.Location = new System.Drawing.Point(45, 4);
+            this.WarriorCrossGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.WarriorCrossGroup.Name = "WarriorCrossGroup";
-            this.WarriorCrossGroup.Size = new System.Drawing.Size(239, 159);
+            this.WarriorCrossGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.WarriorCrossGroup.Size = new System.Drawing.Size(319, 196);
             this.WarriorCrossGroup.TabIndex = 13;
             this.WarriorCrossGroup.TabStop = false;
             this.WarriorCrossGroup.Text = "Cross-Class  ";
@@ -5991,9 +6719,11 @@
             this.WarriorGladiatorGroup.Controls.Add(this.WarriorAwareness);
             this.WarriorGladiatorGroup.Controls.Add(this.WarriorProvoke);
             this.WarriorGladiatorGroup.ForeColor = System.Drawing.Color.White;
-            this.WarriorGladiatorGroup.Location = new System.Drawing.Point(6, 19);
+            this.WarriorGladiatorGroup.Location = new System.Drawing.Point(8, 23);
+            this.WarriorGladiatorGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.WarriorGladiatorGroup.Name = "WarriorGladiatorGroup";
-            this.WarriorGladiatorGroup.Size = new System.Drawing.Size(108, 134);
+            this.WarriorGladiatorGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.WarriorGladiatorGroup.Size = new System.Drawing.Size(144, 165);
             this.WarriorGladiatorGroup.TabIndex = 42;
             this.WarriorGladiatorGroup.TabStop = false;
             this.WarriorGladiatorGroup.Text = "Gladiator ";
@@ -6003,9 +6733,10 @@
             this.WarriorFlash.AutoSize = true;
             this.WarriorFlash.Enabled = false;
             this.WarriorFlash.ForeColor = System.Drawing.Color.White;
-            this.WarriorFlash.Location = new System.Drawing.Point(6, 42);
+            this.WarriorFlash.Location = new System.Drawing.Point(8, 52);
+            this.WarriorFlash.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.WarriorFlash.Name = "WarriorFlash";
-            this.WarriorFlash.Size = new System.Drawing.Size(51, 17);
+            this.WarriorFlash.Size = new System.Drawing.Size(64, 21);
             this.WarriorFlash.TabIndex = 15;
             this.WarriorFlash.Text = "Flash";
             this.WarriorFlash.UseVisualStyleBackColor = true;
@@ -6016,9 +6747,10 @@
             this.WarriorConvalescence.AutoSize = true;
             this.WarriorConvalescence.Enabled = false;
             this.WarriorConvalescence.ForeColor = System.Drawing.Color.White;
-            this.WarriorConvalescence.Location = new System.Drawing.Point(6, 65);
+            this.WarriorConvalescence.Location = new System.Drawing.Point(8, 80);
+            this.WarriorConvalescence.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.WarriorConvalescence.Name = "WarriorConvalescence";
-            this.WarriorConvalescence.Size = new System.Drawing.Size(100, 17);
+            this.WarriorConvalescence.Size = new System.Drawing.Size(126, 21);
             this.WarriorConvalescence.TabIndex = 16;
             this.WarriorConvalescence.Text = "Convalescence";
             this.WarriorConvalescence.UseVisualStyleBackColor = true;
@@ -6029,9 +6761,10 @@
             this.WarriorSavageBlade.AutoSize = true;
             this.WarriorSavageBlade.Enabled = false;
             this.WarriorSavageBlade.ForeColor = System.Drawing.Color.White;
-            this.WarriorSavageBlade.Location = new System.Drawing.Point(6, 19);
+            this.WarriorSavageBlade.Location = new System.Drawing.Point(8, 23);
+            this.WarriorSavageBlade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.WarriorSavageBlade.Name = "WarriorSavageBlade";
-            this.WarriorSavageBlade.Size = new System.Drawing.Size(93, 17);
+            this.WarriorSavageBlade.Size = new System.Drawing.Size(118, 21);
             this.WarriorSavageBlade.TabIndex = 30;
             this.WarriorSavageBlade.Text = "Savage Blade";
             this.WarriorSavageBlade.UseVisualStyleBackColor = true;
@@ -6042,9 +6775,10 @@
             this.WarriorAwareness.AutoSize = true;
             this.WarriorAwareness.Enabled = false;
             this.WarriorAwareness.ForeColor = System.Drawing.Color.White;
-            this.WarriorAwareness.Location = new System.Drawing.Point(6, 111);
+            this.WarriorAwareness.Location = new System.Drawing.Point(8, 137);
+            this.WarriorAwareness.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.WarriorAwareness.Name = "WarriorAwareness";
-            this.WarriorAwareness.Size = new System.Drawing.Size(78, 17);
+            this.WarriorAwareness.Size = new System.Drawing.Size(99, 21);
             this.WarriorAwareness.TabIndex = 18;
             this.WarriorAwareness.Text = "Awareness";
             this.WarriorAwareness.UseVisualStyleBackColor = true;
@@ -6055,9 +6789,10 @@
             this.WarriorProvoke.AutoSize = true;
             this.WarriorProvoke.Enabled = false;
             this.WarriorProvoke.ForeColor = System.Drawing.Color.White;
-            this.WarriorProvoke.Location = new System.Drawing.Point(6, 88);
+            this.WarriorProvoke.Location = new System.Drawing.Point(8, 108);
+            this.WarriorProvoke.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.WarriorProvoke.Name = "WarriorProvoke";
-            this.WarriorProvoke.Size = new System.Drawing.Size(66, 17);
+            this.WarriorProvoke.Size = new System.Drawing.Size(82, 21);
             this.WarriorProvoke.TabIndex = 17;
             this.WarriorProvoke.Text = "Provoke";
             this.WarriorProvoke.UseVisualStyleBackColor = true;
@@ -6071,9 +6806,11 @@
             this.WarriorPugilistGroup.Controls.Add(this.WarriorInternalRelease);
             this.WarriorPugilistGroup.Controls.Add(this.WarriorMantra);
             this.WarriorPugilistGroup.ForeColor = System.Drawing.Color.White;
-            this.WarriorPugilistGroup.Location = new System.Drawing.Point(120, 19);
+            this.WarriorPugilistGroup.Location = new System.Drawing.Point(160, 23);
+            this.WarriorPugilistGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.WarriorPugilistGroup.Name = "WarriorPugilistGroup";
-            this.WarriorPugilistGroup.Size = new System.Drawing.Size(113, 134);
+            this.WarriorPugilistGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.WarriorPugilistGroup.Size = new System.Drawing.Size(151, 165);
             this.WarriorPugilistGroup.TabIndex = 23;
             this.WarriorPugilistGroup.TabStop = false;
             this.WarriorPugilistGroup.Text = "Pugilist ";
@@ -6083,9 +6820,10 @@
             this.WarriorHaymaker.AutoSize = true;
             this.WarriorHaymaker.Enabled = false;
             this.WarriorHaymaker.ForeColor = System.Drawing.Color.White;
-            this.WarriorHaymaker.Location = new System.Drawing.Point(6, 65);
+            this.WarriorHaymaker.Location = new System.Drawing.Point(8, 80);
+            this.WarriorHaymaker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.WarriorHaymaker.Name = "WarriorHaymaker";
-            this.WarriorHaymaker.Size = new System.Drawing.Size(74, 17);
+            this.WarriorHaymaker.Size = new System.Drawing.Size(94, 21);
             this.WarriorHaymaker.TabIndex = 35;
             this.WarriorHaymaker.Text = "Haymaker";
             this.WarriorHaymaker.UseVisualStyleBackColor = true;
@@ -6096,9 +6834,10 @@
             this.WarriorFeatherfoot.AutoSize = true;
             this.WarriorFeatherfoot.Enabled = false;
             this.WarriorFeatherfoot.ForeColor = System.Drawing.Color.White;
-            this.WarriorFeatherfoot.Location = new System.Drawing.Point(6, 19);
+            this.WarriorFeatherfoot.Location = new System.Drawing.Point(8, 23);
+            this.WarriorFeatherfoot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.WarriorFeatherfoot.Name = "WarriorFeatherfoot";
-            this.WarriorFeatherfoot.Size = new System.Drawing.Size(80, 17);
+            this.WarriorFeatherfoot.Size = new System.Drawing.Size(103, 21);
             this.WarriorFeatherfoot.TabIndex = 30;
             this.WarriorFeatherfoot.Text = "Featherfoot";
             this.WarriorFeatherfoot.UseVisualStyleBackColor = true;
@@ -6109,9 +6848,10 @@
             this.WarriorSecondWind.AutoSize = true;
             this.WarriorSecondWind.Enabled = false;
             this.WarriorSecondWind.ForeColor = System.Drawing.Color.White;
-            this.WarriorSecondWind.Location = new System.Drawing.Point(6, 42);
+            this.WarriorSecondWind.Location = new System.Drawing.Point(8, 52);
+            this.WarriorSecondWind.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.WarriorSecondWind.Name = "WarriorSecondWind";
-            this.WarriorSecondWind.Size = new System.Drawing.Size(91, 17);
+            this.WarriorSecondWind.Size = new System.Drawing.Size(114, 21);
             this.WarriorSecondWind.TabIndex = 31;
             this.WarriorSecondWind.Text = "Second Wind";
             this.WarriorSecondWind.UseVisualStyleBackColor = true;
@@ -6121,9 +6861,10 @@
             // 
             this.WarriorInternalRelease.AutoSize = true;
             this.WarriorInternalRelease.ForeColor = System.Drawing.Color.White;
-            this.WarriorInternalRelease.Location = new System.Drawing.Point(6, 88);
+            this.WarriorInternalRelease.Location = new System.Drawing.Point(8, 108);
+            this.WarriorInternalRelease.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.WarriorInternalRelease.Name = "WarriorInternalRelease";
-            this.WarriorInternalRelease.Size = new System.Drawing.Size(103, 17);
+            this.WarriorInternalRelease.Size = new System.Drawing.Size(133, 21);
             this.WarriorInternalRelease.TabIndex = 32;
             this.WarriorInternalRelease.Text = "Internal Release";
             this.WarriorInternalRelease.UseVisualStyleBackColor = true;
@@ -6134,9 +6875,10 @@
             this.WarriorMantra.AutoSize = true;
             this.WarriorMantra.Enabled = false;
             this.WarriorMantra.ForeColor = System.Drawing.Color.White;
-            this.WarriorMantra.Location = new System.Drawing.Point(6, 111);
+            this.WarriorMantra.Location = new System.Drawing.Point(8, 137);
+            this.WarriorMantra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.WarriorMantra.Name = "WarriorMantra";
-            this.WarriorMantra.Size = new System.Drawing.Size(59, 17);
+            this.WarriorMantra.Size = new System.Drawing.Size(74, 21);
             this.WarriorMantra.TabIndex = 34;
             this.WarriorMantra.Text = "Mantra";
             this.WarriorMantra.UseVisualStyleBackColor = true;
@@ -6149,7 +6891,7 @@
             this.PugilistTab.Location = new System.Drawing.Point(114, 4);
             this.PugilistTab.Margin = new System.Windows.Forms.Padding(0);
             this.PugilistTab.Name = "PugilistTab";
-            this.PugilistTab.Size = new System.Drawing.Size(682, 402);
+            this.PugilistTab.Size = new System.Drawing.Size(949, 497);
             this.PugilistTab.TabIndex = 6;
             this.PugilistTab.Text = "Pugilist";
             // 
@@ -6159,11 +6901,12 @@
             this.PugilistSubTab.Controls.Add(this.PugilistSettings);
             this.PugilistSubTab.Controls.Add(this.MonkSettings);
             this.PugilistSubTab.ItemSize = new System.Drawing.Size(35, 110);
-            this.PugilistSubTab.Location = new System.Drawing.Point(-1, -4);
+            this.PugilistSubTab.Location = new System.Drawing.Point(-1, -5);
+            this.PugilistSubTab.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistSubTab.Multiline = true;
             this.PugilistSubTab.Name = "PugilistSubTab";
             this.PugilistSubTab.SelectedIndex = 0;
-            this.PugilistSubTab.Size = new System.Drawing.Size(685, 410);
+            this.PugilistSubTab.Size = new System.Drawing.Size(913, 505);
             this.PugilistSubTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.PugilistSubTab.TabIndex = 5;
             this.PugilistSubTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -6177,7 +6920,7 @@
             this.PugilistSettings.Location = new System.Drawing.Point(114, 4);
             this.PugilistSettings.Margin = new System.Windows.Forms.Padding(0);
             this.PugilistSettings.Name = "PugilistSettings";
-            this.PugilistSettings.Size = new System.Drawing.Size(567, 402);
+            this.PugilistSettings.Size = new System.Drawing.Size(795, 497);
             this.PugilistSettings.TabIndex = 0;
             this.PugilistSettings.Text = "Pugilist";
             this.PugilistSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -6187,9 +6930,11 @@
             this.PugilistAuraGroup.Controls.Add(this.PugilistFistsOfEarth);
             this.PugilistAuraGroup.Controls.Add(this.PugilistFistsOfWind);
             this.PugilistAuraGroup.ForeColor = System.Drawing.Color.White;
-            this.PugilistAuraGroup.Location = new System.Drawing.Point(154, 309);
+            this.PugilistAuraGroup.Location = new System.Drawing.Point(205, 380);
+            this.PugilistAuraGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistAuraGroup.Name = "PugilistAuraGroup";
-            this.PugilistAuraGroup.Size = new System.Drawing.Size(98, 65);
+            this.PugilistAuraGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PugilistAuraGroup.Size = new System.Drawing.Size(131, 80);
             this.PugilistAuraGroup.TabIndex = 44;
             this.PugilistAuraGroup.TabStop = false;
             this.PugilistAuraGroup.Text = "Aura";
@@ -6198,9 +6943,10 @@
             // 
             this.PugilistFistsOfEarth.AutoSize = true;
             this.PugilistFistsOfEarth.ForeColor = System.Drawing.Color.White;
-            this.PugilistFistsOfEarth.Location = new System.Drawing.Point(6, 19);
+            this.PugilistFistsOfEarth.Location = new System.Drawing.Point(8, 23);
+            this.PugilistFistsOfEarth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistFistsOfEarth.Name = "PugilistFistsOfEarth";
-            this.PugilistFistsOfEarth.Size = new System.Drawing.Size(86, 17);
+            this.PugilistFistsOfEarth.Size = new System.Drawing.Size(112, 21);
             this.PugilistFistsOfEarth.TabIndex = 24;
             this.PugilistFistsOfEarth.TabStop = true;
             this.PugilistFistsOfEarth.Text = "Fists of Earth";
@@ -6211,9 +6957,10 @@
             // 
             this.PugilistFistsOfWind.AutoSize = true;
             this.PugilistFistsOfWind.ForeColor = System.Drawing.Color.White;
-            this.PugilistFistsOfWind.Location = new System.Drawing.Point(6, 42);
+            this.PugilistFistsOfWind.Location = new System.Drawing.Point(8, 52);
+            this.PugilistFistsOfWind.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistFistsOfWind.Name = "PugilistFistsOfWind";
-            this.PugilistFistsOfWind.Size = new System.Drawing.Size(86, 17);
+            this.PugilistFistsOfWind.Size = new System.Drawing.Size(110, 21);
             this.PugilistFistsOfWind.TabIndex = 25;
             this.PugilistFistsOfWind.TabStop = true;
             this.PugilistFistsOfWind.Text = "Fists of Wind";
@@ -6224,9 +6971,11 @@
             // 
             this.PugilistCooldownGroup.Controls.Add(this.PugilistPerfectBalance);
             this.PugilistCooldownGroup.ForeColor = System.Drawing.Color.White;
-            this.PugilistCooldownGroup.Location = new System.Drawing.Point(34, 309);
+            this.PugilistCooldownGroup.Location = new System.Drawing.Point(45, 380);
+            this.PugilistCooldownGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistCooldownGroup.Name = "PugilistCooldownGroup";
-            this.PugilistCooldownGroup.Size = new System.Drawing.Size(114, 42);
+            this.PugilistCooldownGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PugilistCooldownGroup.Size = new System.Drawing.Size(152, 52);
             this.PugilistCooldownGroup.TabIndex = 17;
             this.PugilistCooldownGroup.TabStop = false;
             this.PugilistCooldownGroup.Text = "Cooldown ";
@@ -6235,9 +6984,10 @@
             // 
             this.PugilistPerfectBalance.AutoSize = true;
             this.PugilistPerfectBalance.ForeColor = System.Drawing.Color.White;
-            this.PugilistPerfectBalance.Location = new System.Drawing.Point(6, 19);
+            this.PugilistPerfectBalance.Location = new System.Drawing.Point(8, 23);
+            this.PugilistPerfectBalance.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistPerfectBalance.Name = "PugilistPerfectBalance";
-            this.PugilistPerfectBalance.Size = new System.Drawing.Size(102, 17);
+            this.PugilistPerfectBalance.Size = new System.Drawing.Size(130, 21);
             this.PugilistPerfectBalance.TabIndex = 7;
             this.PugilistPerfectBalance.Text = "Perfect Balance";
             this.PugilistPerfectBalance.UseVisualStyleBackColor = true;
@@ -6254,9 +7004,11 @@
             this.PugilistCrossGroup.Controls.Add(this.PugilistArcanistGroup);
             this.PugilistCrossGroup.Controls.Add(this.PugilistConjurerGroup);
             this.PugilistCrossGroup.ForeColor = System.Drawing.Color.White;
-            this.PugilistCrossGroup.Location = new System.Drawing.Point(34, 3);
+            this.PugilistCrossGroup.Location = new System.Drawing.Point(45, 4);
+            this.PugilistCrossGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistCrossGroup.Name = "PugilistCrossGroup";
-            this.PugilistCrossGroup.Size = new System.Drawing.Size(504, 300);
+            this.PugilistCrossGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PugilistCrossGroup.Size = new System.Drawing.Size(672, 369);
             this.PugilistCrossGroup.TabIndex = 13;
             this.PugilistCrossGroup.TabStop = false;
             this.PugilistCrossGroup.Text = "Cross-Class  ";
@@ -6269,9 +7021,11 @@
             this.PugilistMarauderGroup.Controls.Add(this.PugilistForesight);
             this.PugilistMarauderGroup.Controls.Add(this.PugilistMercyStroke);
             this.PugilistMarauderGroup.ForeColor = System.Drawing.Color.White;
-            this.PugilistMarauderGroup.Location = new System.Drawing.Point(132, 160);
+            this.PugilistMarauderGroup.Location = new System.Drawing.Point(176, 197);
+            this.PugilistMarauderGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistMarauderGroup.Name = "PugilistMarauderGroup";
-            this.PugilistMarauderGroup.Size = new System.Drawing.Size(113, 134);
+            this.PugilistMarauderGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PugilistMarauderGroup.Size = new System.Drawing.Size(151, 165);
             this.PugilistMarauderGroup.TabIndex = 44;
             this.PugilistMarauderGroup.TabStop = false;
             this.PugilistMarauderGroup.Text = "Marauder ";
@@ -6281,9 +7035,10 @@
             this.PugilistFracture.AutoSize = true;
             this.PugilistFracture.Enabled = false;
             this.PugilistFracture.ForeColor = System.Drawing.Color.White;
-            this.PugilistFracture.Location = new System.Drawing.Point(6, 65);
+            this.PugilistFracture.Location = new System.Drawing.Point(8, 80);
+            this.PugilistFracture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistFracture.Name = "PugilistFracture";
-            this.PugilistFracture.Size = new System.Drawing.Size(65, 17);
+            this.PugilistFracture.Size = new System.Drawing.Size(83, 21);
             this.PugilistFracture.TabIndex = 30;
             this.PugilistFracture.Text = "Fracture";
             this.PugilistFracture.UseVisualStyleBackColor = true;
@@ -6294,9 +7049,10 @@
             this.PugilistSkullSunder.AutoSize = true;
             this.PugilistSkullSunder.Enabled = false;
             this.PugilistSkullSunder.ForeColor = System.Drawing.Color.White;
-            this.PugilistSkullSunder.Location = new System.Drawing.Point(6, 42);
+            this.PugilistSkullSunder.Location = new System.Drawing.Point(8, 52);
+            this.PugilistSkullSunder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistSkullSunder.Name = "PugilistSkullSunder";
-            this.PugilistSkullSunder.Size = new System.Drawing.Size(86, 17);
+            this.PugilistSkullSunder.Size = new System.Drawing.Size(110, 21);
             this.PugilistSkullSunder.TabIndex = 29;
             this.PugilistSkullSunder.Text = "Skull Sunder";
             this.PugilistSkullSunder.UseVisualStyleBackColor = true;
@@ -6307,9 +7063,10 @@
             this.PugilistBloodbath.AutoSize = true;
             this.PugilistBloodbath.Enabled = false;
             this.PugilistBloodbath.ForeColor = System.Drawing.Color.White;
-            this.PugilistBloodbath.Location = new System.Drawing.Point(6, 88);
+            this.PugilistBloodbath.Location = new System.Drawing.Point(8, 108);
+            this.PugilistBloodbath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistBloodbath.Name = "PugilistBloodbath";
-            this.PugilistBloodbath.Size = new System.Drawing.Size(74, 17);
+            this.PugilistBloodbath.Size = new System.Drawing.Size(94, 21);
             this.PugilistBloodbath.TabIndex = 27;
             this.PugilistBloodbath.Text = "Bloodbath";
             this.PugilistBloodbath.UseVisualStyleBackColor = true;
@@ -6320,9 +7077,10 @@
             this.PugilistForesight.AutoSize = true;
             this.PugilistForesight.Enabled = false;
             this.PugilistForesight.ForeColor = System.Drawing.Color.White;
-            this.PugilistForesight.Location = new System.Drawing.Point(6, 19);
+            this.PugilistForesight.Location = new System.Drawing.Point(8, 23);
+            this.PugilistForesight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistForesight.Name = "PugilistForesight";
-            this.PugilistForesight.Size = new System.Drawing.Size(69, 17);
+            this.PugilistForesight.Size = new System.Drawing.Size(89, 21);
             this.PugilistForesight.TabIndex = 26;
             this.PugilistForesight.Text = "Foresight";
             this.PugilistForesight.UseVisualStyleBackColor = true;
@@ -6332,9 +7090,10 @@
             // 
             this.PugilistMercyStroke.AutoSize = true;
             this.PugilistMercyStroke.ForeColor = System.Drawing.Color.White;
-            this.PugilistMercyStroke.Location = new System.Drawing.Point(6, 111);
+            this.PugilistMercyStroke.Location = new System.Drawing.Point(8, 137);
+            this.PugilistMercyStroke.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistMercyStroke.Name = "PugilistMercyStroke";
-            this.PugilistMercyStroke.Size = new System.Drawing.Size(89, 17);
+            this.PugilistMercyStroke.Size = new System.Drawing.Size(113, 21);
             this.PugilistMercyStroke.TabIndex = 28;
             this.PugilistMercyStroke.Text = "Mercy Stroke";
             this.PugilistMercyStroke.UseVisualStyleBackColor = true;
@@ -6347,9 +7106,11 @@
             this.PugilistLancerGroup.Controls.Add(this.PugilistBloodForBlood);
             this.PugilistLancerGroup.Controls.Add(this.PugilistFeint);
             this.PugilistLancerGroup.ForeColor = System.Drawing.Color.White;
-            this.PugilistLancerGroup.Location = new System.Drawing.Point(6, 160);
+            this.PugilistLancerGroup.Location = new System.Drawing.Point(8, 197);
+            this.PugilistLancerGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistLancerGroup.Name = "PugilistLancerGroup";
-            this.PugilistLancerGroup.Size = new System.Drawing.Size(110, 111);
+            this.PugilistLancerGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PugilistLancerGroup.Size = new System.Drawing.Size(147, 137);
             this.PugilistLancerGroup.TabIndex = 43;
             this.PugilistLancerGroup.TabStop = false;
             this.PugilistLancerGroup.Text = "Lancer";
@@ -6359,9 +7120,10 @@
             this.PugilistKeenFlurry.AutoSize = true;
             this.PugilistKeenFlurry.Enabled = false;
             this.PugilistKeenFlurry.ForeColor = System.Drawing.Color.White;
-            this.PugilistKeenFlurry.Location = new System.Drawing.Point(6, 42);
+            this.PugilistKeenFlurry.Location = new System.Drawing.Point(8, 52);
+            this.PugilistKeenFlurry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistKeenFlurry.Name = "PugilistKeenFlurry";
-            this.PugilistKeenFlurry.Size = new System.Drawing.Size(79, 17);
+            this.PugilistKeenFlurry.Size = new System.Drawing.Size(103, 21);
             this.PugilistKeenFlurry.TabIndex = 19;
             this.PugilistKeenFlurry.Text = "Keen Flurry";
             this.PugilistKeenFlurry.UseVisualStyleBackColor = true;
@@ -6371,9 +7133,10 @@
             // 
             this.PugilistInvigorate.AutoSize = true;
             this.PugilistInvigorate.ForeColor = System.Drawing.Color.White;
-            this.PugilistInvigorate.Location = new System.Drawing.Point(6, 65);
+            this.PugilistInvigorate.Location = new System.Drawing.Point(8, 80);
+            this.PugilistInvigorate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistInvigorate.Name = "PugilistInvigorate";
-            this.PugilistInvigorate.Size = new System.Drawing.Size(73, 17);
+            this.PugilistInvigorate.Size = new System.Drawing.Size(92, 21);
             this.PugilistInvigorate.TabIndex = 20;
             this.PugilistInvigorate.Text = "Invigorate";
             this.PugilistInvigorate.UseVisualStyleBackColor = true;
@@ -6383,9 +7146,10 @@
             // 
             this.PugilistBloodForBlood.AutoSize = true;
             this.PugilistBloodForBlood.ForeColor = System.Drawing.Color.White;
-            this.PugilistBloodForBlood.Location = new System.Drawing.Point(6, 88);
+            this.PugilistBloodForBlood.Location = new System.Drawing.Point(8, 108);
+            this.PugilistBloodForBlood.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistBloodForBlood.Name = "PugilistBloodForBlood";
-            this.PugilistBloodForBlood.Size = new System.Drawing.Size(98, 17);
+            this.PugilistBloodForBlood.Size = new System.Drawing.Size(127, 21);
             this.PugilistBloodForBlood.TabIndex = 21;
             this.PugilistBloodForBlood.Text = "Blood for Blood";
             this.PugilistBloodForBlood.UseVisualStyleBackColor = true;
@@ -6396,9 +7160,10 @@
             this.PugilistFeint.AutoSize = true;
             this.PugilistFeint.Enabled = false;
             this.PugilistFeint.ForeColor = System.Drawing.Color.White;
-            this.PugilistFeint.Location = new System.Drawing.Point(6, 19);
+            this.PugilistFeint.Location = new System.Drawing.Point(8, 23);
+            this.PugilistFeint.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistFeint.Name = "PugilistFeint";
-            this.PugilistFeint.Size = new System.Drawing.Size(49, 17);
+            this.PugilistFeint.Size = new System.Drawing.Size(61, 21);
             this.PugilistFeint.TabIndex = 30;
             this.PugilistFeint.Text = "Feint";
             this.PugilistFeint.UseVisualStyleBackColor = true;
@@ -6412,9 +7177,11 @@
             this.PugilistGladiatorGroup.Controls.Add(this.PugilistAwareness);
             this.PugilistGladiatorGroup.Controls.Add(this.PugilistProvoke);
             this.PugilistGladiatorGroup.ForeColor = System.Drawing.Color.White;
-            this.PugilistGladiatorGroup.Location = new System.Drawing.Point(390, 19);
+            this.PugilistGladiatorGroup.Location = new System.Drawing.Point(520, 23);
+            this.PugilistGladiatorGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistGladiatorGroup.Name = "PugilistGladiatorGroup";
-            this.PugilistGladiatorGroup.Size = new System.Drawing.Size(108, 134);
+            this.PugilistGladiatorGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PugilistGladiatorGroup.Size = new System.Drawing.Size(144, 165);
             this.PugilistGladiatorGroup.TabIndex = 42;
             this.PugilistGladiatorGroup.TabStop = false;
             this.PugilistGladiatorGroup.Text = "Gladiator ";
@@ -6424,9 +7191,10 @@
             this.PugilistFlash.AutoSize = true;
             this.PugilistFlash.Enabled = false;
             this.PugilistFlash.ForeColor = System.Drawing.Color.White;
-            this.PugilistFlash.Location = new System.Drawing.Point(6, 42);
+            this.PugilistFlash.Location = new System.Drawing.Point(8, 52);
+            this.PugilistFlash.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistFlash.Name = "PugilistFlash";
-            this.PugilistFlash.Size = new System.Drawing.Size(51, 17);
+            this.PugilistFlash.Size = new System.Drawing.Size(64, 21);
             this.PugilistFlash.TabIndex = 15;
             this.PugilistFlash.Text = "Flash";
             this.PugilistFlash.UseVisualStyleBackColor = true;
@@ -6437,9 +7205,10 @@
             this.PugilistConvalescence.AutoSize = true;
             this.PugilistConvalescence.Enabled = false;
             this.PugilistConvalescence.ForeColor = System.Drawing.Color.White;
-            this.PugilistConvalescence.Location = new System.Drawing.Point(6, 65);
+            this.PugilistConvalescence.Location = new System.Drawing.Point(8, 80);
+            this.PugilistConvalescence.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistConvalescence.Name = "PugilistConvalescence";
-            this.PugilistConvalescence.Size = new System.Drawing.Size(100, 17);
+            this.PugilistConvalescence.Size = new System.Drawing.Size(126, 21);
             this.PugilistConvalescence.TabIndex = 16;
             this.PugilistConvalescence.Text = "Convalescence";
             this.PugilistConvalescence.UseVisualStyleBackColor = true;
@@ -6450,9 +7219,10 @@
             this.PugilistSavageBlade.AutoSize = true;
             this.PugilistSavageBlade.Enabled = false;
             this.PugilistSavageBlade.ForeColor = System.Drawing.Color.White;
-            this.PugilistSavageBlade.Location = new System.Drawing.Point(6, 19);
+            this.PugilistSavageBlade.Location = new System.Drawing.Point(8, 23);
+            this.PugilistSavageBlade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistSavageBlade.Name = "PugilistSavageBlade";
-            this.PugilistSavageBlade.Size = new System.Drawing.Size(93, 17);
+            this.PugilistSavageBlade.Size = new System.Drawing.Size(118, 21);
             this.PugilistSavageBlade.TabIndex = 30;
             this.PugilistSavageBlade.Text = "Savage Blade";
             this.PugilistSavageBlade.UseVisualStyleBackColor = true;
@@ -6463,9 +7233,10 @@
             this.PugilistAwareness.AutoSize = true;
             this.PugilistAwareness.Enabled = false;
             this.PugilistAwareness.ForeColor = System.Drawing.Color.White;
-            this.PugilistAwareness.Location = new System.Drawing.Point(6, 111);
+            this.PugilistAwareness.Location = new System.Drawing.Point(8, 137);
+            this.PugilistAwareness.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistAwareness.Name = "PugilistAwareness";
-            this.PugilistAwareness.Size = new System.Drawing.Size(78, 17);
+            this.PugilistAwareness.Size = new System.Drawing.Size(99, 21);
             this.PugilistAwareness.TabIndex = 18;
             this.PugilistAwareness.Text = "Awareness";
             this.PugilistAwareness.UseVisualStyleBackColor = true;
@@ -6476,9 +7247,10 @@
             this.PugilistProvoke.AutoSize = true;
             this.PugilistProvoke.Enabled = false;
             this.PugilistProvoke.ForeColor = System.Drawing.Color.White;
-            this.PugilistProvoke.Location = new System.Drawing.Point(6, 88);
+            this.PugilistProvoke.Location = new System.Drawing.Point(8, 108);
+            this.PugilistProvoke.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistProvoke.Name = "PugilistProvoke";
-            this.PugilistProvoke.Size = new System.Drawing.Size(66, 17);
+            this.PugilistProvoke.Size = new System.Drawing.Size(82, 21);
             this.PugilistProvoke.TabIndex = 17;
             this.PugilistProvoke.Text = "Provoke";
             this.PugilistProvoke.UseVisualStyleBackColor = true;
@@ -6492,9 +7264,11 @@
             this.PugilistArcherGroup.Controls.Add(this.PugilistHawksEye);
             this.PugilistArcherGroup.Controls.Add(this.PugilistQuellingStrikes);
             this.PugilistArcherGroup.ForeColor = System.Drawing.Color.White;
-            this.PugilistArcherGroup.Location = new System.Drawing.Point(132, 19);
+            this.PugilistArcherGroup.Location = new System.Drawing.Point(176, 23);
+            this.PugilistArcherGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistArcherGroup.Name = "PugilistArcherGroup";
-            this.PugilistArcherGroup.Size = new System.Drawing.Size(113, 134);
+            this.PugilistArcherGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PugilistArcherGroup.Size = new System.Drawing.Size(151, 165);
             this.PugilistArcherGroup.TabIndex = 41;
             this.PugilistArcherGroup.TabStop = false;
             this.PugilistArcherGroup.Text = "Archer";
@@ -6504,9 +7278,10 @@
             this.PugilistVenomousBite.AutoSize = true;
             this.PugilistVenomousBite.Enabled = false;
             this.PugilistVenomousBite.ForeColor = System.Drawing.Color.White;
-            this.PugilistVenomousBite.Location = new System.Drawing.Point(6, 65);
+            this.PugilistVenomousBite.Location = new System.Drawing.Point(8, 80);
+            this.PugilistVenomousBite.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistVenomousBite.Name = "PugilistVenomousBite";
-            this.PugilistVenomousBite.Size = new System.Drawing.Size(97, 17);
+            this.PugilistVenomousBite.Size = new System.Drawing.Size(125, 21);
             this.PugilistVenomousBite.TabIndex = 11;
             this.PugilistVenomousBite.Text = "Venomous Bite";
             this.PugilistVenomousBite.UseVisualStyleBackColor = true;
@@ -6517,9 +7292,10 @@
             this.PugilistRagingStrikes.AutoSize = true;
             this.PugilistRagingStrikes.Enabled = false;
             this.PugilistRagingStrikes.ForeColor = System.Drawing.Color.White;
-            this.PugilistRagingStrikes.Location = new System.Drawing.Point(6, 42);
+            this.PugilistRagingStrikes.Location = new System.Drawing.Point(8, 52);
+            this.PugilistRagingStrikes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistRagingStrikes.Name = "PugilistRagingStrikes";
-            this.PugilistRagingStrikes.Size = new System.Drawing.Size(95, 17);
+            this.PugilistRagingStrikes.Size = new System.Drawing.Size(122, 21);
             this.PugilistRagingStrikes.TabIndex = 10;
             this.PugilistRagingStrikes.Text = "Raging Strikes";
             this.PugilistRagingStrikes.UseVisualStyleBackColor = true;
@@ -6530,9 +7306,10 @@
             this.PugilistStraightShot.AutoSize = true;
             this.PugilistStraightShot.Enabled = false;
             this.PugilistStraightShot.ForeColor = System.Drawing.Color.White;
-            this.PugilistStraightShot.Location = new System.Drawing.Point(6, 19);
+            this.PugilistStraightShot.Location = new System.Drawing.Point(8, 23);
+            this.PugilistStraightShot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistStraightShot.Name = "PugilistStraightShot";
-            this.PugilistStraightShot.Size = new System.Drawing.Size(87, 17);
+            this.PugilistStraightShot.Size = new System.Drawing.Size(112, 21);
             this.PugilistStraightShot.TabIndex = 7;
             this.PugilistStraightShot.Text = "Straight Shot";
             this.PugilistStraightShot.UseVisualStyleBackColor = true;
@@ -6543,9 +7320,10 @@
             this.PugilistHawksEye.AutoSize = true;
             this.PugilistHawksEye.Enabled = false;
             this.PugilistHawksEye.ForeColor = System.Drawing.Color.White;
-            this.PugilistHawksEye.Location = new System.Drawing.Point(6, 88);
+            this.PugilistHawksEye.Location = new System.Drawing.Point(8, 108);
+            this.PugilistHawksEye.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistHawksEye.Name = "PugilistHawksEye";
-            this.PugilistHawksEye.Size = new System.Drawing.Size(82, 17);
+            this.PugilistHawksEye.Size = new System.Drawing.Size(102, 21);
             this.PugilistHawksEye.TabIndex = 8;
             this.PugilistHawksEye.Text = "Hawk\'s Eye";
             this.PugilistHawksEye.UseVisualStyleBackColor = true;
@@ -6556,9 +7334,10 @@
             this.PugilistQuellingStrikes.AutoSize = true;
             this.PugilistQuellingStrikes.Enabled = false;
             this.PugilistQuellingStrikes.ForeColor = System.Drawing.Color.White;
-            this.PugilistQuellingStrikes.Location = new System.Drawing.Point(6, 111);
+            this.PugilistQuellingStrikes.Location = new System.Drawing.Point(8, 137);
+            this.PugilistQuellingStrikes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistQuellingStrikes.Name = "PugilistQuellingStrikes";
-            this.PugilistQuellingStrikes.Size = new System.Drawing.Size(99, 17);
+            this.PugilistQuellingStrikes.Size = new System.Drawing.Size(129, 21);
             this.PugilistQuellingStrikes.TabIndex = 9;
             this.PugilistQuellingStrikes.Text = "Quelling Strikes";
             this.PugilistQuellingStrikes.UseVisualStyleBackColor = true;
@@ -6569,9 +7348,11 @@
             this.PugilistThaumaturgeGroup.Controls.Add(this.PugilistSurecast);
             this.PugilistThaumaturgeGroup.Controls.Add(this.PugilistSwiftcast);
             this.PugilistThaumaturgeGroup.ForeColor = System.Drawing.Color.White;
-            this.PugilistThaumaturgeGroup.Location = new System.Drawing.Point(390, 160);
+            this.PugilistThaumaturgeGroup.Location = new System.Drawing.Point(520, 197);
+            this.PugilistThaumaturgeGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistThaumaturgeGroup.Name = "PugilistThaumaturgeGroup";
-            this.PugilistThaumaturgeGroup.Size = new System.Drawing.Size(108, 65);
+            this.PugilistThaumaturgeGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PugilistThaumaturgeGroup.Size = new System.Drawing.Size(144, 80);
             this.PugilistThaumaturgeGroup.TabIndex = 40;
             this.PugilistThaumaturgeGroup.TabStop = false;
             this.PugilistThaumaturgeGroup.Text = "Thaumaturge ";
@@ -6581,9 +7362,10 @@
             this.PugilistSurecast.AutoSize = true;
             this.PugilistSurecast.Enabled = false;
             this.PugilistSurecast.ForeColor = System.Drawing.Color.White;
-            this.PugilistSurecast.Location = new System.Drawing.Point(6, 19);
+            this.PugilistSurecast.Location = new System.Drawing.Point(8, 23);
+            this.PugilistSurecast.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistSurecast.Name = "PugilistSurecast";
-            this.PugilistSurecast.Size = new System.Drawing.Size(68, 17);
+            this.PugilistSurecast.Size = new System.Drawing.Size(86, 21);
             this.PugilistSurecast.TabIndex = 35;
             this.PugilistSurecast.Text = "Surecast";
             this.PugilistSurecast.UseVisualStyleBackColor = true;
@@ -6594,9 +7376,10 @@
             this.PugilistSwiftcast.AutoSize = true;
             this.PugilistSwiftcast.Enabled = false;
             this.PugilistSwiftcast.ForeColor = System.Drawing.Color.White;
-            this.PugilistSwiftcast.Location = new System.Drawing.Point(6, 42);
+            this.PugilistSwiftcast.Location = new System.Drawing.Point(8, 52);
+            this.PugilistSwiftcast.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistSwiftcast.Name = "PugilistSwiftcast";
-            this.PugilistSwiftcast.Size = new System.Drawing.Size(69, 17);
+            this.PugilistSwiftcast.Size = new System.Drawing.Size(85, 21);
             this.PugilistSwiftcast.TabIndex = 39;
             this.PugilistSwiftcast.Text = "Swiftcast";
             this.PugilistSwiftcast.UseVisualStyleBackColor = true;
@@ -6608,9 +7391,11 @@
             this.PugilistRogueGroup.Controls.Add(this.PugilistGoad);
             this.PugilistRogueGroup.Controls.Add(this.PugilistShadeShift);
             this.PugilistRogueGroup.ForeColor = System.Drawing.Color.White;
-            this.PugilistRogueGroup.Location = new System.Drawing.Point(261, 160);
+            this.PugilistRogueGroup.Location = new System.Drawing.Point(348, 197);
+            this.PugilistRogueGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistRogueGroup.Name = "PugilistRogueGroup";
-            this.PugilistRogueGroup.Size = new System.Drawing.Size(113, 88);
+            this.PugilistRogueGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PugilistRogueGroup.Size = new System.Drawing.Size(151, 108);
             this.PugilistRogueGroup.TabIndex = 29;
             this.PugilistRogueGroup.TabStop = false;
             this.PugilistRogueGroup.Text = "Rogue";
@@ -6620,9 +7405,10 @@
             this.PugilistDeathBlossom.AutoSize = true;
             this.PugilistDeathBlossom.Enabled = false;
             this.PugilistDeathBlossom.ForeColor = System.Drawing.Color.White;
-            this.PugilistDeathBlossom.Location = new System.Drawing.Point(6, 65);
+            this.PugilistDeathBlossom.Location = new System.Drawing.Point(8, 80);
+            this.PugilistDeathBlossom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistDeathBlossom.Name = "PugilistDeathBlossom";
-            this.PugilistDeathBlossom.Size = new System.Drawing.Size(97, 17);
+            this.PugilistDeathBlossom.Size = new System.Drawing.Size(125, 21);
             this.PugilistDeathBlossom.TabIndex = 37;
             this.PugilistDeathBlossom.Text = "Death Blossom";
             this.PugilistDeathBlossom.UseVisualStyleBackColor = true;
@@ -6633,9 +7419,10 @@
             this.PugilistGoad.AutoSize = true;
             this.PugilistGoad.Enabled = false;
             this.PugilistGoad.ForeColor = System.Drawing.Color.White;
-            this.PugilistGoad.Location = new System.Drawing.Point(6, 42);
+            this.PugilistGoad.Location = new System.Drawing.Point(8, 52);
+            this.PugilistGoad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistGoad.Name = "PugilistGoad";
-            this.PugilistGoad.Size = new System.Drawing.Size(52, 17);
+            this.PugilistGoad.Size = new System.Drawing.Size(65, 21);
             this.PugilistGoad.TabIndex = 36;
             this.PugilistGoad.Text = "Goad";
             this.PugilistGoad.UseVisualStyleBackColor = true;
@@ -6646,9 +7433,10 @@
             this.PugilistShadeShift.AutoSize = true;
             this.PugilistShadeShift.Enabled = false;
             this.PugilistShadeShift.ForeColor = System.Drawing.Color.White;
-            this.PugilistShadeShift.Location = new System.Drawing.Point(6, 19);
+            this.PugilistShadeShift.Location = new System.Drawing.Point(8, 23);
+            this.PugilistShadeShift.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistShadeShift.Name = "PugilistShadeShift";
-            this.PugilistShadeShift.Size = new System.Drawing.Size(81, 17);
+            this.PugilistShadeShift.Size = new System.Drawing.Size(103, 21);
             this.PugilistShadeShift.TabIndex = 35;
             this.PugilistShadeShift.Text = "Shade Shift";
             this.PugilistShadeShift.UseVisualStyleBackColor = true;
@@ -6660,9 +7448,11 @@
             this.PugilistArcanistGroup.Controls.Add(this.PugilistVirus);
             this.PugilistArcanistGroup.Controls.Add(this.PugilistEyeForAnEye);
             this.PugilistArcanistGroup.ForeColor = System.Drawing.Color.White;
-            this.PugilistArcanistGroup.Location = new System.Drawing.Point(6, 19);
+            this.PugilistArcanistGroup.Location = new System.Drawing.Point(8, 23);
+            this.PugilistArcanistGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistArcanistGroup.Name = "PugilistArcanistGroup";
-            this.PugilistArcanistGroup.Size = new System.Drawing.Size(110, 88);
+            this.PugilistArcanistGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PugilistArcanistGroup.Size = new System.Drawing.Size(147, 108);
             this.PugilistArcanistGroup.TabIndex = 22;
             this.PugilistArcanistGroup.TabStop = false;
             this.PugilistArcanistGroup.Text = "Arcanist";
@@ -6672,9 +7462,10 @@
             this.PugilistPhysick.AutoSize = true;
             this.PugilistPhysick.Enabled = false;
             this.PugilistPhysick.ForeColor = System.Drawing.Color.White;
-            this.PugilistPhysick.Location = new System.Drawing.Point(6, 19);
+            this.PugilistPhysick.Location = new System.Drawing.Point(8, 23);
+            this.PugilistPhysick.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistPhysick.Name = "PugilistPhysick";
-            this.PugilistPhysick.Size = new System.Drawing.Size(63, 17);
+            this.PugilistPhysick.Size = new System.Drawing.Size(78, 21);
             this.PugilistPhysick.TabIndex = 7;
             this.PugilistPhysick.Text = "Physick";
             this.PugilistPhysick.UseVisualStyleBackColor = true;
@@ -6685,9 +7476,10 @@
             this.PugilistVirus.AutoSize = true;
             this.PugilistVirus.Enabled = false;
             this.PugilistVirus.ForeColor = System.Drawing.Color.White;
-            this.PugilistVirus.Location = new System.Drawing.Point(6, 42);
+            this.PugilistVirus.Location = new System.Drawing.Point(8, 52);
+            this.PugilistVirus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistVirus.Name = "PugilistVirus";
-            this.PugilistVirus.Size = new System.Drawing.Size(49, 17);
+            this.PugilistVirus.Size = new System.Drawing.Size(62, 21);
             this.PugilistVirus.TabIndex = 8;
             this.PugilistVirus.Text = "Virus";
             this.PugilistVirus.UseVisualStyleBackColor = true;
@@ -6698,9 +7490,10 @@
             this.PugilistEyeForAnEye.AutoSize = true;
             this.PugilistEyeForAnEye.Enabled = false;
             this.PugilistEyeForAnEye.ForeColor = System.Drawing.Color.White;
-            this.PugilistEyeForAnEye.Location = new System.Drawing.Point(6, 65);
+            this.PugilistEyeForAnEye.Location = new System.Drawing.Point(8, 80);
+            this.PugilistEyeForAnEye.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistEyeForAnEye.Name = "PugilistEyeForAnEye";
-            this.PugilistEyeForAnEye.Size = new System.Drawing.Size(95, 17);
+            this.PugilistEyeForAnEye.Size = new System.Drawing.Size(123, 21);
             this.PugilistEyeForAnEye.TabIndex = 9;
             this.PugilistEyeForAnEye.Text = "Eye for an Eye";
             this.PugilistEyeForAnEye.UseVisualStyleBackColor = true;
@@ -6713,9 +7506,11 @@
             this.PugilistConjurerGroup.Controls.Add(this.PugilistRaise);
             this.PugilistConjurerGroup.Controls.Add(this.PugilistStoneskin);
             this.PugilistConjurerGroup.ForeColor = System.Drawing.Color.White;
-            this.PugilistConjurerGroup.Location = new System.Drawing.Point(261, 19);
+            this.PugilistConjurerGroup.Location = new System.Drawing.Point(348, 23);
+            this.PugilistConjurerGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistConjurerGroup.Name = "PugilistConjurerGroup";
-            this.PugilistConjurerGroup.Size = new System.Drawing.Size(113, 111);
+            this.PugilistConjurerGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PugilistConjurerGroup.Size = new System.Drawing.Size(151, 137);
             this.PugilistConjurerGroup.TabIndex = 23;
             this.PugilistConjurerGroup.TabStop = false;
             this.PugilistConjurerGroup.Text = "Conjurer ";
@@ -6725,9 +7520,10 @@
             this.PugilistCure.AutoSize = true;
             this.PugilistCure.Enabled = false;
             this.PugilistCure.ForeColor = System.Drawing.Color.White;
-            this.PugilistCure.Location = new System.Drawing.Point(6, 19);
+            this.PugilistCure.Location = new System.Drawing.Point(8, 23);
+            this.PugilistCure.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistCure.Name = "PugilistCure";
-            this.PugilistCure.Size = new System.Drawing.Size(48, 17);
+            this.PugilistCure.Size = new System.Drawing.Size(60, 21);
             this.PugilistCure.TabIndex = 10;
             this.PugilistCure.Text = "Cure";
             this.PugilistCure.UseVisualStyleBackColor = true;
@@ -6738,9 +7534,10 @@
             this.PugilistProtect.AutoSize = true;
             this.PugilistProtect.Enabled = false;
             this.PugilistProtect.ForeColor = System.Drawing.Color.White;
-            this.PugilistProtect.Location = new System.Drawing.Point(6, 42);
+            this.PugilistProtect.Location = new System.Drawing.Point(8, 52);
+            this.PugilistProtect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistProtect.Name = "PugilistProtect";
-            this.PugilistProtect.Size = new System.Drawing.Size(60, 17);
+            this.PugilistProtect.Size = new System.Drawing.Size(75, 21);
             this.PugilistProtect.TabIndex = 12;
             this.PugilistProtect.Text = "Protect";
             this.PugilistProtect.UseVisualStyleBackColor = true;
@@ -6751,9 +7548,10 @@
             this.PugilistRaise.AutoSize = true;
             this.PugilistRaise.Enabled = false;
             this.PugilistRaise.ForeColor = System.Drawing.Color.White;
-            this.PugilistRaise.Location = new System.Drawing.Point(6, 65);
+            this.PugilistRaise.Location = new System.Drawing.Point(8, 80);
+            this.PugilistRaise.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistRaise.Name = "PugilistRaise";
-            this.PugilistRaise.Size = new System.Drawing.Size(53, 17);
+            this.PugilistRaise.Size = new System.Drawing.Size(66, 21);
             this.PugilistRaise.TabIndex = 13;
             this.PugilistRaise.Text = "Raise";
             this.PugilistRaise.UseVisualStyleBackColor = true;
@@ -6764,9 +7562,10 @@
             this.PugilistStoneskin.AutoSize = true;
             this.PugilistStoneskin.Enabled = false;
             this.PugilistStoneskin.ForeColor = System.Drawing.Color.White;
-            this.PugilistStoneskin.Location = new System.Drawing.Point(6, 88);
+            this.PugilistStoneskin.Location = new System.Drawing.Point(8, 108);
+            this.PugilistStoneskin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PugilistStoneskin.Name = "PugilistStoneskin";
-            this.PugilistStoneskin.Size = new System.Drawing.Size(73, 17);
+            this.PugilistStoneskin.Size = new System.Drawing.Size(92, 21);
             this.PugilistStoneskin.TabIndex = 14;
             this.PugilistStoneskin.Text = "Stoneskin";
             this.PugilistStoneskin.UseVisualStyleBackColor = true;
@@ -6782,7 +7581,7 @@
             this.MonkSettings.Location = new System.Drawing.Point(114, 4);
             this.MonkSettings.Margin = new System.Windows.Forms.Padding(0);
             this.MonkSettings.Name = "MonkSettings";
-            this.MonkSettings.Size = new System.Drawing.Size(567, 402);
+            this.MonkSettings.Size = new System.Drawing.Size(795, 497);
             this.MonkSettings.TabIndex = 1;
             this.MonkSettings.Text = "Monk";
             this.MonkSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -6793,9 +7592,11 @@
             this.MonkAuraGroup.Controls.Add(this.MonkFistsOfEarth);
             this.MonkAuraGroup.Controls.Add(this.MonkFistsOfWind);
             this.MonkAuraGroup.ForeColor = System.Drawing.Color.White;
-            this.MonkAuraGroup.Location = new System.Drawing.Point(34, 216);
+            this.MonkAuraGroup.Location = new System.Drawing.Point(45, 266);
+            this.MonkAuraGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MonkAuraGroup.Name = "MonkAuraGroup";
-            this.MonkAuraGroup.Size = new System.Drawing.Size(98, 90);
+            this.MonkAuraGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MonkAuraGroup.Size = new System.Drawing.Size(131, 111);
             this.MonkAuraGroup.TabIndex = 45;
             this.MonkAuraGroup.TabStop = false;
             this.MonkAuraGroup.Text = "Aura";
@@ -6804,9 +7605,10 @@
             // 
             this.MonkFistsOfFire.AutoSize = true;
             this.MonkFistsOfFire.ForeColor = System.Drawing.Color.White;
-            this.MonkFistsOfFire.Location = new System.Drawing.Point(6, 65);
+            this.MonkFistsOfFire.Location = new System.Drawing.Point(8, 80);
+            this.MonkFistsOfFire.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MonkFistsOfFire.Name = "MonkFistsOfFire";
-            this.MonkFistsOfFire.Size = new System.Drawing.Size(78, 17);
+            this.MonkFistsOfFire.Size = new System.Drawing.Size(102, 21);
             this.MonkFistsOfFire.TabIndex = 26;
             this.MonkFistsOfFire.TabStop = true;
             this.MonkFistsOfFire.Text = "Fists of Fire";
@@ -6817,9 +7619,10 @@
             // 
             this.MonkFistsOfEarth.AutoSize = true;
             this.MonkFistsOfEarth.ForeColor = System.Drawing.Color.White;
-            this.MonkFistsOfEarth.Location = new System.Drawing.Point(6, 19);
+            this.MonkFistsOfEarth.Location = new System.Drawing.Point(8, 23);
+            this.MonkFistsOfEarth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MonkFistsOfEarth.Name = "MonkFistsOfEarth";
-            this.MonkFistsOfEarth.Size = new System.Drawing.Size(86, 17);
+            this.MonkFistsOfEarth.Size = new System.Drawing.Size(112, 21);
             this.MonkFistsOfEarth.TabIndex = 24;
             this.MonkFistsOfEarth.TabStop = true;
             this.MonkFistsOfEarth.Text = "Fists of Earth";
@@ -6830,9 +7633,10 @@
             // 
             this.MonkFistsOfWind.AutoSize = true;
             this.MonkFistsOfWind.ForeColor = System.Drawing.Color.White;
-            this.MonkFistsOfWind.Location = new System.Drawing.Point(6, 42);
+            this.MonkFistsOfWind.Location = new System.Drawing.Point(8, 52);
+            this.MonkFistsOfWind.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MonkFistsOfWind.Name = "MonkFistsOfWind";
-            this.MonkFistsOfWind.Size = new System.Drawing.Size(86, 17);
+            this.MonkFistsOfWind.Size = new System.Drawing.Size(110, 21);
             this.MonkFistsOfWind.TabIndex = 25;
             this.MonkFistsOfWind.TabStop = true;
             this.MonkFistsOfWind.Text = "Fists of Wind";
@@ -6843,9 +7647,11 @@
             // 
             this.MonkCooldownGroup.Controls.Add(this.MonkPerfectBalance);
             this.MonkCooldownGroup.ForeColor = System.Drawing.Color.White;
-            this.MonkCooldownGroup.Location = new System.Drawing.Point(156, 168);
+            this.MonkCooldownGroup.Location = new System.Drawing.Point(208, 207);
+            this.MonkCooldownGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MonkCooldownGroup.Name = "MonkCooldownGroup";
-            this.MonkCooldownGroup.Size = new System.Drawing.Size(114, 42);
+            this.MonkCooldownGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MonkCooldownGroup.Size = new System.Drawing.Size(152, 52);
             this.MonkCooldownGroup.TabIndex = 16;
             this.MonkCooldownGroup.TabStop = false;
             this.MonkCooldownGroup.Text = "Cooldown ";
@@ -6854,9 +7660,10 @@
             // 
             this.MonkPerfectBalance.AutoSize = true;
             this.MonkPerfectBalance.ForeColor = System.Drawing.Color.White;
-            this.MonkPerfectBalance.Location = new System.Drawing.Point(6, 19);
+            this.MonkPerfectBalance.Location = new System.Drawing.Point(8, 23);
+            this.MonkPerfectBalance.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MonkPerfectBalance.Name = "MonkPerfectBalance";
-            this.MonkPerfectBalance.Size = new System.Drawing.Size(102, 17);
+            this.MonkPerfectBalance.Size = new System.Drawing.Size(130, 21);
             this.MonkPerfectBalance.TabIndex = 7;
             this.MonkPerfectBalance.Text = "Perfect Balance";
             this.MonkPerfectBalance.UseVisualStyleBackColor = true;
@@ -6866,9 +7673,11 @@
             // 
             this.MonkMovementGroup.Controls.Add(this.MonkShoulderTackle);
             this.MonkMovementGroup.ForeColor = System.Drawing.Color.White;
-            this.MonkMovementGroup.Location = new System.Drawing.Point(34, 168);
+            this.MonkMovementGroup.Location = new System.Drawing.Point(45, 207);
+            this.MonkMovementGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MonkMovementGroup.Name = "MonkMovementGroup";
-            this.MonkMovementGroup.Size = new System.Drawing.Size(116, 42);
+            this.MonkMovementGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MonkMovementGroup.Size = new System.Drawing.Size(155, 52);
             this.MonkMovementGroup.TabIndex = 15;
             this.MonkMovementGroup.TabStop = false;
             this.MonkMovementGroup.Text = "Movement";
@@ -6877,9 +7686,10 @@
             // 
             this.MonkShoulderTackle.AutoSize = true;
             this.MonkShoulderTackle.ForeColor = System.Drawing.Color.White;
-            this.MonkShoulderTackle.Location = new System.Drawing.Point(6, 19);
+            this.MonkShoulderTackle.Location = new System.Drawing.Point(8, 23);
+            this.MonkShoulderTackle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MonkShoulderTackle.Name = "MonkShoulderTackle";
-            this.MonkShoulderTackle.Size = new System.Drawing.Size(104, 17);
+            this.MonkShoulderTackle.Size = new System.Drawing.Size(133, 21);
             this.MonkShoulderTackle.TabIndex = 7;
             this.MonkShoulderTackle.Text = "Shoulder Tackle";
             this.MonkShoulderTackle.UseVisualStyleBackColor = true;
@@ -6890,9 +7700,11 @@
             this.MonkCrossGroup.Controls.Add(this.MonkMarauderGroup);
             this.MonkCrossGroup.Controls.Add(this.MonkLancerGroup);
             this.MonkCrossGroup.ForeColor = System.Drawing.Color.White;
-            this.MonkCrossGroup.Location = new System.Drawing.Point(34, 3);
+            this.MonkCrossGroup.Location = new System.Drawing.Point(45, 4);
+            this.MonkCrossGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MonkCrossGroup.Name = "MonkCrossGroup";
-            this.MonkCrossGroup.Size = new System.Drawing.Size(229, 159);
+            this.MonkCrossGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MonkCrossGroup.Size = new System.Drawing.Size(305, 196);
             this.MonkCrossGroup.TabIndex = 14;
             this.MonkCrossGroup.TabStop = false;
             this.MonkCrossGroup.Text = "Cross-Class  ";
@@ -6905,9 +7717,11 @@
             this.MonkMarauderGroup.Controls.Add(this.MonkForesight);
             this.MonkMarauderGroup.Controls.Add(this.MonkMercyStroke);
             this.MonkMarauderGroup.ForeColor = System.Drawing.Color.White;
-            this.MonkMarauderGroup.Location = new System.Drawing.Point(122, 19);
+            this.MonkMarauderGroup.Location = new System.Drawing.Point(163, 23);
+            this.MonkMarauderGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MonkMarauderGroup.Name = "MonkMarauderGroup";
-            this.MonkMarauderGroup.Size = new System.Drawing.Size(101, 134);
+            this.MonkMarauderGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MonkMarauderGroup.Size = new System.Drawing.Size(135, 165);
             this.MonkMarauderGroup.TabIndex = 44;
             this.MonkMarauderGroup.TabStop = false;
             this.MonkMarauderGroup.Text = "Marauder ";
@@ -6917,9 +7731,10 @@
             this.MonkFracture.AutoSize = true;
             this.MonkFracture.Enabled = false;
             this.MonkFracture.ForeColor = System.Drawing.Color.White;
-            this.MonkFracture.Location = new System.Drawing.Point(6, 65);
+            this.MonkFracture.Location = new System.Drawing.Point(8, 80);
+            this.MonkFracture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MonkFracture.Name = "MonkFracture";
-            this.MonkFracture.Size = new System.Drawing.Size(65, 17);
+            this.MonkFracture.Size = new System.Drawing.Size(83, 21);
             this.MonkFracture.TabIndex = 30;
             this.MonkFracture.Text = "Fracture";
             this.MonkFracture.UseVisualStyleBackColor = true;
@@ -6930,9 +7745,10 @@
             this.MonkSkullSunder.AutoSize = true;
             this.MonkSkullSunder.Enabled = false;
             this.MonkSkullSunder.ForeColor = System.Drawing.Color.White;
-            this.MonkSkullSunder.Location = new System.Drawing.Point(6, 42);
+            this.MonkSkullSunder.Location = new System.Drawing.Point(8, 52);
+            this.MonkSkullSunder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MonkSkullSunder.Name = "MonkSkullSunder";
-            this.MonkSkullSunder.Size = new System.Drawing.Size(86, 17);
+            this.MonkSkullSunder.Size = new System.Drawing.Size(110, 21);
             this.MonkSkullSunder.TabIndex = 29;
             this.MonkSkullSunder.Text = "Skull Sunder";
             this.MonkSkullSunder.UseVisualStyleBackColor = true;
@@ -6943,9 +7759,10 @@
             this.MonkBloodbath.AutoSize = true;
             this.MonkBloodbath.Enabled = false;
             this.MonkBloodbath.ForeColor = System.Drawing.Color.White;
-            this.MonkBloodbath.Location = new System.Drawing.Point(6, 88);
+            this.MonkBloodbath.Location = new System.Drawing.Point(8, 108);
+            this.MonkBloodbath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MonkBloodbath.Name = "MonkBloodbath";
-            this.MonkBloodbath.Size = new System.Drawing.Size(74, 17);
+            this.MonkBloodbath.Size = new System.Drawing.Size(94, 21);
             this.MonkBloodbath.TabIndex = 27;
             this.MonkBloodbath.Text = "Bloodbath";
             this.MonkBloodbath.UseVisualStyleBackColor = true;
@@ -6956,9 +7773,10 @@
             this.MonkForesight.AutoSize = true;
             this.MonkForesight.Enabled = false;
             this.MonkForesight.ForeColor = System.Drawing.Color.White;
-            this.MonkForesight.Location = new System.Drawing.Point(6, 19);
+            this.MonkForesight.Location = new System.Drawing.Point(8, 23);
+            this.MonkForesight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MonkForesight.Name = "MonkForesight";
-            this.MonkForesight.Size = new System.Drawing.Size(69, 17);
+            this.MonkForesight.Size = new System.Drawing.Size(89, 21);
             this.MonkForesight.TabIndex = 26;
             this.MonkForesight.Text = "Foresight";
             this.MonkForesight.UseVisualStyleBackColor = true;
@@ -6968,9 +7786,10 @@
             // 
             this.MonkMercyStroke.AutoSize = true;
             this.MonkMercyStroke.ForeColor = System.Drawing.Color.White;
-            this.MonkMercyStroke.Location = new System.Drawing.Point(6, 111);
+            this.MonkMercyStroke.Location = new System.Drawing.Point(8, 137);
+            this.MonkMercyStroke.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MonkMercyStroke.Name = "MonkMercyStroke";
-            this.MonkMercyStroke.Size = new System.Drawing.Size(89, 17);
+            this.MonkMercyStroke.Size = new System.Drawing.Size(113, 21);
             this.MonkMercyStroke.TabIndex = 28;
             this.MonkMercyStroke.Text = "Mercy Stroke";
             this.MonkMercyStroke.UseVisualStyleBackColor = true;
@@ -6983,9 +7802,11 @@
             this.MonkLancerGroup.Controls.Add(this.MonkBloodForBlood);
             this.MonkLancerGroup.Controls.Add(this.MonkFeint);
             this.MonkLancerGroup.ForeColor = System.Drawing.Color.White;
-            this.MonkLancerGroup.Location = new System.Drawing.Point(6, 19);
+            this.MonkLancerGroup.Location = new System.Drawing.Point(8, 23);
+            this.MonkLancerGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MonkLancerGroup.Name = "MonkLancerGroup";
-            this.MonkLancerGroup.Size = new System.Drawing.Size(110, 111);
+            this.MonkLancerGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MonkLancerGroup.Size = new System.Drawing.Size(147, 137);
             this.MonkLancerGroup.TabIndex = 43;
             this.MonkLancerGroup.TabStop = false;
             this.MonkLancerGroup.Text = "Lancer";
@@ -6995,9 +7816,10 @@
             this.MonkKeenFlurry.AutoSize = true;
             this.MonkKeenFlurry.Enabled = false;
             this.MonkKeenFlurry.ForeColor = System.Drawing.Color.White;
-            this.MonkKeenFlurry.Location = new System.Drawing.Point(6, 42);
+            this.MonkKeenFlurry.Location = new System.Drawing.Point(8, 52);
+            this.MonkKeenFlurry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MonkKeenFlurry.Name = "MonkKeenFlurry";
-            this.MonkKeenFlurry.Size = new System.Drawing.Size(79, 17);
+            this.MonkKeenFlurry.Size = new System.Drawing.Size(103, 21);
             this.MonkKeenFlurry.TabIndex = 19;
             this.MonkKeenFlurry.Text = "Keen Flurry";
             this.MonkKeenFlurry.UseVisualStyleBackColor = true;
@@ -7007,9 +7829,10 @@
             // 
             this.MonkInvigorate.AutoSize = true;
             this.MonkInvigorate.ForeColor = System.Drawing.Color.White;
-            this.MonkInvigorate.Location = new System.Drawing.Point(6, 65);
+            this.MonkInvigorate.Location = new System.Drawing.Point(8, 80);
+            this.MonkInvigorate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MonkInvigorate.Name = "MonkInvigorate";
-            this.MonkInvigorate.Size = new System.Drawing.Size(73, 17);
+            this.MonkInvigorate.Size = new System.Drawing.Size(92, 21);
             this.MonkInvigorate.TabIndex = 20;
             this.MonkInvigorate.Text = "Invigorate";
             this.MonkInvigorate.UseVisualStyleBackColor = true;
@@ -7019,9 +7842,10 @@
             // 
             this.MonkBloodForBlood.AutoSize = true;
             this.MonkBloodForBlood.ForeColor = System.Drawing.Color.White;
-            this.MonkBloodForBlood.Location = new System.Drawing.Point(6, 88);
+            this.MonkBloodForBlood.Location = new System.Drawing.Point(8, 108);
+            this.MonkBloodForBlood.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MonkBloodForBlood.Name = "MonkBloodForBlood";
-            this.MonkBloodForBlood.Size = new System.Drawing.Size(98, 17);
+            this.MonkBloodForBlood.Size = new System.Drawing.Size(127, 21);
             this.MonkBloodForBlood.TabIndex = 21;
             this.MonkBloodForBlood.Text = "Blood for Blood";
             this.MonkBloodForBlood.UseVisualStyleBackColor = true;
@@ -7032,9 +7856,10 @@
             this.MonkFeint.AutoSize = true;
             this.MonkFeint.Enabled = false;
             this.MonkFeint.ForeColor = System.Drawing.Color.White;
-            this.MonkFeint.Location = new System.Drawing.Point(6, 19);
+            this.MonkFeint.Location = new System.Drawing.Point(8, 23);
+            this.MonkFeint.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MonkFeint.Name = "MonkFeint";
-            this.MonkFeint.Size = new System.Drawing.Size(49, 17);
+            this.MonkFeint.Size = new System.Drawing.Size(61, 21);
             this.MonkFeint.TabIndex = 30;
             this.MonkFeint.Text = "Feint";
             this.MonkFeint.UseVisualStyleBackColor = true;
@@ -7047,7 +7872,7 @@
             this.RogueTab.Location = new System.Drawing.Point(114, 4);
             this.RogueTab.Margin = new System.Windows.Forms.Padding(0);
             this.RogueTab.Name = "RogueTab";
-            this.RogueTab.Size = new System.Drawing.Size(682, 402);
+            this.RogueTab.Size = new System.Drawing.Size(949, 497);
             this.RogueTab.TabIndex = 7;
             this.RogueTab.Text = "Rogue";
             // 
@@ -7057,11 +7882,12 @@
             this.RogueSubTab.Controls.Add(this.RogueSettings);
             this.RogueSubTab.Controls.Add(this.NinjaSettings);
             this.RogueSubTab.ItemSize = new System.Drawing.Size(35, 110);
-            this.RogueSubTab.Location = new System.Drawing.Point(-1, -4);
+            this.RogueSubTab.Location = new System.Drawing.Point(-1, -5);
+            this.RogueSubTab.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueSubTab.Multiline = true;
             this.RogueSubTab.Name = "RogueSubTab";
             this.RogueSubTab.SelectedIndex = 0;
-            this.RogueSubTab.Size = new System.Drawing.Size(685, 410);
+            this.RogueSubTab.Size = new System.Drawing.Size(913, 505);
             this.RogueSubTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.RogueSubTab.TabIndex = 5;
             this.RogueSubTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -7078,7 +7904,7 @@
             this.RogueSettings.Location = new System.Drawing.Point(114, 4);
             this.RogueSettings.Margin = new System.Windows.Forms.Padding(0);
             this.RogueSettings.Name = "RogueSettings";
-            this.RogueSettings.Size = new System.Drawing.Size(567, 402);
+            this.RogueSettings.Size = new System.Drawing.Size(795, 497);
             this.RogueSettings.TabIndex = 0;
             this.RogueSettings.Text = "Rogue";
             this.RogueSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -7087,9 +7913,11 @@
             // 
             this.RogueBuffGroup.Controls.Add(this.RogueGoad);
             this.RogueBuffGroup.ForeColor = System.Drawing.Color.White;
-            this.RogueBuffGroup.Location = new System.Drawing.Point(34, 357);
+            this.RogueBuffGroup.Location = new System.Drawing.Point(45, 439);
+            this.RogueBuffGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueBuffGroup.Name = "RogueBuffGroup";
-            this.RogueBuffGroup.Size = new System.Drawing.Size(64, 42);
+            this.RogueBuffGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RogueBuffGroup.Size = new System.Drawing.Size(85, 52);
             this.RogueBuffGroup.TabIndex = 44;
             this.RogueBuffGroup.TabStop = false;
             this.RogueBuffGroup.Text = "Buff";
@@ -7098,9 +7926,10 @@
             // 
             this.RogueGoad.AutoSize = true;
             this.RogueGoad.ForeColor = System.Drawing.Color.White;
-            this.RogueGoad.Location = new System.Drawing.Point(6, 19);
+            this.RogueGoad.Location = new System.Drawing.Point(8, 23);
+            this.RogueGoad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueGoad.Name = "RogueGoad";
-            this.RogueGoad.Size = new System.Drawing.Size(52, 17);
+            this.RogueGoad.Size = new System.Drawing.Size(65, 21);
             this.RogueGoad.TabIndex = 7;
             this.RogueGoad.Text = "Goad";
             this.RogueGoad.UseVisualStyleBackColor = true;
@@ -7111,9 +7940,11 @@
             this.RogueAuraGroup.Controls.Add(this.RogueKissOfTheWasp);
             this.RogueAuraGroup.Controls.Add(this.RogueKissOfTheViper);
             this.RogueAuraGroup.ForeColor = System.Drawing.Color.White;
-            this.RogueAuraGroup.Location = new System.Drawing.Point(330, 309);
+            this.RogueAuraGroup.Location = new System.Drawing.Point(440, 380);
+            this.RogueAuraGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueAuraGroup.Name = "RogueAuraGroup";
-            this.RogueAuraGroup.Size = new System.Drawing.Size(117, 65);
+            this.RogueAuraGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RogueAuraGroup.Size = new System.Drawing.Size(156, 80);
             this.RogueAuraGroup.TabIndex = 43;
             this.RogueAuraGroup.TabStop = false;
             this.RogueAuraGroup.Text = "Aura";
@@ -7122,9 +7953,10 @@
             // 
             this.RogueKissOfTheWasp.AutoSize = true;
             this.RogueKissOfTheWasp.ForeColor = System.Drawing.Color.White;
-            this.RogueKissOfTheWasp.Location = new System.Drawing.Point(6, 19);
+            this.RogueKissOfTheWasp.Location = new System.Drawing.Point(8, 23);
+            this.RogueKissOfTheWasp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueKissOfTheWasp.Name = "RogueKissOfTheWasp";
-            this.RogueKissOfTheWasp.Size = new System.Drawing.Size(105, 17);
+            this.RogueKissOfTheWasp.Size = new System.Drawing.Size(135, 21);
             this.RogueKissOfTheWasp.TabIndex = 24;
             this.RogueKissOfTheWasp.TabStop = true;
             this.RogueKissOfTheWasp.Text = "Kiss of the Wasp";
@@ -7135,9 +7967,10 @@
             // 
             this.RogueKissOfTheViper.AutoSize = true;
             this.RogueKissOfTheViper.ForeColor = System.Drawing.Color.White;
-            this.RogueKissOfTheViper.Location = new System.Drawing.Point(6, 42);
+            this.RogueKissOfTheViper.Location = new System.Drawing.Point(8, 52);
+            this.RogueKissOfTheViper.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueKissOfTheViper.Name = "RogueKissOfTheViper";
-            this.RogueKissOfTheViper.Size = new System.Drawing.Size(101, 17);
+            this.RogueKissOfTheViper.Size = new System.Drawing.Size(132, 21);
             this.RogueKissOfTheViper.TabIndex = 25;
             this.RogueKissOfTheViper.TabStop = true;
             this.RogueKissOfTheViper.Text = "Kiss of the Viper";
@@ -7148,9 +7981,11 @@
             // 
             this.RogueDebuffGroup.Controls.Add(this.RogueDancingEdge);
             this.RogueDebuffGroup.ForeColor = System.Drawing.Color.White;
-            this.RogueDebuffGroup.Location = new System.Drawing.Point(218, 309);
+            this.RogueDebuffGroup.Location = new System.Drawing.Point(291, 380);
+            this.RogueDebuffGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueDebuffGroup.Name = "RogueDebuffGroup";
-            this.RogueDebuffGroup.Size = new System.Drawing.Size(106, 42);
+            this.RogueDebuffGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RogueDebuffGroup.Size = new System.Drawing.Size(141, 52);
             this.RogueDebuffGroup.TabIndex = 23;
             this.RogueDebuffGroup.TabStop = false;
             this.RogueDebuffGroup.Text = "Debuff";
@@ -7159,9 +7994,10 @@
             // 
             this.RogueDancingEdge.AutoSize = true;
             this.RogueDancingEdge.ForeColor = System.Drawing.Color.White;
-            this.RogueDancingEdge.Location = new System.Drawing.Point(6, 19);
+            this.RogueDancingEdge.Location = new System.Drawing.Point(8, 23);
+            this.RogueDancingEdge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueDancingEdge.Name = "RogueDancingEdge";
-            this.RogueDancingEdge.Size = new System.Drawing.Size(94, 17);
+            this.RogueDancingEdge.Size = new System.Drawing.Size(119, 21);
             this.RogueDancingEdge.TabIndex = 7;
             this.RogueDancingEdge.Text = "Dancing Edge";
             this.RogueDancingEdge.UseVisualStyleBackColor = true;
@@ -7171,9 +8007,11 @@
             // 
             this.RogueExecuteGroup.Controls.Add(this.RogueAssassinate);
             this.RogueExecuteGroup.ForeColor = System.Drawing.Color.White;
-            this.RogueExecuteGroup.Location = new System.Drawing.Point(118, 309);
+            this.RogueExecuteGroup.Location = new System.Drawing.Point(157, 380);
+            this.RogueExecuteGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueExecuteGroup.Name = "RogueExecuteGroup";
-            this.RogueExecuteGroup.Size = new System.Drawing.Size(94, 42);
+            this.RogueExecuteGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RogueExecuteGroup.Size = new System.Drawing.Size(125, 52);
             this.RogueExecuteGroup.TabIndex = 22;
             this.RogueExecuteGroup.TabStop = false;
             this.RogueExecuteGroup.Text = "Execute";
@@ -7182,9 +8020,10 @@
             // 
             this.RogueAssassinate.AutoSize = true;
             this.RogueAssassinate.ForeColor = System.Drawing.Color.White;
-            this.RogueAssassinate.Location = new System.Drawing.Point(6, 19);
+            this.RogueAssassinate.Location = new System.Drawing.Point(8, 23);
+            this.RogueAssassinate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueAssassinate.Name = "RogueAssassinate";
-            this.RogueAssassinate.Size = new System.Drawing.Size(82, 17);
+            this.RogueAssassinate.Size = new System.Drawing.Size(106, 21);
             this.RogueAssassinate.TabIndex = 7;
             this.RogueAssassinate.Text = "Assassinate";
             this.RogueAssassinate.UseVisualStyleBackColor = true;
@@ -7194,9 +8033,11 @@
             // 
             this.RogueInterruptGroup.Controls.Add(this.RogueJugulate);
             this.RogueInterruptGroup.ForeColor = System.Drawing.Color.White;
-            this.RogueInterruptGroup.Location = new System.Drawing.Point(34, 309);
+            this.RogueInterruptGroup.Location = new System.Drawing.Point(45, 380);
+            this.RogueInterruptGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueInterruptGroup.Name = "RogueInterruptGroup";
-            this.RogueInterruptGroup.Size = new System.Drawing.Size(78, 42);
+            this.RogueInterruptGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RogueInterruptGroup.Size = new System.Drawing.Size(104, 52);
             this.RogueInterruptGroup.TabIndex = 18;
             this.RogueInterruptGroup.TabStop = false;
             this.RogueInterruptGroup.Text = "Interrupt";
@@ -7205,9 +8046,10 @@
             // 
             this.RogueJugulate.AutoSize = true;
             this.RogueJugulate.ForeColor = System.Drawing.Color.White;
-            this.RogueJugulate.Location = new System.Drawing.Point(6, 19);
+            this.RogueJugulate.Location = new System.Drawing.Point(8, 23);
+            this.RogueJugulate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueJugulate.Name = "RogueJugulate";
-            this.RogueJugulate.Size = new System.Drawing.Size(66, 17);
+            this.RogueJugulate.Size = new System.Drawing.Size(84, 21);
             this.RogueJugulate.TabIndex = 7;
             this.RogueJugulate.Text = "Jugulate";
             this.RogueJugulate.UseVisualStyleBackColor = true;
@@ -7224,9 +8066,11 @@
             this.RogueCrossGroup.Controls.Add(this.RogueArcanistGroup);
             this.RogueCrossGroup.Controls.Add(this.RogueConjurerGroup);
             this.RogueCrossGroup.ForeColor = System.Drawing.Color.White;
-            this.RogueCrossGroup.Location = new System.Drawing.Point(34, 3);
+            this.RogueCrossGroup.Location = new System.Drawing.Point(45, 4);
+            this.RogueCrossGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueCrossGroup.Name = "RogueCrossGroup";
-            this.RogueCrossGroup.Size = new System.Drawing.Size(504, 300);
+            this.RogueCrossGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RogueCrossGroup.Size = new System.Drawing.Size(672, 369);
             this.RogueCrossGroup.TabIndex = 14;
             this.RogueCrossGroup.TabStop = false;
             this.RogueCrossGroup.Text = "Cross-Class  ";
@@ -7239,9 +8083,11 @@
             this.RoguePugilistGroup.Controls.Add(this.RogueInternalRelease);
             this.RoguePugilistGroup.Controls.Add(this.RogueMantra);
             this.RoguePugilistGroup.ForeColor = System.Drawing.Color.White;
-            this.RoguePugilistGroup.Location = new System.Drawing.Point(261, 160);
+            this.RoguePugilistGroup.Location = new System.Drawing.Point(348, 197);
+            this.RoguePugilistGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RoguePugilistGroup.Name = "RoguePugilistGroup";
-            this.RoguePugilistGroup.Size = new System.Drawing.Size(113, 134);
+            this.RoguePugilistGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RoguePugilistGroup.Size = new System.Drawing.Size(151, 165);
             this.RoguePugilistGroup.TabIndex = 45;
             this.RoguePugilistGroup.TabStop = false;
             this.RoguePugilistGroup.Text = "Pugilist ";
@@ -7251,9 +8097,10 @@
             this.RogueHaymaker.AutoSize = true;
             this.RogueHaymaker.Enabled = false;
             this.RogueHaymaker.ForeColor = System.Drawing.Color.White;
-            this.RogueHaymaker.Location = new System.Drawing.Point(6, 65);
+            this.RogueHaymaker.Location = new System.Drawing.Point(8, 80);
+            this.RogueHaymaker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueHaymaker.Name = "RogueHaymaker";
-            this.RogueHaymaker.Size = new System.Drawing.Size(74, 17);
+            this.RogueHaymaker.Size = new System.Drawing.Size(94, 21);
             this.RogueHaymaker.TabIndex = 35;
             this.RogueHaymaker.Text = "Haymaker";
             this.RogueHaymaker.UseVisualStyleBackColor = true;
@@ -7264,9 +8111,10 @@
             this.RogueFeatherfoot.AutoSize = true;
             this.RogueFeatherfoot.Enabled = false;
             this.RogueFeatherfoot.ForeColor = System.Drawing.Color.White;
-            this.RogueFeatherfoot.Location = new System.Drawing.Point(6, 19);
+            this.RogueFeatherfoot.Location = new System.Drawing.Point(8, 23);
+            this.RogueFeatherfoot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueFeatherfoot.Name = "RogueFeatherfoot";
-            this.RogueFeatherfoot.Size = new System.Drawing.Size(80, 17);
+            this.RogueFeatherfoot.Size = new System.Drawing.Size(103, 21);
             this.RogueFeatherfoot.TabIndex = 30;
             this.RogueFeatherfoot.Text = "Featherfoot";
             this.RogueFeatherfoot.UseVisualStyleBackColor = true;
@@ -7277,9 +8125,10 @@
             this.RogueSecondWind.AutoSize = true;
             this.RogueSecondWind.Enabled = false;
             this.RogueSecondWind.ForeColor = System.Drawing.Color.White;
-            this.RogueSecondWind.Location = new System.Drawing.Point(6, 42);
+            this.RogueSecondWind.Location = new System.Drawing.Point(8, 52);
+            this.RogueSecondWind.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueSecondWind.Name = "RogueSecondWind";
-            this.RogueSecondWind.Size = new System.Drawing.Size(91, 17);
+            this.RogueSecondWind.Size = new System.Drawing.Size(114, 21);
             this.RogueSecondWind.TabIndex = 31;
             this.RogueSecondWind.Text = "Second Wind";
             this.RogueSecondWind.UseVisualStyleBackColor = true;
@@ -7289,9 +8138,10 @@
             // 
             this.RogueInternalRelease.AutoSize = true;
             this.RogueInternalRelease.ForeColor = System.Drawing.Color.White;
-            this.RogueInternalRelease.Location = new System.Drawing.Point(6, 88);
+            this.RogueInternalRelease.Location = new System.Drawing.Point(8, 108);
+            this.RogueInternalRelease.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueInternalRelease.Name = "RogueInternalRelease";
-            this.RogueInternalRelease.Size = new System.Drawing.Size(103, 17);
+            this.RogueInternalRelease.Size = new System.Drawing.Size(133, 21);
             this.RogueInternalRelease.TabIndex = 32;
             this.RogueInternalRelease.Text = "Internal Release";
             this.RogueInternalRelease.UseVisualStyleBackColor = true;
@@ -7302,9 +8152,10 @@
             this.RogueMantra.AutoSize = true;
             this.RogueMantra.Enabled = false;
             this.RogueMantra.ForeColor = System.Drawing.Color.White;
-            this.RogueMantra.Location = new System.Drawing.Point(6, 111);
+            this.RogueMantra.Location = new System.Drawing.Point(8, 137);
+            this.RogueMantra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueMantra.Name = "RogueMantra";
-            this.RogueMantra.Size = new System.Drawing.Size(59, 17);
+            this.RogueMantra.Size = new System.Drawing.Size(74, 21);
             this.RogueMantra.TabIndex = 34;
             this.RogueMantra.Text = "Mantra";
             this.RogueMantra.UseVisualStyleBackColor = true;
@@ -7318,9 +8169,11 @@
             this.RogueMarauderGroup.Controls.Add(this.RogueForesight);
             this.RogueMarauderGroup.Controls.Add(this.RogueMercyStroke);
             this.RogueMarauderGroup.ForeColor = System.Drawing.Color.White;
-            this.RogueMarauderGroup.Location = new System.Drawing.Point(132, 160);
+            this.RogueMarauderGroup.Location = new System.Drawing.Point(176, 197);
+            this.RogueMarauderGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueMarauderGroup.Name = "RogueMarauderGroup";
-            this.RogueMarauderGroup.Size = new System.Drawing.Size(113, 134);
+            this.RogueMarauderGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RogueMarauderGroup.Size = new System.Drawing.Size(151, 165);
             this.RogueMarauderGroup.TabIndex = 44;
             this.RogueMarauderGroup.TabStop = false;
             this.RogueMarauderGroup.Text = "Marauder ";
@@ -7330,9 +8183,10 @@
             this.RogueFracture.AutoSize = true;
             this.RogueFracture.Enabled = false;
             this.RogueFracture.ForeColor = System.Drawing.Color.White;
-            this.RogueFracture.Location = new System.Drawing.Point(6, 65);
+            this.RogueFracture.Location = new System.Drawing.Point(8, 80);
+            this.RogueFracture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueFracture.Name = "RogueFracture";
-            this.RogueFracture.Size = new System.Drawing.Size(65, 17);
+            this.RogueFracture.Size = new System.Drawing.Size(83, 21);
             this.RogueFracture.TabIndex = 30;
             this.RogueFracture.Text = "Fracture";
             this.RogueFracture.UseVisualStyleBackColor = true;
@@ -7343,9 +8197,10 @@
             this.RogueSkullSunder.AutoSize = true;
             this.RogueSkullSunder.Enabled = false;
             this.RogueSkullSunder.ForeColor = System.Drawing.Color.White;
-            this.RogueSkullSunder.Location = new System.Drawing.Point(6, 42);
+            this.RogueSkullSunder.Location = new System.Drawing.Point(8, 52);
+            this.RogueSkullSunder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueSkullSunder.Name = "RogueSkullSunder";
-            this.RogueSkullSunder.Size = new System.Drawing.Size(86, 17);
+            this.RogueSkullSunder.Size = new System.Drawing.Size(110, 21);
             this.RogueSkullSunder.TabIndex = 29;
             this.RogueSkullSunder.Text = "Skull Sunder";
             this.RogueSkullSunder.UseVisualStyleBackColor = true;
@@ -7356,9 +8211,10 @@
             this.RogueBloodbath.AutoSize = true;
             this.RogueBloodbath.Enabled = false;
             this.RogueBloodbath.ForeColor = System.Drawing.Color.White;
-            this.RogueBloodbath.Location = new System.Drawing.Point(6, 88);
+            this.RogueBloodbath.Location = new System.Drawing.Point(8, 108);
+            this.RogueBloodbath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueBloodbath.Name = "RogueBloodbath";
-            this.RogueBloodbath.Size = new System.Drawing.Size(74, 17);
+            this.RogueBloodbath.Size = new System.Drawing.Size(94, 21);
             this.RogueBloodbath.TabIndex = 27;
             this.RogueBloodbath.Text = "Bloodbath";
             this.RogueBloodbath.UseVisualStyleBackColor = true;
@@ -7369,9 +8225,10 @@
             this.RogueForesight.AutoSize = true;
             this.RogueForesight.Enabled = false;
             this.RogueForesight.ForeColor = System.Drawing.Color.White;
-            this.RogueForesight.Location = new System.Drawing.Point(6, 19);
+            this.RogueForesight.Location = new System.Drawing.Point(8, 23);
+            this.RogueForesight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueForesight.Name = "RogueForesight";
-            this.RogueForesight.Size = new System.Drawing.Size(69, 17);
+            this.RogueForesight.Size = new System.Drawing.Size(89, 21);
             this.RogueForesight.TabIndex = 26;
             this.RogueForesight.Text = "Foresight";
             this.RogueForesight.UseVisualStyleBackColor = true;
@@ -7382,9 +8239,10 @@
             this.RogueMercyStroke.AutoSize = true;
             this.RogueMercyStroke.Enabled = false;
             this.RogueMercyStroke.ForeColor = System.Drawing.Color.White;
-            this.RogueMercyStroke.Location = new System.Drawing.Point(6, 111);
+            this.RogueMercyStroke.Location = new System.Drawing.Point(8, 137);
+            this.RogueMercyStroke.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueMercyStroke.Name = "RogueMercyStroke";
-            this.RogueMercyStroke.Size = new System.Drawing.Size(89, 17);
+            this.RogueMercyStroke.Size = new System.Drawing.Size(113, 21);
             this.RogueMercyStroke.TabIndex = 28;
             this.RogueMercyStroke.Text = "Mercy Stroke";
             this.RogueMercyStroke.UseVisualStyleBackColor = true;
@@ -7397,9 +8255,11 @@
             this.RogueLancerGroup.Controls.Add(this.RogueBloodForBlood);
             this.RogueLancerGroup.Controls.Add(this.RogueFeint);
             this.RogueLancerGroup.ForeColor = System.Drawing.Color.White;
-            this.RogueLancerGroup.Location = new System.Drawing.Point(6, 160);
+            this.RogueLancerGroup.Location = new System.Drawing.Point(8, 197);
+            this.RogueLancerGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueLancerGroup.Name = "RogueLancerGroup";
-            this.RogueLancerGroup.Size = new System.Drawing.Size(110, 111);
+            this.RogueLancerGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RogueLancerGroup.Size = new System.Drawing.Size(147, 137);
             this.RogueLancerGroup.TabIndex = 43;
             this.RogueLancerGroup.TabStop = false;
             this.RogueLancerGroup.Text = "Lancer";
@@ -7409,9 +8269,10 @@
             this.RogueKeenFlurry.AutoSize = true;
             this.RogueKeenFlurry.Enabled = false;
             this.RogueKeenFlurry.ForeColor = System.Drawing.Color.White;
-            this.RogueKeenFlurry.Location = new System.Drawing.Point(6, 42);
+            this.RogueKeenFlurry.Location = new System.Drawing.Point(8, 52);
+            this.RogueKeenFlurry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueKeenFlurry.Name = "RogueKeenFlurry";
-            this.RogueKeenFlurry.Size = new System.Drawing.Size(79, 17);
+            this.RogueKeenFlurry.Size = new System.Drawing.Size(103, 21);
             this.RogueKeenFlurry.TabIndex = 19;
             this.RogueKeenFlurry.Text = "Keen Flurry";
             this.RogueKeenFlurry.UseVisualStyleBackColor = true;
@@ -7421,9 +8282,10 @@
             // 
             this.RogueInvigorate.AutoSize = true;
             this.RogueInvigorate.ForeColor = System.Drawing.Color.White;
-            this.RogueInvigorate.Location = new System.Drawing.Point(6, 65);
+            this.RogueInvigorate.Location = new System.Drawing.Point(8, 80);
+            this.RogueInvigorate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueInvigorate.Name = "RogueInvigorate";
-            this.RogueInvigorate.Size = new System.Drawing.Size(73, 17);
+            this.RogueInvigorate.Size = new System.Drawing.Size(92, 21);
             this.RogueInvigorate.TabIndex = 20;
             this.RogueInvigorate.Text = "Invigorate";
             this.RogueInvigorate.UseVisualStyleBackColor = true;
@@ -7433,9 +8295,10 @@
             // 
             this.RogueBloodForBlood.AutoSize = true;
             this.RogueBloodForBlood.ForeColor = System.Drawing.Color.White;
-            this.RogueBloodForBlood.Location = new System.Drawing.Point(6, 88);
+            this.RogueBloodForBlood.Location = new System.Drawing.Point(8, 108);
+            this.RogueBloodForBlood.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueBloodForBlood.Name = "RogueBloodForBlood";
-            this.RogueBloodForBlood.Size = new System.Drawing.Size(98, 17);
+            this.RogueBloodForBlood.Size = new System.Drawing.Size(127, 21);
             this.RogueBloodForBlood.TabIndex = 21;
             this.RogueBloodForBlood.Text = "Blood for Blood";
             this.RogueBloodForBlood.UseVisualStyleBackColor = true;
@@ -7446,9 +8309,10 @@
             this.RogueFeint.AutoSize = true;
             this.RogueFeint.Enabled = false;
             this.RogueFeint.ForeColor = System.Drawing.Color.White;
-            this.RogueFeint.Location = new System.Drawing.Point(6, 19);
+            this.RogueFeint.Location = new System.Drawing.Point(8, 23);
+            this.RogueFeint.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueFeint.Name = "RogueFeint";
-            this.RogueFeint.Size = new System.Drawing.Size(49, 17);
+            this.RogueFeint.Size = new System.Drawing.Size(61, 21);
             this.RogueFeint.TabIndex = 30;
             this.RogueFeint.Text = "Feint";
             this.RogueFeint.UseVisualStyleBackColor = true;
@@ -7462,9 +8326,11 @@
             this.RogueGladiatorGroup.Controls.Add(this.RogueAwareness);
             this.RogueGladiatorGroup.Controls.Add(this.RogueProvoke);
             this.RogueGladiatorGroup.ForeColor = System.Drawing.Color.White;
-            this.RogueGladiatorGroup.Location = new System.Drawing.Point(390, 19);
+            this.RogueGladiatorGroup.Location = new System.Drawing.Point(520, 23);
+            this.RogueGladiatorGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueGladiatorGroup.Name = "RogueGladiatorGroup";
-            this.RogueGladiatorGroup.Size = new System.Drawing.Size(108, 134);
+            this.RogueGladiatorGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RogueGladiatorGroup.Size = new System.Drawing.Size(144, 165);
             this.RogueGladiatorGroup.TabIndex = 42;
             this.RogueGladiatorGroup.TabStop = false;
             this.RogueGladiatorGroup.Text = "Gladiator ";
@@ -7474,9 +8340,10 @@
             this.RogueFlash.AutoSize = true;
             this.RogueFlash.Enabled = false;
             this.RogueFlash.ForeColor = System.Drawing.Color.White;
-            this.RogueFlash.Location = new System.Drawing.Point(6, 42);
+            this.RogueFlash.Location = new System.Drawing.Point(8, 52);
+            this.RogueFlash.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueFlash.Name = "RogueFlash";
-            this.RogueFlash.Size = new System.Drawing.Size(51, 17);
+            this.RogueFlash.Size = new System.Drawing.Size(64, 21);
             this.RogueFlash.TabIndex = 15;
             this.RogueFlash.Text = "Flash";
             this.RogueFlash.UseVisualStyleBackColor = true;
@@ -7487,9 +8354,10 @@
             this.RogueConvalescence.AutoSize = true;
             this.RogueConvalescence.Enabled = false;
             this.RogueConvalescence.ForeColor = System.Drawing.Color.White;
-            this.RogueConvalescence.Location = new System.Drawing.Point(6, 65);
+            this.RogueConvalescence.Location = new System.Drawing.Point(8, 80);
+            this.RogueConvalescence.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueConvalescence.Name = "RogueConvalescence";
-            this.RogueConvalescence.Size = new System.Drawing.Size(100, 17);
+            this.RogueConvalescence.Size = new System.Drawing.Size(126, 21);
             this.RogueConvalescence.TabIndex = 16;
             this.RogueConvalescence.Text = "Convalescence";
             this.RogueConvalescence.UseVisualStyleBackColor = true;
@@ -7500,9 +8368,10 @@
             this.RogueSavageBlade.AutoSize = true;
             this.RogueSavageBlade.Enabled = false;
             this.RogueSavageBlade.ForeColor = System.Drawing.Color.White;
-            this.RogueSavageBlade.Location = new System.Drawing.Point(6, 19);
+            this.RogueSavageBlade.Location = new System.Drawing.Point(8, 23);
+            this.RogueSavageBlade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueSavageBlade.Name = "RogueSavageBlade";
-            this.RogueSavageBlade.Size = new System.Drawing.Size(93, 17);
+            this.RogueSavageBlade.Size = new System.Drawing.Size(118, 21);
             this.RogueSavageBlade.TabIndex = 30;
             this.RogueSavageBlade.Text = "Savage Blade";
             this.RogueSavageBlade.UseVisualStyleBackColor = true;
@@ -7513,9 +8382,10 @@
             this.RogueAwareness.AutoSize = true;
             this.RogueAwareness.Enabled = false;
             this.RogueAwareness.ForeColor = System.Drawing.Color.White;
-            this.RogueAwareness.Location = new System.Drawing.Point(6, 111);
+            this.RogueAwareness.Location = new System.Drawing.Point(8, 137);
+            this.RogueAwareness.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueAwareness.Name = "RogueAwareness";
-            this.RogueAwareness.Size = new System.Drawing.Size(78, 17);
+            this.RogueAwareness.Size = new System.Drawing.Size(99, 21);
             this.RogueAwareness.TabIndex = 18;
             this.RogueAwareness.Text = "Awareness";
             this.RogueAwareness.UseVisualStyleBackColor = true;
@@ -7526,9 +8396,10 @@
             this.RogueProvoke.AutoSize = true;
             this.RogueProvoke.Enabled = false;
             this.RogueProvoke.ForeColor = System.Drawing.Color.White;
-            this.RogueProvoke.Location = new System.Drawing.Point(6, 88);
+            this.RogueProvoke.Location = new System.Drawing.Point(8, 108);
+            this.RogueProvoke.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueProvoke.Name = "RogueProvoke";
-            this.RogueProvoke.Size = new System.Drawing.Size(66, 17);
+            this.RogueProvoke.Size = new System.Drawing.Size(82, 21);
             this.RogueProvoke.TabIndex = 17;
             this.RogueProvoke.Text = "Provoke";
             this.RogueProvoke.UseVisualStyleBackColor = true;
@@ -7542,9 +8413,11 @@
             this.RogueArcherGroup.Controls.Add(this.RogueHawksEye);
             this.RogueArcherGroup.Controls.Add(this.RogueQuellingStrikes);
             this.RogueArcherGroup.ForeColor = System.Drawing.Color.White;
-            this.RogueArcherGroup.Location = new System.Drawing.Point(132, 19);
+            this.RogueArcherGroup.Location = new System.Drawing.Point(176, 23);
+            this.RogueArcherGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueArcherGroup.Name = "RogueArcherGroup";
-            this.RogueArcherGroup.Size = new System.Drawing.Size(113, 134);
+            this.RogueArcherGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RogueArcherGroup.Size = new System.Drawing.Size(151, 165);
             this.RogueArcherGroup.TabIndex = 41;
             this.RogueArcherGroup.TabStop = false;
             this.RogueArcherGroup.Text = "Archer";
@@ -7554,9 +8427,10 @@
             this.RogueVenomousBite.AutoSize = true;
             this.RogueVenomousBite.Enabled = false;
             this.RogueVenomousBite.ForeColor = System.Drawing.Color.White;
-            this.RogueVenomousBite.Location = new System.Drawing.Point(6, 65);
+            this.RogueVenomousBite.Location = new System.Drawing.Point(8, 80);
+            this.RogueVenomousBite.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueVenomousBite.Name = "RogueVenomousBite";
-            this.RogueVenomousBite.Size = new System.Drawing.Size(97, 17);
+            this.RogueVenomousBite.Size = new System.Drawing.Size(125, 21);
             this.RogueVenomousBite.TabIndex = 11;
             this.RogueVenomousBite.Text = "Venomous Bite";
             this.RogueVenomousBite.UseVisualStyleBackColor = true;
@@ -7567,9 +8441,10 @@
             this.RogueRagingStrikes.AutoSize = true;
             this.RogueRagingStrikes.Enabled = false;
             this.RogueRagingStrikes.ForeColor = System.Drawing.Color.White;
-            this.RogueRagingStrikes.Location = new System.Drawing.Point(6, 42);
+            this.RogueRagingStrikes.Location = new System.Drawing.Point(8, 52);
+            this.RogueRagingStrikes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueRagingStrikes.Name = "RogueRagingStrikes";
-            this.RogueRagingStrikes.Size = new System.Drawing.Size(95, 17);
+            this.RogueRagingStrikes.Size = new System.Drawing.Size(122, 21);
             this.RogueRagingStrikes.TabIndex = 10;
             this.RogueRagingStrikes.Text = "Raging Strikes";
             this.RogueRagingStrikes.UseVisualStyleBackColor = true;
@@ -7580,9 +8455,10 @@
             this.RogueStraightShot.AutoSize = true;
             this.RogueStraightShot.Enabled = false;
             this.RogueStraightShot.ForeColor = System.Drawing.Color.White;
-            this.RogueStraightShot.Location = new System.Drawing.Point(6, 19);
+            this.RogueStraightShot.Location = new System.Drawing.Point(8, 23);
+            this.RogueStraightShot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueStraightShot.Name = "RogueStraightShot";
-            this.RogueStraightShot.Size = new System.Drawing.Size(87, 17);
+            this.RogueStraightShot.Size = new System.Drawing.Size(112, 21);
             this.RogueStraightShot.TabIndex = 7;
             this.RogueStraightShot.Text = "Straight Shot";
             this.RogueStraightShot.UseVisualStyleBackColor = true;
@@ -7593,9 +8469,10 @@
             this.RogueHawksEye.AutoSize = true;
             this.RogueHawksEye.Enabled = false;
             this.RogueHawksEye.ForeColor = System.Drawing.Color.White;
-            this.RogueHawksEye.Location = new System.Drawing.Point(6, 88);
+            this.RogueHawksEye.Location = new System.Drawing.Point(8, 108);
+            this.RogueHawksEye.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueHawksEye.Name = "RogueHawksEye";
-            this.RogueHawksEye.Size = new System.Drawing.Size(82, 17);
+            this.RogueHawksEye.Size = new System.Drawing.Size(102, 21);
             this.RogueHawksEye.TabIndex = 8;
             this.RogueHawksEye.Text = "Hawk\'s Eye";
             this.RogueHawksEye.UseVisualStyleBackColor = true;
@@ -7606,9 +8483,10 @@
             this.RogueQuellingStrikes.AutoSize = true;
             this.RogueQuellingStrikes.Enabled = false;
             this.RogueQuellingStrikes.ForeColor = System.Drawing.Color.White;
-            this.RogueQuellingStrikes.Location = new System.Drawing.Point(6, 111);
+            this.RogueQuellingStrikes.Location = new System.Drawing.Point(8, 137);
+            this.RogueQuellingStrikes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueQuellingStrikes.Name = "RogueQuellingStrikes";
-            this.RogueQuellingStrikes.Size = new System.Drawing.Size(99, 17);
+            this.RogueQuellingStrikes.Size = new System.Drawing.Size(129, 21);
             this.RogueQuellingStrikes.TabIndex = 9;
             this.RogueQuellingStrikes.Text = "Quelling Strikes";
             this.RogueQuellingStrikes.UseVisualStyleBackColor = true;
@@ -7619,9 +8497,11 @@
             this.RogueThaumaturgeGroup.Controls.Add(this.RogueSurecast);
             this.RogueThaumaturgeGroup.Controls.Add(this.RogueSwiftcast);
             this.RogueThaumaturgeGroup.ForeColor = System.Drawing.Color.White;
-            this.RogueThaumaturgeGroup.Location = new System.Drawing.Point(390, 160);
+            this.RogueThaumaturgeGroup.Location = new System.Drawing.Point(520, 197);
+            this.RogueThaumaturgeGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueThaumaturgeGroup.Name = "RogueThaumaturgeGroup";
-            this.RogueThaumaturgeGroup.Size = new System.Drawing.Size(108, 65);
+            this.RogueThaumaturgeGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RogueThaumaturgeGroup.Size = new System.Drawing.Size(144, 80);
             this.RogueThaumaturgeGroup.TabIndex = 40;
             this.RogueThaumaturgeGroup.TabStop = false;
             this.RogueThaumaturgeGroup.Text = "Thaumaturge ";
@@ -7631,9 +8511,10 @@
             this.RogueSurecast.AutoSize = true;
             this.RogueSurecast.Enabled = false;
             this.RogueSurecast.ForeColor = System.Drawing.Color.White;
-            this.RogueSurecast.Location = new System.Drawing.Point(6, 19);
+            this.RogueSurecast.Location = new System.Drawing.Point(8, 23);
+            this.RogueSurecast.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueSurecast.Name = "RogueSurecast";
-            this.RogueSurecast.Size = new System.Drawing.Size(68, 17);
+            this.RogueSurecast.Size = new System.Drawing.Size(86, 21);
             this.RogueSurecast.TabIndex = 35;
             this.RogueSurecast.Text = "Surecast";
             this.RogueSurecast.UseVisualStyleBackColor = true;
@@ -7644,9 +8525,10 @@
             this.RogueSwiftcast.AutoSize = true;
             this.RogueSwiftcast.Enabled = false;
             this.RogueSwiftcast.ForeColor = System.Drawing.Color.White;
-            this.RogueSwiftcast.Location = new System.Drawing.Point(6, 42);
+            this.RogueSwiftcast.Location = new System.Drawing.Point(8, 52);
+            this.RogueSwiftcast.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueSwiftcast.Name = "RogueSwiftcast";
-            this.RogueSwiftcast.Size = new System.Drawing.Size(69, 17);
+            this.RogueSwiftcast.Size = new System.Drawing.Size(85, 21);
             this.RogueSwiftcast.TabIndex = 39;
             this.RogueSwiftcast.Text = "Swiftcast";
             this.RogueSwiftcast.UseVisualStyleBackColor = true;
@@ -7658,9 +8540,11 @@
             this.RogueArcanistGroup.Controls.Add(this.RogueVirus);
             this.RogueArcanistGroup.Controls.Add(this.RogueEyeForAnEye);
             this.RogueArcanistGroup.ForeColor = System.Drawing.Color.White;
-            this.RogueArcanistGroup.Location = new System.Drawing.Point(6, 19);
+            this.RogueArcanistGroup.Location = new System.Drawing.Point(8, 23);
+            this.RogueArcanistGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueArcanistGroup.Name = "RogueArcanistGroup";
-            this.RogueArcanistGroup.Size = new System.Drawing.Size(110, 88);
+            this.RogueArcanistGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RogueArcanistGroup.Size = new System.Drawing.Size(147, 108);
             this.RogueArcanistGroup.TabIndex = 22;
             this.RogueArcanistGroup.TabStop = false;
             this.RogueArcanistGroup.Text = "Arcanist";
@@ -7670,9 +8554,10 @@
             this.RoguePhysick.AutoSize = true;
             this.RoguePhysick.Enabled = false;
             this.RoguePhysick.ForeColor = System.Drawing.Color.White;
-            this.RoguePhysick.Location = new System.Drawing.Point(6, 19);
+            this.RoguePhysick.Location = new System.Drawing.Point(8, 23);
+            this.RoguePhysick.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RoguePhysick.Name = "RoguePhysick";
-            this.RoguePhysick.Size = new System.Drawing.Size(63, 17);
+            this.RoguePhysick.Size = new System.Drawing.Size(78, 21);
             this.RoguePhysick.TabIndex = 7;
             this.RoguePhysick.Text = "Physick";
             this.RoguePhysick.UseVisualStyleBackColor = true;
@@ -7683,9 +8568,10 @@
             this.RogueVirus.AutoSize = true;
             this.RogueVirus.Enabled = false;
             this.RogueVirus.ForeColor = System.Drawing.Color.White;
-            this.RogueVirus.Location = new System.Drawing.Point(6, 42);
+            this.RogueVirus.Location = new System.Drawing.Point(8, 52);
+            this.RogueVirus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueVirus.Name = "RogueVirus";
-            this.RogueVirus.Size = new System.Drawing.Size(49, 17);
+            this.RogueVirus.Size = new System.Drawing.Size(62, 21);
             this.RogueVirus.TabIndex = 8;
             this.RogueVirus.Text = "Virus";
             this.RogueVirus.UseVisualStyleBackColor = true;
@@ -7696,9 +8582,10 @@
             this.RogueEyeForAnEye.AutoSize = true;
             this.RogueEyeForAnEye.Enabled = false;
             this.RogueEyeForAnEye.ForeColor = System.Drawing.Color.White;
-            this.RogueEyeForAnEye.Location = new System.Drawing.Point(6, 65);
+            this.RogueEyeForAnEye.Location = new System.Drawing.Point(8, 80);
+            this.RogueEyeForAnEye.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueEyeForAnEye.Name = "RogueEyeForAnEye";
-            this.RogueEyeForAnEye.Size = new System.Drawing.Size(95, 17);
+            this.RogueEyeForAnEye.Size = new System.Drawing.Size(123, 21);
             this.RogueEyeForAnEye.TabIndex = 9;
             this.RogueEyeForAnEye.Text = "Eye for an Eye";
             this.RogueEyeForAnEye.UseVisualStyleBackColor = true;
@@ -7711,9 +8598,11 @@
             this.RogueConjurerGroup.Controls.Add(this.RogueRaise);
             this.RogueConjurerGroup.Controls.Add(this.RogueStoneskin);
             this.RogueConjurerGroup.ForeColor = System.Drawing.Color.White;
-            this.RogueConjurerGroup.Location = new System.Drawing.Point(261, 19);
+            this.RogueConjurerGroup.Location = new System.Drawing.Point(348, 23);
+            this.RogueConjurerGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueConjurerGroup.Name = "RogueConjurerGroup";
-            this.RogueConjurerGroup.Size = new System.Drawing.Size(113, 111);
+            this.RogueConjurerGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RogueConjurerGroup.Size = new System.Drawing.Size(151, 137);
             this.RogueConjurerGroup.TabIndex = 23;
             this.RogueConjurerGroup.TabStop = false;
             this.RogueConjurerGroup.Text = "Conjurer ";
@@ -7723,9 +8612,10 @@
             this.RogueCure.AutoSize = true;
             this.RogueCure.Enabled = false;
             this.RogueCure.ForeColor = System.Drawing.Color.White;
-            this.RogueCure.Location = new System.Drawing.Point(6, 19);
+            this.RogueCure.Location = new System.Drawing.Point(8, 23);
+            this.RogueCure.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueCure.Name = "RogueCure";
-            this.RogueCure.Size = new System.Drawing.Size(48, 17);
+            this.RogueCure.Size = new System.Drawing.Size(60, 21);
             this.RogueCure.TabIndex = 10;
             this.RogueCure.Text = "Cure";
             this.RogueCure.UseVisualStyleBackColor = true;
@@ -7736,9 +8626,10 @@
             this.RogueProtect.AutoSize = true;
             this.RogueProtect.Enabled = false;
             this.RogueProtect.ForeColor = System.Drawing.Color.White;
-            this.RogueProtect.Location = new System.Drawing.Point(6, 42);
+            this.RogueProtect.Location = new System.Drawing.Point(8, 52);
+            this.RogueProtect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueProtect.Name = "RogueProtect";
-            this.RogueProtect.Size = new System.Drawing.Size(60, 17);
+            this.RogueProtect.Size = new System.Drawing.Size(75, 21);
             this.RogueProtect.TabIndex = 12;
             this.RogueProtect.Text = "Protect";
             this.RogueProtect.UseVisualStyleBackColor = true;
@@ -7749,9 +8640,10 @@
             this.RogueRaise.AutoSize = true;
             this.RogueRaise.Enabled = false;
             this.RogueRaise.ForeColor = System.Drawing.Color.White;
-            this.RogueRaise.Location = new System.Drawing.Point(6, 65);
+            this.RogueRaise.Location = new System.Drawing.Point(8, 80);
+            this.RogueRaise.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueRaise.Name = "RogueRaise";
-            this.RogueRaise.Size = new System.Drawing.Size(53, 17);
+            this.RogueRaise.Size = new System.Drawing.Size(66, 21);
             this.RogueRaise.TabIndex = 13;
             this.RogueRaise.Text = "Raise";
             this.RogueRaise.UseVisualStyleBackColor = true;
@@ -7762,9 +8654,10 @@
             this.RogueStoneskin.AutoSize = true;
             this.RogueStoneskin.Enabled = false;
             this.RogueStoneskin.ForeColor = System.Drawing.Color.White;
-            this.RogueStoneskin.Location = new System.Drawing.Point(6, 88);
+            this.RogueStoneskin.Location = new System.Drawing.Point(8, 108);
+            this.RogueStoneskin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RogueStoneskin.Name = "RogueStoneskin";
-            this.RogueStoneskin.Size = new System.Drawing.Size(73, 17);
+            this.RogueStoneskin.Size = new System.Drawing.Size(92, 21);
             this.RogueStoneskin.TabIndex = 14;
             this.RogueStoneskin.Text = "Stoneskin";
             this.RogueStoneskin.UseVisualStyleBackColor = true;
@@ -7784,7 +8677,7 @@
             this.NinjaSettings.Location = new System.Drawing.Point(114, 4);
             this.NinjaSettings.Margin = new System.Windows.Forms.Padding(0);
             this.NinjaSettings.Name = "NinjaSettings";
-            this.NinjaSettings.Size = new System.Drawing.Size(567, 402);
+            this.NinjaSettings.Size = new System.Drawing.Size(795, 497);
             this.NinjaSettings.TabIndex = 1;
             this.NinjaSettings.Text = "Ninja";
             this.NinjaSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -7793,9 +8686,11 @@
             // 
             this.NinjaBuffGroup.Controls.Add(this.NinjaGoad);
             this.NinjaBuffGroup.ForeColor = System.Drawing.Color.White;
-            this.NinjaBuffGroup.Location = new System.Drawing.Point(207, 287);
+            this.NinjaBuffGroup.Location = new System.Drawing.Point(276, 353);
+            this.NinjaBuffGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NinjaBuffGroup.Name = "NinjaBuffGroup";
-            this.NinjaBuffGroup.Size = new System.Drawing.Size(64, 42);
+            this.NinjaBuffGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NinjaBuffGroup.Size = new System.Drawing.Size(85, 52);
             this.NinjaBuffGroup.TabIndex = 45;
             this.NinjaBuffGroup.TabStop = false;
             this.NinjaBuffGroup.Text = "Buff";
@@ -7804,9 +8699,10 @@
             // 
             this.NinjaGoad.AutoSize = true;
             this.NinjaGoad.ForeColor = System.Drawing.Color.White;
-            this.NinjaGoad.Location = new System.Drawing.Point(6, 19);
+            this.NinjaGoad.Location = new System.Drawing.Point(8, 23);
+            this.NinjaGoad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NinjaGoad.Name = "NinjaGoad";
-            this.NinjaGoad.Size = new System.Drawing.Size(52, 17);
+            this.NinjaGoad.Size = new System.Drawing.Size(65, 21);
             this.NinjaGoad.TabIndex = 7;
             this.NinjaGoad.Text = "Goad";
             this.NinjaGoad.UseVisualStyleBackColor = true;
@@ -7817,9 +8713,11 @@
             this.NinjaAuraGroup.Controls.Add(this.NinjaKissOfTheWasp);
             this.NinjaAuraGroup.Controls.Add(this.NinjaKissOfTheViper);
             this.NinjaAuraGroup.ForeColor = System.Drawing.Color.White;
-            this.NinjaAuraGroup.Location = new System.Drawing.Point(207, 216);
+            this.NinjaAuraGroup.Location = new System.Drawing.Point(276, 266);
+            this.NinjaAuraGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NinjaAuraGroup.Name = "NinjaAuraGroup";
-            this.NinjaAuraGroup.Size = new System.Drawing.Size(117, 65);
+            this.NinjaAuraGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NinjaAuraGroup.Size = new System.Drawing.Size(156, 80);
             this.NinjaAuraGroup.TabIndex = 42;
             this.NinjaAuraGroup.TabStop = false;
             this.NinjaAuraGroup.Text = "Aura";
@@ -7828,9 +8726,10 @@
             // 
             this.NinjaKissOfTheWasp.AutoSize = true;
             this.NinjaKissOfTheWasp.ForeColor = System.Drawing.Color.White;
-            this.NinjaKissOfTheWasp.Location = new System.Drawing.Point(6, 19);
+            this.NinjaKissOfTheWasp.Location = new System.Drawing.Point(8, 23);
+            this.NinjaKissOfTheWasp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NinjaKissOfTheWasp.Name = "NinjaKissOfTheWasp";
-            this.NinjaKissOfTheWasp.Size = new System.Drawing.Size(105, 17);
+            this.NinjaKissOfTheWasp.Size = new System.Drawing.Size(135, 21);
             this.NinjaKissOfTheWasp.TabIndex = 24;
             this.NinjaKissOfTheWasp.TabStop = true;
             this.NinjaKissOfTheWasp.Text = "Kiss of the Wasp";
@@ -7841,9 +8740,10 @@
             // 
             this.NinjaKissOfTheViper.AutoSize = true;
             this.NinjaKissOfTheViper.ForeColor = System.Drawing.Color.White;
-            this.NinjaKissOfTheViper.Location = new System.Drawing.Point(6, 42);
+            this.NinjaKissOfTheViper.Location = new System.Drawing.Point(8, 52);
+            this.NinjaKissOfTheViper.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NinjaKissOfTheViper.Name = "NinjaKissOfTheViper";
-            this.NinjaKissOfTheViper.Size = new System.Drawing.Size(101, 17);
+            this.NinjaKissOfTheViper.Size = new System.Drawing.Size(132, 21);
             this.NinjaKissOfTheViper.TabIndex = 25;
             this.NinjaKissOfTheViper.TabStop = true;
             this.NinjaKissOfTheViper.Text = "Kiss of the Viper";
@@ -7854,9 +8754,11 @@
             // 
             this.NinjaDebuffGroup.Controls.Add(this.NinjaDancingEdge);
             this.NinjaDebuffGroup.ForeColor = System.Drawing.Color.White;
-            this.NinjaDebuffGroup.Location = new System.Drawing.Point(34, 287);
+            this.NinjaDebuffGroup.Location = new System.Drawing.Point(45, 353);
+            this.NinjaDebuffGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NinjaDebuffGroup.Name = "NinjaDebuffGroup";
-            this.NinjaDebuffGroup.Size = new System.Drawing.Size(106, 42);
+            this.NinjaDebuffGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NinjaDebuffGroup.Size = new System.Drawing.Size(141, 52);
             this.NinjaDebuffGroup.TabIndex = 17;
             this.NinjaDebuffGroup.TabStop = false;
             this.NinjaDebuffGroup.Text = "Debuff";
@@ -7865,9 +8767,10 @@
             // 
             this.NinjaDancingEdge.AutoSize = true;
             this.NinjaDancingEdge.ForeColor = System.Drawing.Color.White;
-            this.NinjaDancingEdge.Location = new System.Drawing.Point(6, 19);
+            this.NinjaDancingEdge.Location = new System.Drawing.Point(8, 23);
+            this.NinjaDancingEdge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NinjaDancingEdge.Name = "NinjaDancingEdge";
-            this.NinjaDancingEdge.Size = new System.Drawing.Size(94, 17);
+            this.NinjaDancingEdge.Size = new System.Drawing.Size(119, 21);
             this.NinjaDancingEdge.TabIndex = 7;
             this.NinjaDancingEdge.Text = "Dancing Edge";
             this.NinjaDancingEdge.UseVisualStyleBackColor = true;
@@ -7878,9 +8781,11 @@
             this.NinjaNinjutsuGroup.Controls.Add(this.NinjaRaiton);
             this.NinjaNinjutsuGroup.Controls.Add(this.NinjaFumaShuriken);
             this.NinjaNinjutsuGroup.ForeColor = System.Drawing.Color.White;
-            this.NinjaNinjutsuGroup.Location = new System.Drawing.Point(34, 216);
+            this.NinjaNinjutsuGroup.Location = new System.Drawing.Point(45, 266);
+            this.NinjaNinjutsuGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NinjaNinjutsuGroup.Name = "NinjaNinjutsuGroup";
-            this.NinjaNinjutsuGroup.Size = new System.Drawing.Size(108, 65);
+            this.NinjaNinjutsuGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NinjaNinjutsuGroup.Size = new System.Drawing.Size(144, 80);
             this.NinjaNinjutsuGroup.TabIndex = 41;
             this.NinjaNinjutsuGroup.TabStop = false;
             this.NinjaNinjutsuGroup.Text = "Ninjutsu";
@@ -7889,9 +8794,10 @@
             // 
             this.NinjaRaiton.AutoSize = true;
             this.NinjaRaiton.ForeColor = System.Drawing.Color.White;
-            this.NinjaRaiton.Location = new System.Drawing.Point(6, 19);
+            this.NinjaRaiton.Location = new System.Drawing.Point(8, 23);
+            this.NinjaRaiton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NinjaRaiton.Name = "NinjaRaiton";
-            this.NinjaRaiton.Size = new System.Drawing.Size(56, 17);
+            this.NinjaRaiton.Size = new System.Drawing.Size(70, 21);
             this.NinjaRaiton.TabIndex = 24;
             this.NinjaRaiton.TabStop = true;
             this.NinjaRaiton.Text = "Raiton";
@@ -7902,9 +8808,10 @@
             // 
             this.NinjaFumaShuriken.AutoSize = true;
             this.NinjaFumaShuriken.ForeColor = System.Drawing.Color.White;
-            this.NinjaFumaShuriken.Location = new System.Drawing.Point(6, 42);
+            this.NinjaFumaShuriken.Location = new System.Drawing.Point(8, 52);
+            this.NinjaFumaShuriken.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NinjaFumaShuriken.Name = "NinjaFumaShuriken";
-            this.NinjaFumaShuriken.Size = new System.Drawing.Size(96, 17);
+            this.NinjaFumaShuriken.Size = new System.Drawing.Size(124, 21);
             this.NinjaFumaShuriken.TabIndex = 25;
             this.NinjaFumaShuriken.TabStop = true;
             this.NinjaFumaShuriken.Text = "Fuma Shuriken";
@@ -7915,9 +8822,11 @@
             // 
             this.NinjaExecuteGroup.Controls.Add(this.NinjaAssassinate);
             this.NinjaExecuteGroup.ForeColor = System.Drawing.Color.White;
-            this.NinjaExecuteGroup.Location = new System.Drawing.Point(207, 168);
+            this.NinjaExecuteGroup.Location = new System.Drawing.Point(276, 207);
+            this.NinjaExecuteGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NinjaExecuteGroup.Name = "NinjaExecuteGroup";
-            this.NinjaExecuteGroup.Size = new System.Drawing.Size(94, 42);
+            this.NinjaExecuteGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NinjaExecuteGroup.Size = new System.Drawing.Size(125, 52);
             this.NinjaExecuteGroup.TabIndex = 23;
             this.NinjaExecuteGroup.TabStop = false;
             this.NinjaExecuteGroup.Text = "Execute";
@@ -7926,9 +8835,10 @@
             // 
             this.NinjaAssassinate.AutoSize = true;
             this.NinjaAssassinate.ForeColor = System.Drawing.Color.White;
-            this.NinjaAssassinate.Location = new System.Drawing.Point(6, 19);
+            this.NinjaAssassinate.Location = new System.Drawing.Point(8, 23);
+            this.NinjaAssassinate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NinjaAssassinate.Name = "NinjaAssassinate";
-            this.NinjaAssassinate.Size = new System.Drawing.Size(82, 17);
+            this.NinjaAssassinate.Size = new System.Drawing.Size(106, 21);
             this.NinjaAssassinate.TabIndex = 7;
             this.NinjaAssassinate.Text = "Assassinate";
             this.NinjaAssassinate.UseVisualStyleBackColor = true;
@@ -7938,9 +8848,11 @@
             // 
             this.NinjaInterruptGroup.Controls.Add(this.NinjaJugulate);
             this.NinjaInterruptGroup.ForeColor = System.Drawing.Color.White;
-            this.NinjaInterruptGroup.Location = new System.Drawing.Point(123, 168);
+            this.NinjaInterruptGroup.Location = new System.Drawing.Point(164, 207);
+            this.NinjaInterruptGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NinjaInterruptGroup.Name = "NinjaInterruptGroup";
-            this.NinjaInterruptGroup.Size = new System.Drawing.Size(78, 42);
+            this.NinjaInterruptGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NinjaInterruptGroup.Size = new System.Drawing.Size(104, 52);
             this.NinjaInterruptGroup.TabIndex = 19;
             this.NinjaInterruptGroup.TabStop = false;
             this.NinjaInterruptGroup.Text = "Interrupt";
@@ -7949,9 +8861,10 @@
             // 
             this.NinjaJugulate.AutoSize = true;
             this.NinjaJugulate.ForeColor = System.Drawing.Color.White;
-            this.NinjaJugulate.Location = new System.Drawing.Point(6, 19);
+            this.NinjaJugulate.Location = new System.Drawing.Point(8, 23);
+            this.NinjaJugulate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NinjaJugulate.Name = "NinjaJugulate";
-            this.NinjaJugulate.Size = new System.Drawing.Size(66, 17);
+            this.NinjaJugulate.Size = new System.Drawing.Size(84, 21);
             this.NinjaJugulate.TabIndex = 7;
             this.NinjaJugulate.Text = "Jugulate";
             this.NinjaJugulate.UseVisualStyleBackColor = true;
@@ -7961,9 +8874,11 @@
             // 
             this.NinjaMovementGroup.Controls.Add(this.NinjaShukuchi);
             this.NinjaMovementGroup.ForeColor = System.Drawing.Color.White;
-            this.NinjaMovementGroup.Location = new System.Drawing.Point(34, 168);
+            this.NinjaMovementGroup.Location = new System.Drawing.Point(45, 207);
+            this.NinjaMovementGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NinjaMovementGroup.Name = "NinjaMovementGroup";
-            this.NinjaMovementGroup.Size = new System.Drawing.Size(83, 42);
+            this.NinjaMovementGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NinjaMovementGroup.Size = new System.Drawing.Size(111, 52);
             this.NinjaMovementGroup.TabIndex = 16;
             this.NinjaMovementGroup.TabStop = false;
             this.NinjaMovementGroup.Text = "Movement";
@@ -7972,9 +8887,10 @@
             // 
             this.NinjaShukuchi.AutoSize = true;
             this.NinjaShukuchi.ForeColor = System.Drawing.Color.White;
-            this.NinjaShukuchi.Location = new System.Drawing.Point(6, 19);
+            this.NinjaShukuchi.Location = new System.Drawing.Point(8, 23);
+            this.NinjaShukuchi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NinjaShukuchi.Name = "NinjaShukuchi";
-            this.NinjaShukuchi.Size = new System.Drawing.Size(71, 17);
+            this.NinjaShukuchi.Size = new System.Drawing.Size(88, 21);
             this.NinjaShukuchi.TabIndex = 7;
             this.NinjaShukuchi.Text = "Shukuchi";
             this.NinjaShukuchi.UseVisualStyleBackColor = true;
@@ -7985,9 +8901,11 @@
             this.NinjaCrossGroup.Controls.Add(this.NinjaPugilistGroup);
             this.NinjaCrossGroup.Controls.Add(this.NinjaLancerGroup);
             this.NinjaCrossGroup.ForeColor = System.Drawing.Color.White;
-            this.NinjaCrossGroup.Location = new System.Drawing.Point(34, 3);
+            this.NinjaCrossGroup.Location = new System.Drawing.Point(45, 4);
+            this.NinjaCrossGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NinjaCrossGroup.Name = "NinjaCrossGroup";
-            this.NinjaCrossGroup.Size = new System.Drawing.Size(241, 159);
+            this.NinjaCrossGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NinjaCrossGroup.Size = new System.Drawing.Size(321, 196);
             this.NinjaCrossGroup.TabIndex = 15;
             this.NinjaCrossGroup.TabStop = false;
             this.NinjaCrossGroup.Text = "Cross-Class  ";
@@ -8000,9 +8918,11 @@
             this.NinjaPugilistGroup.Controls.Add(this.NinjaInternalRelease);
             this.NinjaPugilistGroup.Controls.Add(this.NinjaMantra);
             this.NinjaPugilistGroup.ForeColor = System.Drawing.Color.White;
-            this.NinjaPugilistGroup.Location = new System.Drawing.Point(122, 19);
+            this.NinjaPugilistGroup.Location = new System.Drawing.Point(163, 23);
+            this.NinjaPugilistGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NinjaPugilistGroup.Name = "NinjaPugilistGroup";
-            this.NinjaPugilistGroup.Size = new System.Drawing.Size(113, 134);
+            this.NinjaPugilistGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NinjaPugilistGroup.Size = new System.Drawing.Size(151, 165);
             this.NinjaPugilistGroup.TabIndex = 45;
             this.NinjaPugilistGroup.TabStop = false;
             this.NinjaPugilistGroup.Text = "Pugilist ";
@@ -8012,9 +8932,10 @@
             this.NinjaHaymaker.AutoSize = true;
             this.NinjaHaymaker.Enabled = false;
             this.NinjaHaymaker.ForeColor = System.Drawing.Color.White;
-            this.NinjaHaymaker.Location = new System.Drawing.Point(6, 65);
+            this.NinjaHaymaker.Location = new System.Drawing.Point(8, 80);
+            this.NinjaHaymaker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NinjaHaymaker.Name = "NinjaHaymaker";
-            this.NinjaHaymaker.Size = new System.Drawing.Size(74, 17);
+            this.NinjaHaymaker.Size = new System.Drawing.Size(94, 21);
             this.NinjaHaymaker.TabIndex = 35;
             this.NinjaHaymaker.Text = "Haymaker";
             this.NinjaHaymaker.UseVisualStyleBackColor = true;
@@ -8025,9 +8946,10 @@
             this.NinjaFeatherfoot.AutoSize = true;
             this.NinjaFeatherfoot.Enabled = false;
             this.NinjaFeatherfoot.ForeColor = System.Drawing.Color.White;
-            this.NinjaFeatherfoot.Location = new System.Drawing.Point(6, 19);
+            this.NinjaFeatherfoot.Location = new System.Drawing.Point(8, 23);
+            this.NinjaFeatherfoot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NinjaFeatherfoot.Name = "NinjaFeatherfoot";
-            this.NinjaFeatherfoot.Size = new System.Drawing.Size(80, 17);
+            this.NinjaFeatherfoot.Size = new System.Drawing.Size(103, 21);
             this.NinjaFeatherfoot.TabIndex = 30;
             this.NinjaFeatherfoot.Text = "Featherfoot";
             this.NinjaFeatherfoot.UseVisualStyleBackColor = true;
@@ -8038,9 +8960,10 @@
             this.NinjaSecondWind.AutoSize = true;
             this.NinjaSecondWind.Enabled = false;
             this.NinjaSecondWind.ForeColor = System.Drawing.Color.White;
-            this.NinjaSecondWind.Location = new System.Drawing.Point(6, 42);
+            this.NinjaSecondWind.Location = new System.Drawing.Point(8, 52);
+            this.NinjaSecondWind.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NinjaSecondWind.Name = "NinjaSecondWind";
-            this.NinjaSecondWind.Size = new System.Drawing.Size(91, 17);
+            this.NinjaSecondWind.Size = new System.Drawing.Size(114, 21);
             this.NinjaSecondWind.TabIndex = 31;
             this.NinjaSecondWind.Text = "Second Wind";
             this.NinjaSecondWind.UseVisualStyleBackColor = true;
@@ -8050,9 +8973,10 @@
             // 
             this.NinjaInternalRelease.AutoSize = true;
             this.NinjaInternalRelease.ForeColor = System.Drawing.Color.White;
-            this.NinjaInternalRelease.Location = new System.Drawing.Point(6, 88);
+            this.NinjaInternalRelease.Location = new System.Drawing.Point(8, 108);
+            this.NinjaInternalRelease.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NinjaInternalRelease.Name = "NinjaInternalRelease";
-            this.NinjaInternalRelease.Size = new System.Drawing.Size(103, 17);
+            this.NinjaInternalRelease.Size = new System.Drawing.Size(133, 21);
             this.NinjaInternalRelease.TabIndex = 32;
             this.NinjaInternalRelease.Text = "Internal Release";
             this.NinjaInternalRelease.UseVisualStyleBackColor = true;
@@ -8063,9 +8987,10 @@
             this.NinjaMantra.AutoSize = true;
             this.NinjaMantra.Enabled = false;
             this.NinjaMantra.ForeColor = System.Drawing.Color.White;
-            this.NinjaMantra.Location = new System.Drawing.Point(6, 111);
+            this.NinjaMantra.Location = new System.Drawing.Point(8, 137);
+            this.NinjaMantra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NinjaMantra.Name = "NinjaMantra";
-            this.NinjaMantra.Size = new System.Drawing.Size(59, 17);
+            this.NinjaMantra.Size = new System.Drawing.Size(74, 21);
             this.NinjaMantra.TabIndex = 34;
             this.NinjaMantra.Text = "Mantra";
             this.NinjaMantra.UseVisualStyleBackColor = true;
@@ -8078,9 +9003,11 @@
             this.NinjaLancerGroup.Controls.Add(this.NinjaBloodForBlood);
             this.NinjaLancerGroup.Controls.Add(this.NinjaFeint);
             this.NinjaLancerGroup.ForeColor = System.Drawing.Color.White;
-            this.NinjaLancerGroup.Location = new System.Drawing.Point(6, 19);
+            this.NinjaLancerGroup.Location = new System.Drawing.Point(8, 23);
+            this.NinjaLancerGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NinjaLancerGroup.Name = "NinjaLancerGroup";
-            this.NinjaLancerGroup.Size = new System.Drawing.Size(110, 111);
+            this.NinjaLancerGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NinjaLancerGroup.Size = new System.Drawing.Size(147, 137);
             this.NinjaLancerGroup.TabIndex = 43;
             this.NinjaLancerGroup.TabStop = false;
             this.NinjaLancerGroup.Text = "Lancer";
@@ -8090,9 +9017,10 @@
             this.NinjaKeenFlurry.AutoSize = true;
             this.NinjaKeenFlurry.Enabled = false;
             this.NinjaKeenFlurry.ForeColor = System.Drawing.Color.White;
-            this.NinjaKeenFlurry.Location = new System.Drawing.Point(6, 42);
+            this.NinjaKeenFlurry.Location = new System.Drawing.Point(8, 52);
+            this.NinjaKeenFlurry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NinjaKeenFlurry.Name = "NinjaKeenFlurry";
-            this.NinjaKeenFlurry.Size = new System.Drawing.Size(79, 17);
+            this.NinjaKeenFlurry.Size = new System.Drawing.Size(103, 21);
             this.NinjaKeenFlurry.TabIndex = 19;
             this.NinjaKeenFlurry.Text = "Keen Flurry";
             this.NinjaKeenFlurry.UseVisualStyleBackColor = true;
@@ -8102,9 +9030,10 @@
             // 
             this.NinjaInvigorate.AutoSize = true;
             this.NinjaInvigorate.ForeColor = System.Drawing.Color.White;
-            this.NinjaInvigorate.Location = new System.Drawing.Point(6, 65);
+            this.NinjaInvigorate.Location = new System.Drawing.Point(8, 80);
+            this.NinjaInvigorate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NinjaInvigorate.Name = "NinjaInvigorate";
-            this.NinjaInvigorate.Size = new System.Drawing.Size(73, 17);
+            this.NinjaInvigorate.Size = new System.Drawing.Size(92, 21);
             this.NinjaInvigorate.TabIndex = 20;
             this.NinjaInvigorate.Text = "Invigorate";
             this.NinjaInvigorate.UseVisualStyleBackColor = true;
@@ -8114,9 +9043,10 @@
             // 
             this.NinjaBloodForBlood.AutoSize = true;
             this.NinjaBloodForBlood.ForeColor = System.Drawing.Color.White;
-            this.NinjaBloodForBlood.Location = new System.Drawing.Point(6, 88);
+            this.NinjaBloodForBlood.Location = new System.Drawing.Point(8, 108);
+            this.NinjaBloodForBlood.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NinjaBloodForBlood.Name = "NinjaBloodForBlood";
-            this.NinjaBloodForBlood.Size = new System.Drawing.Size(98, 17);
+            this.NinjaBloodForBlood.Size = new System.Drawing.Size(127, 21);
             this.NinjaBloodForBlood.TabIndex = 21;
             this.NinjaBloodForBlood.Text = "Blood for Blood";
             this.NinjaBloodForBlood.UseVisualStyleBackColor = true;
@@ -8127,9 +9057,10 @@
             this.NinjaFeint.AutoSize = true;
             this.NinjaFeint.Enabled = false;
             this.NinjaFeint.ForeColor = System.Drawing.Color.White;
-            this.NinjaFeint.Location = new System.Drawing.Point(6, 19);
+            this.NinjaFeint.Location = new System.Drawing.Point(8, 23);
+            this.NinjaFeint.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NinjaFeint.Name = "NinjaFeint";
-            this.NinjaFeint.Size = new System.Drawing.Size(49, 17);
+            this.NinjaFeint.Size = new System.Drawing.Size(61, 21);
             this.NinjaFeint.TabIndex = 30;
             this.NinjaFeint.Text = "Feint";
             this.NinjaFeint.UseVisualStyleBackColor = true;
@@ -8142,7 +9073,7 @@
             this.ThaumaturgeTab.Location = new System.Drawing.Point(114, 4);
             this.ThaumaturgeTab.Margin = new System.Windows.Forms.Padding(0);
             this.ThaumaturgeTab.Name = "ThaumaturgeTab";
-            this.ThaumaturgeTab.Size = new System.Drawing.Size(682, 402);
+            this.ThaumaturgeTab.Size = new System.Drawing.Size(949, 497);
             this.ThaumaturgeTab.TabIndex = 8;
             this.ThaumaturgeTab.Text = "Thaumaturge";
             // 
@@ -8152,11 +9083,12 @@
             this.ThaumaturgeSubTab.Controls.Add(this.ThaumaturgeSettings);
             this.ThaumaturgeSubTab.Controls.Add(this.BlackMageSettings);
             this.ThaumaturgeSubTab.ItemSize = new System.Drawing.Size(35, 110);
-            this.ThaumaturgeSubTab.Location = new System.Drawing.Point(-1, -4);
+            this.ThaumaturgeSubTab.Location = new System.Drawing.Point(-1, -5);
+            this.ThaumaturgeSubTab.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeSubTab.Multiline = true;
             this.ThaumaturgeSubTab.Name = "ThaumaturgeSubTab";
             this.ThaumaturgeSubTab.SelectedIndex = 0;
-            this.ThaumaturgeSubTab.Size = new System.Drawing.Size(685, 410);
+            this.ThaumaturgeSubTab.Size = new System.Drawing.Size(913, 505);
             this.ThaumaturgeSubTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.ThaumaturgeSubTab.TabIndex = 5;
             this.ThaumaturgeSubTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -8168,7 +9100,7 @@
             this.ThaumaturgeSettings.Location = new System.Drawing.Point(114, 4);
             this.ThaumaturgeSettings.Margin = new System.Windows.Forms.Padding(0);
             this.ThaumaturgeSettings.Name = "ThaumaturgeSettings";
-            this.ThaumaturgeSettings.Size = new System.Drawing.Size(567, 402);
+            this.ThaumaturgeSettings.Size = new System.Drawing.Size(795, 497);
             this.ThaumaturgeSettings.TabIndex = 0;
             this.ThaumaturgeSettings.Text = "Thaumaturge";
             this.ThaumaturgeSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -8183,9 +9115,11 @@
             this.ThaumaturgeCrossGroup.Controls.Add(this.ThaumaturgeGladiatorGroup);
             this.ThaumaturgeCrossGroup.Controls.Add(this.ThaumaturgeLancerGroup);
             this.ThaumaturgeCrossGroup.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgeCrossGroup.Location = new System.Drawing.Point(34, 3);
+            this.ThaumaturgeCrossGroup.Location = new System.Drawing.Point(45, 4);
+            this.ThaumaturgeCrossGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeCrossGroup.Name = "ThaumaturgeCrossGroup";
-            this.ThaumaturgeCrossGroup.Size = new System.Drawing.Size(504, 277);
+            this.ThaumaturgeCrossGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ThaumaturgeCrossGroup.Size = new System.Drawing.Size(672, 341);
             this.ThaumaturgeCrossGroup.TabIndex = 10;
             this.ThaumaturgeCrossGroup.TabStop = false;
             this.ThaumaturgeCrossGroup.Text = "Cross-Class  ";
@@ -8198,9 +9132,11 @@
             this.ThaumaturgeConjurerGroup.Controls.Add(this.ThaumaturgeRaise);
             this.ThaumaturgeConjurerGroup.Controls.Add(this.ThaumaturgeStoneskin);
             this.ThaumaturgeConjurerGroup.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgeConjurerGroup.Location = new System.Drawing.Point(261, 19);
+            this.ThaumaturgeConjurerGroup.Location = new System.Drawing.Point(348, 23);
+            this.ThaumaturgeConjurerGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeConjurerGroup.Name = "ThaumaturgeConjurerGroup";
-            this.ThaumaturgeConjurerGroup.Size = new System.Drawing.Size(113, 134);
+            this.ThaumaturgeConjurerGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ThaumaturgeConjurerGroup.Size = new System.Drawing.Size(151, 165);
             this.ThaumaturgeConjurerGroup.TabIndex = 31;
             this.ThaumaturgeConjurerGroup.TabStop = false;
             this.ThaumaturgeConjurerGroup.Text = "Conjurer ";
@@ -8210,9 +9146,10 @@
             this.ThaumaturgeCure.AutoSize = true;
             this.ThaumaturgeCure.Enabled = false;
             this.ThaumaturgeCure.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgeCure.Location = new System.Drawing.Point(6, 19);
+            this.ThaumaturgeCure.Location = new System.Drawing.Point(8, 23);
+            this.ThaumaturgeCure.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeCure.Name = "ThaumaturgeCure";
-            this.ThaumaturgeCure.Size = new System.Drawing.Size(48, 17);
+            this.ThaumaturgeCure.Size = new System.Drawing.Size(60, 21);
             this.ThaumaturgeCure.TabIndex = 10;
             this.ThaumaturgeCure.Text = "Cure";
             this.ThaumaturgeCure.UseVisualStyleBackColor = true;
@@ -8223,9 +9160,10 @@
             this.ThaumaturgeAero.AutoSize = true;
             this.ThaumaturgeAero.Enabled = false;
             this.ThaumaturgeAero.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgeAero.Location = new System.Drawing.Point(6, 42);
+            this.ThaumaturgeAero.Location = new System.Drawing.Point(8, 52);
+            this.ThaumaturgeAero.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeAero.Name = "ThaumaturgeAero";
-            this.ThaumaturgeAero.Size = new System.Drawing.Size(48, 17);
+            this.ThaumaturgeAero.Size = new System.Drawing.Size(60, 21);
             this.ThaumaturgeAero.TabIndex = 11;
             this.ThaumaturgeAero.Text = "Aero";
             this.ThaumaturgeAero.UseVisualStyleBackColor = true;
@@ -8236,9 +9174,10 @@
             this.ThaumaturgeProtect.AutoSize = true;
             this.ThaumaturgeProtect.Enabled = false;
             this.ThaumaturgeProtect.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgeProtect.Location = new System.Drawing.Point(6, 65);
+            this.ThaumaturgeProtect.Location = new System.Drawing.Point(8, 80);
+            this.ThaumaturgeProtect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeProtect.Name = "ThaumaturgeProtect";
-            this.ThaumaturgeProtect.Size = new System.Drawing.Size(60, 17);
+            this.ThaumaturgeProtect.Size = new System.Drawing.Size(75, 21);
             this.ThaumaturgeProtect.TabIndex = 12;
             this.ThaumaturgeProtect.Text = "Protect";
             this.ThaumaturgeProtect.UseVisualStyleBackColor = true;
@@ -8249,9 +9188,10 @@
             this.ThaumaturgeRaise.AutoSize = true;
             this.ThaumaturgeRaise.Enabled = false;
             this.ThaumaturgeRaise.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgeRaise.Location = new System.Drawing.Point(6, 88);
+            this.ThaumaturgeRaise.Location = new System.Drawing.Point(8, 108);
+            this.ThaumaturgeRaise.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeRaise.Name = "ThaumaturgeRaise";
-            this.ThaumaturgeRaise.Size = new System.Drawing.Size(53, 17);
+            this.ThaumaturgeRaise.Size = new System.Drawing.Size(66, 21);
             this.ThaumaturgeRaise.TabIndex = 13;
             this.ThaumaturgeRaise.Text = "Raise";
             this.ThaumaturgeRaise.UseVisualStyleBackColor = true;
@@ -8262,9 +9202,10 @@
             this.ThaumaturgeStoneskin.AutoSize = true;
             this.ThaumaturgeStoneskin.Enabled = false;
             this.ThaumaturgeStoneskin.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgeStoneskin.Location = new System.Drawing.Point(6, 111);
+            this.ThaumaturgeStoneskin.Location = new System.Drawing.Point(8, 137);
+            this.ThaumaturgeStoneskin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeStoneskin.Name = "ThaumaturgeStoneskin";
-            this.ThaumaturgeStoneskin.Size = new System.Drawing.Size(73, 17);
+            this.ThaumaturgeStoneskin.Size = new System.Drawing.Size(92, 21);
             this.ThaumaturgeStoneskin.TabIndex = 14;
             this.ThaumaturgeStoneskin.Text = "Stoneskin";
             this.ThaumaturgeStoneskin.UseVisualStyleBackColor = true;
@@ -8277,9 +9218,11 @@
             this.ThaumaturgeArcanistGroup.Controls.Add(this.ThaumaturgeVirus);
             this.ThaumaturgeArcanistGroup.Controls.Add(this.ThaumaturgeEyeForAnEye);
             this.ThaumaturgeArcanistGroup.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgeArcanistGroup.Location = new System.Drawing.Point(6, 19);
+            this.ThaumaturgeArcanistGroup.Location = new System.Drawing.Point(8, 23);
+            this.ThaumaturgeArcanistGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeArcanistGroup.Name = "ThaumaturgeArcanistGroup";
-            this.ThaumaturgeArcanistGroup.Size = new System.Drawing.Size(110, 111);
+            this.ThaumaturgeArcanistGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ThaumaturgeArcanistGroup.Size = new System.Drawing.Size(147, 137);
             this.ThaumaturgeArcanistGroup.TabIndex = 30;
             this.ThaumaturgeArcanistGroup.TabStop = false;
             this.ThaumaturgeArcanistGroup.Text = "Arcanist";
@@ -8289,9 +9232,10 @@
             this.ThaumaturgeRuin.AutoSize = true;
             this.ThaumaturgeRuin.Enabled = false;
             this.ThaumaturgeRuin.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgeRuin.Location = new System.Drawing.Point(6, 19);
+            this.ThaumaturgeRuin.Location = new System.Drawing.Point(8, 23);
+            this.ThaumaturgeRuin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeRuin.Name = "ThaumaturgeRuin";
-            this.ThaumaturgeRuin.Size = new System.Drawing.Size(48, 17);
+            this.ThaumaturgeRuin.Size = new System.Drawing.Size(59, 21);
             this.ThaumaturgeRuin.TabIndex = 10;
             this.ThaumaturgeRuin.Text = "Ruin";
             this.ThaumaturgeRuin.UseVisualStyleBackColor = true;
@@ -8302,9 +9246,10 @@
             this.ThaumaturgePhysick.AutoSize = true;
             this.ThaumaturgePhysick.Enabled = false;
             this.ThaumaturgePhysick.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgePhysick.Location = new System.Drawing.Point(6, 42);
+            this.ThaumaturgePhysick.Location = new System.Drawing.Point(8, 52);
+            this.ThaumaturgePhysick.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgePhysick.Name = "ThaumaturgePhysick";
-            this.ThaumaturgePhysick.Size = new System.Drawing.Size(63, 17);
+            this.ThaumaturgePhysick.Size = new System.Drawing.Size(78, 21);
             this.ThaumaturgePhysick.TabIndex = 7;
             this.ThaumaturgePhysick.Text = "Physick";
             this.ThaumaturgePhysick.UseVisualStyleBackColor = true;
@@ -8315,9 +9260,10 @@
             this.ThaumaturgeVirus.AutoSize = true;
             this.ThaumaturgeVirus.Enabled = false;
             this.ThaumaturgeVirus.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgeVirus.Location = new System.Drawing.Point(6, 65);
+            this.ThaumaturgeVirus.Location = new System.Drawing.Point(8, 80);
+            this.ThaumaturgeVirus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeVirus.Name = "ThaumaturgeVirus";
-            this.ThaumaturgeVirus.Size = new System.Drawing.Size(49, 17);
+            this.ThaumaturgeVirus.Size = new System.Drawing.Size(62, 21);
             this.ThaumaturgeVirus.TabIndex = 8;
             this.ThaumaturgeVirus.Text = "Virus";
             this.ThaumaturgeVirus.UseVisualStyleBackColor = true;
@@ -8328,9 +9274,10 @@
             this.ThaumaturgeEyeForAnEye.AutoSize = true;
             this.ThaumaturgeEyeForAnEye.Enabled = false;
             this.ThaumaturgeEyeForAnEye.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgeEyeForAnEye.Location = new System.Drawing.Point(6, 88);
+            this.ThaumaturgeEyeForAnEye.Location = new System.Drawing.Point(8, 108);
+            this.ThaumaturgeEyeForAnEye.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeEyeForAnEye.Name = "ThaumaturgeEyeForAnEye";
-            this.ThaumaturgeEyeForAnEye.Size = new System.Drawing.Size(95, 17);
+            this.ThaumaturgeEyeForAnEye.Size = new System.Drawing.Size(123, 21);
             this.ThaumaturgeEyeForAnEye.TabIndex = 9;
             this.ThaumaturgeEyeForAnEye.Text = "Eye for an Eye";
             this.ThaumaturgeEyeForAnEye.UseVisualStyleBackColor = true;
@@ -8343,9 +9290,11 @@
             this.ThaumaturgePugilistGroup.Controls.Add(this.ThaumaturgeInternalRelease);
             this.ThaumaturgePugilistGroup.Controls.Add(this.ThaumaturgeMantra);
             this.ThaumaturgePugilistGroup.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgePugilistGroup.Location = new System.Drawing.Point(261, 160);
+            this.ThaumaturgePugilistGroup.Location = new System.Drawing.Point(348, 197);
+            this.ThaumaturgePugilistGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgePugilistGroup.Name = "ThaumaturgePugilistGroup";
-            this.ThaumaturgePugilistGroup.Size = new System.Drawing.Size(113, 111);
+            this.ThaumaturgePugilistGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ThaumaturgePugilistGroup.Size = new System.Drawing.Size(151, 137);
             this.ThaumaturgePugilistGroup.TabIndex = 23;
             this.ThaumaturgePugilistGroup.TabStop = false;
             this.ThaumaturgePugilistGroup.Text = "Pugilist ";
@@ -8355,9 +9304,10 @@
             this.ThaumaturgeFeatherfoot.AutoSize = true;
             this.ThaumaturgeFeatherfoot.Enabled = false;
             this.ThaumaturgeFeatherfoot.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgeFeatherfoot.Location = new System.Drawing.Point(6, 19);
+            this.ThaumaturgeFeatherfoot.Location = new System.Drawing.Point(8, 23);
+            this.ThaumaturgeFeatherfoot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeFeatherfoot.Name = "ThaumaturgeFeatherfoot";
-            this.ThaumaturgeFeatherfoot.Size = new System.Drawing.Size(80, 17);
+            this.ThaumaturgeFeatherfoot.Size = new System.Drawing.Size(103, 21);
             this.ThaumaturgeFeatherfoot.TabIndex = 30;
             this.ThaumaturgeFeatherfoot.Text = "Featherfoot";
             this.ThaumaturgeFeatherfoot.UseVisualStyleBackColor = true;
@@ -8368,9 +9318,10 @@
             this.ThaumaturgeSecondWind.AutoSize = true;
             this.ThaumaturgeSecondWind.Enabled = false;
             this.ThaumaturgeSecondWind.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgeSecondWind.Location = new System.Drawing.Point(6, 42);
+            this.ThaumaturgeSecondWind.Location = new System.Drawing.Point(8, 52);
+            this.ThaumaturgeSecondWind.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeSecondWind.Name = "ThaumaturgeSecondWind";
-            this.ThaumaturgeSecondWind.Size = new System.Drawing.Size(91, 17);
+            this.ThaumaturgeSecondWind.Size = new System.Drawing.Size(114, 21);
             this.ThaumaturgeSecondWind.TabIndex = 31;
             this.ThaumaturgeSecondWind.Text = "Second Wind";
             this.ThaumaturgeSecondWind.UseVisualStyleBackColor = true;
@@ -8381,9 +9332,10 @@
             this.ThaumaturgeInternalRelease.AutoSize = true;
             this.ThaumaturgeInternalRelease.Enabled = false;
             this.ThaumaturgeInternalRelease.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgeInternalRelease.Location = new System.Drawing.Point(6, 65);
+            this.ThaumaturgeInternalRelease.Location = new System.Drawing.Point(8, 80);
+            this.ThaumaturgeInternalRelease.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeInternalRelease.Name = "ThaumaturgeInternalRelease";
-            this.ThaumaturgeInternalRelease.Size = new System.Drawing.Size(103, 17);
+            this.ThaumaturgeInternalRelease.Size = new System.Drawing.Size(133, 21);
             this.ThaumaturgeInternalRelease.TabIndex = 32;
             this.ThaumaturgeInternalRelease.Text = "Internal Release";
             this.ThaumaturgeInternalRelease.UseVisualStyleBackColor = true;
@@ -8394,9 +9346,10 @@
             this.ThaumaturgeMantra.AutoSize = true;
             this.ThaumaturgeMantra.Enabled = false;
             this.ThaumaturgeMantra.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgeMantra.Location = new System.Drawing.Point(6, 88);
+            this.ThaumaturgeMantra.Location = new System.Drawing.Point(8, 108);
+            this.ThaumaturgeMantra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeMantra.Name = "ThaumaturgeMantra";
-            this.ThaumaturgeMantra.Size = new System.Drawing.Size(59, 17);
+            this.ThaumaturgeMantra.Size = new System.Drawing.Size(74, 21);
             this.ThaumaturgeMantra.TabIndex = 34;
             this.ThaumaturgeMantra.Text = "Mantra";
             this.ThaumaturgeMantra.UseVisualStyleBackColor = true;
@@ -8408,9 +9361,11 @@
             this.ThaumaturgeMarauderGroup.Controls.Add(this.ThaumaturgeBloodbath);
             this.ThaumaturgeMarauderGroup.Controls.Add(this.ThaumaturgeMercyStroke);
             this.ThaumaturgeMarauderGroup.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgeMarauderGroup.Location = new System.Drawing.Point(132, 160);
+            this.ThaumaturgeMarauderGroup.Location = new System.Drawing.Point(176, 197);
+            this.ThaumaturgeMarauderGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeMarauderGroup.Name = "ThaumaturgeMarauderGroup";
-            this.ThaumaturgeMarauderGroup.Size = new System.Drawing.Size(113, 88);
+            this.ThaumaturgeMarauderGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ThaumaturgeMarauderGroup.Size = new System.Drawing.Size(151, 108);
             this.ThaumaturgeMarauderGroup.TabIndex = 23;
             this.ThaumaturgeMarauderGroup.TabStop = false;
             this.ThaumaturgeMarauderGroup.Text = "Marauder ";
@@ -8420,9 +9375,10 @@
             this.ThaumaturgeForesight.AutoSize = true;
             this.ThaumaturgeForesight.Enabled = false;
             this.ThaumaturgeForesight.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgeForesight.Location = new System.Drawing.Point(6, 19);
+            this.ThaumaturgeForesight.Location = new System.Drawing.Point(8, 23);
+            this.ThaumaturgeForesight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeForesight.Name = "ThaumaturgeForesight";
-            this.ThaumaturgeForesight.Size = new System.Drawing.Size(69, 17);
+            this.ThaumaturgeForesight.Size = new System.Drawing.Size(89, 21);
             this.ThaumaturgeForesight.TabIndex = 26;
             this.ThaumaturgeForesight.Text = "Foresight";
             this.ThaumaturgeForesight.UseVisualStyleBackColor = true;
@@ -8433,9 +9389,10 @@
             this.ThaumaturgeBloodbath.AutoSize = true;
             this.ThaumaturgeBloodbath.Enabled = false;
             this.ThaumaturgeBloodbath.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgeBloodbath.Location = new System.Drawing.Point(6, 42);
+            this.ThaumaturgeBloodbath.Location = new System.Drawing.Point(8, 52);
+            this.ThaumaturgeBloodbath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeBloodbath.Name = "ThaumaturgeBloodbath";
-            this.ThaumaturgeBloodbath.Size = new System.Drawing.Size(74, 17);
+            this.ThaumaturgeBloodbath.Size = new System.Drawing.Size(94, 21);
             this.ThaumaturgeBloodbath.TabIndex = 27;
             this.ThaumaturgeBloodbath.Text = "Bloodbath";
             this.ThaumaturgeBloodbath.UseVisualStyleBackColor = true;
@@ -8446,9 +9403,10 @@
             this.ThaumaturgeMercyStroke.AutoSize = true;
             this.ThaumaturgeMercyStroke.Enabled = false;
             this.ThaumaturgeMercyStroke.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgeMercyStroke.Location = new System.Drawing.Point(6, 65);
+            this.ThaumaturgeMercyStroke.Location = new System.Drawing.Point(8, 80);
+            this.ThaumaturgeMercyStroke.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeMercyStroke.Name = "ThaumaturgeMercyStroke";
-            this.ThaumaturgeMercyStroke.Size = new System.Drawing.Size(89, 17);
+            this.ThaumaturgeMercyStroke.Size = new System.Drawing.Size(113, 21);
             this.ThaumaturgeMercyStroke.TabIndex = 28;
             this.ThaumaturgeMercyStroke.Text = "Mercy Stroke";
             this.ThaumaturgeMercyStroke.UseVisualStyleBackColor = true;
@@ -8460,9 +9418,11 @@
             this.ThaumaturgeArcherGroup.Controls.Add(this.ThaumaturgeHawksEye);
             this.ThaumaturgeArcherGroup.Controls.Add(this.ThaumaturgeQuellingStrikes);
             this.ThaumaturgeArcherGroup.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgeArcherGroup.Location = new System.Drawing.Point(132, 19);
+            this.ThaumaturgeArcherGroup.Location = new System.Drawing.Point(176, 23);
+            this.ThaumaturgeArcherGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeArcherGroup.Name = "ThaumaturgeArcherGroup";
-            this.ThaumaturgeArcherGroup.Size = new System.Drawing.Size(113, 88);
+            this.ThaumaturgeArcherGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ThaumaturgeArcherGroup.Size = new System.Drawing.Size(151, 108);
             this.ThaumaturgeArcherGroup.TabIndex = 22;
             this.ThaumaturgeArcherGroup.TabStop = false;
             this.ThaumaturgeArcherGroup.Text = "Archer";
@@ -8471,9 +9431,10 @@
             // 
             this.ThaumaturgeRagingStrikes.AutoSize = true;
             this.ThaumaturgeRagingStrikes.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgeRagingStrikes.Location = new System.Drawing.Point(6, 19);
+            this.ThaumaturgeRagingStrikes.Location = new System.Drawing.Point(8, 23);
+            this.ThaumaturgeRagingStrikes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeRagingStrikes.Name = "ThaumaturgeRagingStrikes";
-            this.ThaumaturgeRagingStrikes.Size = new System.Drawing.Size(95, 17);
+            this.ThaumaturgeRagingStrikes.Size = new System.Drawing.Size(122, 21);
             this.ThaumaturgeRagingStrikes.TabIndex = 7;
             this.ThaumaturgeRagingStrikes.Text = "Raging Strikes";
             this.ThaumaturgeRagingStrikes.UseVisualStyleBackColor = true;
@@ -8484,9 +9445,10 @@
             this.ThaumaturgeHawksEye.AutoSize = true;
             this.ThaumaturgeHawksEye.Enabled = false;
             this.ThaumaturgeHawksEye.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgeHawksEye.Location = new System.Drawing.Point(6, 42);
+            this.ThaumaturgeHawksEye.Location = new System.Drawing.Point(8, 52);
+            this.ThaumaturgeHawksEye.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeHawksEye.Name = "ThaumaturgeHawksEye";
-            this.ThaumaturgeHawksEye.Size = new System.Drawing.Size(82, 17);
+            this.ThaumaturgeHawksEye.Size = new System.Drawing.Size(102, 21);
             this.ThaumaturgeHawksEye.TabIndex = 8;
             this.ThaumaturgeHawksEye.Text = "Hawk\'s Eye";
             this.ThaumaturgeHawksEye.UseVisualStyleBackColor = true;
@@ -8497,9 +9459,10 @@
             this.ThaumaturgeQuellingStrikes.AutoSize = true;
             this.ThaumaturgeQuellingStrikes.Enabled = false;
             this.ThaumaturgeQuellingStrikes.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgeQuellingStrikes.Location = new System.Drawing.Point(6, 65);
+            this.ThaumaturgeQuellingStrikes.Location = new System.Drawing.Point(8, 80);
+            this.ThaumaturgeQuellingStrikes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeQuellingStrikes.Name = "ThaumaturgeQuellingStrikes";
-            this.ThaumaturgeQuellingStrikes.Size = new System.Drawing.Size(99, 17);
+            this.ThaumaturgeQuellingStrikes.Size = new System.Drawing.Size(129, 21);
             this.ThaumaturgeQuellingStrikes.TabIndex = 9;
             this.ThaumaturgeQuellingStrikes.Text = "Quelling Strikes";
             this.ThaumaturgeQuellingStrikes.UseVisualStyleBackColor = true;
@@ -8512,9 +9475,11 @@
             this.ThaumaturgeGladiatorGroup.Controls.Add(this.ThaumaturgeProvoke);
             this.ThaumaturgeGladiatorGroup.Controls.Add(this.ThaumaturgeAwareness);
             this.ThaumaturgeGladiatorGroup.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgeGladiatorGroup.Location = new System.Drawing.Point(390, 19);
+            this.ThaumaturgeGladiatorGroup.Location = new System.Drawing.Point(520, 23);
+            this.ThaumaturgeGladiatorGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeGladiatorGroup.Name = "ThaumaturgeGladiatorGroup";
-            this.ThaumaturgeGladiatorGroup.Size = new System.Drawing.Size(108, 111);
+            this.ThaumaturgeGladiatorGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ThaumaturgeGladiatorGroup.Size = new System.Drawing.Size(144, 137);
             this.ThaumaturgeGladiatorGroup.TabIndex = 22;
             this.ThaumaturgeGladiatorGroup.TabStop = false;
             this.ThaumaturgeGladiatorGroup.Text = "Gladiator ";
@@ -8524,9 +9489,10 @@
             this.ThaumaturgeFlash.AutoSize = true;
             this.ThaumaturgeFlash.Enabled = false;
             this.ThaumaturgeFlash.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgeFlash.Location = new System.Drawing.Point(6, 19);
+            this.ThaumaturgeFlash.Location = new System.Drawing.Point(8, 23);
+            this.ThaumaturgeFlash.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeFlash.Name = "ThaumaturgeFlash";
-            this.ThaumaturgeFlash.Size = new System.Drawing.Size(51, 17);
+            this.ThaumaturgeFlash.Size = new System.Drawing.Size(64, 21);
             this.ThaumaturgeFlash.TabIndex = 15;
             this.ThaumaturgeFlash.Text = "Flash";
             this.ThaumaturgeFlash.UseVisualStyleBackColor = true;
@@ -8537,9 +9503,10 @@
             this.ThaumaturgeConvalescence.AutoSize = true;
             this.ThaumaturgeConvalescence.Enabled = false;
             this.ThaumaturgeConvalescence.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgeConvalescence.Location = new System.Drawing.Point(6, 42);
+            this.ThaumaturgeConvalescence.Location = new System.Drawing.Point(8, 52);
+            this.ThaumaturgeConvalescence.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeConvalescence.Name = "ThaumaturgeConvalescence";
-            this.ThaumaturgeConvalescence.Size = new System.Drawing.Size(100, 17);
+            this.ThaumaturgeConvalescence.Size = new System.Drawing.Size(126, 21);
             this.ThaumaturgeConvalescence.TabIndex = 16;
             this.ThaumaturgeConvalescence.Text = "Convalescence";
             this.ThaumaturgeConvalescence.UseVisualStyleBackColor = true;
@@ -8550,9 +9517,10 @@
             this.ThaumaturgeProvoke.AutoSize = true;
             this.ThaumaturgeProvoke.Enabled = false;
             this.ThaumaturgeProvoke.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgeProvoke.Location = new System.Drawing.Point(6, 65);
+            this.ThaumaturgeProvoke.Location = new System.Drawing.Point(8, 80);
+            this.ThaumaturgeProvoke.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeProvoke.Name = "ThaumaturgeProvoke";
-            this.ThaumaturgeProvoke.Size = new System.Drawing.Size(66, 17);
+            this.ThaumaturgeProvoke.Size = new System.Drawing.Size(82, 21);
             this.ThaumaturgeProvoke.TabIndex = 17;
             this.ThaumaturgeProvoke.Text = "Provoke";
             this.ThaumaturgeProvoke.UseVisualStyleBackColor = true;
@@ -8563,9 +9531,10 @@
             this.ThaumaturgeAwareness.AutoSize = true;
             this.ThaumaturgeAwareness.Enabled = false;
             this.ThaumaturgeAwareness.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgeAwareness.Location = new System.Drawing.Point(6, 88);
+            this.ThaumaturgeAwareness.Location = new System.Drawing.Point(8, 108);
+            this.ThaumaturgeAwareness.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeAwareness.Name = "ThaumaturgeAwareness";
-            this.ThaumaturgeAwareness.Size = new System.Drawing.Size(78, 17);
+            this.ThaumaturgeAwareness.Size = new System.Drawing.Size(99, 21);
             this.ThaumaturgeAwareness.TabIndex = 18;
             this.ThaumaturgeAwareness.Text = "Awareness";
             this.ThaumaturgeAwareness.UseVisualStyleBackColor = true;
@@ -8577,9 +9546,11 @@
             this.ThaumaturgeLancerGroup.Controls.Add(this.ThaumaturgeInvigorate);
             this.ThaumaturgeLancerGroup.Controls.Add(this.ThaumaturgeBloodForBlood);
             this.ThaumaturgeLancerGroup.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgeLancerGroup.Location = new System.Drawing.Point(6, 160);
+            this.ThaumaturgeLancerGroup.Location = new System.Drawing.Point(8, 197);
+            this.ThaumaturgeLancerGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeLancerGroup.Name = "ThaumaturgeLancerGroup";
-            this.ThaumaturgeLancerGroup.Size = new System.Drawing.Size(110, 88);
+            this.ThaumaturgeLancerGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ThaumaturgeLancerGroup.Size = new System.Drawing.Size(147, 108);
             this.ThaumaturgeLancerGroup.TabIndex = 10;
             this.ThaumaturgeLancerGroup.TabStop = false;
             this.ThaumaturgeLancerGroup.Text = "Lancer";
@@ -8589,9 +9560,10 @@
             this.ThaumaturgeKeenFlurry.AutoSize = true;
             this.ThaumaturgeKeenFlurry.Enabled = false;
             this.ThaumaturgeKeenFlurry.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgeKeenFlurry.Location = new System.Drawing.Point(6, 19);
+            this.ThaumaturgeKeenFlurry.Location = new System.Drawing.Point(8, 23);
+            this.ThaumaturgeKeenFlurry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeKeenFlurry.Name = "ThaumaturgeKeenFlurry";
-            this.ThaumaturgeKeenFlurry.Size = new System.Drawing.Size(79, 17);
+            this.ThaumaturgeKeenFlurry.Size = new System.Drawing.Size(103, 21);
             this.ThaumaturgeKeenFlurry.TabIndex = 19;
             this.ThaumaturgeKeenFlurry.Text = "Keen Flurry";
             this.ThaumaturgeKeenFlurry.UseVisualStyleBackColor = true;
@@ -8602,9 +9574,10 @@
             this.ThaumaturgeInvigorate.AutoSize = true;
             this.ThaumaturgeInvigorate.Enabled = false;
             this.ThaumaturgeInvigorate.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgeInvigorate.Location = new System.Drawing.Point(6, 42);
+            this.ThaumaturgeInvigorate.Location = new System.Drawing.Point(8, 52);
+            this.ThaumaturgeInvigorate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeInvigorate.Name = "ThaumaturgeInvigorate";
-            this.ThaumaturgeInvigorate.Size = new System.Drawing.Size(73, 17);
+            this.ThaumaturgeInvigorate.Size = new System.Drawing.Size(92, 21);
             this.ThaumaturgeInvigorate.TabIndex = 20;
             this.ThaumaturgeInvigorate.Text = "Invigorate";
             this.ThaumaturgeInvigorate.UseVisualStyleBackColor = true;
@@ -8615,9 +9588,10 @@
             this.ThaumaturgeBloodForBlood.AutoSize = true;
             this.ThaumaturgeBloodForBlood.Enabled = false;
             this.ThaumaturgeBloodForBlood.ForeColor = System.Drawing.Color.White;
-            this.ThaumaturgeBloodForBlood.Location = new System.Drawing.Point(6, 65);
+            this.ThaumaturgeBloodForBlood.Location = new System.Drawing.Point(8, 80);
+            this.ThaumaturgeBloodForBlood.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThaumaturgeBloodForBlood.Name = "ThaumaturgeBloodForBlood";
-            this.ThaumaturgeBloodForBlood.Size = new System.Drawing.Size(98, 17);
+            this.ThaumaturgeBloodForBlood.Size = new System.Drawing.Size(127, 21);
             this.ThaumaturgeBloodForBlood.TabIndex = 21;
             this.ThaumaturgeBloodForBlood.Text = "Blood for Blood";
             this.ThaumaturgeBloodForBlood.UseVisualStyleBackColor = true;
@@ -8630,7 +9604,7 @@
             this.BlackMageSettings.Location = new System.Drawing.Point(114, 4);
             this.BlackMageSettings.Margin = new System.Windows.Forms.Padding(0);
             this.BlackMageSettings.Name = "BlackMageSettings";
-            this.BlackMageSettings.Size = new System.Drawing.Size(567, 402);
+            this.BlackMageSettings.Size = new System.Drawing.Size(795, 497);
             this.BlackMageSettings.TabIndex = 1;
             this.BlackMageSettings.Text = "Black Mage";
             this.BlackMageSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
@@ -8640,9 +9614,11 @@
             this.BlackMageCrossGroup.Controls.Add(this.BlackMageArcanistGroup);
             this.BlackMageCrossGroup.Controls.Add(this.BlackMageArcherGroup);
             this.BlackMageCrossGroup.ForeColor = System.Drawing.Color.White;
-            this.BlackMageCrossGroup.Location = new System.Drawing.Point(34, 3);
+            this.BlackMageCrossGroup.Location = new System.Drawing.Point(45, 4);
+            this.BlackMageCrossGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BlackMageCrossGroup.Name = "BlackMageCrossGroup";
-            this.BlackMageCrossGroup.Size = new System.Drawing.Size(238, 136);
+            this.BlackMageCrossGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BlackMageCrossGroup.Size = new System.Drawing.Size(317, 167);
             this.BlackMageCrossGroup.TabIndex = 11;
             this.BlackMageCrossGroup.TabStop = false;
             this.BlackMageCrossGroup.Text = "Cross-Class  ";
@@ -8654,9 +9630,11 @@
             this.BlackMageArcanistGroup.Controls.Add(this.BlackMageVirus);
             this.BlackMageArcanistGroup.Controls.Add(this.BlackMageEyeForAnEye);
             this.BlackMageArcanistGroup.ForeColor = System.Drawing.Color.White;
-            this.BlackMageArcanistGroup.Location = new System.Drawing.Point(6, 19);
+            this.BlackMageArcanistGroup.Location = new System.Drawing.Point(8, 23);
+            this.BlackMageArcanistGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BlackMageArcanistGroup.Name = "BlackMageArcanistGroup";
-            this.BlackMageArcanistGroup.Size = new System.Drawing.Size(109, 111);
+            this.BlackMageArcanistGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BlackMageArcanistGroup.Size = new System.Drawing.Size(145, 137);
             this.BlackMageArcanistGroup.TabIndex = 30;
             this.BlackMageArcanistGroup.TabStop = false;
             this.BlackMageArcanistGroup.Text = "Arcanist";
@@ -8666,9 +9644,10 @@
             this.BlackMageRuin.AutoSize = true;
             this.BlackMageRuin.Enabled = false;
             this.BlackMageRuin.ForeColor = System.Drawing.Color.White;
-            this.BlackMageRuin.Location = new System.Drawing.Point(6, 19);
+            this.BlackMageRuin.Location = new System.Drawing.Point(8, 23);
+            this.BlackMageRuin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BlackMageRuin.Name = "BlackMageRuin";
-            this.BlackMageRuin.Size = new System.Drawing.Size(48, 17);
+            this.BlackMageRuin.Size = new System.Drawing.Size(59, 21);
             this.BlackMageRuin.TabIndex = 10;
             this.BlackMageRuin.Text = "Ruin";
             this.BlackMageRuin.UseVisualStyleBackColor = true;
@@ -8679,9 +9658,10 @@
             this.BlackMagePhysick.AutoSize = true;
             this.BlackMagePhysick.Enabled = false;
             this.BlackMagePhysick.ForeColor = System.Drawing.Color.White;
-            this.BlackMagePhysick.Location = new System.Drawing.Point(6, 42);
+            this.BlackMagePhysick.Location = new System.Drawing.Point(8, 52);
+            this.BlackMagePhysick.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BlackMagePhysick.Name = "BlackMagePhysick";
-            this.BlackMagePhysick.Size = new System.Drawing.Size(63, 17);
+            this.BlackMagePhysick.Size = new System.Drawing.Size(78, 21);
             this.BlackMagePhysick.TabIndex = 7;
             this.BlackMagePhysick.Text = "Physick";
             this.BlackMagePhysick.UseVisualStyleBackColor = true;
@@ -8692,9 +9672,10 @@
             this.BlackMageVirus.AutoSize = true;
             this.BlackMageVirus.Enabled = false;
             this.BlackMageVirus.ForeColor = System.Drawing.Color.White;
-            this.BlackMageVirus.Location = new System.Drawing.Point(6, 65);
+            this.BlackMageVirus.Location = new System.Drawing.Point(8, 80);
+            this.BlackMageVirus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BlackMageVirus.Name = "BlackMageVirus";
-            this.BlackMageVirus.Size = new System.Drawing.Size(49, 17);
+            this.BlackMageVirus.Size = new System.Drawing.Size(62, 21);
             this.BlackMageVirus.TabIndex = 8;
             this.BlackMageVirus.Text = "Virus";
             this.BlackMageVirus.UseVisualStyleBackColor = true;
@@ -8705,9 +9686,10 @@
             this.BlackMageEyeForAnEye.AutoSize = true;
             this.BlackMageEyeForAnEye.Enabled = false;
             this.BlackMageEyeForAnEye.ForeColor = System.Drawing.Color.White;
-            this.BlackMageEyeForAnEye.Location = new System.Drawing.Point(6, 88);
+            this.BlackMageEyeForAnEye.Location = new System.Drawing.Point(8, 108);
+            this.BlackMageEyeForAnEye.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BlackMageEyeForAnEye.Name = "BlackMageEyeForAnEye";
-            this.BlackMageEyeForAnEye.Size = new System.Drawing.Size(95, 17);
+            this.BlackMageEyeForAnEye.Size = new System.Drawing.Size(123, 21);
             this.BlackMageEyeForAnEye.TabIndex = 9;
             this.BlackMageEyeForAnEye.Text = "Eye for an Eye";
             this.BlackMageEyeForAnEye.UseVisualStyleBackColor = true;
@@ -8719,9 +9701,11 @@
             this.BlackMageArcherGroup.Controls.Add(this.BlackMageHawksEye);
             this.BlackMageArcherGroup.Controls.Add(this.BlackMageQuellingStrikes);
             this.BlackMageArcherGroup.ForeColor = System.Drawing.Color.White;
-            this.BlackMageArcherGroup.Location = new System.Drawing.Point(121, 19);
+            this.BlackMageArcherGroup.Location = new System.Drawing.Point(161, 23);
+            this.BlackMageArcherGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BlackMageArcherGroup.Name = "BlackMageArcherGroup";
-            this.BlackMageArcherGroup.Size = new System.Drawing.Size(111, 88);
+            this.BlackMageArcherGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BlackMageArcherGroup.Size = new System.Drawing.Size(148, 108);
             this.BlackMageArcherGroup.TabIndex = 22;
             this.BlackMageArcherGroup.TabStop = false;
             this.BlackMageArcherGroup.Text = "Archer";
@@ -8730,9 +9714,10 @@
             // 
             this.BlackMageRagingStrikes.AutoSize = true;
             this.BlackMageRagingStrikes.ForeColor = System.Drawing.Color.White;
-            this.BlackMageRagingStrikes.Location = new System.Drawing.Point(6, 19);
+            this.BlackMageRagingStrikes.Location = new System.Drawing.Point(8, 23);
+            this.BlackMageRagingStrikes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BlackMageRagingStrikes.Name = "BlackMageRagingStrikes";
-            this.BlackMageRagingStrikes.Size = new System.Drawing.Size(95, 17);
+            this.BlackMageRagingStrikes.Size = new System.Drawing.Size(122, 21);
             this.BlackMageRagingStrikes.TabIndex = 7;
             this.BlackMageRagingStrikes.Text = "Raging Strikes";
             this.BlackMageRagingStrikes.UseVisualStyleBackColor = true;
@@ -8743,9 +9728,10 @@
             this.BlackMageHawksEye.AutoSize = true;
             this.BlackMageHawksEye.Enabled = false;
             this.BlackMageHawksEye.ForeColor = System.Drawing.Color.White;
-            this.BlackMageHawksEye.Location = new System.Drawing.Point(6, 42);
+            this.BlackMageHawksEye.Location = new System.Drawing.Point(8, 52);
+            this.BlackMageHawksEye.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BlackMageHawksEye.Name = "BlackMageHawksEye";
-            this.BlackMageHawksEye.Size = new System.Drawing.Size(82, 17);
+            this.BlackMageHawksEye.Size = new System.Drawing.Size(102, 21);
             this.BlackMageHawksEye.TabIndex = 8;
             this.BlackMageHawksEye.Text = "Hawk\'s Eye";
             this.BlackMageHawksEye.UseVisualStyleBackColor = true;
@@ -8756,9 +9742,10 @@
             this.BlackMageQuellingStrikes.AutoSize = true;
             this.BlackMageQuellingStrikes.Enabled = false;
             this.BlackMageQuellingStrikes.ForeColor = System.Drawing.Color.White;
-            this.BlackMageQuellingStrikes.Location = new System.Drawing.Point(6, 65);
+            this.BlackMageQuellingStrikes.Location = new System.Drawing.Point(8, 80);
+            this.BlackMageQuellingStrikes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BlackMageQuellingStrikes.Name = "BlackMageQuellingStrikes";
-            this.BlackMageQuellingStrikes.Size = new System.Drawing.Size(99, 17);
+            this.BlackMageQuellingStrikes.Size = new System.Drawing.Size(129, 21);
             this.BlackMageQuellingStrikes.TabIndex = 9;
             this.BlackMageQuellingStrikes.Text = "Quelling Strikes";
             this.BlackMageQuellingStrikes.UseVisualStyleBackColor = true;
@@ -8771,7 +9758,7 @@
             this.ExtraJobTab.Location = new System.Drawing.Point(114, 4);
             this.ExtraJobTab.Margin = new System.Windows.Forms.Padding(0);
             this.ExtraJobTab.Name = "ExtraJobTab";
-            this.ExtraJobTab.Size = new System.Drawing.Size(682, 402);
+            this.ExtraJobTab.Size = new System.Drawing.Size(949, 497);
             this.ExtraJobTab.TabIndex = 10;
             this.ExtraJobTab.Text = "Extra Jobs";
             // 
@@ -8782,11 +9769,12 @@
             this.ExtraJobsSubTab.Controls.Add(this.DarkKnightSettings);
             this.ExtraJobsSubTab.Controls.Add(this.MachinistSettings);
             this.ExtraJobsSubTab.ItemSize = new System.Drawing.Size(35, 110);
-            this.ExtraJobsSubTab.Location = new System.Drawing.Point(-1, -4);
+            this.ExtraJobsSubTab.Location = new System.Drawing.Point(-1, -5);
+            this.ExtraJobsSubTab.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ExtraJobsSubTab.Multiline = true;
             this.ExtraJobsSubTab.Name = "ExtraJobsSubTab";
             this.ExtraJobsSubTab.SelectedIndex = 0;
-            this.ExtraJobsSubTab.Size = new System.Drawing.Size(685, 410);
+            this.ExtraJobsSubTab.Size = new System.Drawing.Size(913, 505);
             this.ExtraJobsSubTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.ExtraJobsSubTab.TabIndex = 6;
             // 
@@ -8799,7 +9787,7 @@
             this.AstrologianSettings.Location = new System.Drawing.Point(114, 4);
             this.AstrologianSettings.Margin = new System.Windows.Forms.Padding(0);
             this.AstrologianSettings.Name = "AstrologianSettings";
-            this.AstrologianSettings.Size = new System.Drawing.Size(567, 402);
+            this.AstrologianSettings.Size = new System.Drawing.Size(795, 497);
             this.AstrologianSettings.TabIndex = 0;
             this.AstrologianSettings.Text = "Astrologian";
             // 
@@ -8807,9 +9795,11 @@
             // 
             this.groupBoxDesign2.Controls.Add(this.AstrologianDraw);
             this.groupBoxDesign2.ForeColor = System.Drawing.Color.White;
-            this.groupBoxDesign2.Location = new System.Drawing.Point(162, 191);
+            this.groupBoxDesign2.Location = new System.Drawing.Point(216, 235);
+            this.groupBoxDesign2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBoxDesign2.Name = "groupBoxDesign2";
-            this.groupBoxDesign2.Size = new System.Drawing.Size(63, 42);
+            this.groupBoxDesign2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxDesign2.Size = new System.Drawing.Size(84, 52);
             this.groupBoxDesign2.TabIndex = 45;
             this.groupBoxDesign2.TabStop = false;
             this.groupBoxDesign2.Text = "Buff";
@@ -8818,9 +9808,10 @@
             // 
             this.AstrologianDraw.AutoSize = true;
             this.AstrologianDraw.ForeColor = System.Drawing.Color.White;
-            this.AstrologianDraw.Location = new System.Drawing.Point(6, 19);
+            this.AstrologianDraw.Location = new System.Drawing.Point(8, 23);
+            this.AstrologianDraw.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AstrologianDraw.Name = "AstrologianDraw";
-            this.AstrologianDraw.Size = new System.Drawing.Size(51, 17);
+            this.AstrologianDraw.Size = new System.Drawing.Size(62, 21);
             this.AstrologianDraw.TabIndex = 11;
             this.AstrologianDraw.Text = "Draw";
             this.AstrologianDraw.UseVisualStyleBackColor = true;
@@ -8833,9 +9824,11 @@
             this.AstrologianHealingGroup.Controls.Add(this.AstrologianBeneficII);
             this.AstrologianHealingGroup.Controls.Add(this.AstrologianBenefic);
             this.AstrologianHealingGroup.ForeColor = System.Drawing.Color.White;
-            this.AstrologianHealingGroup.Location = new System.Drawing.Point(34, 191);
+            this.AstrologianHealingGroup.Location = new System.Drawing.Point(45, 235);
+            this.AstrologianHealingGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AstrologianHealingGroup.Name = "AstrologianHealingGroup";
-            this.AstrologianHealingGroup.Size = new System.Drawing.Size(122, 111);
+            this.AstrologianHealingGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AstrologianHealingGroup.Size = new System.Drawing.Size(163, 137);
             this.AstrologianHealingGroup.TabIndex = 15;
             this.AstrologianHealingGroup.TabStop = false;
             this.AstrologianHealingGroup.Text = "Heal";
@@ -8844,9 +9837,10 @@
             // 
             this.AstrologianEssentialDignity.AutoSize = true;
             this.AstrologianEssentialDignity.ForeColor = System.Drawing.Color.White;
-            this.AstrologianEssentialDignity.Location = new System.Drawing.Point(6, 88);
+            this.AstrologianEssentialDignity.Location = new System.Drawing.Point(8, 108);
+            this.AstrologianEssentialDignity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AstrologianEssentialDignity.Name = "AstrologianEssentialDignity";
-            this.AstrologianEssentialDignity.Size = new System.Drawing.Size(103, 17);
+            this.AstrologianEssentialDignity.Size = new System.Drawing.Size(134, 21);
             this.AstrologianEssentialDignity.TabIndex = 10;
             this.AstrologianEssentialDignity.Text = "Essential Dignity";
             this.AstrologianEssentialDignity.UseVisualStyleBackColor = true;
@@ -8856,9 +9850,10 @@
             // 
             this.AstrologianAspectedBenefic.AutoSize = true;
             this.AstrologianAspectedBenefic.ForeColor = System.Drawing.Color.White;
-            this.AstrologianAspectedBenefic.Location = new System.Drawing.Point(6, 65);
+            this.AstrologianAspectedBenefic.Location = new System.Drawing.Point(8, 80);
+            this.AstrologianAspectedBenefic.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AstrologianAspectedBenefic.Name = "AstrologianAspectedBenefic";
-            this.AstrologianAspectedBenefic.Size = new System.Drawing.Size(110, 17);
+            this.AstrologianAspectedBenefic.Size = new System.Drawing.Size(140, 21);
             this.AstrologianAspectedBenefic.TabIndex = 9;
             this.AstrologianAspectedBenefic.Text = "Aspected Benefic";
             this.AstrologianAspectedBenefic.UseVisualStyleBackColor = true;
@@ -8868,9 +9863,10 @@
             // 
             this.AstrologianBeneficII.AutoSize = true;
             this.AstrologianBeneficII.ForeColor = System.Drawing.Color.White;
-            this.AstrologianBeneficII.Location = new System.Drawing.Point(6, 42);
+            this.AstrologianBeneficII.Location = new System.Drawing.Point(8, 52);
+            this.AstrologianBeneficII.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AstrologianBeneficII.Name = "AstrologianBeneficII";
-            this.AstrologianBeneficII.Size = new System.Drawing.Size(71, 17);
+            this.AstrologianBeneficII.Size = new System.Drawing.Size(87, 21);
             this.AstrologianBeneficII.TabIndex = 8;
             this.AstrologianBeneficII.Text = "Benefic II";
             this.AstrologianBeneficII.UseVisualStyleBackColor = true;
@@ -8880,9 +9876,10 @@
             // 
             this.AstrologianBenefic.AutoSize = true;
             this.AstrologianBenefic.ForeColor = System.Drawing.Color.White;
-            this.AstrologianBenefic.Location = new System.Drawing.Point(6, 19);
+            this.AstrologianBenefic.Location = new System.Drawing.Point(8, 23);
+            this.AstrologianBenefic.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AstrologianBenefic.Name = "AstrologianBenefic";
-            this.AstrologianBenefic.Size = new System.Drawing.Size(62, 17);
+            this.AstrologianBenefic.Size = new System.Drawing.Size(77, 21);
             this.AstrologianBenefic.TabIndex = 7;
             this.AstrologianBenefic.Text = "Benefic";
             this.AstrologianBenefic.UseVisualStyleBackColor = true;
@@ -8893,9 +9890,11 @@
             this.AstrologianCrossGroup.Controls.Add(this.AstrologianThaumaturgeGroup);
             this.AstrologianCrossGroup.Controls.Add(this.AstrologianConjurerGroup);
             this.AstrologianCrossGroup.ForeColor = System.Drawing.Color.White;
-            this.AstrologianCrossGroup.Location = new System.Drawing.Point(34, 3);
+            this.AstrologianCrossGroup.Location = new System.Drawing.Point(45, 4);
+            this.AstrologianCrossGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AstrologianCrossGroup.Name = "AstrologianCrossGroup";
-            this.AstrologianCrossGroup.Size = new System.Drawing.Size(202, 182);
+            this.AstrologianCrossGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AstrologianCrossGroup.Size = new System.Drawing.Size(269, 224);
             this.AstrologianCrossGroup.TabIndex = 10;
             this.AstrologianCrossGroup.TabStop = false;
             this.AstrologianCrossGroup.Text = "Cross-Class  ";
@@ -8906,9 +9905,11 @@
             this.AstrologianThaumaturgeGroup.Controls.Add(this.AstrologianSwiftcast);
             this.AstrologianThaumaturgeGroup.Controls.Add(this.AstrologianBlizzardII);
             this.AstrologianThaumaturgeGroup.ForeColor = System.Drawing.Color.White;
-            this.AstrologianThaumaturgeGroup.Location = new System.Drawing.Point(113, 19);
+            this.AstrologianThaumaturgeGroup.Location = new System.Drawing.Point(151, 23);
+            this.AstrologianThaumaturgeGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AstrologianThaumaturgeGroup.Name = "AstrologianThaumaturgeGroup";
-            this.AstrologianThaumaturgeGroup.Size = new System.Drawing.Size(83, 88);
+            this.AstrologianThaumaturgeGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AstrologianThaumaturgeGroup.Size = new System.Drawing.Size(111, 108);
             this.AstrologianThaumaturgeGroup.TabIndex = 29;
             this.AstrologianThaumaturgeGroup.TabStop = false;
             this.AstrologianThaumaturgeGroup.Text = "Thaumaturge ";
@@ -8918,9 +9919,10 @@
             this.AstrologianSurecast.AutoSize = true;
             this.AstrologianSurecast.Enabled = false;
             this.AstrologianSurecast.ForeColor = System.Drawing.Color.White;
-            this.AstrologianSurecast.Location = new System.Drawing.Point(6, 19);
+            this.AstrologianSurecast.Location = new System.Drawing.Point(8, 23);
+            this.AstrologianSurecast.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AstrologianSurecast.Name = "AstrologianSurecast";
-            this.AstrologianSurecast.Size = new System.Drawing.Size(68, 17);
+            this.AstrologianSurecast.Size = new System.Drawing.Size(86, 21);
             this.AstrologianSurecast.TabIndex = 35;
             this.AstrologianSurecast.Text = "Surecast";
             this.AstrologianSurecast.UseVisualStyleBackColor = true;
@@ -8930,9 +9932,10 @@
             // 
             this.AstrologianSwiftcast.AutoSize = true;
             this.AstrologianSwiftcast.ForeColor = System.Drawing.Color.White;
-            this.AstrologianSwiftcast.Location = new System.Drawing.Point(6, 65);
+            this.AstrologianSwiftcast.Location = new System.Drawing.Point(8, 80);
+            this.AstrologianSwiftcast.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AstrologianSwiftcast.Name = "AstrologianSwiftcast";
-            this.AstrologianSwiftcast.Size = new System.Drawing.Size(69, 17);
+            this.AstrologianSwiftcast.Size = new System.Drawing.Size(85, 21);
             this.AstrologianSwiftcast.TabIndex = 36;
             this.AstrologianSwiftcast.Text = "Swiftcast";
             this.AstrologianSwiftcast.UseVisualStyleBackColor = true;
@@ -8943,9 +9946,10 @@
             this.AstrologianBlizzardII.AutoSize = true;
             this.AstrologianBlizzardII.Enabled = false;
             this.AstrologianBlizzardII.ForeColor = System.Drawing.Color.White;
-            this.AstrologianBlizzardII.Location = new System.Drawing.Point(6, 42);
+            this.AstrologianBlizzardII.Location = new System.Drawing.Point(8, 52);
+            this.AstrologianBlizzardII.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AstrologianBlizzardII.Name = "AstrologianBlizzardII";
-            this.AstrologianBlizzardII.Size = new System.Drawing.Size(71, 17);
+            this.AstrologianBlizzardII.Size = new System.Drawing.Size(90, 21);
             this.AstrologianBlizzardII.TabIndex = 39;
             this.AstrologianBlizzardII.Text = "Blizzard II";
             this.AstrologianBlizzardII.UseVisualStyleBackColor = true;
@@ -8960,9 +9964,11 @@
             this.AstrologianConjurerGroup.Controls.Add(this.AstrologianRaise);
             this.AstrologianConjurerGroup.Controls.Add(this.AstrologianStoneskin);
             this.AstrologianConjurerGroup.ForeColor = System.Drawing.Color.White;
-            this.AstrologianConjurerGroup.Location = new System.Drawing.Point(6, 19);
+            this.AstrologianConjurerGroup.Location = new System.Drawing.Point(8, 23);
+            this.AstrologianConjurerGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AstrologianConjurerGroup.Name = "AstrologianConjurerGroup";
-            this.AstrologianConjurerGroup.Size = new System.Drawing.Size(101, 157);
+            this.AstrologianConjurerGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AstrologianConjurerGroup.Size = new System.Drawing.Size(135, 193);
             this.AstrologianConjurerGroup.TabIndex = 23;
             this.AstrologianConjurerGroup.TabStop = false;
             this.AstrologianConjurerGroup.Text = "Conjurer ";
@@ -8971,9 +9977,10 @@
             // 
             this.AstrologianClericStance.AutoSize = true;
             this.AstrologianClericStance.ForeColor = System.Drawing.Color.White;
-            this.AstrologianClericStance.Location = new System.Drawing.Point(6, 65);
+            this.AstrologianClericStance.Location = new System.Drawing.Point(8, 80);
+            this.AstrologianClericStance.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AstrologianClericStance.Name = "AstrologianClericStance";
-            this.AstrologianClericStance.Size = new System.Drawing.Size(89, 17);
+            this.AstrologianClericStance.Size = new System.Drawing.Size(113, 21);
             this.AstrologianClericStance.TabIndex = 15;
             this.AstrologianClericStance.Text = "Cleric Stance";
             this.AstrologianClericStance.UseVisualStyleBackColor = true;
@@ -8984,9 +9991,10 @@
             this.AstrologianCure.AutoSize = true;
             this.AstrologianCure.Enabled = false;
             this.AstrologianCure.ForeColor = System.Drawing.Color.White;
-            this.AstrologianCure.Location = new System.Drawing.Point(6, 19);
+            this.AstrologianCure.Location = new System.Drawing.Point(8, 23);
+            this.AstrologianCure.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AstrologianCure.Name = "AstrologianCure";
-            this.AstrologianCure.Size = new System.Drawing.Size(48, 17);
+            this.AstrologianCure.Size = new System.Drawing.Size(60, 21);
             this.AstrologianCure.TabIndex = 10;
             this.AstrologianCure.Text = "Cure";
             this.AstrologianCure.UseVisualStyleBackColor = true;
@@ -8996,9 +10004,10 @@
             // 
             this.AstrologianAero.AutoSize = true;
             this.AstrologianAero.ForeColor = System.Drawing.Color.White;
-            this.AstrologianAero.Location = new System.Drawing.Point(6, 42);
+            this.AstrologianAero.Location = new System.Drawing.Point(8, 52);
+            this.AstrologianAero.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AstrologianAero.Name = "AstrologianAero";
-            this.AstrologianAero.Size = new System.Drawing.Size(48, 17);
+            this.AstrologianAero.Size = new System.Drawing.Size(60, 21);
             this.AstrologianAero.TabIndex = 11;
             this.AstrologianAero.Text = "Aero";
             this.AstrologianAero.UseVisualStyleBackColor = true;
@@ -9008,9 +10017,10 @@
             // 
             this.AstrologianProtect.AutoSize = true;
             this.AstrologianProtect.ForeColor = System.Drawing.Color.White;
-            this.AstrologianProtect.Location = new System.Drawing.Point(6, 88);
+            this.AstrologianProtect.Location = new System.Drawing.Point(8, 108);
+            this.AstrologianProtect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AstrologianProtect.Name = "AstrologianProtect";
-            this.AstrologianProtect.Size = new System.Drawing.Size(60, 17);
+            this.AstrologianProtect.Size = new System.Drawing.Size(75, 21);
             this.AstrologianProtect.TabIndex = 12;
             this.AstrologianProtect.Text = "Protect";
             this.AstrologianProtect.UseVisualStyleBackColor = true;
@@ -9021,9 +10031,10 @@
             this.AstrologianRaise.AutoSize = true;
             this.AstrologianRaise.Enabled = false;
             this.AstrologianRaise.ForeColor = System.Drawing.Color.White;
-            this.AstrologianRaise.Location = new System.Drawing.Point(6, 111);
+            this.AstrologianRaise.Location = new System.Drawing.Point(8, 137);
+            this.AstrologianRaise.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AstrologianRaise.Name = "AstrologianRaise";
-            this.AstrologianRaise.Size = new System.Drawing.Size(53, 17);
+            this.AstrologianRaise.Size = new System.Drawing.Size(66, 21);
             this.AstrologianRaise.TabIndex = 13;
             this.AstrologianRaise.Text = "Raise";
             this.AstrologianRaise.UseVisualStyleBackColor = true;
@@ -9033,9 +10044,10 @@
             // 
             this.AstrologianStoneskin.AutoSize = true;
             this.AstrologianStoneskin.ForeColor = System.Drawing.Color.White;
-            this.AstrologianStoneskin.Location = new System.Drawing.Point(6, 134);
+            this.AstrologianStoneskin.Location = new System.Drawing.Point(8, 165);
+            this.AstrologianStoneskin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AstrologianStoneskin.Name = "AstrologianStoneskin";
-            this.AstrologianStoneskin.Size = new System.Drawing.Size(73, 17);
+            this.AstrologianStoneskin.Size = new System.Drawing.Size(92, 21);
             this.AstrologianStoneskin.TabIndex = 14;
             this.AstrologianStoneskin.Text = "Stoneskin";
             this.AstrologianStoneskin.UseVisualStyleBackColor = true;
@@ -9053,7 +10065,7 @@
             this.DarkKnightSettings.Location = new System.Drawing.Point(114, 4);
             this.DarkKnightSettings.Margin = new System.Windows.Forms.Padding(0);
             this.DarkKnightSettings.Name = "DarkKnightSettings";
-            this.DarkKnightSettings.Size = new System.Drawing.Size(567, 402);
+            this.DarkKnightSettings.Size = new System.Drawing.Size(795, 497);
             this.DarkKnightSettings.TabIndex = 1;
             this.DarkKnightSettings.Text = "Dark Knight";
             // 
@@ -9061,9 +10073,11 @@
             // 
             this.DarkKnightCooldownGroup.Controls.Add(this.DarkKnightSaltedEarth);
             this.DarkKnightCooldownGroup.ForeColor = System.Drawing.Color.White;
-            this.DarkKnightCooldownGroup.Location = new System.Drawing.Point(34, 287);
+            this.DarkKnightCooldownGroup.Location = new System.Drawing.Point(45, 353);
+            this.DarkKnightCooldownGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DarkKnightCooldownGroup.Name = "DarkKnightCooldownGroup";
-            this.DarkKnightCooldownGroup.Size = new System.Drawing.Size(96, 42);
+            this.DarkKnightCooldownGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DarkKnightCooldownGroup.Size = new System.Drawing.Size(128, 52);
             this.DarkKnightCooldownGroup.TabIndex = 49;
             this.DarkKnightCooldownGroup.TabStop = false;
             this.DarkKnightCooldownGroup.Text = "Cooldown ";
@@ -9072,9 +10086,10 @@
             // 
             this.DarkKnightSaltedEarth.AutoSize = true;
             this.DarkKnightSaltedEarth.ForeColor = System.Drawing.Color.White;
-            this.DarkKnightSaltedEarth.Location = new System.Drawing.Point(6, 19);
+            this.DarkKnightSaltedEarth.Location = new System.Drawing.Point(8, 23);
+            this.DarkKnightSaltedEarth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DarkKnightSaltedEarth.Name = "DarkKnightSaltedEarth";
-            this.DarkKnightSaltedEarth.Size = new System.Drawing.Size(84, 17);
+            this.DarkKnightSaltedEarth.Size = new System.Drawing.Size(108, 21);
             this.DarkKnightSaltedEarth.TabIndex = 7;
             this.DarkKnightSaltedEarth.Text = "Salted Earth";
             this.DarkKnightSaltedEarth.UseVisualStyleBackColor = true;
@@ -9085,9 +10100,11 @@
             this.DarkKnightBuffGroup.Controls.Add(this.DarkKnightDarkArts);
             this.DarkKnightBuffGroup.Controls.Add(this.DarkKnightBloodWeapon);
             this.DarkKnightBuffGroup.ForeColor = System.Drawing.Color.White;
-            this.DarkKnightBuffGroup.Location = new System.Drawing.Point(34, 168);
+            this.DarkKnightBuffGroup.Location = new System.Drawing.Point(45, 207);
+            this.DarkKnightBuffGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DarkKnightBuffGroup.Name = "DarkKnightBuffGroup";
-            this.DarkKnightBuffGroup.Size = new System.Drawing.Size(109, 65);
+            this.DarkKnightBuffGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DarkKnightBuffGroup.Size = new System.Drawing.Size(145, 80);
             this.DarkKnightBuffGroup.TabIndex = 49;
             this.DarkKnightBuffGroup.TabStop = false;
             this.DarkKnightBuffGroup.Text = "Buff";
@@ -9096,9 +10113,10 @@
             // 
             this.DarkKnightDarkArts.AutoSize = true;
             this.DarkKnightDarkArts.ForeColor = System.Drawing.Color.White;
-            this.DarkKnightDarkArts.Location = new System.Drawing.Point(6, 42);
+            this.DarkKnightDarkArts.Location = new System.Drawing.Point(8, 52);
+            this.DarkKnightDarkArts.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DarkKnightDarkArts.Name = "DarkKnightDarkArts";
-            this.DarkKnightDarkArts.Size = new System.Drawing.Size(70, 17);
+            this.DarkKnightDarkArts.Size = new System.Drawing.Size(89, 21);
             this.DarkKnightDarkArts.TabIndex = 8;
             this.DarkKnightDarkArts.Text = "Dark Arts";
             this.DarkKnightDarkArts.UseVisualStyleBackColor = true;
@@ -9108,9 +10126,10 @@
             // 
             this.DarkKnightBloodWeapon.AutoSize = true;
             this.DarkKnightBloodWeapon.ForeColor = System.Drawing.Color.White;
-            this.DarkKnightBloodWeapon.Location = new System.Drawing.Point(6, 19);
+            this.DarkKnightBloodWeapon.Location = new System.Drawing.Point(8, 23);
+            this.DarkKnightBloodWeapon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DarkKnightBloodWeapon.Name = "DarkKnightBloodWeapon";
-            this.DarkKnightBloodWeapon.Size = new System.Drawing.Size(97, 17);
+            this.DarkKnightBloodWeapon.Size = new System.Drawing.Size(123, 21);
             this.DarkKnightBloodWeapon.TabIndex = 7;
             this.DarkKnightBloodWeapon.Text = "Blood Weapon";
             this.DarkKnightBloodWeapon.UseVisualStyleBackColor = true;
@@ -9121,9 +10140,11 @@
             this.DarkKnightDebuffGroup.Controls.Add(this.DarkKnightDelirium);
             this.DarkKnightDebuffGroup.Controls.Add(this.DarkKnightReprisal);
             this.DarkKnightDebuffGroup.ForeColor = System.Drawing.Color.White;
-            this.DarkKnightDebuffGroup.Location = new System.Drawing.Point(149, 168);
+            this.DarkKnightDebuffGroup.Location = new System.Drawing.Point(199, 207);
+            this.DarkKnightDebuffGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DarkKnightDebuffGroup.Name = "DarkKnightDebuffGroup";
-            this.DarkKnightDebuffGroup.Size = new System.Drawing.Size(76, 65);
+            this.DarkKnightDebuffGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DarkKnightDebuffGroup.Size = new System.Drawing.Size(101, 80);
             this.DarkKnightDebuffGroup.TabIndex = 47;
             this.DarkKnightDebuffGroup.TabStop = false;
             this.DarkKnightDebuffGroup.Text = "Debuff";
@@ -9132,9 +10153,10 @@
             // 
             this.DarkKnightDelirium.AutoSize = true;
             this.DarkKnightDelirium.ForeColor = System.Drawing.Color.White;
-            this.DarkKnightDelirium.Location = new System.Drawing.Point(6, 42);
+            this.DarkKnightDelirium.Location = new System.Drawing.Point(8, 52);
+            this.DarkKnightDelirium.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DarkKnightDelirium.Name = "DarkKnightDelirium";
-            this.DarkKnightDelirium.Size = new System.Drawing.Size(63, 17);
+            this.DarkKnightDelirium.Size = new System.Drawing.Size(81, 21);
             this.DarkKnightDelirium.TabIndex = 8;
             this.DarkKnightDelirium.Text = "Delirium";
             this.DarkKnightDelirium.UseVisualStyleBackColor = true;
@@ -9144,9 +10166,10 @@
             // 
             this.DarkKnightReprisal.AutoSize = true;
             this.DarkKnightReprisal.ForeColor = System.Drawing.Color.White;
-            this.DarkKnightReprisal.Location = new System.Drawing.Point(6, 19);
+            this.DarkKnightReprisal.Location = new System.Drawing.Point(8, 23);
+            this.DarkKnightReprisal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DarkKnightReprisal.Name = "DarkKnightReprisal";
-            this.DarkKnightReprisal.Size = new System.Drawing.Size(64, 17);
+            this.DarkKnightReprisal.Size = new System.Drawing.Size(82, 21);
             this.DarkKnightReprisal.TabIndex = 7;
             this.DarkKnightReprisal.Text = "Reprisal";
             this.DarkKnightReprisal.UseVisualStyleBackColor = true;
@@ -9156,9 +10179,11 @@
             // 
             this.DarkKnightInterruptGroup.Controls.Add(this.DarkKnightLowBlow);
             this.DarkKnightInterruptGroup.ForeColor = System.Drawing.Color.White;
-            this.DarkKnightInterruptGroup.Location = new System.Drawing.Point(123, 239);
+            this.DarkKnightInterruptGroup.Location = new System.Drawing.Point(164, 294);
+            this.DarkKnightInterruptGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DarkKnightInterruptGroup.Name = "DarkKnightInterruptGroup";
-            this.DarkKnightInterruptGroup.Size = new System.Drawing.Size(84, 42);
+            this.DarkKnightInterruptGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DarkKnightInterruptGroup.Size = new System.Drawing.Size(112, 52);
             this.DarkKnightInterruptGroup.TabIndex = 48;
             this.DarkKnightInterruptGroup.TabStop = false;
             this.DarkKnightInterruptGroup.Text = "Interrupt";
@@ -9167,9 +10192,10 @@
             // 
             this.DarkKnightLowBlow.AutoSize = true;
             this.DarkKnightLowBlow.ForeColor = System.Drawing.Color.White;
-            this.DarkKnightLowBlow.Location = new System.Drawing.Point(6, 19);
+            this.DarkKnightLowBlow.Location = new System.Drawing.Point(8, 23);
+            this.DarkKnightLowBlow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DarkKnightLowBlow.Name = "DarkKnightLowBlow";
-            this.DarkKnightLowBlow.Size = new System.Drawing.Size(72, 17);
+            this.DarkKnightLowBlow.Size = new System.Drawing.Size(88, 21);
             this.DarkKnightLowBlow.TabIndex = 7;
             this.DarkKnightLowBlow.Text = "Low Blow";
             this.DarkKnightLowBlow.UseVisualStyleBackColor = true;
@@ -9179,9 +10205,11 @@
             // 
             this.DarkKnightMovementGroup.Controls.Add(this.DarkKnightPlunge);
             this.DarkKnightMovementGroup.ForeColor = System.Drawing.Color.White;
-            this.DarkKnightMovementGroup.Location = new System.Drawing.Point(34, 239);
+            this.DarkKnightMovementGroup.Location = new System.Drawing.Point(45, 294);
+            this.DarkKnightMovementGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DarkKnightMovementGroup.Name = "DarkKnightMovementGroup";
-            this.DarkKnightMovementGroup.Size = new System.Drawing.Size(83, 42);
+            this.DarkKnightMovementGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DarkKnightMovementGroup.Size = new System.Drawing.Size(111, 52);
             this.DarkKnightMovementGroup.TabIndex = 46;
             this.DarkKnightMovementGroup.TabStop = false;
             this.DarkKnightMovementGroup.Text = "Movement";
@@ -9190,9 +10218,10 @@
             // 
             this.DarkKnightPlunge.AutoSize = true;
             this.DarkKnightPlunge.ForeColor = System.Drawing.Color.White;
-            this.DarkKnightPlunge.Location = new System.Drawing.Point(6, 19);
+            this.DarkKnightPlunge.Location = new System.Drawing.Point(8, 23);
+            this.DarkKnightPlunge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DarkKnightPlunge.Name = "DarkKnightPlunge";
-            this.DarkKnightPlunge.Size = new System.Drawing.Size(59, 17);
+            this.DarkKnightPlunge.Size = new System.Drawing.Size(74, 21);
             this.DarkKnightPlunge.TabIndex = 7;
             this.DarkKnightPlunge.Text = "Plunge";
             this.DarkKnightPlunge.UseVisualStyleBackColor = true;
@@ -9203,9 +10232,11 @@
             this.DarkKnightCrossGroup.Controls.Add(this.DarkKnightMarauderGroup);
             this.DarkKnightCrossGroup.Controls.Add(this.DarkKnightGladiatorGroup);
             this.DarkKnightCrossGroup.ForeColor = System.Drawing.Color.White;
-            this.DarkKnightCrossGroup.Location = new System.Drawing.Point(34, 3);
+            this.DarkKnightCrossGroup.Location = new System.Drawing.Point(45, 4);
+            this.DarkKnightCrossGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DarkKnightCrossGroup.Name = "DarkKnightCrossGroup";
-            this.DarkKnightCrossGroup.Size = new System.Drawing.Size(227, 159);
+            this.DarkKnightCrossGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DarkKnightCrossGroup.Size = new System.Drawing.Size(303, 196);
             this.DarkKnightCrossGroup.TabIndex = 11;
             this.DarkKnightCrossGroup.TabStop = false;
             this.DarkKnightCrossGroup.Text = "Cross-Class  ";
@@ -9218,9 +10249,11 @@
             this.DarkKnightMarauderGroup.Controls.Add(this.DarkKnightForesight);
             this.DarkKnightMarauderGroup.Controls.Add(this.DarkKnightMercyStroke);
             this.DarkKnightMarauderGroup.ForeColor = System.Drawing.Color.White;
-            this.DarkKnightMarauderGroup.Location = new System.Drawing.Point(120, 19);
+            this.DarkKnightMarauderGroup.Location = new System.Drawing.Point(160, 23);
+            this.DarkKnightMarauderGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DarkKnightMarauderGroup.Name = "DarkKnightMarauderGroup";
-            this.DarkKnightMarauderGroup.Size = new System.Drawing.Size(101, 134);
+            this.DarkKnightMarauderGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DarkKnightMarauderGroup.Size = new System.Drawing.Size(135, 165);
             this.DarkKnightMarauderGroup.TabIndex = 44;
             this.DarkKnightMarauderGroup.TabStop = false;
             this.DarkKnightMarauderGroup.Text = "Marauder ";
@@ -9230,9 +10263,10 @@
             this.DarkKnightFracture.AutoSize = true;
             this.DarkKnightFracture.Enabled = false;
             this.DarkKnightFracture.ForeColor = System.Drawing.Color.White;
-            this.DarkKnightFracture.Location = new System.Drawing.Point(6, 65);
+            this.DarkKnightFracture.Location = new System.Drawing.Point(8, 80);
+            this.DarkKnightFracture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DarkKnightFracture.Name = "DarkKnightFracture";
-            this.DarkKnightFracture.Size = new System.Drawing.Size(65, 17);
+            this.DarkKnightFracture.Size = new System.Drawing.Size(83, 21);
             this.DarkKnightFracture.TabIndex = 30;
             this.DarkKnightFracture.Text = "Fracture";
             this.DarkKnightFracture.UseVisualStyleBackColor = true;
@@ -9243,9 +10277,10 @@
             this.DarkKnightSkullSunder.AutoSize = true;
             this.DarkKnightSkullSunder.Enabled = false;
             this.DarkKnightSkullSunder.ForeColor = System.Drawing.Color.White;
-            this.DarkKnightSkullSunder.Location = new System.Drawing.Point(6, 42);
+            this.DarkKnightSkullSunder.Location = new System.Drawing.Point(8, 52);
+            this.DarkKnightSkullSunder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DarkKnightSkullSunder.Name = "DarkKnightSkullSunder";
-            this.DarkKnightSkullSunder.Size = new System.Drawing.Size(86, 17);
+            this.DarkKnightSkullSunder.Size = new System.Drawing.Size(110, 21);
             this.DarkKnightSkullSunder.TabIndex = 29;
             this.DarkKnightSkullSunder.Text = "Skull Sunder";
             this.DarkKnightSkullSunder.UseVisualStyleBackColor = true;
@@ -9256,9 +10291,10 @@
             this.DarkKnightBloodbath.AutoSize = true;
             this.DarkKnightBloodbath.Enabled = false;
             this.DarkKnightBloodbath.ForeColor = System.Drawing.Color.White;
-            this.DarkKnightBloodbath.Location = new System.Drawing.Point(6, 88);
+            this.DarkKnightBloodbath.Location = new System.Drawing.Point(8, 108);
+            this.DarkKnightBloodbath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DarkKnightBloodbath.Name = "DarkKnightBloodbath";
-            this.DarkKnightBloodbath.Size = new System.Drawing.Size(74, 17);
+            this.DarkKnightBloodbath.Size = new System.Drawing.Size(94, 21);
             this.DarkKnightBloodbath.TabIndex = 27;
             this.DarkKnightBloodbath.Text = "Bloodbath";
             this.DarkKnightBloodbath.UseVisualStyleBackColor = true;
@@ -9269,9 +10305,10 @@
             this.DarkKnightForesight.AutoSize = true;
             this.DarkKnightForesight.Enabled = false;
             this.DarkKnightForesight.ForeColor = System.Drawing.Color.White;
-            this.DarkKnightForesight.Location = new System.Drawing.Point(6, 19);
+            this.DarkKnightForesight.Location = new System.Drawing.Point(8, 23);
+            this.DarkKnightForesight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DarkKnightForesight.Name = "DarkKnightForesight";
-            this.DarkKnightForesight.Size = new System.Drawing.Size(69, 17);
+            this.DarkKnightForesight.Size = new System.Drawing.Size(89, 21);
             this.DarkKnightForesight.TabIndex = 26;
             this.DarkKnightForesight.Text = "Foresight";
             this.DarkKnightForesight.UseVisualStyleBackColor = true;
@@ -9281,9 +10318,10 @@
             // 
             this.DarkKnightMercyStroke.AutoSize = true;
             this.DarkKnightMercyStroke.ForeColor = System.Drawing.Color.White;
-            this.DarkKnightMercyStroke.Location = new System.Drawing.Point(6, 111);
+            this.DarkKnightMercyStroke.Location = new System.Drawing.Point(8, 137);
+            this.DarkKnightMercyStroke.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DarkKnightMercyStroke.Name = "DarkKnightMercyStroke";
-            this.DarkKnightMercyStroke.Size = new System.Drawing.Size(89, 17);
+            this.DarkKnightMercyStroke.Size = new System.Drawing.Size(113, 21);
             this.DarkKnightMercyStroke.TabIndex = 28;
             this.DarkKnightMercyStroke.Text = "Mercy Stroke";
             this.DarkKnightMercyStroke.UseVisualStyleBackColor = true;
@@ -9297,9 +10335,11 @@
             this.DarkKnightGladiatorGroup.Controls.Add(this.DarkKnightAwareness);
             this.DarkKnightGladiatorGroup.Controls.Add(this.DarkKnightProvoke);
             this.DarkKnightGladiatorGroup.ForeColor = System.Drawing.Color.White;
-            this.DarkKnightGladiatorGroup.Location = new System.Drawing.Point(6, 19);
+            this.DarkKnightGladiatorGroup.Location = new System.Drawing.Point(8, 23);
+            this.DarkKnightGladiatorGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DarkKnightGladiatorGroup.Name = "DarkKnightGladiatorGroup";
-            this.DarkKnightGladiatorGroup.Size = new System.Drawing.Size(108, 134);
+            this.DarkKnightGladiatorGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DarkKnightGladiatorGroup.Size = new System.Drawing.Size(144, 165);
             this.DarkKnightGladiatorGroup.TabIndex = 43;
             this.DarkKnightGladiatorGroup.TabStop = false;
             this.DarkKnightGladiatorGroup.Text = "Gladiator ";
@@ -9309,9 +10349,10 @@
             this.DarkKnightFlash.AutoSize = true;
             this.DarkKnightFlash.Enabled = false;
             this.DarkKnightFlash.ForeColor = System.Drawing.Color.White;
-            this.DarkKnightFlash.Location = new System.Drawing.Point(6, 42);
+            this.DarkKnightFlash.Location = new System.Drawing.Point(8, 52);
+            this.DarkKnightFlash.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DarkKnightFlash.Name = "DarkKnightFlash";
-            this.DarkKnightFlash.Size = new System.Drawing.Size(51, 17);
+            this.DarkKnightFlash.Size = new System.Drawing.Size(64, 21);
             this.DarkKnightFlash.TabIndex = 15;
             this.DarkKnightFlash.Text = "Flash";
             this.DarkKnightFlash.UseVisualStyleBackColor = true;
@@ -9322,9 +10363,10 @@
             this.DarkKnightConvalescence.AutoSize = true;
             this.DarkKnightConvalescence.Enabled = false;
             this.DarkKnightConvalescence.ForeColor = System.Drawing.Color.White;
-            this.DarkKnightConvalescence.Location = new System.Drawing.Point(6, 65);
+            this.DarkKnightConvalescence.Location = new System.Drawing.Point(8, 80);
+            this.DarkKnightConvalescence.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DarkKnightConvalescence.Name = "DarkKnightConvalescence";
-            this.DarkKnightConvalescence.Size = new System.Drawing.Size(100, 17);
+            this.DarkKnightConvalescence.Size = new System.Drawing.Size(126, 21);
             this.DarkKnightConvalescence.TabIndex = 16;
             this.DarkKnightConvalescence.Text = "Convalescence";
             this.DarkKnightConvalescence.UseVisualStyleBackColor = true;
@@ -9335,9 +10377,10 @@
             this.DarkKnightSavageBlade.AutoSize = true;
             this.DarkKnightSavageBlade.Enabled = false;
             this.DarkKnightSavageBlade.ForeColor = System.Drawing.Color.White;
-            this.DarkKnightSavageBlade.Location = new System.Drawing.Point(6, 19);
+            this.DarkKnightSavageBlade.Location = new System.Drawing.Point(8, 23);
+            this.DarkKnightSavageBlade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DarkKnightSavageBlade.Name = "DarkKnightSavageBlade";
-            this.DarkKnightSavageBlade.Size = new System.Drawing.Size(93, 17);
+            this.DarkKnightSavageBlade.Size = new System.Drawing.Size(118, 21);
             this.DarkKnightSavageBlade.TabIndex = 30;
             this.DarkKnightSavageBlade.Text = "Savage Blade";
             this.DarkKnightSavageBlade.UseVisualStyleBackColor = true;
@@ -9348,9 +10391,10 @@
             this.DarkKnightAwareness.AutoSize = true;
             this.DarkKnightAwareness.Enabled = false;
             this.DarkKnightAwareness.ForeColor = System.Drawing.Color.White;
-            this.DarkKnightAwareness.Location = new System.Drawing.Point(6, 111);
+            this.DarkKnightAwareness.Location = new System.Drawing.Point(8, 137);
+            this.DarkKnightAwareness.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DarkKnightAwareness.Name = "DarkKnightAwareness";
-            this.DarkKnightAwareness.Size = new System.Drawing.Size(78, 17);
+            this.DarkKnightAwareness.Size = new System.Drawing.Size(99, 21);
             this.DarkKnightAwareness.TabIndex = 18;
             this.DarkKnightAwareness.Text = "Awareness";
             this.DarkKnightAwareness.UseVisualStyleBackColor = true;
@@ -9361,9 +10405,10 @@
             this.DarkKnightProvoke.AutoSize = true;
             this.DarkKnightProvoke.Enabled = false;
             this.DarkKnightProvoke.ForeColor = System.Drawing.Color.White;
-            this.DarkKnightProvoke.Location = new System.Drawing.Point(6, 88);
+            this.DarkKnightProvoke.Location = new System.Drawing.Point(8, 108);
+            this.DarkKnightProvoke.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DarkKnightProvoke.Name = "DarkKnightProvoke";
-            this.DarkKnightProvoke.Size = new System.Drawing.Size(66, 17);
+            this.DarkKnightProvoke.Size = new System.Drawing.Size(82, 21);
             this.DarkKnightProvoke.TabIndex = 17;
             this.DarkKnightProvoke.Text = "Provoke";
             this.DarkKnightProvoke.UseVisualStyleBackColor = true;
@@ -9381,7 +10426,7 @@
             this.MachinistSettings.Location = new System.Drawing.Point(114, 4);
             this.MachinistSettings.Margin = new System.Windows.Forms.Padding(0);
             this.MachinistSettings.Name = "MachinistSettings";
-            this.MachinistSettings.Size = new System.Drawing.Size(567, 402);
+            this.MachinistSettings.Size = new System.Drawing.Size(795, 497);
             this.MachinistSettings.TabIndex = 2;
             this.MachinistSettings.Text = "Machinist";
             // 
@@ -9389,9 +10434,11 @@
             // 
             this.MachinistKnockbackGroup.Controls.Add(this.MachinistBlank);
             this.MachinistKnockbackGroup.ForeColor = System.Drawing.Color.White;
-            this.MachinistKnockbackGroup.Location = new System.Drawing.Point(40, 252);
+            this.MachinistKnockbackGroup.Location = new System.Drawing.Point(53, 310);
+            this.MachinistKnockbackGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MachinistKnockbackGroup.Name = "MachinistKnockbackGroup";
-            this.MachinistKnockbackGroup.Size = new System.Drawing.Size(72, 42);
+            this.MachinistKnockbackGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MachinistKnockbackGroup.Size = new System.Drawing.Size(96, 52);
             this.MachinistKnockbackGroup.TabIndex = 46;
             this.MachinistKnockbackGroup.TabStop = false;
             this.MachinistKnockbackGroup.Text = "Knockback";
@@ -9400,9 +10447,10 @@
             // 
             this.MachinistBlank.AutoSize = true;
             this.MachinistBlank.ForeColor = System.Drawing.Color.White;
-            this.MachinistBlank.Location = new System.Drawing.Point(6, 19);
+            this.MachinistBlank.Location = new System.Drawing.Point(8, 23);
+            this.MachinistBlank.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MachinistBlank.Name = "MachinistBlank";
-            this.MachinistBlank.Size = new System.Drawing.Size(53, 17);
+            this.MachinistBlank.Size = new System.Drawing.Size(65, 21);
             this.MachinistBlank.TabIndex = 7;
             this.MachinistBlank.Text = "Blank";
             this.MachinistBlank.UseVisualStyleBackColor = true;
@@ -9412,9 +10460,11 @@
             // 
             this.MachinistBuffGroup.Controls.Add(this.MachinistHypercharge);
             this.MachinistBuffGroup.ForeColor = System.Drawing.Color.White;
-            this.MachinistBuffGroup.Location = new System.Drawing.Point(143, 204);
+            this.MachinistBuffGroup.Location = new System.Drawing.Point(191, 251);
+            this.MachinistBuffGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MachinistBuffGroup.Name = "MachinistBuffGroup";
-            this.MachinistBuffGroup.Size = new System.Drawing.Size(99, 42);
+            this.MachinistBuffGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MachinistBuffGroup.Size = new System.Drawing.Size(132, 52);
             this.MachinistBuffGroup.TabIndex = 46;
             this.MachinistBuffGroup.TabStop = false;
             this.MachinistBuffGroup.Text = "Buff";
@@ -9423,9 +10473,10 @@
             // 
             this.MachinistHypercharge.AutoSize = true;
             this.MachinistHypercharge.ForeColor = System.Drawing.Color.White;
-            this.MachinistHypercharge.Location = new System.Drawing.Point(6, 19);
+            this.MachinistHypercharge.Location = new System.Drawing.Point(8, 23);
+            this.MachinistHypercharge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MachinistHypercharge.Name = "MachinistHypercharge";
-            this.MachinistHypercharge.Size = new System.Drawing.Size(87, 17);
+            this.MachinistHypercharge.Size = new System.Drawing.Size(112, 21);
             this.MachinistHypercharge.TabIndex = 7;
             this.MachinistHypercharge.Text = "Hypercharge";
             this.MachinistHypercharge.UseVisualStyleBackColor = true;
@@ -9435,9 +10486,11 @@
             // 
             this.MachinistExecuteGroup.Controls.Add(this.MachinistHeartbreak);
             this.MachinistExecuteGroup.ForeColor = System.Drawing.Color.White;
-            this.MachinistExecuteGroup.Location = new System.Drawing.Point(118, 252);
+            this.MachinistExecuteGroup.Location = new System.Drawing.Point(157, 310);
+            this.MachinistExecuteGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MachinistExecuteGroup.Name = "MachinistExecuteGroup";
-            this.MachinistExecuteGroup.Size = new System.Drawing.Size(91, 42);
+            this.MachinistExecuteGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MachinistExecuteGroup.Size = new System.Drawing.Size(121, 52);
             this.MachinistExecuteGroup.TabIndex = 19;
             this.MachinistExecuteGroup.TabStop = false;
             this.MachinistExecuteGroup.Text = "Execute";
@@ -9446,9 +10499,10 @@
             // 
             this.MachinistHeartbreak.AutoSize = true;
             this.MachinistHeartbreak.ForeColor = System.Drawing.Color.White;
-            this.MachinistHeartbreak.Location = new System.Drawing.Point(6, 19);
+            this.MachinistHeartbreak.Location = new System.Drawing.Point(8, 23);
+            this.MachinistHeartbreak.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MachinistHeartbreak.Name = "MachinistHeartbreak";
-            this.MachinistHeartbreak.Size = new System.Drawing.Size(79, 17);
+            this.MachinistHeartbreak.Size = new System.Drawing.Size(101, 21);
             this.MachinistHeartbreak.TabIndex = 7;
             this.MachinistHeartbreak.Text = "Heartbreak";
             this.MachinistHeartbreak.UseVisualStyleBackColor = true;
@@ -9458,9 +10512,11 @@
             // 
             this.MachinistInterruptGroup.Controls.Add(this.MachinistHeadGraze);
             this.MachinistInterruptGroup.ForeColor = System.Drawing.Color.White;
-            this.MachinistInterruptGroup.Location = new System.Drawing.Point(40, 204);
+            this.MachinistInterruptGroup.Location = new System.Drawing.Point(53, 251);
+            this.MachinistInterruptGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MachinistInterruptGroup.Name = "MachinistInterruptGroup";
-            this.MachinistInterruptGroup.Size = new System.Drawing.Size(95, 42);
+            this.MachinistInterruptGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MachinistInterruptGroup.Size = new System.Drawing.Size(127, 52);
             this.MachinistInterruptGroup.TabIndex = 18;
             this.MachinistInterruptGroup.TabStop = false;
             this.MachinistInterruptGroup.Text = "Interrupt";
@@ -9469,9 +10525,10 @@
             // 
             this.MachinistHeadGraze.AutoSize = true;
             this.MachinistHeadGraze.ForeColor = System.Drawing.Color.White;
-            this.MachinistHeadGraze.Location = new System.Drawing.Point(6, 19);
+            this.MachinistHeadGraze.Location = new System.Drawing.Point(8, 23);
+            this.MachinistHeadGraze.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MachinistHeadGraze.Name = "MachinistHeadGraze";
-            this.MachinistHeadGraze.Size = new System.Drawing.Size(83, 17);
+            this.MachinistHeadGraze.Size = new System.Drawing.Size(107, 21);
             this.MachinistHeadGraze.TabIndex = 7;
             this.MachinistHeadGraze.Text = "Head Graze";
             this.MachinistHeadGraze.UseVisualStyleBackColor = true;
@@ -9482,9 +10539,11 @@
             this.groupBoxDesign3.Controls.Add(this.MachinistSummonTurretCombo);
             this.groupBoxDesign3.Controls.Add(this.MachinistSummonTurret);
             this.groupBoxDesign3.ForeColor = System.Drawing.Color.White;
-            this.groupBoxDesign3.Location = new System.Drawing.Point(34, 145);
+            this.groupBoxDesign3.Location = new System.Drawing.Point(45, 178);
+            this.groupBoxDesign3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBoxDesign3.Name = "groupBoxDesign3";
-            this.groupBoxDesign3.Size = new System.Drawing.Size(240, 53);
+            this.groupBoxDesign3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxDesign3.Size = new System.Drawing.Size(320, 65);
             this.groupBoxDesign3.TabIndex = 12;
             this.groupBoxDesign3.TabStop = false;
             this.groupBoxDesign3.Text = "Summon ";
@@ -9498,9 +10557,10 @@
             this.MachinistSummonTurretCombo.Items.AddRange(new object[] {
             "Rook Autoturret",
             "Bishop Autoturret"});
-            this.MachinistSummonTurretCombo.Location = new System.Drawing.Point(9, 21);
+            this.MachinistSummonTurretCombo.Location = new System.Drawing.Point(12, 26);
+            this.MachinistSummonTurretCombo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MachinistSummonTurretCombo.Name = "MachinistSummonTurretCombo";
-            this.MachinistSummonTurretCombo.Size = new System.Drawing.Size(121, 21);
+            this.MachinistSummonTurretCombo.Size = new System.Drawing.Size(160, 24);
             this.MachinistSummonTurretCombo.TabIndex = 6;
             this.MachinistSummonTurretCombo.SelectedIndexChanged += new System.EventHandler(this.MachinistSummonTurretCombo_SelectedIndexChanged);
             // 
@@ -9508,9 +10568,10 @@
             // 
             this.MachinistSummonTurret.AutoSize = true;
             this.MachinistSummonTurret.ForeColor = System.Drawing.Color.White;
-            this.MachinistSummonTurret.Location = new System.Drawing.Point(136, 23);
+            this.MachinistSummonTurret.Location = new System.Drawing.Point(181, 28);
+            this.MachinistSummonTurret.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MachinistSummonTurret.Name = "MachinistSummonTurret";
-            this.MachinistSummonTurret.Size = new System.Drawing.Size(98, 17);
+            this.MachinistSummonTurret.Size = new System.Drawing.Size(128, 21);
             this.MachinistSummonTurret.TabIndex = 7;
             this.MachinistSummonTurret.Text = "Summon Turret";
             this.MachinistSummonTurret.UseVisualStyleBackColor = true;
@@ -9521,9 +10582,11 @@
             this.MachinistCrossGroup.Controls.Add(this.MachinistLancerGroup);
             this.MachinistCrossGroup.Controls.Add(this.MachinistArcherGroup);
             this.MachinistCrossGroup.ForeColor = System.Drawing.Color.White;
-            this.MachinistCrossGroup.Location = new System.Drawing.Point(34, 3);
+            this.MachinistCrossGroup.Location = new System.Drawing.Point(45, 4);
+            this.MachinistCrossGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MachinistCrossGroup.Name = "MachinistCrossGroup";
-            this.MachinistCrossGroup.Size = new System.Drawing.Size(239, 136);
+            this.MachinistCrossGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MachinistCrossGroup.Size = new System.Drawing.Size(319, 167);
             this.MachinistCrossGroup.TabIndex = 11;
             this.MachinistCrossGroup.TabStop = false;
             this.MachinistCrossGroup.Text = "Cross-Class  ";
@@ -9535,9 +10598,11 @@
             this.MachinistLancerGroup.Controls.Add(this.MachinistBloodForBlood);
             this.MachinistLancerGroup.Controls.Add(this.MachinistFeint);
             this.MachinistLancerGroup.ForeColor = System.Drawing.Color.White;
-            this.MachinistLancerGroup.Location = new System.Drawing.Point(123, 19);
+            this.MachinistLancerGroup.Location = new System.Drawing.Point(164, 23);
+            this.MachinistLancerGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MachinistLancerGroup.Name = "MachinistLancerGroup";
-            this.MachinistLancerGroup.Size = new System.Drawing.Size(110, 111);
+            this.MachinistLancerGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MachinistLancerGroup.Size = new System.Drawing.Size(147, 137);
             this.MachinistLancerGroup.TabIndex = 44;
             this.MachinistLancerGroup.TabStop = false;
             this.MachinistLancerGroup.Text = "Lancer";
@@ -9547,9 +10612,10 @@
             this.MachinistKeenFlurry.AutoSize = true;
             this.MachinistKeenFlurry.Enabled = false;
             this.MachinistKeenFlurry.ForeColor = System.Drawing.Color.White;
-            this.MachinistKeenFlurry.Location = new System.Drawing.Point(6, 42);
+            this.MachinistKeenFlurry.Location = new System.Drawing.Point(8, 52);
+            this.MachinistKeenFlurry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MachinistKeenFlurry.Name = "MachinistKeenFlurry";
-            this.MachinistKeenFlurry.Size = new System.Drawing.Size(79, 17);
+            this.MachinistKeenFlurry.Size = new System.Drawing.Size(103, 21);
             this.MachinistKeenFlurry.TabIndex = 19;
             this.MachinistKeenFlurry.Text = "Keen Flurry";
             this.MachinistKeenFlurry.UseVisualStyleBackColor = true;
@@ -9559,9 +10625,10 @@
             // 
             this.MachinistInvigorate.AutoSize = true;
             this.MachinistInvigorate.ForeColor = System.Drawing.Color.White;
-            this.MachinistInvigorate.Location = new System.Drawing.Point(6, 65);
+            this.MachinistInvigorate.Location = new System.Drawing.Point(8, 80);
+            this.MachinistInvigorate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MachinistInvigorate.Name = "MachinistInvigorate";
-            this.MachinistInvigorate.Size = new System.Drawing.Size(73, 17);
+            this.MachinistInvigorate.Size = new System.Drawing.Size(92, 21);
             this.MachinistInvigorate.TabIndex = 20;
             this.MachinistInvigorate.Text = "Invigorate";
             this.MachinistInvigorate.UseVisualStyleBackColor = true;
@@ -9571,9 +10638,10 @@
             // 
             this.MachinistBloodForBlood.AutoSize = true;
             this.MachinistBloodForBlood.ForeColor = System.Drawing.Color.White;
-            this.MachinistBloodForBlood.Location = new System.Drawing.Point(6, 88);
+            this.MachinistBloodForBlood.Location = new System.Drawing.Point(8, 108);
+            this.MachinistBloodForBlood.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MachinistBloodForBlood.Name = "MachinistBloodForBlood";
-            this.MachinistBloodForBlood.Size = new System.Drawing.Size(98, 17);
+            this.MachinistBloodForBlood.Size = new System.Drawing.Size(127, 21);
             this.MachinistBloodForBlood.TabIndex = 21;
             this.MachinistBloodForBlood.Text = "Blood for Blood";
             this.MachinistBloodForBlood.UseVisualStyleBackColor = true;
@@ -9582,11 +10650,11 @@
             // MachinistFeint
             // 
             this.MachinistFeint.AutoSize = true;
-            this.MachinistFeint.Enabled = false;
             this.MachinistFeint.ForeColor = System.Drawing.Color.White;
-            this.MachinistFeint.Location = new System.Drawing.Point(6, 19);
+            this.MachinistFeint.Location = new System.Drawing.Point(8, 23);
+            this.MachinistFeint.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MachinistFeint.Name = "MachinistFeint";
-            this.MachinistFeint.Size = new System.Drawing.Size(49, 17);
+            this.MachinistFeint.Size = new System.Drawing.Size(61, 21);
             this.MachinistFeint.TabIndex = 30;
             this.MachinistFeint.Text = "Feint";
             this.MachinistFeint.UseVisualStyleBackColor = true;
@@ -9598,9 +10666,11 @@
             this.MachinistArcherGroup.Controls.Add(this.MachinistHawksEye);
             this.MachinistArcherGroup.Controls.Add(this.MachinistQuellingStrikes);
             this.MachinistArcherGroup.ForeColor = System.Drawing.Color.White;
-            this.MachinistArcherGroup.Location = new System.Drawing.Point(6, 19);
+            this.MachinistArcherGroup.Location = new System.Drawing.Point(8, 23);
+            this.MachinistArcherGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MachinistArcherGroup.Name = "MachinistArcherGroup";
-            this.MachinistArcherGroup.Size = new System.Drawing.Size(111, 88);
+            this.MachinistArcherGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MachinistArcherGroup.Size = new System.Drawing.Size(148, 108);
             this.MachinistArcherGroup.TabIndex = 23;
             this.MachinistArcherGroup.TabStop = false;
             this.MachinistArcherGroup.Text = "Archer";
@@ -9609,9 +10679,10 @@
             // 
             this.MachinistRagingStrikes.AutoSize = true;
             this.MachinistRagingStrikes.ForeColor = System.Drawing.Color.White;
-            this.MachinistRagingStrikes.Location = new System.Drawing.Point(6, 19);
+            this.MachinistRagingStrikes.Location = new System.Drawing.Point(8, 23);
+            this.MachinistRagingStrikes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MachinistRagingStrikes.Name = "MachinistRagingStrikes";
-            this.MachinistRagingStrikes.Size = new System.Drawing.Size(95, 17);
+            this.MachinistRagingStrikes.Size = new System.Drawing.Size(122, 21);
             this.MachinistRagingStrikes.TabIndex = 7;
             this.MachinistRagingStrikes.Text = "Raging Strikes";
             this.MachinistRagingStrikes.UseVisualStyleBackColor = true;
@@ -9621,9 +10692,10 @@
             // 
             this.MachinistHawksEye.AutoSize = true;
             this.MachinistHawksEye.ForeColor = System.Drawing.Color.White;
-            this.MachinistHawksEye.Location = new System.Drawing.Point(6, 42);
+            this.MachinistHawksEye.Location = new System.Drawing.Point(8, 52);
+            this.MachinistHawksEye.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MachinistHawksEye.Name = "MachinistHawksEye";
-            this.MachinistHawksEye.Size = new System.Drawing.Size(82, 17);
+            this.MachinistHawksEye.Size = new System.Drawing.Size(102, 21);
             this.MachinistHawksEye.TabIndex = 8;
             this.MachinistHawksEye.Text = "Hawk\'s Eye";
             this.MachinistHawksEye.UseVisualStyleBackColor = true;
@@ -9634,266 +10706,26 @@
             this.MachinistQuellingStrikes.AutoSize = true;
             this.MachinistQuellingStrikes.Enabled = false;
             this.MachinistQuellingStrikes.ForeColor = System.Drawing.Color.White;
-            this.MachinistQuellingStrikes.Location = new System.Drawing.Point(6, 65);
+            this.MachinistQuellingStrikes.Location = new System.Drawing.Point(8, 80);
+            this.MachinistQuellingStrikes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MachinistQuellingStrikes.Name = "MachinistQuellingStrikes";
-            this.MachinistQuellingStrikes.Size = new System.Drawing.Size(99, 17);
+            this.MachinistQuellingStrikes.Size = new System.Drawing.Size(129, 21);
             this.MachinistQuellingStrikes.TabIndex = 9;
             this.MachinistQuellingStrikes.Text = "Quelling Strikes";
             this.MachinistQuellingStrikes.UseVisualStyleBackColor = true;
             this.MachinistQuellingStrikes.CheckedChanged += new System.EventHandler(this.MachinistQuellingStrikes_CheckedChanged);
             // 
-            // WhiteMageHealGroup
-            // 
-            this.WhiteMageHealGroup.Controls.Add(this.WhiteMageTetragrammaton);
-            this.WhiteMageHealGroup.Controls.Add(this.WhiteMageBenediction);
-            this.WhiteMageHealGroup.Controls.Add(this.WhiteMageRaise);
-            this.WhiteMageHealGroup.ForeColor = System.Drawing.Color.White;
-            this.WhiteMageHealGroup.Location = new System.Drawing.Point(34, 145);
-            this.WhiteMageHealGroup.Name = "WhiteMageHealGroup";
-            this.WhiteMageHealGroup.Size = new System.Drawing.Size(115, 88);
-            this.WhiteMageHealGroup.TabIndex = 15;
-            this.WhiteMageHealGroup.TabStop = false;
-            this.WhiteMageHealGroup.Text = "Heal";
-            // 
-            // WhiteMageBenediction
-            // 
-            this.WhiteMageBenediction.AutoSize = true;
-            this.WhiteMageBenediction.ForeColor = System.Drawing.Color.White;
-            this.WhiteMageBenediction.Location = new System.Drawing.Point(6, 42);
-            this.WhiteMageBenediction.Name = "WhiteMageBenediction";
-            this.WhiteMageBenediction.Size = new System.Drawing.Size(82, 17);
-            this.WhiteMageBenediction.TabIndex = 8;
-            this.WhiteMageBenediction.Text = "Benediction";
-            this.WhiteMageBenediction.UseVisualStyleBackColor = true;
-            this.WhiteMageBenediction.CheckedChanged += new System.EventHandler(this.WhiteMageBenediction_CheckedChanged);
-            // 
-            // WhiteMageRaise
-            // 
-            this.WhiteMageRaise.AutoSize = true;
-            this.WhiteMageRaise.ForeColor = System.Drawing.Color.White;
-            this.WhiteMageRaise.Location = new System.Drawing.Point(6, 19);
-            this.WhiteMageRaise.Name = "WhiteMageRaise";
-            this.WhiteMageRaise.Size = new System.Drawing.Size(53, 17);
-            this.WhiteMageRaise.TabIndex = 7;
-            this.WhiteMageRaise.Text = "Raise";
-            this.WhiteMageRaise.UseVisualStyleBackColor = true;
-            this.WhiteMageRaise.CheckedChanged += new System.EventHandler(this.WhiteMageRaise_CheckedChanged);
-            // 
-            // WhiteMageCooldownGroup
-            // 
-            this.WhiteMageCooldownGroup.Controls.Add(this.WhiteMageDivineSeal);
-            this.WhiteMageCooldownGroup.Controls.Add(this.WhiteMagePresenceOfMind);
-            this.WhiteMageCooldownGroup.Controls.Add(this.WhiteMageShroudOfSaints);
-            this.WhiteMageCooldownGroup.ForeColor = System.Drawing.Color.White;
-            this.WhiteMageCooldownGroup.Location = new System.Drawing.Point(34, 239);
-            this.WhiteMageCooldownGroup.Name = "WhiteMageCooldownGroup";
-            this.WhiteMageCooldownGroup.Size = new System.Drawing.Size(121, 88);
-            this.WhiteMageCooldownGroup.TabIndex = 16;
-            this.WhiteMageCooldownGroup.TabStop = false;
-            this.WhiteMageCooldownGroup.Text = "Cooldown ";
-            // 
-            // WhiteMagePresenceOfMind
-            // 
-            this.WhiteMagePresenceOfMind.AutoSize = true;
-            this.WhiteMagePresenceOfMind.ForeColor = System.Drawing.Color.White;
-            this.WhiteMagePresenceOfMind.Location = new System.Drawing.Point(6, 42);
-            this.WhiteMagePresenceOfMind.Name = "WhiteMagePresenceOfMind";
-            this.WhiteMagePresenceOfMind.Size = new System.Drawing.Size(109, 17);
-            this.WhiteMagePresenceOfMind.TabIndex = 8;
-            this.WhiteMagePresenceOfMind.Text = "Presence of Mind";
-            this.WhiteMagePresenceOfMind.UseVisualStyleBackColor = true;
-            this.WhiteMagePresenceOfMind.CheckedChanged += new System.EventHandler(this.WhiteMagePresenceOfMind_CheckedChanged);
-            // 
-            // WhiteMageShroudOfSaints
-            // 
-            this.WhiteMageShroudOfSaints.AutoSize = true;
-            this.WhiteMageShroudOfSaints.ForeColor = System.Drawing.Color.White;
-            this.WhiteMageShroudOfSaints.Location = new System.Drawing.Point(6, 19);
-            this.WhiteMageShroudOfSaints.Name = "WhiteMageShroudOfSaints";
-            this.WhiteMageShroudOfSaints.Size = new System.Drawing.Size(104, 17);
-            this.WhiteMageShroudOfSaints.TabIndex = 7;
-            this.WhiteMageShroudOfSaints.Text = "Shroud of Saints";
-            this.WhiteMageShroudOfSaints.UseVisualStyleBackColor = true;
-            this.WhiteMageShroudOfSaints.CheckedChanged += new System.EventHandler(this.WhiteMageShroudOfSaints_CheckedChanged);
-            // 
-            // WhiteMageBuffGroup
-            // 
-            this.WhiteMageBuffGroup.Controls.Add(this.WhiteMageStoneskinII);
-            this.WhiteMageBuffGroup.Controls.Add(this.WhiteMageStoneskin);
-            this.WhiteMageBuffGroup.Controls.Add(this.WhiteMageProtect);
-            this.WhiteMageBuffGroup.ForeColor = System.Drawing.Color.White;
-            this.WhiteMageBuffGroup.Location = new System.Drawing.Point(156, 145);
-            this.WhiteMageBuffGroup.Name = "WhiteMageBuffGroup";
-            this.WhiteMageBuffGroup.Size = new System.Drawing.Size(94, 88);
-            this.WhiteMageBuffGroup.TabIndex = 17;
-            this.WhiteMageBuffGroup.TabStop = false;
-            this.WhiteMageBuffGroup.Text = "Buff";
-            // 
-            // WhiteMageStoneskin
-            // 
-            this.WhiteMageStoneskin.AutoSize = true;
-            this.WhiteMageStoneskin.ForeColor = System.Drawing.Color.White;
-            this.WhiteMageStoneskin.Location = new System.Drawing.Point(6, 42);
-            this.WhiteMageStoneskin.Name = "WhiteMageStoneskin";
-            this.WhiteMageStoneskin.Size = new System.Drawing.Size(73, 17);
-            this.WhiteMageStoneskin.TabIndex = 8;
-            this.WhiteMageStoneskin.Text = "Stoneskin";
-            this.WhiteMageStoneskin.UseVisualStyleBackColor = true;
-            this.WhiteMageStoneskin.CheckedChanged += new System.EventHandler(this.WhiteMageStoneskin_CheckedChanged);
-            // 
-            // WhiteMageProtect
-            // 
-            this.WhiteMageProtect.AutoSize = true;
-            this.WhiteMageProtect.ForeColor = System.Drawing.Color.White;
-            this.WhiteMageProtect.Location = new System.Drawing.Point(6, 19);
-            this.WhiteMageProtect.Name = "WhiteMageProtect";
-            this.WhiteMageProtect.Size = new System.Drawing.Size(60, 17);
-            this.WhiteMageProtect.TabIndex = 7;
-            this.WhiteMageProtect.Text = "Protect";
-            this.WhiteMageProtect.UseVisualStyleBackColor = true;
-            this.WhiteMageProtect.CheckedChanged += new System.EventHandler(this.WhiteMageProtect_CheckedChanged);
-            // 
-            // WhiteMageTetragrammaton
-            // 
-            this.WhiteMageTetragrammaton.AutoSize = true;
-            this.WhiteMageTetragrammaton.ForeColor = System.Drawing.Color.White;
-            this.WhiteMageTetragrammaton.Location = new System.Drawing.Point(6, 65);
-            this.WhiteMageTetragrammaton.Name = "WhiteMageTetragrammaton";
-            this.WhiteMageTetragrammaton.Size = new System.Drawing.Size(103, 17);
-            this.WhiteMageTetragrammaton.TabIndex = 9;
-            this.WhiteMageTetragrammaton.Text = "Tetragrammaton";
-            this.WhiteMageTetragrammaton.UseVisualStyleBackColor = true;
-            this.WhiteMageTetragrammaton.CheckedChanged += new System.EventHandler(this.WhiteMageTetragrammaton_CheckedChanged);
-            // 
-            // WhiteMageDivineSeal
-            // 
-            this.WhiteMageDivineSeal.AutoSize = true;
-            this.WhiteMageDivineSeal.ForeColor = System.Drawing.Color.White;
-            this.WhiteMageDivineSeal.Location = new System.Drawing.Point(6, 65);
-            this.WhiteMageDivineSeal.Name = "WhiteMageDivineSeal";
-            this.WhiteMageDivineSeal.Size = new System.Drawing.Size(80, 17);
-            this.WhiteMageDivineSeal.TabIndex = 9;
-            this.WhiteMageDivineSeal.Text = "Divine Seal";
-            this.WhiteMageDivineSeal.UseVisualStyleBackColor = true;
-            this.WhiteMageDivineSeal.CheckedChanged += new System.EventHandler(this.WhiteMageDivineSeal_CheckedChanged);
-            // 
-            // WhiteMageStoneskinII
-            // 
-            this.WhiteMageStoneskinII.AutoSize = true;
-            this.WhiteMageStoneskinII.ForeColor = System.Drawing.Color.White;
-            this.WhiteMageStoneskinII.Location = new System.Drawing.Point(6, 65);
-            this.WhiteMageStoneskinII.Name = "WhiteMageStoneskinII";
-            this.WhiteMageStoneskinII.Size = new System.Drawing.Size(82, 17);
-            this.WhiteMageStoneskinII.TabIndex = 9;
-            this.WhiteMageStoneskinII.Text = "Stoneskin II";
-            this.WhiteMageStoneskinII.UseVisualStyleBackColor = true;
-            this.WhiteMageStoneskinII.CheckedChanged += new System.EventHandler(this.WhiteMageStoneskinII_CheckedChanged);
-            // 
-            // ConjurerBuffGroup
-            // 
-            this.ConjurerBuffGroup.Controls.Add(this.ConjurerStoneskinII);
-            this.ConjurerBuffGroup.Controls.Add(this.ConjurerStoneskin);
-            this.ConjurerBuffGroup.Controls.Add(this.ConjurerProtect);
-            this.ConjurerBuffGroup.ForeColor = System.Drawing.Color.White;
-            this.ConjurerBuffGroup.Location = new System.Drawing.Point(105, 286);
-            this.ConjurerBuffGroup.Name = "ConjurerBuffGroup";
-            this.ConjurerBuffGroup.Size = new System.Drawing.Size(94, 88);
-            this.ConjurerBuffGroup.TabIndex = 20;
-            this.ConjurerBuffGroup.TabStop = false;
-            this.ConjurerBuffGroup.Text = "Buff";
-            // 
-            // ConjurerStoneskinII
-            // 
-            this.ConjurerStoneskinII.AutoSize = true;
-            this.ConjurerStoneskinII.ForeColor = System.Drawing.Color.White;
-            this.ConjurerStoneskinII.Location = new System.Drawing.Point(6, 65);
-            this.ConjurerStoneskinII.Name = "ConjurerStoneskinII";
-            this.ConjurerStoneskinII.Size = new System.Drawing.Size(82, 17);
-            this.ConjurerStoneskinII.TabIndex = 9;
-            this.ConjurerStoneskinII.Text = "Stoneskin II";
-            this.ConjurerStoneskinII.UseVisualStyleBackColor = true;
-            this.ConjurerStoneskinII.CheckedChanged += new System.EventHandler(this.ConjurerStoneskinII_CheckedChanged);
-            // 
-            // ConjurerStoneskin
-            // 
-            this.ConjurerStoneskin.AutoSize = true;
-            this.ConjurerStoneskin.ForeColor = System.Drawing.Color.White;
-            this.ConjurerStoneskin.Location = new System.Drawing.Point(6, 42);
-            this.ConjurerStoneskin.Name = "ConjurerStoneskin";
-            this.ConjurerStoneskin.Size = new System.Drawing.Size(73, 17);
-            this.ConjurerStoneskin.TabIndex = 8;
-            this.ConjurerStoneskin.Text = "Stoneskin";
-            this.ConjurerStoneskin.UseVisualStyleBackColor = true;
-            this.ConjurerStoneskin.CheckedChanged += new System.EventHandler(this.ConjurerStoneskin_CheckedChanged);
-            // 
-            // ConjurerProtect
-            // 
-            this.ConjurerProtect.AutoSize = true;
-            this.ConjurerProtect.ForeColor = System.Drawing.Color.White;
-            this.ConjurerProtect.Location = new System.Drawing.Point(6, 19);
-            this.ConjurerProtect.Name = "ConjurerProtect";
-            this.ConjurerProtect.Size = new System.Drawing.Size(60, 17);
-            this.ConjurerProtect.TabIndex = 7;
-            this.ConjurerProtect.Text = "Protect";
-            this.ConjurerProtect.UseVisualStyleBackColor = true;
-            this.ConjurerProtect.CheckedChanged += new System.EventHandler(this.ConjurerProtect_CheckedChanged);
-            // 
-            // ConjurerCooldownGroup
-            // 
-            this.ConjurerCooldownGroup.Controls.Add(this.ConjurerShroudOfSaints);
-            this.ConjurerCooldownGroup.ForeColor = System.Drawing.Color.White;
-            this.ConjurerCooldownGroup.Location = new System.Drawing.Point(205, 286);
-            this.ConjurerCooldownGroup.Name = "ConjurerCooldownGroup";
-            this.ConjurerCooldownGroup.Size = new System.Drawing.Size(116, 42);
-            this.ConjurerCooldownGroup.TabIndex = 19;
-            this.ConjurerCooldownGroup.TabStop = false;
-            this.ConjurerCooldownGroup.Text = "Cooldown ";
-            // 
-            // ConjurerShroudOfSaints
-            // 
-            this.ConjurerShroudOfSaints.AutoSize = true;
-            this.ConjurerShroudOfSaints.ForeColor = System.Drawing.Color.White;
-            this.ConjurerShroudOfSaints.Location = new System.Drawing.Point(6, 19);
-            this.ConjurerShroudOfSaints.Name = "ConjurerShroudOfSaints";
-            this.ConjurerShroudOfSaints.Size = new System.Drawing.Size(104, 17);
-            this.ConjurerShroudOfSaints.TabIndex = 7;
-            this.ConjurerShroudOfSaints.Text = "Shroud of Saints";
-            this.ConjurerShroudOfSaints.UseVisualStyleBackColor = true;
-            this.ConjurerShroudOfSaints.CheckedChanged += new System.EventHandler(this.ConjurerShroudOfSaints_CheckedChanged);
-            // 
-            // ConjurerHealGroup
-            // 
-            this.ConjurerHealGroup.Controls.Add(this.ConjurerRaise);
-            this.ConjurerHealGroup.ForeColor = System.Drawing.Color.White;
-            this.ConjurerHealGroup.Location = new System.Drawing.Point(34, 286);
-            this.ConjurerHealGroup.Name = "ConjurerHealGroup";
-            this.ConjurerHealGroup.Size = new System.Drawing.Size(65, 42);
-            this.ConjurerHealGroup.TabIndex = 18;
-            this.ConjurerHealGroup.TabStop = false;
-            this.ConjurerHealGroup.Text = "Heal";
-            // 
-            // ConjurerRaise
-            // 
-            this.ConjurerRaise.AutoSize = true;
-            this.ConjurerRaise.ForeColor = System.Drawing.Color.White;
-            this.ConjurerRaise.Location = new System.Drawing.Point(6, 19);
-            this.ConjurerRaise.Name = "ConjurerRaise";
-            this.ConjurerRaise.Size = new System.Drawing.Size(53, 17);
-            this.ConjurerRaise.TabIndex = 7;
-            this.ConjurerRaise.Text = "Raise";
-            this.ConjurerRaise.UseVisualStyleBackColor = true;
-            this.ConjurerRaise.CheckedChanged += new System.EventHandler(this.ConjurerRaise_CheckedChanged);
-            // 
             // UltimaForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(800, 560);
+            this.ClientSize = new System.Drawing.Size(1067, 689);
             this.Controls.Add(this.UltimaBanner);
             this.Controls.Add(this.CloseButton);
             this.Controls.Add(this.ClassTab);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UltimaForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
@@ -9990,6 +10822,8 @@
             this.ConjurerTab.ResumeLayout(false);
             this.ConjurerSubTab.ResumeLayout(false);
             this.ConjurerSettings.ResumeLayout(false);
+            this.ConjurerBuffGroup.ResumeLayout(false);
+            this.ConjurerBuffGroup.PerformLayout();
             this.ConjurerCrossGroup.ResumeLayout(false);
             this.ConjurerArcanistGroup.ResumeLayout(false);
             this.ConjurerArcanistGroup.PerformLayout();
@@ -10005,7 +10839,17 @@
             this.ConjurerGladiatorGroup.PerformLayout();
             this.ConjurerLancerGroup.ResumeLayout(false);
             this.ConjurerLancerGroup.PerformLayout();
+            this.ConjurerHealGroup.ResumeLayout(false);
+            this.ConjurerHealGroup.PerformLayout();
+            this.ConjurerCooldownGroup.ResumeLayout(false);
+            this.ConjurerCooldownGroup.PerformLayout();
             this.WhiteMageSettings.ResumeLayout(false);
+            this.WhiteMageBuffGroup.ResumeLayout(false);
+            this.WhiteMageBuffGroup.PerformLayout();
+            this.WhiteMageCooldownGroup.ResumeLayout(false);
+            this.WhiteMageCooldownGroup.PerformLayout();
+            this.WhiteMageHealGroup.ResumeLayout(false);
+            this.WhiteMageHealGroup.PerformLayout();
             this.WhiteMageCrossGroup.ResumeLayout(false);
             this.WhiteMageArcanistGroup.ResumeLayout(false);
             this.WhiteMageArcanistGroup.PerformLayout();
@@ -10263,18 +11107,6 @@
             this.MachinistLancerGroup.PerformLayout();
             this.MachinistArcherGroup.ResumeLayout(false);
             this.MachinistArcherGroup.PerformLayout();
-            this.WhiteMageHealGroup.ResumeLayout(false);
-            this.WhiteMageHealGroup.PerformLayout();
-            this.WhiteMageCooldownGroup.ResumeLayout(false);
-            this.WhiteMageCooldownGroup.PerformLayout();
-            this.WhiteMageBuffGroup.ResumeLayout(false);
-            this.WhiteMageBuffGroup.PerformLayout();
-            this.ConjurerBuffGroup.ResumeLayout(false);
-            this.ConjurerBuffGroup.PerformLayout();
-            this.ConjurerCooldownGroup.ResumeLayout(false);
-            this.ConjurerCooldownGroup.PerformLayout();
-            this.ConjurerHealGroup.ResumeLayout(false);
-            this.ConjurerHealGroup.PerformLayout();
             this.ResumeLayout(false);
 
         }

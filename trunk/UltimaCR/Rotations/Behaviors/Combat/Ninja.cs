@@ -20,11 +20,14 @@ namespace UltimaCR.Rotations
                 if (await InternalRelease()) return true;
                 if (await BloodForBlood()) return true;
                 if (await Shukuchi()) return true;
+                if (await ArmorCrush()) return true;
                 if (await DancingEdge()) return true;
                 if (await AeolianEdge()) return true;
                 if (await ShadowFang()) return true;
                 if (await GustSlash()) return true;
                 if (await Mutilate()) return true;
+                if (await Duality()) return true;
+                if (await DreamWithinADream()) return true;
                 if (await Mug()) return true;
                 if (await Jugulate()) return true;
                 if (await Assassinate()) return true;
@@ -44,11 +47,14 @@ namespace UltimaCR.Rotations
                 if (await InternalRelease()) return true;
                 if (await BloodForBlood()) return true;
                 if (await Shukuchi()) return true;
+                if (await ArmorCrush()) return true;
                 if (await DancingEdge()) return true;
                 if (await AeolianEdge()) return true;
                 if (await ShadowFang()) return true;
                 if (await GustSlash()) return true;
                 if (await Mutilate()) return true;
+                if (await Duality()) return true;
+                if (await DreamWithinADream()) return true;
                 if (await Mug()) return true;
                 if (await Jugulate()) return true;
                 if (await Assassinate()) return true;
@@ -65,6 +71,8 @@ namespace UltimaCR.Rotations
                 if (await InternalRelease()) return true;
                 if (await BloodForBlood()) return true;
                 if (await Shukuchi()) return true;
+                if (await Duality()) return true;
+                if (await DreamWithinADream()) return true;
                 if (await Mug()) return true;
                 if (await Jugulate()) return true;
                 if (await Assassinate()) return true;

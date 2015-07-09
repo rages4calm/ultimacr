@@ -1,6 +1,5 @@
 ﻿using Buddy.Coroutines;
 using ff14bot;
-using ff14bot.Enums;
 using ff14bot.Managers;
 using System.Linq;
 using System.Threading.Tasks;
@@ -143,12 +142,14 @@ namespace UltimaCR.Rotations
         {
             if (Ultima.UltSettings.NinjaDancingEdge)
             {
-                if (!Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, true, 6000) &&
-                    !Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, false, 6000) &&
-                    !Core.Player.CurrentTarget.HasAura("Storm's Eye", false, 6000) &&
-                    Actionmanager.LastSpell.Name == MySpells.GustSlash.Name)
+                if (Actionmanager.LastSpell.Name == MySpells.GustSlash.Name)
                 {
-                    return await MySpells.DancingEdge.Cast();
+                    if (!Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, true, 6000) &&
+                        !Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, false, 6000) &&
+                        !Core.Player.CurrentTarget.HasAura("Storm's Eye", false, 6000))
+                    {
+                        return await MySpells.DancingEdge.Cast();
+                    }
                 }
             }
             return false;
@@ -163,8 +164,7 @@ namespace UltimaCR.Rotations
         {
             if (Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, true, 6000) ||
                 Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, false, 6000) ||
-                Core.Player.CurrentTarget.HasAura("Storm's Eye", false, 6000) ||
-                !Ultima.UltSettings.NinjaDancingEdge)
+                Core.Player.CurrentTarget.HasAura("Storm's Eye", false, 6000))
             {
                 if (!Core.Player.CurrentTarget.HasAura(MySpells.ShadowFang.Name, true, 4000) &&
                     Actionmanager.LastSpell.Name == MySpells.SpinningEdge.Name)
@@ -323,7 +323,7 @@ namespace UltimaCR.Rotations
                 if (Actionmanager.CanCast(MySpells.Ten.ID, Core.Player) &&
                     DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds >= 1000 &&
                     Core.Player.TargetDistance(25, false) &&
-                    Core.Player.CurrentTarget.Type == GameObjectType.BattleNpc &&
+                    Core.Player.CurrentTarget.CanAttack &&
                     Core.Player.CurrentTarget.InLineOfSight() ||
                     Core.Player.HasAura("Mudra"))
                 {
@@ -355,7 +355,7 @@ namespace UltimaCR.Rotations
             if (Actionmanager.CanCast(MySpells.Chi.ID, Core.Player) &&
                 DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds >= 1000 &&
                 Core.Player.TargetDistance(15, false) &&
-                Core.Player.CurrentTarget.Type == GameObjectType.BattleNpc &&
+                Core.Player.CurrentTarget.CanAttack &&
                 Core.Player.CurrentTarget.InLineOfSight() ||
                 Core.Player.HasAura("Mudra"))
             {
@@ -399,7 +399,7 @@ namespace UltimaCR.Rotations
                 if (Actionmanager.CanCast(MySpells.Chi.ID, Core.Player) &&
                     DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds >= 1000 &&
                     Core.Player.TargetDistance(15, false) &&
-                    Core.Player.CurrentTarget.Type == GameObjectType.BattleNpc &&
+                    Core.Player.CurrentTarget.CanAttack &&
                     Core.Player.CurrentTarget.InLineOfSight() ||
                     Core.Player.HasAura("Mudra"))
                 {
@@ -438,7 +438,7 @@ namespace UltimaCR.Rotations
             if (Actionmanager.CanCast(MySpells.Jin.ID, Core.Player) &&
                 DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds >= 1000 &&
                 Core.Player.TargetDistance(25, false) &&
-                Core.Player.CurrentTarget.Type == GameObjectType.BattleNpc &&
+                Core.Player.CurrentTarget.CanAttack &&
                 Core.Player.CurrentTarget.InLineOfSight() ||
                 Core.Player.HasAura("Mudra"))
             {
@@ -475,8 +475,8 @@ namespace UltimaCR.Rotations
         {
             if (Actionmanager.CanCast(MySpells.Jin.ID, Core.Player))
             {
-                if (!Core.Player.HasAura("Huton") ||
-                    !Core.Player.HasAura("Huton", true, 20000) &&
+                if (!Core.Player.HasAura(MySpells.Huton.Name) ||
+                    !Core.Player.HasAura(MySpells.Huton.Name, true, 20000) &&
                     DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds >= 1000)
                 {
                     if (Ultima.LastSpell.ID != MySpells.Ten.ID &&
@@ -569,9 +569,9 @@ namespace UltimaCR.Rotations
                 DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds >= 1000 &&
                 DataManager.GetSpellData(MySpells.TrickAttack.ID).Cooldown.TotalMilliseconds == 0 &&
                 Core.Player.TargetDistance(15, false) &&
+                Core.Player.CurrentTarget.CanAttack &&
                 !Core.Player.CurrentTarget.HasAura(MySpells.TrickAttack.Name, true, 3000) &&
-                !Core.Player.CurrentTarget.HasAura(MySpells.TrickAttack.Name, false, 3000) &&
-                Core.Player.CurrentTarget.Type == GameObjectType.BattleNpc)
+                !Core.Player.CurrentTarget.HasAura(MySpells.TrickAttack.Name, false, 3000))
             {
                 if (Ultima.LastSpell.ID != MySpells.Ten.ID &&
                     Ultima.LastSpell.ID != MySpells.Chi.ID &&
@@ -616,7 +616,19 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> ArmorCrush()
         {
-            return await MySpells.ArmorCrush.Cast();
+            if (Actionmanager.LastSpell.Name == MySpells.GustSlash.Name)
+            {
+                if (!Core.Player.HasAura(MySpells.Huton.Name, true, 40000) ||
+                    Core.Player.HasTarget &&
+                    Core.Player.CurrentTarget.IsFlanking &&
+                    (Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, true, 6000) ||
+                    Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, false, 6000) ||
+                    Core.Player.CurrentTarget.HasAura("Storm's Eye", false, 6000)))
+                {
+                    return await MySpells.ArmorCrush.Cast();
+                }
+            }
+            return false;
         }
 
         private async Task<bool> Shadewalker()

@@ -217,6 +217,47 @@ namespace UltimaCR.Spells
             }
             #endregion
 
+            #region Card Exception
+
+            if (SpellType == SpellType.Card)
+            {
+                if (!await Coroutine.Wait(1000, () => Actionmanager.DoAction(ID, target)))
+                {
+                    return false;
+                }
+                Ultima.LastSpell = this;
+                #region Recent Spell Add
+                var key = target.ObjectId.ToString("X") + "-" + Name;
+                var val = DateTime.UtcNow + DataManager.GetSpellData(3590).AdjustedCastTime + TimeSpan.FromSeconds(5);
+                RecentSpell.Add(key, val);
+                #endregion
+                Logging.Write(Colors.OrangeRed, @"[Ultima] Ability: " + Name);
+                return true;
+            }
+
+            #endregion
+
+            #region CanAttack Check
+
+            if (!target.CanAttack)
+            {
+                switch (SpellType)
+                {
+                    case SpellType.Damage:
+                    case SpellType.DoT:
+                    case SpellType.Cooldown:
+                    case SpellType.Interrupt:
+                    case SpellType.Execute:
+                    case SpellType.Knockback:
+                    case SpellType.Debuff:
+                    case SpellType.Flank:
+                    case SpellType.Behind:
+                        return false;
+                }
+            }
+
+            #endregion
+
             #region Ninjutsu Exception
             if (SpellType == SpellType.Ninjutsu ||
                 SpellType == SpellType.Mudra)
@@ -267,26 +308,6 @@ namespace UltimaCR.Spells
                 Logging.Write(Colors.OrangeRed, @"[Ultima] Ability: " + Name);
                 return true;
             }
-            #endregion
-
-            #region Card Exception
-
-            if (SpellType == SpellType.Card)
-            {
-                if (!await Coroutine.Wait(1000, () => Actionmanager.DoAction(ID, target)))
-                {
-                    return false;
-                }
-                Ultima.LastSpell = this;
-                #region Recent Spell Add
-                var key = target.ObjectId.ToString("X") + "-" + Name;
-                var val = DateTime.UtcNow + DataManager.GetSpellData(3590).AdjustedCastTime + TimeSpan.FromSeconds(5);
-                RecentSpell.Add(key, val);
-                #endregion
-                Logging.Write(Colors.OrangeRed, @"[Ultima] Ability: " + Name);
-                return true;
-            }
-
             #endregion
 
             #region HasSpell Check
@@ -514,6 +535,12 @@ namespace UltimaCR.Spells
             switch (CastType)
             {
                 case CastType.TargetLocation:
+                    if (!await Coroutine.Wait(1000, () => Actionmanager.DoActionLocation(ID, target.Location)))
+                    {
+                        return false;
+                    }
+                    break;
+                case CastType.SelfLocation:
                     if (!await Coroutine.Wait(1000, () => Actionmanager.DoActionLocation(ID, target.Location)))
                     {
                         return false;

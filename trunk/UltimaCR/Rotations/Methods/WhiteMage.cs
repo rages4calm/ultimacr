@@ -59,7 +59,7 @@ namespace UltimaCR.Rotations
         {
             if (Ultima.UltSettings.WhiteMageProtect)
             {
-                var target = Helpers.HealManager.FirstOrDefault(hm => !hm.HasAura(MySpells.Protect.Name) && !hm.InCombat);
+                var target = Helpers.HealManager.FirstOrDefault(hm => hm.Type == GameObjectType.Pc && !hm.HasAura(MySpells.Protect.Name) && !hm.InCombat);
 
                 if (target != null)
                 {
@@ -214,7 +214,7 @@ namespace UltimaCR.Rotations
         private async Task<bool> StoneskinII()
         {
             if (Ultima.UltSettings.WhiteMageStoneskinII &&
-                Helpers.HealManager.Any(hm => !hm.HasAura(MySpells.Stoneskin.Name) && hm.Distance2D(Core.Player) - hm.CombatReach - Core.Player.CombatReach <= 15))
+                Helpers.HealManager.Count(hm => !hm.HasAura(MySpells.Stoneskin.Name) && hm.Distance2D(Core.Player) - hm.CombatReach - Core.Player.CombatReach <= 15) >= 3)
             {
                 return await MySpells.StoneskinII.Cast();
             }

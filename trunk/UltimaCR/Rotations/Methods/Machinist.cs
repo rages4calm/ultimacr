@@ -197,19 +197,9 @@ namespace UltimaCR.Rotations
         }
         private async Task<bool> GaussBarrel()
         {
-            if (Core.Player.HasAura(MySpells.GaussBarrel.Name) &&
-                !Actionmanager.CanCast(MySpells.Ricochet.Name, Core.Player.CurrentTarget) &&
-                !Actionmanager.CanCast(MySpells.GaussRound.Name, Core.Player.CurrentTarget))
-            {
-                return await MySpells.GaussBarrel.Cast();
-            }
             if (!Core.Player.HasAura(MySpells.GaussBarrel.Name))
             {
-                if (DataManager.GetSpellData(2874).Cooldown.TotalMilliseconds == 0 ||
-                DataManager.GetSpellData(2890).Cooldown.TotalMilliseconds == 0)
-                {
-                    return await MySpells.GaussBarrel.Cast();
-                }
+                return await MySpells.GaussBarrel.Cast();
             }
             return false;
         }
@@ -274,7 +264,8 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Feint()
         {
-            if (Ultima.UltSettings.MachinistFeint)
+            if (Ultima.UltSettings.MachinistFeint &&
+                MovementManager.IsMoving)
             {
                 return await MySpells.CrossClass.Feint.Cast();
             }

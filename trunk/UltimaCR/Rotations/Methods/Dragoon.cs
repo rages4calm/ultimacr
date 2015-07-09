@@ -336,7 +336,11 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Geirskogul()
         {
-            return await MySpells.Geirskogul.Cast();
+            if (Core.Player.HasAura(MySpells.BloodOfTheDragon.Name, true, 21000))
+            {
+                return await MySpells.Geirskogul.Cast();
+            }
+            return false;
         }
 
         #endregion

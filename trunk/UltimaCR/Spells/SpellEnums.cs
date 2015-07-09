@@ -18,7 +18,7 @@ namespace UltimaCR.Spells
         Damage,
         AoE,
         DoT,
-        OnLocation,
+        Movement,
         Buff,
         Debuff,
         Interrupt,

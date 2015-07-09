@@ -136,7 +136,7 @@ namespace UltimaCR.Spells.Main
                                ID = 2262,
                                Level = 40,
                                GCDType = GCDType.On,
-                               SpellType = SpellType.OnLocation,
+                               SpellType = SpellType.Movement,
                                CastType = CastType.TargetLocation
                            });
             }
@@ -333,7 +333,7 @@ namespace UltimaCR.Spells.Main
                                Name = "Dream Within a Dream",
                                ID = 3566,
                                Level = 60,
-                               GCDType = GCDType.On,
+                               GCDType = GCDType.Off,
                                SpellType = SpellType.Cooldown,
                                CastType = CastType.Target
                            });

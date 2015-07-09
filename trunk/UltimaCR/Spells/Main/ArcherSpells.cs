@@ -298,7 +298,7 @@ namespace UltimaCR.Spells.Main
                                ID = 102,
                                Level = 46,
                                GCDType = GCDType.Off,
-                               SpellType = SpellType.OnLocation,
+                               SpellType = SpellType.DoT,
                                CastType = CastType.TargetLocation
                            });
             }

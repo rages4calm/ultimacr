@@ -189,7 +189,7 @@ namespace UltimaCR.Spells.Main
                                Name = "Sidewinder",
                                ID = 3562,
                                Level = 60,
-                               GCDType = GCDType.On,
+                               GCDType = GCDType.Off,
                                SpellType = SpellType.Cooldown,
                                CastType = CastType.Target
                            });
