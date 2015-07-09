@@ -424,7 +424,7 @@ namespace UltimaCR.Spells.Main
                                ID = 3639,
                                Level = 52,
                                GCDType = GCDType.Off,
-                               SpellType = SpellType.OnLocation,
+                               SpellType = SpellType.DoT,
                                CastType = CastType.TargetLocation
                            });
             }
@@ -442,7 +442,7 @@ namespace UltimaCR.Spells.Main
                                ID = 3640,
                                Level = 54,
                                GCDType = GCDType.Off,
-                               SpellType = SpellType.Cooldown,
+                               SpellType = SpellType.Movement,
                                CastType = CastType.Target
                            });
             }

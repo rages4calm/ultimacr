@@ -46,7 +46,7 @@ namespace UltimaCR.Spells.Main
                                ID = 71,
                                Level = 35,
                                GCDType = GCDType.On,
-                               SpellType = SpellType.Interrupt,
+                               SpellType = SpellType.Movement,
                                CastType = CastType.Target
                            });
             }

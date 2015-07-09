@@ -90,15 +90,7 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> HawksEye()
         {
-            if (Core.Player.HasAura(MySpells.CrossClass.BloodForBlood.Name))
-            {
-                return await MySpells.HawksEye.Cast();
-            }
-            if (!Actionmanager.HasSpell(MySpells.CrossClass.BloodForBlood.Name))
-            {
-                return await MySpells.HawksEye.Cast();
-            }
-            return false;
+            return await MySpells.HawksEye.Cast();
         }
 
         private async Task<bool> Windbite()
@@ -117,11 +109,7 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Barrage()
         {
-            if (Core.Player.HasAura(MySpells.CrossClass.BloodForBlood.Name))
-            {
-                return await MySpells.Barrage.Cast();
-            }
-            if (!Actionmanager.HasSpell(MySpells.CrossClass.BloodForBlood.Name))
+            if (Actionmanager.CanCast(MySpells.EmpyrealArrow.Name, Core.Player.CurrentTarget))
             {
                 return await MySpells.Barrage.Cast();
             }
@@ -185,16 +173,7 @@ namespace UltimaCR.Rotations
         {
             if (Ultima.UltSettings.BardBloodForBlood)
             {
-                if (Actionmanager.HasSpell(MySpells.Barrage.Name) &&
-                    Actionmanager.CanCast(MySpells.HawksEye.Name, Core.Player) &&
-                    Actionmanager.CanCast(MySpells.Barrage.Name, Core.Player))
-                {
-                    return await MySpells.CrossClass.BloodForBlood.Cast();
-                }
-                if (!Actionmanager.HasSpell(MySpells.Barrage.Name))
-                {
-                    return await MySpells.CrossClass.BloodForBlood.Cast();
-                }
+                return await MySpells.CrossClass.BloodForBlood.Cast();
             }
             return false;
         }
@@ -285,7 +264,11 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> WanderersMinuet()
         {
-            return await MySpells.WanderersMinuet.Cast();
+            if (!Core.Player.HasAura(MySpells.WanderersMinuet.Name))
+            {
+                return await MySpells.WanderersMinuet.Cast();
+            }
+            return false;
         }
 
         private async Task<bool> EmpyrealArrow()
@@ -295,7 +278,16 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> IronJaws()
         {
-            return await MySpells.IronJaws.Cast();
+            if (Core.Player.CurrentTarget.HasAura(MySpells.VenomousBite.Name, true) &&
+                Core.Player.CurrentTarget.HasAura(MySpells.Windbite.Name, true))
+            {
+                if (!Core.Player.CurrentTarget.HasAura(MySpells.VenomousBite.Name, true, 4000) ||
+                    !Core.Player.CurrentTarget.HasAura(MySpells.Windbite.Name, true, 4000))
+                {
+                    return await MySpells.IronJaws.Cast();
+                }
+            }
+            return false;
         }
 
         private async Task<bool> TheWardensPaean()
@@ -305,7 +297,12 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Sidewinder()
         {
-            return await MySpells.Sidewinder.Cast();
+            if (Core.Player.CurrentTarget.HasAura(MySpells.VenomousBite.Name, true, 4000) &&
+                Core.Player.CurrentTarget.HasAura(MySpells.Windbite.Name, true, 4000))
+            {
+                return await MySpells.Sidewinder.Cast();
+            }
+            return false;
         }
 
         #endregion

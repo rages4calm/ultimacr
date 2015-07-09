@@ -6,6 +6,7 @@ namespace UltimaCR.Rotations
     {
         public override async Task<bool> Combat()
         {
+            if (await Feint()) return true;
             if (await HotShot()) return true;
             if (await LeadShot()) return true;
             if (await Reassemble()) return true;

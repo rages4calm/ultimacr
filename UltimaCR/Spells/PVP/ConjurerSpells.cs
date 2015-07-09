@@ -136,7 +136,7 @@ namespace UltimaCR.Spells.PVP
                                    ID = 1571,
                                    Level = 0,
                                    GCDType = GCDType.On,
-                                   SpellType = SpellType.OnLocation,
+                                   SpellType = SpellType.Heal,
                                    CastType = CastType.TargetLocation
                                });
                 }

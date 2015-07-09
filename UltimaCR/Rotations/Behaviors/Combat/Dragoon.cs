@@ -16,6 +16,8 @@ namespace UltimaCR.Rotations
                 if (await Disembowel()) return true;
                 if (await HeavyThrust()) return true;
                 if (await ImpulseDrive()) return true;
+                if (await FangAndClaw()) return true;
+                if (await WheelingThrust()) return true;
                 if (await Phlebotomize()) return true;
                 return await TrueThrust();
             }
@@ -27,6 +29,8 @@ namespace UltimaCR.Rotations
                 if (await Disembowel()) return true;
                 if (await HeavyThrust()) return true;
                 if (await ImpulseDrive()) return true;
+                if (await FangAndClaw()) return true;
+                if (await WheelingThrust()) return true;
                 if (await Phlebotomize()) return true;
                 return await TrueThrust();
             }

@@ -77,6 +77,7 @@ namespace UltimaCR.Rotations
         {
             if (!Core.Player.HasAura(MySpells.TwinSnakes.Name, true, 5000) ||
                 !Core.Player.HasAura(MySpells.PerfectBalance.Name) &&
+                Core.Player.HasTarget &&
                 Core.Player.CurrentTarget.IsFlanking)
             {
                 return await MySpells.TwinSnakes.Cast();
@@ -284,6 +285,7 @@ namespace UltimaCR.Rotations
             if (!Core.Player.CurrentTarget.HasAura(MySpells.DragonKick.Name, true, 5000) &&
                 !Core.Player.CurrentTarget.HasAura(MySpells.DragonKick.Name, false, 5000) ||
                 !Core.Player.HasAura(MySpells.PerfectBalance.Name) &&
+                Core.Player.HasTarget &&
                 Core.Player.CurrentTarget.IsFlanking)
             {
                 if (Core.Player.HasAura("Opo-opo Form") ||
