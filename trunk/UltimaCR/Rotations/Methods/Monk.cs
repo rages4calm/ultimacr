@@ -305,22 +305,33 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Meditation()
         {
-            if (!Core.Player.HasTarget &&
-                !Core.Player.HasAura(797))
+            if (Ultima.UltSettings.MonkMeditation)
             {
-                return await MySpells.Meditation.Cast();
+                if (!Core.Player.HasTarget &&
+                    !Core.Player.HasAura(797))
+                {
+                    return await MySpells.Meditation.Cast();
+                }
             }
             return false;
         }
 
         private async Task<bool> ForbiddenChakra()
         {
-            return await MySpells.ForbiddenChakra.Cast();
+            if (Ultima.UltSettings.MonkForbiddenChakra)
+            {
+                return await MySpells.ForbiddenChakra.Cast();
+            }
+            return false;
         }
 
         private async Task<bool> ElixirField()
         {
-            return await MySpells.ElixirField.Cast();
+            if (Ultima.UltSettings.MonkElixirField)
+            {
+                return await MySpells.ElixirField.Cast();
+            }
+            return false;
         }
 
         private async Task<bool> Purification()

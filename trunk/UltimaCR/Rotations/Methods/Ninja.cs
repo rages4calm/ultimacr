@@ -638,12 +638,20 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Duality()
         {
-            return await MySpells.Duality.Cast();
+            if (Ultima.UltSettings.NinjaDuality)
+            {
+                return await MySpells.Duality.Cast();
+            }
+            return false;
         }
 
         private async Task<bool> DreamWithinADream()
         {
-            return await MySpells.DreamWithinADream.Cast();
+            if (Ultima.UltSettings.NinjaDreamWithinADream)
+            {
+                return await MySpells.DreamWithinADream.Cast();
+            }
+            return false;
         }
 
         #endregion
