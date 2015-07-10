@@ -143,13 +143,14 @@ namespace UltimaCR.Rotations
         }
         private async Task<bool> RookAutoturret()
         {
-            if (Ultima.UltSettings.MachinistSummonTurret)
+            if (Ultima.UltSettings.MachinistSummonTurret &&
+                Core.Player.HasTarget &&
+                Core.Player.CurrentTarget.CanAttack)
             {
                 if (Ultima.UltSettings.MachinistRook ||
                     !Actionmanager.HasSpell(MySpells.BishopAutoturret.Name))
                 {
                     if (Core.Player.Pet == null ||
-                        Core.Player.HasTarget &&
                         Core.Player.Pet.Distance2D(Core.Player.CurrentTarget) - Core.Player.CurrentTarget.CombatReach - Core.Player.Pet.CombatReach > 20)
                     {
                         return await MySpells.RookAutoturret.Cast();
@@ -177,12 +178,13 @@ namespace UltimaCR.Rotations
         private async Task<bool> BishopAutoturret()
         {
             if (Ultima.UltSettings.MachinistSummonTurret &&
-                Ultima.UltSettings.MachinistBishop)
+                Ultima.UltSettings.MachinistBishop &&
+                Core.Player.HasTarget &&
+                Core.Player.CurrentTarget.CanAttack)
             {
                 if (Core.Player.Pet == null &&
                     Helpers.EnemyUnit.Count(eu => eu.Distance2D(Core.Player.CurrentTarget) - eu.CombatReach - 1 <= 5) >= 3 ||
                     Core.Player.Pet != null &&
-                    Core.Player.HasTarget &&
                     Core.Player.Pet.Distance2D(Core.Player.CurrentTarget) - Core.Player.CurrentTarget.CombatReach - Core.Player.Pet.CombatReach > 5 &&
                     Helpers.EnemyUnit.Count(eu => eu.Distance2D(Core.Player.CurrentTarget) - eu.CombatReach - 1 <= 5) >= 3)
                 {
@@ -197,7 +199,8 @@ namespace UltimaCR.Rotations
         }
         private async Task<bool> GaussBarrel()
         {
-            if (!Core.Player.HasAura(MySpells.GaussBarrel.Name))
+            if (Ultima.UltSettings.MachinistGaussBarrel &&
+                !Core.Player.HasAura(858))
             {
                 return await MySpells.GaussBarrel.Cast();
             }

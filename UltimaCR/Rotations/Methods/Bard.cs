@@ -264,9 +264,12 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> WanderersMinuet()
         {
-            if (!Core.Player.HasAura(865))
+            if (Ultima.UltSettings.BardTheWanderersMinuet)
             {
-                return await MySpells.WanderersMinuet.Cast();
+                if (!Core.Player.HasAura(865))
+                {
+                    return await MySpells.WanderersMinuet.Cast();
+                }
             }
             return false;
         }

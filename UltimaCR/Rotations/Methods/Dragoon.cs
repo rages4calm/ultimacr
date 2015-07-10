@@ -313,7 +313,11 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> BattleLitany()
         {
-            return await MySpells.BattleLitany.Cast();
+            if (Ultima.UltSettings.DragoonBattleLitany)
+            {
+                return await MySpells.BattleLitany.Cast();
+            }
+            return false;
         }
 
         private async Task<bool> BloodOfTheDragon()
