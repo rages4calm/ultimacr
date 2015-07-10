@@ -36,7 +36,7 @@ namespace UltimaCR.Rotations
         {
             if (!Core.Player.HasAura(MySpells.PerfectBalance.Name) ||
                 Core.Player.HasAura(MySpells.PerfectBalance.Name) &&
-                 !Core.Player.HasAura("Greased Lightning III"))
+                 !Core.Player.HasAura(113))
             {
                 return await MySpells.SnapPunch.Cast();
             }
@@ -305,7 +305,12 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Meditation()
         {
-            return await MySpells.Meditation.Cast();
+            if (!Core.Player.HasTarget &&
+                !Core.Player.HasAura(797))
+            {
+                return await MySpells.Meditation.Cast();
+            }
+            return false;
         }
 
         private async Task<bool> ForbiddenChakra()
@@ -320,7 +325,11 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Purification()
         {
-            return await MySpells.Purification.Cast();
+            if (Core.Player.CurrentTP <= 440)
+            {
+                return await MySpells.Purification.Cast();
+            }
+            return false;
         }
 
         private async Task<bool> TornadoKick()
@@ -335,18 +344,18 @@ namespace UltimaCR.Rotations
         {
             get
             {
-                return !Core.Player.HasAura("Greased Lightning") &&
-                       !Core.Player.HasAura("Greased Lightning II") &&
-                       !Core.Player.HasAura("Greased Lightning III");
+                return !Core.Player.HasAura(111) &&
+                       !Core.Player.HasAura(112) &&
+                       !Core.Player.HasAura(113);
             }
         }
         private static bool HasGreasedLightning
         {
             get
             {
-                return Core.Player.HasAura("Greased Lightning", true, 4000) ||
-                       Core.Player.HasAura("Greased Lightning II", true, 4000) ||
-                       Core.Player.HasAura("Greased Lightning III", true, 4000);
+                return Core.Player.HasAura(111, true, 4000) ||
+                       Core.Player.HasAura(112, true, 4000) ||
+                       Core.Player.HasAura(113, true, 4000);
             }
         }
 

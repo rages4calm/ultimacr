@@ -973,6 +973,7 @@ namespace UltimaCR.Settings.Forms
 
             BardBluntArrow.Checked = Ultima.UltSettings.BardBluntArrow;
             BardMiserysEnd.Checked = Ultima.UltSettings.BardMiserysEnd;
+            BardTheWanderersMinuet.Checked = Ultima.UltSettings.BardTheWanderersMinuet;
 
             #endregion
 
@@ -1056,6 +1057,7 @@ namespace UltimaCR.Settings.Forms
             DragoonSpineshatterDive.Checked = Ultima.UltSettings.DragoonSpineshatterDive;
             DragoonPowerSurge.Checked = Ultima.UltSettings.DragoonPowerSurge;
             DragoonDragonfireDive.Checked = Ultima.UltSettings.DragoonDragonfireDive;
+            DragoonBattleLitany.Checked = Ultima.UltSettings.DragoonBattleLitany;
 
             #endregion
 
@@ -1091,6 +1093,7 @@ namespace UltimaCR.Settings.Forms
             MachinistHypercharge.Checked = Ultima.UltSettings.MachinistHypercharge;
             MachinistBlank.Checked = Ultima.UltSettings.MachinistBlank;
             MachinistHeartbreak.Checked = Ultima.UltSettings.MachinistHeartbreak;
+            MachinistGaussBarrel.Checked = Ultima.UltSettings.MachinistGaussBarrel;
 
             #endregion
 
@@ -1120,6 +1123,9 @@ namespace UltimaCR.Settings.Forms
             MonkFistsOfEarth.Checked = Ultima.UltSettings.MonkFistsOfEarth;
             MonkFistsOfWind.Checked = Ultima.UltSettings.MonkFistsOfWind;
             MonkFistsOfFire.Checked = Ultima.UltSettings.MonkFistsOfFire;
+            MonkMeditation.Checked = Ultima.UltSettings.MonkMeditation;
+            MonkForbiddenChakra.Checked = Ultima.UltSettings.MonkForbiddenChakra;
+            MonkElixirField.Checked = Ultima.UltSettings.MonkElixirField;
 
             #endregion
 
@@ -1153,6 +1159,8 @@ namespace UltimaCR.Settings.Forms
             NinjaKissOfTheViper.Checked = Ultima.UltSettings.NinjaKissOfTheViper;
             NinjaDancingEdge.Checked = Ultima.UltSettings.NinjaDancingEdge;
             NinjaGoad.Checked = Ultima.UltSettings.NinjaGoad;
+            NinjaDuality.Checked = Ultima.UltSettings.NinjaDuality;
+            NinjaDreamWithinADream.Checked = Ultima.UltSettings.NinjaDreamWithinADream;
 
             #endregion
 
@@ -3430,6 +3438,11 @@ namespace UltimaCR.Settings.Forms
             Ultima.UltSettings.BardMiserysEnd = BardMiserysEnd.Checked;
         }
 
+        private void BardTheWanderersMinuet_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.BardTheWanderersMinuet = BardTheWanderersMinuet.Checked;
+        }
+
         #endregion
 
         #region Black Mage Settings
@@ -3660,6 +3673,10 @@ namespace UltimaCR.Settings.Forms
         {
             Ultima.UltSettings.DragoonDragonfireDive = DragoonDragonfireDive.Checked;
         }
+        private void DragoonBattleLitany_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.DragoonBattleLitany = DragoonBattleLitany.Checked;
+        }
 
         #endregion
 
@@ -3748,6 +3765,11 @@ namespace UltimaCR.Settings.Forms
             Ultima.UltSettings.MachinistHeartbreak = MachinistHeartbreak.Checked;
         }
 
+        private void MachinistGaussBarrel_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.MachinistGaussBarrel = MachinistGaussBarrel.Checked;
+        }
+
         #endregion
 
         #region Monk Settings
@@ -3827,6 +3849,21 @@ namespace UltimaCR.Settings.Forms
         private void MonkFistsOfFire_CheckedChanged(object sender, EventArgs e)
         {
             Ultima.UltSettings.MonkFistsOfFire = MonkFistsOfFire.Checked;
+        }
+
+        private void MonkMeditation_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.MonkMeditation = MonkMeditation.Checked;
+        }
+
+        private void MonkForbiddenChakra_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.MonkForbiddenChakra = MonkForbiddenChakra.Checked;
+        }
+
+        private void MonkElixirField_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.MonkElixirField = MonkElixirField.Checked;
         }
 
         #endregion
@@ -3929,6 +3966,16 @@ namespace UltimaCR.Settings.Forms
         private void NinjaGoad_CheckedChanged(object sender, EventArgs e)
         {
             Ultima.UltSettings.NinjaGoad = NinjaGoad.Checked;
+        }
+
+        private void NinjaDuality_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.NinjaDuality = NinjaDuality.Checked;
+        }
+
+        private void NinjaDreamWithinADream_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.NinjaDreamWithinADream = NinjaDreamWithinADream.Checked;
         }
 
         #endregion

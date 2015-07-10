@@ -114,6 +114,10 @@ namespace UltimaCR.Rotations
         {
             if (Actionmanager.LastSpell.Name == MySpells.GustSlash.Name)
             {
+                if (await MySpells.Duality.Cast())
+                {
+                    await Coroutine.Wait(3000, () => Actionmanager.CanCast(MySpells.AeolianEdge.Name, Core.Player.CurrentTarget));
+                }
                 return await MySpells.AeolianEdge.Cast();
             }
             return false;
@@ -473,43 +477,39 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Huton()
         {
-            if (Actionmanager.CanCast(MySpells.Jin.ID, Core.Player))
+            if (Actionmanager.CanCast(MySpells.Jin.ID, Core.Player) &&
+                !Core.Player.HasAura(MySpells.Huton.Name))
             {
-                if (!Core.Player.HasAura(MySpells.Huton.Name) ||
-                    !Core.Player.HasAura(MySpells.Huton.Name, true, 20000) &&
-                    DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds >= 1000)
+                if (Ultima.LastSpell.ID != MySpells.Ten.ID &&
+                    Ultima.LastSpell.ID != MySpells.Chi.ID &&
+                    Ultima.LastSpell.ID != MySpells.Jin.ID &&
+                    Ultima.LastSpell.ID != MySpells.Ninjutsu.ID)
                 {
-                    if (Ultima.LastSpell.ID != MySpells.Ten.ID &&
-                        Ultima.LastSpell.ID != MySpells.Chi.ID &&
-                        Ultima.LastSpell.ID != MySpells.Jin.ID &&
-                        Ultima.LastSpell.ID != MySpells.Ninjutsu.ID)
+                }
+                if (await MySpells.Chi.Cast())
+                {
+                    await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Chi.ID, Core.Player));
+                }
+                if (Ultima.LastSpell.ID == MySpells.Chi.ID)
+                {
+                    if (await MySpells.Jin.Cast())
                     {
+                        await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Jin.ID, Core.Player));
                     }
-                    if (await MySpells.Chi.Cast())
+                }
+                if (Ultima.LastSpell.ID == MySpells.Jin.ID)
+                {
+                    if (await MySpells.Ten.Cast())
                     {
-                        await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Chi.ID, Core.Player));
+                        await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Ten.ID, Core.Player));
                     }
-                    if (Ultima.LastSpell.ID == MySpells.Chi.ID)
+                }
+                if (Ultima.LastSpell.ID == MySpells.Ten.ID)
+                {
+                    if (await MySpells.Huton.Cast())
                     {
-                        if (await MySpells.Jin.Cast())
-                        {
-                            await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Jin.ID, Core.Player));
-                        }
-                    }
-                    if (Ultima.LastSpell.ID == MySpells.Jin.ID)
-                    {
-                        if (await MySpells.Ten.Cast())
-                        {
-                            await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Ten.ID, Core.Player));
-                        }
-                    }
-                    if (Ultima.LastSpell.ID == MySpells.Ten.ID)
-                    {
-                        if (await MySpells.Huton.Cast())
-                        {
-                            await Coroutine.Wait(2000, () => !Core.Player.HasAura("Mudra"));
-                            return true;
-                        }
+                        await Coroutine.Wait(2000, () => !Core.Player.HasAura("Mudra"));
+                        return true;
                     }
                 }
             }
@@ -638,11 +638,7 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Duality()
         {
-            if (Actionmanager.LastSpell.Name == MySpells.GustSlash.Name)
-            {
-                return await MySpells.Duality.Cast();
-            }
-            return false;
+            return await MySpells.Duality.Cast();
         }
 
         private async Task<bool> DreamWithinADream()
