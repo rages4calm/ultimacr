@@ -638,7 +638,11 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Duality()
         {
-            return await MySpells.Duality.Cast();
+            if (Actionmanager.LastSpell.Name == MySpells.GustSlash.Name)
+            {
+                return await MySpells.Duality.Cast();
+            }
+            return false;
         }
 
         private async Task<bool> DreamWithinADream()

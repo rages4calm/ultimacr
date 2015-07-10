@@ -114,7 +114,7 @@ namespace UltimaCR.Spells.Main
                        (_wanderersminuet =
                            new Spell
                            {
-                               Name = "Wanderer's Minuet",
+                               Name = "The Wanderer's Minuet",
                                ID = 3559,
                                Level = 52,
                                GCDType = GCDType.On,
