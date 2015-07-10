@@ -1354,6 +1354,9 @@ namespace UltimaCR.Settings
         [Setting, DefaultValue(true)]
         public bool BardMiserysEnd { get; set; }
 
+        [Setting, DefaultValue(true)]
+        public bool BardTheWanderersMinuet { get; set; }
+
         #endregion
 
         #region Black Mage Settings
@@ -1507,6 +1510,10 @@ namespace UltimaCR.Settings
         [Setting, DefaultValue(true)]
         public bool DragoonDragonfireDive { get; set; }
 
+        [Setting, DefaultValue(true)]
+        public bool DragoonBattleLitany { get; set; }
+
+
         #endregion
 
         #region Machinist Settings
@@ -1561,6 +1568,9 @@ namespace UltimaCR.Settings
         [Setting, DefaultValue(true)]
         public bool MachinistHeartbreak { get; set; }
 
+        [Setting, DefaultValue(true)]
+        public bool MachinistGaussBarrel { get; set; }
+
         #endregion
 
         #region Monk Settings
@@ -1614,6 +1624,15 @@ namespace UltimaCR.Settings
 
         [Setting, DefaultValue(false)]
         public bool MonkFistsOfFire { get; set; }
+
+        [Setting, DefaultValue(false)]
+        public bool MonkMeditation { get; set; }
+
+        [Setting, DefaultValue(false)]
+        public bool MonkForbiddenChakra { get; set; }
+
+        [Setting, DefaultValue(false)]
+        public bool MonkElixirField { get; set; }
 
         #endregion
 
@@ -1680,6 +1699,12 @@ namespace UltimaCR.Settings
 
         [Setting, DefaultValue(true)]
         public bool NinjaGoad { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool NinjaDuality { get; set; }
+
+        [Setting, DefaultValue(true)]
+        public bool NinjaDreamWithinADream { get; set; }
 
         #endregion
 

@@ -101,12 +101,9 @@ namespace UltimaCR.Rotations
         {
             if (Actionmanager.LastSpell.Name == MySpells.VorpalThrust.Name)
             {
-                if (Actionmanager.CanCast(MySpells.LifeSurge.Name, Core.Player))
+                if (await MySpells.LifeSurge.Cast())
                 {
-                    if (await MySpells.LifeSurge.Cast())
-                    {
-                        await Coroutine.Wait(5000, () => Actionmanager.CanCast(MySpells.FullThrust.Name, Core.Player.CurrentTarget));
-                    }
+                    await Coroutine.Wait(3000, () => Actionmanager.CanCast(MySpells.FullThrust.Name, Core.Player.CurrentTarget));
                 }
                 return await MySpells.FullThrust.Cast();
             }
