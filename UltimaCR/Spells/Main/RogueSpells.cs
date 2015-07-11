@@ -190,7 +190,7 @@ namespace UltimaCR.Spells.Main
                                ID = 2249,
                                Level = 18,
                                GCDType = GCDType.On,
-                               SpellType = SpellType.Buff,
+                               SpellType = SpellType.Defensive,
                                CastType = CastType.Target
                            });
             }
