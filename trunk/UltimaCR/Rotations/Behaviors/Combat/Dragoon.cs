@@ -10,27 +10,27 @@ namespace UltimaCR.Rotations
             {
                 if (await RingOfThorns()) return true;
                 if (await DoomSpike()) return true;
+                if (await FangAndClaw()) return true;
+                if (await WheelingThrust()) return true;
                 if (await FullThrust()) return true;
                 if (await VorpalThrust()) return true;
                 if (await ChaosThrust()) return true;
                 if (await Disembowel()) return true;
                 if (await HeavyThrust()) return true;
                 if (await ImpulseDrive()) return true;
-                if (await FangAndClaw()) return true;
-                if (await WheelingThrust()) return true;
                 if (await Phlebotomize()) return true;
                 return await TrueThrust();
             }
             if (Ultima.UltSettings.SingleTarget)
             {
+                if (await FangAndClaw()) return true;
+                if (await WheelingThrust()) return true;
                 if (await FullThrust()) return true;
                 if (await VorpalThrust()) return true;
                 if (await ChaosThrust()) return true;
                 if (await Disembowel()) return true;
                 if (await HeavyThrust()) return true;
                 if (await ImpulseDrive()) return true;
-                if (await FangAndClaw()) return true;
-                if (await WheelingThrust()) return true;
                 if (await Phlebotomize()) return true;
                 return await TrueThrust();
             }
