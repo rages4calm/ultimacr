@@ -9,7 +9,6 @@ namespace UltimaCR.Rotations
             if (await Feint()) return true;
             if (await HotShot()) return true;
             if (await LeadShot()) return true;
-            if (await Reassemble()) return true;
             if (await CleanShot()) return true;
             if (await SlugShot()) return true;
             return await SplitShot();

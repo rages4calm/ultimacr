@@ -71,40 +71,39 @@ namespace UltimaCR
                 : cp.HasTarget && cp.Distance2D(cp.CurrentTarget) - cp.CombatReach - cp.CurrentTarget.CombatReach <= range;
         }
 
-        private static bool IsEnemy(this Character ie)
+        private static bool IsEnemy(this BattleCharacter ie)
         {
             return
-                ie != null &&
                 GameObjectManager.Attackers.Contains(ie) &&
                 ie.IsAlive &&
                 ie.CanAttack &&
                 ie.IsTargetable;
         }
 
-        public static IEnumerable<Character> EnemyUnit
+        public static IEnumerable<BattleCharacter> EnemyUnit
         {
             get
             {
                 return
-                    GameObjectManager.GetObjectsOfType<Character>()
+                    GameObjectManager.GetObjectsOfType<BattleCharacter>(true)
                         .Where(eu => eu.IsEnemy());
             }
         }
 
         //Tanking (Provoke, Flash, etc.) "If something isn't targeting me"
-        public static IEnumerable<Character> NotTargetingPlayer
+        public static IEnumerable<BattleCharacter> NotTargetingPlayer
         {
             get
             {
                 return
-                    GameObjectManager.GetObjectsOfType<Character>()
+                    GameObjectManager.GetObjectsOfType<BattleCharacter>(true)
                     .Where(ntp => EnemyUnit.Contains(ntp) && ntp.CurrentTargetId != Core.Player.ObjectId)
                     .OrderByDescending(ntp => ntp.CurrentHealthPercent);
             }
         }
 
         //Targeted Defensive Skills "If this is targeting me"
-        public static bool IsTargetingMe(this Character tp)
+        public static bool IsTargetingMe(this BattleCharacter tp)
         {
             return tp.IsEnemy() && tp.CurrentTargetId == Core.Player.ObjectId;
         }
@@ -131,31 +130,31 @@ namespace UltimaCR
             return EnemyUnit.Count(eu => eu.Distance2D(Core.Player) - eu.CombatReach - Core.Player.CombatReach <= radius);
         }
 
-        #region Heal Manager
-
-        public static IEnumerable<Character> PartyMembers
+        public static IEnumerable<BattleCharacter> PartyMembers
         {
             get
             {
                 return
                     PartyManager.VisibleMembers
-                    .Select(pm => pm.GameObject as Character)
+                    .Select(pm => pm.GameObject as BattleCharacter)
                     .Where(pm => pm.IsTargetable);
             }
         }
 
-        public static IEnumerable<Character> HealManager
+        #region Heal Manager
+
+        public static IEnumerable<BattleCharacter> HealManager
         {
             get
             {
                 return
-                    GameObjectManager.GetObjectsOfType<Character>(true, true)
+                    GameObjectManager.GetObjectsOfType<BattleCharacter>(true, true)
                     .Where(hm => hm.IsAlive && (PartyMembers.Contains(hm) || hm == Core.Player))
                     .OrderBy(HPScore);
             }
         }
 
-        private static float HPScore(Character c)
+        private static float HPScore(BattleCharacter c)
         {
             var score = c.CurrentHealthPercent;
 
@@ -173,15 +172,13 @@ namespace UltimaCR
         #endregion
 
         #region Goad Manager
-
-        public static IEnumerable<Character> GoadManager
+        public static IEnumerable<BattleCharacter> GoadManager
         {
             get
             {
                 return
-                    PartyManager.VisibleMembers
-                    .Select(gm => gm.GameObject as Character)
-                    .Where(gm => !gm.IsMe && gm.Type == GameObjectType.Pc && gm.CurrentTP <= 800 && gm.InCombat && gm.IsTargetable && gm.IsAlive &&
+                    GameObjectManager.GetObjectsOfType<BattleCharacter>(true)
+                    .Where(gm => PartyMembers.Contains(gm) && gm.Type == GameObjectType.Pc && gm.CurrentTP <= 800 && gm.InCombat && gm.IsAlive &&
                         gm.CurrentJob != ClassJobType.Arcanist &&
                         gm.CurrentJob != ClassJobType.Scholar &&
                         gm.CurrentJob != ClassJobType.Summoner &&
@@ -194,7 +191,7 @@ namespace UltimaCR
             }
         }
 
-        private static int TPScore(Character c)
+        private static int TPScore(BattleCharacter c)
         {
             var score = 0;
 
