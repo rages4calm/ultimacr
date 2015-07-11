@@ -14,7 +14,6 @@ namespace UltimaCR.Rotations
             if (await ElixirField()) return true;
             if (await HowlingFist()) return true;
             if (await SteelPeak()) return true;
-            if (await Meditation()) return true;
             if (await ForbiddenChakra()) return true;
             if (await Haymaker()) return true;
             return await MercyStroke();

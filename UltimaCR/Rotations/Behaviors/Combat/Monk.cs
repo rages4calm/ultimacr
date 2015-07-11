@@ -16,6 +16,7 @@ namespace UltimaCR.Rotations
                 if (await TwinSnakes()) return true;
                 if (await DragonKick()) return true;
                 if (await TrueStrike()) return true;
+                if (await Meditation()) return true;
                 return await Bootshine();
             }
             if (Ultima.UltSettings.SingleTarget)
@@ -27,6 +28,7 @@ namespace UltimaCR.Rotations
                 if (await TwinSnakes()) return true;
                 if (await DragonKick()) return true;
                 if (await TrueStrike()) return true;
+                if (await Meditation()) return true;
                 return await Bootshine();
             }
             if (Ultima.UltSettings.MultiTarget)
@@ -37,6 +39,7 @@ namespace UltimaCR.Rotations
                 if (await TwinSnakes()) return true;
                 if (await DragonKick()) return true;
                 if (await TrueStrike()) return true;
+                if (await Meditation()) return true;
                 return await Bootshine();
             }
             return false;

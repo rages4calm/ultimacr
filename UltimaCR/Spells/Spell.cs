@@ -239,7 +239,8 @@ namespace UltimaCR.Spells
 
             #region CanAttack Check
 
-            if (!target.CanAttack)
+            if (!target.CanAttack &&
+                CastType != CastType.Self)
             {
                 switch (SpellType)
                 {

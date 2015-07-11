@@ -1,4 +1,5 @@
-﻿using ff14bot;
+﻿using Buddy.Coroutines;
+using ff14bot;
 using ff14bot.Managers;
 using System.Linq;
 using System.Threading.Tasks;
@@ -129,6 +130,13 @@ namespace UltimaCR.Rotations
         {
             if (Core.Player.HasAura(857))
             {
+                if (Core.Player.HasAura(862))
+                {
+                    if (await MySpells.Reassemble.Cast())
+                    {
+                        await Coroutine.Wait(3000, () => Actionmanager.CanCast(MySpells.CleanShot.Name, Core.Player.CurrentTarget));
+                    }
+                }
                 return await MySpells.CleanShot.Cast();
             }
             return false;

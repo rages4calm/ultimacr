@@ -172,7 +172,7 @@ namespace UltimaCR.Spells.Main
                                ID = 3545,
                                Level = 56,
                                GCDType = GCDType.Off,
-                               SpellType = SpellType.AoE,
+                               SpellType = SpellType.Damage,
                                CastType = CastType.Self
                            });
             }

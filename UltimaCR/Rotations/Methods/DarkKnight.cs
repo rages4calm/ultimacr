@@ -20,10 +20,12 @@ namespace UltimaCR.Rotations
         {
             return await MySpells.HardSlash.Cast();
         }
+
         private async Task<bool> Shadowskin()
         {
             return await MySpells.Shadowskin.Cast();
         }
+
         private async Task<bool> SpinningSlash()
         {
             if (Actionmanager.LastSpell.Name == MySpells.HardSlash.Name)
@@ -32,6 +34,7 @@ namespace UltimaCR.Rotations
             }
             return false;
         }
+
         private async Task<bool> Scourge()
         {
             if (!Core.Player.CurrentTarget.HasAura(MySpells.Scourge.Name, true, 4000))
@@ -40,6 +43,7 @@ namespace UltimaCR.Rotations
             }
             return false;
         }
+
         private async Task<bool> Unleash()
         {
             if (Core.Player.HasAura(814) &&
@@ -49,6 +53,7 @@ namespace UltimaCR.Rotations
             }
             return false;
         }
+
         private async Task<bool> LowBlow()
         {
             if (Ultima.UltSettings.DarkKnightLowBlow)
@@ -57,6 +62,7 @@ namespace UltimaCR.Rotations
             }
             return false;
         }
+
         private async Task<bool> SyphonStrike()
         {
             if (Actionmanager.LastSpell.Name == MySpells.HardSlash.Name)
@@ -65,6 +71,7 @@ namespace UltimaCR.Rotations
             }
             return false;
         }
+
         private async Task<bool> Unmend()
         {
             if (Core.Player.TargetDistance(10))
@@ -73,6 +80,7 @@ namespace UltimaCR.Rotations
             }
             return false;
         }
+
         private async Task<bool> BloodWeapon()
         {
             if (Ultima.UltSettings.DarkKnightBloodWeapon)
@@ -81,6 +89,7 @@ namespace UltimaCR.Rotations
             }
             return false;
         }
+
         private async Task<bool> Reprisal()
         {
             if (Ultima.UltSettings.DarkKnightReprisal)
@@ -89,6 +98,7 @@ namespace UltimaCR.Rotations
             }
             return false;
         }
+
         private async Task<bool> PowerSlash()
         {
             if (Actionmanager.LastSpell.Name == MySpells.SpinningSlash.Name)
@@ -97,6 +107,7 @@ namespace UltimaCR.Rotations
             }
             return false;
         }
+
         private async Task<bool> Darkside()
         {
             if (!Core.Player.HasAura(MySpells.Darkside.Name))
@@ -105,18 +116,22 @@ namespace UltimaCR.Rotations
             }
             return false;
         }
+
         private async Task<bool> Grit()
         {
             return await MySpells.Grit.Cast();
         }
+
         private async Task<bool> DarkDance()
         {
             return await MySpells.DarkDance.Cast();
         }
+
         private async Task<bool> BloodPrice()
         {
             return await MySpells.BloodPrice.Cast();
         }
+
         private async Task<bool> Souleater()
         {
             if (Actionmanager.LastSpell.Name == MySpells.SyphonStrike.Name)
@@ -125,14 +140,17 @@ namespace UltimaCR.Rotations
             }
             return false;
         }
+
         private async Task<bool> DarkPassenger()
         {
             return await MySpells.DarkPassenger.Cast();
         }
+
         private async Task<bool> DarkMind()
         {
             return await MySpells.DarkMind.Cast();
         }
+
         private async Task<bool> DarkArts()
         {
             if (Ultima.UltSettings.DarkKnightDarkArts)
@@ -141,10 +159,12 @@ namespace UltimaCR.Rotations
             }
             return false;
         }
+
         private async Task<bool> ShadowWall()
         {
             return await MySpells.ShadowWall.Cast();
         }
+
         private async Task<bool> Delirium()
         {
             if (Ultima.UltSettings.DarkKnightDelirium &&
@@ -159,10 +179,12 @@ namespace UltimaCR.Rotations
             }
             return false;
         }
+
         private async Task<bool> LivingDead()
         {
             return await MySpells.LivingDead.Cast();
         }
+
         private async Task<bool> SaltedEarth()
         {
             if (Ultima.UltSettings.DarkKnightSaltedEarth)
@@ -171,6 +193,7 @@ namespace UltimaCR.Rotations
             }
             return false;
         }
+
         private async Task<bool> Plunge()
         {
             if (Ultima.UltSettings.DarkKnightPlunge)
@@ -183,10 +206,12 @@ namespace UltimaCR.Rotations
         {
             return await MySpells.AbyssalDrain.Cast();
         }
+
         private async Task<bool> SoleSurvivor()
         {
             return await MySpells.SoleSurvivor.Cast();
         }
+
         private async Task<bool> CarveAndSplit()
         {
             if (Core.Player.HasAura(MySpells.DarkArts.Name) &&
