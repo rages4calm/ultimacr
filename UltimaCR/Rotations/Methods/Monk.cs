@@ -327,7 +327,8 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> ElixirField()
         {
-            if (Ultima.UltSettings.MonkElixirField)
+            if (Ultima.UltSettings.MonkElixirField &&
+                Helpers.EnemiesNearPlayer(2) > 0)
             {
                 return await MySpells.ElixirField.Cast();
             }

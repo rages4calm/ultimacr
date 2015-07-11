@@ -153,7 +153,7 @@ namespace UltimaCR.Spells.Main
                                Name = "Forbidden Chakra",
                                ID = 3547,
                                Level = 54,
-                               GCDType = GCDType.On,
+                               GCDType = GCDType.Off,
                                SpellType = SpellType.Cooldown,
                                CastType = CastType.Target
                            });
@@ -171,7 +171,7 @@ namespace UltimaCR.Spells.Main
                                Name = "Elixir Field",
                                ID = 3545,
                                Level = 56,
-                               GCDType = GCDType.On,
+                               GCDType = GCDType.Off,
                                SpellType = SpellType.AoE,
                                CastType = CastType.Self
                            });
