@@ -20,8 +20,8 @@ namespace UltimaCR.Rotations
                 if (await InternalRelease()) return true;
                 if (await BloodForBlood()) return true;
                 if (await Shukuchi()) return true;
-                if (await DancingEdge()) return true;
                 if (await ArmorCrush()) return true;
+                if (await DancingEdge()) return true;
                 if (await AeolianEdge()) return true;
                 if (await ShadowFang()) return true;
                 if (await GustSlash()) return true;
@@ -46,8 +46,8 @@ namespace UltimaCR.Rotations
                 if (await InternalRelease()) return true;
                 if (await BloodForBlood()) return true;
                 if (await Shukuchi()) return true;
-                if (await DancingEdge()) return true;
                 if (await ArmorCrush()) return true;
+                if (await DancingEdge()) return true;
                 if (await AeolianEdge()) return true;
                 if (await ShadowFang()) return true;
                 if (await GustSlash()) return true;
