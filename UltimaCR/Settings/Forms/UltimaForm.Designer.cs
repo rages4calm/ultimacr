@@ -168,6 +168,8 @@
             this.ArcherInvigorate = new System.Windows.Forms.CheckBox();
             this.ArcherBloodForBlood = new System.Windows.Forms.CheckBox();
             this.BardSettings = new System.Windows.Forms.TabPage();
+            this.BardAuraGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.BardTheWanderersMinuet = new System.Windows.Forms.CheckBox();
             this.BardExecuteGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.BardMiserysEnd = new System.Windows.Forms.CheckBox();
             this.BardInterruptGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
@@ -361,6 +363,8 @@
             this.LancerRaise = new System.Windows.Forms.CheckBox();
             this.LancerStoneskin = new System.Windows.Forms.CheckBox();
             this.DragoonSettings = new System.Windows.Forms.TabPage();
+            this.DragoonBuffGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.DragoonBattleLitany = new System.Windows.Forms.CheckBox();
             this.DragoonCooldownGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.DragoonPowerSurge = new System.Windows.Forms.CheckBox();
             this.DragoonDragonfireDive = new System.Windows.Forms.CheckBox();
@@ -495,11 +499,15 @@
             this.PugilistRaise = new System.Windows.Forms.CheckBox();
             this.PugilistStoneskin = new System.Windows.Forms.CheckBox();
             this.MonkSettings = new System.Windows.Forms.TabPage();
+            this.MonkBuffGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.MonkMeditation = new System.Windows.Forms.CheckBox();
             this.MonkAuraGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.MonkFistsOfFire = new System.Windows.Forms.RadioButton();
             this.MonkFistsOfEarth = new System.Windows.Forms.RadioButton();
             this.MonkFistsOfWind = new System.Windows.Forms.RadioButton();
             this.MonkCooldownGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.MonkElixirField = new System.Windows.Forms.CheckBox();
+            this.MonkForbiddenChakra = new System.Windows.Forms.CheckBox();
             this.MonkPerfectBalance = new System.Windows.Forms.CheckBox();
             this.MonkMovementGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.MonkShoulderTackle = new System.Windows.Forms.CheckBox();
@@ -572,6 +580,8 @@
             this.RogueRaise = new System.Windows.Forms.CheckBox();
             this.RogueStoneskin = new System.Windows.Forms.CheckBox();
             this.NinjaSettings = new System.Windows.Forms.TabPage();
+            this.NinjaCooldownGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.NinjaDreamWithinADream = new System.Windows.Forms.CheckBox();
             this.NinjaBuffGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.NinjaGoad = new System.Windows.Forms.CheckBox();
             this.NinjaAuraGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
@@ -697,6 +707,8 @@
             this.DarkKnightAwareness = new System.Windows.Forms.CheckBox();
             this.DarkKnightProvoke = new System.Windows.Forms.CheckBox();
             this.MachinistSettings = new System.Windows.Forms.TabPage();
+            this.MachinistAuraGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.MachinistGaussBarrel = new System.Windows.Forms.CheckBox();
             this.MachinistKnockbackGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.MachinistBlank = new System.Windows.Forms.CheckBox();
             this.MachinistBuffGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
@@ -718,19 +730,6 @@
             this.MachinistRagingStrikes = new System.Windows.Forms.CheckBox();
             this.MachinistHawksEye = new System.Windows.Forms.CheckBox();
             this.MachinistQuellingStrikes = new System.Windows.Forms.CheckBox();
-            this.DragoonBuffGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
-            this.DragoonBattleLitany = new System.Windows.Forms.CheckBox();
-            this.MonkBuffGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
-            this.MonkMeditation = new System.Windows.Forms.CheckBox();
-            this.MonkForbiddenChakra = new System.Windows.Forms.CheckBox();
-            this.MonkElixirField = new System.Windows.Forms.CheckBox();
-            this.BardAuraGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
-            this.BardTheWanderersMinuet = new System.Windows.Forms.CheckBox();
-            this.NinjaCooldownGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
-            this.NinjaDuality = new System.Windows.Forms.CheckBox();
-            this.NinjaDreamWithinADream = new System.Windows.Forms.CheckBox();
-            this.MachinistAuraGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
-            this.MachinistGaussBarrel = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.UltimaBanner)).BeginInit();
             this.ClassTab.SuspendLayout();
             this.UltimaTab.SuspendLayout();
@@ -778,6 +777,7 @@
             this.ArcherGladiatorGroup.SuspendLayout();
             this.ArcherLancerGroup.SuspendLayout();
             this.BardSettings.SuspendLayout();
+            this.BardAuraGroup.SuspendLayout();
             this.BardExecuteGroup.SuspendLayout();
             this.BardInterruptGroup.SuspendLayout();
             this.BardCrossGroup.SuspendLayout();
@@ -837,6 +837,7 @@
             this.LancerArcanistGroup.SuspendLayout();
             this.LancerConjurerGroup.SuspendLayout();
             this.DragoonSettings.SuspendLayout();
+            this.DragoonBuffGroup.SuspendLayout();
             this.DragoonCooldownGroup.SuspendLayout();
             this.DragoonInterruptGroup.SuspendLayout();
             this.DragoonCrossGroup.SuspendLayout();
@@ -877,6 +878,7 @@
             this.PugilistArcanistGroup.SuspendLayout();
             this.PugilistConjurerGroup.SuspendLayout();
             this.MonkSettings.SuspendLayout();
+            this.MonkBuffGroup.SuspendLayout();
             this.MonkAuraGroup.SuspendLayout();
             this.MonkCooldownGroup.SuspendLayout();
             this.MonkMovementGroup.SuspendLayout();
@@ -901,6 +903,7 @@
             this.RogueArcanistGroup.SuspendLayout();
             this.RogueConjurerGroup.SuspendLayout();
             this.NinjaSettings.SuspendLayout();
+            this.NinjaCooldownGroup.SuspendLayout();
             this.NinjaBuffGroup.SuspendLayout();
             this.NinjaAuraGroup.SuspendLayout();
             this.NinjaDebuffGroup.SuspendLayout();
@@ -944,6 +947,7 @@
             this.DarkKnightMarauderGroup.SuspendLayout();
             this.DarkKnightGladiatorGroup.SuspendLayout();
             this.MachinistSettings.SuspendLayout();
+            this.MachinistAuraGroup.SuspendLayout();
             this.MachinistKnockbackGroup.SuspendLayout();
             this.MachinistBuffGroup.SuspendLayout();
             this.MachinistExecuteGroup.SuspendLayout();
@@ -952,11 +956,6 @@
             this.MachinistCrossGroup.SuspendLayout();
             this.MachinistLancerGroup.SuspendLayout();
             this.MachinistArcherGroup.SuspendLayout();
-            this.DragoonBuffGroup.SuspendLayout();
-            this.MonkBuffGroup.SuspendLayout();
-            this.BardAuraGroup.SuspendLayout();
-            this.NinjaCooldownGroup.SuspendLayout();
-            this.MachinistAuraGroup.SuspendLayout();
             this.SuspendLayout();
             // 
             // CloseButton
@@ -2797,6 +2796,29 @@
             this.BardSettings.TabIndex = 1;
             this.BardSettings.Text = "Bard";
             this.BardSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
+            // 
+            // BardAuraGroup
+            // 
+            this.BardAuraGroup.Controls.Add(this.BardTheWanderersMinuet);
+            this.BardAuraGroup.ForeColor = System.Drawing.Color.White;
+            this.BardAuraGroup.Location = new System.Drawing.Point(34, 216);
+            this.BardAuraGroup.Name = "BardAuraGroup";
+            this.BardAuraGroup.Size = new System.Drawing.Size(149, 42);
+            this.BardAuraGroup.TabIndex = 16;
+            this.BardAuraGroup.TabStop = false;
+            this.BardAuraGroup.Text = "Aura";
+            // 
+            // BardTheWanderersMinuet
+            // 
+            this.BardTheWanderersMinuet.AutoSize = true;
+            this.BardTheWanderersMinuet.ForeColor = System.Drawing.Color.White;
+            this.BardTheWanderersMinuet.Location = new System.Drawing.Point(6, 19);
+            this.BardTheWanderersMinuet.Name = "BardTheWanderersMinuet";
+            this.BardTheWanderersMinuet.Size = new System.Drawing.Size(137, 17);
+            this.BardTheWanderersMinuet.TabIndex = 7;
+            this.BardTheWanderersMinuet.Text = "The Wanderer\'s Minuet";
+            this.BardTheWanderersMinuet.UseVisualStyleBackColor = true;
+            this.BardTheWanderersMinuet.CheckedChanged += new System.EventHandler(this.BardTheWanderersMinuet_CheckedChanged);
             // 
             // BardExecuteGroup
             // 
@@ -5301,6 +5323,29 @@
             this.DragoonSettings.Text = "Dragoon";
             this.DragoonSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
             // 
+            // DragoonBuffGroup
+            // 
+            this.DragoonBuffGroup.Controls.Add(this.DragoonBattleLitany);
+            this.DragoonBuffGroup.ForeColor = System.Drawing.Color.White;
+            this.DragoonBuffGroup.Location = new System.Drawing.Point(34, 216);
+            this.DragoonBuffGroup.Name = "DragoonBuffGroup";
+            this.DragoonBuffGroup.Size = new System.Drawing.Size(96, 42);
+            this.DragoonBuffGroup.TabIndex = 19;
+            this.DragoonBuffGroup.TabStop = false;
+            this.DragoonBuffGroup.Text = "Buff";
+            // 
+            // DragoonBattleLitany
+            // 
+            this.DragoonBattleLitany.AutoSize = true;
+            this.DragoonBattleLitany.ForeColor = System.Drawing.Color.White;
+            this.DragoonBattleLitany.Location = new System.Drawing.Point(6, 19);
+            this.DragoonBattleLitany.Name = "DragoonBattleLitany";
+            this.DragoonBattleLitany.Size = new System.Drawing.Size(84, 17);
+            this.DragoonBattleLitany.TabIndex = 7;
+            this.DragoonBattleLitany.Text = "Battle Litany";
+            this.DragoonBattleLitany.UseVisualStyleBackColor = true;
+            this.DragoonBattleLitany.CheckedChanged += new System.EventHandler(this.DragoonBattleLitany_CheckedChanged);
+            // 
             // DragoonCooldownGroup
             // 
             this.DragoonCooldownGroup.Controls.Add(this.DragoonPowerSurge);
@@ -7050,6 +7095,29 @@
             this.MonkSettings.Text = "Monk";
             this.MonkSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
             // 
+            // MonkBuffGroup
+            // 
+            this.MonkBuffGroup.Controls.Add(this.MonkMeditation);
+            this.MonkBuffGroup.ForeColor = System.Drawing.Color.White;
+            this.MonkBuffGroup.Location = new System.Drawing.Point(156, 262);
+            this.MonkBuffGroup.Name = "MonkBuffGroup";
+            this.MonkBuffGroup.Size = new System.Drawing.Size(87, 42);
+            this.MonkBuffGroup.TabIndex = 17;
+            this.MonkBuffGroup.TabStop = false;
+            this.MonkBuffGroup.Text = "Buff";
+            // 
+            // MonkMeditation
+            // 
+            this.MonkMeditation.AutoSize = true;
+            this.MonkMeditation.ForeColor = System.Drawing.Color.White;
+            this.MonkMeditation.Location = new System.Drawing.Point(6, 19);
+            this.MonkMeditation.Name = "MonkMeditation";
+            this.MonkMeditation.Size = new System.Drawing.Size(75, 17);
+            this.MonkMeditation.TabIndex = 7;
+            this.MonkMeditation.Text = "Meditation";
+            this.MonkMeditation.UseVisualStyleBackColor = true;
+            this.MonkMeditation.CheckedChanged += new System.EventHandler(this.MonkMeditation_CheckedChanged);
+            // 
             // MonkAuraGroup
             // 
             this.MonkAuraGroup.Controls.Add(this.MonkFistsOfFire);
@@ -7114,6 +7182,30 @@
             this.MonkCooldownGroup.TabIndex = 16;
             this.MonkCooldownGroup.TabStop = false;
             this.MonkCooldownGroup.Text = "Cooldown ";
+            // 
+            // MonkElixirField
+            // 
+            this.MonkElixirField.AutoSize = true;
+            this.MonkElixirField.ForeColor = System.Drawing.Color.White;
+            this.MonkElixirField.Location = new System.Drawing.Point(6, 65);
+            this.MonkElixirField.Name = "MonkElixirField";
+            this.MonkElixirField.Size = new System.Drawing.Size(72, 17);
+            this.MonkElixirField.TabIndex = 9;
+            this.MonkElixirField.Text = "Elixir Field";
+            this.MonkElixirField.UseVisualStyleBackColor = true;
+            this.MonkElixirField.CheckedChanged += new System.EventHandler(this.MonkElixirField_CheckedChanged);
+            // 
+            // MonkForbiddenChakra
+            // 
+            this.MonkForbiddenChakra.AutoSize = true;
+            this.MonkForbiddenChakra.ForeColor = System.Drawing.Color.White;
+            this.MonkForbiddenChakra.Location = new System.Drawing.Point(6, 42);
+            this.MonkForbiddenChakra.Name = "MonkForbiddenChakra";
+            this.MonkForbiddenChakra.Size = new System.Drawing.Size(110, 17);
+            this.MonkForbiddenChakra.TabIndex = 8;
+            this.MonkForbiddenChakra.Text = "Forbidden Chakra";
+            this.MonkForbiddenChakra.UseVisualStyleBackColor = true;
+            this.MonkForbiddenChakra.CheckedChanged += new System.EventHandler(this.MonkForbiddenChakra_CheckedChanged);
             // 
             // MonkPerfectBalance
             // 
@@ -8054,6 +8146,29 @@
             this.NinjaSettings.TabIndex = 1;
             this.NinjaSettings.Text = "Ninja";
             this.NinjaSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
+            // 
+            // NinjaCooldownGroup
+            // 
+            this.NinjaCooldownGroup.Controls.Add(this.NinjaDreamWithinADream);
+            this.NinjaCooldownGroup.ForeColor = System.Drawing.Color.White;
+            this.NinjaCooldownGroup.Location = new System.Drawing.Point(34, 335);
+            this.NinjaCooldownGroup.Name = "NinjaCooldownGroup";
+            this.NinjaCooldownGroup.Size = new System.Drawing.Size(145, 42);
+            this.NinjaCooldownGroup.TabIndex = 46;
+            this.NinjaCooldownGroup.TabStop = false;
+            this.NinjaCooldownGroup.Text = "Cooldown ";
+            // 
+            // NinjaDreamWithinADream
+            // 
+            this.NinjaDreamWithinADream.AutoSize = true;
+            this.NinjaDreamWithinADream.ForeColor = System.Drawing.Color.White;
+            this.NinjaDreamWithinADream.Location = new System.Drawing.Point(6, 19);
+            this.NinjaDreamWithinADream.Name = "NinjaDreamWithinADream";
+            this.NinjaDreamWithinADream.Size = new System.Drawing.Size(133, 17);
+            this.NinjaDreamWithinADream.TabIndex = 8;
+            this.NinjaDreamWithinADream.Text = "Dream Within a Dream";
+            this.NinjaDreamWithinADream.UseVisualStyleBackColor = true;
+            this.NinjaDreamWithinADream.CheckedChanged += new System.EventHandler(this.NinjaDreamWithinADream_CheckedChanged);
             // 
             // NinjaBuffGroup
             // 
@@ -9652,6 +9767,29 @@
             this.MachinistSettings.TabIndex = 2;
             this.MachinistSettings.Text = "Machinist";
             // 
+            // MachinistAuraGroup
+            // 
+            this.MachinistAuraGroup.Controls.Add(this.MachinistGaussBarrel);
+            this.MachinistAuraGroup.ForeColor = System.Drawing.Color.White;
+            this.MachinistAuraGroup.Location = new System.Drawing.Point(40, 294);
+            this.MachinistAuraGroup.Name = "MachinistAuraGroup";
+            this.MachinistAuraGroup.Size = new System.Drawing.Size(99, 42);
+            this.MachinistAuraGroup.TabIndex = 47;
+            this.MachinistAuraGroup.TabStop = false;
+            this.MachinistAuraGroup.Text = "Aura";
+            // 
+            // MachinistGaussBarrel
+            // 
+            this.MachinistGaussBarrel.AutoSize = true;
+            this.MachinistGaussBarrel.ForeColor = System.Drawing.Color.White;
+            this.MachinistGaussBarrel.Location = new System.Drawing.Point(6, 19);
+            this.MachinistGaussBarrel.Name = "MachinistGaussBarrel";
+            this.MachinistGaussBarrel.Size = new System.Drawing.Size(86, 17);
+            this.MachinistGaussBarrel.TabIndex = 7;
+            this.MachinistGaussBarrel.Text = "Gauss Barrel";
+            this.MachinistGaussBarrel.UseVisualStyleBackColor = true;
+            this.MachinistGaussBarrel.CheckedChanged += new System.EventHandler(this.MachinistGaussBarrel_CheckedChanged);
+            // 
             // MachinistKnockbackGroup
             // 
             this.MachinistKnockbackGroup.Controls.Add(this.MachinistBlank);
@@ -9908,158 +10046,6 @@
             this.MachinistQuellingStrikes.UseVisualStyleBackColor = true;
             this.MachinistQuellingStrikes.CheckedChanged += new System.EventHandler(this.MachinistQuellingStrikes_CheckedChanged);
             // 
-            // DragoonBuffGroup
-            // 
-            this.DragoonBuffGroup.Controls.Add(this.DragoonBattleLitany);
-            this.DragoonBuffGroup.ForeColor = System.Drawing.Color.White;
-            this.DragoonBuffGroup.Location = new System.Drawing.Point(34, 216);
-            this.DragoonBuffGroup.Name = "DragoonBuffGroup";
-            this.DragoonBuffGroup.Size = new System.Drawing.Size(96, 42);
-            this.DragoonBuffGroup.TabIndex = 19;
-            this.DragoonBuffGroup.TabStop = false;
-            this.DragoonBuffGroup.Text = "Buff";
-            // 
-            // DragoonBattleLitany
-            // 
-            this.DragoonBattleLitany.AutoSize = true;
-            this.DragoonBattleLitany.ForeColor = System.Drawing.Color.White;
-            this.DragoonBattleLitany.Location = new System.Drawing.Point(6, 19);
-            this.DragoonBattleLitany.Name = "DragoonBattleLitany";
-            this.DragoonBattleLitany.Size = new System.Drawing.Size(84, 17);
-            this.DragoonBattleLitany.TabIndex = 7;
-            this.DragoonBattleLitany.Text = "Battle Litany";
-            this.DragoonBattleLitany.UseVisualStyleBackColor = true;
-            this.DragoonBattleLitany.CheckedChanged += new System.EventHandler(this.DragoonBattleLitany_CheckedChanged);
-            // 
-            // MonkBuffGroup
-            // 
-            this.MonkBuffGroup.Controls.Add(this.MonkMeditation);
-            this.MonkBuffGroup.ForeColor = System.Drawing.Color.White;
-            this.MonkBuffGroup.Location = new System.Drawing.Point(156, 262);
-            this.MonkBuffGroup.Name = "MonkBuffGroup";
-            this.MonkBuffGroup.Size = new System.Drawing.Size(87, 42);
-            this.MonkBuffGroup.TabIndex = 17;
-            this.MonkBuffGroup.TabStop = false;
-            this.MonkBuffGroup.Text = "Buff";
-            // 
-            // MonkMeditation
-            // 
-            this.MonkMeditation.AutoSize = true;
-            this.MonkMeditation.ForeColor = System.Drawing.Color.White;
-            this.MonkMeditation.Location = new System.Drawing.Point(6, 19);
-            this.MonkMeditation.Name = "MonkMeditation";
-            this.MonkMeditation.Size = new System.Drawing.Size(75, 17);
-            this.MonkMeditation.TabIndex = 7;
-            this.MonkMeditation.Text = "Meditation";
-            this.MonkMeditation.UseVisualStyleBackColor = true;
-            this.MonkMeditation.CheckedChanged += new System.EventHandler(this.MonkMeditation_CheckedChanged);
-            // 
-            // MonkForbiddenChakra
-            // 
-            this.MonkForbiddenChakra.AutoSize = true;
-            this.MonkForbiddenChakra.ForeColor = System.Drawing.Color.White;
-            this.MonkForbiddenChakra.Location = new System.Drawing.Point(6, 42);
-            this.MonkForbiddenChakra.Name = "MonkForbiddenChakra";
-            this.MonkForbiddenChakra.Size = new System.Drawing.Size(110, 17);
-            this.MonkForbiddenChakra.TabIndex = 8;
-            this.MonkForbiddenChakra.Text = "Forbidden Chakra";
-            this.MonkForbiddenChakra.UseVisualStyleBackColor = true;
-            this.MonkForbiddenChakra.CheckedChanged += new System.EventHandler(this.MonkForbiddenChakra_CheckedChanged);
-            // 
-            // MonkElixirField
-            // 
-            this.MonkElixirField.AutoSize = true;
-            this.MonkElixirField.ForeColor = System.Drawing.Color.White;
-            this.MonkElixirField.Location = new System.Drawing.Point(6, 65);
-            this.MonkElixirField.Name = "MonkElixirField";
-            this.MonkElixirField.Size = new System.Drawing.Size(72, 17);
-            this.MonkElixirField.TabIndex = 9;
-            this.MonkElixirField.Text = "Elixir Field";
-            this.MonkElixirField.UseVisualStyleBackColor = true;
-            this.MonkElixirField.CheckedChanged += new System.EventHandler(this.MonkElixirField_CheckedChanged);
-            // 
-            // BardAuraGroup
-            // 
-            this.BardAuraGroup.Controls.Add(this.BardTheWanderersMinuet);
-            this.BardAuraGroup.ForeColor = System.Drawing.Color.White;
-            this.BardAuraGroup.Location = new System.Drawing.Point(34, 216);
-            this.BardAuraGroup.Name = "BardAuraGroup";
-            this.BardAuraGroup.Size = new System.Drawing.Size(149, 42);
-            this.BardAuraGroup.TabIndex = 16;
-            this.BardAuraGroup.TabStop = false;
-            this.BardAuraGroup.Text = "Aura";
-            // 
-            // BardTheWanderersMinuet
-            // 
-            this.BardTheWanderersMinuet.AutoSize = true;
-            this.BardTheWanderersMinuet.ForeColor = System.Drawing.Color.White;
-            this.BardTheWanderersMinuet.Location = new System.Drawing.Point(6, 19);
-            this.BardTheWanderersMinuet.Name = "BardTheWanderersMinuet";
-            this.BardTheWanderersMinuet.Size = new System.Drawing.Size(137, 17);
-            this.BardTheWanderersMinuet.TabIndex = 7;
-            this.BardTheWanderersMinuet.Text = "The Wanderer\'s Minuet";
-            this.BardTheWanderersMinuet.UseVisualStyleBackColor = true;
-            this.BardTheWanderersMinuet.CheckedChanged += new System.EventHandler(this.BardTheWanderersMinuet_CheckedChanged);
-            // 
-            // NinjaCooldownGroup
-            // 
-            this.NinjaCooldownGroup.Controls.Add(this.NinjaDreamWithinADream);
-            this.NinjaCooldownGroup.Controls.Add(this.NinjaDuality);
-            this.NinjaCooldownGroup.ForeColor = System.Drawing.Color.White;
-            this.NinjaCooldownGroup.Location = new System.Drawing.Point(34, 335);
-            this.NinjaCooldownGroup.Name = "NinjaCooldownGroup";
-            this.NinjaCooldownGroup.Size = new System.Drawing.Size(145, 64);
-            this.NinjaCooldownGroup.TabIndex = 46;
-            this.NinjaCooldownGroup.TabStop = false;
-            this.NinjaCooldownGroup.Text = "Cooldown ";
-            // 
-            // NinjaDuality
-            // 
-            this.NinjaDuality.AutoSize = true;
-            this.NinjaDuality.ForeColor = System.Drawing.Color.White;
-            this.NinjaDuality.Location = new System.Drawing.Point(6, 19);
-            this.NinjaDuality.Name = "NinjaDuality";
-            this.NinjaDuality.Size = new System.Drawing.Size(58, 17);
-            this.NinjaDuality.TabIndex = 7;
-            this.NinjaDuality.Text = "Duality";
-            this.NinjaDuality.UseVisualStyleBackColor = true;
-            this.NinjaDuality.CheckedChanged += new System.EventHandler(this.NinjaDuality_CheckedChanged);
-            // 
-            // NinjaDreamWithinADream
-            // 
-            this.NinjaDreamWithinADream.AutoSize = true;
-            this.NinjaDreamWithinADream.ForeColor = System.Drawing.Color.White;
-            this.NinjaDreamWithinADream.Location = new System.Drawing.Point(6, 42);
-            this.NinjaDreamWithinADream.Name = "NinjaDreamWithinADream";
-            this.NinjaDreamWithinADream.Size = new System.Drawing.Size(133, 17);
-            this.NinjaDreamWithinADream.TabIndex = 8;
-            this.NinjaDreamWithinADream.Text = "Dream Within a Dream";
-            this.NinjaDreamWithinADream.UseVisualStyleBackColor = true;
-            this.NinjaDreamWithinADream.CheckedChanged += new System.EventHandler(this.NinjaDreamWithinADream_CheckedChanged);
-            // 
-            // MachinistAuraGroup
-            // 
-            this.MachinistAuraGroup.Controls.Add(this.MachinistGaussBarrel);
-            this.MachinistAuraGroup.ForeColor = System.Drawing.Color.White;
-            this.MachinistAuraGroup.Location = new System.Drawing.Point(40, 294);
-            this.MachinistAuraGroup.Name = "MachinistAuraGroup";
-            this.MachinistAuraGroup.Size = new System.Drawing.Size(99, 42);
-            this.MachinistAuraGroup.TabIndex = 47;
-            this.MachinistAuraGroup.TabStop = false;
-            this.MachinistAuraGroup.Text = "Aura";
-            // 
-            // MachinistGaussBarrel
-            // 
-            this.MachinistGaussBarrel.AutoSize = true;
-            this.MachinistGaussBarrel.ForeColor = System.Drawing.Color.White;
-            this.MachinistGaussBarrel.Location = new System.Drawing.Point(6, 19);
-            this.MachinistGaussBarrel.Name = "MachinistGaussBarrel";
-            this.MachinistGaussBarrel.Size = new System.Drawing.Size(86, 17);
-            this.MachinistGaussBarrel.TabIndex = 7;
-            this.MachinistGaussBarrel.Text = "Gauss Barrel";
-            this.MachinistGaussBarrel.UseVisualStyleBackColor = true;
-            this.MachinistGaussBarrel.CheckedChanged += new System.EventHandler(this.MachinistGaussBarrel_CheckedChanged);
-            // 
             // UltimaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -10154,6 +10140,8 @@
             this.ArcherLancerGroup.ResumeLayout(false);
             this.ArcherLancerGroup.PerformLayout();
             this.BardSettings.ResumeLayout(false);
+            this.BardAuraGroup.ResumeLayout(false);
+            this.BardAuraGroup.PerformLayout();
             this.BardExecuteGroup.ResumeLayout(false);
             this.BardExecuteGroup.PerformLayout();
             this.BardInterruptGroup.ResumeLayout(false);
@@ -10254,6 +10242,8 @@
             this.LancerConjurerGroup.ResumeLayout(false);
             this.LancerConjurerGroup.PerformLayout();
             this.DragoonSettings.ResumeLayout(false);
+            this.DragoonBuffGroup.ResumeLayout(false);
+            this.DragoonBuffGroup.PerformLayout();
             this.DragoonCooldownGroup.ResumeLayout(false);
             this.DragoonCooldownGroup.PerformLayout();
             this.DragoonInterruptGroup.ResumeLayout(false);
@@ -10322,6 +10312,8 @@
             this.PugilistConjurerGroup.ResumeLayout(false);
             this.PugilistConjurerGroup.PerformLayout();
             this.MonkSettings.ResumeLayout(false);
+            this.MonkBuffGroup.ResumeLayout(false);
+            this.MonkBuffGroup.PerformLayout();
             this.MonkAuraGroup.ResumeLayout(false);
             this.MonkAuraGroup.PerformLayout();
             this.MonkCooldownGroup.ResumeLayout(false);
@@ -10364,6 +10356,8 @@
             this.RogueConjurerGroup.ResumeLayout(false);
             this.RogueConjurerGroup.PerformLayout();
             this.NinjaSettings.ResumeLayout(false);
+            this.NinjaCooldownGroup.ResumeLayout(false);
+            this.NinjaCooldownGroup.PerformLayout();
             this.NinjaBuffGroup.ResumeLayout(false);
             this.NinjaBuffGroup.PerformLayout();
             this.NinjaAuraGroup.ResumeLayout(false);
@@ -10436,6 +10430,8 @@
             this.DarkKnightGladiatorGroup.ResumeLayout(false);
             this.DarkKnightGladiatorGroup.PerformLayout();
             this.MachinistSettings.ResumeLayout(false);
+            this.MachinistAuraGroup.ResumeLayout(false);
+            this.MachinistAuraGroup.PerformLayout();
             this.MachinistKnockbackGroup.ResumeLayout(false);
             this.MachinistKnockbackGroup.PerformLayout();
             this.MachinistBuffGroup.ResumeLayout(false);
@@ -10451,16 +10447,6 @@
             this.MachinistLancerGroup.PerformLayout();
             this.MachinistArcherGroup.ResumeLayout(false);
             this.MachinistArcherGroup.PerformLayout();
-            this.DragoonBuffGroup.ResumeLayout(false);
-            this.DragoonBuffGroup.PerformLayout();
-            this.MonkBuffGroup.ResumeLayout(false);
-            this.MonkBuffGroup.PerformLayout();
-            this.BardAuraGroup.ResumeLayout(false);
-            this.BardAuraGroup.PerformLayout();
-            this.NinjaCooldownGroup.ResumeLayout(false);
-            this.NinjaCooldownGroup.PerformLayout();
-            this.MachinistAuraGroup.ResumeLayout(false);
-            this.MachinistAuraGroup.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -11167,7 +11153,6 @@
         private System.Windows.Forms.CheckBox BardTheWanderersMinuet;
         private Design.GroupBoxDesign NinjaCooldownGroup;
         private System.Windows.Forms.CheckBox NinjaDreamWithinADream;
-        private System.Windows.Forms.CheckBox NinjaDuality;
         private Design.GroupBoxDesign MachinistAuraGroup;
         private System.Windows.Forms.CheckBox MachinistGaussBarrel;
     }
