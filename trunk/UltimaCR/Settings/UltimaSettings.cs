@@ -1625,13 +1625,13 @@ namespace UltimaCR.Settings
         [Setting, DefaultValue(false)]
         public bool MonkFistsOfFire { get; set; }
 
-        [Setting, DefaultValue(false)]
+        [Setting, DefaultValue(true)]
         public bool MonkMeditation { get; set; }
 
-        [Setting, DefaultValue(false)]
+        [Setting, DefaultValue(true)]
         public bool MonkForbiddenChakra { get; set; }
 
-        [Setting, DefaultValue(false)]
+        [Setting, DefaultValue(true)]
         public bool MonkElixirField { get; set; }
 
         #endregion
