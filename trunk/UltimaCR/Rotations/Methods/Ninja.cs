@@ -54,15 +54,19 @@ namespace UltimaCR.Rotations
         private async Task<bool> Mutilate()
         {
             if (Core.Player.HasAura(MySpells.Huton.Name) &&
-                (Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, true, 6000) ||
-                Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, false, 6000) ||
-                Core.Player.CurrentTarget.HasAura("Storm's Eye", false, 6000)) &&
                 (!Actionmanager.HasSpell(MySpells.ShadowFang.Name) ||
                 Core.Player.CurrentTarget.HasAura(MySpells.ShadowFang.Name, true, 5000)))
             {
-                if (!Core.Player.CurrentTarget.HasAura("Mutilation", true, 5000))
+                if (!Ultima.UltSettings.NinjaDancingEdge ||
+                    !Actionmanager.HasSpell(MySpells.DancingEdge.Name) ||
+                    (Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, true, 6000) ||
+                    Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, false, 6000) ||
+                    Core.Player.CurrentTarget.HasAura("Storm's Eye", false, 6000)))
                 {
-                    return await MySpells.Mutilate.Cast();
+                    if (!Core.Player.CurrentTarget.HasAura("Mutilation", true, 5000))
+                    {
+                        return await MySpells.Mutilate.Cast();
+                    }
                 }
             }
             return false;
@@ -171,9 +175,10 @@ namespace UltimaCR.Rotations
         {
             if (Core.Player.HasAura(MySpells.Huton.Name))
             {
-                if (Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, true, 6000) ||
+                if (!Ultima.UltSettings.NinjaDancingEdge ||
+                    (Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, true, 6000) ||
                     Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, false, 6000) ||
-                    Core.Player.CurrentTarget.HasAura("Storm's Eye", false, 6000))
+                    Core.Player.CurrentTarget.HasAura("Storm's Eye", false, 6000)))
                 {
                     if (!Core.Player.CurrentTarget.HasAura(MySpells.ShadowFang.Name, true, 5000) &&
                         Actionmanager.LastSpell.Name == MySpells.SpinningEdge.Name)
