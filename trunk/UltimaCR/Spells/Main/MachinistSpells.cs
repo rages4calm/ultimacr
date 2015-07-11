@@ -226,7 +226,7 @@ namespace UltimaCR.Spells.Main
                                ID = 2872,
                                Level = 30,
                                GCDType = GCDType.On,
-                               SpellType = SpellType.Buff,
+                               SpellType = SpellType.Debuff,
                                CastType = CastType.Target
                            });
             }
@@ -369,7 +369,7 @@ namespace UltimaCR.Spells.Main
                                Name = "Suppressive Fire",
                                ID = 2883,
                                Level = 45,
-                               GCDType = GCDType.On,
+                               GCDType = GCDType.Off,
                                SpellType = SpellType.Interrupt,
                                CastType = CastType.Target
                            });
