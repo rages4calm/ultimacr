@@ -1701,9 +1701,6 @@ namespace UltimaCR.Settings
         public bool NinjaGoad { get; set; }
 
         [Setting, DefaultValue(true)]
-        public bool NinjaDuality { get; set; }
-
-        [Setting, DefaultValue(true)]
         public bool NinjaDreamWithinADream { get; set; }
 
         #endregion

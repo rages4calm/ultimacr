@@ -1,4 +1,5 @@
-﻿using Buddy.Coroutines;
+﻿using System.Windows.Forms.VisualStyles;
+using Buddy.Coroutines;
 using ff14bot;
 using ff14bot.Managers;
 using System.Linq;
@@ -52,10 +53,14 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Mutilate()
         {
-            if (!Actionmanager.HasSpell(MySpells.ShadowFang.Name) ||
-                Core.Player.CurrentTarget.HasAura(MySpells.ShadowFang.Name, true, 4000))
+            if (Core.Player.HasAura(MySpells.Huton.Name) &&
+                (Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, true, 6000) ||
+                Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, false, 6000) ||
+                Core.Player.CurrentTarget.HasAura("Storm's Eye", false, 6000)) &&
+                (!Actionmanager.HasSpell(MySpells.ShadowFang.Name) ||
+                Core.Player.CurrentTarget.HasAura(MySpells.ShadowFang.Name, true, 5000)))
             {
-                if (!Core.Player.CurrentTarget.HasAura("Mutilation", true, 4000))
+                if (!Core.Player.CurrentTarget.HasAura("Mutilation", true, 5000))
                 {
                     return await MySpells.Mutilate.Cast();
                 }
@@ -144,16 +149,14 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> DancingEdge()
         {
-            if (Ultima.UltSettings.NinjaDancingEdge)
+            if (Ultima.UltSettings.NinjaDancingEdge &&
+                Actionmanager.LastSpell.Name == MySpells.GustSlash.Name)
             {
-                if (Actionmanager.LastSpell.Name == MySpells.GustSlash.Name)
+                if (!Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, true, 6000) &&
+                    !Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, false, 6000) &&
+                    !Core.Player.CurrentTarget.HasAura("Storm's Eye", false, 6000))
                 {
-                    if (!Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, true, 6000) &&
-                        !Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, false, 6000) &&
-                        !Core.Player.CurrentTarget.HasAura("Storm's Eye", false, 6000))
-                    {
-                        return await MySpells.DancingEdge.Cast();
-                    }
+                    return await MySpells.DancingEdge.Cast();
                 }
             }
             return false;
@@ -166,14 +169,17 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> ShadowFang()
         {
-            if (Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, true, 6000) ||
-                Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, false, 6000) ||
-                Core.Player.CurrentTarget.HasAura("Storm's Eye", false, 6000))
+            if (Core.Player.HasAura(MySpells.Huton.Name))
             {
-                if (!Core.Player.CurrentTarget.HasAura(MySpells.ShadowFang.Name, true, 4000) &&
-                    Actionmanager.LastSpell.Name == MySpells.SpinningEdge.Name)
+                if (Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, true, 6000) ||
+                    Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, false, 6000) ||
+                    Core.Player.CurrentTarget.HasAura("Storm's Eye", false, 6000))
                 {
-                    return await MySpells.ShadowFang.Cast();
+                    if (!Core.Player.CurrentTarget.HasAura(MySpells.ShadowFang.Name, true, 5000) &&
+                        Actionmanager.LastSpell.Name == MySpells.SpinningEdge.Name)
+                    {
+                        return await MySpells.ShadowFang.Cast();
+                    }
                 }
             }
             return false;
@@ -477,39 +483,44 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Huton()
         {
-            if (Actionmanager.CanCast(MySpells.Jin.ID, Core.Player) &&
-                !Core.Player.HasAura(MySpells.Huton.Name))
+            if (Actionmanager.CanCast(MySpells.Jin.ID, Core.Player))
             {
-                if (Ultima.LastSpell.ID != MySpells.Ten.ID &&
-                    Ultima.LastSpell.ID != MySpells.Chi.ID &&
-                    Ultima.LastSpell.ID != MySpells.Jin.ID &&
-                    Ultima.LastSpell.ID != MySpells.Ninjutsu.ID)
+                if (!Core.Player.HasAura(MySpells.Huton.Name) ||
+                    !Actionmanager.HasSpell(MySpells.ArmorCrush.Name) &&
+                    !Core.Player.HasAura(MySpells.Huton.Name, true, 20000) &&
+                    DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds >= 1000)
                 {
-                }
-                if (await MySpells.Chi.Cast())
-                {
-                    await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Chi.ID, Core.Player));
-                }
-                if (Ultima.LastSpell.ID == MySpells.Chi.ID)
-                {
-                    if (await MySpells.Jin.Cast())
+                    if (Ultima.LastSpell.ID != MySpells.Ten.ID &&
+                        Ultima.LastSpell.ID != MySpells.Chi.ID &&
+                        Ultima.LastSpell.ID != MySpells.Jin.ID &&
+                        Ultima.LastSpell.ID != MySpells.Ninjutsu.ID)
                     {
-                        await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Jin.ID, Core.Player));
                     }
-                }
-                if (Ultima.LastSpell.ID == MySpells.Jin.ID)
-                {
-                    if (await MySpells.Ten.Cast())
+                    if (await MySpells.Chi.Cast())
                     {
-                        await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Ten.ID, Core.Player));
+                        await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Chi.ID, Core.Player));
                     }
-                }
-                if (Ultima.LastSpell.ID == MySpells.Ten.ID)
-                {
-                    if (await MySpells.Huton.Cast())
+                    if (Ultima.LastSpell.ID == MySpells.Chi.ID)
                     {
-                        await Coroutine.Wait(2000, () => !Core.Player.HasAura("Mudra"));
-                        return true;
+                        if (await MySpells.Jin.Cast())
+                        {
+                            await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Jin.ID, Core.Player));
+                        }
+                    }
+                    if (Ultima.LastSpell.ID == MySpells.Jin.ID)
+                    {
+                        if (await MySpells.Ten.Cast())
+                        {
+                            await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Ten.ID, Core.Player));
+                        }
+                    }
+                    if (Ultima.LastSpell.ID == MySpells.Ten.ID)
+                    {
+                        if (await MySpells.Huton.Cast())
+                        {
+                            await Coroutine.Wait(2000, () => !Core.Player.HasAura("Mudra"));
+                            return true;
+                        }
                     }
                 }
             }
@@ -638,11 +649,7 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Duality()
         {
-            if (Ultima.UltSettings.NinjaDuality)
-            {
-                return await MySpells.Duality.Cast();
-            }
-            return false;
+            return await MySpells.Duality.Cast();
         }
 
         private async Task<bool> DreamWithinADream()

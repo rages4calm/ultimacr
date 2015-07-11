@@ -1159,7 +1159,6 @@ namespace UltimaCR.Settings.Forms
             NinjaKissOfTheViper.Checked = Ultima.UltSettings.NinjaKissOfTheViper;
             NinjaDancingEdge.Checked = Ultima.UltSettings.NinjaDancingEdge;
             NinjaGoad.Checked = Ultima.UltSettings.NinjaGoad;
-            NinjaDuality.Checked = Ultima.UltSettings.NinjaDuality;
             NinjaDreamWithinADream.Checked = Ultima.UltSettings.NinjaDreamWithinADream;
 
             #endregion
@@ -3966,11 +3965,6 @@ namespace UltimaCR.Settings.Forms
         private void NinjaGoad_CheckedChanged(object sender, EventArgs e)
         {
             Ultima.UltSettings.NinjaGoad = NinjaGoad.Checked;
-        }
-
-        private void NinjaDuality_CheckedChanged(object sender, EventArgs e)
-        {
-            Ultima.UltSettings.NinjaDuality = NinjaDuality.Checked;
         }
 
         private void NinjaDreamWithinADream_CheckedChanged(object sender, EventArgs e)
