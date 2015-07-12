@@ -1,4 +1,5 @@
-﻿using ff14bot;
+﻿using Buddy.Coroutines;
+using ff14bot;
 using ff14bot.Managers;
 using System.Threading.Tasks;
 using UltimaCR.Spells.Main;
@@ -134,8 +135,22 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Souleater()
         {
-            if (Actionmanager.LastSpell.Name == MySpells.SyphonStrike.Name)
+            if (Actionmanager.LastSpell.Name == MySpells.SyphonStrike.Name &&
+                (!Actionmanager.HasSpell(MySpells.Delirium.Name) ||
+                Core.Player.CurrentTarget.HasAura(MySpells.Delirium.Name, true, 4000) ||
+                Core.Player.CurrentTarget.HasAura(MySpells.Delirium.Name, false, 4000) ||
+                Core.Player.CurrentTarget.HasAura("Dragon Kick")))
             {
+                if (Ultima.UltSettings.DarkKnightDarkArts &&
+                    !Core.Player.HasAura(MySpells.DarkArts.Name) &&
+                    Core.Player.CurrentManaPercent >= 50)
+
+                {
+                    if (await MySpells.DarkArts.Cast())
+                    {
+                        await Coroutine.Wait(3000, () => Actionmanager.CanCast(MySpells.Souleater.Name, Core.Player.CurrentTarget));
+                    }
+                }
                 return await MySpells.Souleater.Cast();
             }
             return false;
@@ -153,11 +168,7 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> DarkArts()
         {
-            if (Ultima.UltSettings.DarkKnightDarkArts)
-            {
-                return await MySpells.DarkArts.Cast();
-            }
-            return false;
+            return await MySpells.DarkArts.Cast();
         }
 
         private async Task<bool> ShadowWall()
@@ -170,12 +181,7 @@ namespace UltimaCR.Rotations
             if (Ultima.UltSettings.DarkKnightDelirium &&
                 Actionmanager.LastSpell.Name == MySpells.SyphonStrike.Name)
             {
-                if (!Core.Player.CurrentTarget.HasAura(MySpells.Delirium.Name, true, 5000) &&
-                    !Core.Player.CurrentTarget.HasAura("Dragon Kick") ||
-                    Core.Player.CurrentManaPercent <= 20)
-                {
-                    return await MySpells.Delirium.Cast();
-                }
+                return await MySpells.Delirium.Cast();
             }
             return false;
         }
@@ -202,6 +208,7 @@ namespace UltimaCR.Rotations
             }
             return false;
         }
+
         private async Task<bool> AbyssalDrain()
         {
             return await MySpells.AbyssalDrain.Cast();

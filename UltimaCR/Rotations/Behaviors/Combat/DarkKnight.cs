@@ -10,8 +10,8 @@ namespace UltimaCR.Rotations
             if (await Unleash()) return true;
             if (await CarveAndSplit()) return true;
             if (await SyphonStrike()) return true;
-            if (await Delirium()) return true;
             if (await Souleater()) return true;
+            if (await Delirium()) return true;
             if (await Scourge()) return true;
             return await HardSlash();
         }

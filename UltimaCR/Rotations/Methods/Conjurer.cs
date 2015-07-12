@@ -57,9 +57,10 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Protect()
         {
-            if (Ultima.UltSettings.ConjurerProtect)
+            if (Ultima.UltSettings.ConjurerProtect &&
+                !Helpers.HealManager.Any(hm => hm.CurrentHealthPercent <= 70 || hm.IsDead))
             {
-                var target = Helpers.HealManager.FirstOrDefault(hm => hm.Type == GameObjectType.Pc && !hm.HasAura(MySpells.Protect.Name) && !hm.InCombat);
+                var target = Helpers.HealManager.FirstOrDefault(hm => hm.Type == GameObjectType.Pc && !hm.HasAura(MySpells.Protect.Name));
 
                 if (target != null)
                 {
