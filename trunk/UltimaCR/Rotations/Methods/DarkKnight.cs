@@ -38,7 +38,8 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Scourge()
         {
-            if (!Core.Player.CurrentTarget.HasAura(MySpells.Scourge.Name, true, 4000))
+            if (!Core.Player.CurrentTarget.HasAura(MySpells.Scourge.Name, true, 4000) &&
+                !Core.Player.HasAura(MySpells.DarkArts.Name))
             {
                 return await MySpells.Scourge.Cast();
             }
@@ -135,16 +136,16 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Souleater()
         {
-            if (Actionmanager.LastSpell.Name == MySpells.SyphonStrike.Name &&
-                (!Actionmanager.HasSpell(MySpells.Delirium.Name) ||
-                Core.Player.CurrentTarget.HasAura(MySpells.Delirium.Name, true, 4000) ||
-                Core.Player.CurrentTarget.HasAura(MySpells.Delirium.Name, false, 4000) ||
-                Core.Player.CurrentTarget.HasAura("Dragon Kick")))
+            if (Actionmanager.LastSpell.Name == MySpells.SyphonStrike.Name)
             {
                 if (Ultima.UltSettings.DarkKnightDarkArts &&
                     !Core.Player.HasAura(MySpells.DarkArts.Name) &&
-                    Core.Player.CurrentManaPercent >= 50)
-
+                    Core.Player.TargetDistance(3, false) &&
+                    Core.Player.CurrentManaPercent >= 50 &&
+                    (!Actionmanager.HasSpell(MySpells.Delirium.Name) ||
+                    Core.Player.CurrentTarget.HasAura(MySpells.Delirium.Name, true, 4000) ||
+                    Core.Player.CurrentTarget.HasAura(MySpells.Delirium.Name, false, 4000) ||
+                    Core.Player.CurrentTarget.HasAura("Dragon Kick")))
                 {
                     if (await MySpells.DarkArts.Cast())
                     {
@@ -179,7 +180,11 @@ namespace UltimaCR.Rotations
         private async Task<bool> Delirium()
         {
             if (Ultima.UltSettings.DarkKnightDelirium &&
-                Actionmanager.LastSpell.Name == MySpells.SyphonStrike.Name)
+                Actionmanager.LastSpell.Name == MySpells.SyphonStrike.Name &&
+                !Core.Player.HasAura(MySpells.DarkArts.Name) &&
+                !Core.Player.CurrentTarget.HasAura(MySpells.Delirium.Name, true, 4000) &&
+                !Core.Player.CurrentTarget.HasAura(MySpells.Delirium.Name, false, 4000) &&
+                !Core.Player.CurrentTarget.HasAura("Dragon Kick"))
             {
                 return await MySpells.Delirium.Cast();
             }
@@ -221,10 +226,7 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> CarveAndSplit()
         {
-            if (Core.Player.HasAura(MySpells.DarkArts.Name) &&
-                Core.Player.CurrentManaPercent >= 50 ||
-                !Core.Player.HasAura(MySpells.DarkArts.Name) &&
-                Core.Player.CurrentManaPercent < 50)
+            if (Core.Player.CurrentManaPercent < 70)
             {
                 return await MySpells.CarveAndSplit.Cast();
             }
