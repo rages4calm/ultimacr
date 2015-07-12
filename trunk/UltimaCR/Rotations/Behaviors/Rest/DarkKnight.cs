@@ -15,8 +15,7 @@ namespace UltimaCR.Rotations
                 !Core.Player.HasAura("Sprint"))
             {
                 if (Core.Player.CurrentHealthPercent < 70 ||
-                    Core.Player.CurrentTPPercent < 50 ||
-                    Core.Player.CurrentManaPercent < 50)
+                    Core.Player.CurrentTPPercent < 50)
                 {
                     if (MovementManager.IsMoving)
                     {

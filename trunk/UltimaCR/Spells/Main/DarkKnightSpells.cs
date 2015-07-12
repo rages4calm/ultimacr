@@ -351,7 +351,7 @@ namespace UltimaCR.Spells.Main
                                Name = "Dark Arts",
                                ID = 3635,
                                Level = 45,
-                               GCDType = GCDType.Off,
+                               GCDType = GCDType.On,
                                SpellType = SpellType.Buff,
                                CastType = CastType.Self
                            });

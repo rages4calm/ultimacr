@@ -9,7 +9,8 @@ namespace UltimaCR.Rotations
             if (await Ultima.SummonChocobo()) return true;
             if (await PresenceOfMind()) return true;
             if (await DivineSeal()) return true;
-            return await ShroudOfSaints();
+            if (await ShroudOfSaints()) return true;
+            return await Protect();
         }
     }
 }
