@@ -45,7 +45,9 @@ namespace UltimaCR.Rotations
         {
             if (Actionmanager.HasSpell(MySpells.Disembowel.Name) &&
                 !Core.Player.CurrentTarget.HasAura(MySpells.Disembowel.Name, false, 5000) &&
-                 !Core.Player.CurrentTarget.HasAura(MySpells.Disembowel.Name, true, 5000))
+                !Core.Player.CurrentTarget.HasAura(MySpells.Disembowel.Name, true, 5000) ||
+                Actionmanager.HasSpell(MySpells.ChaosThrust.Name) &&
+                !Core.Player.CurrentTarget.HasAura(MySpells.ChaosThrust.Name, true, 5000))
             {
                 return await MySpells.ImpulseDrive.Cast();
             }

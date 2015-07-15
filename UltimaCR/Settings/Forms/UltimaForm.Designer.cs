@@ -32,7 +32,11 @@
             this.UltimaBanner = new System.Windows.Forms.PictureBox();
             this.ClassTab = new UltimaCR.Settings.Forms.Design.TabDesign();
             this.UltimaTab = new System.Windows.Forms.TabPage();
+            this.QueueSpellsLabel = new System.Windows.Forms.Label();
             this.UltimaGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.RandomCastLocation = new System.Windows.Forms.CheckBox();
+            this.QueueSpellAsteriskLabel = new System.Windows.Forms.Label();
+            this.QueueSpells = new System.Windows.Forms.CheckBox();
             this.DefaultCRCheck = new System.Windows.Forms.CheckBox();
             this.RotationGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.RotationModifierLabel = new System.Windows.Forms.Label();
@@ -1009,6 +1013,7 @@
             // UltimaTab
             // 
             this.UltimaTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.UltimaTab.Controls.Add(this.QueueSpellsLabel);
             this.UltimaTab.Controls.Add(this.UltimaGroup);
             this.UltimaTab.Controls.Add(this.RotationGroup);
             this.UltimaTab.Controls.Add(this.ChocoboGroup);
@@ -1021,16 +1026,65 @@
             this.UltimaTab.Text = "Ultima";
             this.UltimaTab.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
             // 
+            // QueueSpellsLabel
+            // 
+            this.QueueSpellsLabel.AutoSize = true;
+            this.QueueSpellsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QueueSpellsLabel.ForeColor = System.Drawing.Color.Red;
+            this.QueueSpellsLabel.Location = new System.Drawing.Point(459, 93);
+            this.QueueSpellsLabel.Name = "QueueSpellsLabel";
+            this.QueueSpellsLabel.Size = new System.Drawing.Size(220, 13);
+            this.QueueSpellsLabel.TabIndex = 15;
+            this.QueueSpellsLabel.Text = "***WARNING: Locks Out Player Input";
+            // 
             // UltimaGroup
             // 
+            this.UltimaGroup.Controls.Add(this.RandomCastLocation);
+            this.UltimaGroup.Controls.Add(this.QueueSpellAsteriskLabel);
+            this.UltimaGroup.Controls.Add(this.QueueSpells);
             this.UltimaGroup.Controls.Add(this.DefaultCRCheck);
             this.UltimaGroup.ForeColor = System.Drawing.Color.White;
-            this.UltimaGroup.Location = new System.Drawing.Point(550, 3);
+            this.UltimaGroup.Location = new System.Drawing.Point(520, 2);
             this.UltimaGroup.Name = "UltimaGroup";
-            this.UltimaGroup.Size = new System.Drawing.Size(124, 42);
+            this.UltimaGroup.Size = new System.Drawing.Size(159, 88);
             this.UltimaGroup.TabIndex = 9;
             this.UltimaGroup.TabStop = false;
             this.UltimaGroup.Text = "Ultima";
+            // 
+            // RandomCastLocation
+            // 
+            this.RandomCastLocation.AutoSize = true;
+            this.RandomCastLocation.ForeColor = System.Drawing.Color.White;
+            this.RandomCastLocation.Location = new System.Drawing.Point(6, 65);
+            this.RandomCastLocation.Name = "RandomCastLocation";
+            this.RandomCastLocation.Size = new System.Drawing.Size(147, 17);
+            this.RandomCastLocation.TabIndex = 16;
+            this.RandomCastLocation.Text = "Randomize Cast Location";
+            this.RandomCastLocation.UseVisualStyleBackColor = true;
+            this.RandomCastLocation.CheckedChanged += new System.EventHandler(this.RandomCastLocation_CheckedChanged);
+            // 
+            // QueueSpellAsteriskLabel
+            // 
+            this.QueueSpellAsteriskLabel.AutoSize = true;
+            this.QueueSpellAsteriskLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QueueSpellAsteriskLabel.ForeColor = System.Drawing.Color.Red;
+            this.QueueSpellAsteriskLabel.Location = new System.Drawing.Point(87, 42);
+            this.QueueSpellAsteriskLabel.Name = "QueueSpellAsteriskLabel";
+            this.QueueSpellAsteriskLabel.Size = new System.Drawing.Size(22, 13);
+            this.QueueSpellAsteriskLabel.TabIndex = 15;
+            this.QueueSpellAsteriskLabel.Text = "***";
+            // 
+            // QueueSpells
+            // 
+            this.QueueSpells.AutoSize = true;
+            this.QueueSpells.ForeColor = System.Drawing.Color.White;
+            this.QueueSpells.Location = new System.Drawing.Point(6, 42);
+            this.QueueSpells.Name = "QueueSpells";
+            this.QueueSpells.Size = new System.Drawing.Size(89, 17);
+            this.QueueSpells.TabIndex = 8;
+            this.QueueSpells.Text = "Queue Spells";
+            this.QueueSpells.UseVisualStyleBackColor = true;
+            this.QueueSpells.CheckedChanged += new System.EventHandler(this.QueueSpells_CheckedChanged);
             // 
             // DefaultCRCheck
             // 
@@ -10066,6 +10120,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.UltimaBanner)).EndInit();
             this.ClassTab.ResumeLayout(false);
             this.UltimaTab.ResumeLayout(false);
+            this.UltimaTab.PerformLayout();
             this.UltimaGroup.ResumeLayout(false);
             this.UltimaGroup.PerformLayout();
             this.RotationGroup.ResumeLayout(false);
@@ -11155,5 +11210,9 @@
         private System.Windows.Forms.CheckBox NinjaDreamWithinADream;
         private Design.GroupBoxDesign MachinistAuraGroup;
         private System.Windows.Forms.CheckBox MachinistGaussBarrel;
+        private System.Windows.Forms.Label QueueSpellAsteriskLabel;
+        private System.Windows.Forms.Label QueueSpellsLabel;
+        private System.Windows.Forms.CheckBox QueueSpells;
+        private System.Windows.Forms.CheckBox RandomCastLocation;
     }
 }
