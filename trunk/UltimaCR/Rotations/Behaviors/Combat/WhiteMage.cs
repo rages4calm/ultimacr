@@ -1,5 +1,4 @@
 ﻿using System.Threading.Tasks;
-using ff14bot;
 
 namespace UltimaCR.Rotations
 {

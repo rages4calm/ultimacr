@@ -1,4 +1,5 @@
 ﻿using Buddy.Coroutines;
+using Clio.Utilities;
 using ff14bot;
 using ff14bot.Enums;
 using ff14bot.Helpers;
@@ -382,11 +383,21 @@ namespace UltimaCR.Spells
                     }
                     break;
                 default:
-                    if (!Actionmanager.CanCast(ID, target))
+                    if (Ultima.UltSettings.QueueSpells)
                     {
-                        return false;
+                        if (!Actionmanager.CanCastOrQueue(DataManager.GetSpellData(ID), target))
+                        {
+                            return false;
+                        }
                     }
-                    break;
+                    else
+                    {
+                        if (!Actionmanager.CanCast(ID, target))
+                        {
+                            return false;
+                        }
+                    }
+                break;
             }
 
             if (MovementManager.IsMoving &&
@@ -536,15 +547,47 @@ namespace UltimaCR.Spells
             switch (CastType)
             {
                 case CastType.TargetLocation:
-                    if (!await Coroutine.Wait(1000, () => Actionmanager.DoActionLocation(ID, target.Location)))
+                    if (Ultima.UltSettings.RandomCastLocation)
                     {
-                        return false;
+                        var rnd = new Random();
+                        var rnddir = (target.CombatReach * 0.7 * rnd.NextDouble()) + 1;
+                        var tarloc = target.Location;
+                        var randomize = new Vector3(0f, 0f, (float)rnddir);
+                        var rndloc = randomize + tarloc;
+
+                        if (!await Coroutine.Wait(1000, () => Actionmanager.DoActionLocation(ID, rndloc)))
+                        {
+                            return false;
+                        }
+                    }
+                    else
+                    {
+                        if (!await Coroutine.Wait(1000, () => Actionmanager.DoActionLocation(ID, target.Location)))
+                        {
+                            return false;
+                        }
                     }
                     break;
                 case CastType.SelfLocation:
-                    if (!await Coroutine.Wait(1000, () => Actionmanager.DoActionLocation(ID, target.Location)))
+                    if (Ultima.UltSettings.RandomCastLocation)
                     {
-                        return false;
+                        var rnd = new Random();
+                        var rnddir = (1 * rnd.NextDouble()) + 1;
+                        var tarloc = target.Location;
+                        var randomize = new Vector3(0f, 0f, (float)rnddir);
+                        var rndloc = randomize + tarloc;
+
+                        if (!await Coroutine.Wait(1000, () => Actionmanager.DoActionLocation(ID, rndloc)))
+                        {
+                            return false;
+                        }
+                    }
+                    else
+                    {
+                        if (!await Coroutine.Wait(1000, () => Actionmanager.DoActionLocation(ID, target.Location)))
+                        {
+                            return false;
+                        }
                     }
                     break;
                 default:

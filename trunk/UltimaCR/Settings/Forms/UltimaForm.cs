@@ -231,6 +231,8 @@ namespace UltimaCR.Settings.Forms
             #endregion
 
             DefaultCRCheck.Checked = Ultima.UltSettings.DefaultCRCheck;
+            QueueSpells.Checked = Ultima.UltSettings.QueueSpells;
+            RandomCastLocation.Checked = Ultima.UltSettings.RandomCastLocation;
 
             #endregion
 
@@ -1535,6 +1537,15 @@ namespace UltimaCR.Settings.Forms
         {
             Ultima.UltSettings.DefaultCRCheck = DefaultCRCheck.Checked;
             RoutineManager.PreferedRoutine = Ultima.UltSettings.DefaultCRCheck ? "Ultima" : null;
+        }
+
+        private void QueueSpells_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.QueueSpells = QueueSpells.Checked;
+        }
+        private void RandomCastLocation_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.RandomCastLocation = RandomCastLocation.Checked;
         }
 
         #endregion

@@ -79,6 +79,12 @@ namespace UltimaCR.Settings
         [Setting, DefaultValue(true)]
         public bool DefaultCRCheck { get; set; }
 
+        [Setting, DefaultValue(false)]
+        public bool QueueSpells { get; set; }
+
+        [Setting, DefaultValue(false)]
+        public bool RandomCastLocation { get; set; }
+
         #endregion
 
         #region Class Settings
