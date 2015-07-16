@@ -25,6 +25,10 @@ namespace UltimaCR.Spells
 
         public static readonly Dictionary<string, DateTime> RecentSpell = new Dictionary<string, DateTime>();
 
+        readonly Random _rnd = new Random();
+
+        private int GetMultiplier() { return _rnd.NextDouble() < 0.5 ? 1 : -1; }
+
         public async Task<bool> Cast(GameObject target = null)
         {
             #region Target
@@ -290,9 +294,19 @@ namespace UltimaCR.Spells
                             break;
                     }
                 }
-                if (!Actionmanager.CanCast(ID, target))
+                if (Ultima.UltSettings.QueueSpells)
                 {
-                    return true;
+                    if (!Actionmanager.CanCastOrQueue(DataManager.GetSpellData(ID), target))
+                    {
+                        return true;
+                    }
+                }
+                else
+                {
+                    if (!Actionmanager.CanCast(ID, target))
+                    {
+                        return true;
+                    }
                 }
                 if (!await Coroutine.Wait(1000, () => Actionmanager.DoAction(ID, target)))
                 {
@@ -549,11 +563,11 @@ namespace UltimaCR.Spells
                 case CastType.TargetLocation:
                     if (Ultima.UltSettings.RandomCastLocation)
                     {
-                        var rnd = new Random();
-                        var rnddir = (target.CombatReach * 0.7 * rnd.NextDouble()) + 1;
+                        var rndx = (target.CombatReach * _rnd.NextDouble() * GetMultiplier());
+                        var rndz = (target.CombatReach * _rnd.NextDouble() * GetMultiplier());
+                        var rndxz = new Vector3((float)rndx, 0f, (float)rndz);
                         var tarloc = target.Location;
-                        var randomize = new Vector3(0f, 0f, (float)rnddir);
-                        var rndloc = randomize + tarloc;
+                        var rndloc = tarloc + rndxz;
 
                         if (!await Coroutine.Wait(1000, () => Actionmanager.DoActionLocation(ID, rndloc)))
                         {
@@ -571,11 +585,11 @@ namespace UltimaCR.Spells
                 case CastType.SelfLocation:
                     if (Ultima.UltSettings.RandomCastLocation)
                     {
-                        var rnd = new Random();
-                        var rnddir = (1 * rnd.NextDouble()) + 1;
+                        var rndx = ((1f * _rnd.NextDouble() + 1f) * GetMultiplier());
+                        var rndz = ((1f * _rnd.NextDouble() + 1f) * GetMultiplier());
+                        var rndxz = new Vector3((float)rndx, 0f, (float)rndz);
                         var tarloc = target.Location;
-                        var randomize = new Vector3(0f, 0f, (float)rnddir);
-                        var rndloc = randomize + tarloc;
+                        var rndloc = tarloc + rndxz;
 
                         if (!await Coroutine.Wait(1000, () => Actionmanager.DoActionLocation(ID, rndloc)))
                         {
