@@ -29,9 +29,9 @@ namespace UltimaCR.Rotations
             if (!Core.Player.HasAura(155))
             {
                 var target = Helpers.HealManager.FirstOrDefault(hm =>
-                    hm.IsHealer() && hm.CurrentHealthPercent <= 75 ||
-                    hm.IsDPS() && hm.CurrentHealthPercent <= 80 ||
-                    hm.IsTank() && hm.CurrentHealthPercent <= 85);
+                    hm.IsHealer() && hm.CurrentHealthPercent <= 70 ||
+                    hm.IsDPS() && hm.CurrentHealthPercent <= 75 ||
+                    hm.IsTank() && hm.CurrentHealthPercent <= 80);
 
                 if (target != null)
                 {
@@ -74,9 +74,9 @@ namespace UltimaCR.Rotations
         {
             if (Helpers.HealManager.Count(hm =>
                 hm.Distance2D(Core.Player) - hm.CombatReach - Core.Player.CombatReach <= 15 &&
-                (hm.IsHealer() && hm.CurrentHealthPercent <= 60 ||
-                hm.IsDPS() && hm.CurrentHealthPercent <= 65 ||
-                hm.IsTank() && hm.CurrentHealthPercent <= 70)) > 2)
+                (hm.IsHealer() && hm.CurrentHealthPercent <= 55 ||
+                hm.IsDPS() && hm.CurrentHealthPercent <= 60 ||
+                hm.IsTank() && hm.CurrentHealthPercent <= 65)) > 2)
             {
                 return await MySpells.Medica.Cast();
             }
@@ -137,9 +137,9 @@ namespace UltimaCR.Rotations
         private async Task<bool> CureII()
         {
             var target = Helpers.HealManager.FirstOrDefault(hm =>
-                hm.IsHealer() && hm.CurrentHealthPercent <= 60 ||
-                hm.IsDPS() && hm.CurrentHealthPercent <= 65 ||
-                hm.IsTank() && hm.CurrentHealthPercent <= 70);
+                hm.IsHealer() && hm.CurrentHealthPercent <= 55 ||
+                hm.IsDPS() && hm.CurrentHealthPercent <= 60 ||
+                hm.IsTank() && hm.CurrentHealthPercent <= 65);
 
             if (target != null)
             {
@@ -179,9 +179,9 @@ namespace UltimaCR.Rotations
             var target = Helpers.HealManager.FirstOrDefault(pm1 =>
                 Helpers.HealManager.Count(pm2 =>
                     pm1.Distance2D(pm2) - pm1.CombatReach - pm2.CombatReach <= 4 &&
-                    (pm2.IsHealer() && pm2.CurrentHealthPercent <= 60 ||
-                    pm2.IsDPS() && pm2.CurrentHealthPercent <= 65 ||
-                    pm2.IsTank() && pm2.CurrentHealthPercent <= 70)) > 2);
+                    (pm2.IsHealer() && pm2.CurrentHealthPercent <= 55 ||
+                    pm2.IsDPS() && pm2.CurrentHealthPercent <= 60 ||
+                    pm2.IsTank() && pm2.CurrentHealthPercent <= 65)) > 2);
 
             if (target != null)
             {
@@ -203,9 +203,9 @@ namespace UltimaCR.Rotations
         {
             if (Helpers.HealManager.Count(hm =>
                 hm.Distance2D(Core.Player) - hm.CombatReach - Core.Player.CombatReach <= 25 &&
-                (hm.IsHealer() && hm.CurrentHealthPercent <= 60 ||
-                hm.IsDPS() && hm.CurrentHealthPercent <= 65 ||
-                hm.IsTank() && hm.CurrentHealthPercent <= 70)) > 2)
+                (hm.IsHealer() && hm.CurrentHealthPercent <= 55 ||
+                hm.IsDPS() && hm.CurrentHealthPercent <= 60 ||
+                hm.IsTank() && hm.CurrentHealthPercent <= 65)) > 2)
             {
                 return await MySpells.MedicaII.Cast();
             }

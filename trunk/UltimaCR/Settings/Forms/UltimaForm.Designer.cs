@@ -1031,11 +1031,11 @@
             this.QueueSpellsLabel.AutoSize = true;
             this.QueueSpellsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.QueueSpellsLabel.ForeColor = System.Drawing.Color.Red;
-            this.QueueSpellsLabel.Location = new System.Drawing.Point(459, 93);
+            this.QueueSpellsLabel.Location = new System.Drawing.Point(456, 94);
             this.QueueSpellsLabel.Name = "QueueSpellsLabel";
-            this.QueueSpellsLabel.Size = new System.Drawing.Size(220, 13);
+            this.QueueSpellsLabel.Size = new System.Drawing.Size(224, 13);
             this.QueueSpellsLabel.TabIndex = 15;
-            this.QueueSpellsLabel.Text = "***WARNING: Locks Out Player Input";
+            this.QueueSpellsLabel.Text = "*** WARNING: Locks Out Player Input";
             // 
             // UltimaGroup
             // 
@@ -1044,9 +1044,9 @@
             this.UltimaGroup.Controls.Add(this.QueueSpells);
             this.UltimaGroup.Controls.Add(this.DefaultCRCheck);
             this.UltimaGroup.ForeColor = System.Drawing.Color.White;
-            this.UltimaGroup.Location = new System.Drawing.Point(520, 2);
+            this.UltimaGroup.Location = new System.Drawing.Point(501, 3);
             this.UltimaGroup.Name = "UltimaGroup";
-            this.UltimaGroup.Size = new System.Drawing.Size(159, 88);
+            this.UltimaGroup.Size = new System.Drawing.Size(160, 88);
             this.UltimaGroup.TabIndex = 9;
             this.UltimaGroup.TabStop = false;
             this.UltimaGroup.Text = "Ultima";
@@ -1068,7 +1068,7 @@
             this.QueueSpellAsteriskLabel.AutoSize = true;
             this.QueueSpellAsteriskLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.QueueSpellAsteriskLabel.ForeColor = System.Drawing.Color.Red;
-            this.QueueSpellAsteriskLabel.Location = new System.Drawing.Point(87, 42);
+            this.QueueSpellAsteriskLabel.Location = new System.Drawing.Point(92, 42);
             this.QueueSpellAsteriskLabel.Name = "QueueSpellAsteriskLabel";
             this.QueueSpellAsteriskLabel.Size = new System.Drawing.Size(22, 13);
             this.QueueSpellAsteriskLabel.TabIndex = 15;
