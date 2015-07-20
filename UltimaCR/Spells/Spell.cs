@@ -422,7 +422,8 @@ namespace UltimaCR.Spells
 
             #region InView Check
 
-            if (CastType == CastType.Target &&
+            if (GameSettingsManager.FaceTargetOnAction == false &&
+                CastType == CastType.Target &&
                 SpellType != SpellType.Heal &&
                 SpellType != SpellType.Defensive &&
                 !Helpers.InView(Core.Player.Location, Core.Player.Heading, target.Location))
