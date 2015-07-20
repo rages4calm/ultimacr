@@ -1,4 +1,5 @@
-﻿using ff14bot;
+﻿using Buddy.Coroutines;
+using ff14bot;
 using ff14bot.Managers;
 using System.Threading.Tasks;
 using UltimaCR.Spells.Main;
@@ -24,7 +25,7 @@ namespace UltimaCR.Rotations
         private async Task<bool> StraightShot()
         {
             if (Core.Player.HasAura("Straighter Shot") ||
-                !Core.Player.HasAura(MySpells.StraightShot.Name))
+                !Core.Player.HasAura(MySpells.StraightShot.Name, true, 4000))
             {
                 return await MySpells.StraightShot.Cast();
             }
@@ -109,7 +110,8 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Barrage()
         {
-            if (Actionmanager.CanCast(MySpells.EmpyrealArrow.Name, Core.Player.CurrentTarget))
+            if (!Actionmanager.HasSpell(MySpells.EmpyrealArrow.Name) &&
+                DataManager.GetSpellData(97).Cooldown.TotalMilliseconds <= 1000)
             {
                 return await MySpells.Barrage.Cast();
             }
@@ -127,7 +129,11 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> FlamingArrow()
         {
-            return await MySpells.FlamingArrow.Cast();
+            if (Ultima.UltSettings.BardFlamingArrow)
+            {
+                return await MySpells.FlamingArrow.Cast();
+            }
+            return false;
         }
 
         private async Task<bool> WideVolley()
@@ -143,7 +149,8 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> Feint()
         {
-            if (Ultima.UltSettings.BardFeint)
+            if (Ultima.UltSettings.BardFeint &&
+                MovementManager.IsMoving)
             {
                 return await MySpells.CrossClass.Feint.Cast();
             }
@@ -276,7 +283,22 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> EmpyrealArrow()
         {
-            return await MySpells.EmpyrealArrow.Cast();
+            if (Core.Player.HasAura(MySpells.StraightShot.Name, true, 4000) &&
+                Core.Player.CurrentTarget.HasAura(MySpells.VenomousBite.Name, true, 4000) &&
+                Core.Player.CurrentTarget.HasAura(MySpells.Windbite.Name, true, 4000))
+            {
+                if (Actionmanager.CanCast(MySpells.EmpyrealArrow.Name, Core.Player.CurrentTarget))
+                {
+                    if (await MySpells.Barrage.Cast())
+                    {
+                        await
+                            Coroutine.Wait(3000,
+                                () => Actionmanager.CanCast(MySpells.EmpyrealArrow.Name, Core.Player.CurrentTarget));
+                    }
+                }
+                return await MySpells.EmpyrealArrow.Cast();
+            }
+            return false;
         }
 
         private async Task<bool> IronJaws()

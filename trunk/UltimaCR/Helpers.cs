@@ -41,7 +41,7 @@ namespace UltimaCR
             return auras.Any(aura => aura.TimespanLeft.TotalMilliseconds >= msLeft);
         }
 
-        public static bool InsideCone(Vector3 PlayerLocation, float PlayerHeading, Vector3 TargetLocation)
+        public static bool InView(Vector3 PlayerLocation, float PlayerHeading, Vector3 TargetLocation)
         {
             var d = Math.Abs(MathEx.NormalizeRadian(PlayerHeading
                 - MathEx.NormalizeRadian(MathHelper.CalculateHeading(PlayerLocation, TargetLocation)

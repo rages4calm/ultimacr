@@ -71,8 +71,8 @@ namespace UltimaCR.Spells
             if (Core.Player.CurrentJob == ClassJobType.Bard &&
                 SpellType == SpellType.Buff)
             {
-                if (Core.Player.HasAura(114, true) ||
-                    Core.Player.HasAura(116, true))
+                if (Core.Player.HasAura(135, true) ||
+                    Core.Player.HasAura(137, true))
                 {
                     return false;
                 }
@@ -160,25 +160,23 @@ namespace UltimaCR.Spells
 
             }
 
-            #region Cone Check
+            //#region Cone Check
 
-            if (ID == 106 || ID == 41 || ID == 70)
-            {
-                if (Core.Player.Distance2D(target) - target.CombatReach - Core.Player.CombatReach > DataManager.GetSpellData(ID).Range ||
-                    !Helpers.InsideCone(Core.Player.Location, Core.Player.Heading, target.Location))
-                {
-                    return false;
-                }
-            }
+            //if (ID == 106 || ID == 41 || ID == 70)
+            //{
+            //    if (!Helpers.InsideCone(Core.Player.Location, Core.Player.Heading, target.Location))
+            //    {
+            //        return false;
+            //    }
+            //}
 
-            #endregion
+            //#endregion
 
             #region Rectangle Check
 
             if (ID == 86)
             {
-                if (Core.Player.Distance2D(target) - target.CombatReach - Core.Player.CombatReach > DataManager.GetSpellData(ID).Range ||
-                    !Core.Player.IsFacing(target))
+                if (!Core.Player.IsFacing(target))
                 {
                     return false;
                 }
@@ -356,21 +354,17 @@ namespace UltimaCR.Spells
                         target.Face();
                         return false;
                     case SpellRangeCheck.Success:
-                        if (MovementManager.IsMoving)
+                        if (CastType == CastType.TargetLocation &&
+                            Core.Player.Distance2D(target) + Core.Player.CombatReach + target.CombatReach > DataManager.GetSpellData(ID).Range)
                         {
-                            Navigator.PlayerMover.MoveStop();
+                            Navigator.MoveTo(target.Location);
+                            await Coroutine.Wait(1000, () => Core.Player.Distance2D(target) + Core.Player.CombatReach + target.CombatReach <= DataManager.GetSpellData(ID).Range);
+                            return false;
                         }
+                        Navigator.PlayerMover.MoveStop();
                         break;
                 }
 
-                if (CastType == CastType.TargetLocation &&
-                    Actionmanager.InSpellInRangeLOS(ID, target.Location) == SpellRangeCheck.ErrorNotInRange)
-                {
-                    Navigator.MoveTo(target.Location);
-                    await Coroutine.Wait(3000, () => Actionmanager.InSpellInRangeLOS(ID, target.Location) != SpellRangeCheck.ErrorNotInRange);
-                    return false;
-                }
-                
                 if (!MovementManager.IsMoving &&
                     Core.Player.IsMounted)
                 {
@@ -426,6 +420,18 @@ namespace UltimaCR.Spells
 
             #endregion
 
+            #region InView Check
+
+            if (CastType == CastType.Target &&
+                SpellType != SpellType.Heal &&
+                SpellType != SpellType.Defensive &&
+                !Helpers.InView(Core.Player.Location, Core.Player.Heading, target.Location))
+            {
+                return false;
+            }
+
+            #endregion
+
             #region Off-GCD Check
             if (GCDType == GCDType.Off)
             {
@@ -444,7 +450,7 @@ namespace UltimaCR.Spells
                 if (Core.Player.CurrentJob == ClassJobType.Archer ||
                     Core.Player.CurrentJob == ClassJobType.Bard)
                 {
-                    if (DataManager.GetSpellData(97).Cooldown.TotalMilliseconds <= 1000)
+                    if (DataManager.GetSpellData(97).Cooldown.TotalMilliseconds <= 700)
                     {
                         return false;
                     }

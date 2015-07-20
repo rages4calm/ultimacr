@@ -131,7 +131,11 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> FlamingArrow()
         {
-            return await MySpells.FlamingArrow.Cast();
+            if (Ultima.UltSettings.ArcherFlamingArrow)
+            {
+                return await MySpells.FlamingArrow.Cast();
+            }
+            return false;
         }
 
         private async Task<bool> WideVolley()

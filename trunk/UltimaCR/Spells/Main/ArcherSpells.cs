@@ -261,7 +261,7 @@ namespace UltimaCR.Spells.Main
                                Name = "Barrage",
                                ID = 107,
                                Level = 38,
-                               GCDType = GCDType.Off,
+                               GCDType = GCDType.On,
                                SpellType = SpellType.Buff,
                                CastType = CastType.Self
                            });

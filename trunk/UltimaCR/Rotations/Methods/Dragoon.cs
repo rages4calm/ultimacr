@@ -324,10 +324,13 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> BloodOfTheDragon()
         {
-            if (Ultima.LastSpell.Name == MySpells.Disembowel.Name ||
-                Ultima.LastSpell.Name == MySpells.VorpalThrust.Name)
+            if (!Core.Player.HasAura(MySpells.BloodOfTheDragon.Name))
             {
-            return await MySpells.BloodOfTheDragon.Cast();
+                if (Ultima.LastSpell.Name == MySpells.Disembowel.Name ||
+                    Ultima.LastSpell.Name == MySpells.VorpalThrust.Name)
+                {
+                    return await MySpells.BloodOfTheDragon.Cast();
+                }
             }
             return false;
         }

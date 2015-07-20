@@ -13,6 +13,8 @@ namespace UltimaCR.Rotations
             if (await HawksEye()) return true;
             if (await BloodForBlood()) return true;
             if (await InternalRelease()) return true;
+            if (await Barrage()) return true;
+            if (await FlamingArrow()) return true;
             if (await Sidewinder()) return true;
             if (await BluntArrow()) return true;
             if (await MiserysEnd()) return true;

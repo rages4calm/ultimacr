@@ -511,7 +511,7 @@
             this.MonkFistsOfWind = new System.Windows.Forms.RadioButton();
             this.MonkCooldownGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.MonkElixirField = new System.Windows.Forms.CheckBox();
-            this.MonkForbiddenChakra = new System.Windows.Forms.CheckBox();
+            this.MonkTheForbiddenChakra = new System.Windows.Forms.CheckBox();
             this.MonkPerfectBalance = new System.Windows.Forms.CheckBox();
             this.MonkMovementGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.MonkShoulderTackle = new System.Windows.Forms.CheckBox();
@@ -734,6 +734,10 @@
             this.MachinistRagingStrikes = new System.Windows.Forms.CheckBox();
             this.MachinistHawksEye = new System.Windows.Forms.CheckBox();
             this.MachinistQuellingStrikes = new System.Windows.Forms.CheckBox();
+            this.ArcherCooldownGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.ArcherFlamingArrow = new System.Windows.Forms.CheckBox();
+            this.BardCooldownGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.BardFlamingArrow = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.UltimaBanner)).BeginInit();
             this.ClassTab.SuspendLayout();
             this.UltimaTab.SuspendLayout();
@@ -960,6 +964,8 @@
             this.MachinistCrossGroup.SuspendLayout();
             this.MachinistLancerGroup.SuspendLayout();
             this.MachinistArcherGroup.SuspendLayout();
+            this.ArcherCooldownGroup.SuspendLayout();
+            this.BardCooldownGroup.SuspendLayout();
             this.SuspendLayout();
             // 
             // CloseButton
@@ -2278,6 +2284,7 @@
             // ArcherSettings
             // 
             this.ArcherSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ArcherSettings.Controls.Add(this.ArcherCooldownGroup);
             this.ArcherSettings.Controls.Add(this.ArcherExecuteGroup);
             this.ArcherSettings.Controls.Add(this.ArcherInterruptGroup);
             this.ArcherSettings.Controls.Add(this.ArcherCrossGroup);
@@ -2839,6 +2846,7 @@
             // BardSettings
             // 
             this.BardSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BardSettings.Controls.Add(this.BardCooldownGroup);
             this.BardSettings.Controls.Add(this.BardAuraGroup);
             this.BardSettings.Controls.Add(this.BardExecuteGroup);
             this.BardSettings.Controls.Add(this.BardInterruptGroup);
@@ -7227,12 +7235,12 @@
             // MonkCooldownGroup
             // 
             this.MonkCooldownGroup.Controls.Add(this.MonkElixirField);
-            this.MonkCooldownGroup.Controls.Add(this.MonkForbiddenChakra);
+            this.MonkCooldownGroup.Controls.Add(this.MonkTheForbiddenChakra);
             this.MonkCooldownGroup.Controls.Add(this.MonkPerfectBalance);
             this.MonkCooldownGroup.ForeColor = System.Drawing.Color.White;
             this.MonkCooldownGroup.Location = new System.Drawing.Point(156, 168);
             this.MonkCooldownGroup.Name = "MonkCooldownGroup";
-            this.MonkCooldownGroup.Size = new System.Drawing.Size(122, 88);
+            this.MonkCooldownGroup.Size = new System.Drawing.Size(144, 88);
             this.MonkCooldownGroup.TabIndex = 16;
             this.MonkCooldownGroup.TabStop = false;
             this.MonkCooldownGroup.Text = "Cooldown ";
@@ -7249,17 +7257,17 @@
             this.MonkElixirField.UseVisualStyleBackColor = true;
             this.MonkElixirField.CheckedChanged += new System.EventHandler(this.MonkElixirField_CheckedChanged);
             // 
-            // MonkForbiddenChakra
+            // MonkTheForbiddenChakra
             // 
-            this.MonkForbiddenChakra.AutoSize = true;
-            this.MonkForbiddenChakra.ForeColor = System.Drawing.Color.White;
-            this.MonkForbiddenChakra.Location = new System.Drawing.Point(6, 42);
-            this.MonkForbiddenChakra.Name = "MonkForbiddenChakra";
-            this.MonkForbiddenChakra.Size = new System.Drawing.Size(110, 17);
-            this.MonkForbiddenChakra.TabIndex = 8;
-            this.MonkForbiddenChakra.Text = "Forbidden Chakra";
-            this.MonkForbiddenChakra.UseVisualStyleBackColor = true;
-            this.MonkForbiddenChakra.CheckedChanged += new System.EventHandler(this.MonkForbiddenChakra_CheckedChanged);
+            this.MonkTheForbiddenChakra.AutoSize = true;
+            this.MonkTheForbiddenChakra.ForeColor = System.Drawing.Color.White;
+            this.MonkTheForbiddenChakra.Location = new System.Drawing.Point(6, 42);
+            this.MonkTheForbiddenChakra.Name = "MonkTheForbiddenChakra";
+            this.MonkTheForbiddenChakra.Size = new System.Drawing.Size(132, 17);
+            this.MonkTheForbiddenChakra.TabIndex = 8;
+            this.MonkTheForbiddenChakra.Text = "The Forbidden Chakra";
+            this.MonkTheForbiddenChakra.UseVisualStyleBackColor = true;
+            this.MonkTheForbiddenChakra.CheckedChanged += new System.EventHandler(this.MonkTheForbiddenChakra_CheckedChanged);
             // 
             // MonkPerfectBalance
             // 
@@ -10100,6 +10108,52 @@
             this.MachinistQuellingStrikes.UseVisualStyleBackColor = true;
             this.MachinistQuellingStrikes.CheckedChanged += new System.EventHandler(this.MachinistQuellingStrikes_CheckedChanged);
             // 
+            // ArcherCooldownGroup
+            // 
+            this.ArcherCooldownGroup.Controls.Add(this.ArcherFlamingArrow);
+            this.ArcherCooldownGroup.ForeColor = System.Drawing.Color.White;
+            this.ArcherCooldownGroup.Location = new System.Drawing.Point(235, 309);
+            this.ArcherCooldownGroup.Name = "ArcherCooldownGroup";
+            this.ArcherCooldownGroup.Size = new System.Drawing.Size(104, 42);
+            this.ArcherCooldownGroup.TabIndex = 18;
+            this.ArcherCooldownGroup.TabStop = false;
+            this.ArcherCooldownGroup.Text = "Cooldown ";
+            // 
+            // ArcherFlamingArrow
+            // 
+            this.ArcherFlamingArrow.AutoSize = true;
+            this.ArcherFlamingArrow.ForeColor = System.Drawing.Color.White;
+            this.ArcherFlamingArrow.Location = new System.Drawing.Point(6, 19);
+            this.ArcherFlamingArrow.Name = "ArcherFlamingArrow";
+            this.ArcherFlamingArrow.Size = new System.Drawing.Size(92, 17);
+            this.ArcherFlamingArrow.TabIndex = 7;
+            this.ArcherFlamingArrow.Text = "Flaming Arrow";
+            this.ArcherFlamingArrow.UseVisualStyleBackColor = true;
+            this.ArcherFlamingArrow.CheckedChanged += new System.EventHandler(this.ArcherFlamingArrow_CheckedChanged);
+            // 
+            // BardCooldownGroup
+            // 
+            this.BardCooldownGroup.Controls.Add(this.BardFlamingArrow);
+            this.BardCooldownGroup.ForeColor = System.Drawing.Color.White;
+            this.BardCooldownGroup.Location = new System.Drawing.Point(34, 264);
+            this.BardCooldownGroup.Name = "BardCooldownGroup";
+            this.BardCooldownGroup.Size = new System.Drawing.Size(104, 42);
+            this.BardCooldownGroup.TabIndex = 19;
+            this.BardCooldownGroup.TabStop = false;
+            this.BardCooldownGroup.Text = "Cooldown ";
+            // 
+            // BardFlamingArrow
+            // 
+            this.BardFlamingArrow.AutoSize = true;
+            this.BardFlamingArrow.ForeColor = System.Drawing.Color.White;
+            this.BardFlamingArrow.Location = new System.Drawing.Point(6, 19);
+            this.BardFlamingArrow.Name = "BardFlamingArrow";
+            this.BardFlamingArrow.Size = new System.Drawing.Size(92, 17);
+            this.BardFlamingArrow.TabIndex = 7;
+            this.BardFlamingArrow.Text = "Flaming Arrow";
+            this.BardFlamingArrow.UseVisualStyleBackColor = true;
+            this.BardFlamingArrow.CheckedChanged += new System.EventHandler(this.BardFlamingArrow_CheckedChanged);
+            // 
             // UltimaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -10502,6 +10556,10 @@
             this.MachinistLancerGroup.PerformLayout();
             this.MachinistArcherGroup.ResumeLayout(false);
             this.MachinistArcherGroup.PerformLayout();
+            this.ArcherCooldownGroup.ResumeLayout(false);
+            this.ArcherCooldownGroup.PerformLayout();
+            this.BardCooldownGroup.ResumeLayout(false);
+            this.BardCooldownGroup.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -11203,7 +11261,7 @@
         private Design.GroupBoxDesign MonkBuffGroup;
         private System.Windows.Forms.CheckBox MonkMeditation;
         private System.Windows.Forms.CheckBox MonkElixirField;
-        private System.Windows.Forms.CheckBox MonkForbiddenChakra;
+        private System.Windows.Forms.CheckBox MonkTheForbiddenChakra;
         private Design.GroupBoxDesign BardAuraGroup;
         private System.Windows.Forms.CheckBox BardTheWanderersMinuet;
         private Design.GroupBoxDesign NinjaCooldownGroup;
@@ -11214,5 +11272,9 @@
         private System.Windows.Forms.Label QueueSpellsLabel;
         private System.Windows.Forms.CheckBox QueueSpells;
         private System.Windows.Forms.CheckBox RandomCastLocation;
+        private Design.GroupBoxDesign ArcherCooldownGroup;
+        private System.Windows.Forms.CheckBox ArcherFlamingArrow;
+        private Design.GroupBoxDesign BardCooldownGroup;
+        private System.Windows.Forms.CheckBox BardFlamingArrow;
     }
 }
