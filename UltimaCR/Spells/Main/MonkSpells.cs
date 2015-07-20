@@ -141,17 +141,17 @@ namespace UltimaCR.Spells.Main
                            });
             }
         }
-        private Spell _forbiddenchakra;
-        public Spell ForbiddenChakra
+        private Spell _theforbiddenchakra;
+        public Spell TheForbiddenChakra
         {
             get
             {
-                return _forbiddenchakra ??
-                       (_forbiddenchakra =
+                return _theforbiddenchakra ??
+                       (_theforbiddenchakra =
                            new Spell
                            {
-                               Name = "Forbidden Chakra",
-                               ID = 3547,
+                               Name = "The Forbidden Chakra",
+                               ID = 3546,
                                Level = 54,
                                GCDType = GCDType.Off,
                                SpellType = SpellType.Cooldown,

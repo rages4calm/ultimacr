@@ -386,6 +386,7 @@ namespace UltimaCR.Settings.Forms
 
             ArcherBluntArrow.Checked = Ultima.UltSettings.ArcherBluntArrow;
             ArcherMiserysEnd.Checked = Ultima.UltSettings.ArcherMiserysEnd;
+            ArcherFlamingArrow.Checked = Ultima.UltSettings.ArcherFlamingArrow;
 
             #endregion
 
@@ -976,6 +977,7 @@ namespace UltimaCR.Settings.Forms
             BardBluntArrow.Checked = Ultima.UltSettings.BardBluntArrow;
             BardMiserysEnd.Checked = Ultima.UltSettings.BardMiserysEnd;
             BardTheWanderersMinuet.Checked = Ultima.UltSettings.BardTheWanderersMinuet;
+            BardFlamingArrow.Checked = Ultima.UltSettings.BardFlamingArrow;
 
             #endregion
 
@@ -1126,7 +1128,7 @@ namespace UltimaCR.Settings.Forms
             MonkFistsOfWind.Checked = Ultima.UltSettings.MonkFistsOfWind;
             MonkFistsOfFire.Checked = Ultima.UltSettings.MonkFistsOfFire;
             MonkMeditation.Checked = Ultima.UltSettings.MonkMeditation;
-            MonkForbiddenChakra.Checked = Ultima.UltSettings.MonkForbiddenChakra;
+            MonkTheForbiddenChakra.Checked = Ultima.UltSettings.MonkTheForbiddenChakra;
             MonkElixirField.Checked = Ultima.UltSettings.MonkElixirField;
 
             #endregion
@@ -1921,6 +1923,11 @@ namespace UltimaCR.Settings.Forms
         private void ArcherMiserysEnd_CheckedChanged(object sender, EventArgs e)
         {
             Ultima.UltSettings.ArcherMiserysEnd = ArcherMiserysEnd.Checked;
+        }
+
+        private void ArcherFlamingArrow_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.ArcherFlamingArrow = ArcherFlamingArrow.Checked;
         }
 
         #endregion
@@ -3453,6 +3460,11 @@ namespace UltimaCR.Settings.Forms
             Ultima.UltSettings.BardTheWanderersMinuet = BardTheWanderersMinuet.Checked;
         }
 
+        private void BardFlamingArrow_CheckedChanged(object sender, EventArgs e)
+        {
+            Ultima.UltSettings.BardFlamingArrow = BardFlamingArrow.Checked;
+        }
+
         #endregion
 
         #region Black Mage Settings
@@ -3866,9 +3878,9 @@ namespace UltimaCR.Settings.Forms
             Ultima.UltSettings.MonkMeditation = MonkMeditation.Checked;
         }
 
-        private void MonkForbiddenChakra_CheckedChanged(object sender, EventArgs e)
+        private void MonkTheForbiddenChakra_CheckedChanged(object sender, EventArgs e)
         {
-            Ultima.UltSettings.MonkForbiddenChakra = MonkForbiddenChakra.Checked;
+            Ultima.UltSettings.MonkTheForbiddenChakra = MonkTheForbiddenChakra.Checked;
         }
 
         private void MonkElixirField_CheckedChanged(object sender, EventArgs e)

@@ -12,13 +12,12 @@ namespace UltimaCR.Rotations
                 if (await Windbite()) return true;
                 if (await VenomousBite()) return true;
                 if (await IronJaws()) return true;
-                if (await Barrage()) return true;
                 if (await EmpyrealArrow()) return true;
-                if (await FlamingArrow()) return true;
                 if (await RainOfDeath()) return true;
                 if (await QuickNock()) return true;
                 if (await WideVolley()) return true;
-                return await HeavyShot();
+                if (await HeavyShot()) return true;
+                return await Feint();
             }
             if (Ultima.UltSettings.SingleTarget)
             {
@@ -26,18 +25,17 @@ namespace UltimaCR.Rotations
                 if (await Windbite()) return true;
                 if (await VenomousBite()) return true;
                 if (await IronJaws()) return true;
-                if (await Barrage()) return true;
                 if (await EmpyrealArrow()) return true;
-                if (await FlamingArrow()) return true;
-                return await HeavyShot();
+                if (await HeavyShot()) return true;
+                return await Feint();
             }
             if (Ultima.UltSettings.MultiTarget)
             {
                 if (await StraightShot()) return true;
-                if (await FlamingArrow()) return true;
                 if (await RainOfDeath()) return true;
                 if (await QuickNock()) return true;
-                return await WideVolley();
+                if (await WideVolley()) return true;
+                return await Feint();
             }
             return false;
         }

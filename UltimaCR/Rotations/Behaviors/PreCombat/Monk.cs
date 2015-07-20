@@ -12,7 +12,8 @@ namespace UltimaCR.Rotations
                 if (await Ultima.SummonChocobo()) return true;
                 if (await FistsOfFire()) return true;
                 if (await FistsOfWind()) return true;
-                return await FistsOfEarth();
+                if (await FistsOfEarth()) return true;
+                return await Meditation();
             }
             return false;
         }

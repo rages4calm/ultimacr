@@ -318,9 +318,9 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> ForbiddenChakra()
         {
-            if (Ultima.UltSettings.MonkForbiddenChakra)
+            if (Ultima.UltSettings.MonkTheForbiddenChakra)
             {
-                return await MySpells.ForbiddenChakra.Cast();
+                return await MySpells.TheForbiddenChakra.Cast();
             }
             return false;
         }
@@ -328,7 +328,7 @@ namespace UltimaCR.Rotations
         private async Task<bool> ElixirField()
         {
             if (Ultima.UltSettings.MonkElixirField &&
-                Helpers.EnemiesNearPlayer(2) > 0)
+                Helpers.EnemiesNearPlayer(5) > 0)
             {
                 return await MySpells.ElixirField.Cast();
             }

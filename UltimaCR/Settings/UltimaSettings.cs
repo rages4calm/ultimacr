@@ -335,6 +335,9 @@ namespace UltimaCR.Settings
         [Setting, DefaultValue(true)]
         public bool ArcherMiserysEnd { get; set; }
 
+        [Setting, DefaultValue(true)]
+        public bool ArcherFlamingArrow { get; set; }
+
         #endregion
 
         #region Conjurer Settings
@@ -1363,6 +1366,9 @@ namespace UltimaCR.Settings
         [Setting, DefaultValue(true)]
         public bool BardTheWanderersMinuet { get; set; }
 
+        [Setting, DefaultValue(true)]
+        public bool BardFlamingArrow { get; set; }
+
         #endregion
 
         #region Black Mage Settings
@@ -1635,7 +1641,7 @@ namespace UltimaCR.Settings
         public bool MonkMeditation { get; set; }
 
         [Setting, DefaultValue(true)]
-        public bool MonkForbiddenChakra { get; set; }
+        public bool MonkTheForbiddenChakra { get; set; }
 
         [Setting, DefaultValue(true)]
         public bool MonkElixirField { get; set; }
