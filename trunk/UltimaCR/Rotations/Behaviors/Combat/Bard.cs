@@ -9,9 +9,9 @@ namespace UltimaCR.Rotations
             if (Ultima.UltSettings.SmartTarget)
             {
                 if (await StraightShot()) return true;
+                if (await IronJaws()) return true;
                 if (await Windbite()) return true;
                 if (await VenomousBite()) return true;
-                if (await IronJaws()) return true;
                 if (await EmpyrealArrow()) return true;
                 if (await QuickNock()) return true;
                 if (await WideVolley()) return true;
@@ -21,9 +21,9 @@ namespace UltimaCR.Rotations
             if (Ultima.UltSettings.SingleTarget)
             {
                 if (await StraightShot()) return true;
+                if (await IronJaws()) return true;
                 if (await Windbite()) return true;
                 if (await VenomousBite()) return true;
-                if (await IronJaws()) return true;
                 if (await EmpyrealArrow()) return true;
                 if (await HeavyShot()) return true;
                 return await Feint();
