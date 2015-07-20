@@ -1,5 +1,4 @@
-﻿using ff14bot;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
 namespace UltimaCR.Rotations
 {
@@ -7,11 +6,7 @@ namespace UltimaCR.Rotations
     {
         public override async Task<bool> PreCombatBuff()
         {
-            if (!Core.Player.IsMounted)
-            {
-                return await Ultima.SummonChocobo();
-            }
-            return false;
+            return await Ultima.SummonChocobo();
         }
     }
 }

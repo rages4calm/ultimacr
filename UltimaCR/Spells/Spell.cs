@@ -57,6 +57,15 @@ namespace UltimaCR.Spells
             }
             #endregion
 
+            #region IsMounted Check
+
+            if (Core.Player.IsMounted)
+            {
+                return false;
+            }
+
+            #endregion
+
             #region Recent Spell Check
             RecentSpell.RemoveAll(t => DateTime.UtcNow > t);
 
@@ -364,12 +373,6 @@ namespace UltimaCR.Spells
                         Navigator.PlayerMover.MoveStop();
                         break;
                 }
-
-                if (!MovementManager.IsMoving &&
-                    Core.Player.IsMounted)
-                {
-                    Actionmanager.Dismount();
-                }
             }
 
             #endregion
@@ -379,11 +382,6 @@ namespace UltimaCR.Spells
             switch (CastType)
             {
                 case CastType.TargetLocation:
-                    if (!Actionmanager.CanCastLocation(ID, target.Location))
-                    {
-                        return false;
-                    }
-                    break;
                 case CastType.SelfLocation:
                     if (!Actionmanager.CanCastLocation(ID, target.Location))
                     {
@@ -619,7 +617,9 @@ namespace UltimaCR.Spells
                     break;
             }
             #endregion
+
             Ultima.LastSpell = this;
+
             #region Recent Spell Add
             if (SpellType != SpellType.Damage &&
                 SpellType != SpellType.Heal &&
@@ -638,8 +638,24 @@ namespace UltimaCR.Spells
                 RecentSpell.Add(key, val);
             }
             #endregion
+
             Logging.Write(Colors.OrangeRed, @"[Ultima] Ability: " + Name);
-            await Coroutine.Wait(3000, () => !Actionmanager.CanCast(ID, target));
+
+            #region Wait For Cast Completion
+
+            switch (CastType)
+            {
+                case CastType.SelfLocation:
+                case CastType.TargetLocation:
+                    await Coroutine.Wait(3000, () => !Actionmanager.CanCastLocation(ID, target.Location));
+                    break;
+                default:
+                    await Coroutine.Wait(3000, () => !Actionmanager.CanCast(ID, target));
+                    break;
+            }
+
+            #endregion
+
             return true;
         }
     }

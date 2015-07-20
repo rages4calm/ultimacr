@@ -28,7 +28,7 @@ namespace UltimaCR
 
         public override sealed float PullRange
         {
-            get { return 2.5f; }
+            get { return 15f; }
         }
 
         public override sealed void Initialize()
