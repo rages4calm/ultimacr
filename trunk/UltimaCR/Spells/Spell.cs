@@ -355,10 +355,10 @@ namespace UltimaCR.Spells
                         return false;
                     case SpellRangeCheck.Success:
                         if (CastType == CastType.TargetLocation &&
-                            Core.Player.Distance2D(target) + Core.Player.CombatReach + target.CombatReach > DataManager.GetSpellData(ID).Range)
+                            Core.Player.Distance2D(target) + Core.Player.CombatReach + target.CombatReach > 25)
                         {
                             Navigator.MoveTo(target.Location);
-                            await Coroutine.Wait(1000, () => Core.Player.Distance2D(target) + Core.Player.CombatReach + target.CombatReach <= DataManager.GetSpellData(ID).Range);
+                            await Coroutine.Wait(1000, () => Core.Player.Distance2D(target) + Core.Player.CombatReach + target.CombatReach <= 25);
                             return false;
                         }
                         Navigator.PlayerMover.MoveStop();
