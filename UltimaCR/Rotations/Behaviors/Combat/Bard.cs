@@ -13,7 +13,6 @@ namespace UltimaCR.Rotations
                 if (await VenomousBite()) return true;
                 if (await IronJaws()) return true;
                 if (await EmpyrealArrow()) return true;
-                if (await RainOfDeath()) return true;
                 if (await QuickNock()) return true;
                 if (await WideVolley()) return true;
                 if (await HeavyShot()) return true;
@@ -32,7 +31,6 @@ namespace UltimaCR.Rotations
             if (Ultima.UltSettings.MultiTarget)
             {
                 if (await StraightShot()) return true;
-                if (await RainOfDeath()) return true;
                 if (await QuickNock()) return true;
                 if (await WideVolley()) return true;
                 return await Feint();

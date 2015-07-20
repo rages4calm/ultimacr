@@ -257,7 +257,9 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> RainOfDeath()
         {
-            if (Core.Player.HasAura("Downpour of Death"))
+            if (Ultima.UltSettings.MultiTarget ||
+                Ultima.UltSettings.SmartTarget &&
+                Helpers.EnemiesNearTarget(8) >= 3)
             {
                 return await MySpells.RainOfDeath.Cast();
             }

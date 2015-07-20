@@ -18,6 +18,7 @@ namespace UltimaCR.Rotations
             if (await Sidewinder()) return true;
             if (await BluntArrow()) return true;
             if (await MiserysEnd()) return true;
+            if (await RainOfDeath()) return true;
             return await Bloodletter();
         }
     }
