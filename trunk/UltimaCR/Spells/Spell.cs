@@ -258,6 +258,7 @@ namespace UltimaCR.Spells
                 {
                     case SpellType.Damage:
                     case SpellType.DoT:
+                    case SpellType.Movement:
                     case SpellType.Cooldown:
                     case SpellType.Interrupt:
                     case SpellType.Execute:
