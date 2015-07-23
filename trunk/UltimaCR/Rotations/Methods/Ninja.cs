@@ -356,9 +356,9 @@ namespace UltimaCR.Rotations
                         if (await MySpells.FumaShuriken.Cast())
                         {
                             await Coroutine.Wait(2000, () => !Core.Player.HasAura("Mudra"));
-                            return true;
                         }
                     }
+                    return true;
                 }
             }
             return false;
@@ -398,9 +398,9 @@ namespace UltimaCR.Rotations
                         if (await MySpells.Katon.Cast())
                         {
                             await Coroutine.Wait(2000, () => !Core.Player.HasAura("Mudra"));
-                            return true;
                         }
                     }
+                    return true;
                 }
             }
             return false;
@@ -439,9 +439,9 @@ namespace UltimaCR.Rotations
                         if (await MySpells.Raiton.Cast())
                         {
                             await Coroutine.Wait(2000, () => !Core.Player.HasAura("Mudra"));
-                            return true;
                         }
                     }
+                    return true;
                 }
             }
             return false;
@@ -478,9 +478,9 @@ namespace UltimaCR.Rotations
                     if (await MySpells.Hyoton.Cast())
                     {
                         await Coroutine.Wait(2000, () => !Core.Player.HasAura("Mudra"));
-                        return true;
                     }
                 }
+                return true;
             }
             return false;
         }
@@ -499,10 +499,10 @@ namespace UltimaCR.Rotations
                         Ultima.LastSpell.ID != MySpells.Jin.ID &&
                         Ultima.LastSpell.ID != MySpells.Ninjutsu.ID)
                     {
-                    }
-                    if (await MySpells.Chi.Cast())
-                    {
-                        await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Chi.ID, Core.Player));
+                        if (await MySpells.Chi.Cast())
+                        {
+                            await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Chi.ID, Core.Player));
+                        }
                     }
                     if (Ultima.LastSpell.ID == MySpells.Chi.ID)
                     {
@@ -523,9 +523,9 @@ namespace UltimaCR.Rotations
                         if (await MySpells.Huton.Cast())
                         {
                             await Coroutine.Wait(2000, () => !Core.Player.HasAura("Mudra"));
-                            return true;
                         }
                     }
+                    return true;
                 }
             }
             return false;
@@ -545,10 +545,10 @@ namespace UltimaCR.Rotations
                         Ultima.LastSpell.ID != MySpells.Jin.ID &&
                         Ultima.LastSpell.ID != MySpells.Ninjutsu.ID)
                     {
-                    }
-                    if (await MySpells.Ten.Cast())
-                    {
-                        await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Ten.ID, Core.Player));
+                        if (await MySpells.Ten.Cast())
+                        {
+                            await Coroutine.Wait(2000, () => Actionmanager.CanCast(MySpells.Ten.ID, Core.Player));
+                        }
                     }
                     if (Ultima.LastSpell.ID == MySpells.Ten.ID)
                     {
@@ -569,9 +569,9 @@ namespace UltimaCR.Rotations
                         if (await MySpells.Doton.Cast())
                         {
                             await Coroutine.Wait(2000, () => !Core.Player.HasAura("Mudra"));
-                            return true;
                         }
                     }
+                    return true;
                 }
             }
             return false;
@@ -617,9 +617,9 @@ namespace UltimaCR.Rotations
                     if (await MySpells.Suiton.Cast())
                     {
                         await Coroutine.Wait(2000, () => !Core.Player.HasAura("Mudra"));
-                        return true;
                     }
                 }
+                return true;
             }
             return false;
         }

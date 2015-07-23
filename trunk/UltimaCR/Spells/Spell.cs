@@ -57,15 +57,6 @@ namespace UltimaCR.Spells
             }
             #endregion
 
-            #region IsMounted Check
-
-            if (Core.Player.IsMounted)
-            {
-                return false;
-            }
-
-            #endregion
-
             #region Recent Spell Check
             RecentSpell.RemoveAll(t => DateTime.UtcNow > t);
 
@@ -202,6 +193,7 @@ namespace UltimaCR.Spells
                 {
                     return false;
                 }
+
                 if (Pet.PetMode != PetMode.Obey)
                 {
                     if (!await Coroutine.Wait(1000, () => Pet.DoAction("Obey", Core.Player)))
@@ -210,21 +202,44 @@ namespace UltimaCR.Spells
                     }
                     Logging.Write(Colors.OrangeRed, @"[Ultima] Ability: Pet Obey");
                 }
+
+                #region IsMounted Check
+
+                if (Core.Player.IsMounted)
+                {
+                    return false;
+                }
+
+                #endregion
+
+                #region CanCast
+
                 if (!Pet.CanCast(Name, target))
                 {
                     return false;
                 }
+
+                #endregion
+
+                #region DoAction
+
                 if (!await Coroutine.Wait(5000, () => Pet.DoAction(Name, target)))
                 {
                     return false;
                 }
+
+                #endregion
+
                 Ultima.LastSpell = this;
+
                 #region Recent Spell Add
                 var key = target.ObjectId.ToString("X") + "-" + Name;
                 var val = DateTime.UtcNow + DataManager.GetSpellData(Name).AdjustedCastTime + TimeSpan.FromSeconds(5);
                 RecentSpell.Add(key, val);
                 #endregion
+
                 Logging.Write(Colors.OrangeRed, @"[Ultima] Ability: " + Name);
+
                 return true;
             }
             #endregion
@@ -273,9 +288,12 @@ namespace UltimaCR.Spells
             #endregion
 
             #region Ninjutsu Exception
+
             if (SpellType == SpellType.Ninjutsu ||
                 SpellType == SpellType.Mudra)
             {
+                #region Player Movement
+
                 if (BotManager.Current.IsAutonomous)
                 {
                     switch (Actionmanager.InSpellInRangeLOS(2247, target))
@@ -302,6 +320,20 @@ namespace UltimaCR.Spells
                             break;
                     }
                 }
+
+                #endregion
+
+                #region IsMounted Check
+
+                if (Core.Player.IsMounted)
+                {
+                    return false;
+                }
+
+                #endregion
+
+                #region CanCast
+
                 if (Ultima.UltSettings.QueueSpells)
                 {
                     if (!Actionmanager.CanCastOrQueue(DataManager.GetSpellData(ID), target))
@@ -316,11 +348,20 @@ namespace UltimaCR.Spells
                         return true;
                     }
                 }
+
+                #endregion
+
+                #region DoAction
+
                 if (!await Coroutine.Wait(1000, () => Actionmanager.DoAction(ID, target)))
                 {
                     return true;
                 }
+
+                #endregion
+
                 Ultima.LastSpell = this;
+
                 #region Recent Spell Add
                 if (SpellType == SpellType.Mudra)
                 {
@@ -329,9 +370,14 @@ namespace UltimaCR.Spells
                     RecentSpell.Add(key, val);
                 }
                 #endregion
+
                 Logging.Write(Colors.OrangeRed, @"[Ultima] Ability: " + Name);
+
+                await Coroutine.Wait(2000, () => !Actionmanager.CanCast(ID, target));
+
                 return true;
             }
+
             #endregion
 
             #region HasSpell Check
@@ -374,6 +420,15 @@ namespace UltimaCR.Spells
                         Navigator.PlayerMover.MoveStop();
                         break;
                 }
+            }
+
+            #endregion
+
+            #region IsMounted Check
+
+            if (Core.Player.IsMounted)
+            {
+                return false;
             }
 
             #endregion

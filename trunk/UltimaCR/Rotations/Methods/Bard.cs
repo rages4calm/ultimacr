@@ -308,8 +308,8 @@ namespace UltimaCR.Rotations
             if (Core.Player.CurrentTarget.HasAura(MySpells.VenomousBite.Name, true) &&
                 Core.Player.CurrentTarget.HasAura(MySpells.Windbite.Name, true))
             {
-                if (!Core.Player.CurrentTarget.HasAura(MySpells.VenomousBite.Name, true, 4000) ||
-                    !Core.Player.CurrentTarget.HasAura(MySpells.Windbite.Name, true, 4000))
+                if (!Core.Player.CurrentTarget.HasAura(MySpells.VenomousBite.Name, true, 5000) ||
+                    !Core.Player.CurrentTarget.HasAura(MySpells.Windbite.Name, true, 5000))
                 {
                     return await MySpells.IronJaws.Cast();
                 }
