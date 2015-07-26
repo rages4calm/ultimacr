@@ -506,7 +506,8 @@ namespace UltimaCR.Rotations
                     !Actionmanager.HasSpell(MySpells.ArmorCrush.Name) &&
                     !Core.Player.HasAura(MySpells.Huton.Name, true, 20000) &&
                     DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds <= 1500 &&
-                    DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds >= 500)
+                    DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds >= 500 ||
+                    Core.Player.HasAura("Mudra"))
                 {
                     if (Ultima.LastSpell.ID != MySpells.Ten.ID &&
                         Ultima.LastSpell.ID != MySpells.Chi.ID &&
@@ -550,7 +551,8 @@ namespace UltimaCR.Rotations
             if (Actionmanager.CanCast(MySpells.Jin.ID, Core.Player) &&
                 DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds <= 1500 &&
                 DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds >= 500 &&
-                Core.Player.HasAura(MySpells.Kassatsu.Name))
+                Core.Player.HasAura(MySpells.Kassatsu.Name) ||
+                Core.Player.HasAura("Mudra"))
             {
                 if (Helpers.EnemiesNearPlayer(5) > 2 ||
                     Ultima.UltSettings.MultiTarget)
@@ -601,7 +603,8 @@ namespace UltimaCR.Rotations
                 Core.Player.TargetDistance(15, false) &&
                 Core.Player.CurrentTarget.CanAttack &&
                 !Core.Player.CurrentTarget.HasAura(MySpells.TrickAttack.Name, true, 3000) &&
-                !Core.Player.CurrentTarget.HasAura(MySpells.TrickAttack.Name, false, 3000))
+                !Core.Player.CurrentTarget.HasAura(MySpells.TrickAttack.Name, false, 3000) ||
+                Core.Player.HasAura("Mudra"))
             {
                 if (Ultima.LastSpell.ID != MySpells.Ten.ID &&
                     Ultima.LastSpell.ID != MySpells.Chi.ID &&
