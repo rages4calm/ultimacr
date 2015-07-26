@@ -327,7 +327,7 @@ namespace UltimaCR.Spells
 
                 if (Core.Player.IsMounted)
                 {
-                    return false;
+                    return true;
                 }
 
                 #endregion
@@ -353,7 +353,7 @@ namespace UltimaCR.Spells
 
                 #region DoAction
 
-                if (!await Coroutine.Wait(1000, () => Actionmanager.DoAction(ID, target)))
+                if (!await Coroutine.Wait(2000, () => Actionmanager.DoAction(ID, target)))
                 {
                     return true;
                 }
@@ -419,6 +419,13 @@ namespace UltimaCR.Spells
                         }
                         Navigator.PlayerMover.MoveStop();
                         break;
+                }
+
+                if (Core.Player.HasTarget &&
+                    !MovementManager.IsMoving &&
+                    Core.Player.IsMounted)
+                {
+                    Actionmanager.Dismount();
                 }
             }
 
