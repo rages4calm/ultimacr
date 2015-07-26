@@ -1,4 +1,6 @@
-﻿using Buddy.Coroutines;
+﻿using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using Buddy.Coroutines;
 using ff14bot;
 using ff14bot.AClasses;
 using ff14bot.Enums;
@@ -298,10 +300,9 @@ namespace UltimaCR
         {
             if (UltSettings.SummonChocobo &&
                 BotManager.Current.IsAutonomous &&
-                !PartyManager.IsInParty &&
                 !MovementManager.IsMoving &&
-                !Chocobo.Summoned &&
-                Chocobo.CanSummon)
+                Chocobo.CanSummon &&
+                Helpers.PartyMembers.All(c => c.SummonerObjectId != Core.Player.ObjectId))
             {
                 Chocobo.Summon();
                 await Coroutine.Wait(1000, () => Chocobo.Summoned);
@@ -315,7 +316,7 @@ namespace UltimaCR
                         Chocobo.Stance != CompanionStance.Free)
                     {
                         Chocobo.FreeStance();
-                        await Coroutine.Wait(1000, () => Chocobo.Stance == CompanionStance.Free);
+                        await Coroutine.Wait(2000, () => Chocobo.Stance == CompanionStance.Free);
                         return true;
                     }
 
@@ -323,7 +324,7 @@ namespace UltimaCR
                         Chocobo.Stance != CompanionStance.Defender)
                     {
                         Chocobo.DefenderStance();
-                        await Coroutine.Wait(1000, () => Chocobo.Stance == CompanionStance.Defender);
+                        await Coroutine.Wait(2000, () => Chocobo.Stance == CompanionStance.Defender);
                         return true;
                     }
 
@@ -331,7 +332,7 @@ namespace UltimaCR
                         Chocobo.Stance != CompanionStance.Attacker)
                     {
                         Chocobo.AttackerStance();
-                        await Coroutine.Wait(1000, () => Chocobo.Stance == CompanionStance.Attacker);
+                        await Coroutine.Wait(2000, () => Chocobo.Stance == CompanionStance.Attacker);
                         return true;
                     }
 
@@ -339,7 +340,7 @@ namespace UltimaCR
                         Chocobo.Stance != CompanionStance.Healer)
                     {
                         Chocobo.HealerStance();
-                        await Coroutine.Wait(1000, () => Chocobo.Stance == CompanionStance.Healer);
+                        await Coroutine.Wait(2000, () => Chocobo.Stance == CompanionStance.Healer);
                         return true;
                     }
                 }

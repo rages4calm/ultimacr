@@ -12,6 +12,7 @@ namespace UltimaCR.Rotations
                 if (await Doton()) return true;
                 if (await Suiton()) return true;
                 if (await TrickAttack()) return true;
+                if (await SneakAttack()) return true;
                 if (await Kassatsu()) return true;
                 if (await Katon()) return true;
                 if (await Raiton()) return true;
@@ -39,6 +40,7 @@ namespace UltimaCR.Rotations
                 if (await Huton()) return true;
                 if (await Suiton()) return true;
                 if (await TrickAttack()) return true;
+                if (await SneakAttack()) return true;
                 if (await Kassatsu()) return true;
                 if (await Raiton()) return true;
                 if (await FumaShuriken()) return true;
