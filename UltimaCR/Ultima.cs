@@ -1,5 +1,4 @@
 ﻿using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using Buddy.Coroutines;
 using ff14bot;
 using ff14bot.AClasses;

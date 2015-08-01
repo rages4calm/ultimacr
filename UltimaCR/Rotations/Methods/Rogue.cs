@@ -141,8 +141,7 @@ namespace UltimaCR.Rotations
         {
             if (Ultima.UltSettings.RogueDancingEdge)
             {
-                if (!Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, true, 6000) &&
-                    !Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, false, 6000) &&
+                if (!Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, false, 6000) &&
                     !Core.Player.CurrentTarget.HasAura("Storm's Eye", false, 6000) &&
                     Actionmanager.LastSpell.Name == MySpells.GustSlash.Name)
                 {
@@ -159,8 +158,7 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> ShadowFang()
         {
-            if (Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, true, 6000) ||
-                Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, false, 6000) ||
+            if (Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, false, 6000) ||
                 Core.Player.CurrentTarget.HasAura("Storm's Eye", false, 6000) ||
                 !Ultima.UltSettings.RogueDancingEdge)
             {

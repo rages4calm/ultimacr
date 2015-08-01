@@ -143,7 +143,6 @@ namespace UltimaCR.Rotations
                     Core.Player.TargetDistance(3, false) &&
                     Core.Player.CurrentManaPercent >= 50 &&
                     (!Actionmanager.HasSpell(MySpells.Delirium.Name) ||
-                    Core.Player.CurrentTarget.HasAura(MySpells.Delirium.Name, true, 4000) ||
                     Core.Player.CurrentTarget.HasAura(MySpells.Delirium.Name, false, 4000) ||
                     Core.Player.CurrentTarget.HasAura("Dragon Kick")))
                 {
@@ -182,7 +181,6 @@ namespace UltimaCR.Rotations
             if (Ultima.UltSettings.DarkKnightDelirium &&
                 Actionmanager.LastSpell.Name == MySpells.SyphonStrike.Name &&
                 !Core.Player.HasAura(MySpells.DarkArts.Name) &&
-                !Core.Player.CurrentTarget.HasAura(MySpells.Delirium.Name, true, 4000) &&
                 !Core.Player.CurrentTarget.HasAura(MySpells.Delirium.Name, false, 4000) &&
                 !Core.Player.CurrentTarget.HasAura("Dragon Kick"))
             {

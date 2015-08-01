@@ -87,77 +87,91 @@ namespace UltimaCR.Spells
             {
                 var EnemyCount = Helpers.EnemyUnit.Count(eu => eu.Distance2D(target) - eu.CombatReach - target.CombatReach <= DataManager.GetSpellData(ID).Radius);
 
-                if (Core.Player.CurrentJob == ClassJobType.Arcanist ||
-                    Core.Player.CurrentJob == ClassJobType.Scholar ||
-                    Core.Player.CurrentJob == ClassJobType.Summoner)
+                switch (Core.Player.CurrentJob)
                 {
-                    if (EnemyCount < 2)
-                    {
-                        return false;
-                    }
+                    case ClassJobType.Arcanist:
+                    case ClassJobType.Scholar:
+                    case ClassJobType.Summoner:
+                        if (EnemyCount < 2)
+                        {
+                            return false;
+                        }
+                        break;
+                    case ClassJobType.Archer:
+                    case ClassJobType.Bard:
+                        if (EnemyCount < 3)
+                        {
+                            return false;
+                        }
+                        break;
+                    case ClassJobType.Astrologian:
+                        if (EnemyCount < 3)
+                        {
+                            return false;
+                        }
+                        break;
+                    case ClassJobType.Conjurer:
+                    case ClassJobType.WhiteMage:
+                        if (EnemyCount < 3)
+                        {
+                            return false;
+                        }
+                        break;
+                    case ClassJobType.DarkKnight:
+                        if (EnemyCount < 3)
+                        {
+                            return false;
+                        }
+                        break;
+                    case ClassJobType.Gladiator:
+                    case ClassJobType.Paladin:
+                        if (EnemyCount < 3)
+                        {
+                            return false;
+                        }
+                        break;
+                    case ClassJobType.Lancer:
+                    case ClassJobType.Dragoon:
+                        if (EnemyCount < 3)
+                        {
+                            return false;
+                        }
+                        break;
+                    case ClassJobType.Machinist:
+                        if (EnemyCount < 3)
+                        {
+                            return false;
+                        }
+                        break;
+                    case ClassJobType.Marauder:
+                    case ClassJobType.Warrior:
+                        if (EnemyCount < 3)
+                        {
+                            return false;
+                        }
+                        break;
+                    case ClassJobType.Pugilist:
+                    case ClassJobType.Monk:
+                        if (EnemyCount < 3)
+                        {
+                            return false;
+                        }
+                        break;
+                    case ClassJobType.Rogue:
+                    case ClassJobType.Ninja:
+                        if (EnemyCount < 3)
+                        {
+                            return false;
+                        }
+                        break;
+                    case ClassJobType.Thaumaturge:
+                    case ClassJobType.BlackMage:
+                        if (EnemyCount < 3)
+                        {
+                            return false;
+                        }
+                        break;
                 }
-                if (Core.Player.CurrentJob == ClassJobType.Archer ||
-                    Core.Player.CurrentJob == ClassJobType.Bard)
-                {
-                    if (EnemyCount < 3)
-                    {
-                        return false;
-                    }
-                }
-                if (Core.Player.CurrentJob == ClassJobType.Lancer ||
-                    Core.Player.CurrentJob == ClassJobType.Dragoon)
-                {
-                    if (EnemyCount < 3)
-                    {
-                        return false;
-                    }
-                }
-                if (Core.Player.CurrentJob == ClassJobType.Pugilist ||
-                    Core.Player.CurrentJob == ClassJobType.Monk)
-                {
-                    if (EnemyCount < 3)
-                    {
-                        return false;
-                    }
-                }
-                if (Core.Player.CurrentJob == ClassJobType.Rogue ||
-                    Core.Player.CurrentJob == ClassJobType.Ninja)
-                {
-                    if (EnemyCount < 3)
-                    {
-                        return false;
-                    }
-                }
-                if (Core.Player.CurrentJob == ClassJobType.Thaumaturge ||
-                    Core.Player.CurrentJob == ClassJobType.BlackMage)
-                {
-                    if (EnemyCount < 3)
-                    {
-                        return false;
-                    }
-                }
-                if (Core.Player.CurrentJob == ClassJobType.Astrologian)
-                {
-                    if (EnemyCount < 3)
-                    {
-                        return false;
-                    }
-                }
-                if (Core.Player.CurrentJob == ClassJobType.DarkKnight)
-                {
-                    if (EnemyCount < 3)
-                    {
-                        return false;
-                    }
-                }
-                if (Core.Player.CurrentJob == ClassJobType.Machinist)
-                {
-                    if (EnemyCount < 3)
-                    {
-                        return false;
-                    }
-                }
-
             }
 
             //#region Cone Check
@@ -300,18 +314,18 @@ namespace UltimaCR.Spells
                     {
                         case SpellRangeCheck.ErrorNotInLineOfSight:
                             Navigator.MoveTo(target.Location);
-                            return true;
+                            return false;
                         case SpellRangeCheck.ErrorNotInRange:
                             Navigator.MoveTo(target.Location);
-                            return true;
+                            return false;
                         case SpellRangeCheck.ErrorNotInFront:
                             if (!target.InLineOfSight())
                             {
                                 Navigator.MoveTo(target.Location);
-                                return true;
+                                return false;
                             }
                             target.Face();
-                            return true;
+                            return false;
                         case SpellRangeCheck.Success:
                             if (MovementManager.IsMoving)
                             {
@@ -327,7 +341,7 @@ namespace UltimaCR.Spells
 
                 if (Core.Player.IsMounted)
                 {
-                    return true;
+                    return false;
                 }
 
                 #endregion
@@ -338,42 +352,58 @@ namespace UltimaCR.Spells
                 {
                     if (!Actionmanager.CanCastOrQueue(DataManager.GetSpellData(ID), target))
                     {
-                        return true;
+                        return false;
                     }
                 }
                 else
                 {
                     if (!Actionmanager.CanCast(ID, target))
                     {
-                        return true;
+                        return false;
                     }
+                }
+
+                #endregion
+
+                #region Wait For Animation
+
+                if (Ultima.LastSpell.SpellType != SpellType.Ninjutsu &&
+                Ultima.LastSpell.SpellType != SpellType.Mudra)
+                {
+                    await Coroutine.Sleep(1000);
                 }
 
                 #endregion
 
                 #region DoAction
 
-                if (!await Coroutine.Wait(2000, () => Actionmanager.DoAction(ID, target)))
+                if (!await Coroutine.Wait(1000, () => Actionmanager.DoAction(ID, target)))
                 {
-                    return true;
+                    return false;
                 }
+
+                #endregion
+
+                #region Wait For Cast Completion
+
+                await Coroutine.Wait(2000, () => !Actionmanager.CanCast(ID, target));
 
                 #endregion
 
                 Ultima.LastSpell = this;
 
                 #region Recent Spell Add
+
                 if (SpellType == SpellType.Mudra)
                 {
                     var key = target.ObjectId.ToString("X") + "-" + Name;
-                    var val = DateTime.UtcNow + DataManager.GetSpellData(ID).AdjustedCastTime + TimeSpan.FromSeconds(6);
+                    var val = DateTime.UtcNow + DataManager.GetSpellData(ID).AdjustedCastTime + TimeSpan.FromSeconds(1);
                     RecentSpell.Add(key, val);
                 }
+
                 #endregion
 
                 Logging.Write(Colors.OrangeRed, @"[Ultima] Ability: " + Name);
-
-                await Coroutine.Wait(2000, () => !Actionmanager.CanCast(ID, target));
 
                 return true;
             }
@@ -425,7 +455,9 @@ namespace UltimaCR.Spells
                     !MovementManager.IsMoving &&
                     Core.Player.IsMounted)
                 {
+                    Logging.Write(Colors.Yellow, @"[Ultima] Dismounting...");
                     Actionmanager.Dismount();
+                    await Coroutine.Sleep(1000);
                 }
             }
 
@@ -497,102 +529,92 @@ namespace UltimaCR.Spells
             #region Off-GCD Check
             if (GCDType == GCDType.Off)
             {
-
-                if (Core.Player.CurrentJob == ClassJobType.Arcanist ||
-                    Core.Player.CurrentJob == ClassJobType.Scholar ||
-                    Core.Player.CurrentJob == ClassJobType.Summoner)
+                switch (Core.Player.CurrentJob)
                 {
+                    case ClassJobType.Arcanist:
+                    case ClassJobType.Scholar:
+                    case ClassJobType.Summoner:
                     if (Core.Player.ClassLevel >= 38 &&
                         Core.Player.CurrentManaPercent > 40 &&
                         DataManager.GetSpellData(163).Cooldown.TotalMilliseconds <= 1000)
                     {
                         return false;
                     }
-                }
-                if (Core.Player.CurrentJob == ClassJobType.Archer ||
-                    Core.Player.CurrentJob == ClassJobType.Bard)
-                {
+                    break;
+                    case ClassJobType.Archer:
+                    case ClassJobType.Bard:
                     if (DataManager.GetSpellData(97).Cooldown.TotalMilliseconds <= 700)
                     {
                         return false;
                     }
-                }
-                if (Core.Player.CurrentJob == ClassJobType.Conjurer ||
-                    Core.Player.CurrentJob == ClassJobType.WhiteMage)
-                {
-                    if (DataManager.GetSpellData(119).Cooldown.TotalMilliseconds <= 1000)
-                    {
-                        return false;
-                    }
-                }
-                if (Core.Player.CurrentJob == ClassJobType.Gladiator ||
-                    Core.Player.CurrentJob == ClassJobType.Paladin)
-                {
-                    if (DataManager.GetSpellData(9).Cooldown.TotalMilliseconds <= 1000)
-                    {
-                        return false;
-                    }
-                }
-                if (Core.Player.CurrentJob == ClassJobType.Lancer ||
-                    Core.Player.CurrentJob == ClassJobType.Dragoon)
-                {
-                    if (DataManager.GetSpellData(75).Cooldown.TotalMilliseconds <= 1000)
-                    {
-                        return false;
-                    }
-                }
-                if (Core.Player.CurrentJob == ClassJobType.Marauder ||
-                    Core.Player.CurrentJob == ClassJobType.Warrior)
-                {
-                    if (DataManager.GetSpellData(31).Cooldown.TotalMilliseconds <= 1000)
-                    {
-                        return false;
-                    }
-                }
-                if (Core.Player.CurrentJob == ClassJobType.Pugilist ||
-                    Core.Player.CurrentJob == ClassJobType.Monk)
-                {
-                    if (DataManager.GetSpellData(53).Cooldown.TotalMilliseconds <= 1000)
-                    {
-                        return false;
-                    }
-                }
-                if (Core.Player.CurrentJob == ClassJobType.Rogue ||
-                    Core.Player.CurrentJob == ClassJobType.Ninja)
-                {
-                    if (DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds <= 1000)
-                    {
-                        return false;
-                    }
-                }
-                if (Core.Player.CurrentJob == ClassJobType.Thaumaturge ||
-                    Core.Player.CurrentJob == ClassJobType.BlackMage)
-                {
-                    if (DataManager.GetSpellData(142).Cooldown.TotalMilliseconds <= 1000)
-                    {
-                        return false;
-                    }
-                }
-                if (Core.Player.CurrentJob == ClassJobType.Astrologian)
-                {
+                    break;
+                    case ClassJobType.Astrologian:
                     if (DataManager.GetSpellData(3596).Cooldown.TotalMilliseconds <= 1000)
                     {
                         return false;
                     }
-                }
-                if (Core.Player.CurrentJob == ClassJobType.DarkKnight)
-                {
+                    break;
+                    case ClassJobType.Conjurer:
+                    case ClassJobType.WhiteMage:
+                    if (DataManager.GetSpellData(119).Cooldown.TotalMilliseconds <= 1000)
+                    {
+                        return false;
+                    }
+                    break;
+                    case ClassJobType.DarkKnight:
                     if (DataManager.GetSpellData(3617).Cooldown.TotalMilliseconds <= 1000)
                     {
                         return false;
                     }
-                }
-                if (Core.Player.CurrentJob == ClassJobType.Machinist)
-                {
+                    break;
+                    case ClassJobType.Gladiator:
+                    case ClassJobType.Paladin:
+                    if (DataManager.GetSpellData(9).Cooldown.TotalMilliseconds <= 1000)
+                    {
+                        return false;
+                    }
+                    break;
+                    case ClassJobType.Lancer:
+                    case ClassJobType.Dragoon:
+                    if (DataManager.GetSpellData(75).Cooldown.TotalMilliseconds <= 1000)
+                    {
+                        return false;
+                    }
+                    break;
+                    case ClassJobType.Machinist:
                     if (DataManager.GetSpellData(2866).Cooldown.TotalMilliseconds <= 1000)
                     {
                         return false;
                     }
+                    break;
+                    case ClassJobType.Marauder:
+                    case ClassJobType.Warrior:
+                    if (DataManager.GetSpellData(31).Cooldown.TotalMilliseconds <= 1000)
+                    {
+                        return false;
+                    }
+                    break;
+                    case ClassJobType.Pugilist:
+                    case ClassJobType.Monk:
+                    if (DataManager.GetSpellData(53).Cooldown.TotalMilliseconds <= 1000)
+                    {
+                        return false;
+                    }
+                    break;
+                    case ClassJobType.Rogue:
+                    case ClassJobType.Ninja:
+                    if (DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds <= 1000)
+                    {
+                        return false;
+                    }
+                    break;
+                    case ClassJobType.Thaumaturge:
+                    case ClassJobType.BlackMage:
+                    if (DataManager.GetSpellData(142).Cooldown.TotalMilliseconds <= 1000)
+                    {
+                        return false;
+                    }
+                    break;
                 }
             }
             #endregion
@@ -681,6 +703,21 @@ namespace UltimaCR.Spells
             }
             #endregion
 
+            #region Wait For Cast Completion
+
+            switch (CastType)
+            {
+                case CastType.SelfLocation:
+                case CastType.TargetLocation:
+                    await Coroutine.Wait(3000, () => !Actionmanager.CanCastLocation(ID, target.Location));
+                    break;
+                default:
+                    await Coroutine.Wait(3000, () => !Actionmanager.CanCast(ID, target));
+                    break;
+            }
+
+            #endregion
+
             Ultima.LastSpell = this;
 
             #region Recent Spell Add
@@ -703,21 +740,6 @@ namespace UltimaCR.Spells
             #endregion
 
             Logging.Write(Colors.OrangeRed, @"[Ultima] Ability: " + Name);
-
-            #region Wait For Cast Completion
-
-            switch (CastType)
-            {
-                case CastType.SelfLocation:
-                case CastType.TargetLocation:
-                    await Coroutine.Wait(3000, () => !Actionmanager.CanCastLocation(ID, target.Location));
-                    break;
-                default:
-                    await Coroutine.Wait(3000, () => !Actionmanager.CanCast(ID, target));
-                    break;
-            }
-
-            #endregion
 
             return true;
         }
