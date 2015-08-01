@@ -282,8 +282,7 @@ namespace UltimaCR.Rotations
 
         private async Task<bool> DragonKick()
         {
-            if (!Core.Player.CurrentTarget.HasAura(MySpells.DragonKick.Name, true, 5000) &&
-                !Core.Player.CurrentTarget.HasAura(MySpells.DragonKick.Name, false, 5000) ||
+            if (!Core.Player.CurrentTarget.HasAura(MySpells.DragonKick.Name, false, 5000) ||
                 !Core.Player.HasAura(MySpells.PerfectBalance.Name) &&
                 Core.Player.HasTarget &&
                 Core.Player.CurrentTarget.IsFlanking)

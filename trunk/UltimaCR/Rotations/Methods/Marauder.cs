@@ -76,8 +76,7 @@ namespace UltimaCR.Rotations
         {
             if (Actionmanager.LastSpell.Name == MySpells.HeavySwing.Name)
             {
-                //if (!Core.Player.CurrentTarget.HasAura(MySpells.StormsEye.Name, true, 4000) &&
-                //    !Core.Player.CurrentTarget.HasAura(MySpells.StormsEye.Name, false, 4000) &&
+                //if (!Core.Player.CurrentTarget.HasAura(MySpells.StormsEye.Name, false, 4000) &&
                 //    !Core.Player.CurrentTarget.HasAura("Dancing Edge", false, 4000) ||
                 //    !Core.Player.HasAura(MySpells.StormsPath.Name, true, 4000) ||
                 if (!Core.Player.HasAura(MySpells.Maim.Name, true, 4000))
@@ -139,7 +138,6 @@ namespace UltimaCR.Rotations
         private async Task<bool> StormsEye()
         {
             if (Actionmanager.LastSpell.Name == MySpells.Maim.Name &&
-                !Core.Player.CurrentTarget.HasAura(MySpells.StormsEye.Name, true, 4000) &&
                 !Core.Player.CurrentTarget.HasAura(MySpells.StormsEye.Name, false, 4000) &&
                 !Core.Player.CurrentTarget.HasAura("Dancing Edge", false, 4000))
             {
