@@ -1324,7 +1324,7 @@ namespace UltimaCR.Settings
 
         #region Lancer Cross-Class
 
-        [Setting, DefaultValue(false)]
+        [Setting, DefaultValue(true)]
         public bool BardFeint { get; set; }
 
         [Setting, DefaultValue(false)]

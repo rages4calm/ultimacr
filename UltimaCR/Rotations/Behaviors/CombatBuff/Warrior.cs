@@ -8,6 +8,7 @@ namespace UltimaCR.Rotations
         {
             if (await Ultima.SummonChocobo()) return true;
             if (await InternalRelease()) return true;
+            if (await Berserk()) return true;
             if (await BrutalSwing()) return true;
             return await MercyStroke();
         }

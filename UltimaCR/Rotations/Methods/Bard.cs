@@ -287,15 +287,14 @@ namespace UltimaCR.Rotations
         {
             if (Core.Player.HasAura(MySpells.StraightShot.Name, true, 4000) &&
                 Core.Player.CurrentTarget.HasAura(MySpells.VenomousBite.Name, true, 4000) &&
-                Core.Player.CurrentTarget.HasAura(MySpells.Windbite.Name, true, 4000))
+                Core.Player.CurrentTarget.HasAura(MySpells.Windbite.Name, true, 4000) &&
+                DataManager.GetSpellData(97).Cooldown.TotalMilliseconds <= 700)
             {
                 if (Actionmanager.CanCast(MySpells.EmpyrealArrow.Name, Core.Player.CurrentTarget))
                 {
                     if (await MySpells.Barrage.Cast())
                     {
-                        await
-                            Coroutine.Wait(3000,
-                                () => Actionmanager.CanCast(MySpells.EmpyrealArrow.Name, Core.Player.CurrentTarget));
+                        await Coroutine.Wait(3000, () => Actionmanager.CanCast(MySpells.EmpyrealArrow.Name, Core.Player.CurrentTarget));
                     }
                 }
                 return await MySpells.EmpyrealArrow.Cast();

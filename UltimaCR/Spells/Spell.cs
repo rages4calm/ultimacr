@@ -174,17 +174,17 @@ namespace UltimaCR.Spells
                 }
             }
 
-            //#region Cone Check
+            #region Cone Check
 
-            //if (ID == 106 || ID == 41 || ID == 70)
-            //{
-            //    if (!Helpers.InsideCone(Core.Player.Location, Core.Player.Heading, target.Location))
-            //    {
-            //        return false;
-            //    }
-            //}
+            if (ID == 106 || ID == 41 || ID == 70)
+            {
+                if (!Helpers.InView(Core.Player.Location, Core.Player.Heading, target.Location))
+                {
+                    return false;
+                }
+            }
 
-            //#endregion
+            #endregion
 
             #region Rectangle Check
 
@@ -367,10 +367,11 @@ namespace UltimaCR.Spells
 
                 #region Wait For Animation
 
-                if (Ultima.LastSpell.SpellType != SpellType.Ninjutsu &&
-                Ultima.LastSpell.SpellType != SpellType.Mudra)
+                if (Ultima.LastSpell.ID != null &&
+                    Ultima.LastSpell.SpellType != SpellType.Ninjutsu &&
+                    Ultima.LastSpell.SpellType != SpellType.Mudra)
                 {
-                    await Coroutine.Sleep(1000);
+                    await Coroutine.Wait(1000, () => DataManager.GetSpellData(Ultima.LastSpell.ID).Cooldown.TotalMilliseconds <= DataManager.GetSpellData(Ultima.LastSpell.ID).AdjustedCooldown.TotalMilliseconds - 1000);
                 }
 
                 #endregion
