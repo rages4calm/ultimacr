@@ -343,8 +343,7 @@ namespace UltimaCR.Rotations
                 Core.Player.ClassLevel < MySpells.Raiton.Level)
             {
                 if (Actionmanager.CanCast(MySpells.Ten.ID, Core.Player) &&
-                    DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds <= 1500 &&
-                    DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds >= 500 &&
+                    DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds <= DataManager.GetSpellData(2240).AdjustedCooldown.TotalMilliseconds - 1000 &&
                     Core.Player.TargetDistance(25, false) &&
                     Core.Player.CurrentTarget.CanAttack &&
                     Core.Player.CurrentTarget.InLineOfSight() ||
@@ -378,8 +377,7 @@ namespace UltimaCR.Rotations
         private async Task<bool> Katon()
         {
             if (Actionmanager.CanCast(MySpells.Chi.ID, Core.Player) &&
-                DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds <= 1500 &&
-                DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds >= 500 &&
+                DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds <= DataManager.GetSpellData(2240).AdjustedCooldown.TotalMilliseconds - 1000 &&
                 Core.Player.TargetDistance(15, false) &&
                 Core.Player.CurrentTarget.CanAttack &&
                 Core.Player.CurrentTarget.InLineOfSight() ||
@@ -425,8 +423,7 @@ namespace UltimaCR.Rotations
             if (Ultima.UltSettings.NinjaRaiton)
             {
                 if (Actionmanager.CanCast(MySpells.Chi.ID, Core.Player) &&
-                    DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds <= 1500 &&
-                    DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds >= 500 &&
+                    DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds <= DataManager.GetSpellData(2240).AdjustedCooldown.TotalMilliseconds - 1000 &&
                     Core.Player.TargetDistance(15, false) &&
                     Core.Player.CurrentTarget.CanAttack &&
                     Core.Player.CurrentTarget.InLineOfSight() ||
@@ -467,8 +464,7 @@ namespace UltimaCR.Rotations
         private async Task<bool> Hyoton()
         {
             if (Actionmanager.CanCast(MySpells.Jin.ID, Core.Player) &&
-                DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds <= 1500 &&
-                DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds >= 500 &&
+                DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds <= DataManager.GetSpellData(2240).AdjustedCooldown.TotalMilliseconds - 1000 &&
                 Core.Player.TargetDistance(25, false) &&
                 Core.Player.CurrentTarget.CanAttack &&
                 Core.Player.CurrentTarget.InLineOfSight() ||
@@ -510,11 +506,10 @@ namespace UltimaCR.Rotations
             if (Actionmanager.CanCast(MySpells.Jin.ID, Core.Player))
             {
                 if (!Core.Player.HasAura(MySpells.Huton.Name) &&
-                    DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds <= 1500 ||
+                    DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds <= DataManager.GetSpellData(2240).AdjustedCooldown.TotalMilliseconds - 1000 ||
                     !Actionmanager.HasSpell(MySpells.ArmorCrush.Name) &&
                     !Core.Player.HasAura(MySpells.Huton.Name, true, 20000) &&
-                    DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds <= 1500 &&
-                    DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds >= 500 ||
+                    DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds <= DataManager.GetSpellData(2240).AdjustedCooldown.TotalMilliseconds - 1000 ||
                     Core.Player.HasAura("Mudra"))
                 {
                     if (!Actionmanager.CanCast(MySpells.Ninjutsu.ID, Core.Player) &&
@@ -559,8 +554,7 @@ namespace UltimaCR.Rotations
         private async Task<bool> Doton()
         {
             if (Actionmanager.CanCast(MySpells.Jin.ID, Core.Player) &&
-                DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds <= 1500 &&
-                DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds >= 500 &&
+                DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds <= DataManager.GetSpellData(2240).AdjustedCooldown.TotalMilliseconds - 1000 &&
                 Core.Player.HasAura(MySpells.Kassatsu.Name) ||
                 Core.Player.HasAura("Mudra"))
             {
@@ -610,8 +604,7 @@ namespace UltimaCR.Rotations
         private async Task<bool> Suiton()
         {
             if (Actionmanager.CanCast(MySpells.Jin.ID, Core.Player) &&
-                DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds <= 1500 &&
-                DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds >= 500 &&
+                DataManager.GetSpellData(2240).Cooldown.TotalMilliseconds <= DataManager.GetSpellData(2240).AdjustedCooldown.TotalMilliseconds - 1000 &&
                 DataManager.GetSpellData(MySpells.TrickAttack.ID).Cooldown.TotalMilliseconds == 0 &&
                 Core.Player.TargetDistance(15, false) &&
                 Core.Player.CurrentTarget.CanAttack &&
@@ -666,7 +659,8 @@ namespace UltimaCR.Rotations
         {
             if (Actionmanager.LastSpell.Name == MySpells.GustSlash.Name)
             {
-                if (!Core.Player.HasAura(MySpells.Huton.Name, true, 40000) ||
+                if (Core.Player.HasAura(MySpells.Huton.Name) &&
+                    !Core.Player.HasAura(MySpells.Huton.Name, true, 40000) ||
                     Core.Player.HasTarget &&
                     Core.Player.CurrentTarget.IsFlanking &&
                     (Core.Player.CurrentTarget.HasAura(MySpells.DancingEdge.Name, false, 6000) ||

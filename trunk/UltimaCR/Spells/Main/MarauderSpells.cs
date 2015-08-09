@@ -189,7 +189,7 @@ namespace UltimaCR.Spells.Main
                                Name = "Berserk",
                                ID = 38,
                                Level = 22,
-                               GCDType = GCDType.On,
+                               GCDType = GCDType.Off,
                                SpellType = SpellType.Buff,
                                CastType = CastType.Self
                            });

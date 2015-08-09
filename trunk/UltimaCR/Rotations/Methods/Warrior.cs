@@ -39,7 +39,22 @@ namespace UltimaCR.Rotations
         {
             if (!Core.Player.CurrentTarget.HasAura(MySpells.Fracture.Name, true, 4000))
             {
-                return await MySpells.Fracture.Cast();
+                if (!Actionmanager.HasSpell(MySpells.StormsEye.Name) &&
+                    !Actionmanager.HasSpell(MySpells.StormsPath.Name) ||
+
+                    !Actionmanager.HasSpell(MySpells.StormsEye.Name) &&
+                    Core.Player.CurrentTarget.HasAura(MySpells.StormsPath.Name, false, 8000) ||
+                    
+                    !Actionmanager.HasSpell(MySpells.StormsPath.Name) &&
+                    (Core.Player.CurrentTarget.HasAura(MySpells.StormsEye.Name, false, 8000) ||
+                    Core.Player.CurrentTarget.HasAura("Dancing Edge")) ||
+
+                    (Core.Player.CurrentTarget.HasAura(MySpells.StormsEye.Name, false, 8000) ||
+                    Core.Player.CurrentTarget.HasAura("Dancing Edge")) &&
+                    Core.Player.CurrentTarget.HasAura(MySpells.StormsPath.Name, false, 8000))
+                {
+                    return await MySpells.Fracture.Cast();
+                }
             }
             return false;
         }
@@ -76,21 +91,32 @@ namespace UltimaCR.Rotations
         {
             if (Actionmanager.LastSpell.Name == MySpells.HeavySwing.Name)
             {
-                //if (!Core.Player.CurrentTarget.HasAura(MySpells.StormsEye.Name, false, 4000) &&
-                //    !Core.Player.CurrentTarget.HasAura("Dancing Edge", false, 4000) ||
-                //    !Core.Player.HasAura(MySpells.StormsPath.Name, true, 4000) ||
-                if (!Core.Player.HasAura(MySpells.Maim.Name, true, 4000))
+                if (!Core.Player.HasAura(MySpells.Maim.Name, true, 4000) ||
+                    Actionmanager.HasSpell(MySpells.StormsEye.Name) &&
+                    !Core.Player.CurrentTarget.HasAura(MySpells.StormsEye.Name, false, 8000) &&
+                    !Core.Player.CurrentTarget.HasAura("Dancing Edge") ||
+                    Actionmanager.HasSpell(MySpells.StormsPath.Name) &&
+                    !Core.Player.CurrentTarget.HasAura(MySpells.StormsPath.Name, false, 8000))
                 {
                     return await MySpells.Maim.Cast();
                 }
-                return false;
             }
             return false;
         }
 
         private async Task<bool> Berserk()
         {
-            return await MySpells.Berserk.Cast();
+            if (Core.Player.HasAura(MySpells.Maim.Name, true, 4000))
+            {
+                if (!Actionmanager.HasSpell(MySpells.StormsEye.Name) ||
+                    Actionmanager.HasSpell(MySpells.StormsEye.Name) &&
+                    (Core.Player.CurrentTarget.HasAura(MySpells.StormsEye.Name, false, 8000) ||
+                    Core.Player.CurrentTarget.HasAura("Dancing Edge")))
+                {
+                    return await MySpells.Berserk.Cast();
+                }
+            }
+            return false;
         }
 
         private async Task<bool> MercyStroke()
@@ -138,8 +164,8 @@ namespace UltimaCR.Rotations
         private async Task<bool> StormsEye()
         {
             if (Actionmanager.LastSpell.Name == MySpells.Maim.Name &&
-                !Core.Player.CurrentTarget.HasAura(MySpells.StormsEye.Name, false, 4000) &&
-                !Core.Player.CurrentTarget.HasAura("Dancing Edge", false, 4000))
+                !Core.Player.CurrentTarget.HasAura(MySpells.StormsEye.Name, false, 8000) &&
+                !Core.Player.CurrentTarget.HasAura("Dancing Edge"))
             {
                 return await MySpells.StormsEye.Cast();
             }

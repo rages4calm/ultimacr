@@ -129,6 +129,8 @@
             this.ArcherTab = new System.Windows.Forms.TabPage();
             this.ArcherSubTab = new UltimaCR.Settings.Forms.Design.TabDesign();
             this.ArcherSettings = new System.Windows.Forms.TabPage();
+            this.ArcherCooldownGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.ArcherFlamingArrow = new System.Windows.Forms.CheckBox();
             this.ArcherExecuteGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.ArcherMiserysEnd = new System.Windows.Forms.CheckBox();
             this.ArcherInterruptGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
@@ -172,6 +174,8 @@
             this.ArcherInvigorate = new System.Windows.Forms.CheckBox();
             this.ArcherBloodForBlood = new System.Windows.Forms.CheckBox();
             this.BardSettings = new System.Windows.Forms.TabPage();
+            this.BardCooldownGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
+            this.BardFlamingArrow = new System.Windows.Forms.CheckBox();
             this.BardAuraGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
             this.BardTheWanderersMinuet = new System.Windows.Forms.CheckBox();
             this.BardExecuteGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
@@ -734,10 +738,6 @@
             this.MachinistRagingStrikes = new System.Windows.Forms.CheckBox();
             this.MachinistHawksEye = new System.Windows.Forms.CheckBox();
             this.MachinistQuellingStrikes = new System.Windows.Forms.CheckBox();
-            this.ArcherCooldownGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
-            this.ArcherFlamingArrow = new System.Windows.Forms.CheckBox();
-            this.BardCooldownGroup = new UltimaCR.Settings.Forms.Design.GroupBoxDesign();
-            this.BardFlamingArrow = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.UltimaBanner)).BeginInit();
             this.ClassTab.SuspendLayout();
             this.UltimaTab.SuspendLayout();
@@ -773,6 +773,7 @@
             this.ArcherTab.SuspendLayout();
             this.ArcherSubTab.SuspendLayout();
             this.ArcherSettings.SuspendLayout();
+            this.ArcherCooldownGroup.SuspendLayout();
             this.ArcherExecuteGroup.SuspendLayout();
             this.ArcherInterruptGroup.SuspendLayout();
             this.ArcherCrossGroup.SuspendLayout();
@@ -785,6 +786,7 @@
             this.ArcherGladiatorGroup.SuspendLayout();
             this.ArcherLancerGroup.SuspendLayout();
             this.BardSettings.SuspendLayout();
+            this.BardCooldownGroup.SuspendLayout();
             this.BardAuraGroup.SuspendLayout();
             this.BardExecuteGroup.SuspendLayout();
             this.BardInterruptGroup.SuspendLayout();
@@ -964,8 +966,6 @@
             this.MachinistCrossGroup.SuspendLayout();
             this.MachinistLancerGroup.SuspendLayout();
             this.MachinistArcherGroup.SuspendLayout();
-            this.ArcherCooldownGroup.SuspendLayout();
-            this.BardCooldownGroup.SuspendLayout();
             this.SuspendLayout();
             // 
             // CloseButton
@@ -2296,6 +2296,29 @@
             this.ArcherSettings.Text = "Archer";
             this.ArcherSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
             // 
+            // ArcherCooldownGroup
+            // 
+            this.ArcherCooldownGroup.Controls.Add(this.ArcherFlamingArrow);
+            this.ArcherCooldownGroup.ForeColor = System.Drawing.Color.White;
+            this.ArcherCooldownGroup.Location = new System.Drawing.Point(235, 309);
+            this.ArcherCooldownGroup.Name = "ArcherCooldownGroup";
+            this.ArcherCooldownGroup.Size = new System.Drawing.Size(104, 42);
+            this.ArcherCooldownGroup.TabIndex = 18;
+            this.ArcherCooldownGroup.TabStop = false;
+            this.ArcherCooldownGroup.Text = "Cooldown ";
+            // 
+            // ArcherFlamingArrow
+            // 
+            this.ArcherFlamingArrow.AutoSize = true;
+            this.ArcherFlamingArrow.ForeColor = System.Drawing.Color.White;
+            this.ArcherFlamingArrow.Location = new System.Drawing.Point(6, 19);
+            this.ArcherFlamingArrow.Name = "ArcherFlamingArrow";
+            this.ArcherFlamingArrow.Size = new System.Drawing.Size(92, 17);
+            this.ArcherFlamingArrow.TabIndex = 7;
+            this.ArcherFlamingArrow.Text = "Flaming Arrow";
+            this.ArcherFlamingArrow.UseVisualStyleBackColor = true;
+            this.ArcherFlamingArrow.CheckedChanged += new System.EventHandler(this.ArcherFlamingArrow_CheckedChanged);
+            // 
             // ArcherExecuteGroup
             // 
             this.ArcherExecuteGroup.Controls.Add(this.ArcherMiserysEnd);
@@ -2859,6 +2882,29 @@
             this.BardSettings.Text = "Bard";
             this.BardSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UltimaForm_MouseDrag);
             // 
+            // BardCooldownGroup
+            // 
+            this.BardCooldownGroup.Controls.Add(this.BardFlamingArrow);
+            this.BardCooldownGroup.ForeColor = System.Drawing.Color.White;
+            this.BardCooldownGroup.Location = new System.Drawing.Point(34, 264);
+            this.BardCooldownGroup.Name = "BardCooldownGroup";
+            this.BardCooldownGroup.Size = new System.Drawing.Size(104, 42);
+            this.BardCooldownGroup.TabIndex = 19;
+            this.BardCooldownGroup.TabStop = false;
+            this.BardCooldownGroup.Text = "Cooldown ";
+            // 
+            // BardFlamingArrow
+            // 
+            this.BardFlamingArrow.AutoSize = true;
+            this.BardFlamingArrow.ForeColor = System.Drawing.Color.White;
+            this.BardFlamingArrow.Location = new System.Drawing.Point(6, 19);
+            this.BardFlamingArrow.Name = "BardFlamingArrow";
+            this.BardFlamingArrow.Size = new System.Drawing.Size(92, 17);
+            this.BardFlamingArrow.TabIndex = 7;
+            this.BardFlamingArrow.Text = "Flaming Arrow";
+            this.BardFlamingArrow.UseVisualStyleBackColor = true;
+            this.BardFlamingArrow.CheckedChanged += new System.EventHandler(this.BardFlamingArrow_CheckedChanged);
+            // 
             // BardAuraGroup
             // 
             this.BardAuraGroup.Controls.Add(this.BardTheWanderersMinuet);
@@ -3049,7 +3095,6 @@
             // BardFeint
             // 
             this.BardFeint.AutoSize = true;
-            this.BardFeint.Enabled = false;
             this.BardFeint.ForeColor = System.Drawing.Color.White;
             this.BardFeint.Location = new System.Drawing.Point(6, 19);
             this.BardFeint.Name = "BardFeint";
@@ -10108,52 +10153,6 @@
             this.MachinistQuellingStrikes.UseVisualStyleBackColor = true;
             this.MachinistQuellingStrikes.CheckedChanged += new System.EventHandler(this.MachinistQuellingStrikes_CheckedChanged);
             // 
-            // ArcherCooldownGroup
-            // 
-            this.ArcherCooldownGroup.Controls.Add(this.ArcherFlamingArrow);
-            this.ArcherCooldownGroup.ForeColor = System.Drawing.Color.White;
-            this.ArcherCooldownGroup.Location = new System.Drawing.Point(235, 309);
-            this.ArcherCooldownGroup.Name = "ArcherCooldownGroup";
-            this.ArcherCooldownGroup.Size = new System.Drawing.Size(104, 42);
-            this.ArcherCooldownGroup.TabIndex = 18;
-            this.ArcherCooldownGroup.TabStop = false;
-            this.ArcherCooldownGroup.Text = "Cooldown ";
-            // 
-            // ArcherFlamingArrow
-            // 
-            this.ArcherFlamingArrow.AutoSize = true;
-            this.ArcherFlamingArrow.ForeColor = System.Drawing.Color.White;
-            this.ArcherFlamingArrow.Location = new System.Drawing.Point(6, 19);
-            this.ArcherFlamingArrow.Name = "ArcherFlamingArrow";
-            this.ArcherFlamingArrow.Size = new System.Drawing.Size(92, 17);
-            this.ArcherFlamingArrow.TabIndex = 7;
-            this.ArcherFlamingArrow.Text = "Flaming Arrow";
-            this.ArcherFlamingArrow.UseVisualStyleBackColor = true;
-            this.ArcherFlamingArrow.CheckedChanged += new System.EventHandler(this.ArcherFlamingArrow_CheckedChanged);
-            // 
-            // BardCooldownGroup
-            // 
-            this.BardCooldownGroup.Controls.Add(this.BardFlamingArrow);
-            this.BardCooldownGroup.ForeColor = System.Drawing.Color.White;
-            this.BardCooldownGroup.Location = new System.Drawing.Point(34, 264);
-            this.BardCooldownGroup.Name = "BardCooldownGroup";
-            this.BardCooldownGroup.Size = new System.Drawing.Size(104, 42);
-            this.BardCooldownGroup.TabIndex = 19;
-            this.BardCooldownGroup.TabStop = false;
-            this.BardCooldownGroup.Text = "Cooldown ";
-            // 
-            // BardFlamingArrow
-            // 
-            this.BardFlamingArrow.AutoSize = true;
-            this.BardFlamingArrow.ForeColor = System.Drawing.Color.White;
-            this.BardFlamingArrow.Location = new System.Drawing.Point(6, 19);
-            this.BardFlamingArrow.Name = "BardFlamingArrow";
-            this.BardFlamingArrow.Size = new System.Drawing.Size(92, 17);
-            this.BardFlamingArrow.TabIndex = 7;
-            this.BardFlamingArrow.Text = "Flaming Arrow";
-            this.BardFlamingArrow.UseVisualStyleBackColor = true;
-            this.BardFlamingArrow.CheckedChanged += new System.EventHandler(this.BardFlamingArrow_CheckedChanged);
-            // 
             // UltimaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -10227,6 +10226,8 @@
             this.ArcherTab.ResumeLayout(false);
             this.ArcherSubTab.ResumeLayout(false);
             this.ArcherSettings.ResumeLayout(false);
+            this.ArcherCooldownGroup.ResumeLayout(false);
+            this.ArcherCooldownGroup.PerformLayout();
             this.ArcherExecuteGroup.ResumeLayout(false);
             this.ArcherExecuteGroup.PerformLayout();
             this.ArcherInterruptGroup.ResumeLayout(false);
@@ -10249,6 +10250,8 @@
             this.ArcherLancerGroup.ResumeLayout(false);
             this.ArcherLancerGroup.PerformLayout();
             this.BardSettings.ResumeLayout(false);
+            this.BardCooldownGroup.ResumeLayout(false);
+            this.BardCooldownGroup.PerformLayout();
             this.BardAuraGroup.ResumeLayout(false);
             this.BardAuraGroup.PerformLayout();
             this.BardExecuteGroup.ResumeLayout(false);
@@ -10556,10 +10559,6 @@
             this.MachinistLancerGroup.PerformLayout();
             this.MachinistArcherGroup.ResumeLayout(false);
             this.MachinistArcherGroup.PerformLayout();
-            this.ArcherCooldownGroup.ResumeLayout(false);
-            this.ArcherCooldownGroup.PerformLayout();
-            this.BardCooldownGroup.ResumeLayout(false);
-            this.BardCooldownGroup.PerformLayout();
             this.ResumeLayout(false);
 
         }
